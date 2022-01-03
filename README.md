@@ -1,6 +1,6 @@
 # Tables
 
-Collection of tables created with [{gt}](https://github.com/rstudio/gt) and [{gtExtras}](https://jthomasmock.github.io/gtExtras/) packages in R. Click on image for R code. 
+Repo containing my attempts at making tables with [{gt}](https://github.com/rstudio/gt) and [{gtExtras}](https://jthomasmock.github.io/gtExtras/) packages in R. Click on image for R code. 
 
 Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](mailto:leeolney3@gmail.com).
 
