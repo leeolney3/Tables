@@ -1,6 +1,6 @@
 # Tables
 
-Repo containing my attempts at making tables, charts and maps in R for personal learning. Click on image for R code. 
+Repo containing my attempts at making tables, charts and maps in R for personal learning.  
 
 Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](mailto:leeolney3@gmail.com).
 
@@ -14,11 +14,17 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 * RStudio table contest 2021 [tutorial](https://twitter.com/JDavison_/status/1455487659833430021) by [Jack Davison](https://twitter.com/JDavison_) 
 
 ## 2022
-[Potatoes Production in EU27+UK](https://github.com/leeolney3/Tables/tree/main/2022/potatoes)
+* Potatoes Production in EU27+UK [(code)](https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes.R)
 
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p1.png" width="49%"> <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p2.png" width="49%">
 
+* California household water supply shortage [(code)](https://github.com/leeolney3/Tables/blob/main/2022/CA_water/CA_water.R)
+
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/CA_water/CA_water.png" width="49%">
+
 ## 2021
+Click on image for R code.
+
 [![name](https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/displacement)
 [![name](https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t2.png)](https://github.com/leeolney3/Tables/tree/main/2021/displacement)
 
