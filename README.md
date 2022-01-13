@@ -32,7 +32,6 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/CA_water/CA_water.png" width="49%">
 
 ## 2021
-* Click on image for code
 
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/tsto_content/tsto_content_p1.png" width="70%">
 
@@ -40,6 +39,8 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t2.png">
 
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/dry_beans/dry_beans_t1.png">
+
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/wildlife/wildlife_p1.png">
 
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/halloween_candy/halloween_candy_t1.png">
 
