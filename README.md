@@ -1,4 +1,4 @@
-# Tables
+# Tables, Charts and Maps
 
 Repo containing my attempts at making tables, charts and maps in R for personal learning.  
 
