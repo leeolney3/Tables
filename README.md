@@ -32,23 +32,19 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/CA_water/CA_water.png" width="49%">
 
 ## 2021
-Click on image for R code.
+* Click on image for code
 
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/displacement)
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t2.png)](https://github.com/leeolney3/Tables/tree/main/2021/displacement)
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/tsto_content/tsto_content_p1.png" width="70%">
 
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/halloween_candy/halloween_candy_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/halloween_candy)
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t1.png">
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t2.png">
 
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/dry_beans/dry_beans_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/dry_beans)
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/dry_beans/dry_beans_t1.png">
 
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/spiders/spiders_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/spiders)
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/spiders/spiders_t2.png)](https://github.com/leeolney3/Tables/tree/main/2021/spiders)
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/halloween_candy/halloween_candy_t1.png">
 
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/cricket/cricket_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/cricket)
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/cricket/cricket_t2.png)](https://github.com/leeolney3/Tables/tree/main/2021/cricket)
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/solar_power_plants/solar_power_plants_t1.png" width="60%">
 
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/nber_papers/nber_papers_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/nber_papers)
 
-[![name](https://github.com/leeolney3/Tables/blob/main/2021/f1_races/f1_races_t1.png)](https://github.com/leeolney3/Tables/tree/main/2021/f1_races)
 
 
