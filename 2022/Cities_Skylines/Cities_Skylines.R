@@ -100,4 +100,93 @@ table2 = cs20 %>%
       cells_column_labels()
  )) %>%
   tab_options(source_notes.font.size = "13px")
+  
+# Table 3: Maps with 3 out of 4 connections types
+
+# release date df
+rel_df = tribble(
+  ~group, ~ord, ~rel_date,
+  "Base game",1,"10 Mar 2015",
+  "Snowfall DLC",2,"18 Feb 2016",
+  "Natural Disasters DLC",3,"29 Nov 2016",
+  "Mass Transit DLC",4,"18 May 2017",
+  "Green Cities DLC",5,"19 Oct 2017",
+  "Parklife DLC",6,"24 May 2018",
+  "Industries DLC",7,"23 Oct 2018",
+  "Campus DLC",8,"21 May 2019",
+  "Sunset Habor DLC",9,"26 Mar 2020",
+  "Airports DLC",10,"25 Jan 2022",
+  "Map Pack CCP",11,"25 Jan 2022",
+)
+
+# subset with 4 connections types
+#cs4 = cs %>% filter_at(vars(highways,rails, shipping_channels, airways), all_vars(. > 0) )
+#dim(cs4)
+
+# subset with 3 connections types
+cs3 = cs %>% rowwise() %>% 
+  filter(any(c(highways,rails, shipping_channels, airways) ==0)) %>%
+  left_join(rel_df, by="group") %>%
+  select(ord, rel_date, group: theme, bla, hi:ai, total, highways:airways) %>%
+  arrange(desc(ord)) 
+
+table3 = cs3 %>%
+  gt() %>%
+  gt_theme_538() %>%
+  gt_img_rows(columns=hi, height=20) %>%
+  gt_img_rows(columns=ra, height=20) %>%
+  gt_img_rows(columns=sh, height=20) %>%
+  gt_img_rows(columns=ai, height=20) %>%
+  cols_hide(ord) %>%
+  gt_merge_stack(col1="map", col2="group") %>%
+  tab_spanner(hi:airways,label="connections") %>%
+  cols_label(hi="", ra="",sh="",ai="",
+             bla=md("buildable<br>land area"),
+             shipping_channels=md("shipping<br>channels"),
+             rel_date = md("release date")) %>%
+  cols_align(c(bla,highways), align="center") %>%
+  cols_align(c(hi, ra, sh, ai), align="right") %>%
+  gt_color_box(c(highways, rails, shipping_channels, airways), domain=0:4,width = 60,
+               palette=c("#F2CDF2","#D69D6E","#698A30","#355E5F","#221657")) %>%
+  gt_color_box(bla, domain=range(cs3$bla), suffix="%", palette="rcartocolor::Sunset") %>%
+  gt_plt_bar(total, width=30, scale_type = "number", color="grey50", text_color = "white") %>%
+  tab_header(title=md("**Cities Skylines** in-game maps with 3 out of 4 connection types"),
+             subtitle=md("There are a total of 57 in-game maps in Cities Skylines as of 26 Jan 2022, of which, 38 maps have all four connection types (highways, rails, shipping channels and airways) and 19 maps have three out of four connections types available. The table shows the buildable land area percent, connection types and routes count of the 19 maps, arranged in reverse chronological order of the release date.")) %>%
+  tab_source_note(source_note = md("Note: In-game maps refer to maps available through the City Skylines base game, downloadable content (DLC) and content creator pack (CCP). <br>Data: Cities Skylines, Paradox Interactive by way of skylines.country")) %>%
+  tab_style(
+    style = list(
+      cell_text(size=px(12))
+    ),
+    locations = list(
+      cells_column_spanners(spanners = "connections")
+ )) %>%
+  tab_style(
+    style = list(
+      cell_text(size=px(12))
+    ),
+    locations = list(
+      cells_column_labels()
+ )) %>%
+  tab_options(source_notes.font.size = "13px") %>%
+  tab_style(
+    style = list(
+      cell_text(size=px(14))
+    ),
+    locations = list(
+      cells_body()
+ )) %>%
+  tab_style(
+    style = list(
+      cell_text(
+        weight="lighter"
+      )
+    ),
+    locations = list(
+      cells_title(groups = "subtitle")
+    )
+  ) %>%
+  tab_footnote(footnote = "Release date for Windows, MacOS, Linux", 
+               locations = cells_body(columns = rel_date, rows = c(19))) %>%
+  gt_highlight_rows(rows=c(1:5,9:10,14:15,19), bold_target_only = TRUE, fill="#f8f9fa")
+
  
