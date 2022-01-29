@@ -23,6 +23,10 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 </details>
   
 ## 2022
+* Cities Skylines in-game maps [(code)](https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/Cities_Skylines.R)
+
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/cs_table2.png" width="80%">
+
 * Potatoes Production in EU27+UK [(code)](https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes.R)
 
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p1.png" width="49%"> <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p2.png" width="49%">
