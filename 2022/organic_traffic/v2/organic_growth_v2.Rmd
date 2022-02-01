@@ -1,0 +1,107 @@
+---
+title: "Organic growth v2"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(ggtext)
+
+library(showtext)
+font_add_google("Lato")
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+f1= "Lato"
+```
+
+```{r}
+# example 1
+data = read_csv("sites/classic.com-organic-traffic-all-27-Dec-2021_18-21-47.csv",show_col_types = FALSE) %>% filter(Date>"2019-01-01") 
+title ="classic.com"
+source = "Data source: text"
+```
+
+```{r}
+# example 2
+data = read_csv("sites/creditninja.com-organic-traffic-all-27-Dec-2021_18-21-18.csv",show_col_types = FALSE) %>% filter(Date>"2019-01-01")
+title ="creditninja.com"
+source = "Data source: text"
+```
+
+```{r}
+# trend function v2
+trend = function(data, source, title) {
+  trend = ggplot(data, aes(x=Date, y=`Organic traffic`)) +
+  geom_line(color="#2663FF", size=.85) +
+  geom_area(fill="#2663FF", alpha=.1) +
+  geom_segment(data= data %>% filter(`Organic traffic`==max(`Organic traffic`)),
+               aes(xend=Date - (as.double(Date- min(data$Date))/3),yend=`Organic traffic`)) +
+  geom_richtext(data = data %>% filter(`Organic traffic`==max(`Organic traffic`)),
+               aes(x= Date - (as.double(Date- min(data$Date))/3), label=glue::glue("Max Organic Traffic:<br><span style='color:#2663FF;'>**{scales::comma(`Organic traffic`)}**</span> on<br>{Date}")),
+               size=3.2, family=f1, fill="#eaf0ff") +
+  scale_y_continuous(labels = scales::label_number(scale= 1e-3, suffix="k"), limits=c(0,NA), expand = expansion(mult = c(0, .2))) +
+  coord_cartesian(clip="off") +
+  cowplot::theme_minimal_grid(10.5, line_size = .3) +
+  theme(text=element_text(family=f1),
+        panel.grid=element_line(linetype = "dashed"),
+        plot.title.position = "plot",
+        plot.title=element_text(hjust=.5, color="#2663FF"),
+        plot.subtitle = element_text(hjust=.5, size=11),
+        axis.title=element_blank(),
+        axis.text=element_text(size=8),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, face="italic", color="grey50", margin=margin(t=10)),
+        axis.line = element_line(),
+        plot.margin=margin(rep(.5,4), unit="cm")) +
+  labs(title=title,
+       subtitle="Organic Growth", 
+       caption =source)
+  return(ggsave(glue::glue("{title}_organic_traffic.png"), bg="#fafafa", height=5, width=6.5))
+}
+
+trend(data, source, title)
+```
+
+```{r}
+# month-on-month function
+mm = function(data, source, title) {
+data1 = data %>%
+  mutate(mth_yr = substr(Date, 1,7),
+         mth_yr=as.Date(paste0(mth_yr, "-01"))) %>%
+  group_by(mth_yr) %>%
+  summarise(ot = mean(`Organic traffic`)) %>%
+  mutate(month_change = (ot- lag(ot))/lag(ot),
+         month_change = replace_na(month_change,0),
+         )
+
+data1 %>%
+  ggplot(aes(x=mth_yr, y=month_change)) +
+  geom_col(aes(alpha=I(ifelse(month_change==max(month_change),1,.1))),color="#2663FF", fill="#2663FF") +
+  geom_segment(data = data1 %>% filter(month_change==max(month_change)),
+               aes(xend=mth_yr, yend=month_change+0.08), size=.5) +
+  geom_richtext(data = data1 %>% filter(month_change==max(month_change)),
+                aes(y= month_change+0.08, label=glue::glue("**{scales::percent(month_change)}** in {substr(mth_yr, 1,7)}")),
+                size=3, color="#2663FF", family=f1)  +
+  scale_y_continuous("",labels=scales::percent) +
+  scale_x_date("",expand=c(0,0), date_breaks = "6 month", date_labels = "%Y-%m") +
+  cowplot::theme_minimal_grid(10.5, line_size = .3) +
+  theme(text=element_text(family=f1),
+        panel.grid=element_line(linetype = "dashed"),
+        plot.title.position = "plot",
+        plot.title=element_text(hjust=.5, color="#2663FF"),
+        plot.subtitle = element_text(hjust=.5, size=11),
+        axis.text=element_text(size=8),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, face="italic", color="grey50", margin=margin(t=10)),
+        axis.line = element_line(),
+        plot.margin=margin(.5,1,.5,.5, unit="cm")) +
+  labs(subtitle="Month-on-month change",
+       title=title,
+       caption=source)   
+return(ggsave(glue::glue("{title}_month-on-month.png"), bg="#fafafa", height=5, width=6.5))
+}
+
+mm(data, source, title)
+```
+
