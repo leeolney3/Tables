@@ -1,0 +1,92 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(gt)
+library(gtExtras)
+```
+
+
+
+```{r}
+df = tribble(
+  ~Country, ~Score, ~sc_rank, ~Income, ~in_rank, ~Region, ~re_rank, ~re_pct,~in_pct, 
+  "Denmark",57.53,6,"HI",6,"EUR",5,93,51,
+  "Sweden",62.47,2,"HI",2,"EUR",2,98,51,
+  "Norway",49.29,20,"HI",19,"EUR",19,30,51,
+  "Finland",57.02,7,"HI",7,"EUR",6,90,51,
+  "United Arab Emirates",41.79,34,"HI",32,"NAWA",3,90,38,
+  "Saudi Arabia",30.94,66,"HI",41,"NAWA",8,70,38,
+  "Singapore",56.61,8,"HI",8,"SEAO",1,100,44,
+  "New Zealand",47.01,26,"HI",25,"SEAO",7,76,44,
+  "Kenya",26.13,86,"LM",10,"SSF",3,90,20,
+  "Madagascar",20.40,115,"LI",7,"SSF",14,40,20
+) 
+fl = "https://hatscripts.github.io/circle-flags/flags/"
+```
+
+```{r}
+df_rand = df %>%
+  select(Country, e=Score) %>%
+  dplyr::mutate(a = rnorm(n = dplyr::n(), mean = 40, sd = 5),
+                b = rnorm(n = dplyr::n(), mean = 42, sd = 5),
+                c = rnorm(n = dplyr::n(), mean = 44, sd = 5),
+                d = rnorm(n = dplyr::n(), mean = 43, sd = 5),
+                ) %>%
+  pivot_longer(e:d) %>%
+  arrange(Country, name) %>%
+  group_by(Country) %>%
+  summarize(list_data = list(value), .groups = "drop")
+```
+
+
+```{r}
+df2 = df %>% arrange(sc_rank) %>%
+  mutate(flag = case_when(Country=="Singapore"~paste0(fl,"sg.svg"),
+                          Country=="Sweden"~paste0(fl,"se.svg"),
+                          Country=="Denmark"~paste0(fl, "dk.svg"),
+                          Country=="Norway"~paste0(fl, "fi.svg"),
+                          Country=="United Arab Emirates"~paste0(fl,"ae.svg"),
+                          Country=="Saudi Arabia"~paste0(fl,"sa.svg"),
+                          Country=="New Zealand"~ paste0(fl,"nz.svg"),
+                          Country=="Finland"~paste0(fl,"fi.svg"),
+                          Country=="Madagascar"~paste0(fl,"mg.svg"),
+                          Country=="Kenya"~paste0(fl,"ke.svg"),
+                          ),
+         `Score (group median)` =Score
+         ) %>%
+  left_join(df_rand, by="Country") %>%
+  select(flag, Country, list_data, Score:in_rank, in_pct, `Score (group median)`, Region:re_rank,re_pct) 
+```
+
+```{r}
+df2
+```
+
+
+
+```{r}
+df2 %>% gt() %>%
+  gt_img_rows(flag) %>%
+  cols_label(Score=md("(0-100)"), sc_rank="Rank", in_rank="Rank",re_rank="Rank", Score="2020", Income="Group", Region="Group",
+             re_pct ="Score % (Group)", list_data="2016 to 2020", flag="") %>%
+  cols_align(columns=3:12, align="center") %>%
+  tab_spanner(3:5, label="Score (0-100)") %>%
+  tab_spanner(Income:`Score (group median)`, label="Income") %>%
+  tab_spanner(Region:re_pct, label="Region") %>%
+  gt_color_box(columns=in_rank, domain=1:48, width=50,palette = "rcartocolor::Emrld") %>%
+  gt_color_box(columns=re_rank, domain=1:39, width=50,palette = "rcartocolor::Emrld") %>%
+  gt_plt_bullet(column = `Score (group median)`, target = in_pct, width = 30,
+               colors = c("lightgrey", "black")) %>%
+  gt_plt_percentile(re_pct, width=28) %>%
+  gt_sparkline(column=list_data, label=F) %>%
+  gt_theme_538() %>%
+  tab_options(table.font.size = px(13),
+              heading.subtitle.font.size = px(14)) %>%
+  tab_header(title="Global Innovation Index 2020 rankings", subtitle="Contains randomly generated data") 
+  
+```
+
