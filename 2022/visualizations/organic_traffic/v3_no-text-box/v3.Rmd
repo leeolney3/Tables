@@ -1,0 +1,59 @@
+---
+title: "Organic growth v3"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(ggtext)
+
+library(showtext)
+font_add_google("Lato")
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+f1= "Lato"
+```
+
+```{r}
+# example 1
+data = read_csv("sites/classic.com-organic-traffic-all-27-Dec-2021_18-21-47.csv",show_col_types = FALSE) %>% filter(Date>"2019-01-01") 
+title ="classic.com"
+source = "Data source: text"
+```
+
+```{r}
+# trend function v3 (without textbox)
+trend = function(data, source, title) {
+  trend = ggplot(data, aes(x=Date, y=`Organic traffic`)) +
+  geom_line(color="#2663FF", size=.85) +
+  geom_area(fill="#2663FF", alpha=.1) +
+  scale_y_continuous(labels = scales::label_number(scale= 1e-3, suffix="k"), limits=c(0,NA), expand = expansion(mult = c(0, .2))) +
+  coord_cartesian(clip="off") +
+  cowplot::theme_minimal_grid(10.5, line_size = .3) +
+  theme(text=element_text(family=f1),
+        panel.grid=element_line(linetype = "dashed"),
+        plot.title.position = "plot",
+        plot.title=element_text(hjust=.5, color="#2663FF"),
+        plot.subtitle = element_text(hjust=.5, size=11),
+        axis.title=element_blank(),
+        axis.text=element_text(size=8),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, face="italic", color="grey50", margin=margin(t=10)),
+        axis.line = element_line(),
+        plot.margin=margin(rep(.5,4), unit="cm")) +
+  labs(title=title,
+       subtitle="Organic Growth", 
+       caption =source)
+  return(ggsave(glue::glue("{title}_organic_traffic.png"), bg="#fafafa", height=5, width=6.5))
+}
+
+trend(data, source, title)
+```
+
+```{r}
+# example 2
+data = read_csv("sites/creditninja.com-organic-traffic-all-27-Dec-2021_18-21-18.csv",show_col_types = FALSE) %>% filter(Date>"2019-01-01")
+title ="creditninja.com"
+source = "Data source: text"
+```

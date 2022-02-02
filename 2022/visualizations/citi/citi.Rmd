@@ -1,0 +1,98 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Citi
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+font_add_google("Fira Sans Condensed")
+f2 = "Fira Sans Condensed"
+```
+
+```{r}
+df = expand.grid(year=seq(2018,2021,1), 
+            month=seq(1,12,1)) %>%
+  mutate(value=rnorm(n = dplyr::n(), mean = .4, sd = .2))
+```
+
+```{r}
+df2 = expand.grid(year=seq(2018,2021,1), 
+            month=seq(1,12,1)) %>%
+  mutate(value=rnorm(n = dplyr::n(), mean = .4, sd = .2))
+```
+
+```{r}
+df2 = expand.grid(year=seq(2018,2021,1), 
+            month=seq(1,12,1)) %>%
+  mutate(value=rnorm(n = dplyr::n(), mean = .45, sd = .15))
+```
+
+```{r, fig.height=3, fig.width=4}
+df2 %>% 
+  ggplot(aes(x=month, y=value, color=factor(year))) +
+  geom_point() +
+  geom_line(aes(group=factor(year)), size=1) +
+  gghighlight::gghighlight() +
+  facet_wrap(~year, ncol=2,scales="free") +
+  scale_x_continuous(breaks=c(1,4,7,10), labels=c("Jan","Apr","Jul","Oct")) +
+  scale_y_continuous(limits=c(0,.8)) +
+  scale_color_manual(values=c("#fab255","#43b284","#0f7ba2","#dd5129")) +
+  cowplot::theme_minimal_grid(14.5,line_size = 0.3) +
+  theme(text=element_text(family=f2),
+        legend.position = "none",
+        panel.spacing.x = unit(2, "lines"),
+        panel.spacing.y = unit(1.2, "lines"),
+        plot.margin=margin(.5,1,.5,.5,unit="cm"),
+        plot.title = element_text(size=15, face="plain", margin=margin(b=8)),
+        strip.text = element_text(face="bold"),
+        plot.title.position="plot",
+        plot.caption.position = "plot",
+        plot.caption=element_text(face="italic", hjust=0, color="grey50"),
+        axis.title.x=element_blank(),
+        axis.title.y=element_text(size=13)
+        ) +
+  labs(title= "Figure 43. Total Inbound Loaded TEUs Through LA/LB (2018-Sept 2021)",
+       caption="\nNote: Chart contains randomly generated data",
+       y="(Millions)") 
+```
+
+```{r, fig.height=3, fig.width=4, warning=F}
+df %>%
+  ggplot(aes(fct_rev(factor(month)),value, color=factor(year))) +
+  geom_line(aes(group=factor(month)), color="black") +
+  #geom_line(aes(group=factor(year)), show.legend=F) +
+  geom_point(aes(size=ifelse(year==2021,9,3.5))) +
+  geom_text(data = df %>% filter(year==2021),
+            aes(label=round(value,2)), size=3, color="white") +
+  scale_x_discrete(labels=rev(month.abb)) +
+  scale_y_continuous("(millions)",limits=c(0,.8), breaks=seq(0,.8,.2), expand=c(0,0)) +
+  scale_color_manual("Year",values=c("#fab255","#43b284","#0f7ba2","#dd5129")) +
+  scale_size_identity() +
+  coord_flip() +
+  cowplot::theme_minimal_grid(12,line_size = 0.3) +
+  theme(legend.position = "top",
+        text=element_text(family=f1),
+        plot.margin=margin(.5,1,.5,.5,unit="cm"),
+        panel.grid.major.y=element_line(linetype = "dashed"),
+        panel.grid.minor.x=element_line(),
+        plot.title.position = "plot",
+        plot.title=element_text(size=12),
+        legend.justification="left",
+        legend.text=element_text(size=10),
+        legend.title=element_text(size=11),
+        axis.title.y=element_blank(),
+        plot.caption.position="plot",
+        plot.caption=element_text(color="grey30", hjust=0),
+        axis.title.x=element_text(size=10.5, face="italic", color="grey10"),
+        legend.margin=margin(l=-22, b=3, t=3)) +
+  labs(title= "Figure 43. Total Inbound Loaded TEUs Through LA/LB (2018-Sept 2021)",
+       caption="\nNote: This chart contains randomly generated data") +
+  guides(color = guide_legend(override.aes = list(size=3.5)))
+```
+
+
