@@ -1,0 +1,199 @@
+---
+title: "Goldman"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(ggtext)
+library(showtext)
+font_add_google("Roboto") 
+font_add_google("Roboto Condensed") 
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+
+
+```{r}
+df = tribble(
+  ~region, ~country, ~value, ~cat, ~flag,
+  "EM Asia","Thailand",-10,"neg","https://hatscripts.github.io/circle-flags/flags/th.svg",
+  "EM Asia","Korea",-8,"neg","https://hatscripts.github.io/circle-flags/flags/kr.svg",
+  "EM Asia","Phillippines",-6,"neg","https://hatscripts.github.io/circle-flags/flags/my.svg",
+  "EM Asia","Malaysia",-3,"neg","https://hatscripts.github.io/circle-flags/flags/cn.svg",
+  "EM Asia","Indonesia",-2,"neg","https://hatscripts.github.io/circle-flags/flags/id.svg",
+  "EM Asia","Singapore",-2,"neg","https://hatscripts.github.io/circle-flags/flags/sg.svg",
+  "EM Asia","India",-2,"neg","https://hatscripts.github.io/circle-flags/flags/in.svg",
+  "EM Asia","Taiwan",2,"pos","https://hatscripts.github.io/circle-flags/flags/tw.svg",
+  "EM Asia","China",3,"pos","https://hatscripts.github.io/circle-flags/flags/cn.svg",
+  "EM Latin America","Columbia",-17,"neg","https://hatscripts.github.io/circle-flags/flags/co.svg",
+  "EM Latin America","Chile",-17,"neg","https://hatscripts.github.io/circle-flags/flags/cl.svg",
+  "EM Latin America","Peru",-10,"neg","https://hatscripts.github.io/circle-flags/flags/pe.svg",
+  "EM Latin America","Brazil",-7,"neg","https://hatscripts.github.io/circle-flags/flags/br.svg",
+  "EM Latin America","Mexico",-3,"neg","https://hatscripts.github.io/circle-flags/flags/mx.svg"
+) %>%
+  mutate(region=fct_rev(fct_inorder(region)),
+         country=fct_rev(fct_inorder(country)))
+```
+
+
+```{r, fig.height=2.75, fig.width=4}
+df %>%
+  ggplot(aes(y=country, x=value)) +
+  geom_vline(aes(xintercept=0), color="#00bbf9", size=.7) +
+  geom_col(colour="transparent", fill="transparent") +
+  geom_col(data = df %>% filter(cat=="neg"),fill="#f8f9fa", color="#495057", width=.2) +
+  geom_col(data = df %>% filter(cat=="pos"),fill="#495057", color=NA, width=.2) +
+  ggimage::geom_image(data = df %>% filter(region=="EM Asia"),
+                      aes(image=flag), size=.031, asp=3.6) +
+  ggimage::geom_image(data = df %>% filter(region=="EM Latin America"),
+                      aes(image=flag), size=.031, asp=6.3) +
+  geom_text(data = df %>% filter(cat=="neg"),
+            aes(label=paste0(value,"%"), x=value-.6), 
+            color="black", size=3.8, family="Roboto Condensed", hjust=1) +
+  geom_text(data = df %>% filter(cat=="pos"),
+            aes(label=paste0(value,"%"), x=value+.6), 
+            color="black", size=3.8, family="Roboto Condensed", hjust=0) +
+  scale_x_continuous(expand=c(.1,.1), breaks=c(0), limits=c(-18,4),position="top") +
+  ggforce::facet_col(~ region, space = "free", scales = "free") +
+  #scale_color_manual(values=c("#fd151b","#023e8a")) +ced4da
+  coord_cartesian(clip="off") +
+  cowplot::theme_map(12) +
+  theme(legend.position = "none",
+        text=element_text(family="Roboto Condensed"),
+        plot.caption=element_text(hjust=0,color="grey30"),
+        plot.caption.position = "plot",
+        strip.text=element_text(hjust=0, size=10),
+        strip.background = element_rect(fill="#e9ecef", color=NA),
+        axis.text.x=element_text(family="Roboto", size=11),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),
+        strip.placement = "outside",
+        plot.subtitle=element_markdown(lineheight = 1.4, size=11),
+        plot.title=element_text(family="Roboto", size=12),
+        ) +
+  labs(title="Exhibit 118: 2021 Currency Moves (vs. US Dollar)",
+       subtitle="EM Asia and EM Latin America currency depreciated against the US dollar last year<br>(2021 Spot Return %)",
+       caption="Date as of December 31, 2021\nSource: Investment Strategy Group, Bloomberg")
+```
+
+```{r, fig.height=3, fig.width=4}
+df %>%
+  ggplot(aes(y=country, x=value, color=cat)) +
+  geom_vline(aes(xintercept=0), color="grey", size=.7) +
+  geom_point(size=8) +
+  geom_segment(aes(xend=0, yend=country)) +
+  ggforce::facet_col(~ region, space = "free", scales = "free") +
+  geom_text(aes(label=value), size=3.5, color="white", family="Roboto", fontface="bold") +
+  geom_text(data = df %>% filter(cat=="neg"),
+            aes(label=country, x=value-.6), 
+            color="black", size=3.5, family="Roboto Condensed", hjust=1) +
+  geom_text(data = df %>% filter(cat=="pos"),
+            aes(label=country, x=value+.6), 
+            color="black", size=3.5, family="Roboto Condensed", hjust=0) +
+  scale_x_continuous(expand=c(.1,.1), breaks=c(0), limits=c(-18,4)) +
+  scale_color_manual(values=c("#fd151b","#023e8a")) +ced4da
+  coord_cartesian(clip="off") +
+  cowplot::theme_map() +
+  theme(legend.position = "none",
+        text=element_text(family="Roboto Condensed"),
+        plot.caption=element_text(hjust=0),
+        plot.caption.position = "plot",
+        strip.text=element_text(hjust=0, size=11),
+        strip.background = element_rect(fill="#ced4da", color=NA),
+        axis.text.x=element_text(family="Roboto", size=11),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),) +
+  labs(title="Exhibit 118: 2021 Currency Moves (vs. US Dollar)",
+       subtitle="EM Asia and EM Latin America currency depreciated against the US dollar last year",
+       caption="Date as of December 31, 2021\nSource: Investment Strategy Group, Bloomberg") 
+```
+
+```{r}
+df1 = tribble(
+  ~region, ~country, ~value, ~cat,
+  "EM Asia","Thailand",-10,"neg",""
+  "EM Asia","Korea",-8,"neg",
+  "EM Asia","Phillippines",-6,"neg",
+  "EM Asia","Malaysia",-3,"neg",
+  "EM Asia","Indonesia",-2,"neg",
+  "EM Asia","Singapore",-2,"neg",
+  "EM Asia","India",-2,"neg",
+  "EM Asia","Taiwan",2,"pos",
+  "EM Asia","China",3,"pos",
+  "EM Latin America","Columbia",-17,"neg",
+  "EM Latin America","Chile",-17,"neg",
+  "EM Latin America","Peru",-10,"neg",
+  "EM Latin America","Brazil",-7,"neg",
+  "EM Latin America","Mexico",-3,"neg",
+) %>%
+  mutate(region=(fct_inorder(region)),
+         country=fct_rev(fct_inorder(country)))
+```
+
+```{r}
+df2 = tribble(
+  ~type, ~value, ~cat,
+  "10-Year Treasury (8%)",-2,"2022 Prospective Return",
+  "10-Year Treasury (8%)",1,"5-Year Prospective Return",
+  "Muni 1-10 (3%)",-1,"2022 Prospective Return",
+  "Muni 1-10 (3%)",1,"5-Year Prospective Return",
+  "Muni HY (6%)",1,"2022 Prospective Return",
+  "Muni HY (6%)",2,"5-Year Prospective Return",
+  "US Corporate HY (13%)",2,"2022 Prospective Return",
+  "US Corporate HY (13%)",3,"5-Year Prospective Return",
+  "Hedge Funds (6%)",2,"2022 Prospective Return",
+  "Hedge Funds (6%)",2,"5-Year Prospective Return",
+  "Bank Loans (8%)",4,"2022 Prospective Return",
+  "Bank Loans (8%)",3,"5-Year Prospective Return",
+  "DXY (8%)", 5,"2022 Prospective Return",
+  "DXY (8%)", 3,"5-Year Prospective Return",
+  "S&P 500 (15%)", 6,"2022 Prospective Return",
+  "S&P 500 (15%)", 3,"5-Year Prospective Return",
+  "EM Equity (US$)(22%)",7,"2022 Prospective Return",
+  "EM Equity (US$)(22%)",5,"5-Year Prospective Return",
+  "Japan Equity (17%)",8,"2022 Prospective Return",
+  "Japan Equity (17%)",3,"5-Year Prospective Return",
+  "UK Equity (15%)",9,"2022 Prospective Return",
+  "UK Equity (15%)",5,"5-Year Prospective Return",
+  "Taxable Moderate Portfolio",4,"2022 Prospective Return",
+  "Taxable Moderate Portfolio",2,"5-Year Prospective Return",
+  "Tax-Exempt Moderate Portfolio",4,"2022 Prospective Return",
+  "Tax-Exempt Moderate Portfolio",3,"5-Year Prospective Return",
+) %>%
+  mutate(type=fct_rev(fct_inorder(type)))
+```
+
+
+```{r}
+df2 %>%
+  ggplot(aes(x=value, y=type, fill=cat)) +
+  geom_col(data=df2 %>% filter(cat=="2022 Prospective Return"), width=.7,
+           aes(alpha=case_when(type=="Tax-Exempt Moderate Portfolio"|type=="Taxable Moderate Portfolio"~.7,TRUE~1))) +
+  geom_col(data=df2 %>% filter(cat!="2022 Prospective Return"), width=.32,
+           aes(alpha=case_when(type=="Tax-Exempt Moderate Portfolio"|type=="Taxable Moderate Portfolio"~.7,TRUE~1))) +
+  scale_fill_manual(values=c("#005f73","#eca400")) +
+  scale_alpha_identity() +
+  scale_x_continuous("",breaks=seq(-2,9,2), label=scales::label_number(suffix="%", accuracy=1),
+                     expand=c(0.02,0.02)) +
+  geom_vline(xintercept=c(seq(-2,9,1)), color="white") +
+  geom_vline(xintercept=0, color="grey") +
+  theme_minimal(base_family = "Roboto Condensed", base_size = 12)+
+  theme(legend.position = "none",
+        panel.grid.major.x=element_blank(),
+        panel.grid.minor.x=element_blank(),
+        panel.grid.major.y=element_line(size=.4),
+        axis.ticks.x=element_line(color="grey"),
+        axis.text=element_text(color="black"),
+        axis.title.y=element_text(size=10, margin=margin(r=10)),
+        plot.title=element_text(family="Roboto", face="bold", size=13),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption=element_text(color="grey30", size=8, hjust=0, margin=margin(t=-3)),
+        plot.subtitle = element_markdown(size=11),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm")) +
+  labs(y="Asset Class (Volatility)",
+       title="Exhibit 29: ISG Prospective Total Returns",
+       subtitle="<span style='color:#005f73'>2022 Prospective Return</span> and <span style='color:#eca400'>5-Year Prospective Return</span>",
+       caption="Date as of December 31, 2021\nSource: Investment Strategy Group. See endnote 9 for list of indices used.")
+```
+

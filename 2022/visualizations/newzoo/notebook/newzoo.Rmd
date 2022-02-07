@@ -1,0 +1,82 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(gt)
+library(gtExtras)
+```
+
+
+```{r}
+df = tibble::tribble(
+  ~region, ~rank, ~mobile, ~app, ~google, ~third, ~flag,
+  "China",1,"$31368.7M","$11400.0M","$0.0M","$19968.7M","data/flags/cn.svg",
+  "United States",2,"$14779.9M","$9555.6M","$4969.8M","$2545M","data/flags/us.svg",
+  "Japan",3,"$12385.3M","$8862.2M","$3329.9M","$1932M","data/flags/jp.svg",
+  "South Korea",4,"$4,207.5M","$1,339.4M","$2,766.0M","$102.1M","data/flags/kr.svg",
+  "India",5,"$2,249.1M","$224.0M","$1,968.6M","$56.6M","data/flags/in.svg",
+  "United Kingdom",6,"$1,599.8M","$924.2M","$614.0M","$61.5M","data/flags/gb.svg",
+  "Germany",7,"$1,522.5M","$607.1M","$844.3M","$71.1M","data/flags/de.svg",
+  "Indonesia",8,"$1,511.2M","$209.9M","$1,265.6M","$35.8M","data/flags/id.svg",
+  "Canada",9,"$1,342.5M","$790.3M","$513.7M","$38.5M","data/flags/ca.svg",
+  "Australia",10,"$1,097.8M","$703.8M","$362.7M","$31.3M","data/flags/au.svg"
+) %>%
+  mutate(mobile=parse_number(mobile),
+         app=parse_number(app),
+         google=parse_number(google),
+         third=parse_number(third)) %>%
+  relocate(flag)
+```
+
+```{r}
+gt_color_box(mobile, domain=1097:31369, accuracy=.1,width = 80) %>%
+  gt_color_box(app, domain=209:11400, accuracy=.1,width = 90) %>%
+  gt_color_box(google, domain=0:4970, accuracy=.1,width = 90) %>%
+  gt_color_box(third, domain=31:19969, accuracy=.1,width = 90) %>%
+```
+
+```{r}
+list1 = df %>% select(rank, app:third) %>% pivot_longer(app:third) %>%
+  group_by(rank) %>%
+  mutate(pct=round(value/sum(value)*100)) %>%
+  summarise(list_data=list(pct))
+```
+
+```{r}
+df %>% left_join(list1, by="rank")
+```
+
+```{r, warning=F}
+df %>% left_join(list1, by="rank") %>%
+  gt() %>%
+  gt_img_rows(flag,img_source = "local",height=25) %>%
+  gt_theme_538() %>%
+  cols_label(flag="", region="region/market", mobile="moblie game",
+             app="app store", google="google play",third=md("third-party<br>store")) %>%
+  tab_spanner(columns=mobile:third, label="Revenues (million $)") %>%
+  tab_spanner(columns=list_data, label="Percentage of mobile revenues") %>%
+  tab_options(table.font.size = px(14)) %>%
+  gt_color_box(app, domain=209:11400, accuracy=.1,width = 85,big.mark = ",") %>%
+  gt_color_box(google, domain=0:4970, accuracy=.1,width = 85,big.mark = ",") %>%
+  gt_color_box(third, domain=31:19969, accuracy=.1,width = 85,big.mark = ",") %>%
+  gt_plt_bar_stack(list_data, palette = c('#264653','#e9c46a','#e76f51'), width=120,
+                   labels = c("App Store %", "Google Play %", "Third-party Store %"),) %>%
+  cols_align(list_data, align="center") %>%
+  #gt_color_rows(mobile,  palette = "ggsci::indigo_material") %>%
+  tab_header(title=md("<span style = 'font-size:17pt;'>Top 10 Markets 2021</span><br><span style = 'color:#20247D;'>By Mobile Game Revenue</span>"),
+             subtitle=md("The table below shows key data points, including total mobile game revenues, App Store revenues, Google Play revenues, and third-party store revenues, for the top 10 countries/
+markets worldwide by mobile game revenues in 2021.<br>")) %>%
+  tab_style(style=list(cell_text(weight="lighter", size=px(14))),
+            locations=list(cells_title(groups="subtitle"))) %>%
+  cols_width(mobile~px(70),
+             ) %>%
+  tab_style(style = list(cell_text(color="#20247D", weight=500)),
+    locations = cells_body(columns = mobile)) %>%
+  tab_source_note(source_note = "Data source: Newzoo 2021 Global Mobile Market Report") %>%
+  fmt_number(mobile, sep_mark = ",",)
+  
+```
+
