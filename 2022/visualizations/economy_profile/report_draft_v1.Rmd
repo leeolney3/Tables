@@ -1,5 +1,5 @@
 ---
-title: "Economy Profile"
+title: ""
 output:
   html_document:
     df_print: paged
@@ -7,7 +7,7 @@ output:
   pdf_document: default
 ---
 
-### <span style="color: #19227E;">United Kingdom</span>
+## <span style="color: #19227E;">United Kingdom</span>
 #### <span style="color: #19227E;">GII 2021 rank: 4</span>  
 <br>
 ```{r, echo=FALSE}
