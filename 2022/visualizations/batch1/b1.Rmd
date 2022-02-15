@@ -1,0 +1,306 @@
+---
+title: "B1"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(ggtext)
+library(showtext)
+font_add_google("Lato")
+font_add_google("Roboto")
+font_add_google("Roboto Condensed")
+font_add_google("Libre Franklin")
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+
+### IBM
+```{r}
+df2 = tribble(
+  ~type, ~Power, ~Water,
+  "Exposure of sensitive/confidential data",62,74,
+  "Producton disruptions/shutdowns resulting from sabotage",64,65,
+  "Damage to organization’s reputation/loss of public confidence",64,63,
+  "Violation of regulatory requirements/potential fines",58,65,
+  "Damage to equipment resulting from manipulation of physical outputs",47,56,
+  "Endangerment of individuals safety",51,44,
+  "Potential for environmental harm/disaster",48,49,
+  "Reduced visibility and control due to the complexity of IT systems being connected to OT systems",43,49,
+  "Intellectual property theft",43,47,
+  "Unauthenticated change of device configuration, change of patching",42,47
+) %>% 
+  pivot_longer(Power:Water) %>%
+  mutate(type=fct_rev(fct_inorder(type)))
+```
+
+```{r}
+df2 %>%
+  ggplot(aes(value, type, fill=name)) +
+  geom_col(width=.6, show.legend=F) +
+  geom_text(data = df2 %>% filter(value==44),label="44%*",
+            size=3.2, hjust=1.1, color="white") +
+  geom_text(data= df2 %>% filter(value!=44),
+            aes(label=scales::number(value, suffix="%", accuracy=1)), 
+            size=3.2, hjust=1.3, color="white") +
+  scale_y_discrete(labels = function(x) str_wrap(x, width = 40), expand=c(0,0)) +
+  scale_x_continuous(expand=c(0,0)) +
+  scale_fill_manual(values=c("darkgoldenrod","#1f7a8c")) +
+  facet_wrap(~name, ncol=2) +
+  theme_minimal(base_family = "Lato", base_size = 10.5) +
+  theme(panel.grid= element_blank(),
+        axis.text.y=element_text(color="black", size=8),
+        axis.text.x=element_blank(),
+        axis.title=element_blank(),
+        strip.text=element_text(size=10, hjust=0),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.title=element_text(face="bold", size=11),
+        plot.caption=element_markdown(hjust=0, margin=margin(t=15), 
+                                      size=7, lineheight = 1.2, color="grey30"),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm")
+      ) +
+  labs(title="Figure 1", 
+       subtitle="Utility market: High-impact IIoT cybersecurity risks",
+       caption="<i>Source: IBM Institute for Business Value benchmark study, 2018. <br>n = 120; power = 77; water = 43</i><br><i>*Low n count (n<20) are statistically unreliable but can be considered directional when compared to remaining respondents.</i>")
+```
+
+### MERCER
+```{r}
+library(gt)
+library(gtExtras)
+```
+
+```{r}
+df3 = tribble(
+  ~"grp",~"question",~"Companies using them",~"Change from 2019 to 2020",
+  "Fastest-growing analytics","To what extent are there pay inequities by gender and race/ethnicity?", 52,373,
+  "Fastest-growing analytics","Why is one team high performing and another struggling?",52,63,
+  "Fastest-growing analytics","How are our total rewards programs being utilized by our employees?",46,100,
+  "Fastest-growing analytics","How can data-driven insights help us understand and better manage healthcare spend globally?",41,78,
+  "Fastest-growing analytics","How can we correct inequities and prevent them from reemerging (pay modeling)?",12,140,
+  "Retreating analytics","Which training programs are most effective?",34,-6,
+  "Retreating analytics","Which employees are at risk of burnout?",24,-25,
+  "Retreating analytics","Based on performance outcomes, is it better to build, buy or borrow talent?",15,-55
+) 
+```
+
+
+```{r}
+pal1 = rep("#023e8a",8)
+
+df3 %>%
+  mutate(dup1 = `Companies using them`,
+         `Companies using them`= glue::glue("{`Companies using them`}%")) %>%
+  gt(groupname_col = "grp") %>%
+  gt_theme_espn() %>%
+  cols_label(question="") %>%
+  tab_header(title=md("Figure 25. Fastest-growing and retreating analytics")) %>%
+  tab_options(heading.title.font.size = px(20)) %>%
+  gt_plt_dot(dup1, `Companies using them`, palette=pal1) %>%
+  cols_hide(5) %>%
+  cols_align(columns = c("Change from 2019 to 2020"), align="center") %>%
+  fmt_percent("Change from 2019 to 2020",scale=F, decimals=0) %>%
+  tab_style(
+    style = list(
+      cell_text(color = "#762A84",weight = "bold")
+      ),
+    locations = cells_body(
+      columns = `Change from 2019 to 2020`,
+      rows = `Change from 2019 to 2020` < 0
+    )
+  ) %>%
+   tab_style(
+    style = list(
+      cell_text(color = "#1B7837",weight = "bold")
+      ),
+    locations = cells_body(
+      columns = `Change from 2019 to 2020`,
+      rows = `Change from 2019 to 2020` > 0
+    )
+  ) %>%
+  tab_source_note(source_note = "Data source: MERCER LLC (2021)")  %>%
+  tab_style(
+    style = list(
+      cell_text(color = "black", weight = "bold", size=px(14))
+      ),
+    locations = cells_row_groups()
+  ) 
+```
+
+
+### GARTNER
+
+```{r}
+df4 = tribble(
+~id, ~name, ~value,
+1,"Considering<br>First Initiative",0.17,
+2,"Rolling Out<br>First Initiative",0.16,
+3,"Informal<br>Mechanisms<br>in Place",0.21,
+4,"Formal Program<br>in Place",0.47
+)
+```
+
+```{r, fig.height=3, fig.width=3}
+df4 %>%mutate(xmin = 0, ymin=0,
+         xmax=case_when(id==1|id==3 ~ -1*(sqrt(value)), TRUE~sqrt(value)),
+         ymax=case_when(id==1|id==2 ~ -1*(sqrt(value)), TRUE~sqrt(value))
+         ) %>%
+  mutate(x=case_when(id==1|id==3~-0.005,TRUE~0.005),
+         y=case_when(id==1|id==2~-0.01, TRUE~0.01),
+         x2 = case_when(id==1|id==3~-0.015,TRUE~0.015),
+         y2=case_when(id==1|id==2~-0.05, TRUE~0.05)) %>%
+  ggplot() + 
+  geom_rect(aes(xmin=xmin, ymin=ymin, xmax=xmax/4, ymax=ymax/4, fill=factor(id)), show.legend = F) +
+  geom_text(aes(x=x,y=y, label=scales::percent(value, accuracy=1), hjust=ifelse(id==1|id==3,1,0)), 
+            size=5.5, family="Roboto", color="white", fontface="bold") +
+  geom_richtext(aes(x=x2,y=y2, label=name,hjust=ifelse(id==1|id==3,1,0)), 
+            color="white", family="Roboto", size=4.3, fontface="bold",
+            fill = NA, label.color = NA,
+            label.padding = grid::unit(rep(0, 4), "pt"),
+            ) +
+  coord_equal() +
+  scale_fill_manual(values=c("#002856","#597fb0","#0091AE","#FA5738")) +
+  theme_void(base_size = 11, base_family = "Libre Franklin") +
+  theme(plot.title=element_text(face="bold"),
+        plot.margin=margin(.5,.5,.5,.5, unit="cm"),
+        plot.caption=element_markdown(hjust=0, lineheight = 1.4, size=9)) +
+  labs(title="Figure 2. Status of Supplier Diversity Program",
+       caption="n=77<br>Source: 2020 Gartner Supplier Diversity Survey")
+```
+
+### ORACLE
+https://www.oracle.com/ae/a/ocom/docs/industries/hospitality/hosp-mobile-contactless-maturity-analysis.pdf
+```{r}
+d6 = tribble(
+  ~cat, ~"Scope 1",~"Scope 2",~"Scope 3",
+  "Financial Services",1,2,97,
+  "Health care provider",2,5,93,
+  "Retail & consumer goods",3,5,92,
+  "Construction",2,6,92,
+  "Mining & quarrying",10,1,89,
+  "Food & tobacco",9,3,88,
+  "Oil & gas",12,1,87,
+  "Others",2,12,86,
+  "Technology",13,2,85,
+  "Chemical & petrochemical",19,9,72
+) %>% pivot_longer(`Scope 1`:`Scope 3`) %>%
+  mutate(cat=fct_rev(fct_inorder(cat)),
+         value=value/100)
+```
+
+```{r, fig.height=3, fig.width=4}
+d6 %>%
+  ggplot(aes(value, y=cat)) +
+  geom_line(aes(group=cat), color="grey20") +
+  geom_point(aes(color=name, shape=name, size=case_when(name=="Scope 3"~8.7, TRUE~4)), alpha=.9) +
+  geom_text(data=d6 %>% filter(name=="Scope 3"),
+            aes(label=scales::percent(value, accuracy = 1)), size=3.2, color="white",
+            family="Roboto Condensed") +
+  scale_x_continuous(expand=c(0.00,0.00), limits=c(0,1),
+                     breaks=seq(0,1,.2), labels=scales::percent_format(accuracy=1)) +
+  scale_shape_manual(values=c(15,17,16)) +
+  scale_color_manual(values=c("#ee9b00","#0a9396","#9b2226")) +
+  scale_size_identity() +
+  coord_cartesian(clip="off") +
+  cowplot::theme_minimal_hgrid(12,font_family = "Lato") +
+  theme(legend.position="top",
+        axis.title.y=element_blank(),
+        axis.ticks.length=unit(.25, "cm"),
+        panel.grid.major.y=element_line(size=.3),
+        plot.title.position = "plot",
+        plot.subtitle = element_text(size=12),
+        plot.caption.position = "plot",
+        legend.margin=margin(t=3, l=-130, b=-2),
+        plot.margin=margin(.5,.75,.5,.5,"cm"),
+        axis.ticks.y=element_blank(),
+        plot.caption=element_text(hjust=0, color="grey50")) +
+  labs(shape=NULL, color=NULL,
+       title="Exhibit 1: Proportion of Emissions by Scope",
+       subtitle="Industry Breakdown",
+       caption="Note: Chart contains randomly generated data") +
+  guides(color=guide_legend(override.aes = list(size=4)),
+         )
+```
+
+```{r}
+d7 = tribble(
+  ~cat, ~c1,~c2,~c3,~c4,~c5,
+  "Getting access to first-party data",2,52,30,16,0,
+  "Getting a 360-degree view of the customer",0,32,40,23,5,
+  "Adopting a rapid test and learn environment",14,43,21,12,0,
+  "Lack of data and intelligence skills or talents",6,45,44,5,0,
+  "Concern over stringent data privacy and rules regulation",2,37,43,16,2,
+  "Lack of a clear roadmap",21,41,33,5,0,
+  "Lack of culture for change",11,47,32,10,0,
+  "Expectation of ROI",0,21,52,27,0,
+  "Trust in the data quality",0,45,44,11,0,
+  "Executive sponsorship/ leadership",17,47,34,2,0,
+  "Clear commercial benefits",5,37,51,7,0
+) 
+```
+
+```{r}
+stage1 = d7 %>%
+  pivot_longer(c1:c5) %>%
+  rename(per=value) %>%
+  mutate(per=per/100) %>%
+  group_by(cat) %>%
+  mutate(text = paste0(formatC(100*per, format="f", digits=0), "%"),
+         cs = cumsum(per),
+         offset = sum(per[1:(floor(n()/2))]) + (n() %% 2)*0.5*(per[ceiling(n()/2)]),
+         xmax = -offset + cs,
+         xmin = xmax-per) %>%
+  ungroup()
+  
+```
+
+```{r}
+gap <- 0.2
+
+stage2 <- stage1 %>%
+  left_join(stage1 %>%
+              group_by(cat) %>%
+              summarize(max.xmax = max(xmax)) %>%
+              mutate(r = row_number(max.xmax)),
+            by = "cat") %>%
+  arrange(desc(r)) %>%
+  mutate(ymin = r - (1-gap)/2,
+         ymax = r + (1-gap)/2)
+```
+
+
+```{r, fig.height=4, fig.width=4}
+ggplot(stage2) +
+  geom_rect(aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax, fill=name)) +
+  geom_text(data = stage2 %>% filter(per>=0.05),
+              aes(x=(xmin+xmax)/2, y=(ymin+ymax)/2, label=text), size = 3.3, color="white") +
+  scale_x_continuous("", labels=scales::percent, breaks=seq(-1, 1, len=9), limits=c(-1, 1)) +
+  scale_y_continuous("", breaks = 1:n_distinct(stage2$cat),
+                     labels=rev(stage2 %>% distinct(cat) %>% .$cat)) +
+  ggsci::scale_fill_jama(name="",labels=c("Not challenging","Slightly challenging","Moderately challenging","Challenging","Very challenging")) +
+  facet_wrap(~cat, ncol=1, scales="free_y") +
+  coord_cartesian(expand=F) +
+  theme_void() +
+  theme(legend.position = "top",
+        panel.spacing = unit(1, "lines"),
+        strip.text = element_text(hjust=0.5, margin=margin(b=5), size=10),
+        legend.margin=margin(b=10),
+        plot.margin=margin(.5,0,.75,0, unit="cm"),
+        plot.title=element_text(hjust=.5, size=14),
+        legend.key.size = unit(.5, 'cm')
+        ) +
+  labs(title="What are the primary challenges your company faces in\nusing data to drive profitable business decision?\n") 
+  
+```
+
+
+
+
+
+
+
+
+
+
