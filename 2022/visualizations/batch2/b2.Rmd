@@ -1,0 +1,186 @@
+---
+title: "B2"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(ggtext)
+library(showtext)
+font_add_google("Lato")
+font_add_google("Roboto")
+font_add_google("Roboto Condensed")
+font_add_google("Libre Franklin")
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+### BCG
+```{r}
+df6 = tribble(
+  ~grp, ~type, ~Win,~"Worry/Woe",
+  "Customer-oriented outcomes","Customer experience and journeys",21,13,
+  "Customer-oriented outcomes","Sales and market acceleration",21,13,
+  "Customer-oriented outcomes","Marketing and dynamic pricing",20,13,
+  "Innovation and new ventures","Growth and business model innovation",20,13,
+  "Innovation and new ventures","New business venture",22,17,
+  "Innovation and new ventures","Digital ecosystems and partnerships",22,12,
+  "Business support","Digitize support functions",19,14,
+  "Business support","Build resilience via cybersecurity and compliance",22,13,
+  "Operations","Supply chain",21,11,
+  "Operations","Digital procurement",23,11,
+  "Operations","Digital manufacturing and operations",22,11,
+) %>%
+  mutate(grp=fct_inorder(grp),
+         type=fct_rev(fct_inorder(type))) %>%
+  pivot_longer(Win:`Worry/Woe`)
+```
+
+```{r, fig.height=3.2, fig.width=3.5}
+df6 %>%
+  ggplot(aes(value,type, color=fct_rev(name))) +
+  geom_line(aes(group=type), color="grey", size=3, alpha=.8) +
+  geom_point(size=8) +
+  geom_text(aes(label=scales::percent(value,scale=1, accuracy=1L)), color="white", family="Roboto Condensed", size=3, fontface="bold") +
+  scale_y_discrete(labels = function(x) stringr::str_wrap(x, width = 30), position="right") +
+  scale_x_continuous(limits=c(9,25), expand=c(0,0)) +
+  scale_color_manual(values=c("#E74B2E","#006661")) +
+  facet_wrap(~grp, ncol=1, scales="free_y") +
+  theme_minimal(base_size = 11) +
+  theme(strip.text=element_text(face="bold", size=10),
+        strip.placement = "outside",
+        plot.margin=margin(.5,1,.5,.5, unit="cm"),
+        axis.title=element_blank(),
+        plot.title.position = "plot",
+        plot.title = element_text(hjust=0, family="Lato", size=12),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank(),
+        panel.grid.major.y = element_line(size=.3),
+        axis.text.x=element_blank(),
+        axis.text.y=element_text(color="black"),
+        panel.spacing = unit(1, "lines"),
+        plot.caption = element_text(size=8, hjust=0, color="grey30"),
+        legend.position = "top",
+        legend.title=element_blank(),
+        legend.margin=margin(l=-240,b=-5),
+        plot.subtitle = element_markdown(color="black"),
+        ) +
+  labs(title="Average EBIT improvement by transformation element",
+       caption="\nSource: BCG Global Digital Transformation Survey, 2021") +
+  guides(color=guide_legend(override.aes = list(size=4)))
+```
+
+### BAIN
+
+```{r}
+df7 = tribble(
+  ~fac, ~"Top 1",~"Top 3",
+  "Good compensation<br>(salary and benefits)",22,56,
+  "Flexibility or good hours",12,42,
+  "Interesting work",15,39,
+  "Job security",13,39,
+  "Good relationship<br>with coworkers",10,36,
+  "Learning and growth",9,27,
+  "Job that is helpful<br>to society",6,18,
+  "Autonomy",6,17,
+  "Company that inspires me",5,16,
+  "Prestige",3,9
+) %>%
+  arrange(fac=(fct_inorder(fac))) %>%
+  pivot_longer(2:3)
+```
+
+```{r, fig.height=3.1, fig.width=4}
+df7 %>%
+  ggplot(aes(x=value, y=fct_rev(fac))) +
+  geom_line(aes(group=fac), color="grey30") +
+  geom_point(aes(color=name), size=9.8, fill="white") +
+  geom_text(aes(label=scales::number(value, accuracy=1, suffix="%")), size=3.2, 
+            color="white", fontface="bold") +
+  scale_color_manual(values=c("#B9252A","#3B4992")) +
+  cowplot::theme_minimal_hgrid(12.2) +
+  theme(legend.position = "none",
+        axis.title=element_blank(),
+        axis.text.y=element_markdown(lineheight = 1.1),
+        plot.title.position = "plot",
+        plot.title=element_markdown(size=12.5, face="plain", lineheight = 1.35),
+        plot.subtitle = element_markdown(margin=margin(t=7, b=7), size=12, lineheight = 1.35, face="bold"),
+        text=element_text(family="Lato"),
+        axis.line.x.bottom = element_blank(),
+        plot.margin=margin(.5,.7,.5,.5, unit="cm"),
+        plot.caption.position = "plot",
+        plot.caption = element_markdown(hjust=0, size=9, lineheight = 1.2, color="grey20"),
+        axis.text.x=element_blank()) +
+  labs(title="<b>Figure 1.5:</b> While workers rank compensation first over any other job attribute, it’s the top priority<br>for just one in five workers",
+       subtitle="Percent of workers who rank each job attribute as a top priority<br><span style='color:#B9252A'>Top 1</span> <span style='color:grey50'>and</span> <span style='color:#3B4992'>Top 3</span>",
+       caption="*Note: Includes US, Germany, France, Italy, Japan, Brazil, China, India, Indonesia, and Nigeria*<br>Source: Bain/Dynata Worker Survey (n=20,000)"
+       )
+```
+
+### GOLDMAN
+```{r}
+df3 = tribble(
+  ~grp, ~id, ~cat, ~value,~lab,
+  "2030 Target Interpolation",1,"1.5°C\nalignment",40,"46, 40%",
+  "2030 Target Interpolation",2,"Well below 2°C\nalignment",38,"43, 38%",
+  "2030 Target Interpolation",3,"2.0°C\nalignment",18,"21, 18%",
+  "2030 Target Interpolation",4,">2.0°C\nalignment",4,"4, 4%",
+  "2020-2030 cumulative target interpolation",1,"1.5°C\nalignment",60,"68, 60%",
+  "2020-2030 cumulative target interpolation",2,"Well below 2°C\nalignment",18,"21, 18%",
+  "2020-2030 cumulative target interpolation",3,"2.0°C\nalignment",15,"17, 15%",
+  "2020-2030 cumulative target interpolation",4,">2.0°C\nalignment",7,"8, 7%",
+) %>%
+  mutate(grp=fct_inorder(grp),
+         cat=fct_inorder(cat))
+```
+
+
+
+```{r}
+rc = "Roboto Condensed"
+```
+
+```{r}
+df3a = df3 %>%
+  group_by(grp) %>%
+  mutate(xmin = 0, ymin=0,
+         xmax=case_when(id==1|id==3 ~ -1*(sqrt(value)), TRUE~sqrt(value)),
+         ymax=case_when(id==1|id==2 ~ -1*(sqrt(value)), TRUE~sqrt(value))
+         ) %>%
+  mutate(x=case_when(id==1|id==3~-0.08,TRUE~0.08),
+         y=case_when(id==1|id==2~-0.15, TRUE~0.15),
+         x2=case_when(id==1|id==3~-.9,TRUE~0.05),
+         y2 = case_when(id==1|id==2~-0.8, TRUE~0.7)) 
+
+df3a %>%ggplot() +
+  geom_segment(x=0, y=0.2, xend=.75, yend=.2, size=.3, color="grey30") +
+  geom_rect(aes(xmin=xmin, ymin=ymin, xmax=xmax/4, ymax=ymax/4, fill=factor(id)), show.legend = F) +
+  geom_text(aes(x=x,y=y, label=lab, hjust=ifelse(id==1|id==3,1,0)), 
+            size=3.5, family="Roboto", fontface="bold") +
+  geom_text(data= df3a %>% filter(cat!=">2.0°C\nalignment"),
+            aes(x=x2,y=y2, label=cat, hjust=ifelse(id==1|id==3,0,0)), 
+            size=3.4, lineheight=1,family="Roboto") +
+  geom_text(data= df3a %>% filter(cat==">2.0°C\nalignment"),
+            aes(x=0.77,y=0.3, label=cat, hjust=ifelse(id==1|id==3,0,0)), 
+            size=3.4, lineheight=1,family="Roboto") +
+  facet_wrap(~grp, ncol=2) +
+  coord_fixed() +
+  cowplot::theme_map(12) +
+  theme(plot.margin=margin(.5,.5,.5,.3, unit="cm"),
+        strip.text=element_text(face="bold",margin=margin(b=10)),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.title=element_markdown(size=10.7, margin=margin(b=15), face="plain", lineheight=1.3),
+        plot.caption=element_text(color="grey30", hjust=0, size=8),
+        text=element_text(family="Roboto")
+        ) +
+  labs(title="**Exhibit 16**: Share of European corporates included in our analysis whose de-carbonization target-implied<br>temperature rise result (under the two target-based methodologies) falls within each category (1.5°C,<br><2.0°C, 2.0°C and >2.0°C)",
+       caption="Source: Company data, Goldman Sachs Global Investment Research") +
+  scale_fill_manual(values=c("#FFB062","#BAECFF","#C1CAF3","#6db5d0"))
+```
+
+```{r}
+ggsave("goldman.png", height=4.5, width=7.2, bg="white")
+```
+
+

@@ -1,0 +1,14 @@
+Flourish and Datawrapper links
+
+In GDP, GII score, population, label
+2017-21:  https://public.flourish.studio/visualisation/8784803/
+2021: https://public.flourish.studio/visualisation/8779062/
+
+GII score, UN region, label (color), income category (filter) 
+2017-21: https://public.flourish.studio/visualisation/8785034/
+
+GII score, UN region, income category (color), label (filter)
+2021: https://public.flourish.studio/visualisation/8779558/
+
+In GDP, GII score, population, label
+2021: https://www.datawrapper.de/_/iK0by/
