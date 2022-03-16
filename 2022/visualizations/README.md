@@ -49,3 +49,4 @@
 * Wordstream advertising benchmarks (more visualizations and Datawrapper links [here](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/WordStream_advertising_benchmarks))
 
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/WordStream_advertising_benchmarks/png_220315/search/gOeaP.png" width="49%"><img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/WordStream_advertising_benchmarks/png_220315/search/6z9mE.png" width="49%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/WordStream_advertising_benchmarks/png_220315/real_estate/aP2x5.png" width="49%">
