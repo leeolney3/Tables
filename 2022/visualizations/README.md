@@ -19,32 +19,32 @@
 * Citigroup [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/citi)
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/citi/0001b4.png" width="80%">
 
-* Accenture [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/batch3/accenture)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch3/accenture/r0703.png" width="80%">
+* Accenture [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/b3/accenture)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b3/accenture/r0703.png" width="80%">
 
 * BofA [(Datawrapper link)](https://www.datawrapper.de/_/5g08h/)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch3/bofA/5g08h.png" width="60%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b3/bofA/5g08h.png" width="60%">
 
-* Bain [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/batch2/bain)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch2/bain/00008e.png" width="80%">
+* Bain [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/b2/bain)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b2/bain/00008e.png" width="80%">
 
-* Goldman [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/batch2/goldman)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch2/goldman/0000b3.png" width="80%">
+* Goldman [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/b2/goldman)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b2/goldman/0000b3.png" width="80%">
 
 * Insider Intelligence [(Datawrapper link)](https://www.datawrapper.de/_/XP8oC/)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch2/insider/XP8oC.png" width="80%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b2/insider/XP8oC.png" width="80%">
 
 * Pitchbook [(code)](https://www.datawrapper.de/_/dfCvi/)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch2/pitchbook/dfCvi.png" width="60%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b2/pitchbook/dfCvi.png" width="60%">
 
-* IBM [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/batch1/ibm)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch1/ibm/00007e.png" width="80%">
+* IBM [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/b1/ibm)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b1/ibm/00007e.png" width="80%">
 
-* Mercer [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/batch1/mercer)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch1/mercer/000053.png" width="80%">
+* Mercer [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/b1/mercer)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b1/mercer/000053.png" width="80%">
 
-* Oliver Wyman [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/batch1/oliver_wyman)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/batch1/oliver_wyman/000098.png" width="80%">
+* Oliver Wyman [(code)](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/b1/oliver_wyman)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/b1/oliver_wyman/000098.png" width="80%">
 
 * Wordstream advertising benchmarks (more visualizations and Datawrapper links [here](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/WordStream_advertising_benchmarks))
 
