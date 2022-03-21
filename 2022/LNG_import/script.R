@@ -69,7 +69,7 @@ rtable = reactable(
                         line_color = "#7209b7",
                         height = 40,
                         #highlight_points = highlight_points(max = "red", last="green"),
-                        labels=c("max","last")
+                        labels=c("max")
                       )
     )
   )
