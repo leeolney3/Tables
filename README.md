@@ -39,9 +39,10 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
     * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
     * [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by [Danielle Navarro](https://twitter.com/djnavarro)
-    * [Colors in R - Moriah Taylor's Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) by [Moriah Taylor](https://twitter.com/moriah_taylor58)
-     * [Extending colors in R - Cédric Scherer's Twitter post](https://twitter.com/CedScherer/status/1426154575858442245)
-     * [Extending colors in R - Idescribled's Twitter post](https://twitter.com/Indescribled/status/1426315389336686599)
+    * Colors in R - [Moriah Taylor's Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F)
+     * Extending colors in R - [Cédric Scherer's Twitter post](https://twitter.com/CedScherer/status/1426154575858442245)
+     * Extending colors in R - [Idescribled's Twitter post](https://twitter.com/Indescribled/status/1426315389336686599)
+    * [A couple of visualizations from ggforce](https://albert-rapp.de/post/2021-12-31-ggforce-examples/) by [Albert Rapp](https://twitter.com/rappa753)
   
   * Collections/blogs
     * [Fiona Lee #TidyTuesday Github repo](https://github.com/fi-lees/tidy_tuesday): data visualization walkthroughs
