@@ -45,21 +45,24 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [A couple of visualizations from ggforce](https://albert-rapp.de/post/2021-12-31-ggforce-examples/) by [Albert Rapp](https://twitter.com/rappa753)
   
   * Collections/blogs
-    * [Fiona Lee #TidyTuesday Github repo](https://github.com/fi-lees/tidy_tuesday): data visualization walkthroughs
-    * [Julia Silge blog](https://juliasilge.com/blog/): machine learning, text analysis
-    * [The R Graph Gallery](https://r-graph-gallery.com/): collection of data visualization tutorials  
-    * [Cédric Scherer - collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20)
-    * [Kyle Cuilla - Uncharted Data](https://uncharteddata.netlify.app/)
-    * [Tom Mock - The Mockup Blog](https://themockup.blog) 
-    * [Amit Levinson - blog](https://amitlevinson.com/) 
-    * [Christophe Nicault - articles](https://www.christophenicault.com/articles/) 
-    * [Jamie Hudson - Posts](https://jamiehudson.netlify.app/post/) 
+    * [Amit Levinson - blog](https://amitlevinson.com/)
     * [Benjamin Nowak - blog](https://bjnnowak.netlify.app/) 
+    * [Cédric Scherer - collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20)
+    * [Christophe Nicault - articles](https://www.christophenicault.com/articles/) 
     * [Daniel Oehm - Gradient Descending](http://gradientdescending.com/)
-    * [Near and Distant - blog](https://nearanddistant.co.uk/)
+    * [Federica Gazzelloni](https://federicagazzelloni.netlify.app/blog/)
+    * [Fiona Lee #TidyTuesday Github repo](https://github.com/fi-lees/tidy_tuesday): data visualization walkthroughs
     * [Georgios Karamanis - blog](https://karaman.is/blog)
     * [Isabella Velásquez - blog](https://ivelasq.rbind.io/)
-  
+    * [Jamie Hudson - posts](https://jamiehudson.netlify.app/post/)
+    * [Julia Silge blog](https://juliasilge.com/blog/): machine learning, text analysis
+    * [Kyle Cuilla - Uncharted Data](https://uncharteddata.netlify.app/)
+    * [Near and Distant - blog](https://nearanddistant.co.uk/)
+    * [Nicola Rennie - blog](https://nrennie.rbind.io/blog/)
+    * [Richard Vogg - blog](https://r-vogg-blog.netlify.app/)
+    * [Spencer Schien - posts](https://spencerschien.info/)
+    * [The R Graph Gallery](https://r-graph-gallery.com/): collection of data visualization tutorials 
+    * [Tom Mock - The Mockup Blog](https://themockup.blog) 
   
 <!-- tocstop -->
 </details>
