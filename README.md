@@ -15,6 +15,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     *  RStudio table contest 2021 [tutorial](https://twitter.com/BjnNowak/status/1472562727684124688) by [Benjamin Nowak](https://twitter.com/BjnNowak) 
     *  RStudio table contest 2021 [tutorial](https://twitter.com/JDavison_/status/1455487659833430021) by [Jack Davison](https://twitter.com/JDavison_) 
     * [Summary table example with {gt} and {gtExtras}](https://twitter.com/thomas_mock/status/1444720200771899398) by [Tom Mock](https://twitter.com/thomas_mock)
+    * Rich Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YouTube video](https://www.youtube.com/watch?v=aPRVzk9pvno)
     
   * Data visualization tutorials
     * [A quick how-to on labelling bar graphs in ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by [Cédric Scherer](https://twitter.com/CedScherer)
@@ -39,10 +40,12 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
     * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
     * [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by [Danielle Navarro](https://twitter.com/djnavarro)
+    * [A couple of visualizations from ggforce](https://albert-rapp.de/post/2021-12-31-ggforce-examples/) by [Albert Rapp](https://twitter.com/rappa753)
+    * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
     * Colors in R - [Moriah Taylor's Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F)
      * Extending colors in R - [Cédric Scherer's Twitter post](https://twitter.com/CedScherer/status/1426154575858442245)
      * Extending colors in R - [Idescribled's Twitter post](https://twitter.com/Indescribled/status/1426315389336686599)
-    * [A couple of visualizations from ggforce](https://albert-rapp.de/post/2021-12-31-ggforce-examples/) by [Albert Rapp](https://twitter.com/rappa753)
+    
   
   * Collections/blogs
     * [Amit Levinson - blog](https://amitlevinson.com/)
@@ -57,11 +60,13 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Jamie Hudson - posts](https://jamiehudson.netlify.app/post/)
     * [Julia Silge blog](https://juliasilge.com/blog/): machine learning, text analysis
     * [Kyle Cuilla - Uncharted Data](https://uncharteddata.netlify.app/)
+    * [Lisa Lendway - blog](https://lisalendway.netlify.app/blog.html)
+    * [Luis D. Verde Arregoitia - blog](https://luisdva.github.io/)
     * [Near and Distant - blog](https://nearanddistant.co.uk/)
     * [Nicola Rennie - blog](https://nrennie.rbind.io/blog/)
     * [Richard Vogg - blog](https://r-vogg-blog.netlify.app/)
     * [Spencer Schien - posts](https://spencerschien.info/)
-    * [The R Graph Gallery](https://r-graph-gallery.com/): collection of data visualization tutorials 
+    * [The R Graph Gallery](https://r-graph-gallery.com/)
     * [Tom Mock - The Mockup Blog](https://themockup.blog) 
   
 <!-- tocstop -->
