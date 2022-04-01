@@ -54,13 +54,14 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Christophe Nicault - articles](https://www.christophenicault.com/articles/) 
     * [Daniel Oehm - Gradient Descending](http://gradientdescending.com/)
     * [Federica Gazzelloni](https://federicagazzelloni.netlify.app/blog/)
-    * [Fiona Lee #TidyTuesday Github repo](https://github.com/fi-lees/tidy_tuesday): data visualization walkthroughs
+    * [Fiona Lee - #TidyTuesday Github repo](https://github.com/fi-lees/tidy_tuesday): data visualization walkthroughs
     * [Georgios Karamanis - blog](https://karaman.is/blog)
     * [Isabella Velásquez - blog](https://ivelasq.rbind.io/)
     * [Jamie Hudson - posts](https://jamiehudson.netlify.app/post/)
     * [Julia Silge blog](https://juliasilge.com/blog/): machine learning, text analysis
     * [Kyle Cuilla - Uncharted Data](https://uncharteddata.netlify.app/)
     * [Lisa Lendway - blog](https://lisalendway.netlify.app/blog.html)
+    * [Lisa DeBruine - 30-day Chart Challenge: 2022 collection](https://debruine.github.io/30-day-chart-challenge/)
     * [Luis D. Verde Arregoitia - blog](https://luisdva.github.io/)
     * [Near and Distant - blog](https://nearanddistant.co.uk/)
     * [Nicola Rennie - blog](https://nrennie.rbind.io/blog/)
