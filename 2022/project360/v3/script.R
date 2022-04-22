@@ -176,7 +176,7 @@ dft %>%
   geom_point(aes(fill=s), shape=21, color="black", size=3, show.legend = F) +
   scale_color_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
   scale_fill_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
-  scale_y_continuous(expand=c(0,0),limits=c(0,40)) +
+  scale_y_continuous(expand=c(0,0),limits=c(0,40),labels=scales::percent_format(scale=1)) +
   cowplot::theme_minimal_hgrid(12) +
   theme(text=element_text(family=f1),
         legend.position="top",
@@ -200,7 +200,7 @@ dfu %>%
   ) +
   scale_color_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
   cowplot::theme_minimal_hgrid(12) +
-  scale_y_continuous(expand=c(0,0), limits=c(0,40)) +
+  scale_y_continuous(expand=c(0,0), limits=c(0,40),labels=scales::percent_format(scale=1)) +
   theme(text=element_text(family=f1),
         legend.position="top",
         legend.direction = "vertical",
