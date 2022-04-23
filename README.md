@@ -1,6 +1,6 @@
 # Tables, Charts and Maps
 
-Repo containing my attempts at making tables, charts and maps in R for personal learning.  
+This repository is created to document my process of learning data visualization in R and to share resources that I've found helpful in the learning process. 
 
 Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](mailto:leeolney3@gmail.com).
 
@@ -73,31 +73,47 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <!-- tocstop -->
 </details>
   
-## 2022
-* Cities Skylines in-game maps [(code)](https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/Cities_Skylines.R)
+## Visualizations
 
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/cs_table3.png" width="80%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/tsto_content/tsto_content_p1.png" width="80%">
 
-* Potatoes Production in EU27+UK [(code)](https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes.R)
+***
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/cs_table3.png">
 
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p1.png" width="49%"> <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p2.png" width="49%">
-
-* California household water supply shortage [(code)](https://github.com/leeolney3/Tables/blob/main/2022/CA_water/CA_water.R)
-
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/CA_water/CA_water.png" width="49%">
-
-## 2021
-
-<img src="https://github.com/leeolney3/Tables/blob/main/2021/tsto_content/tsto_content_p1.png" width="70%">
-
+***
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t1.png">
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t2.png">
 
+***
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/dry_beans/dry_beans_t1.png">
 
-<img src="https://github.com/leeolney3/Tables/blob/main/2021/wildlife/wildlife_p1.png">
-
+***
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/halloween_candy/halloween_candy_t1.png">
+
+***
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p1.png" width="49%"> <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p2.png" width="49%">
+
+***
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/oecd/0000ae.png" width="80%">
+
+***
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_bubble/plot_v2/5_2a.png" width="70%">
+
+***
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/threatened_species/threatened_species.png" width="80%">
+
+***
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/project360/v3/b4.png" width="80%">
+
+
+
+
+
+
+
+
+
+
 
 
 
