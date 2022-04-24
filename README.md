@@ -54,6 +54,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Christophe Nicault - articles](https://www.christophenicault.com/articles/) 
     * [Colin Angus - #30DayMapChallenge Github](https://github.com/VictimOfMaths/30DayMapChallenge2021)
     * [Daniel Oehm - Gradient Descending](http://gradientdescending.com/)
+    * [Dr. Dominic Royé - blog](https://dominicroye.github.io/en/)
     * [Federica Gazzelloni](https://federicagazzelloni.netlify.app/blog/)
     * [Fiona Lee - #TidyTuesday Github repo](https://github.com/fi-lees/tidy_tuesday): data visualization walkthroughs
     * [Georgios Karamanis - blog](https://karaman.is/blog)
