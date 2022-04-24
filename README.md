@@ -41,6 +41,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
     * [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by [Danielle Navarro](https://twitter.com/djnavarro)
     * [A couple of visualizations from ggforce](https://albert-rapp.de/post/2021-12-31-ggforce-examples/) by [Albert Rapp](https://twitter.com/rappa753)
+    * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
     * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
     * Colors in R - [Moriah Taylor's Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F)
      * Extending colors in R - [Cédric Scherer's Twitter post](https://twitter.com/CedScherer/status/1426154575858442245)
