@@ -8,7 +8,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   <summary><b>Helpful R resources</b> (click to expand)</summary>
 
 <!-- toc -->
-  * Tables cookbook and tutorials
+  * Tables cookbook and tutorials (alphabetical)
     * [{gtExtras}](https://jthomasmock.github.io/gtExtras/) package by [Tom Mock](https://twitter.com/thomas_mock)
     * [{reactablefmtr} tutorials](https://kcuilla.github.io/reactablefmtr/articles/sparklines.html) package by [Kyle Cuilla](https://twitter.com/kc_analytics)
     * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
@@ -17,7 +17,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Summary table example with {gt} and {gtExtras}](https://twitter.com/thomas_mock/status/1444720200771899398) by [Tom Mock](https://twitter.com/thomas_mock)
     * Rich Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YouTube video](https://www.youtube.com/watch?v=aPRVzk9pvno)
     
-  * Data visualization tutorials
+  * Data visualization tutorials (alphabetical)
     * [A quick how-to on labelling bar graphs in ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by [Cédric Scherer](https://twitter.com/CedScherer)
     * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by [Clare West](https://twitter.com/claree_west)
     * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by [Tobias Stalder](https://twitter.com/toeb18)
@@ -47,11 +47,12 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
      * Extending colors in R - [Idescribled's Twitter post](https://twitter.com/Indescribled/status/1426315389336686599)
     
   
-  * Collections/blogs
+  * Collections/blogs (alphabetical)
     * [Amit Levinson - blog](https://amitlevinson.com/)
     * [Benjamin Nowak - blog](https://bjnnowak.netlify.app/) 
     * [Cédric Scherer - collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20)
     * [Christophe Nicault - articles](https://www.christophenicault.com/articles/) 
+    * [Colin Angus - #30DayMapChallenge Github](https://github.com/VictimOfMaths/30DayMapChallenge2021)
     * [Daniel Oehm - Gradient Descending](http://gradientdescending.com/)
     * [Federica Gazzelloni](https://federicagazzelloni.netlify.app/blog/)
     * [Fiona Lee - #TidyTuesday Github repo](https://github.com/fi-lees/tidy_tuesday): data visualization walkthroughs
@@ -67,13 +68,17 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Nicola Rennie - blog](https://nrennie.rbind.io/blog/)
     * [Richard Vogg - blog](https://r-vogg-blog.netlify.app/)
     * [Spencer Schien - posts](https://spencerschien.info/)
+    * [Tanya Shapiro - interactive visuals](https://www.tanyashapiro.com/interactive-visuals)
     * [The R Graph Gallery](https://r-graph-gallery.com/)
     * [Tom Mock - The Mockup Blog](https://themockup.blog) 
   
 <!-- tocstop -->
 </details>
-  
-## Visualizations
+
+<details>
+  <summary><b>Visualizations</b> (click to expand)</summary>
+
+<!-- toc -->
 
 ### Simpsons: Tapped out game content ([code](https://github.com/leeolney3/Tables/tree/main/2021/tsto_content))
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/tsto_content/tsto_content_p1.png" width="80%">
@@ -115,7 +120,8 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ### Average turnover rate ([code](https://github.com/leeolney3/Tables/blob/main/2022/project360/))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/project360/v3/b4.png" width="90%">
 
-
+<!-- tocstop -->
+</details>
 
 
 
