@@ -75,35 +75,45 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   
 ## Visualizations
 
+### Simpsons: Tapped out game content ([code](https://github.com/leeolney3/Tables/tree/main/2021/tsto_content))
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/tsto_content/tsto_content_p1.png" width="80%">
 
 ***
+### Cities skylines maps ([code](https://github.com/leeolney3/Tables/tree/main/2022/Cities_Skylines))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/cs_table3.png">
 
 ***
+### Internal displacement ([code](https://github.com/leeolney3/Tables/tree/main/2021/displacement))
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t1.png">
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/displacement/displacement_t2.png">
 
 ***
-<img src="https://github.com/leeolney3/Tables/blob/main/2021/dry_beans/dry_beans_t1.png">
-
-***
-<img src="https://github.com/leeolney3/Tables/blob/main/2021/halloween_candy/halloween_candy_t1.png">
-
-***
+### Potato production ([code](https://github.com/leeolney3/Tables/tree/main/2022/potatoes))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p1.png" width="49%"> <img src="https://github.com/leeolney3/Tables/blob/main/2022/potatoes/potatoes_p2.png" width="49%">
 
 ***
+### Dry beans classification ([code](https://github.com/leeolney3/Tables/tree/main/2021/dry_beans))
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/dry_beans/dry_beans_t1.png">
+
+***
+### Halloween candy ([code](https://github.com/leeolney3/Tables/tree/main/2021/halloween_candy))
+<img src="https://github.com/leeolney3/Tables/blob/main/2021/halloween_candy/halloween_candy_t1.png">
+
+***
+### Labour market ([code](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/oecd))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/oecd/0000ae.png" width="80%">
 
 ***
+### Global innovation index ([code](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/wipo_bubble))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_bubble/plot_v2/5_2a.png" width="70%">
 
 ***
+### Threatened species ([code](https://github.com/leeolney3/Tables/tree/main/2022/threatened_species))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/threatened_species/threatened_species.png" width="80%">
 
 ***
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/project360/v3/b4.png" width="80%">
+### Average turnover rate ([code](https://github.com/leeolney3/Tables/blob/main/2022/project360/))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/project360/v3/b4.png" width="90%">
 
 
 
