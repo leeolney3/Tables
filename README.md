@@ -22,6 +22,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by [Clare West](https://twitter.com/claree_west)
     * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by [Tobias Stalder](https://twitter.com/toeb18)
     * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez(https://twitter.com/ivelasq3)
+    * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by [Matthew Kay](https://twitter.com/mjskay) 
     * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science on [R-bloggers](https://www.r-bloggers.com/)
     * [ggplot Wizardry Hands-On](https://z3tt.github.io/OutlierConf2021/) by [Cédric Scherer](https://twitter.com/CedScherer)
     * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
@@ -31,6 +32,8 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
      * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by [not quite my grey](https://twitter.com/quite_grey/status/1411785842520203266)
     * [Time series with conditional area fill and geofaceting in ggplot2](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by [Georgios Karamanis](https://twitter.com/geokaramanis) on [R Graph Gallery](https://r-graph-gallery.com/)
     * [Uncertainty Examples](https://github.com/mjskay/uncertainty-examples) by [Matthew Kay](https://twitter.com/mjskay)
+      * Tidydata and Bayesian analysis making uncertainty visualization fun ([Youtube video](https://www.youtube.com/watch?v=vqzO-9LSoG4&t=2s))
+      * A biased tour of uncertainty visualization zoo ([Youtube video](https://www.youtube.com/watch?v=E1kSnWvqCw0&t=1780s))
     * [Visualizing distributions with-raincloud plots and how to create them with ggplot2](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/) by [Cédric Scherer](https://twitter.com/CedScherer)    
     * Recreations
        * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by [Bob Rudis](https://twitter.com/hrbrmstr)
