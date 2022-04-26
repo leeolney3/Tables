@@ -5,7 +5,7 @@ This repository is created to document my process of learning data visualization
 Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](mailto:leeolney3@gmail.com).
 
 <details>
-  <summary><b>Helpful R resources</b> (click to expand)</summary>
+  <summary><b>Links to helpful resources</b> (click to expand)</summary>
 
 <!-- toc -->
   * Tables cookbook and tutorials (alphabetical)
@@ -40,19 +40,26 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
         * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by [Ansgar Wolsing](https://twitter.com/_ansgar)
   
   * Explainers/others   
-    
     * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
     * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
     * [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by [Danielle Navarro](https://twitter.com/djnavarro)
     * [A couple of visualizations from ggforce](https://albert-rapp.de/post/2021-12-31-ggforce-examples/) by [Albert Rapp](https://twitter.com/rappa753)
     * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
     * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
+    * [Cédric Scherer's Twitter thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
+    * [Colin Angus's Twitter thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization thought process.
+    * [Policy Viz](https://policyviz.com/) blog post on [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/)
+    
+  
+  * Colors
+    * [Lisa Charlotte Muth](https://twitter.com/lisacmuth) on [Datawrapper Blog](https://blog.datawrapper.de/)
+       * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
+       * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
+       * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
+    * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)
     * Colors in R - [Moriah Taylor's Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F)
      * Extending colors in R - [Cédric Scherer's Twitter post](https://twitter.com/CedScherer/status/1426154575858442245)
      * Extending colors in R - [Idescribled's Twitter post](https://twitter.com/Indescribled/status/1426315389336686599)
-    * [Cédric Scherer's Twitter thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
-    * [Colin Angus's Twitter thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization thought process.
-    
   
   * Collections/blogs (alphabetical)
     * [Amit Levinson - blog](https://amitlevinson.com/)
