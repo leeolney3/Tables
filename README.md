@@ -127,6 +127,10 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ***
 ### Average turnover rate ([code](https://github.com/leeolney3/Tables/blob/main/2022/project360/))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/project360/v3/b4.png" width="90%">
+  
+***
+### Recreating FiveThirtyEight Gantt chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recreating_538_gantt/))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recreating_538_gantt/p1.png">  
 
 <!-- tocstop -->
 </details>
