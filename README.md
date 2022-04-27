@@ -40,6 +40,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   * Explainers/others   
     * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
     * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
+    * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
     * [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by [Danielle Navarro](https://twitter.com/djnavarro)
     * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) by [Albert Rapp](https://twitter.com/rappa753)
     * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
@@ -97,10 +98,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <!-- tocstop -->
 </details>
 
-<details>
-  <summary><b>Visualizations</b> (click to expand)</summary>
-
-<!-- toc -->
+## Visualizations 
 
 ### Simpsons: Tapped out game content ([code](https://github.com/leeolney3/Tables/tree/main/2021/tsto_content))
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/tsto_content/tsto_content_p1.png" width="80%">
@@ -144,23 +142,12 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   
 ***
 ### Recreating FiveThirtyEight Gantt chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_538_gantt/))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_538_gantt/p1.png">  
+* Original chart by FiveThirtyEight [here](https://fivethirtyeight.com/features/who-the-census-misses/)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_538_gantt/p1.png" width="90%">  
 
 ***  
 ### Recreating The Economist chart with confidence interval and central estimate ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_economist_cf/))
+* Original chart by The Economist [here](https://blog.datawrapper.de/wp-content/uploads/2022/04/image24-3.png)
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_economist_cf/p1.png" width="70%">    
-
-<!-- tocstop -->
-</details>
-
-
-
-
-
-
-
-
-
-
 
 
