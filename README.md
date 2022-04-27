@@ -11,8 +11,8 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   * Tables cookbook and tutorials 
     * [{gtExtras}](https://jthomasmock.github.io/gtExtras/) package by [Tom Mock](https://twitter.com/thomas_mock)
     * [{reactablefmtr} tutorials](https://kcuilla.github.io/reactablefmtr/articles/sparklines.html) package by [Kyle Cuilla](https://twitter.com/kc_analytics)
-    * [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)
     * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
+    * [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)
     *  RStudio table contest 2021 [tutorial](https://twitter.com/BjnNowak/status/1472562727684124688) by [Benjamin Nowak](https://twitter.com/BjnNowak) 
     *  RStudio table contest 2021 [tutorial](https://twitter.com/JDavison_/status/1455487659833430021) by [Jack Davison](https://twitter.com/JDavison_) 
     * [Summary table example with {gt} and {gtExtras}](https://twitter.com/thomas_mock/status/1444720200771899398) by [Tom Mock](https://twitter.com/thomas_mock)
@@ -45,9 +45,10 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
     * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
     * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
-    * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
-    * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
-    * Colin Angus's [Twitter thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization thought process.
+    * Twitter:
+      * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
+      * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
+      * Colin Angus's [Twitter thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization thought process.
     
   
   * Colors
@@ -57,9 +58,10 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
        * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
     * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)
     * [4 Ways to use colors in ggplot more efficiently](https://albert-rapp.de/post/2022-02-19-ggplot2-color-tips-from-datawrapper/) by [Albert Rapp](https://twitter.com/rappa753)
-    * Colors in R - [Moriah Taylor's Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F)
-     * Extending colors in R - [Cédric Scherer's Twitter post](https://twitter.com/CedScherer/status/1426154575858442245)
-     * Extending colors in R - [Idescribled's Twitter post](https://twitter.com/Indescribled/status/1426315389336686599)
+    * Twitter:
+      * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
+      * Cédric Scherer's [Twitter post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
+      * [Idescribled's [Twitter post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
   
   * Visualising distributions
     * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by [Matthew Kay](https://twitter.com/mjskay) 
@@ -109,6 +111,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * Nicola Rennie [Github](https://github.com/nrennie), [blog](https://nrennie.rbind.io/blog/)
     * Richard Vogg [Github](https://github.com/richardvogg), [blog](https://r-vogg-blog.netlify.app/)
     * Spencer Schien [Github](https://github.com/Pecners), [website](https://spencerschien.info/)
+    * Javier Tamayo-Leiva [Github](https://github.com/TamayoLeivaJ)
     * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
     * Tom Mock [The Mockup Blog](https://themockup.blog) 
   
