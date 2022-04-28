@@ -1,5 +1,6 @@
 # Recreating The Economist: Third time's the charm chart
 # Data: https://www.medrxiv.org/content/10.1101/2022.03.22.22272769v1.full-text, https://www.medrxiv.org/content/medrxiv/early/2022/03/22/2022.03.22.22272769/T2/graphic-4.large.jpg
+# Original plot: https://blog.datawrapper.de/wp-content/uploads/2022/04/image24-3.png
 
 library(tidyverse)
 library(ggtext)
