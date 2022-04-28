@@ -40,8 +40,9 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   
   * Explainers/others   
     * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
+    * [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/) blog post on [Policy Viz](https://policyviz.com/) 
     * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
-    * [Policy Viz](https://policyviz.com/) blog post on [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/)
+    * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by [Tom Mock](https://twitter.com/thomas_mock)
     * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
     * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
     * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
@@ -90,16 +91,20 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * Charlie Gallagher [Github](https://github.com/charlie-gallagher)
     * Christian Gebhard [Github](https://github.com/nucleic-acid) ,[blog](https://jollydata.blog/blog.html)
     * Christophe Nicault [Github](https://github.com/cnicault), [website](https://www.christophenicault.com/articles/) 
+    * Colin Angus [Github](https://github.com/VictimOfMaths)
     * Daniel Oehm [website](http://gradientdescending.com/)
     * Dr. Dominic Royé [Github](https://github.com/dominicroye), [blog](https://dominicroye.github.io/en/)
     * Federica Gazzelloni [Github](https://github.com/Fgazzelloni), [blog](https://federicagazzelloni.netlify.app/blog/)
     * Fiona Lee [Github](https://github.com/fi-lees) for #TidyTuesday data visualization walkthroughs
     * Georgios Karamanis [Github](https://github.com/gkaramanis), [blog](https://karaman.is/blog)
+    * Ícaro Bernardes [Github](https://github.com/IcaroBernardes)
     * Isabella Velásquez [blog](https://ivelasq.rbind.io/)
     * Isaac Arroyo [Github](https://github.com/isaacarroyov)
     * Jack Davison [Github](https://github.com/jack-davison)
     * Jake Kaupp [Github](https://github.com/jkaupp)
     * Jamie Hudson [Github](https://github.com/HudsonJamie), [website](https://jamiehudson.netlify.app/post/)
+    * Javier Tamayo-Leiva [Github](https://github.com/TamayoLeivaJ)
+    * Jonathan Kitt [Github](https://github.com/KittJonathan)
     * Julia Silge [blog](https://juliasilge.com/blog/)
     * Kaustav Sen [Github](https://github.com/kaustavSen)
     * Kyle Cuilla [website](https://uncharteddata.netlify.app/)
@@ -109,11 +114,12 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * Luis Freites [Github](https://github.com/luisfrein), [blog](https://luisdva.github.io/)
     * Near and Distant [Github](https://github.com/NearAndDistant), [blog](https://nearanddistant.co.uk/)
     * Nicola Rennie [Github](https://github.com/nrennie), [blog](https://nrennie.rbind.io/blog/)
+    * Pablo Alvarez [Github](https://github.com/Pablo-Alvarez-Baeza)
     * Richard Vogg [Github](https://github.com/richardvogg), [blog](https://r-vogg-blog.netlify.app/)
     * Spencer Schien [Github](https://github.com/Pecners), [website](https://spencerschien.info/)
-    * Javier Tamayo-Leiva [Github](https://github.com/TamayoLeivaJ)
     * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
-    * Tom Mock [The Mockup Blog](https://themockup.blog) 
+    * Thom-Ivar van Dijk [Github](https://github.com/TIvanDijk)
+    * Tom Mock [Github](https://github.com/jthomasmock), [The Mockup Blog](https://themockup.blog) 
   
   
 <!-- tocstop -->
