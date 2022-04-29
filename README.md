@@ -178,4 +178,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 * Original chart by The Economist [here](https://blog.datawrapper.de/wp-content/uploads/2022/04/image24-3.png)
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_economist_cf/p1.png" width="70%">    
 
+***  
+### Census tract urbanization ([code](https://github.com/leeolney3/Tables/tree/main/2022/census_tract_urbanization))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/census_tract_urbanization/p1.png" width="70%"> 
 
