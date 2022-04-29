@@ -97,6 +97,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * Federica Gazzelloni [Github](https://github.com/Fgazzelloni), [blog](https://federicagazzelloni.netlify.app/blog/)
     * Fiona Lee [Github](https://github.com/fi-lees) for #TidyTuesday data visualization walkthroughs
     * Georgios Karamanis [Github](https://github.com/gkaramanis), [blog](https://karaman.is/blog)
+    * Hugh Graham [Github](https://github.com/h-a-graham)
     * Ícaro Bernardes [Github](https://github.com/IcaroBernardes)
     * Isabella Velásquez [blog](https://ivelasq.rbind.io/)
     * Isaac Arroyo [Github](https://github.com/isaacarroyov)
