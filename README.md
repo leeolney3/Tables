@@ -157,12 +157,16 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/oecd/0000ae.png" width="80%">
 
 ***
-### Global innovation index ([code](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/wipo_bubble))
+### Start up funding ([code](https://github.com/leeolney3/Tables/blob/main/2022/visualizations/startup_funding))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/startup_funding/table_v1.png" width="80%">
+
+***
+### Global innovation index 2021 ([code](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/wipo_bubble))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_bubble/plot_v2/5_2a.png" width="70%">
 
 ***
-### Threatened species ([code](https://github.com/leeolney3/Tables/tree/main/2022/threatened_species))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/threatened_species/threatened_species.png" width="80%">
+### Global innovation index 2020 table ([code](https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_table/))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_table/table_wipo_v1.png" width="100%">
 
 ***
 ### Average turnover rate ([code](https://github.com/leeolney3/Tables/blob/main/2022/project360/))
@@ -181,4 +185,8 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ***  
 ### Census tract urbanization ([code](https://github.com/leeolney3/Tables/tree/main/2022/census_tract_urbanization))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/census_tract_urbanization/p1.png" width="70%"> 
+
+***  
+### Registered domains in the .gov zone ([code](https://github.com/leeolney3/Tables/tree/main/2022/dotgov))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/dotgov/t1.png" width="100%">
 
