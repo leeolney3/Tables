@@ -40,6 +40,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   
   * Explainers/others   
     * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
+      * Christian Burkhart's [ggplot2 cheatsheets](https://christianb.gumroad.com/l/ggplot2cheatsheets) 
     * [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/) blog post on [Policy Viz](https://policyviz.com/) 
     * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
     * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by [Tom Mock](https://twitter.com/thomas_mock)
@@ -50,6 +51,9 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
       * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
       * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
       * Colin Angus's [Twitter thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization thought process.
+      * [@WeAreRLadies](https://twitter.com/WeAreRLadies) tips/ideas/analysis 
+        * [day 1](https://twitter.com/WeAreRLadies/status/1515876540394852354), [day 2](https://twitter.com/WeAreRLadies/status/1516256907836674053), [day 3](https://twitter.com/WeAreRLadies/status/1516671536497045506), [day 4](https://twitter.com/WeAreRLadies/status/1516997091109015552), [day 5](https://twitter.com/WeAreRLadies/status/1517402976062967808), [day 6](https://twitter.com/WeAreRLadies/status/1517749920262160384) twitter thread
+        * [Code](https://github.com/emitanaka/wearerladies) on Github
     
   
   * Colors
@@ -117,6 +121,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * Nicola Rennie [Github](https://github.com/nrennie), [blog](https://nrennie.rbind.io/blog/)
     * Pablo Alvarez [Github](https://github.com/Pablo-Alvarez-Baeza)
     * Richard Vogg [Github](https://github.com/richardvogg), [blog](https://r-vogg-blog.netlify.app/)
+    * Shannon Pileggi [PipingHotData - blog](https://www.pipinghotdata.com/blog.html)
     * Spencer Schien [Github](https://github.com/Pecners), [website](https://spencerschien.info/)
     * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
     * Thom-Ivar van Dijk [Github](https://github.com/TIvanDijk)
