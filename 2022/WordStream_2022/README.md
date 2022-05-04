@@ -1,6 +1,6 @@
-# 2022 WordStream Search Advertisting Benchmarks
+# 2022 WordStream Search Advertising Benchmarks
 
-## List of visualisations (links to Datawrapper)
+## Datawrapper visualizations
 
 * [2021 vs 2022 Avg. Cost Per Click](https://datawrapper.dwcdn.net/j2vza/2/)
 * [2021 vs 2022 Avg. Cost Per Lead](https://datawrapper.dwcdn.net/8VLJz/1/)
@@ -14,7 +14,7 @@
 
 
 ## png export
-Click on image to see visualisation in Datawrapper
+Click on image to see visualization in Datawrapper
 
 [![name](https://github.com/leeolney3/Tables/blob/main/2022/WordStream_2022/png/j2vza.png)](https://datawrapper.dwcdn.net/j2vza/2/)
 
