@@ -114,6 +114,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * Javier Tamayo-Leiva [Github](https://github.com/TamayoLeivaJ)
     * Jonathan Kitt [Github](https://github.com/KittJonathan)
     * Julia Silge [blog](https://juliasilge.com/blog/)
+    * Katie Press [blog](https://kpress.dev/blog/tidy-tuesday-nyt-bestsellers/)
     * Kaustav Sen [Github](https://github.com/kaustavSen)
     * Kyle Cuilla [website](https://uncharteddata.netlify.app/)
     * Lisa DeBruine [#30DayChartChallenge tutorials](https://debruine.github.io/30DCC-2022/)
