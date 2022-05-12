@@ -39,6 +39,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   
   
   * Explainers/others   
+    * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by [Yan Holtz @R_Graph_Gallery](https://twitter.com/R_Graph_Gallery)
     * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
       * Christian Burkhart's [ggplot2 cheatsheets](https://christianb.gumroad.com/l/ggplot2cheatsheets) 
     * [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/) blog post on [Policy Viz](https://policyviz.com/) 
@@ -51,6 +52,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
       * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
       * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
       * Colin Angus's [Twitter thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization thought process.
+      * François Valentin's [Twitter thread](https://twitter.com/valen10francois/status/1524040709862576131?s=21&t=TRQljRvuYXzrmKPaNZ3djQ) on old historic maps overlap with modern political maps (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
       * [@WeAreRLadies](https://twitter.com/WeAreRLadies) tips/ideas/analysis 
         * [day 1](https://twitter.com/WeAreRLadies/status/1515876540394852354), [day 2](https://twitter.com/WeAreRLadies/status/1516256907836674053), [day 3](https://twitter.com/WeAreRLadies/status/1516671536497045506), [day 4](https://twitter.com/WeAreRLadies/status/1516997091109015552), [day 5](https://twitter.com/WeAreRLadies/status/1517402976062967808), [day 6](https://twitter.com/WeAreRLadies/status/1517749920262160384) twitter thread
         * [Code](https://github.com/emitanaka/wearerladies) on Github
