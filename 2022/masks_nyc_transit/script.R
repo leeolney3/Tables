@@ -47,7 +47,7 @@ df1 %>%
   scale_fill_manual(values=c("#758d99")) +
   scale_y_continuous(labels=scales::percent, limits=c(0.6,1), expand=c(0,0)) +
   scale_x_date(breaks="3 months",date_minor_breaks = "1 month", guide = "axis_minor",
-               limit=range(df2$value), labels=scales::date_format("%d %b\n%Y")) +
+               limit=range(df2$value), labels=scales::date_format("%b %d\n%Y")) +
   theme_minimal() +
   theme(legend.position = "top",
         panel.grid = element_line(size=.4),
