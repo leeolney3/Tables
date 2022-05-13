@@ -1,0 +1,7995 @@
+Entity,Code,Year,Electricity from hydro (TWh)
+Afghanistan,AFG,2000,0.31
+Afghanistan,AFG,2001,0.5
+Afghanistan,AFG,2002,0.56
+Afghanistan,AFG,2003,0.63
+Afghanistan,AFG,2004,0.56
+Afghanistan,AFG,2005,0.59
+Afghanistan,AFG,2006,0.64
+Afghanistan,AFG,2007,0.75
+Afghanistan,AFG,2008,0.54
+Afghanistan,AFG,2009,0.78
+Afghanistan,AFG,2010,0.75
+Afghanistan,AFG,2011,0.6
+Afghanistan,AFG,2012,0.71
+Afghanistan,AFG,2013,0.86
+Afghanistan,AFG,2014,0.97
+Afghanistan,AFG,2015,1
+Afghanistan,AFG,2016,1.02
+Afghanistan,AFG,2017,1.05
+Afghanistan,AFG,2018,0.93
+Afghanistan,AFG,2019,0.84
+Afghanistan,AFG,2020,0.62
+Africa,,2000,74.51
+Africa,,2001,81.21
+Africa,,2002,83.4
+Africa,,2003,81.69
+Africa,,2004,86.54
+Africa,,2005,88.72
+Africa,,2006,91.92
+Africa,,2007,93.99
+Africa,,2008,95.63
+Africa,,2009,98.68
+Africa,,2010,109.5
+Africa,,2011,110.57
+Africa,,2012,111.66
+Africa,,2013,116.88
+Africa,,2014,122.18
+Africa,,2015,120.03
+Africa,,2016,119.05
+Africa,,2017,124.99
+Africa,,2018,130.67
+Africa,,2019,132.43
+Africa,,2020,139.46
+Albania,ALB,1990,2.85
+Albania,ALB,1991,3.52
+Albania,ALB,1992,3.23
+Albania,ALB,1993,3.31
+Albania,ALB,1994,3.77
+Albania,ALB,1995,4.2
+Albania,ALB,1996,5.73
+Albania,ALB,1997,5.03
+Albania,ALB,1998,4.92
+Albania,ALB,1999,5.28
+Albania,ALB,2000,4.59
+Albania,ALB,2001,3.56
+Albania,ALB,2002,3.51
+Albania,ALB,2003,4.89
+Albania,ALB,2004,5.47
+Albania,ALB,2005,5.37
+Albania,ALB,2006,5.43
+Albania,ALB,2007,2.79
+Albania,ALB,2008,3.8
+Albania,ALB,2009,5.2
+Albania,ALB,2010,7.57
+Albania,ALB,2011,4.13
+Albania,ALB,2012,4.72
+Albania,ALB,2013,6.96
+Albania,ALB,2014,4.72
+Albania,ALB,2015,5.89
+Albania,ALB,2016,7.78
+Albania,ALB,2017,4.52
+Albania,ALB,2018,8.55
+Albania,ALB,2019,5.18
+Albania,ALB,2020,5.28
+Algeria,DZA,1965,0.4
+Algeria,DZA,1966,0.355
+Algeria,DZA,1967,0.41
+Algeria,DZA,1968,0.563
+Algeria,DZA,1969,0.361
+Algeria,DZA,1970,0.58
+Algeria,DZA,1971,0.33
+Algeria,DZA,1972,0.495
+Algeria,DZA,1973,0.752
+Algeria,DZA,1974,0.497
+Algeria,DZA,1975,0.328
+Algeria,DZA,1976,0.389
+Algeria,DZA,1977,0.269
+Algeria,DZA,1978,0.25
+Algeria,DZA,1979,0.291
+Algeria,DZA,1980,0.257
+Algeria,DZA,1981,0.366
+Algeria,DZA,1982,0.479
+Algeria,DZA,1983,0.235
+Algeria,DZA,1984,0.452
+Algeria,DZA,1985,0.646
+Algeria,DZA,1986,0.25
+Algeria,DZA,1987,0.499
+Algeria,DZA,1988,0.183
+Algeria,DZA,1989,0.226
+Algeria,DZA,1990,0.135
+Algeria,DZA,1991,0.293
+Algeria,DZA,1992,0.199
+Algeria,DZA,1993,0.353
+Algeria,DZA,1994,0.166
+Algeria,DZA,1995,0.193
+Algeria,DZA,1996,0.135
+Algeria,DZA,1997,0.075
+Algeria,DZA,1998,0.215
+Algeria,DZA,1999,0.203
+Algeria,DZA,2000,0.05
+Algeria,DZA,2001,0.07
+Algeria,DZA,2002,0.06
+Algeria,DZA,2003,0.26
+Algeria,DZA,2004,0.25
+Algeria,DZA,2005,0.55
+Algeria,DZA,2006,0.22
+Algeria,DZA,2007,0.22
+Algeria,DZA,2008,0.28
+Algeria,DZA,2009,0.3
+Algeria,DZA,2010,0.17
+Algeria,DZA,2011,0.5
+Algeria,DZA,2012,0.62
+Algeria,DZA,2013,0.33
+Algeria,DZA,2014,0.25
+Algeria,DZA,2015,0.14
+Algeria,DZA,2016,0.22
+Algeria,DZA,2017,0.06
+Algeria,DZA,2018,0.12
+Algeria,DZA,2019,0.15
+Algeria,DZA,2020,0.09
+American Samoa,ASM,2000,0
+American Samoa,ASM,2001,0
+American Samoa,ASM,2002,0
+American Samoa,ASM,2003,0
+American Samoa,ASM,2004,0
+American Samoa,ASM,2005,0
+American Samoa,ASM,2006,0
+American Samoa,ASM,2007,0
+American Samoa,ASM,2008,0
+American Samoa,ASM,2009,0
+American Samoa,ASM,2010,0
+American Samoa,ASM,2011,0
+American Samoa,ASM,2012,0
+American Samoa,ASM,2013,0
+American Samoa,ASM,2014,0
+American Samoa,ASM,2015,0
+American Samoa,ASM,2016,0
+American Samoa,ASM,2017,0
+American Samoa,ASM,2018,0
+American Samoa,ASM,2019,0
+American Samoa,ASM,2020,0
+Angola,AGO,2000,0.9
+Angola,AGO,2001,1.01
+Angola,AGO,2002,1.13
+Angola,AGO,2003,1.23
+Angola,AGO,2004,1.73
+Angola,AGO,2005,2.2
+Angola,AGO,2006,2.64
+Angola,AGO,2007,2.47
+Angola,AGO,2008,3.1
+Angola,AGO,2009,3.06
+Angola,AGO,2010,3.67
+Angola,AGO,2011,3.97
+Angola,AGO,2012,3.73
+Angola,AGO,2013,4.72
+Angola,AGO,2014,4.99
+Angola,AGO,2015,5.04
+Angola,AGO,2016,5.76
+Angola,AGO,2017,7.58
+Angola,AGO,2018,8.65
+Angola,AGO,2019,9.03
+Angola,AGO,2020,10.08
+Antigua and Barbuda,ATG,2000,0
+Antigua and Barbuda,ATG,2001,0
+Antigua and Barbuda,ATG,2002,0
+Antigua and Barbuda,ATG,2003,0
+Antigua and Barbuda,ATG,2004,0
+Antigua and Barbuda,ATG,2005,0
+Antigua and Barbuda,ATG,2006,0
+Antigua and Barbuda,ATG,2007,0
+Antigua and Barbuda,ATG,2008,0
+Antigua and Barbuda,ATG,2009,0
+Antigua and Barbuda,ATG,2010,0
+Antigua and Barbuda,ATG,2011,0
+Antigua and Barbuda,ATG,2012,0
+Antigua and Barbuda,ATG,2013,0
+Antigua and Barbuda,ATG,2014,0
+Antigua and Barbuda,ATG,2015,0
+Antigua and Barbuda,ATG,2016,0
+Antigua and Barbuda,ATG,2017,0
+Antigua and Barbuda,ATG,2018,0
+Antigua and Barbuda,ATG,2019,0
+Antigua and Barbuda,ATG,2020,0
+Argentina,ARG,1965,1.225
+Argentina,ARG,1966,1.241
+Argentina,ARG,1967,1.271
+Argentina,ARG,1968,1.498
+Argentina,ARG,1969,1.344
+Argentina,ARG,1970,1.555
+Argentina,ARG,1971,1.544
+Argentina,ARG,1972,1.504
+Argentina,ARG,1973,2.994
+Argentina,ARG,1974,5.028
+Argentina,ARG,1975,5.201
+Argentina,ARG,1976,5.013
+Argentina,ARG,1977,5.766
+Argentina,ARG,1978,7.752
+Argentina,ARG,1979,10.66
+Argentina,ARG,1980,15.144
+Argentina,ARG,1981,14.685
+Argentina,ARG,1982,17.593
+Argentina,ARG,1983,18.419
+Argentina,ARG,1984,19.88
+Argentina,ARG,1985,20.646
+Argentina,ARG,1986,21.009
+Argentina,ARG,1987,21.841
+Argentina,ARG,1988,15.033
+Argentina,ARG,1989,12.965
+Argentina,ARG,1990,17.876
+Argentina,ARG,1991,16.221
+Argentina,ARG,1992,19.779
+Argentina,ARG,1993,23.555
+Argentina,ARG,1994,27.973
+Argentina,ARG,1995,28.458
+Argentina,ARG,1996,25.945
+Argentina,ARG,1997,33.03
+Argentina,ARG,1998,32.422
+Argentina,ARG,1999,26.53
+Argentina,ARG,2000,28.49
+Argentina,ARG,2001,36.65
+Argentina,ARG,2002,35.49
+Argentina,ARG,2003,33.47
+Argentina,ARG,2004,30.14
+Argentina,ARG,2005,33.66
+Argentina,ARG,2006,37.57
+Argentina,ARG,2007,30.06
+Argentina,ARG,2008,30.11
+Argentina,ARG,2009,33.53
+Argentina,ARG,2010,33.02
+Argentina,ARG,2011,31.03
+Argentina,ARG,2012,28.71
+Argentina,ARG,2013,32.51
+Argentina,ARG,2014,32.33
+Argentina,ARG,2015,31.94
+Argentina,ARG,2016,29.4
+Argentina,ARG,2017,31.46
+Argentina,ARG,2018,31.96
+Argentina,ARG,2019,27.33
+Argentina,ARG,2020,24.26
+Argentina,ARG,2021,19.19
+Armenia,ARM,2000,1.25
+Armenia,ARM,2001,0.96
+Armenia,ARM,2002,1.64
+Armenia,ARM,2003,1.96
+Armenia,ARM,2004,1.98
+Armenia,ARM,2005,1.75
+Armenia,ARM,2006,1.81
+Armenia,ARM,2007,1.83
+Armenia,ARM,2008,1.78
+Armenia,ARM,2009,2
+Armenia,ARM,2010,2.53
+Armenia,ARM,2011,2.46
+Armenia,ARM,2012,2.3
+Armenia,ARM,2013,2.15
+Armenia,ARM,2014,1.97
+Armenia,ARM,2015,2.18
+Armenia,ARM,2016,2.33
+Armenia,ARM,2017,2.25
+Armenia,ARM,2018,2.29
+Armenia,ARM,2019,2.35
+Armenia,ARM,2020,1.78
+Armenia,ARM,2021,1.8
+Aruba,ABW,2000,0
+Aruba,ABW,2001,0
+Aruba,ABW,2002,0
+Aruba,ABW,2003,0
+Aruba,ABW,2004,0
+Aruba,ABW,2005,0
+Aruba,ABW,2006,0
+Aruba,ABW,2007,0
+Aruba,ABW,2008,0
+Aruba,ABW,2009,0
+Aruba,ABW,2010,0
+Aruba,ABW,2011,0
+Aruba,ABW,2012,0
+Aruba,ABW,2013,0
+Aruba,ABW,2014,0
+Aruba,ABW,2015,0
+Aruba,ABW,2016,0
+Aruba,ABW,2017,0
+Aruba,ABW,2018,0
+Aruba,ABW,2019,0
+Aruba,ABW,2020,0
+Asia,,1965,132.304
+Asia,,1966,138.411
+Asia,,1967,128.276
+Asia,,1968,143.709
+Asia,,1969,149.386
+Asia,,1970,153.176
+Asia,,1971,168.205
+Asia,,1972,174.141
+Asia,,1973,161.252
+Asia,,1974,184.346
+Asia,,1975,198.816
+Asia,,1976,203.94
+Asia,,1977,199.375
+Asia,,1978,210.071
+Asia,,1979,227.208
+Asia,,1980,244.331
+Asia,,1981,261.41
+Asia,,1982,258.164
+Asia,,1983,270.865
+Asia,,1984,270.586
+Asia,,1985,300.189
+Asia,,1986,303.989
+Asia,,1987,314.906
+Asia,,1988,358.37
+Asia,,1989,370.692
+Asia,,1990,389.925
+Asia,,1991,395.859
+Asia,,1992,399.766
+Asia,,1993,448.273
+Asia,,1994,441.874
+Asia,,1995,485.531
+Asia,,1996,481.613
+Asia,,1997,484.537
+Asia,,1998,516.838
+Asia,,1999,498.053
+Asia,,2000,567.93
+Asia,,2001,615.43
+Asia,,2002,634.63
+Asia,,2003,663.7
+Asia,,2004,775.02
+Asia,,2005,812.88
+Asia,,2006,884.61
+Asia,,2007,925.53
+Asia,,2008,1055.61
+Asia,,2009,1032.88
+Asia,,2010,1179.45
+Asia,,2011,1197.4
+Asia,,2012,1371.29
+Asia,,2013,1453.96
+Asia,,2014,1593.63
+Asia,,2015,1668.06
+Asia,,2016,1726.6
+Asia,,2017,1772.94
+Asia,,2018,1821.56
+Asia,,2019,1921.12
+Asia,,2020,1958.06
+Asia Pacific,,1965,156.09
+Asia Pacific,,1966,162.312
+Asia Pacific,,1967,152.867
+Asia Pacific,,1968,168.249
+Asia Pacific,,1969,174.164
+Asia Pacific,,1970,180.71
+Asia Pacific,,1971,199.282
+Asia Pacific,,1972,205.116
+Asia Pacific,,1973,194.012
+Asia Pacific,,1974,217.905
+Asia Pacific,,1975,232.444
+Asia Pacific,,1976,233.253
+Asia Pacific,,1977,227.038
+Asia Pacific,,1978,237.046
+Asia Pacific,,1979,256.982
+Asia Pacific,,1980,273.447
+Asia Pacific,,1981,289.73
+Asia Pacific,,1982,282.667
+Asia Pacific,,1983,299.341
+Asia Pacific,,1984,299.407
+Asia Pacific,,1985,320.045
+Asia Pacific,,1986,328.159
+Asia Pacific,,1987,326.891
+Asia Pacific,,1988,361.786
+Asia Pacific,,1989,388.044
+Asia Pacific,,1990,399.272
+Asia Pacific,,1991,410.524
+Asia Pacific,,1992,401.525
+Asia Pacific,,1993,440.287
+Asia Pacific,,1994,443.298
+Asia Pacific,,1995,483.434
+Asia Pacific,,1996,473.409
+Asia Pacific,,1997,475.895
+Asia Pacific,,1998,506.674
+Asia Pacific,,1999,500.243
+Asia Pacific,,2000,521.653
+Asia Pacific,,2001,570.464
+Asia Pacific,,2002,578.909
+Asia Pacific,,2003,594.354
+Asia Pacific,,2004,699.152
+Asia Pacific,,2005,727.961
+Asia Pacific,,2006,801.698
+Asia Pacific,,2007,852.174
+Asia Pacific,,2008,997.777
+Asia Pacific,,2009,968.087
+Asia Pacific,,2010,1097.622
+Asia Pacific,,2011,1117.743
+Asia Pacific,,2012,1261.912
+Asia Pacific,,2013,1367.364
+Asia Pacific,,2014,1521.93
+Asia Pacific,,2015,1565.605
+Asia Pacific,,2016,1628.172
+Asia Pacific,,2017,1671.439
+Asia Pacific,,2018,1711.996
+Asia Pacific,,2019,1791.478
+Asia Pacific,,2020,1847.216
+Australia,AUS,1965,7.69
+Australia,AUS,1966,7.345
+Australia,AUS,1967,7.606
+Australia,AUS,1968,7.951
+Australia,AUS,1969,8.684
+Australia,AUS,1970,10.171
+Australia,AUS,1971,11.507
+Australia,AUS,1972,11.553
+Australia,AUS,1973,12.286
+Australia,AUS,1974,13.874
+Australia,AUS,1975,14.888
+Australia,AUS,1976,14.154
+Australia,AUS,1977,13.544
+Australia,AUS,1978,14.675
+Australia,AUS,1979,14.246
+Australia,AUS,1980,13.467
+Australia,AUS,1981,13.866
+Australia,AUS,1982,12.77
+Australia,AUS,1983,12.124
+Australia,AUS,1984,13.126
+Australia,AUS,1985,13.941
+Australia,AUS,1986,14.026
+Australia,AUS,1987,13.614
+Australia,AUS,1988,14.334
+Australia,AUS,1989,14.254
+Australia,AUS,1990,14.76
+Australia,AUS,1991,15.654
+Australia,AUS,1992,15.942
+Australia,AUS,1993,16.387
+Australia,AUS,1994,16.15
+Australia,AUS,1995,15.631
+Australia,AUS,1996,15.968
+Australia,AUS,1997,15.952
+Australia,AUS,1998,15.798
+Australia,AUS,1999,16.282
+Australia,AUS,2000,16.2
+Australia,AUS,2001,16.4
+Australia,AUS,2002,15.72
+Australia,AUS,2003,16.13
+Australia,AUS,2004,15.89
+Australia,AUS,2005,15.16
+Australia,AUS,2006,15.77
+Australia,AUS,2007,14.2
+Australia,AUS,2008,11.79
+Australia,AUS,2009,11.68
+Australia,AUS,2010,13.5
+Australia,AUS,2011,16.69
+Australia,AUS,2012,13.98
+Australia,AUS,2013,18.12
+Australia,AUS,2014,18.34
+Australia,AUS,2015,13.32
+Australia,AUS,2016,15.02
+Australia,AUS,2017,16.04
+Australia,AUS,2018,15.83
+Australia,AUS,2019,15.54
+Australia,AUS,2020,15.15
+Australia,AUS,2021,16.63
+Austria,AUT,1965,16.083
+Austria,AUT,1966,17.331
+Austria,AUT,1967,17.698
+Austria,AUT,1968,18.185
+Austria,AUT,1969,16.718
+Austria,AUT,1970,21.29
+Austria,AUT,1971,16.82
+Austria,AUT,1972,17.288
+Austria,AUT,1973,19.209
+Austria,AUT,1974,22.712
+Austria,AUT,1975,23.795
+Austria,AUT,1976,20.566
+Austria,AUT,1977,24.921
+Austria,AUT,1978,24.941
+Austria,AUT,1979,28.097
+Austria,AUT,1980,29.11
+Austria,AUT,1981,30.847
+Austria,AUT,1982,30.896
+Austria,AUT,1983,30.606
+Austria,AUT,1984,26.85
+Austria,AUT,1985,30.775
+Austria,AUT,1986,30.904
+Austria,AUT,1987,35.388
+Austria,AUT,1988,35.304
+Austria,AUT,1989,35.082
+Austria,AUT,1990,31.51
+Austria,AUT,1991,31.44
+Austria,AUT,1992,34.85
+Austria,AUT,1993,36.71
+Austria,AUT,1994,35.71
+Austria,AUT,1995,37.07
+Austria,AUT,1996,34.22
+Austria,AUT,1997,36.11
+Austria,AUT,1998,37.16
+Austria,AUT,1999,40.7
+Austria,AUT,2000,41.84
+Austria,AUT,2001,40.46
+Austria,AUT,2002,40.23
+Austria,AUT,2003,33.21
+Austria,AUT,2004,36.76
+Austria,AUT,2005,37.1
+Austria,AUT,2006,35.66
+Austria,AUT,2007,37.05
+Austria,AUT,2008,38.33
+Austria,AUT,2009,40.9
+Austria,AUT,2010,38.36
+Austria,AUT,2011,34.24
+Austria,AUT,2012,43.85
+Austria,AUT,2013,42.02
+Austria,AUT,2014,41.01
+Austria,AUT,2015,37.16
+Austria,AUT,2016,39.97
+Austria,AUT,2017,38.29
+Austria,AUT,2018,37.64
+Austria,AUT,2019,40.83
+Austria,AUT,2020,42
+Austria,AUT,2021,39.58
+Azerbaijan,AZE,1985,1.313
+Azerbaijan,AZE,1986,0.804
+Azerbaijan,AZE,1987,0.804
+Azerbaijan,AZE,1988,0.698
+Azerbaijan,AZE,1989,0.698
+Azerbaijan,AZE,1990,1.658
+Azerbaijan,AZE,1991,1.759
+Azerbaijan,AZE,1992,1.747
+Azerbaijan,AZE,1993,2.426
+Azerbaijan,AZE,1994,1.83
+Azerbaijan,AZE,1995,1.556
+Azerbaijan,AZE,1996,1.537
+Azerbaijan,AZE,1997,1.712
+Azerbaijan,AZE,1998,1.951
+Azerbaijan,AZE,1999,1.506
+Azerbaijan,AZE,2000,1.52
+Azerbaijan,AZE,2001,1.29
+Azerbaijan,AZE,2002,2
+Azerbaijan,AZE,2003,2.44
+Azerbaijan,AZE,2004,2.73
+Azerbaijan,AZE,2005,2.98
+Azerbaijan,AZE,2006,2.49
+Azerbaijan,AZE,2007,2.34
+Azerbaijan,AZE,2008,2.21
+Azerbaijan,AZE,2009,2.29
+Azerbaijan,AZE,2010,3.41
+Azerbaijan,AZE,2011,2.65
+Azerbaijan,AZE,2012,1.8
+Azerbaijan,AZE,2013,1.47
+Azerbaijan,AZE,2014,1.29
+Azerbaijan,AZE,2015,1.62
+Azerbaijan,AZE,2016,1.94
+Azerbaijan,AZE,2017,1.73
+Azerbaijan,AZE,2018,1.75
+Azerbaijan,AZE,2019,1.55
+Azerbaijan,AZE,2020,1.07
+Azerbaijan,AZE,2021,1.13
+Bahamas,BHS,2000,0
+Bahamas,BHS,2001,0
+Bahamas,BHS,2002,0
+Bahamas,BHS,2003,0
+Bahamas,BHS,2004,0
+Bahamas,BHS,2005,0
+Bahamas,BHS,2006,0
+Bahamas,BHS,2007,0
+Bahamas,BHS,2008,0
+Bahamas,BHS,2009,0
+Bahamas,BHS,2010,0
+Bahamas,BHS,2011,0
+Bahamas,BHS,2012,0
+Bahamas,BHS,2013,0
+Bahamas,BHS,2014,0
+Bahamas,BHS,2015,0
+Bahamas,BHS,2016,0
+Bahamas,BHS,2017,0
+Bahamas,BHS,2018,0
+Bahamas,BHS,2019,0
+Bahamas,BHS,2020,0
+Bahrain,BHR,2000,0
+Bahrain,BHR,2001,0
+Bahrain,BHR,2002,0
+Bahrain,BHR,2003,0
+Bahrain,BHR,2004,0
+Bahrain,BHR,2005,0
+Bahrain,BHR,2006,0
+Bahrain,BHR,2007,0
+Bahrain,BHR,2008,0
+Bahrain,BHR,2009,0
+Bahrain,BHR,2010,0
+Bahrain,BHR,2011,0
+Bahrain,BHR,2012,0
+Bahrain,BHR,2013,0
+Bahrain,BHR,2014,0
+Bahrain,BHR,2015,0
+Bahrain,BHR,2016,0
+Bahrain,BHR,2017,0
+Bahrain,BHR,2018,0
+Bahrain,BHR,2019,0
+Bahrain,BHR,2020,0
+Bangladesh,BGD,1971,0
+Bangladesh,BGD,1972,0.175
+Bangladesh,BGD,1973,0.331
+Bangladesh,BGD,1974,0.243
+Bangladesh,BGD,1975,0.436
+Bangladesh,BGD,1976,0.494
+Bangladesh,BGD,1977,0.437
+Bangladesh,BGD,1978,0.506
+Bangladesh,BGD,1979,0.587
+Bangladesh,BGD,1980,0.583
+Bangladesh,BGD,1981,0.625
+Bangladesh,BGD,1982,0.523
+Bangladesh,BGD,1983,0.662
+Bangladesh,BGD,1984,0.897
+Bangladesh,BGD,1985,0.739
+Bangladesh,BGD,1986,0.45
+Bangladesh,BGD,1987,0.517
+Bangladesh,BGD,1988,0.675
+Bangladesh,BGD,1989,0.92
+Bangladesh,BGD,1990,0.884
+Bangladesh,BGD,1991,0.838
+Bangladesh,BGD,1992,0.796
+Bangladesh,BGD,1993,0.608
+Bangladesh,BGD,1994,0.847
+Bangladesh,BGD,1995,0.372
+Bangladesh,BGD,1996,0.739
+Bangladesh,BGD,1997,0.719
+Bangladesh,BGD,1998,0.865
+Bangladesh,BGD,1999,0.833
+Bangladesh,BGD,2000,0.94
+Bangladesh,BGD,2001,0.98
+Bangladesh,BGD,2002,1.05
+Bangladesh,BGD,2003,1.12
+Bangladesh,BGD,2004,1.21
+Bangladesh,BGD,2005,1.28
+Bangladesh,BGD,2006,1.38
+Bangladesh,BGD,2007,0.74
+Bangladesh,BGD,2008,0.94
+Bangladesh,BGD,2009,0.44
+Bangladesh,BGD,2010,0.76
+Bangladesh,BGD,2011,0.92
+Bangladesh,BGD,2012,0.82
+Bangladesh,BGD,2013,0.94
+Bangladesh,BGD,2014,0.62
+Bangladesh,BGD,2015,0.59
+Bangladesh,BGD,2016,1.01
+Bangladesh,BGD,2017,1.03
+Bangladesh,BGD,2018,1.08
+Bangladesh,BGD,2019,0.82
+Bangladesh,BGD,2020,0.61
+Bangladesh,BGD,2021,0.48
+Barbados,BRB,2000,0
+Barbados,BRB,2001,0
+Barbados,BRB,2002,0
+Barbados,BRB,2003,0
+Barbados,BRB,2004,0
+Barbados,BRB,2005,0
+Barbados,BRB,2006,0
+Barbados,BRB,2007,0
+Barbados,BRB,2008,0
+Barbados,BRB,2009,0
+Barbados,BRB,2010,0
+Barbados,BRB,2011,0
+Barbados,BRB,2012,0
+Barbados,BRB,2013,0
+Barbados,BRB,2014,0
+Barbados,BRB,2015,0
+Barbados,BRB,2016,0
+Barbados,BRB,2017,0
+Barbados,BRB,2018,0
+Barbados,BRB,2019,0
+Barbados,BRB,2020,0
+Belarus,BLR,1985,0.02
+Belarus,BLR,1986,0.02
+Belarus,BLR,1987,0.02
+Belarus,BLR,1988,0.02
+Belarus,BLR,1989,0.02
+Belarus,BLR,1990,0.02
+Belarus,BLR,1991,0.018
+Belarus,BLR,1992,0.017
+Belarus,BLR,1993,0.019
+Belarus,BLR,1994,0.019
+Belarus,BLR,1995,0.02
+Belarus,BLR,1996,0.016
+Belarus,BLR,1997,0.021
+Belarus,BLR,1998,0.028
+Belarus,BLR,1999,0.019
+Belarus,BLR,2000,0.03
+Belarus,BLR,2001,0.03
+Belarus,BLR,2002,0.03
+Belarus,BLR,2003,0.03
+Belarus,BLR,2004,0.03
+Belarus,BLR,2005,0.04
+Belarus,BLR,2006,0.04
+Belarus,BLR,2007,0.04
+Belarus,BLR,2008,0.04
+Belarus,BLR,2009,0.04
+Belarus,BLR,2010,0.05
+Belarus,BLR,2011,0.04
+Belarus,BLR,2012,0.07
+Belarus,BLR,2013,0.14
+Belarus,BLR,2014,0.12
+Belarus,BLR,2015,0.11
+Belarus,BLR,2016,0.14
+Belarus,BLR,2017,0.4
+Belarus,BLR,2018,0.32
+Belarus,BLR,2019,0.34
+Belarus,BLR,2020,0.39
+Belarus,BLR,2021,0.39
+Belgium,BEL,1965,0.272
+Belgium,BEL,1966,0.299
+Belgium,BEL,1967,0.238
+Belgium,BEL,1968,0.244
+Belgium,BEL,1969,0.23
+Belgium,BEL,1970,0.246
+Belgium,BEL,1971,0.134
+Belgium,BEL,1972,0.18
+Belgium,BEL,1973,0.171
+Belgium,BEL,1974,0.24
+Belgium,BEL,1975,0.183
+Belgium,BEL,1976,0.109
+Belgium,BEL,1977,0.224
+Belgium,BEL,1978,0.223
+Belgium,BEL,1979,0.234
+Belgium,BEL,1980,0.278
+Belgium,BEL,1981,0.381
+Belgium,BEL,1982,0.333
+Belgium,BEL,1983,0.336
+Belgium,BEL,1984,0.351
+Belgium,BEL,1985,0.287
+Belgium,BEL,1986,0.343
+Belgium,BEL,1987,0.429
+Belgium,BEL,1988,0.359
+Belgium,BEL,1989,0.305
+Belgium,BEL,1990,0.27
+Belgium,BEL,1991,0.23
+Belgium,BEL,1992,0.34
+Belgium,BEL,1993,0.25
+Belgium,BEL,1994,0.35
+Belgium,BEL,1995,0.34
+Belgium,BEL,1996,0.24
+Belgium,BEL,1997,0.31
+Belgium,BEL,1998,0.39
+Belgium,BEL,1999,0.34
+Belgium,BEL,2000,0.46
+Belgium,BEL,2001,0.44
+Belgium,BEL,2002,0.36
+Belgium,BEL,2003,0.25
+Belgium,BEL,2004,0.32
+Belgium,BEL,2005,0.29
+Belgium,BEL,2006,0.36
+Belgium,BEL,2007,0.39
+Belgium,BEL,2008,0.41
+Belgium,BEL,2009,0.33
+Belgium,BEL,2010,0.31
+Belgium,BEL,2011,0.2
+Belgium,BEL,2012,0.36
+Belgium,BEL,2013,0.38
+Belgium,BEL,2014,0.29
+Belgium,BEL,2015,0.32
+Belgium,BEL,2016,0.37
+Belgium,BEL,2017,0.27
+Belgium,BEL,2018,0.29
+Belgium,BEL,2019,0.3
+Belgium,BEL,2020,0.27
+Belgium,BEL,2021,0.34
+Belize,BLZ,2000,0.09
+Belize,BLZ,2001,0.09
+Belize,BLZ,2002,0.09
+Belize,BLZ,2003,0.06
+Belize,BLZ,2004,0.06
+Belize,BLZ,2005,0.07
+Belize,BLZ,2006,0.18
+Belize,BLZ,2007,0.18
+Belize,BLZ,2008,0.2
+Belize,BLZ,2009,0.19
+Belize,BLZ,2010,0.26
+Belize,BLZ,2011,0.25
+Belize,BLZ,2012,0.21
+Belize,BLZ,2013,0.26
+Belize,BLZ,2014,0.26
+Belize,BLZ,2015,0.24
+Belize,BLZ,2016,0.26
+Belize,BLZ,2017,0.27
+Belize,BLZ,2018,0.25
+Belize,BLZ,2019,0.3
+Belize,BLZ,2020,0.08
+Benin,BEN,2000,0
+Benin,BEN,2001,0
+Benin,BEN,2002,0
+Benin,BEN,2003,0
+Benin,BEN,2004,0
+Benin,BEN,2005,0
+Benin,BEN,2006,0
+Benin,BEN,2007,0
+Benin,BEN,2008,0
+Benin,BEN,2009,0
+Benin,BEN,2010,0
+Benin,BEN,2011,0
+Benin,BEN,2012,0
+Benin,BEN,2013,0
+Benin,BEN,2014,0
+Benin,BEN,2015,0
+Benin,BEN,2016,0
+Benin,BEN,2017,0
+Benin,BEN,2018,0
+Benin,BEN,2019,0
+Benin,BEN,2020,0
+Bhutan,BTN,2000,1.79
+Bhutan,BTN,2001,1.92
+Bhutan,BTN,2002,2.18
+Bhutan,BTN,2003,2.5
+Bhutan,BTN,2004,2.33
+Bhutan,BTN,2005,2.62
+Bhutan,BTN,2006,4.47
+Bhutan,BTN,2007,6.49
+Bhutan,BTN,2008,6.89
+Bhutan,BTN,2009,6.93
+Bhutan,BTN,2010,7.26
+Bhutan,BTN,2011,6.97
+Bhutan,BTN,2012,6.74
+Bhutan,BTN,2013,7.53
+Bhutan,BTN,2014,7.15
+Bhutan,BTN,2015,7.73
+Bhutan,BTN,2016,7.88
+Bhutan,BTN,2017,7.65
+Bhutan,BTN,2018,6.89
+Bhutan,BTN,2019,8.95
+Bhutan,BTN,2020,8.95
+Bolivia,BOL,2000,1.95
+Bolivia,BOL,2001,2.11
+Bolivia,BOL,2002,2.18
+Bolivia,BOL,2003,1.97
+Bolivia,BOL,2004,2.13
+Bolivia,BOL,2005,1.94
+Bolivia,BOL,2006,2.14
+Bolivia,BOL,2007,2.3
+Bolivia,BOL,2008,2.29
+Bolivia,BOL,2009,2.27
+Bolivia,BOL,2010,2.16
+Bolivia,BOL,2011,2.32
+Bolivia,BOL,2012,2.33
+Bolivia,BOL,2013,2.51
+Bolivia,BOL,2014,2.23
+Bolivia,BOL,2015,2.44
+Bolivia,BOL,2016,1.7
+Bolivia,BOL,2017,2.21
+Bolivia,BOL,2018,2.59
+Bolivia,BOL,2019,3.22
+Bolivia,BOL,2020,2.94
+Bolivia,BOL,2021,3.22
+Bosnia and Herzegovina,BIH,2000,5.04
+Bosnia and Herzegovina,BIH,2001,5.13
+Bosnia and Herzegovina,BIH,2002,5.22
+Bosnia and Herzegovina,BIH,2003,4.46
+Bosnia and Herzegovina,BIH,2004,5.92
+Bosnia and Herzegovina,BIH,2005,5.94
+Bosnia and Herzegovina,BIH,2006,5.8
+Bosnia and Herzegovina,BIH,2007,3.96
+Bosnia and Herzegovina,BIH,2008,4.82
+Bosnia and Herzegovina,BIH,2009,6.18
+Bosnia and Herzegovina,BIH,2010,7.95
+Bosnia and Herzegovina,BIH,2011,4.34
+Bosnia and Herzegovina,BIH,2012,4.17
+Bosnia and Herzegovina,BIH,2013,7.16
+Bosnia and Herzegovina,BIH,2014,5.88
+Bosnia and Herzegovina,BIH,2015,5.49
+Bosnia and Herzegovina,BIH,2016,5.59
+Bosnia and Herzegovina,BIH,2017,3.75
+Bosnia and Herzegovina,BIH,2018,6.35
+Bosnia and Herzegovina,BIH,2019,6.02
+Bosnia and Herzegovina,BIH,2020,6.1
+Bosnia and Herzegovina,BIH,2021,7.37
+Botswana,BWA,2000,0
+Botswana,BWA,2001,0
+Botswana,BWA,2002,0
+Botswana,BWA,2003,0
+Botswana,BWA,2004,0
+Botswana,BWA,2005,0
+Botswana,BWA,2006,0
+Botswana,BWA,2007,0
+Botswana,BWA,2008,0
+Botswana,BWA,2009,0
+Botswana,BWA,2010,0
+Botswana,BWA,2011,0
+Botswana,BWA,2012,0
+Botswana,BWA,2013,0
+Botswana,BWA,2014,0
+Botswana,BWA,2015,0
+Botswana,BWA,2016,0
+Botswana,BWA,2017,0
+Botswana,BWA,2018,0
+Botswana,BWA,2019,0
+Botswana,BWA,2020,0
+Brazil,BRA,1965,25.515
+Brazil,BRA,1966,27.906
+Brazil,BRA,1967,29.189
+Brazil,BRA,1968,30.55
+Brazil,BRA,1969,32.692
+Brazil,BRA,1970,39.801
+Brazil,BRA,1971,43.199
+Brazil,BRA,1972,50.681
+Brazil,BRA,1973,57.89
+Brazil,BRA,1974,65.679
+Brazil,BRA,1975,72.287
+Brazil,BRA,1976,82.913
+Brazil,BRA,1977,93.48
+Brazil,BRA,1978,102.746
+Brazil,BRA,1979,116.58
+Brazil,BRA,1980,128.907
+Brazil,BRA,1981,130.765
+Brazil,BRA,1982,141.132
+Brazil,BRA,1983,151.475
+Brazil,BRA,1984,166.593
+Brazil,BRA,1985,178.375
+Brazil,BRA,1986,182.419
+Brazil,BRA,1987,185.6
+Brazil,BRA,1988,199.093
+Brazil,BRA,1989,204.69
+Brazil,BRA,1990,206.708
+Brazil,BRA,1991,217.782
+Brazil,BRA,1992,223.343
+Brazil,BRA,1993,235.065
+Brazil,BRA,1994,242.705
+Brazil,BRA,1995,253.905
+Brazil,BRA,1996,265.769
+Brazil,BRA,1997,278.972
+Brazil,BRA,1998,291.469
+Brazil,BRA,1999,293
+Brazil,BRA,2000,301.36
+Brazil,BRA,2001,265.2
+Brazil,BRA,2002,283.23
+Brazil,BRA,2003,302.56
+Brazil,BRA,2004,317.59
+Brazil,BRA,2005,334.08
+Brazil,BRA,2006,345.32
+Brazil,BRA,2007,370.27
+Brazil,BRA,2008,365.86
+Brazil,BRA,2009,387.08
+Brazil,BRA,2010,399.26
+Brazil,BRA,2011,424.05
+Brazil,BRA,2012,411.19
+Brazil,BRA,2013,387.08
+Brazil,BRA,2014,369.7
+Brazil,BRA,2015,356.15
+Brazil,BRA,2016,377.1
+Brazil,BRA,2017,367.2
+Brazil,BRA,2018,385.08
+Brazil,BRA,2019,393.9
+Brazil,BRA,2020,409.5
+Brazil,BRA,2021,371.81
+British Virgin Islands,VGB,2000,0
+British Virgin Islands,VGB,2001,0
+British Virgin Islands,VGB,2002,0
+British Virgin Islands,VGB,2003,0
+British Virgin Islands,VGB,2004,0
+British Virgin Islands,VGB,2005,0
+British Virgin Islands,VGB,2006,0
+British Virgin Islands,VGB,2007,0
+British Virgin Islands,VGB,2008,0
+British Virgin Islands,VGB,2009,0
+British Virgin Islands,VGB,2010,0
+British Virgin Islands,VGB,2011,0
+British Virgin Islands,VGB,2012,0
+British Virgin Islands,VGB,2013,0
+British Virgin Islands,VGB,2014,0
+British Virgin Islands,VGB,2015,0
+British Virgin Islands,VGB,2016,0
+British Virgin Islands,VGB,2017,0
+British Virgin Islands,VGB,2018,0
+British Virgin Islands,VGB,2019,0
+British Virgin Islands,VGB,2020,0
+Brunei,BRN,2000,0
+Brunei,BRN,2001,0
+Brunei,BRN,2002,0
+Brunei,BRN,2003,0
+Brunei,BRN,2004,0
+Brunei,BRN,2005,0
+Brunei,BRN,2006,0
+Brunei,BRN,2007,0
+Brunei,BRN,2008,0
+Brunei,BRN,2009,0
+Brunei,BRN,2010,0
+Brunei,BRN,2011,0
+Brunei,BRN,2012,0
+Brunei,BRN,2013,0
+Brunei,BRN,2014,0
+Brunei,BRN,2015,0
+Brunei,BRN,2016,0
+Brunei,BRN,2017,0
+Brunei,BRN,2018,0
+Brunei,BRN,2019,0
+Brunei,BRN,2020,0
+Bulgaria,BGR,1965,2
+Bulgaria,BGR,1966,2.01
+Bulgaria,BGR,1967,2.022
+Bulgaria,BGR,1968,1.305
+Bulgaria,BGR,1969,1.839
+Bulgaria,BGR,1970,2.152
+Bulgaria,BGR,1971,2.17
+Bulgaria,BGR,1972,2.095
+Bulgaria,BGR,1973,2.57
+Bulgaria,BGR,1974,2.08
+Bulgaria,BGR,1975,2.453
+Bulgaria,BGR,1976,2.954
+Bulgaria,BGR,1977,3.529
+Bulgaria,BGR,1978,2.909
+Bulgaria,BGR,1979,3.311
+Bulgaria,BGR,1980,3.713
+Bulgaria,BGR,1981,3.618
+Bulgaria,BGR,1982,3.05
+Bulgaria,BGR,1983,3.353
+Bulgaria,BGR,1984,3.26
+Bulgaria,BGR,1985,2.237
+Bulgaria,BGR,1986,2.326
+Bulgaria,BGR,1987,2.537
+Bulgaria,BGR,1988,2.596
+Bulgaria,BGR,1989,2.691
+Bulgaria,BGR,1990,1.63
+Bulgaria,BGR,1991,2.27
+Bulgaria,BGR,1992,1.9
+Bulgaria,BGR,1993,1.79
+Bulgaria,BGR,1994,1.3
+Bulgaria,BGR,1995,2.17
+Bulgaria,BGR,1996,2.89
+Bulgaria,BGR,1997,2.72
+Bulgaria,BGR,1998,3.07
+Bulgaria,BGR,1999,2.73
+Bulgaria,BGR,2000,2.63
+Bulgaria,BGR,2001,1.65
+Bulgaria,BGR,2002,2.12
+Bulgaria,BGR,2003,2.99
+Bulgaria,BGR,2004,3.14
+Bulgaria,BGR,2005,4.3
+Bulgaria,BGR,2006,4.21
+Bulgaria,BGR,2007,2.83
+Bulgaria,BGR,2008,2.79
+Bulgaria,BGR,2009,3.43
+Bulgaria,BGR,2010,5.03
+Bulgaria,BGR,2011,2.87
+Bulgaria,BGR,2012,3.18
+Bulgaria,BGR,2013,4.04
+Bulgaria,BGR,2014,4.6
+Bulgaria,BGR,2015,5.65
+Bulgaria,BGR,2016,3.88
+Bulgaria,BGR,2017,2.83
+Bulgaria,BGR,2018,5.15
+Bulgaria,BGR,2019,2.93
+Bulgaria,BGR,2020,2.82
+Bulgaria,BGR,2021,4.8
+Burkina Faso,BFA,2000,0.1
+Burkina Faso,BFA,2001,0.05
+Burkina Faso,BFA,2002,0.06
+Burkina Faso,BFA,2003,0.1
+Burkina Faso,BFA,2004,0.1
+Burkina Faso,BFA,2005,0.1
+Burkina Faso,BFA,2006,0.08
+Burkina Faso,BFA,2007,0.11
+Burkina Faso,BFA,2008,0.13
+Burkina Faso,BFA,2009,0.13
+Burkina Faso,BFA,2010,0.12
+Burkina Faso,BFA,2011,0.08
+Burkina Faso,BFA,2012,0.1
+Burkina Faso,BFA,2013,0.11
+Burkina Faso,BFA,2014,0.09
+Burkina Faso,BFA,2015,0.09
+Burkina Faso,BFA,2016,0.14
+Burkina Faso,BFA,2017,0.13
+Burkina Faso,BFA,2018,0.13
+Burkina Faso,BFA,2019,0.11
+Burkina Faso,BFA,2020,0.11
+Burundi,BDI,2000,0.1
+Burundi,BDI,2001,0.11
+Burundi,BDI,2002,0.13
+Burundi,BDI,2003,0.1
+Burundi,BDI,2004,0.09
+Burundi,BDI,2005,0.09
+Burundi,BDI,2006,0.09
+Burundi,BDI,2007,0.12
+Burundi,BDI,2008,0.11
+Burundi,BDI,2009,0.12
+Burundi,BDI,2010,0.14
+Burundi,BDI,2011,0.13
+Burundi,BDI,2012,0.14
+Burundi,BDI,2013,0.14
+Burundi,BDI,2014,0.14
+Burundi,BDI,2015,0.14
+Burundi,BDI,2016,0.14
+Burundi,BDI,2017,0.19
+Burundi,BDI,2018,0.15
+Burundi,BDI,2019,0.22
+Burundi,BDI,2020,0.22
+Burundi,BDI,2021,0.16
+CIS,,1965,81.434
+CIS,,1966,91.823
+CIS,,1967,88.571
+CIS,,1968,104.04
+CIS,,1969,115.181
+CIS,,1970,124.377
+CIS,,1971,126.099
+CIS,,1972,122.899
+CIS,,1973,122.345
+CIS,,1974,132.03
+CIS,,1975,125.987
+CIS,,1976,135.735
+CIS,,1977,147.014
+CIS,,1978,169.701
+CIS,,1979,172.023
+CIS,,1980,183.938
+CIS,,1981,186.744
+CIS,,1982,174.677
+CIS,,1983,180.362
+CIS,,1984,202.988
+CIS,,1985,194.092
+CIS,,1986,195.201
+CIS,,1987,196.978
+CIS,,1988,204.92
+CIS,,1989,199.157
+CIS,,1990,211.239
+CIS,,1991,211.458
+CIS,,1992,216
+CIS,,1993,222.579
+CIS,,1994,226.33
+CIS,,1995,220.315
+CIS,,1996,198.816
+CIS,,1997,197.854
+CIS,,1998,198.338
+CIS,,1999,203.164
+CIS,,2000,208.43
+CIS,,2001,217.306
+CIS,,2002,207.324
+CIS,,2003,205.714
+CIS,,2004,225.788
+CIS,,2005,223.522
+CIS,,2006,222.011
+CIS,,2007,227.409
+CIS,,2008,207.667
+CIS,,2009,218.319
+CIS,,2010,216.838
+CIS,,2011,212.748
+CIS,,2012,213.037
+CIS,,2013,229.437
+CIS,,2014,221.144
+CIS,,2015,215.426
+CIS,,2016,236.336
+CIS,,2017,240.847
+CIS,,2018,244.313
+CIS,,2019,248.467
+CIS,,2020,265.587
+Cambodia,KHM,2000,0.05
+Cambodia,KHM,2001,0.03
+Cambodia,KHM,2002,0.03
+Cambodia,KHM,2003,0.04
+Cambodia,KHM,2004,0.03
+Cambodia,KHM,2005,0.04
+Cambodia,KHM,2006,0.05
+Cambodia,KHM,2007,0.05
+Cambodia,KHM,2008,0.04
+Cambodia,KHM,2009,0.04
+Cambodia,KHM,2010,0.03
+Cambodia,KHM,2011,0.05
+Cambodia,KHM,2012,0.51
+Cambodia,KHM,2013,1.01
+Cambodia,KHM,2014,1.83
+Cambodia,KHM,2015,1.98
+Cambodia,KHM,2016,2.59
+Cambodia,KHM,2017,2.71
+Cambodia,KHM,2018,4.69
+Cambodia,KHM,2019,4.03
+Cambodia,KHM,2020,3.49
+Cameroon,CMR,2000,3.41
+Cameroon,CMR,2001,3.44
+Cameroon,CMR,2002,3.15
+Cameroon,CMR,2003,3.49
+Cameroon,CMR,2004,3.88
+Cameroon,CMR,2005,3.73
+Cameroon,CMR,2006,3.85
+Cameroon,CMR,2007,3.81
+Cameroon,CMR,2008,4.19
+Cameroon,CMR,2009,3.98
+Cameroon,CMR,2010,4.22
+Cameroon,CMR,2011,4.35
+Cameroon,CMR,2012,4.21
+Cameroon,CMR,2013,4.33
+Cameroon,CMR,2014,4.33
+Cameroon,CMR,2015,4.32
+Cameroon,CMR,2016,4.33
+Cameroon,CMR,2017,5.04
+Cameroon,CMR,2018,4.97
+Cameroon,CMR,2019,5.34
+Cameroon,CMR,2020,5.88
+Canada,CAN,1965,118.088
+Canada,CAN,1966,131
+Canada,CAN,1967,133.924
+Canada,CAN,1968,136.2
+Canada,CAN,1969,150.638
+Canada,CAN,1970,158.137
+Canada,CAN,1971,162.461
+Canada,CAN,1972,181.639
+Canada,CAN,1973,194.654
+Canada,CAN,1974,210.667
+Canada,CAN,1975,202.47
+Canada,CAN,1976,212.689
+Canada,CAN,1977,220.147
+Canada,CAN,1978,235.254
+Canada,CAN,1979,244.121
+Canada,CAN,1980,251.148
+Canada,CAN,1981,266.015
+Canada,CAN,1982,257.795
+Canada,CAN,1983,265.952
+Canada,CAN,1984,286.123
+Canada,CAN,1985,303.645
+Canada,CAN,1986,310.635
+Canada,CAN,1987,316.206
+Canada,CAN,1988,307.435
+Canada,CAN,1989,290.45
+Canada,CAN,1990,295.683
+Canada,CAN,1991,307.276
+Canada,CAN,1992,315.175
+Canada,CAN,1993,322.214
+Canada,CAN,1994,327.856
+Canada,CAN,1995,334.06
+Canada,CAN,1996,354.592
+Canada,CAN,1997,348.68
+Canada,CAN,1998,330.87
+Canada,CAN,1999,345.001
+Canada,CAN,2000,354.92
+Canada,CAN,2001,329.99
+Canada,CAN,2002,347.05
+Canada,CAN,2003,334.07
+Canada,CAN,2004,337.43
+Canada,CAN,2005,358.3
+Canada,CAN,2006,349.32
+Canada,CAN,2007,363.91
+Canada,CAN,2008,373.68
+Canada,CAN,2009,364.96
+Canada,CAN,2010,347.87
+Canada,CAN,2011,371.97
+Canada,CAN,2012,376.46
+Canada,CAN,2013,387.87
+Canada,CAN,2014,378.68
+Canada,CAN,2015,378.37
+Canada,CAN,2016,381.58
+Canada,CAN,2017,390.64
+Canada,CAN,2018,382.02
+Canada,CAN,2019,377.98
+Canada,CAN,2020,383
+Canada,CAN,2021,377.87
+Cape Verde,CPV,2000,0
+Cape Verde,CPV,2001,0
+Cape Verde,CPV,2002,0
+Cape Verde,CPV,2003,0
+Cape Verde,CPV,2004,0
+Cape Verde,CPV,2005,0
+Cape Verde,CPV,2006,0
+Cape Verde,CPV,2007,0
+Cape Verde,CPV,2008,0
+Cape Verde,CPV,2009,0
+Cape Verde,CPV,2010,0
+Cape Verde,CPV,2011,0
+Cape Verde,CPV,2012,0
+Cape Verde,CPV,2013,0
+Cape Verde,CPV,2014,0
+Cape Verde,CPV,2015,0
+Cape Verde,CPV,2016,0
+Cape Verde,CPV,2017,0
+Cape Verde,CPV,2018,0
+Cape Verde,CPV,2019,0
+Cape Verde,CPV,2020,0
+Cayman Islands,CYM,2000,0
+Cayman Islands,CYM,2001,0
+Cayman Islands,CYM,2002,0
+Cayman Islands,CYM,2003,0
+Cayman Islands,CYM,2004,0
+Cayman Islands,CYM,2005,0
+Cayman Islands,CYM,2006,0
+Cayman Islands,CYM,2007,0
+Cayman Islands,CYM,2008,0
+Cayman Islands,CYM,2009,0
+Cayman Islands,CYM,2010,0
+Cayman Islands,CYM,2011,0
+Cayman Islands,CYM,2012,0
+Cayman Islands,CYM,2013,0
+Cayman Islands,CYM,2014,0
+Cayman Islands,CYM,2015,0
+Cayman Islands,CYM,2016,0
+Cayman Islands,CYM,2017,0
+Cayman Islands,CYM,2018,0
+Cayman Islands,CYM,2019,0
+Cayman Islands,CYM,2020,0
+Central African Republic,CAF,2000,0.08
+Central African Republic,CAF,2001,0.08
+Central African Republic,CAF,2002,0.08
+Central African Republic,CAF,2003,0.08
+Central African Republic,CAF,2004,0.12
+Central African Republic,CAF,2005,0.13
+Central African Republic,CAF,2006,0.14
+Central African Republic,CAF,2007,0.14
+Central African Republic,CAF,2008,0.14
+Central African Republic,CAF,2009,0.14
+Central African Republic,CAF,2010,0.13
+Central African Republic,CAF,2011,0.15
+Central African Republic,CAF,2012,0.15
+Central African Republic,CAF,2013,0.14
+Central African Republic,CAF,2014,0.17
+Central African Republic,CAF,2015,0.17
+Central African Republic,CAF,2016,0.17
+Central African Republic,CAF,2017,0.15
+Central African Republic,CAF,2018,0.15
+Central African Republic,CAF,2019,0.15
+Central African Republic,CAF,2020,0.15
+Chad,TCD,2000,0
+Chad,TCD,2001,0
+Chad,TCD,2002,0
+Chad,TCD,2003,0
+Chad,TCD,2004,0
+Chad,TCD,2005,0
+Chad,TCD,2006,0
+Chad,TCD,2007,0
+Chad,TCD,2008,0
+Chad,TCD,2009,0
+Chad,TCD,2010,0
+Chad,TCD,2011,0
+Chad,TCD,2012,0
+Chad,TCD,2013,0
+Chad,TCD,2014,0
+Chad,TCD,2015,0
+Chad,TCD,2016,0
+Chad,TCD,2017,0
+Chad,TCD,2018,0
+Chad,TCD,2019,0
+Chad,TCD,2020,0
+Chile,CHL,1965,3.954
+Chile,CHL,1966,4.168
+Chile,CHL,1967,4.255
+Chile,CHL,1968,3.565
+Chile,CHL,1969,4.024
+Chile,CHL,1970,4.307
+Chile,CHL,1971,4.809
+Chile,CHL,1972,5.73
+Chile,CHL,1973,5.595
+Chile,CHL,1974,6.364
+Chile,CHL,1975,6.388
+Chile,CHL,1976,6.599
+Chile,CHL,1977,6.969
+Chile,CHL,1978,7.251
+Chile,CHL,1979,7.448
+Chile,CHL,1980,7.871
+Chile,CHL,1981,8.15
+Chile,CHL,1982,8.914
+Chile,CHL,1983,9.613
+Chile,CHL,1984,9.975
+Chile,CHL,1985,11.07
+Chile,CHL,1986,11.83
+Chile,CHL,1987,12.823
+Chile,CHL,1988,12.558
+Chile,CHL,1989,10.543
+Chile,CHL,1990,8.941
+Chile,CHL,1991,13.136
+Chile,CHL,1992,16.74
+Chile,CHL,1993,17.217
+Chile,CHL,1994,16.985
+Chile,CHL,1995,18.414
+Chile,CHL,1996,16.873
+Chile,CHL,1997,18.943
+Chile,CHL,1998,15.937
+Chile,CHL,1999,13.577
+Chile,CHL,2000,19.55
+Chile,CHL,2001,20.79
+Chile,CHL,2002,22.04
+Chile,CHL,2003,21.46
+Chile,CHL,2004,21.76
+Chile,CHL,2005,26.22
+Chile,CHL,2006,28.84
+Chile,CHL,2007,22.9
+Chile,CHL,2008,23.95
+Chile,CHL,2009,25.04
+Chile,CHL,2010,21.64
+Chile,CHL,2011,20.94
+Chile,CHL,2012,19.98
+Chile,CHL,2013,19.68
+Chile,CHL,2014,22.81
+Chile,CHL,2015,23.4
+Chile,CHL,2016,22.81
+Chile,CHL,2017,20.89
+Chile,CHL,2018,22.9
+Chile,CHL,2019,20.67
+Chile,CHL,2020,20.79
+Chile,CHL,2021,16.63
+China,CHN,1965,22.097
+China,CHN,1966,22.486
+China,CHN,1967,19.383
+China,CHN,1968,22.87
+China,CHN,1969,23.259
+China,CHN,1970,24.037
+China,CHN,1971,29.075
+China,CHN,1972,32.951
+China,CHN,1973,36.827
+China,CHN,1974,41.675
+China,CHN,1975,43.611
+China,CHN,1976,44.194
+China,CHN,1977,46.134
+China,CHN,1978,43.226
+China,CHN,1979,48.556
+China,CHN,1980,58.221
+China,CHN,1981,65.513
+China,CHN,1982,74.414
+China,CHN,1983,86.417
+China,CHN,1984,86.815
+China,CHN,1985,92.388
+China,CHN,1986,94.549
+China,CHN,1987,100.024
+China,CHN,1988,109.168
+China,CHN,1989,118.409
+China,CHN,1990,126.744
+China,CHN,1991,124.689
+China,CHN,1992,130.686
+China,CHN,1993,151.846
+China,CHN,1994,167.429
+China,CHN,1995,190.58
+China,CHN,1996,187.97
+China,CHN,1997,195.98
+China,CHN,1998,198.89
+China,CHN,1999,196.58
+China,CHN,2000,222.41
+China,CHN,2001,277.43
+China,CHN,2002,287.97
+China,CHN,2003,283.68
+China,CHN,2004,353.54
+China,CHN,2005,397.02
+China,CHN,2006,435.79
+China,CHN,2007,485.26
+China,CHN,2008,636.96
+China,CHN,2009,615.64
+China,CHN,2010,711.38
+China,CHN,2011,688.04
+China,CHN,2012,862.79
+China,CHN,2013,909.61
+China,CHN,2014,1059.69
+China,CHN,2015,1114.52
+China,CHN,2016,1153.27
+China,CHN,2017,1165.06
+China,CHN,2018,1198.89
+China,CHN,2019,1272.54
+China,CHN,2020,1322.01
+China,CHN,2021,1297.41
+Colombia,COL,1965,3.544
+Colombia,COL,1966,3.937
+Colombia,COL,1967,4.389
+Colombia,COL,1968,4.891
+Colombia,COL,1969,5.438
+Colombia,COL,1970,6.053
+Colombia,COL,1971,6.423
+Colombia,COL,1972,7.115
+Colombia,COL,1973,7.743
+Colombia,COL,1974,8.792
+Colombia,COL,1975,9.732
+Colombia,COL,1976,10.226
+Colombia,COL,1977,10.452
+Colombia,COL,1978,12.071
+Colombia,COL,1979,13.259
+Colombia,COL,1980,14.447
+Colombia,COL,1981,14.265
+Colombia,COL,1982,15.239
+Colombia,COL,1983,15.366
+Colombia,COL,1984,17.14
+Colombia,COL,1985,18.441
+Colombia,COL,1986,21.333
+Colombia,COL,1987,23.248
+Colombia,COL,1988,24.519
+Colombia,COL,1989,26.782
+Colombia,COL,1990,27.496
+Colombia,COL,1991,27.726
+Colombia,COL,1992,22.281
+Colombia,COL,1993,27.856
+Colombia,COL,1994,32.058
+Colombia,COL,1995,31.989
+Colombia,COL,1996,35.288
+Colombia,COL,1997,31.476
+Colombia,COL,1998,30.782
+Colombia,COL,1999,33.701
+Colombia,COL,2000,31.75
+Colombia,COL,2001,31.48
+Colombia,COL,2002,33.63
+Colombia,COL,2003,35.81
+Colombia,COL,2004,39.68
+Colombia,COL,2005,39.4
+Colombia,COL,2006,42.31
+Colombia,COL,2007,44
+Colombia,COL,2008,45.94
+Colombia,COL,2009,40.64
+Colombia,COL,2010,40
+Colombia,COL,2011,48.39
+Colombia,COL,2012,47.11
+Colombia,COL,2013,49.76
+Colombia,COL,2014,47.39
+Colombia,COL,2015,48.08
+Colombia,COL,2016,48.6
+Colombia,COL,2017,60.82
+Colombia,COL,2018,59.33
+Colombia,COL,2019,53.99
+Colombia,COL,2020,45.82
+Comoros,COM,2000,0
+Comoros,COM,2001,0
+Comoros,COM,2002,0
+Comoros,COM,2003,0
+Comoros,COM,2004,0
+Comoros,COM,2005,0
+Comoros,COM,2006,0
+Comoros,COM,2007,0
+Comoros,COM,2008,0
+Comoros,COM,2009,0
+Comoros,COM,2010,0
+Comoros,COM,2011,0
+Comoros,COM,2012,0
+Comoros,COM,2013,0
+Comoros,COM,2014,0
+Comoros,COM,2015,0
+Comoros,COM,2016,0
+Comoros,COM,2017,0
+Comoros,COM,2018,0
+Comoros,COM,2019,0
+Comoros,COM,2020,0
+Congo,COG,2000,0.29
+Congo,COG,2001,0.33
+Congo,COG,2002,0.39
+Congo,COG,2003,0.34
+Congo,COG,2004,0.33
+Congo,COG,2005,0.35
+Congo,COG,2006,0.37
+Congo,COG,2007,0.33
+Congo,COG,2008,0.37
+Congo,COG,2009,0.33
+Congo,COG,2010,0.43
+Congo,COG,2011,0.78
+Congo,COG,2012,0.98
+Congo,COG,2013,0.96
+Congo,COG,2014,0.94
+Congo,COG,2015,1.09
+Congo,COG,2016,1.12
+Congo,COG,2017,1.19
+Congo,COG,2018,1.23
+Congo,COG,2019,1.07
+Congo,COG,2020,1.07
+Cook Islands,COK,2000,0
+Cook Islands,COK,2001,0
+Cook Islands,COK,2002,0
+Cook Islands,COK,2003,0
+Cook Islands,COK,2004,0
+Cook Islands,COK,2005,0
+Cook Islands,COK,2006,0
+Cook Islands,COK,2007,0
+Cook Islands,COK,2008,0
+Cook Islands,COK,2009,0
+Cook Islands,COK,2010,0
+Cook Islands,COK,2011,0
+Cook Islands,COK,2012,0
+Cook Islands,COK,2013,0
+Cook Islands,COK,2014,0
+Cook Islands,COK,2015,0
+Cook Islands,COK,2016,0
+Cook Islands,COK,2017,0
+Cook Islands,COK,2018,0
+Cook Islands,COK,2019,0
+Cook Islands,COK,2020,0
+Costa Rica,CRI,2000,5.62
+Costa Rica,CRI,2001,5.6
+Costa Rica,CRI,2002,5.87
+Costa Rica,CRI,2003,5.86
+Costa Rica,CRI,2004,6.42
+Costa Rica,CRI,2005,6.5
+Costa Rica,CRI,2006,6.53
+Costa Rica,CRI,2007,6.7
+Costa Rica,CRI,2008,7.31
+Costa Rica,CRI,2009,7.15
+Costa Rica,CRI,2010,7.19
+Costa Rica,CRI,2011,7.06
+Costa Rica,CRI,2012,7.16
+Costa Rica,CRI,2013,6.78
+Costa Rica,CRI,2014,6.65
+Costa Rica,CRI,2015,7.99
+Costa Rica,CRI,2016,7.95
+Costa Rica,CRI,2017,8.59
+Costa Rica,CRI,2018,8.26
+Costa Rica,CRI,2019,7.75
+Costa Rica,CRI,2020,8.29
+Costa Rica,CRI,2021,9.17
+Cote d'Ivoire,CIV,2000,1.75
+Cote d'Ivoire,CIV,2001,1.78
+Cote d'Ivoire,CIV,2002,1.71
+Cote d'Ivoire,CIV,2003,1.81
+Cote d'Ivoire,CIV,2004,1.73
+Cote d'Ivoire,CIV,2005,1.42
+Cote d'Ivoire,CIV,2006,1.5
+Cote d'Ivoire,CIV,2007,1.78
+Cote d'Ivoire,CIV,2008,1.88
+Cote d'Ivoire,CIV,2009,2.11
+Cote d'Ivoire,CIV,2010,1.6
+Cote d'Ivoire,CIV,2011,1.76
+Cote d'Ivoire,CIV,2012,1.77
+Cote d'Ivoire,CIV,2013,1.59
+Cote d'Ivoire,CIV,2014,1.89
+Cote d'Ivoire,CIV,2015,1.34
+Cote d'Ivoire,CIV,2016,1.51
+Cote d'Ivoire,CIV,2017,2.03
+Cote d'Ivoire,CIV,2018,2.93
+Cote d'Ivoire,CIV,2019,2.31
+Cote d'Ivoire,CIV,2020,2.31
+Croatia,HRV,1990,3.92
+Croatia,HRV,1991,5.53
+Croatia,HRV,1992,4.35
+Croatia,HRV,1993,4.55
+Croatia,HRV,1994,5.43
+Croatia,HRV,1995,5.68
+Croatia,HRV,1996,7.86
+Croatia,HRV,1997,5.85
+Croatia,HRV,1998,6.02
+Croatia,HRV,1999,7.33
+Croatia,HRV,2000,6.45
+Croatia,HRV,2001,7.18
+Croatia,HRV,2002,5.85
+Croatia,HRV,2003,5.46
+Croatia,HRV,2004,7.63
+Croatia,HRV,2005,7.04
+Croatia,HRV,2006,6.62
+Croatia,HRV,2007,4.7
+Croatia,HRV,2008,5.78
+Croatia,HRV,2009,7.41
+Croatia,HRV,2010,9.13
+Croatia,HRV,2011,5.03
+Croatia,HRV,2012,4.84
+Croatia,HRV,2013,8.62
+Croatia,HRV,2014,9.01
+Croatia,HRV,2015,6.39
+Croatia,HRV,2016,6.85
+Croatia,HRV,2017,5.31
+Croatia,HRV,2018,7.7
+Croatia,HRV,2019,5.83
+Croatia,HRV,2020,5.66
+Croatia,HRV,2021,7.11
+Cuba,CUB,2000,0.09
+Cuba,CUB,2001,0.07
+Cuba,CUB,2002,0.1
+Cuba,CUB,2003,0.13
+Cuba,CUB,2004,0.09
+Cuba,CUB,2005,0.07
+Cuba,CUB,2006,0.09
+Cuba,CUB,2007,0.12
+Cuba,CUB,2008,0.14
+Cuba,CUB,2009,0.15
+Cuba,CUB,2010,0.1
+Cuba,CUB,2011,0.1
+Cuba,CUB,2012,0.11
+Cuba,CUB,2013,0.13
+Cuba,CUB,2014,0.1
+Cuba,CUB,2015,0.05
+Cuba,CUB,2016,0.06
+Cuba,CUB,2017,0.08
+Cuba,CUB,2018,0.14
+Cuba,CUB,2019,0.14
+Cuba,CUB,2020,0.06
+Cyprus,CYP,1965,0
+Cyprus,CYP,1966,0
+Cyprus,CYP,1967,0
+Cyprus,CYP,1968,0
+Cyprus,CYP,1969,0
+Cyprus,CYP,1970,0
+Cyprus,CYP,1971,0
+Cyprus,CYP,1972,0
+Cyprus,CYP,1973,0
+Cyprus,CYP,1974,0
+Cyprus,CYP,1975,0
+Cyprus,CYP,1976,0
+Cyprus,CYP,1977,0
+Cyprus,CYP,1978,0
+Cyprus,CYP,1979,0
+Cyprus,CYP,1980,0
+Cyprus,CYP,1981,0
+Cyprus,CYP,1982,0
+Cyprus,CYP,1983,0
+Cyprus,CYP,1984,0
+Cyprus,CYP,1985,0
+Cyprus,CYP,1986,0
+Cyprus,CYP,1987,0
+Cyprus,CYP,1988,0
+Cyprus,CYP,1989,0
+Cyprus,CYP,1990,0
+Cyprus,CYP,1991,0
+Cyprus,CYP,1992,0
+Cyprus,CYP,1993,0
+Cyprus,CYP,1994,0
+Cyprus,CYP,1995,0
+Cyprus,CYP,1996,0
+Cyprus,CYP,1997,0
+Cyprus,CYP,1998,0
+Cyprus,CYP,1999,0
+Cyprus,CYP,2000,0
+Cyprus,CYP,2001,0
+Cyprus,CYP,2002,0
+Cyprus,CYP,2003,0
+Cyprus,CYP,2004,0
+Cyprus,CYP,2005,0
+Cyprus,CYP,2006,0
+Cyprus,CYP,2007,0
+Cyprus,CYP,2008,0
+Cyprus,CYP,2009,0
+Cyprus,CYP,2010,0
+Cyprus,CYP,2011,0
+Cyprus,CYP,2012,0
+Cyprus,CYP,2013,0
+Cyprus,CYP,2014,0
+Cyprus,CYP,2015,0
+Cyprus,CYP,2016,0
+Cyprus,CYP,2017,0
+Cyprus,CYP,2018,0
+Cyprus,CYP,2019,0
+Cyprus,CYP,2020,0
+Cyprus,CYP,2021,0
+Czechia,CZE,1965,2.232
+Czechia,CZE,1966,2.104
+Czechia,CZE,1967,1.896
+Czechia,CZE,1968,1.467
+Czechia,CZE,1969,1.198
+Czechia,CZE,1970,1.71
+Czechia,CZE,1971,1.208
+Czechia,CZE,1972,1.264
+Czechia,CZE,1973,1.081
+Czechia,CZE,1974,1.819
+Czechia,CZE,1975,1.814
+Czechia,CZE,1976,1.446
+Czechia,CZE,1977,1.967
+Czechia,CZE,1978,1.83
+Czechia,CZE,1979,2.293
+Czechia,CZE,1980,2.399
+Czechia,CZE,1981,2.061
+Czechia,CZE,1982,1.67
+Czechia,CZE,1983,1.655
+Czechia,CZE,1984,1.298
+Czechia,CZE,1985,1.671
+Czechia,CZE,1986,1.876
+Czechia,CZE,1987,2.465
+Czechia,CZE,1988,2.099
+Czechia,CZE,1989,1.643
+Czechia,CZE,1990,1.16
+Czechia,CZE,1991,1.09
+Czechia,CZE,1992,1.4
+Czechia,CZE,1993,1.37
+Czechia,CZE,1994,1.46
+Czechia,CZE,1995,2
+Czechia,CZE,1996,1.97
+Czechia,CZE,1997,1.7
+Czechia,CZE,1998,1.4
+Czechia,CZE,1999,1.68
+Czechia,CZE,2000,1.76
+Czechia,CZE,2001,2.05
+Czechia,CZE,2002,2.49
+Czechia,CZE,2003,1.38
+Czechia,CZE,2004,2.02
+Czechia,CZE,2005,2.38
+Czechia,CZE,2006,2.55
+Czechia,CZE,2007,2.09
+Czechia,CZE,2008,2.02
+Czechia,CZE,2009,2.43
+Czechia,CZE,2010,2.79
+Czechia,CZE,2011,1.96
+Czechia,CZE,2012,2.13
+Czechia,CZE,2013,2.73
+Czechia,CZE,2014,1.91
+Czechia,CZE,2015,1.79
+Czechia,CZE,2016,2
+Czechia,CZE,2017,1.87
+Czechia,CZE,2018,1.63
+Czechia,CZE,2019,2.01
+Czechia,CZE,2020,2.14
+Czechia,CZE,2021,2.52
+Democratic Republic of Congo,COD,2000,5.94
+Democratic Republic of Congo,COD,2001,5.91
+Democratic Republic of Congo,COD,2002,6.05
+Democratic Republic of Congo,COD,2003,6.1
+Democratic Republic of Congo,COD,2004,7.01
+Democratic Republic of Congo,COD,2005,7.32
+Democratic Republic of Congo,COD,2006,7.45
+Democratic Republic of Congo,COD,2007,7.74
+Democratic Republic of Congo,COD,2008,7.41
+Democratic Republic of Congo,COD,2009,7.72
+Democratic Republic of Congo,COD,2010,7.74
+Democratic Republic of Congo,COD,2011,7.73
+Democratic Republic of Congo,COD,2012,7.51
+Democratic Republic of Congo,COD,2013,8.15
+Democratic Republic of Congo,COD,2014,8.73
+Democratic Republic of Congo,COD,2015,8.83
+Democratic Republic of Congo,COD,2016,9.01
+Democratic Republic of Congo,COD,2017,9.39
+Democratic Republic of Congo,COD,2018,10.43
+Democratic Republic of Congo,COD,2019,9.15
+Democratic Republic of Congo,COD,2020,9.19
+Denmark,DNK,1965,0.025
+Denmark,DNK,1966,0.026
+Denmark,DNK,1967,0.025
+Denmark,DNK,1968,0.021
+Denmark,DNK,1969,0.022
+Denmark,DNK,1970,0.024
+Denmark,DNK,1971,0.024
+Denmark,DNK,1972,0.024
+Denmark,DNK,1973,0.024
+Denmark,DNK,1974,0.024
+Denmark,DNK,1975,0.021
+Denmark,DNK,1976,0.019
+Denmark,DNK,1977,0.026
+Denmark,DNK,1978,0.027
+Denmark,DNK,1979,0.029
+Denmark,DNK,1980,0.034
+Denmark,DNK,1981,0.036
+Denmark,DNK,1982,0.03
+Denmark,DNK,1983,0.034
+Denmark,DNK,1984,0.03
+Denmark,DNK,1985,0.03
+Denmark,DNK,1986,0.029
+Denmark,DNK,1987,0.029
+Denmark,DNK,1988,0.033
+Denmark,DNK,1989,0.023
+Denmark,DNK,1990,0.03
+Denmark,DNK,1991,0.03
+Denmark,DNK,1992,0.03
+Denmark,DNK,1993,0.03
+Denmark,DNK,1994,0.03
+Denmark,DNK,1995,0.03
+Denmark,DNK,1996,0.02
+Denmark,DNK,1997,0.02
+Denmark,DNK,1998,0.03
+Denmark,DNK,1999,0.03
+Denmark,DNK,2000,0.03
+Denmark,DNK,2001,0.03
+Denmark,DNK,2002,0.03
+Denmark,DNK,2003,0.02
+Denmark,DNK,2004,0.03
+Denmark,DNK,2005,0.02
+Denmark,DNK,2006,0.02
+Denmark,DNK,2007,0.03
+Denmark,DNK,2008,0.03
+Denmark,DNK,2009,0.02
+Denmark,DNK,2010,0.02
+Denmark,DNK,2011,0.02
+Denmark,DNK,2012,0.02
+Denmark,DNK,2013,0.01
+Denmark,DNK,2014,0.02
+Denmark,DNK,2015,0.02
+Denmark,DNK,2016,0.02
+Denmark,DNK,2017,0.02
+Denmark,DNK,2018,0.01
+Denmark,DNK,2019,0.02
+Denmark,DNK,2020,0.02
+Denmark,DNK,2021,0.02
+Djibouti,DJI,2000,0
+Djibouti,DJI,2001,0
+Djibouti,DJI,2002,0
+Djibouti,DJI,2003,0
+Djibouti,DJI,2004,0
+Djibouti,DJI,2005,0
+Djibouti,DJI,2006,0
+Djibouti,DJI,2007,0
+Djibouti,DJI,2008,0
+Djibouti,DJI,2009,0
+Djibouti,DJI,2010,0
+Djibouti,DJI,2011,0
+Djibouti,DJI,2012,0
+Djibouti,DJI,2013,0
+Djibouti,DJI,2014,0
+Djibouti,DJI,2015,0
+Djibouti,DJI,2016,0
+Djibouti,DJI,2017,0
+Djibouti,DJI,2018,0
+Djibouti,DJI,2019,0
+Djibouti,DJI,2020,0
+Dominica,DMA,2000,0.03
+Dominica,DMA,2001,0.03
+Dominica,DMA,2002,0.03
+Dominica,DMA,2003,0.03
+Dominica,DMA,2004,0.03
+Dominica,DMA,2005,0.03
+Dominica,DMA,2006,0.03
+Dominica,DMA,2007,0.02
+Dominica,DMA,2008,0.02
+Dominica,DMA,2009,0.02
+Dominica,DMA,2010,0.02
+Dominica,DMA,2011,0.04
+Dominica,DMA,2012,0.03
+Dominica,DMA,2013,0.04
+Dominica,DMA,2014,0.03
+Dominica,DMA,2015,0.02
+Dominica,DMA,2016,0.04
+Dominica,DMA,2017,0.03
+Dominica,DMA,2018,0.02
+Dominica,DMA,2019,0.02
+Dominica,DMA,2020,0.04
+Dominican Republic,DOM,2000,0.75
+Dominican Republic,DOM,2001,0.7
+Dominican Republic,DOM,2002,0.87
+Dominican Republic,DOM,2003,1.19
+Dominican Republic,DOM,2004,1.6
+Dominican Republic,DOM,2005,1.91
+Dominican Republic,DOM,2006,1.75
+Dominican Republic,DOM,2007,1.7
+Dominican Republic,DOM,2008,1.38
+Dominican Republic,DOM,2009,1.46
+Dominican Republic,DOM,2010,1.43
+Dominican Republic,DOM,2011,1.53
+Dominican Republic,DOM,2012,1.78
+Dominican Republic,DOM,2013,1.88
+Dominican Republic,DOM,2014,1.32
+Dominican Republic,DOM,2015,0.93
+Dominican Republic,DOM,2016,1.5
+Dominican Republic,DOM,2017,2.17
+Dominican Republic,DOM,2018,1.76
+Dominican Republic,DOM,2019,1.05
+Dominican Republic,DOM,2020,0.12
+Eastern Africa,,1965,6.048
+Eastern Africa,,1966,7.168
+Eastern Africa,,1967,7.011
+Eastern Africa,,1968,7.198
+Eastern Africa,,1969,7.912
+Eastern Africa,,1970,11.34
+Eastern Africa,,1971,8.903
+Eastern Africa,,1972,10.891
+Eastern Africa,,1973,11.249
+Eastern Africa,,1974,14.268
+Eastern Africa,,1975,15.189
+Eastern Africa,,1976,16.744
+Eastern Africa,,1977,19.093
+Eastern Africa,,1978,18.239
+Eastern Africa,,1979,19.775
+Eastern Africa,,1980,18.079
+Eastern Africa,,1981,18.879
+Eastern Africa,,1982,19.575
+Eastern Africa,,1983,19.38
+Eastern Africa,,1984,18.887
+Eastern Africa,,1985,19.692
+Eastern Africa,,1986,18.845
+Eastern Africa,,1987,16.427
+Eastern Africa,,1988,18.618
+Eastern Africa,,1989,18.026
+Eastern Africa,,1990,21.346
+Eastern Africa,,1991,21.743
+Eastern Africa,,1992,19.633
+Eastern Africa,,1993,20.533
+Eastern Africa,,1994,20.672
+Eastern Africa,,1995,20.862
+Eastern Africa,,1996,20.736
+Eastern Africa,,1997,21.813
+Eastern Africa,,1998,27.865
+Eastern Africa,,1999,29.366
+Eastern Africa,,2000,30.854
+Eastern Africa,,2001,34.958
+Eastern Africa,,2002,37.998
+Eastern Africa,,2003,38.379
+Eastern Africa,,2004,38.952
+Eastern Africa,,2005,40.264
+Eastern Africa,,2006,42.56
+Eastern Africa,,2007,46.387
+Eastern Africa,,2008,45.788
+Eastern Africa,,2009,48.02
+Eastern Africa,,2010,53.972
+Eastern Africa,,2011,55.613
+Eastern Africa,,2012,58.061
+Eastern Africa,,2013,61.758
+Eastern Africa,,2014,65.988
+Eastern Africa,,2015,65.284
+Eastern Africa,,2016,61.81
+Eastern Africa,,2017,64.394
+Eastern Africa,,2018,69.019
+Eastern Africa,,2019,68.68
+Eastern Africa,,2020,72.678
+Ecuador,ECU,1965,0.249
+Ecuador,ECU,1966,0.285
+Ecuador,ECU,1967,0.314
+Ecuador,ECU,1968,0.328
+Ecuador,ECU,1969,0.364
+Ecuador,ECU,1970,0.405
+Ecuador,ECU,1971,0.44
+Ecuador,ECU,1972,0.445
+Ecuador,ECU,1973,0.435
+Ecuador,ECU,1974,0.5
+Ecuador,ECU,1975,0.628
+Ecuador,ECU,1976,0.605
+Ecuador,ECU,1977,0.558
+Ecuador,ECU,1978,0.791
+Ecuador,ECU,1979,0.709
+Ecuador,ECU,1980,0.872
+Ecuador,ECU,1981,0.779
+Ecuador,ECU,1982,0.895
+Ecuador,ECU,1983,1.721
+Ecuador,ECU,1984,3.233
+Ecuador,ECU,1985,3.279
+Ecuador,ECU,1986,4.012
+Ecuador,ECU,1987,4.57
+Ecuador,ECU,1988,4.826
+Ecuador,ECU,1989,4.954
+Ecuador,ECU,1990,4.987
+Ecuador,ECU,1991,5.076
+Ecuador,ECU,1992,4.974
+Ecuador,ECU,1993,5.81
+Ecuador,ECU,1994,6.565
+Ecuador,ECU,1995,5.161
+Ecuador,ECU,1996,6.343
+Ecuador,ECU,1997,6.534
+Ecuador,ECU,1998,6.506
+Ecuador,ECU,1999,7.177
+Ecuador,ECU,2000,7.53
+Ecuador,ECU,2001,7
+Ecuador,ECU,2002,7.45
+Ecuador,ECU,2003,7.11
+Ecuador,ECU,2004,7.34
+Ecuador,ECU,2005,6.81
+Ecuador,ECU,2006,7.06
+Ecuador,ECU,2007,8.95
+Ecuador,ECU,2008,11.18
+Ecuador,ECU,2009,9.13
+Ecuador,ECU,2010,8.55
+Ecuador,ECU,2011,11.02
+Ecuador,ECU,2012,12.12
+Ecuador,ECU,2013,10.93
+Ecuador,ECU,2014,11.34
+Ecuador,ECU,2015,12.97
+Ecuador,ECU,2016,15.68
+Ecuador,ECU,2017,19.89
+Ecuador,ECU,2018,20.47
+Ecuador,ECU,2019,24.42
+Ecuador,ECU,2020,24.79
+Ecuador,ECU,2021,25.93
+Egypt,EGY,1965,1.732
+Egypt,EGY,1966,1.825
+Egypt,EGY,1967,1.967
+Egypt,EGY,1968,3.001
+Egypt,EGY,1969,3.991
+Egypt,EGY,1970,4.689
+Egypt,EGY,1971,5.047
+Egypt,EGY,1972,5.162
+Egypt,EGY,1973,5.153
+Egypt,EGY,1974,6.116
+Egypt,EGY,1975,6.793
+Egypt,EGY,1976,8.004
+Egypt,EGY,1977,9.038
+Egypt,EGY,1978,9.93
+Egypt,EGY,1979,9.608
+Egypt,EGY,1980,9.802
+Egypt,EGY,1981,10.213
+Egypt,EGY,1982,10.492
+Egypt,EGY,1983,9.815
+Egypt,EGY,1984,9.63
+Egypt,EGY,1985,9.148
+Egypt,EGY,1986,8.972
+Egypt,EGY,1987,8.97
+Egypt,EGY,1988,8.829
+Egypt,EGY,1989,9.487
+Egypt,EGY,1990,9.953
+Egypt,EGY,1991,9.916
+Egypt,EGY,1992,9.8
+Egypt,EGY,1993,10.092
+Egypt,EGY,1994,10.728
+Egypt,EGY,1995,11.192
+Egypt,EGY,1996,11.484
+Egypt,EGY,1997,11.771
+Egypt,EGY,1998,12.104
+Egypt,EGY,1999,13.44
+Egypt,EGY,2000,13.56
+Egypt,EGY,2001,14.98
+Egypt,EGY,2002,12.73
+Egypt,EGY,2003,12.89
+Egypt,EGY,2004,12.52
+Egypt,EGY,2005,12.52
+Egypt,EGY,2006,12.8
+Egypt,EGY,2007,15.35
+Egypt,EGY,2008,14.53
+Egypt,EGY,2009,12.73
+Egypt,EGY,2010,12.92
+Egypt,EGY,2011,12.81
+Egypt,EGY,2012,12.99
+Egypt,EGY,2013,13.22
+Egypt,EGY,2014,13.68
+Egypt,EGY,2015,13.41
+Egypt,EGY,2016,12.72
+Egypt,EGY,2017,12.6
+Egypt,EGY,2018,12.77
+Egypt,EGY,2019,12.09
+Egypt,EGY,2020,12.09
+Egypt,EGY,2021,13.23
+El Salvador,SLV,2000,1.16
+El Salvador,SLV,2001,1.15
+El Salvador,SLV,2002,1.13
+El Salvador,SLV,2003,1.45
+El Salvador,SLV,2004,1.37
+El Salvador,SLV,2005,1.66
+El Salvador,SLV,2006,1.96
+El Salvador,SLV,2007,1.73
+El Salvador,SLV,2008,2.03
+El Salvador,SLV,2009,1.5
+El Salvador,SLV,2010,2.08
+El Salvador,SLV,2011,2.01
+El Salvador,SLV,2012,1.84
+El Salvador,SLV,2013,1.78
+El Salvador,SLV,2014,1.71
+El Salvador,SLV,2015,1.35
+El Salvador,SLV,2016,1.26
+El Salvador,SLV,2017,1.62
+El Salvador,SLV,2018,1.54
+El Salvador,SLV,2019,1.44
+El Salvador,SLV,2020,1.99
+El Salvador,SLV,2021,1.72
+Equatorial Guinea,GNQ,2000,0
+Equatorial Guinea,GNQ,2001,0
+Equatorial Guinea,GNQ,2002,0
+Equatorial Guinea,GNQ,2003,0.01
+Equatorial Guinea,GNQ,2004,0.01
+Equatorial Guinea,GNQ,2005,0.08
+Equatorial Guinea,GNQ,2006,0.08
+Equatorial Guinea,GNQ,2007,0.08
+Equatorial Guinea,GNQ,2008,0.05
+Equatorial Guinea,GNQ,2009,0.05
+Equatorial Guinea,GNQ,2010,0.03
+Equatorial Guinea,GNQ,2011,0.03
+Equatorial Guinea,GNQ,2012,0.08
+Equatorial Guinea,GNQ,2013,0.25
+Equatorial Guinea,GNQ,2014,0.38
+Equatorial Guinea,GNQ,2015,0.56
+Equatorial Guinea,GNQ,2016,0.57
+Equatorial Guinea,GNQ,2017,0.43
+Equatorial Guinea,GNQ,2018,0.58
+Equatorial Guinea,GNQ,2019,0.12
+Equatorial Guinea,GNQ,2020,0.12
+Eritrea,ERI,2000,0
+Eritrea,ERI,2001,0
+Eritrea,ERI,2002,0
+Eritrea,ERI,2003,0
+Eritrea,ERI,2004,0
+Eritrea,ERI,2005,0
+Eritrea,ERI,2006,0
+Eritrea,ERI,2007,0
+Eritrea,ERI,2008,0
+Eritrea,ERI,2009,0
+Eritrea,ERI,2010,0
+Eritrea,ERI,2011,0
+Eritrea,ERI,2012,0
+Eritrea,ERI,2013,0
+Eritrea,ERI,2014,0
+Eritrea,ERI,2015,0
+Eritrea,ERI,2016,0
+Eritrea,ERI,2017,0
+Eritrea,ERI,2018,0
+Eritrea,ERI,2019,0
+Eritrea,ERI,2020,0
+Estonia,EST,1985,0
+Estonia,EST,1986,0
+Estonia,EST,1987,0
+Estonia,EST,1988,0
+Estonia,EST,1989,0
+Estonia,EST,1990,0
+Estonia,EST,1991,0
+Estonia,EST,1992,0
+Estonia,EST,1993,0
+Estonia,EST,1994,0
+Estonia,EST,1995,0
+Estonia,EST,1996,0
+Estonia,EST,1997,0
+Estonia,EST,1998,0
+Estonia,EST,1999,0
+Estonia,EST,2000,0
+Estonia,EST,2001,0.01
+Estonia,EST,2002,0.01
+Estonia,EST,2003,0.01
+Estonia,EST,2004,0.02
+Estonia,EST,2005,0.02
+Estonia,EST,2006,0.01
+Estonia,EST,2007,0.02
+Estonia,EST,2008,0.03
+Estonia,EST,2009,0.03
+Estonia,EST,2010,0.03
+Estonia,EST,2011,0.03
+Estonia,EST,2012,0.04
+Estonia,EST,2013,0.03
+Estonia,EST,2014,0.03
+Estonia,EST,2015,0.03
+Estonia,EST,2016,0.04
+Estonia,EST,2017,0.03
+Estonia,EST,2018,0.01
+Estonia,EST,2019,0.02
+Estonia,EST,2020,0.03
+Estonia,EST,2021,0.03
+Eswatini,SWZ,2000,0.19
+Eswatini,SWZ,2001,0.19
+Eswatini,SWZ,2002,0.2
+Eswatini,SWZ,2003,0.12
+Eswatini,SWZ,2004,0.1
+Eswatini,SWZ,2005,0.16
+Eswatini,SWZ,2006,0.15
+Eswatini,SWZ,2007,0.17
+Eswatini,SWZ,2008,0.16
+Eswatini,SWZ,2009,0.2
+Eswatini,SWZ,2010,0.24
+Eswatini,SWZ,2011,0.28
+Eswatini,SWZ,2012,0.27
+Eswatini,SWZ,2013,0.24
+Eswatini,SWZ,2014,0.3
+Eswatini,SWZ,2015,0.23
+Eswatini,SWZ,2016,0.12
+Eswatini,SWZ,2017,0.12
+Eswatini,SWZ,2018,0.21
+Eswatini,SWZ,2019,0.16
+Eswatini,SWZ,2020,0.16
+Ethiopia,ETH,2000,1.63
+Ethiopia,ETH,2001,1.97
+Ethiopia,ETH,2002,2
+Ethiopia,ETH,2003,2.26
+Ethiopia,ETH,2004,2.5
+Ethiopia,ETH,2005,2.81
+Ethiopia,ETH,2006,3.23
+Ethiopia,ETH,2007,3.35
+Ethiopia,ETH,2008,3.26
+Ethiopia,ETH,2009,3.49
+Ethiopia,ETH,2010,4.88
+Ethiopia,ETH,2011,6.2
+Ethiopia,ETH,2012,7.31
+Ethiopia,ETH,2013,8.26
+Ethiopia,ETH,2014,8.92
+Ethiopia,ETH,2015,9.58
+Ethiopia,ETH,2016,11.64
+Ethiopia,ETH,2017,12.55
+Ethiopia,ETH,2018,12.89
+Ethiopia,ETH,2019,13.56
+Ethiopia,ETH,2020,13.56
+Europe,,1985,617.683
+Europe,,1986,601.026
+Europe,,1987,634.76
+Europe,,1988,660.775
+Europe,,1989,599.97
+Europe,,1990,633.373
+Europe,,1991,641.702
+Europe,,1992,662.025
+Europe,,1993,678.389
+Europe,,1994,689.368
+Europe,,1995,694.357
+Europe,,1996,650.363
+Europe,,1997,670.351
+Europe,,1998,694.8
+Europe,,1999,707.999
+Europe,,2000,736.37
+Europe,,2001,751
+Europe,,2002,680.3
+Europe,,2003,639.92
+Europe,,2004,688.75
+Europe,,2005,696.9
+Europe,,2006,683.4
+Europe,,2007,695.86
+Europe,,2008,715.15
+Europe,,2009,718.9
+Europe,,2010,753.19
+Europe,,2011,673.47
+Europe,,2012,725.22
+Europe,,2013,774.02
+Europe,,2014,769.21
+Europe,,2015,728.43
+Europe,,2016,760.59
+Europe,,2017,703.03
+Europe,,2018,766.6
+Europe,,2019,726.18
+Europe,,2020,775.34
+Europe,,2021,758.75
+European Union (27),,1965,211.806
+European Union (27),,1966,230.454
+European Union (27),,1967,222.193
+European Union (27),,1968,226.581
+European Union (27),,1969,222.458
+European Union (27),,1970,234.723
+European Union (27),,1971,233.228
+European Union (27),,1972,244.836
+European Union (27),,1973,243.532
+European Union (27),,1974,263.017
+European Union (27),,1975,264.905
+European Union (27),,1976,231.163
+European Union (27),,1977,307.586
+European Union (27),,1978,299.479
+European Union (27),,1979,313.924
+European Union (27),,1980,297.708
+European Union (27),,1981,293.823
+European Union (27),,1982,288.888
+European Union (27),,1983,294.682
+European Union (27),,1984,298.866
+European Union (27),,1985,305.172
+European Union (27),,1986,288.303
+European Union (27),,1987,316.57
+European Union (27),,1988,334.199
+European Union (27),,1989,272.938
+European Union (27),,1990,284.82
+European Union (27),,1991,296.91
+European Union (27),,1992,309.17
+European Union (27),,1993,317.37
+European Union (27),,1994,327.61
+European Union (27),,1995,327.01
+European Union (27),,1996,328.58
+European Union (27),,1997,333.4
+European Union (27),,1998,344.3
+European Union (27),,1999,342.51
+European Union (27),,2000,351.75
+European Union (27),,2001,375.08
+European Union (27),,2002,314.12
+European Union (27),,2003,306.23
+European Union (27),,2004,324.7
+European Union (27),,2005,308.36
+European Union (27),,2006,311.4
+European Union (27),,2007,309.33
+European Union (27),,2008,327.08
+European Union (27),,2009,330.5
+European Union (27),,2010,373.33
+European Union (27),,2011,307.43
+European Union (27),,2012,331.67
+European Union (27),,2013,368.02
+European Union (27),,2014,370.06
+European Union (27),,2015,336
+European Union (27),,2016,345.6
+European Union (27),,2017,294.34
+European Union (27),,2018,343.84
+European Union (27),,2019,320.27
+European Union (27),,2020,346.28
+European Union (27),,2021,343.88
+Faeroe Islands,FRO,2000,0.08
+Faeroe Islands,FRO,2001,0.08
+Faeroe Islands,FRO,2002,0.1
+Faeroe Islands,FRO,2003,0.08
+Faeroe Islands,FRO,2004,0.09
+Faeroe Islands,FRO,2005,0.1
+Faeroe Islands,FRO,2006,0.1
+Faeroe Islands,FRO,2007,0.1
+Faeroe Islands,FRO,2008,0.09
+Faeroe Islands,FRO,2009,0.09
+Faeroe Islands,FRO,2010,0.07
+Faeroe Islands,FRO,2011,0.09
+Faeroe Islands,FRO,2012,0.1
+Faeroe Islands,FRO,2013,0.09
+Faeroe Islands,FRO,2014,0.12
+Faeroe Islands,FRO,2015,0.13
+Faeroe Islands,FRO,2016,0.1
+Faeroe Islands,FRO,2017,0.11
+Faeroe Islands,FRO,2018,0.11
+Faeroe Islands,FRO,2019,0.1
+Faeroe Islands,FRO,2020,0.11
+Falkland Islands,FLK,2000,0
+Falkland Islands,FLK,2001,0
+Falkland Islands,FLK,2002,0
+Falkland Islands,FLK,2003,0
+Falkland Islands,FLK,2004,0
+Falkland Islands,FLK,2005,0
+Falkland Islands,FLK,2006,0
+Falkland Islands,FLK,2007,0
+Falkland Islands,FLK,2008,0
+Falkland Islands,FLK,2009,0
+Falkland Islands,FLK,2010,0
+Falkland Islands,FLK,2011,0
+Falkland Islands,FLK,2012,0
+Falkland Islands,FLK,2013,0
+Falkland Islands,FLK,2014,0
+Falkland Islands,FLK,2015,0
+Falkland Islands,FLK,2016,0
+Falkland Islands,FLK,2017,0
+Falkland Islands,FLK,2018,0
+Falkland Islands,FLK,2019,0
+Falkland Islands,FLK,2020,0
+Fiji,FJI,2000,0.41
+Fiji,FJI,2001,0.46
+Fiji,FJI,2002,0.45
+Fiji,FJI,2003,0.34
+Fiji,FJI,2004,0.37
+Fiji,FJI,2005,0.34
+Fiji,FJI,2006,0.34
+Fiji,FJI,2007,0.51
+Fiji,FJI,2008,0.5
+Fiji,FJI,2009,0.46
+Fiji,FJI,2010,0.41
+Fiji,FJI,2011,0.45
+Fiji,FJI,2012,0.52
+Fiji,FJI,2013,0.52
+Fiji,FJI,2014,0.4
+Fiji,FJI,2015,0.4
+Fiji,FJI,2016,0.49
+Fiji,FJI,2017,0.49
+Fiji,FJI,2018,0.56
+Fiji,FJI,2019,0.57
+Fiji,FJI,2020,0.5
+Finland,FIN,1965,9.354
+Finland,FIN,1966,10.381
+Finland,FIN,1967,11.629
+Finland,FIN,1968,10.489
+Finland,FIN,1969,8.745
+Finland,FIN,1970,9.524
+Finland,FIN,1971,10.681
+Finland,FIN,1972,10.38
+Finland,FIN,1973,10.58
+Finland,FIN,1974,12.703
+Finland,FIN,1975,12.209
+Finland,FIN,1976,9.482
+Finland,FIN,1977,12.182
+Finland,FIN,1978,9.799
+Finland,FIN,1979,10.871
+Finland,FIN,1980,10.217
+Finland,FIN,1981,13.655
+Finland,FIN,1982,13.089
+Finland,FIN,1983,13.581
+Finland,FIN,1984,13.247
+Finland,FIN,1985,12.334
+Finland,FIN,1986,12.39
+Finland,FIN,1987,13.796
+Finland,FIN,1988,13.363
+Finland,FIN,1989,13.03
+Finland,FIN,1990,10.86
+Finland,FIN,1991,13.2
+Finland,FIN,1992,15.11
+Finland,FIN,1993,13.48
+Finland,FIN,1994,11.79
+Finland,FIN,1995,12.93
+Finland,FIN,1996,11.86
+Finland,FIN,1997,12.24
+Finland,FIN,1998,15.05
+Finland,FIN,1999,12.78
+Finland,FIN,2000,14.66
+Finland,FIN,2001,13.2
+Finland,FIN,2002,10.78
+Finland,FIN,2003,9.59
+Finland,FIN,2004,15.07
+Finland,FIN,2005,13.78
+Finland,FIN,2006,11.49
+Finland,FIN,2007,14.18
+Finland,FIN,2008,17.11
+Finland,FIN,2009,12.69
+Finland,FIN,2010,12.92
+Finland,FIN,2011,12.45
+Finland,FIN,2012,16.86
+Finland,FIN,2013,12.84
+Finland,FIN,2014,13.4
+Finland,FIN,2015,16.77
+Finland,FIN,2016,15.8
+Finland,FIN,2017,14.77
+Finland,FIN,2018,13.3
+Finland,FIN,2019,12.42
+Finland,FIN,2020,15.88
+Finland,FIN,2021,15.7
+France,FRA,1965,46.881
+France,FRA,1966,52.208
+France,FRA,1967,45.378
+France,FRA,1968,50.423
+France,FRA,1969,52.942
+France,FRA,1970,56.681
+France,FRA,1971,48.857
+France,FRA,1972,48.831
+France,FRA,1973,47.696
+France,FRA,1974,56.23
+France,FRA,1975,60.108
+France,FRA,1976,48.565
+France,FRA,1977,76.323
+France,FRA,1978,68.36
+France,FRA,1979,66.419
+France,FRA,1980,69.527
+France,FRA,1981,72.195
+France,FRA,1982,70.575
+France,FRA,1983,69.443
+France,FRA,1984,65.69
+France,FRA,1985,62.453
+France,FRA,1986,63.011
+France,FRA,1987,71.088
+France,FRA,1988,77.117
+France,FRA,1989,46.842
+France,FRA,1990,53.87
+France,FRA,1991,57.6
+France,FRA,1992,68.96
+France,FRA,1993,64.89
+France,FRA,1994,78.79
+France,FRA,1995,73.12
+France,FRA,1996,66.04
+France,FRA,1997,63.76
+France,FRA,1998,62.09
+France,FRA,1999,72.51
+France,FRA,2000,66.36
+France,FRA,2001,74.27
+France,FRA,2002,60.4
+France,FRA,2003,58.94
+France,FRA,2004,59.55
+France,FRA,2005,51.48
+France,FRA,2006,56.3
+France,FRA,2007,57.6
+France,FRA,2008,63.65
+France,FRA,2009,56.99
+France,FRA,2010,62.71
+France,FRA,2011,45.74
+France,FRA,2012,59.83
+France,FRA,2013,71.92
+France,FRA,2014,63.77
+France,FRA,2015,55.56
+France,FRA,2016,60.84
+France,FRA,2017,50
+France,FRA,2018,65.11
+France,FRA,2019,56.91
+France,FRA,2020,62.06
+France,FRA,2021,59.49
+French Guiana,GUF,2000,0
+French Guiana,GUF,2001,0.53
+French Guiana,GUF,2002,0.55
+French Guiana,GUF,2003,0.57
+French Guiana,GUF,2004,0.59
+French Guiana,GUF,2005,0.62
+French Guiana,GUF,2006,0.64
+French Guiana,GUF,2007,0.66
+French Guiana,GUF,2008,0.69
+French Guiana,GUF,2009,0.71
+French Guiana,GUF,2010,0.74
+French Guiana,GUF,2011,0.65
+French Guiana,GUF,2012,0.56
+French Guiana,GUF,2013,0.49
+French Guiana,GUF,2014,0.5
+French Guiana,GUF,2015,0.49
+French Guiana,GUF,2016,0.44
+French Guiana,GUF,2017,0.56
+French Guiana,GUF,2018,0.54
+French Guiana,GUF,2019,0.44
+French Guiana,GUF,2020,0.44
+French Polynesia,PYF,2000,0.12
+French Polynesia,PYF,2001,0.1
+French Polynesia,PYF,2002,0.13
+French Polynesia,PYF,2003,0.15
+French Polynesia,PYF,2004,0.18
+French Polynesia,PYF,2005,0.18
+French Polynesia,PYF,2006,0.2
+French Polynesia,PYF,2007,0.22
+French Polynesia,PYF,2008,0.21
+French Polynesia,PYF,2009,0.21
+French Polynesia,PYF,2010,0.27
+French Polynesia,PYF,2011,0.22
+French Polynesia,PYF,2012,0.2
+French Polynesia,PYF,2013,0.15
+French Polynesia,PYF,2014,0.17
+French Polynesia,PYF,2015,0.17
+French Polynesia,PYF,2016,0.18
+French Polynesia,PYF,2017,0.18
+French Polynesia,PYF,2018,0.16
+French Polynesia,PYF,2019,0.18
+French Polynesia,PYF,2020,0.18
+G20,,2000,1955.07
+G20,,2001,1910.5
+G20,,2002,1928.52
+G20,,2003,1933.54
+G20,,2004,2097.82
+G20,,2005,2141.97
+G20,,2006,2243.59
+G20,,2007,2268.48
+G20,,2008,2440.95
+G20,,2009,2450.32
+G20,,2010,2605.41
+G20,,2011,2645.54
+G20,,2012,2764.91
+G20,,2013,2871.55
+G20,,2014,2981.52
+G20,,2015,2981.35
+G20,,2016,3077.84
+G20,,2017,3079.08
+G20,,2018,3172.85
+G20,,2019,3263.42
+G20,,2020,3369.08
+G20,,2021,3265.2
+G7,,2000,848.71
+G7,,2001,769.32
+G7,,2002,812.02
+G7,,2003,812.16
+G7,,2004,817.96
+G7,,2005,809.88
+G7,,2006,836.57
+G7,,2007,794.46
+G7,,2008,828.75
+G7,,2009,840.3
+G7,,2010,824.37
+G7,,2011,884.37
+G7,,2012,852.69
+G7,,2013,883.18
+G7,,2014,862.83
+G7,,2015,835.49
+G7,,2016,851.04
+G7,,2017,880.13
+G7,,2018,886.3
+G7,,2019,869.3
+G7,,2020,886.74
+G7,,2021,849.41
+Gabon,GAB,2000,0.8
+Gabon,GAB,2001,0.87
+Gabon,GAB,2002,0.91
+Gabon,GAB,2003,0.89
+Gabon,GAB,2004,0.88
+Gabon,GAB,2005,0.8
+Gabon,GAB,2006,0.94
+Gabon,GAB,2007,0.79
+Gabon,GAB,2008,0.88
+Gabon,GAB,2009,0.94
+Gabon,GAB,2010,0.9
+Gabon,GAB,2011,0.83
+Gabon,GAB,2012,0.9
+Gabon,GAB,2013,0.93
+Gabon,GAB,2014,0.79
+Gabon,GAB,2015,0.91
+Gabon,GAB,2016,0.94
+Gabon,GAB,2017,0.92
+Gabon,GAB,2018,0.89
+Gabon,GAB,2019,1.74
+Gabon,GAB,2020,1.74
+Gambia,GMB,2000,0
+Gambia,GMB,2001,0
+Gambia,GMB,2002,0
+Gambia,GMB,2003,0
+Gambia,GMB,2004,0
+Gambia,GMB,2005,0
+Gambia,GMB,2006,0
+Gambia,GMB,2007,0
+Gambia,GMB,2008,0
+Gambia,GMB,2009,0
+Gambia,GMB,2010,0
+Gambia,GMB,2011,0
+Gambia,GMB,2012,0
+Gambia,GMB,2013,0
+Gambia,GMB,2014,0
+Gambia,GMB,2015,0
+Gambia,GMB,2016,0
+Gambia,GMB,2017,0
+Gambia,GMB,2018,0
+Gambia,GMB,2019,0
+Gambia,GMB,2020,0
+Georgia,GEO,2000,5.8
+Georgia,GEO,2001,5.49
+Georgia,GEO,2002,6.7
+Georgia,GEO,2003,6.46
+Georgia,GEO,2004,5.99
+Georgia,GEO,2005,6.17
+Georgia,GEO,2006,5.26
+Georgia,GEO,2007,6.75
+Georgia,GEO,2008,7.09
+Georgia,GEO,2009,7.34
+Georgia,GEO,2010,9.27
+Georgia,GEO,2011,7.81
+Georgia,GEO,2012,7.15
+Georgia,GEO,2013,8.19
+Georgia,GEO,2014,8.25
+Georgia,GEO,2015,8.37
+Georgia,GEO,2016,9.24
+Georgia,GEO,2017,9.12
+Georgia,GEO,2018,9.85
+Georgia,GEO,2019,8.84
+Georgia,GEO,2020,8.25
+Georgia,GEO,2021,10.19
+Germany,DEU,1965,16.212
+Germany,DEU,1966,17.534
+Germany,DEU,1967,16.652
+Germany,DEU,1968,16.899
+Germany,DEU,1969,13.713
+Germany,DEU,1970,17.534
+Germany,DEU,1971,13.455
+Germany,DEU,1972,13.206
+Germany,DEU,1973,15.229
+Germany,DEU,1974,17.638
+Germany,DEU,1975,17.059
+Germany,DEU,1976,13.847
+Germany,DEU,1977,17.582
+Germany,DEU,1978,18.362
+Germany,DEU,1979,18.384
+Germany,DEU,1980,19.069
+Germany,DEU,1981,19.915
+Germany,DEU,1982,19.738
+Germany,DEU,1983,18.712
+Germany,DEU,1984,18.479
+Germany,DEU,1985,17.401
+Germany,DEU,1986,18.572
+Germany,DEU,1987,20.343
+Germany,DEU,1988,20.079
+Germany,DEU,1989,18.244
+Germany,DEU,1990,17.43
+Germany,DEU,1991,14.89
+Germany,DEU,1992,17.4
+Germany,DEU,1993,17.88
+Germany,DEU,1994,19.93
+Germany,DEU,1995,21.78
+Germany,DEU,1996,21.96
+Germany,DEU,1997,17.36
+Germany,DEU,1998,17.22
+Germany,DEU,1999,19.65
+Germany,DEU,2000,21.73
+Germany,DEU,2001,22.73
+Germany,DEU,2002,23.12
+Germany,DEU,2003,18.32
+Germany,DEU,2004,20.75
+Germany,DEU,2005,19.64
+Germany,DEU,2006,20.03
+Germany,DEU,2007,21.17
+Germany,DEU,2008,20.44
+Germany,DEU,2009,19.03
+Germany,DEU,2010,20.95
+Germany,DEU,2011,17.67
+Germany,DEU,2012,21.75
+Germany,DEU,2013,23
+Germany,DEU,2014,19.59
+Germany,DEU,2015,18.98
+Germany,DEU,2016,20.55
+Germany,DEU,2017,20.15
+Germany,DEU,2018,17.69
+Germany,DEU,2019,19.73
+Germany,DEU,2020,18.32
+Germany,DEU,2021,17.2
+Ghana,GHA,2000,6.54
+Ghana,GHA,2001,6.54
+Ghana,GHA,2002,4.99
+Ghana,GHA,2003,3.85
+Ghana,GHA,2004,5.23
+Ghana,GHA,2005,5.57
+Ghana,GHA,2006,5.56
+Ghana,GHA,2007,3.69
+Ghana,GHA,2008,6.13
+Ghana,GHA,2009,6.81
+Ghana,GHA,2010,6.93
+Ghana,GHA,2011,7.49
+Ghana,GHA,2012,7.99
+Ghana,GHA,2013,8.15
+Ghana,GHA,2014,8.3
+Ghana,GHA,2015,5.79
+Ghana,GHA,2016,5.51
+Ghana,GHA,2017,5.56
+Ghana,GHA,2018,5.96
+Ghana,GHA,2019,7.44
+Ghana,GHA,2020,7.21
+Greece,GRC,1965,0.801
+Greece,GRC,1966,1.73
+Greece,GRC,1967,1.66
+Greece,GRC,1968,1.368
+Greece,GRC,1969,2.055
+Greece,GRC,1970,2.636
+Greece,GRC,1971,2.652
+Greece,GRC,1972,2.677
+Greece,GRC,1973,2.223
+Greece,GRC,1974,2.347
+Greece,GRC,1975,2.015
+Greece,GRC,1976,1.879
+Greece,GRC,1977,1.922
+Greece,GRC,1978,2.988
+Greece,GRC,1979,3.566
+Greece,GRC,1980,3.405
+Greece,GRC,1981,3.407
+Greece,GRC,1982,3.561
+Greece,GRC,1983,2.34
+Greece,GRC,1984,2.862
+Greece,GRC,1985,2.805
+Greece,GRC,1986,3.235
+Greece,GRC,1987,2.78
+Greece,GRC,1988,2.366
+Greece,GRC,1989,1.9
+Greece,GRC,1990,1.77
+Greece,GRC,1991,3.1
+Greece,GRC,1992,2.2
+Greece,GRC,1993,2.28
+Greece,GRC,1994,2.6
+Greece,GRC,1995,3.53
+Greece,GRC,1996,4.35
+Greece,GRC,1997,3.88
+Greece,GRC,1998,3.72
+Greece,GRC,1999,4.59
+Greece,GRC,2000,3.69
+Greece,GRC,2001,2.1
+Greece,GRC,2002,2.8
+Greece,GRC,2003,4.77
+Greece,GRC,2004,4.67
+Greece,GRC,2005,5.02
+Greece,GRC,2006,5.86
+Greece,GRC,2007,2.59
+Greece,GRC,2008,3.31
+Greece,GRC,2009,5.35
+Greece,GRC,2010,7.47
+Greece,GRC,2011,4.01
+Greece,GRC,2012,4.39
+Greece,GRC,2013,6.35
+Greece,GRC,2014,4.48
+Greece,GRC,2015,6.1
+Greece,GRC,2016,5.54
+Greece,GRC,2017,3.96
+Greece,GRC,2018,5.74
+Greece,GRC,2019,3.98
+Greece,GRC,2020,3.3
+Greece,GRC,2021,5.4
+Greenland,GRL,2000,0.17
+Greenland,GRL,2001,0.16
+Greenland,GRL,2002,0.18
+Greenland,GRL,2003,0.18
+Greenland,GRL,2004,0.19
+Greenland,GRL,2005,0.2
+Greenland,GRL,2006,0.2
+Greenland,GRL,2007,0.2
+Greenland,GRL,2008,0.2
+Greenland,GRL,2009,0.26
+Greenland,GRL,2010,0.29
+Greenland,GRL,2011,0.34
+Greenland,GRL,2012,0.34
+Greenland,GRL,2013,0.37
+Greenland,GRL,2014,0.39
+Greenland,GRL,2015,0.42
+Greenland,GRL,2016,0.4
+Greenland,GRL,2017,0.38
+Greenland,GRL,2018,0.41
+Greenland,GRL,2019,0.4
+Greenland,GRL,2020,0.5
+Grenada,GRD,2000,0
+Grenada,GRD,2001,0
+Grenada,GRD,2002,0
+Grenada,GRD,2003,0
+Grenada,GRD,2004,0
+Grenada,GRD,2005,0
+Grenada,GRD,2006,0
+Grenada,GRD,2007,0
+Grenada,GRD,2008,0
+Grenada,GRD,2009,0
+Grenada,GRD,2010,0
+Grenada,GRD,2011,0
+Grenada,GRD,2012,0
+Grenada,GRD,2013,0
+Grenada,GRD,2014,0
+Grenada,GRD,2015,0
+Grenada,GRD,2016,0
+Grenada,GRD,2017,0
+Grenada,GRD,2018,0
+Grenada,GRD,2019,0
+Grenada,GRD,2020,0
+Guadeloupe,GLP,2000,0
+Guadeloupe,GLP,2001,0
+Guadeloupe,GLP,2002,0
+Guadeloupe,GLP,2003,0
+Guadeloupe,GLP,2004,0
+Guadeloupe,GLP,2005,0
+Guadeloupe,GLP,2006,0
+Guadeloupe,GLP,2007,0
+Guadeloupe,GLP,2008,0
+Guadeloupe,GLP,2009,0
+Guadeloupe,GLP,2010,0
+Guadeloupe,GLP,2011,0
+Guadeloupe,GLP,2012,0
+Guadeloupe,GLP,2013,0
+Guadeloupe,GLP,2014,0
+Guadeloupe,GLP,2015,0
+Guadeloupe,GLP,2016,0
+Guadeloupe,GLP,2017,0
+Guadeloupe,GLP,2018,0
+Guadeloupe,GLP,2019,0
+Guadeloupe,GLP,2020,0.03
+Guam,GUM,2000,0
+Guam,GUM,2001,0
+Guam,GUM,2002,0
+Guam,GUM,2003,0
+Guam,GUM,2004,0
+Guam,GUM,2005,0
+Guam,GUM,2006,0
+Guam,GUM,2007,0
+Guam,GUM,2008,0
+Guam,GUM,2009,0
+Guam,GUM,2010,0
+Guam,GUM,2011,0
+Guam,GUM,2012,0
+Guam,GUM,2013,0
+Guam,GUM,2014,0
+Guam,GUM,2015,0
+Guam,GUM,2016,0
+Guam,GUM,2017,0
+Guam,GUM,2018,0
+Guam,GUM,2019,0
+Guam,GUM,2020,0
+Guatemala,GTM,2000,2.5
+Guatemala,GTM,2001,2.18
+Guatemala,GTM,2002,1.93
+Guatemala,GTM,2003,2.65
+Guatemala,GTM,2004,2.54
+Guatemala,GTM,2005,2.91
+Guatemala,GTM,2006,3.27
+Guatemala,GTM,2007,3
+Guatemala,GTM,2008,3.64
+Guatemala,GTM,2009,2.91
+Guatemala,GTM,2010,3.81
+Guatemala,GTM,2011,4.13
+Guatemala,GTM,2012,4.46
+Guatemala,GTM,2013,4.65
+Guatemala,GTM,2014,4.84
+Guatemala,GTM,2015,3.87
+Guatemala,GTM,2016,3.99
+Guatemala,GTM,2017,5.81
+Guatemala,GTM,2018,5.26
+Guatemala,GTM,2019,4.44
+Guatemala,GTM,2020,5.77
+Guinea,GIN,2000,0.41
+Guinea,GIN,2001,0.55
+Guinea,GIN,2002,0.59
+Guinea,GIN,2003,0.4
+Guinea,GIN,2004,0.55
+Guinea,GIN,2005,0.49
+Guinea,GIN,2006,0.46
+Guinea,GIN,2007,0.53
+Guinea,GIN,2008,0.52
+Guinea,GIN,2009,0.52
+Guinea,GIN,2010,0.48
+Guinea,GIN,2011,0.41
+Guinea,GIN,2012,0.49
+Guinea,GIN,2013,0.48
+Guinea,GIN,2014,0.42
+Guinea,GIN,2015,0.88
+Guinea,GIN,2016,1.08
+Guinea,GIN,2017,1.21
+Guinea,GIN,2018,0.74
+Guinea,GIN,2019,1.29
+Guinea,GIN,2020,2.47
+Guinea-Bissau,GNB,2000,0
+Guinea-Bissau,GNB,2001,0
+Guinea-Bissau,GNB,2002,0
+Guinea-Bissau,GNB,2003,0
+Guinea-Bissau,GNB,2004,0
+Guinea-Bissau,GNB,2005,0
+Guinea-Bissau,GNB,2006,0
+Guinea-Bissau,GNB,2007,0
+Guinea-Bissau,GNB,2008,0
+Guinea-Bissau,GNB,2009,0
+Guinea-Bissau,GNB,2010,0
+Guinea-Bissau,GNB,2011,0
+Guinea-Bissau,GNB,2012,0
+Guinea-Bissau,GNB,2013,0
+Guinea-Bissau,GNB,2014,0
+Guinea-Bissau,GNB,2015,0
+Guinea-Bissau,GNB,2016,0
+Guinea-Bissau,GNB,2017,0
+Guinea-Bissau,GNB,2018,0
+Guinea-Bissau,GNB,2019,0
+Guinea-Bissau,GNB,2020,0
+Guyana,GUY,2000,0
+Guyana,GUY,2001,0
+Guyana,GUY,2002,0
+Guyana,GUY,2003,0
+Guyana,GUY,2004,0
+Guyana,GUY,2005,0
+Guyana,GUY,2006,0
+Guyana,GUY,2007,0
+Guyana,GUY,2008,0
+Guyana,GUY,2009,0
+Guyana,GUY,2010,0
+Guyana,GUY,2011,0
+Guyana,GUY,2012,0
+Guyana,GUY,2013,0
+Guyana,GUY,2014,0
+Guyana,GUY,2015,0
+Guyana,GUY,2016,0
+Guyana,GUY,2017,0
+Guyana,GUY,2018,0
+Guyana,GUY,2019,0
+Guyana,GUY,2020,0
+Haiti,HTI,2000,0.28
+Haiti,HTI,2001,0.28
+Haiti,HTI,2002,0.26
+Haiti,HTI,2003,0.25
+Haiti,HTI,2004,0.26
+Haiti,HTI,2005,0.26
+Haiti,HTI,2006,0.27
+Haiti,HTI,2007,0.15
+Haiti,HTI,2008,0.18
+Haiti,HTI,2009,0.2
+Haiti,HTI,2010,0.17
+Haiti,HTI,2011,0.12
+Haiti,HTI,2012,0.22
+Haiti,HTI,2013,0.14
+Haiti,HTI,2014,0.09
+Haiti,HTI,2015,0.08
+Haiti,HTI,2016,0.07
+Haiti,HTI,2017,0.13
+Haiti,HTI,2018,0.2
+Haiti,HTI,2019,0.13
+Haiti,HTI,2020,0.13
+High-income countries,,1965,705.694
+High-income countries,,1966,745.083
+High-income countries,,1967,763.759
+High-income countries,,1968,783.73
+High-income countries,,1969,818.976
+High-income countries,,1970,840.99
+High-income countries,,1971,877.8
+High-income countries,,1972,915.132
+High-income countries,,1973,916.193
+High-income countries,,1974,1005.907
+High-income countries,,1975,1005.675
+High-income countries,,1976,963.194
+High-income countries,,1977,967.718
+High-income countries,,1978,1040.888
+High-income countries,,1979,1082.578
+High-income countries,,1980,1072.417
+High-income countries,,1981,1082.136
+High-income countries,,1982,1111.814
+High-income countries,,1983,1167.839
+High-income countries,,1984,1163.541
+High-income countries,,1985,1159.882
+High-income countries,,1986,1158.509
+High-income countries,,1987,1153.125
+High-income countries,,1988,1153.164
+High-income countries,,1989,1125.827
+High-income countries,,1990,1164.941
+High-income countries,,1991,1179.127
+High-income countries,,1992,1164.787
+High-income countries,,1993,1226.096
+High-income countries,,1994,1191.635
+High-income countries,,1995,1267.648
+High-income countries,,1996,1296.229
+High-income countries,,1997,1323.707
+High-income countries,,1998,1291.864
+High-income countries,,1999,1301.758
+High-income countries,,2000,1311.81
+High-income countries,,2001,1229.71
+High-income countries,,2002,1234.83
+High-income countries,,2003,1213.39
+High-income countries,,2004,1227.15
+High-income countries,,2005,1239.83
+High-income countries,,2006,1249.31
+High-income countries,,2007,1227.89
+High-income countries,,2008,1268.01
+High-income countries,,2009,1273.17
+High-income countries,,2010,1280.1
+High-income countries,,2011,1308.43
+High-income countries,,2012,1310.58
+High-income countries,,2013,1343.09
+High-income countries,,2014,1336.46
+High-income countries,,2015,1294.99
+High-income countries,,2016,1323.02
+High-income countries,,2017,1319.64
+High-income countries,,2018,1343.08
+High-income countries,,2019,1303.51
+High-income countries,,2020,1359.83
+High-income countries,,2021,1274.41
+Honduras,HND,2000,2.24
+Honduras,HND,2001,1.88
+Honduras,HND,2002,1.6
+Honduras,HND,2003,1.72
+Honduras,HND,2004,1.39
+Honduras,HND,2005,1.7
+Honduras,HND,2006,2.05
+Honduras,HND,2007,2.19
+Honduras,HND,2008,2.27
+Honduras,HND,2009,2.77
+Honduras,HND,2010,3.05
+Honduras,HND,2011,2.79
+Honduras,HND,2012,2.76
+Honduras,HND,2013,2.71
+Honduras,HND,2014,2.58
+Honduras,HND,2015,2.32
+Honduras,HND,2016,2.33
+Honduras,HND,2017,3.06
+Honduras,HND,2018,3.23
+Honduras,HND,2019,3.25
+Honduras,HND,2020,2.7
+Hong Kong,HKG,1965,0
+Hong Kong,HKG,1966,0
+Hong Kong,HKG,1967,0
+Hong Kong,HKG,1968,0
+Hong Kong,HKG,1969,0
+Hong Kong,HKG,1970,0
+Hong Kong,HKG,1971,0
+Hong Kong,HKG,1972,0
+Hong Kong,HKG,1973,0
+Hong Kong,HKG,1974,0
+Hong Kong,HKG,1975,0
+Hong Kong,HKG,1976,0
+Hong Kong,HKG,1977,0
+Hong Kong,HKG,1978,0
+Hong Kong,HKG,1979,0
+Hong Kong,HKG,1980,0
+Hong Kong,HKG,1981,0
+Hong Kong,HKG,1982,0
+Hong Kong,HKG,1983,0
+Hong Kong,HKG,1984,0
+Hong Kong,HKG,1985,0
+Hong Kong,HKG,1986,0
+Hong Kong,HKG,1987,0
+Hong Kong,HKG,1988,0
+Hong Kong,HKG,1989,0
+Hong Kong,HKG,1990,0
+Hong Kong,HKG,1991,0
+Hong Kong,HKG,1992,0
+Hong Kong,HKG,1993,0
+Hong Kong,HKG,1994,0
+Hong Kong,HKG,1995,0
+Hong Kong,HKG,1996,0
+Hong Kong,HKG,1997,0
+Hong Kong,HKG,1998,0
+Hong Kong,HKG,1999,0
+Hong Kong,HKG,2000,0
+Hong Kong,HKG,2001,0
+Hong Kong,HKG,2002,0
+Hong Kong,HKG,2003,0
+Hong Kong,HKG,2004,0
+Hong Kong,HKG,2005,0
+Hong Kong,HKG,2006,0
+Hong Kong,HKG,2007,0
+Hong Kong,HKG,2008,0
+Hong Kong,HKG,2009,0
+Hong Kong,HKG,2010,0
+Hong Kong,HKG,2011,0
+Hong Kong,HKG,2012,0
+Hong Kong,HKG,2013,0
+Hong Kong,HKG,2014,0
+Hong Kong,HKG,2015,0
+Hong Kong,HKG,2016,0
+Hong Kong,HKG,2017,0
+Hong Kong,HKG,2018,0
+Hong Kong,HKG,2019,0
+Hong Kong,HKG,2020,0
+Hungary,HUN,1965,0.075
+Hungary,HUN,1966,0.1
+Hungary,HUN,1967,0.082
+Hungary,HUN,1968,0.089
+Hungary,HUN,1969,0.095
+Hungary,HUN,1970,0.088
+Hungary,HUN,1971,0.096
+Hungary,HUN,1972,0.11
+Hungary,HUN,1973,0.101
+Hungary,HUN,1974,0.081
+Hungary,HUN,1975,0.163
+Hungary,HUN,1976,0.165
+Hungary,HUN,1977,0.149
+Hungary,HUN,1978,0.138
+Hungary,HUN,1979,0.146
+Hungary,HUN,1980,0.112
+Hungary,HUN,1981,0.168
+Hungary,HUN,1982,0.159
+Hungary,HUN,1983,0.155
+Hungary,HUN,1984,0.181
+Hungary,HUN,1985,0.155
+Hungary,HUN,1986,0.154
+Hungary,HUN,1987,0.169
+Hungary,HUN,1988,0.169
+Hungary,HUN,1989,0.158
+Hungary,HUN,1990,0.18
+Hungary,HUN,1991,0.19
+Hungary,HUN,1992,0.16
+Hungary,HUN,1993,0.17
+Hungary,HUN,1994,0.16
+Hungary,HUN,1995,0.16
+Hungary,HUN,1996,0.21
+Hungary,HUN,1997,0.22
+Hungary,HUN,1998,0.16
+Hungary,HUN,1999,0.18
+Hungary,HUN,2000,0.18
+Hungary,HUN,2001,0.19
+Hungary,HUN,2002,0.19
+Hungary,HUN,2003,0.17
+Hungary,HUN,2004,0.2
+Hungary,HUN,2005,0.2
+Hungary,HUN,2006,0.19
+Hungary,HUN,2007,0.21
+Hungary,HUN,2008,0.21
+Hungary,HUN,2009,0.23
+Hungary,HUN,2010,0.19
+Hungary,HUN,2011,0.22
+Hungary,HUN,2012,0.21
+Hungary,HUN,2013,0.21
+Hungary,HUN,2014,0.3
+Hungary,HUN,2015,0.23
+Hungary,HUN,2016,0.26
+Hungary,HUN,2017,0.22
+Hungary,HUN,2018,0.22
+Hungary,HUN,2019,0.22
+Hungary,HUN,2020,0.24
+Hungary,HUN,2021,0.2
+Iceland,ISL,1965,0.641
+Iceland,ISL,1966,0.624
+Iceland,ISL,1967,0.664
+Iceland,ISL,1968,0.687
+Iceland,ISL,1969,0.86
+Iceland,ISL,1970,1.413
+Iceland,ISL,1971,1.54
+Iceland,ISL,1972,1.703
+Iceland,ISL,1973,2.181
+Iceland,ISL,1974,2.258
+Iceland,ISL,1975,2.206
+Iceland,ISL,1976,2.35
+Iceland,ISL,1977,2.52
+Iceland,ISL,1978,2.605
+Iceland,ISL,1979,2.819
+Iceland,ISL,1980,3.053
+Iceland,ISL,1981,3.084
+Iceland,ISL,1982,3.407
+Iceland,ISL,1983,3.588
+Iceland,ISL,1984,3.738
+Iceland,ISL,1985,3.663
+Iceland,ISL,1986,3.842
+Iceland,ISL,1987,3.914
+Iceland,ISL,1988,4.164
+Iceland,ISL,1989,4.213
+Iceland,ISL,1990,4.2
+Iceland,ISL,1991,4.2
+Iceland,ISL,1992,4.31
+Iceland,ISL,1993,4.47
+Iceland,ISL,1994,4.51
+Iceland,ISL,1995,4.68
+Iceland,ISL,1996,4.77
+Iceland,ISL,1997,5.21
+Iceland,ISL,1998,5.62
+Iceland,ISL,1999,6.05
+Iceland,ISL,2000,6.36
+Iceland,ISL,2001,6.58
+Iceland,ISL,2002,6.98
+Iceland,ISL,2003,7.09
+Iceland,ISL,2004,7.13
+Iceland,ISL,2005,7.02
+Iceland,ISL,2006,7.29
+Iceland,ISL,2007,8.39
+Iceland,ISL,2008,12.43
+Iceland,ISL,2009,12.28
+Iceland,ISL,2010,12.59
+Iceland,ISL,2011,12.51
+Iceland,ISL,2012,12.34
+Iceland,ISL,2013,12.86
+Iceland,ISL,2014,12.87
+Iceland,ISL,2015,13.78
+Iceland,ISL,2016,13.47
+Iceland,ISL,2017,14.06
+Iceland,ISL,2018,13.81
+Iceland,ISL,2019,13.46
+Iceland,ISL,2020,13.16
+India,IND,1965,19.167
+India,IND,1966,20.015
+India,IND,1967,22.398
+India,IND,1968,25.849
+India,IND,1969,28.7
+India,IND,1970,30.436
+India,IND,1971,33.384
+India,IND,1972,32.403
+India,IND,1973,34.507
+India,IND,1974,33.203
+India,IND,1975,39.669
+India,IND,1976,41.498
+India,IND,1977,45.277
+India,IND,1978,56.175
+India,IND,1979,54.169
+India,IND,1980,55.441
+India,IND,1981,59.083
+India,IND,1982,49.86
+India,IND,1983,48.043
+India,IND,1984,53.682
+India,IND,1985,51.813
+India,IND,1986,52.569
+India,IND,1987,48.963
+India,IND,1988,54.615
+India,IND,1989,63.37
+India,IND,1990,66.397
+India,IND,1991,73.919
+India,IND,1992,70.061
+India,IND,1993,70.732
+India,IND,1994,80.212
+India,IND,1995,75.921
+India,IND,1996,69.058
+India,IND,1997,70.211
+India,IND,1998,83.633
+India,IND,1999,82.249
+India,IND,2000,76.99
+India,IND,2001,72.02
+India,IND,2002,68.54
+India,IND,2003,69.3
+India,IND,2004,100.64
+India,IND,2005,97.42
+India,IND,2006,112.62
+India,IND,2007,122.61
+India,IND,2008,115.17
+India,IND,2009,106.34
+India,IND,2010,108.74
+India,IND,2011,131.7
+India,IND,2012,115.78
+India,IND,2013,131.98
+India,IND,2014,139
+India,IND,2015,133.28
+India,IND,2016,128.38
+India,IND,2017,135.82
+India,IND,2018,139.75
+India,IND,2019,162.02
+India,IND,2020,163.64
+India,IND,2021,171.27
+Indonesia,IDN,1965,1.825
+Indonesia,IDN,1966,2.373
+Indonesia,IDN,1967,2.665
+Indonesia,IDN,1968,3.292
+Indonesia,IDN,1969,3.443
+Indonesia,IDN,1970,4.185
+Indonesia,IDN,1971,1.379
+Indonesia,IDN,1972,1.233
+Indonesia,IDN,1973,1.556
+Indonesia,IDN,1974,1.724
+Indonesia,IDN,1975,1.808
+Indonesia,IDN,1976,1.061
+Indonesia,IDN,1977,1.763
+Indonesia,IDN,1978,1.26
+Indonesia,IDN,1979,1.401
+Indonesia,IDN,1980,1.268
+Indonesia,IDN,1981,1.264
+Indonesia,IDN,1982,1.379
+Indonesia,IDN,1983,2.073
+Indonesia,IDN,1984,2.263
+Indonesia,IDN,1985,2.767
+Indonesia,IDN,1986,4.455
+Indonesia,IDN,1987,4.583
+Indonesia,IDN,1988,5.034
+Indonesia,IDN,1989,6.28
+Indonesia,IDN,1990,6.492
+Indonesia,IDN,1991,7.409
+Indonesia,IDN,1992,9.645
+Indonesia,IDN,1993,8.891
+Indonesia,IDN,1994,7.983
+Indonesia,IDN,1995,8.293
+Indonesia,IDN,1996,8.824
+Indonesia,IDN,1997,5.866
+Indonesia,IDN,1998,10.364
+Indonesia,IDN,1999,10.38
+Indonesia,IDN,2000,10.02
+Indonesia,IDN,2001,11.65
+Indonesia,IDN,2002,9.93
+Indonesia,IDN,2003,9.1
+Indonesia,IDN,2004,9.67
+Indonesia,IDN,2005,10.73
+Indonesia,IDN,2006,9.62
+Indonesia,IDN,2007,11.29
+Indonesia,IDN,2008,11.53
+Indonesia,IDN,2009,11.38
+Indonesia,IDN,2010,17.46
+Indonesia,IDN,2011,12.42
+Indonesia,IDN,2012,12.8
+Indonesia,IDN,2013,16.92
+Indonesia,IDN,2014,15.16
+Indonesia,IDN,2015,13.74
+Indonesia,IDN,2016,18.68
+Indonesia,IDN,2017,18.63
+Indonesia,IDN,2018,16.83
+Indonesia,IDN,2019,16.55
+Indonesia,IDN,2020,19.45
+Iran,IRN,1965,1.719
+Iran,IRN,1966,1.847
+Iran,IRN,1967,1.989
+Iran,IRN,1968,2.139
+Iran,IRN,1969,2.303
+Iran,IRN,1970,2.479
+Iran,IRN,1971,2.665
+Iran,IRN,1972,3.5
+Iran,IRN,1973,2.965
+Iran,IRN,1974,3.266
+Iran,IRN,1975,3.429
+Iran,IRN,1976,3.836
+Iran,IRN,1977,3.964
+Iran,IRN,1978,6.209
+Iran,IRN,1979,5.383
+Iran,IRN,1980,5.582
+Iran,IRN,1981,6.094
+Iran,IRN,1982,6.395
+Iran,IRN,1983,6.258
+Iran,IRN,1984,5.851
+Iran,IRN,1985,5.899
+Iran,IRN,1986,7.05
+Iran,IRN,1987,7.816
+Iran,IRN,1988,8.246
+Iran,IRN,1989,6.732
+Iran,IRN,1990,7.381
+Iran,IRN,1991,5.607
+Iran,IRN,1992,9.204
+Iran,IRN,1993,10.533
+Iran,IRN,1994,6.896
+Iran,IRN,1995,8.323
+Iran,IRN,1996,8.814
+Iran,IRN,1997,5.941
+Iran,IRN,1998,7.488
+Iran,IRN,1999,5.143
+Iran,IRN,2000,3.63
+Iran,IRN,2001,5.03
+Iran,IRN,2002,8
+Iran,IRN,2003,10.99
+Iran,IRN,2004,10.52
+Iran,IRN,2005,15.94
+Iran,IRN,2006,18.08
+Iran,IRN,2007,17.81
+Iran,IRN,2008,4.95
+Iran,IRN,2009,7.16
+Iran,IRN,2010,9.43
+Iran,IRN,2011,11.94
+Iran,IRN,2012,12.32
+Iran,IRN,2013,14.44
+Iran,IRN,2014,13.72
+Iran,IRN,2015,13.95
+Iran,IRN,2016,16.26
+Iran,IRN,2017,14.9
+Iran,IRN,2018,15.61
+Iran,IRN,2019,30.07
+Iran,IRN,2020,27.7
+Iraq,IRQ,1965,0.071
+Iraq,IRQ,1966,0.093
+Iraq,IRQ,1967,0.106
+Iraq,IRQ,1968,0.128
+Iraq,IRQ,1969,0.141
+Iraq,IRQ,1970,0.172
+Iraq,IRQ,1971,0.2
+Iraq,IRQ,1972,0.2
+Iraq,IRQ,1973,0.29
+Iraq,IRQ,1974,0.4
+Iraq,IRQ,1975,0.461
+Iraq,IRQ,1976,0.459
+Iraq,IRQ,1977,0.566
+Iraq,IRQ,1978,0.708
+Iraq,IRQ,1979,1.032
+Iraq,IRQ,1980,0.69
+Iraq,IRQ,1981,0.61
+Iraq,IRQ,1982,0.6
+Iraq,IRQ,1983,0.6
+Iraq,IRQ,1984,0.61
+Iraq,IRQ,1985,0.61
+Iraq,IRQ,1986,0.6
+Iraq,IRQ,1987,2.6
+Iraq,IRQ,1988,2.6
+Iraq,IRQ,1989,2.6
+Iraq,IRQ,1990,4.65
+Iraq,IRQ,1991,2.145
+Iraq,IRQ,1992,5.219
+Iraq,IRQ,1993,6.162
+Iraq,IRQ,1994,6.248
+Iraq,IRQ,1995,7.12
+Iraq,IRQ,1996,6.489
+Iraq,IRQ,1997,6.608
+Iraq,IRQ,1998,6.198
+Iraq,IRQ,1999,3.559
+Iraq,IRQ,2000,0.61
+Iraq,IRQ,2001,0.61
+Iraq,IRQ,2002,0.51
+Iraq,IRQ,2003,0.43
+Iraq,IRQ,2004,0.49
+Iraq,IRQ,2005,5.94
+Iraq,IRQ,2006,6.04
+Iraq,IRQ,2007,5.68
+Iraq,IRQ,2008,3.45
+Iraq,IRQ,2009,3.19
+Iraq,IRQ,2010,4.72
+Iraq,IRQ,2011,3.36
+Iraq,IRQ,2012,4.35
+Iraq,IRQ,2013,4.71
+Iraq,IRQ,2014,2.9
+Iraq,IRQ,2015,2.52
+Iraq,IRQ,2016,3.34
+Iraq,IRQ,2017,2.15
+Iraq,IRQ,2018,1.8
+Iraq,IRQ,2019,2.45
+Iraq,IRQ,2020,1.8
+Ireland,IRL,1965,0.942
+Ireland,IRL,1966,0.849
+Ireland,IRL,1967,0.802
+Ireland,IRL,1968,0.768
+Ireland,IRL,1969,0.582
+Ireland,IRL,1970,0.802
+Ireland,IRL,1971,0.465
+Ireland,IRL,1972,0.686
+Ireland,IRL,1973,0.64
+Ireland,IRL,1974,0.791
+Ireland,IRL,1975,0.523
+Ireland,IRL,1976,0.593
+Ireland,IRL,1977,0.744
+Ireland,IRL,1978,0.698
+Ireland,IRL,1979,0.826
+Ireland,IRL,1980,0.837
+Ireland,IRL,1981,0.861
+Ireland,IRL,1982,0.802
+Ireland,IRL,1983,0.779
+Ireland,IRL,1984,0.686
+Ireland,IRL,1985,0.837
+Ireland,IRL,1986,0.919
+Ireland,IRL,1987,0.686
+Ireland,IRL,1988,0.872
+Ireland,IRL,1989,0.698
+Ireland,IRL,1990,0.7
+Ireland,IRL,1991,0.75
+Ireland,IRL,1992,0.82
+Ireland,IRL,1993,0.76
+Ireland,IRL,1994,0.92
+Ireland,IRL,1995,0.71
+Ireland,IRL,1996,0.72
+Ireland,IRL,1997,0.68
+Ireland,IRL,1998,0.92
+Ireland,IRL,1999,0.85
+Ireland,IRL,2000,0.85
+Ireland,IRL,2001,0.6
+Ireland,IRL,2002,0.91
+Ireland,IRL,2003,0.6
+Ireland,IRL,2004,0.63
+Ireland,IRL,2005,0.63
+Ireland,IRL,2006,0.72
+Ireland,IRL,2007,0.67
+Ireland,IRL,2008,0.97
+Ireland,IRL,2009,0.9
+Ireland,IRL,2010,0.6
+Ireland,IRL,2011,0.71
+Ireland,IRL,2012,0.8
+Ireland,IRL,2013,0.6
+Ireland,IRL,2014,0.71
+Ireland,IRL,2015,0.81
+Ireland,IRL,2016,0.68
+Ireland,IRL,2017,0.69
+Ireland,IRL,2018,0.69
+Ireland,IRL,2019,0.89
+Ireland,IRL,2020,0.93
+Ireland,IRL,2021,0.75
+Israel,ISR,1965,0
+Israel,ISR,1966,0
+Israel,ISR,1967,0
+Israel,ISR,1968,0
+Israel,ISR,1969,0
+Israel,ISR,1970,0
+Israel,ISR,1971,0
+Israel,ISR,1972,0
+Israel,ISR,1973,0
+Israel,ISR,1974,0
+Israel,ISR,1975,0
+Israel,ISR,1976,0
+Israel,ISR,1977,0
+Israel,ISR,1978,0
+Israel,ISR,1979,0
+Israel,ISR,1980,0
+Israel,ISR,1981,0.002
+Israel,ISR,1982,0.002
+Israel,ISR,1983,0.001
+Israel,ISR,1984,0.002
+Israel,ISR,1985,0.002
+Israel,ISR,1986,0.006
+Israel,ISR,1987,0.01
+Israel,ISR,1988,0.01
+Israel,ISR,1989,0.003
+Israel,ISR,1990,0.003
+Israel,ISR,1991,0.006
+Israel,ISR,1992,0.029
+Israel,ISR,1993,0.026
+Israel,ISR,1994,0.023
+Israel,ISR,1995,0.025
+Israel,ISR,1996,0.024
+Israel,ISR,1997,0.025
+Israel,ISR,1998,0.025
+Israel,ISR,1999,0.033
+Israel,ISR,2000,0.03
+Israel,ISR,2001,0.01
+Israel,ISR,2002,0.02
+Israel,ISR,2003,0.03
+Israel,ISR,2004,0.03
+Israel,ISR,2005,0.03
+Israel,ISR,2006,0.01
+Israel,ISR,2007,0.01
+Israel,ISR,2008,0.02
+Israel,ISR,2009,0.02
+Israel,ISR,2010,0.03
+Israel,ISR,2011,0.03
+Israel,ISR,2012,0.03
+Israel,ISR,2013,0.03
+Israel,ISR,2014,0.01
+Israel,ISR,2015,0.02
+Israel,ISR,2016,0
+Israel,ISR,2017,0
+Israel,ISR,2018,0
+Israel,ISR,2019,0
+Israel,ISR,2020,0.02
+Italy,ITA,1965,42.634
+Italy,ITA,1966,43.72
+Italy,ITA,1967,42.34
+Italy,ITA,1968,42.677
+Italy,ITA,1969,41.166
+Italy,ITA,1970,40.373
+Italy,ITA,1971,39.079
+Italy,ITA,1972,41.348
+Italy,ITA,1973,37.523
+Italy,ITA,1974,37.795
+Italy,ITA,1975,41.021
+Italy,ITA,1976,39.176
+Italy,ITA,1977,51.139
+Italy,ITA,1978,45.491
+Italy,ITA,1979,45.947
+Italy,ITA,1980,45.244
+Italy,ITA,1981,43.034
+Italy,ITA,1982,41.461
+Italy,ITA,1983,41.445
+Italy,ITA,1984,42.401
+Italy,ITA,1985,41.092
+Italy,ITA,1986,41.096
+Italy,ITA,1987,39.505
+Italy,ITA,1988,40.676
+Italy,ITA,1989,34.057
+Italy,ITA,1990,31.63
+Italy,ITA,1991,42.24
+Italy,ITA,1992,42.2
+Italy,ITA,1993,41.42
+Italy,ITA,1994,44.66
+Italy,ITA,1995,37.78
+Italy,ITA,1996,42.04
+Italy,ITA,1997,41.6
+Italy,ITA,1998,41.22
+Italy,ITA,1999,45.37
+Italy,ITA,2000,44.2
+Italy,ITA,2001,46.81
+Italy,ITA,2002,39.52
+Italy,ITA,2003,36.67
+Italy,ITA,2004,42.34
+Italy,ITA,2005,36.07
+Italy,ITA,2006,36.99
+Italy,ITA,2007,32.82
+Italy,ITA,2008,41.62
+Italy,ITA,2009,49.14
+Italy,ITA,2010,51.12
+Italy,ITA,2011,45.82
+Italy,ITA,2012,41.87
+Italy,ITA,2013,52.77
+Italy,ITA,2014,58.55
+Italy,ITA,2015,45.54
+Italy,ITA,2016,42.43
+Italy,ITA,2017,36.2
+Italy,ITA,2018,48.79
+Italy,ITA,2019,46.32
+Italy,ITA,2020,47.55
+Italy,ITA,2021,44.66
+Jamaica,JAM,2000,0.11
+Jamaica,JAM,2001,0.06
+Jamaica,JAM,2002,0.09
+Jamaica,JAM,2003,0.12
+Jamaica,JAM,2004,0.13
+Jamaica,JAM,2005,0.15
+Jamaica,JAM,2006,0.16
+Jamaica,JAM,2007,0.16
+Jamaica,JAM,2008,0.16
+Jamaica,JAM,2009,0.14
+Jamaica,JAM,2010,0.15
+Jamaica,JAM,2011,0.15
+Jamaica,JAM,2012,0.15
+Jamaica,JAM,2013,0.12
+Jamaica,JAM,2014,0.14
+Jamaica,JAM,2015,0.13
+Jamaica,JAM,2016,0.12
+Jamaica,JAM,2017,0.15
+Jamaica,JAM,2018,0.18
+Jamaica,JAM,2019,0.16
+Jamaica,JAM,2020,0.16
+Japan,JPN,1965,76.07
+Japan,JPN,1966,79.35
+Japan,JPN,1967,68.55
+Japan,JPN,1968,73.45
+Japan,JPN,1969,75.35
+Japan,JPN,1970,75.4
+Japan,JPN,1971,84.2
+Japan,JPN,1972,85.1
+Japan,JPN,1973,66.778
+Japan,JPN,1974,82.68
+Japan,JPN,1975,83.406
+Japan,JPN,1976,83.59
+Japan,JPN,1977,72.968
+Japan,JPN,1978,70.047
+Japan,JPN,1979,80.743
+Japan,JPN,1980,88.292
+Japan,JPN,1981,87.594
+Japan,JPN,1982,81.606
+Japan,JPN,1983,84.273
+Japan,JPN,1984,71.617
+Japan,JPN,1985,82.874
+Japan,JPN,1986,80.816
+Japan,JPN,1987,74.787
+Japan,JPN,1988,90.291
+Japan,JPN,1989,91.741
+Japan,JPN,1990,86.895
+Japan,JPN,1991,94.416
+Japan,JPN,1992,80.046
+Japan,JPN,1993,92.58
+Japan,JPN,1994,64.462
+Japan,JPN,1995,78.793
+Japan,JPN,1996,77.173
+Japan,JPN,1997,86.44
+Japan,JPN,1998,89.079
+Japan,JPN,1999,83.792
+Japan,JPN,2000,86.38
+Japan,JPN,2001,83.32
+Japan,JPN,2002,81.55
+Japan,JPN,2003,93.66
+Japan,JPN,2004,93.12
+Japan,JPN,2005,75.71
+Japan,JPN,2006,86.65
+Japan,JPN,2007,73.27
+Japan,JPN,2008,75.68
+Japan,JPN,2009,76.13
+Japan,JPN,2010,83.43
+Japan,JPN,2011,84.55
+Japan,JPN,2012,76.18
+Japan,JPN,2013,79.04
+Japan,JPN,2014,83.16
+Japan,JPN,2015,86.75
+Japan,JPN,2016,79.14
+Japan,JPN,2017,83.42
+Japan,JPN,2018,80.63
+Japan,JPN,2019,79.82
+Japan,JPN,2020,89.17
+Japan,JPN,2021,89.49
+Jordan,JOR,2000,0.04
+Jordan,JOR,2001,0.04
+Jordan,JOR,2002,0.05
+Jordan,JOR,2003,0.04
+Jordan,JOR,2004,0.05
+Jordan,JOR,2005,0.06
+Jordan,JOR,2006,0.05
+Jordan,JOR,2007,0.06
+Jordan,JOR,2008,0.06
+Jordan,JOR,2009,0.06
+Jordan,JOR,2010,0.06
+Jordan,JOR,2011,0.05
+Jordan,JOR,2012,0.06
+Jordan,JOR,2013,0.05
+Jordan,JOR,2014,0.06
+Jordan,JOR,2015,0.05
+Jordan,JOR,2016,0.04
+Jordan,JOR,2017,0.04
+Jordan,JOR,2018,0.02
+Jordan,JOR,2019,0.05
+Jordan,JOR,2020,0.03
+Kazakhstan,KAZ,1985,5.21
+Kazakhstan,KAZ,1986,4.782
+Kazakhstan,KAZ,1987,5.732
+Kazakhstan,KAZ,1988,6.991
+Kazakhstan,KAZ,1989,7.292
+Kazakhstan,KAZ,1990,7.366
+Kazakhstan,KAZ,1991,7.2
+Kazakhstan,KAZ,1992,6.866
+Kazakhstan,KAZ,1993,7.629
+Kazakhstan,KAZ,1994,9.179
+Kazakhstan,KAZ,1995,8.331
+Kazakhstan,KAZ,1996,7.331
+Kazakhstan,KAZ,1997,6.499
+Kazakhstan,KAZ,1998,6.141
+Kazakhstan,KAZ,1999,6.132
+Kazakhstan,KAZ,2000,7.53
+Kazakhstan,KAZ,2001,8.08
+Kazakhstan,KAZ,2002,8.89
+Kazakhstan,KAZ,2003,8.62
+Kazakhstan,KAZ,2004,8.06
+Kazakhstan,KAZ,2005,7.86
+Kazakhstan,KAZ,2006,7.77
+Kazakhstan,KAZ,2007,8.17
+Kazakhstan,KAZ,2008,7.46
+Kazakhstan,KAZ,2009,6.88
+Kazakhstan,KAZ,2010,8.02
+Kazakhstan,KAZ,2011,7.88
+Kazakhstan,KAZ,2012,7.64
+Kazakhstan,KAZ,2013,7.73
+Kazakhstan,KAZ,2014,8.26
+Kazakhstan,KAZ,2015,9.27
+Kazakhstan,KAZ,2016,11.62
+Kazakhstan,KAZ,2017,11.21
+Kazakhstan,KAZ,2018,10.38
+Kazakhstan,KAZ,2019,9.99
+Kazakhstan,KAZ,2020,9.8
+Kazakhstan,KAZ,2021,9.44
+Kenya,KEN,2000,1.31
+Kenya,KEN,2001,2.38
+Kenya,KEN,2002,3.09
+Kenya,KEN,2003,3.23
+Kenya,KEN,2004,2.84
+Kenya,KEN,2005,3
+Kenya,KEN,2006,3.24
+Kenya,KEN,2007,3.45
+Kenya,KEN,2008,2.82
+Kenya,KEN,2009,2.15
+Kenya,KEN,2010,3.39
+Kenya,KEN,2011,3.42
+Kenya,KEN,2012,4.26
+Kenya,KEN,2013,3.91
+Kenya,KEN,2014,3.28
+Kenya,KEN,2015,3.75
+Kenya,KEN,2016,3.31
+Kenya,KEN,2017,3.17
+Kenya,KEN,2018,3.95
+Kenya,KEN,2019,3.17
+Kenya,KEN,2020,3.52
+Kenya,KEN,2021,2.95
+Kiribati,KIR,2000,0
+Kiribati,KIR,2001,0
+Kiribati,KIR,2002,0
+Kiribati,KIR,2003,0
+Kiribati,KIR,2004,0
+Kiribati,KIR,2005,0
+Kiribati,KIR,2006,0
+Kiribati,KIR,2007,0
+Kiribati,KIR,2008,0
+Kiribati,KIR,2009,0
+Kiribati,KIR,2010,0
+Kiribati,KIR,2011,0
+Kiribati,KIR,2012,0
+Kiribati,KIR,2013,0
+Kiribati,KIR,2014,0
+Kiribati,KIR,2015,0
+Kiribati,KIR,2016,0
+Kiribati,KIR,2017,0
+Kiribati,KIR,2018,0
+Kiribati,KIR,2019,0
+Kiribati,KIR,2020,0
+Kosovo,OWID_KOS,2000,0.05
+Kosovo,OWID_KOS,2001,0.05
+Kosovo,OWID_KOS,2002,0.05
+Kosovo,OWID_KOS,2003,0.05
+Kosovo,OWID_KOS,2004,0.11
+Kosovo,OWID_KOS,2005,0.11
+Kosovo,OWID_KOS,2006,0.1
+Kosovo,OWID_KOS,2007,0.09
+Kosovo,OWID_KOS,2008,0.08
+Kosovo,OWID_KOS,2009,0.12
+Kosovo,OWID_KOS,2010,0.16
+Kosovo,OWID_KOS,2011,0.1
+Kosovo,OWID_KOS,2012,0.1
+Kosovo,OWID_KOS,2013,0.14
+Kosovo,OWID_KOS,2014,0.15
+Kosovo,OWID_KOS,2015,0.14
+Kosovo,OWID_KOS,2016,0.25
+Kosovo,OWID_KOS,2017,0.18
+Kosovo,OWID_KOS,2018,0.27
+Kosovo,OWID_KOS,2019,0.21
+Kosovo,OWID_KOS,2020,0.26
+Kuwait,KWT,1965,0
+Kuwait,KWT,1966,0
+Kuwait,KWT,1967,0
+Kuwait,KWT,1968,0
+Kuwait,KWT,1969,0
+Kuwait,KWT,1970,0
+Kuwait,KWT,1971,0
+Kuwait,KWT,1972,0
+Kuwait,KWT,1973,0
+Kuwait,KWT,1974,0
+Kuwait,KWT,1975,0
+Kuwait,KWT,1976,0
+Kuwait,KWT,1977,0
+Kuwait,KWT,1978,0
+Kuwait,KWT,1979,0
+Kuwait,KWT,1980,0
+Kuwait,KWT,1981,0
+Kuwait,KWT,1982,0
+Kuwait,KWT,1983,0
+Kuwait,KWT,1984,0
+Kuwait,KWT,1985,0
+Kuwait,KWT,1986,0
+Kuwait,KWT,1987,0
+Kuwait,KWT,1988,0
+Kuwait,KWT,1989,0
+Kuwait,KWT,1990,0
+Kuwait,KWT,1991,0
+Kuwait,KWT,1992,0
+Kuwait,KWT,1993,0
+Kuwait,KWT,1994,0
+Kuwait,KWT,1995,0
+Kuwait,KWT,1996,0
+Kuwait,KWT,1997,0
+Kuwait,KWT,1998,0
+Kuwait,KWT,1999,0
+Kuwait,KWT,2000,0
+Kuwait,KWT,2001,0
+Kuwait,KWT,2002,0
+Kuwait,KWT,2003,0
+Kuwait,KWT,2004,0
+Kuwait,KWT,2005,0
+Kuwait,KWT,2006,0
+Kuwait,KWT,2007,0
+Kuwait,KWT,2008,0
+Kuwait,KWT,2009,0
+Kuwait,KWT,2010,0
+Kuwait,KWT,2011,0
+Kuwait,KWT,2012,0
+Kuwait,KWT,2013,0
+Kuwait,KWT,2014,0
+Kuwait,KWT,2015,0
+Kuwait,KWT,2016,0
+Kuwait,KWT,2017,0
+Kuwait,KWT,2018,0
+Kuwait,KWT,2019,0
+Kuwait,KWT,2020,0
+Kyrgyzstan,KGZ,2000,13.55
+Kyrgyzstan,KGZ,2001,12.31
+Kyrgyzstan,KGZ,2002,10.68
+Kyrgyzstan,KGZ,2003,13.38
+Kyrgyzstan,KGZ,2004,13.95
+Kyrgyzstan,KGZ,2005,12.66
+Kyrgyzstan,KGZ,2006,12.35
+Kyrgyzstan,KGZ,2007,12.61
+Kyrgyzstan,KGZ,2008,10.02
+Kyrgyzstan,KGZ,2009,10.11
+Kyrgyzstan,KGZ,2010,11
+Kyrgyzstan,KGZ,2011,14
+Kyrgyzstan,KGZ,2012,14.04
+Kyrgyzstan,KGZ,2013,13
+Kyrgyzstan,KGZ,2014,13.16
+Kyrgyzstan,KGZ,2015,10.99
+Kyrgyzstan,KGZ,2016,11.38
+Kyrgyzstan,KGZ,2017,14.06
+Kyrgyzstan,KGZ,2018,14.17
+Kyrgyzstan,KGZ,2019,13.71
+Kyrgyzstan,KGZ,2020,14.8
+Laos,LAO,2000,3.28
+Laos,LAO,2001,3.3
+Laos,LAO,2002,3.21
+Laos,LAO,2003,2.83
+Laos,LAO,2004,3
+Laos,LAO,2005,3.51
+Laos,LAO,2006,3.6
+Laos,LAO,2007,3.37
+Laos,LAO,2008,3.72
+Laos,LAO,2009,3.37
+Laos,LAO,2010,8.36
+Laos,LAO,2011,12.84
+Laos,LAO,2012,12.93
+Laos,LAO,2013,15.35
+Laos,LAO,2014,15.12
+Laos,LAO,2015,13.9
+Laos,LAO,2016,17.53
+Laos,LAO,2017,19.9
+Laos,LAO,2018,22.1
+Laos,LAO,2019,19.33
+Laos,LAO,2020,19.2
+Latin America and Caribbean,,2000,578.93
+Latin America and Caribbean,,2001,538.8
+Latin America and Caribbean,,2002,559.75
+Latin America and Caribbean,,2003,578.03
+Latin America and Caribbean,,2004,605.92
+Latin America and Caribbean,,2005,642.11
+Latin America and Caribbean,,2006,672.23
+Latin America and Caribbean,,2007,689.82
+Latin America and Caribbean,,2008,705.93
+Latin America and Caribbean,,2009,710.68
+Latin America and Caribbean,,2010,724.41
+Latin America and Caribbean,,2011,765.88
+Latin America and Caribbean,,2012,746.32
+Latin America and Caribbean,,2013,728.34
+Latin America and Caribbean,,2014,698.48
+Latin America and Caribbean,,2015,691.07
+Latin America and Caribbean,,2016,707.94
+Latin America and Caribbean,,2017,720.51
+Latin America and Caribbean,,2018,738.42
+Latin America and Caribbean,,2019,735.62
+Latin America and Caribbean,,2020,734.63
+Latin America and Caribbean,,2021,686.59
+Latvia,LVA,1985,2.979
+Latvia,LVA,1986,3.001
+Latvia,LVA,1987,3.699
+Latvia,LVA,1988,3.001
+Latvia,LVA,1989,3.606
+Latvia,LVA,1990,4.5
+Latvia,LVA,1991,3.28
+Latvia,LVA,1992,2.52
+Latvia,LVA,1993,2.88
+Latvia,LVA,1994,3.31
+Latvia,LVA,1995,2.94
+Latvia,LVA,1996,1.86
+Latvia,LVA,1997,2.95
+Latvia,LVA,1998,4.32
+Latvia,LVA,1999,2.76
+Latvia,LVA,2000,2.82
+Latvia,LVA,2001,2.83
+Latvia,LVA,2002,2.46
+Latvia,LVA,2003,2.27
+Latvia,LVA,2004,3.11
+Latvia,LVA,2005,3.33
+Latvia,LVA,2006,2.7
+Latvia,LVA,2007,2.73
+Latvia,LVA,2008,3.11
+Latvia,LVA,2009,3.46
+Latvia,LVA,2010,3.52
+Latvia,LVA,2011,2.89
+Latvia,LVA,2012,3.71
+Latvia,LVA,2013,2.91
+Latvia,LVA,2014,1.99
+Latvia,LVA,2015,1.86
+Latvia,LVA,2016,2.53
+Latvia,LVA,2017,4.38
+Latvia,LVA,2018,2.43
+Latvia,LVA,2019,2.11
+Latvia,LVA,2020,2.6
+Latvia,LVA,2021,2.71
+Lebanon,LBN,2000,0.44
+Lebanon,LBN,2001,0.33
+Lebanon,LBN,2002,0.67
+Lebanon,LBN,2003,1.35
+Lebanon,LBN,2004,1.11
+Lebanon,LBN,2005,1.04
+Lebanon,LBN,2006,0.69
+Lebanon,LBN,2007,0.58
+Lebanon,LBN,2008,0.37
+Lebanon,LBN,2009,0.62
+Lebanon,LBN,2010,0.83
+Lebanon,LBN,2011,0.8
+Lebanon,LBN,2012,1
+Lebanon,LBN,2013,1.26
+Lebanon,LBN,2014,0.19
+Lebanon,LBN,2015,0.47
+Lebanon,LBN,2016,0.38
+Lebanon,LBN,2017,0.41
+Lebanon,LBN,2018,0.34
+Lebanon,LBN,2019,0.66
+Lebanon,LBN,2020,0.97
+Lesotho,LSO,2000,0.29
+Lesotho,LSO,2001,0.28
+Lesotho,LSO,2002,0.31
+Lesotho,LSO,2003,0.32
+Lesotho,LSO,2004,0.3
+Lesotho,LSO,2005,0.46
+Lesotho,LSO,2006,0.52
+Lesotho,LSO,2007,0.55
+Lesotho,LSO,2008,0.58
+Lesotho,LSO,2009,0.65
+Lesotho,LSO,2010,0.69
+Lesotho,LSO,2011,0.49
+Lesotho,LSO,2012,0.49
+Lesotho,LSO,2013,0.51
+Lesotho,LSO,2014,0.52
+Lesotho,LSO,2015,0.53
+Lesotho,LSO,2016,0.52
+Lesotho,LSO,2017,0.54
+Lesotho,LSO,2018,0.54
+Lesotho,LSO,2019,0.5
+Lesotho,LSO,2020,0.5
+Liberia,LBR,2000,0
+Liberia,LBR,2001,0
+Liberia,LBR,2002,0
+Liberia,LBR,2003,0
+Liberia,LBR,2004,0
+Liberia,LBR,2005,0
+Liberia,LBR,2006,0
+Liberia,LBR,2007,0
+Liberia,LBR,2008,0
+Liberia,LBR,2009,0
+Liberia,LBR,2010,0
+Liberia,LBR,2011,0
+Liberia,LBR,2012,0
+Liberia,LBR,2013,0
+Liberia,LBR,2014,0
+Liberia,LBR,2015,0
+Liberia,LBR,2016,0
+Liberia,LBR,2017,0
+Liberia,LBR,2018,0
+Liberia,LBR,2019,0
+Liberia,LBR,2020,0.53
+Libya,LBY,2000,0
+Libya,LBY,2001,0
+Libya,LBY,2002,0
+Libya,LBY,2003,0
+Libya,LBY,2004,0
+Libya,LBY,2005,0
+Libya,LBY,2006,0
+Libya,LBY,2007,0
+Libya,LBY,2008,0
+Libya,LBY,2009,0
+Libya,LBY,2010,0
+Libya,LBY,2011,0
+Libya,LBY,2012,0
+Libya,LBY,2013,0
+Libya,LBY,2014,0
+Libya,LBY,2015,0
+Libya,LBY,2016,0
+Libya,LBY,2017,0
+Libya,LBY,2018,0
+Libya,LBY,2019,0
+Libya,LBY,2020,0
+Lithuania,LTU,1985,0.393
+Lithuania,LTU,1986,0.384
+Lithuania,LTU,1987,0.362
+Lithuania,LTU,1988,0.384
+Lithuania,LTU,1989,0.384
+Lithuania,LTU,1990,0.41
+Lithuania,LTU,1991,0.34
+Lithuania,LTU,1992,0.31
+Lithuania,LTU,1993,0.39
+Lithuania,LTU,1994,0.45
+Lithuania,LTU,1995,0.37
+Lithuania,LTU,1996,0.33
+Lithuania,LTU,1997,0.3
+Lithuania,LTU,1998,0.42
+Lithuania,LTU,1999,0.41
+Lithuania,LTU,2000,0.34
+Lithuania,LTU,2001,0.33
+Lithuania,LTU,2002,0.35
+Lithuania,LTU,2003,0.32
+Lithuania,LTU,2004,0.42
+Lithuania,LTU,2005,0.45
+Lithuania,LTU,2006,0.4
+Lithuania,LTU,2007,0.42
+Lithuania,LTU,2008,0.4
+Lithuania,LTU,2009,0.42
+Lithuania,LTU,2010,0.54
+Lithuania,LTU,2011,0.48
+Lithuania,LTU,2012,0.42
+Lithuania,LTU,2013,0.52
+Lithuania,LTU,2014,0.4
+Lithuania,LTU,2015,0.35
+Lithuania,LTU,2016,0.45
+Lithuania,LTU,2017,0.6
+Lithuania,LTU,2018,0.43
+Lithuania,LTU,2019,0.35
+Lithuania,LTU,2020,0.3
+Lithuania,LTU,2021,0.37
+Low-income countries,,2000,36.16
+Low-income countries,,2001,39.51
+Low-income countries,,2002,39.98
+Low-income countries,,2003,39.9
+Low-income countries,,2004,44.3
+Low-income countries,,2005,47.58
+Low-income countries,,2006,48.16
+Low-income countries,,2007,50.77
+Low-income countries,,2008,49.95
+Low-income countries,,2009,51.7
+Low-income countries,,2010,58.03
+Low-income countries,,2011,60.16
+Low-income countries,,2012,60.21
+Low-income countries,,2013,63.93
+Low-income countries,,2014,66.5
+Low-income countries,,2015,63.25
+Low-income countries,,2016,68.39
+Low-income countries,,2017,68.41
+Low-income countries,,2018,69.96
+Low-income countries,,2019,70.75
+Low-income countries,,2020,69.53
+Lower-middle-income countries,,2000,241.6
+Lower-middle-income countries,,2001,247.57
+Lower-middle-income countries,,2002,246.55
+Lower-middle-income countries,,2003,262.79
+Lower-middle-income countries,,2004,298.97
+Lower-middle-income countries,,2005,312.26
+Lower-middle-income countries,,2006,330.24
+Lower-middle-income countries,,2007,340.39
+Lower-middle-income countries,,2008,326.78
+Lower-middle-income countries,,2009,324.9
+Lower-middle-income countries,,2010,353.14
+Lower-middle-income countries,,2011,388.86
+Lower-middle-income countries,,2012,389.4
+Lower-middle-income countries,,2013,424.75
+Lower-middle-income countries,,2014,429.68
+Lower-middle-income countries,,2015,415.02
+Lower-middle-income countries,,2016,426.42
+Lower-middle-income countries,,2017,469.81
+Lower-middle-income countries,,2018,490.22
+Lower-middle-income countries,,2019,485.84
+Lower-middle-income countries,,2020,489.12
+Luxembourg,LUX,1965,0.086
+Luxembourg,LUX,1966,0.078
+Luxembourg,LUX,1967,0.088
+Luxembourg,LUX,1968,0.09
+Luxembourg,LUX,1969,0.078
+Luxembourg,LUX,1970,0.086
+Luxembourg,LUX,1971,0.049
+Luxembourg,LUX,1972,0.057
+Luxembourg,LUX,1973,0.051
+Luxembourg,LUX,1974,0.075
+Luxembourg,LUX,1975,0.065
+Luxembourg,LUX,1976,0.041
+Luxembourg,LUX,1977,0.079
+Luxembourg,LUX,1978,0.075
+Luxembourg,LUX,1979,0.082
+Luxembourg,LUX,1980,0.086
+Luxembourg,LUX,1981,0.092
+Luxembourg,LUX,1982,0.082
+Luxembourg,LUX,1983,0.081
+Luxembourg,LUX,1984,0.086
+Luxembourg,LUX,1985,0.07
+Luxembourg,LUX,1986,0.086
+Luxembourg,LUX,1987,0.1
+Luxembourg,LUX,1988,0.092
+Luxembourg,LUX,1989,0.07
+Luxembourg,LUX,1990,0.07
+Luxembourg,LUX,1991,0.08
+Luxembourg,LUX,1992,0.07
+Luxembourg,LUX,1993,0.07
+Luxembourg,LUX,1994,0.09
+Luxembourg,LUX,1995,0.09
+Luxembourg,LUX,1996,0.06
+Luxembourg,LUX,1997,0.08
+Luxembourg,LUX,1998,0.12
+Luxembourg,LUX,1999,0.09
+Luxembourg,LUX,2000,0.12
+Luxembourg,LUX,2001,0.12
+Luxembourg,LUX,2002,0.1
+Luxembourg,LUX,2003,0.08
+Luxembourg,LUX,2004,0.1
+Luxembourg,LUX,2005,0.09
+Luxembourg,LUX,2006,0.11
+Luxembourg,LUX,2007,0.12
+Luxembourg,LUX,2008,0.13
+Luxembourg,LUX,2009,0.11
+Luxembourg,LUX,2010,0.11
+Luxembourg,LUX,2011,0.06
+Luxembourg,LUX,2012,0.1
+Luxembourg,LUX,2013,0.12
+Luxembourg,LUX,2014,0.11
+Luxembourg,LUX,2015,0.1
+Luxembourg,LUX,2016,0.12
+Luxembourg,LUX,2017,0.09
+Luxembourg,LUX,2018,0.09
+Luxembourg,LUX,2019,0.11
+Luxembourg,LUX,2020,0.09
+Luxembourg,LUX,2021,0.12
+Macao,MAC,2000,0
+Macao,MAC,2001,0
+Macao,MAC,2002,0
+Macao,MAC,2003,0
+Macao,MAC,2004,0
+Macao,MAC,2005,0
+Macao,MAC,2006,0
+Macao,MAC,2007,0
+Macao,MAC,2008,0
+Macao,MAC,2009,0
+Macao,MAC,2010,0
+Macao,MAC,2011,0
+Macao,MAC,2012,0
+Macao,MAC,2013,0
+Macao,MAC,2014,0
+Macao,MAC,2015,0
+Macao,MAC,2016,0
+Macao,MAC,2017,0
+Macao,MAC,2018,0
+Macao,MAC,2019,0
+Macao,MAC,2020,0
+Madagascar,MDG,2000,0.54
+Madagascar,MDG,2001,0.53
+Madagascar,MDG,2002,0.54
+Madagascar,MDG,2003,0.6
+Madagascar,MDG,2004,0.63
+Madagascar,MDG,2005,0.64
+Madagascar,MDG,2006,0.63
+Madagascar,MDG,2007,0.71
+Madagascar,MDG,2008,0.69
+Madagascar,MDG,2009,0.73
+Madagascar,MDG,2010,0.7
+Madagascar,MDG,2011,0.68
+Madagascar,MDG,2012,0.75
+Madagascar,MDG,2013,0.8
+Madagascar,MDG,2014,0.88
+Madagascar,MDG,2015,0.93
+Madagascar,MDG,2016,0.88
+Madagascar,MDG,2017,0.78
+Madagascar,MDG,2018,0.96
+Madagascar,MDG,2019,0.72
+Madagascar,MDG,2020,0.81
+Malawi,MWI,2000,1.02
+Malawi,MWI,2001,1.04
+Malawi,MWI,2002,1.09
+Malawi,MWI,2003,1.14
+Malawi,MWI,2004,1.26
+Malawi,MWI,2005,1.31
+Malawi,MWI,2006,1.34
+Malawi,MWI,2007,1.37
+Malawi,MWI,2008,1.52
+Malawi,MWI,2009,1.49
+Malawi,MWI,2010,1.74
+Malawi,MWI,2011,1.79
+Malawi,MWI,2012,1.86
+Malawi,MWI,2013,1.86
+Malawi,MWI,2014,1.97
+Malawi,MWI,2015,1.96
+Malawi,MWI,2016,1.94
+Malawi,MWI,2017,1.82
+Malawi,MWI,2018,1.36
+Malawi,MWI,2019,1.3
+Malawi,MWI,2020,1.3
+Malaysia,MYS,1965,0.587
+Malaysia,MYS,1966,0.692
+Malaysia,MYS,1967,0.725
+Malaysia,MYS,1968,0.804
+Malaysia,MYS,1969,1.014
+Malaysia,MYS,1970,1.202
+Malaysia,MYS,1971,1.046
+Malaysia,MYS,1972,1.154
+Malaysia,MYS,1973,1.108
+Malaysia,MYS,1974,1.006
+Malaysia,MYS,1975,1.005
+Malaysia,MYS,1976,0.948
+Malaysia,MYS,1977,0.769
+Malaysia,MYS,1978,0.904
+Malaysia,MYS,1979,1.104
+Malaysia,MYS,1980,1.409
+Malaysia,MYS,1981,1.561
+Malaysia,MYS,1982,1.503
+Malaysia,MYS,1983,1.749
+Malaysia,MYS,1984,3.451
+Malaysia,MYS,1985,3.768
+Malaysia,MYS,1986,4.121
+Malaysia,MYS,1987,4.966
+Malaysia,MYS,1988,5.729
+Malaysia,MYS,1989,5.295
+Malaysia,MYS,1990,4.027
+Malaysia,MYS,1991,4.449
+Malaysia,MYS,1992,4.286
+Malaysia,MYS,1993,4.853
+Malaysia,MYS,1994,6.483
+Malaysia,MYS,1995,6.218
+Malaysia,MYS,1996,5.184
+Malaysia,MYS,1997,4.173
+Malaysia,MYS,1998,4.457
+Malaysia,MYS,1999,7.552
+Malaysia,MYS,2000,7.34
+Malaysia,MYS,2001,6.37
+Malaysia,MYS,2002,5.25
+Malaysia,MYS,2003,5.69
+Malaysia,MYS,2004,5.77
+Malaysia,MYS,2005,5.14
+Malaysia,MYS,2006,6.38
+Malaysia,MYS,2007,6.43
+Malaysia,MYS,2008,7.39
+Malaysia,MYS,2009,6.89
+Malaysia,MYS,2010,6.41
+Malaysia,MYS,2011,7.55
+Malaysia,MYS,2012,8.97
+Malaysia,MYS,2013,11.68
+Malaysia,MYS,2014,13.4
+Malaysia,MYS,2015,15.37
+Malaysia,MYS,2016,20.15
+Malaysia,MYS,2017,26.45
+Malaysia,MYS,2018,26.03
+Malaysia,MYS,2019,26.73
+Malaysia,MYS,2020,15.8
+Maldives,MDV,2000,0
+Maldives,MDV,2001,0
+Maldives,MDV,2002,0
+Maldives,MDV,2003,0
+Maldives,MDV,2004,0
+Maldives,MDV,2005,0
+Maldives,MDV,2006,0
+Maldives,MDV,2007,0
+Maldives,MDV,2008,0
+Maldives,MDV,2009,0
+Maldives,MDV,2010,0
+Maldives,MDV,2011,0
+Maldives,MDV,2012,0
+Maldives,MDV,2013,0
+Maldives,MDV,2014,0
+Maldives,MDV,2015,0
+Maldives,MDV,2016,0
+Maldives,MDV,2017,0
+Maldives,MDV,2018,0
+Maldives,MDV,2019,0
+Maldives,MDV,2020,0
+Mali,MLI,2000,0.23
+Mali,MLI,2001,0.23
+Mali,MLI,2002,0.24
+Mali,MLI,2003,0.23
+Mali,MLI,2004,0.25
+Mali,MLI,2005,0.45
+Mali,MLI,2006,0.48
+Mali,MLI,2007,0.47
+Mali,MLI,2008,0.57
+Mali,MLI,2009,0.67
+Mali,MLI,2010,1.1
+Mali,MLI,2011,1.15
+Mali,MLI,2012,1.24
+Mali,MLI,2013,1.11
+Mali,MLI,2014,1.38
+Mali,MLI,2015,1.12
+Mali,MLI,2016,1.48
+Mali,MLI,2017,1.48
+Mali,MLI,2018,1.36
+Mali,MLI,2019,0.95
+Mali,MLI,2020,0.95
+Malta,MLT,1990,0
+Malta,MLT,1991,0
+Malta,MLT,1992,0
+Malta,MLT,1993,0
+Malta,MLT,1994,0
+Malta,MLT,1995,0
+Malta,MLT,1996,0
+Malta,MLT,1997,0
+Malta,MLT,1998,0
+Malta,MLT,1999,0
+Malta,MLT,2000,0
+Malta,MLT,2001,0
+Malta,MLT,2002,0
+Malta,MLT,2003,0
+Malta,MLT,2004,0
+Malta,MLT,2005,0
+Malta,MLT,2006,0
+Malta,MLT,2007,0
+Malta,MLT,2008,0
+Malta,MLT,2009,0
+Malta,MLT,2010,0
+Malta,MLT,2011,0
+Malta,MLT,2012,0
+Malta,MLT,2013,0
+Malta,MLT,2014,0
+Malta,MLT,2015,0
+Malta,MLT,2016,0
+Malta,MLT,2017,0
+Malta,MLT,2018,0
+Malta,MLT,2019,0
+Malta,MLT,2020,0
+Malta,MLT,2021,0
+Martinique,MTQ,2000,0
+Martinique,MTQ,2001,0
+Martinique,MTQ,2002,0
+Martinique,MTQ,2003,0
+Martinique,MTQ,2004,0
+Martinique,MTQ,2005,0
+Martinique,MTQ,2006,0
+Martinique,MTQ,2007,0
+Martinique,MTQ,2008,0
+Martinique,MTQ,2009,0
+Martinique,MTQ,2010,0
+Martinique,MTQ,2011,0
+Martinique,MTQ,2012,0
+Martinique,MTQ,2013,0
+Martinique,MTQ,2014,0
+Martinique,MTQ,2015,0
+Martinique,MTQ,2016,0
+Martinique,MTQ,2017,0
+Martinique,MTQ,2018,0
+Martinique,MTQ,2019,0
+Martinique,MTQ,2020,0
+Mauritania,MRT,2000,0.03
+Mauritania,MRT,2001,0.03
+Mauritania,MRT,2002,0.03
+Mauritania,MRT,2003,0.04
+Mauritania,MRT,2004,0.04
+Mauritania,MRT,2005,0.05
+Mauritania,MRT,2006,0.05
+Mauritania,MRT,2007,0.05
+Mauritania,MRT,2008,0.06
+Mauritania,MRT,2009,0.11
+Mauritania,MRT,2010,0.12
+Mauritania,MRT,2011,0.13
+Mauritania,MRT,2012,0.14
+Mauritania,MRT,2013,0.17
+Mauritania,MRT,2014,0.18
+Mauritania,MRT,2015,0.19
+Mauritania,MRT,2016,0.13
+Mauritania,MRT,2017,0.17
+Mauritania,MRT,2018,0.19
+Mauritania,MRT,2019,0.2
+Mauritania,MRT,2020,0.21
+Mauritius,MUS,2000,0.09
+Mauritius,MUS,2001,0.07
+Mauritius,MUS,2002,0.09
+Mauritius,MUS,2003,0.12
+Mauritius,MUS,2004,0.12
+Mauritius,MUS,2005,0.11
+Mauritius,MUS,2006,0.08
+Mauritius,MUS,2007,0.08
+Mauritius,MUS,2008,0.11
+Mauritius,MUS,2009,0.12
+Mauritius,MUS,2010,0.1
+Mauritius,MUS,2011,0.05
+Mauritius,MUS,2012,0.07
+Mauritius,MUS,2013,0.09
+Mauritius,MUS,2014,0.09
+Mauritius,MUS,2015,0.12
+Mauritius,MUS,2016,0.1
+Mauritius,MUS,2017,0.09
+Mauritius,MUS,2018,0.12
+Mauritius,MUS,2019,0.1
+Mauritius,MUS,2020,0.1
+Mexico,MEX,1965,8.863
+Mexico,MEX,1966,10.118
+Mexico,MEX,1967,11.017
+Mexico,MEX,1968,12.642
+Mexico,MEX,1969,13.406
+Mexico,MEX,1970,15.005
+Mexico,MEX,1971,14.572
+Mexico,MEX,1972,15.531
+Mexico,MEX,1973,16.371
+Mexico,MEX,1974,16.708
+Mexico,MEX,1975,15.182
+Mexico,MEX,1976,17.255
+Mexico,MEX,1977,19.193
+Mexico,MEX,1978,16.217
+Mexico,MEX,1979,18.008
+Mexico,MEX,1980,16.91
+Mexico,MEX,1981,24.618
+Mexico,MEX,1982,22.924
+Mexico,MEX,1983,20.733
+Mexico,MEX,1984,23.603
+Mexico,MEX,1985,28.427
+Mexico,MEX,1986,21.298
+Mexico,MEX,1987,19.285
+Mexico,MEX,1988,21.836
+Mexico,MEX,1989,25.354
+Mexico,MEX,1990,24.481
+Mexico,MEX,1991,22.625
+Mexico,MEX,1992,26.814
+Mexico,MEX,1993,26.655
+Mexico,MEX,1994,20.271
+Mexico,MEX,1995,27.599
+Mexico,MEX,1996,31.336
+Mexico,MEX,1997,26.362
+Mexico,MEX,1998,24.593
+Mexico,MEX,1999,32.712
+Mexico,MEX,2000,32.8
+Mexico,MEX,2001,28.22
+Mexico,MEX,2002,24.7
+Mexico,MEX,2003,19.68
+Mexico,MEX,2004,24.95
+Mexico,MEX,2005,27.38
+Mexico,MEX,2006,30.09
+Mexico,MEX,2007,27
+Mexico,MEX,2008,38.79
+Mexico,MEX,2009,26.45
+Mexico,MEX,2010,36.79
+Mexico,MEX,2011,35.93
+Mexico,MEX,2012,31.59
+Mexico,MEX,2013,27.72
+Mexico,MEX,2014,38.55
+Mexico,MEX,2015,30.61
+Mexico,MEX,2016,29.74
+Mexico,MEX,2017,31.74
+Mexico,MEX,2018,32.38
+Mexico,MEX,2019,23.85
+Mexico,MEX,2020,23.12
+Mexico,MEX,2021,31.01
+Middle Africa,,1965,3.935
+Middle Africa,,1966,4.093
+Middle Africa,,1967,3.846
+Middle Africa,,1968,4.012
+Middle Africa,,1969,4.36
+Middle Africa,,1970,4.865
+Middle Africa,,1971,5.19
+Middle Africa,,1972,5.31
+Middle Africa,,1973,5.756
+Middle Africa,,1974,5.651
+Middle Africa,,1975,6.207
+Middle Africa,,1976,5.975
+Middle Africa,,1977,6.132
+Middle Africa,,1978,6.161
+Middle Africa,,1979,6.299
+Middle Africa,,1980,6.639
+Middle Africa,,1981,7.012
+Middle Africa,,1982,7.3
+Middle Africa,,1983,7.709
+Middle Africa,,1984,8.065
+Middle Africa,,1985,9.145
+Middle Africa,,1986,9.438
+Middle Africa,,1987,9.454
+Middle Africa,,1988,9.604
+Middle Africa,,1989,11.446
+Middle Africa,,1990,10.288
+Middle Africa,,1991,9.976
+Middle Africa,,1992,10.821
+Middle Africa,,1993,10.213
+Middle Africa,,1994,9.732
+Middle Africa,,1995,10.831
+Middle Africa,,1996,10.867
+Middle Africa,,1997,10.138
+Middle Africa,,1998,9.925
+Middle Africa,,1999,10.329
+Middle Africa,,2000,11.36
+Middle Africa,,2001,11.623
+Middle Africa,,2002,11.701
+Middle Africa,,2003,12.115
+Middle Africa,,2004,13.977
+Middle Africa,,2005,14.456
+Middle Africa,,2006,15.644
+Middle Africa,,2007,15.122
+Middle Africa,,2008,16.192
+Middle Africa,,2009,16.12
+Middle Africa,,2010,16.821
+Middle Africa,,2011,17.116
+Middle Africa,,2012,16.924
+Middle Africa,,2013,19.368
+Middle Africa,,2014,20.413
+Middle Africa,,2015,20.725
+Middle Africa,,2016,21.494
+Middle Africa,,2017,24.628
+Middle Africa,,2018,26.803
+Middle Africa,,2019,29.013
+Middle Africa,,2020,30.475
+Middle East,,1965,2.346
+Middle East,,1966,2.546
+Middle East,,1967,2.829
+Middle East,,1968,3.081
+Middle East,,1969,3.396
+Middle East,,1970,3.58
+Middle East,,1971,3.755
+Middle East,,1972,4.569
+Middle East,,1973,3.75
+Middle East,,1974,4.816
+Middle East,,1975,5.44
+Middle East,,1976,6.325
+Middle East,,1977,7.098
+Middle East,,1978,9.812
+Middle East,,1979,9.616
+Middle East,,1980,9.683
+Middle East,,1981,10.214
+Middle East,,1982,10.606
+Middle East,,1983,10.221
+Middle East,,1984,10.373
+Middle East,,1985,10.438
+Middle East,,1986,11.079
+Middle East,,1987,13.915
+Middle East,,1988,14.299
+Middle East,,1989,12.624
+Middle East,,1990,15.273
+Middle East,,1991,11.009
+Middle East,,1992,17.827
+Middle East,,1993,20.047
+Middle East,,1994,16.55
+Middle East,,1995,18.653
+Middle East,,1996,18.698
+Middle East,,1997,15.927
+Middle East,,1998,17.211
+Middle East,,1999,11.801
+Middle East,,2000,7.95
+Middle East,,2001,9.4
+Middle East,,2002,11.68
+Middle East,,2003,15.57
+Middle East,,2004,16.33
+Middle East,,2005,27.29
+Middle East,,2006,28.78
+Middle East,,2007,27.58
+Middle East,,2008,11.69
+Middle East,,2009,12.9
+Middle East,,2010,17.64
+Middle East,,2011,19.43
+Middle East,,2012,20.96
+Middle East,,2013,23.46
+Middle East,,2014,19.2
+Middle East,,2015,17.42
+Middle East,,2016,20.94
+Middle East,,2017,18.25
+Middle East,,2018,18.52
+Middle East,,2019,34.48
+Middle East,,2020,31.27
+Moldova,MDA,2000,0.39
+Moldova,MDA,2001,0.36
+Moldova,MDA,2002,0.35
+Moldova,MDA,2003,0.36
+Moldova,MDA,2004,0.35
+Moldova,MDA,2005,0.36
+Moldova,MDA,2006,0.37
+Moldova,MDA,2007,0.35
+Moldova,MDA,2008,0.38
+Moldova,MDA,2009,0.35
+Moldova,MDA,2010,0.4
+Moldova,MDA,2011,0.35
+Moldova,MDA,2012,0.27
+Moldova,MDA,2013,0.31
+Moldova,MDA,2014,0.32
+Moldova,MDA,2015,0.26
+Moldova,MDA,2016,0.23
+Moldova,MDA,2017,0.28
+Moldova,MDA,2018,0.27
+Moldova,MDA,2019,0.3
+Moldova,MDA,2020,0.2
+Moldova,MDA,2021,0.23
+Mongolia,MNG,2000,0
+Mongolia,MNG,2001,0
+Mongolia,MNG,2002,0
+Mongolia,MNG,2003,0
+Mongolia,MNG,2004,0
+Mongolia,MNG,2005,0
+Mongolia,MNG,2006,0
+Mongolia,MNG,2007,0
+Mongolia,MNG,2008,0
+Mongolia,MNG,2009,0.02
+Mongolia,MNG,2010,0.04
+Mongolia,MNG,2011,0.05
+Mongolia,MNG,2012,0.05
+Mongolia,MNG,2013,0.06
+Mongolia,MNG,2014,0.07
+Mongolia,MNG,2015,0.06
+Mongolia,MNG,2016,0.08
+Mongolia,MNG,2017,0.08
+Mongolia,MNG,2018,0.08
+Mongolia,MNG,2019,0.09
+Mongolia,MNG,2020,0.09
+Mongolia,MNG,2021,0.09
+Montenegro,MNE,2005,1.87
+Montenegro,MNE,2006,1.75
+Montenegro,MNE,2007,1.28
+Montenegro,MNE,2008,1.54
+Montenegro,MNE,2009,2.07
+Montenegro,MNE,2010,2.75
+Montenegro,MNE,2011,1.2
+Montenegro,MNE,2012,1.48
+Montenegro,MNE,2013,2.5
+Montenegro,MNE,2014,1.75
+Montenegro,MNE,2015,1.49
+Montenegro,MNE,2016,1.84
+Montenegro,MNE,2017,1.02
+Montenegro,MNE,2018,2.11
+Montenegro,MNE,2019,1.63
+Montenegro,MNE,2020,1.45
+Montenegro,MNE,2021,1.98
+Montserrat,MSR,2000,0
+Montserrat,MSR,2001,0
+Montserrat,MSR,2002,0
+Montserrat,MSR,2003,0
+Montserrat,MSR,2004,0
+Montserrat,MSR,2005,0
+Montserrat,MSR,2006,0
+Montserrat,MSR,2007,0
+Montserrat,MSR,2008,0
+Montserrat,MSR,2009,0
+Montserrat,MSR,2010,0
+Montserrat,MSR,2011,0
+Montserrat,MSR,2012,0
+Montserrat,MSR,2013,0
+Montserrat,MSR,2014,0
+Montserrat,MSR,2015,0
+Montserrat,MSR,2016,0
+Montserrat,MSR,2017,0
+Montserrat,MSR,2018,0
+Montserrat,MSR,2019,0
+Montserrat,MSR,2020,0
+Morocco,MAR,1965,1.213
+Morocco,MAR,1966,1.054
+Morocco,MAR,1967,0.932
+Morocco,MAR,1968,1.058
+Morocco,MAR,1969,1.368
+Morocco,MAR,1970,1.346
+Morocco,MAR,1971,1.52
+Morocco,MAR,1972,1.596
+Morocco,MAR,1973,1.192
+Morocco,MAR,1974,1.337
+Morocco,MAR,1975,1.016
+Morocco,MAR,1976,0.998
+Morocco,MAR,1977,1.365
+Morocco,MAR,1978,1.416
+Morocco,MAR,1979,1.582
+Morocco,MAR,1980,1.515
+Morocco,MAR,1981,1.024
+Morocco,MAR,1982,0.572
+Morocco,MAR,1983,0.481
+Morocco,MAR,1984,0.366
+Morocco,MAR,1985,0.486
+Morocco,MAR,1986,0.643
+Morocco,MAR,1987,0.825
+Morocco,MAR,1988,0.936
+Morocco,MAR,1989,1.157
+Morocco,MAR,1990,1.22
+Morocco,MAR,1991,1.226
+Morocco,MAR,1992,0.964
+Morocco,MAR,1993,0.443
+Morocco,MAR,1994,0.84
+Morocco,MAR,1995,0.611
+Morocco,MAR,1996,1.957
+Morocco,MAR,1997,2.083
+Morocco,MAR,1998,1.777
+Morocco,MAR,1999,0.825
+Morocco,MAR,2000,0.71
+Morocco,MAR,2001,0.86
+Morocco,MAR,2002,0.84
+Morocco,MAR,2003,1.44
+Morocco,MAR,2004,1.59
+Morocco,MAR,2005,0.97
+Morocco,MAR,2006,0.99
+Morocco,MAR,2007,0.91
+Morocco,MAR,2008,0.92
+Morocco,MAR,2009,2.54
+Morocco,MAR,2010,3.43
+Morocco,MAR,2011,1.99
+Morocco,MAR,2012,1.62
+Morocco,MAR,2013,2.76
+Morocco,MAR,2014,1.62
+Morocco,MAR,2015,1.87
+Morocco,MAR,2016,1.24
+Morocco,MAR,2017,1.17
+Morocco,MAR,2018,1.68
+Morocco,MAR,2019,1.64
+Morocco,MAR,2020,1.55
+Mozambique,MOZ,2000,9.56
+Mozambique,MOZ,2001,11.72
+Mozambique,MOZ,2002,12.55
+Mozambique,MOZ,2003,10.76
+Mozambique,MOZ,2004,11.55
+Mozambique,MOZ,2005,13.13
+Mozambique,MOZ,2006,14.57
+Mozambique,MOZ,2007,15.9
+Mozambique,MOZ,2008,14.96
+Mozambique,MOZ,2009,16.78
+Mozambique,MOZ,2010,16.48
+Mozambique,MOZ,2011,16.64
+Mozambique,MOZ,2012,14.99
+Mozambique,MOZ,2013,14.4
+Mozambique,MOZ,2014,16.01
+Mozambique,MOZ,2015,17.03
+Mozambique,MOZ,2016,15.45
+Mozambique,MOZ,2017,13.92
+Mozambique,MOZ,2018,13.78
+Mozambique,MOZ,2019,14.17
+Mozambique,MOZ,2020,14.17
+Myanmar,MMR,2000,1.87
+Myanmar,MMR,2001,1.8
+Myanmar,MMR,2002,2.21
+Myanmar,MMR,2003,2.23
+Myanmar,MMR,2004,2.38
+Myanmar,MMR,2005,2.97
+Myanmar,MMR,2006,3.29
+Myanmar,MMR,2007,3.58
+Myanmar,MMR,2008,4.03
+Myanmar,MMR,2009,5.2
+Myanmar,MMR,2010,5.05
+Myanmar,MMR,2011,7.44
+Myanmar,MMR,2012,7.69
+Myanmar,MMR,2013,8.73
+Myanmar,MMR,2014,8.74
+Myanmar,MMR,2015,9.31
+Myanmar,MMR,2016,9.65
+Myanmar,MMR,2017,12.46
+Myanmar,MMR,2018,13.98
+Myanmar,MMR,2019,11.99
+Myanmar,MMR,2020,11
+Namibia,NAM,2000,1.37
+Namibia,NAM,2001,1.36
+Namibia,NAM,2002,1.45
+Namibia,NAM,2003,1.5
+Namibia,NAM,2004,1.59
+Namibia,NAM,2005,1.64
+Namibia,NAM,2006,1.59
+Namibia,NAM,2007,1.56
+Namibia,NAM,2008,1.48
+Namibia,NAM,2009,1.39
+Namibia,NAM,2010,1.24
+Namibia,NAM,2011,1.39
+Namibia,NAM,2012,1.59
+Namibia,NAM,2013,1.26
+Namibia,NAM,2014,1.47
+Namibia,NAM,2015,1.49
+Namibia,NAM,2016,1.35
+Namibia,NAM,2017,1.58
+Namibia,NAM,2018,1.13
+Namibia,NAM,2019,0.95
+Namibia,NAM,2020,0.95
+Nauru,NRU,2000,0
+Nauru,NRU,2001,0
+Nauru,NRU,2002,0
+Nauru,NRU,2003,0
+Nauru,NRU,2004,0
+Nauru,NRU,2005,0
+Nauru,NRU,2006,0
+Nauru,NRU,2007,0
+Nauru,NRU,2008,0
+Nauru,NRU,2009,0
+Nauru,NRU,2010,0
+Nauru,NRU,2011,0
+Nauru,NRU,2012,0
+Nauru,NRU,2013,0
+Nauru,NRU,2014,0
+Nauru,NRU,2015,0
+Nauru,NRU,2016,0
+Nauru,NRU,2017,0
+Nauru,NRU,2018,0
+Nauru,NRU,2019,0
+Nauru,NRU,2020,0
+Nepal,NPL,2000,1.62
+Nepal,NPL,2001,1.83
+Nepal,NPL,2002,2.1
+Nepal,NPL,2003,2.24
+Nepal,NPL,2004,2.38
+Nepal,NPL,2005,2.49
+Nepal,NPL,2006,2.71
+Nepal,NPL,2007,2.76
+Nepal,NPL,2008,2.78
+Nepal,NPL,2009,3.07
+Nepal,NPL,2010,3.17
+Nepal,NPL,2011,3.45
+Nepal,NPL,2012,3.5
+Nepal,NPL,2013,3.47
+Nepal,NPL,2014,3.75
+Nepal,NPL,2015,3.42
+Nepal,NPL,2016,4.2
+Nepal,NPL,2017,4.59
+Nepal,NPL,2018,4.85
+Nepal,NPL,2019,4.15
+Nepal,NPL,2020,3
+Netherlands,NLD,1965,0
+Netherlands,NLD,1966,0
+Netherlands,NLD,1967,0
+Netherlands,NLD,1968,0
+Netherlands,NLD,1969,0
+Netherlands,NLD,1970,0
+Netherlands,NLD,1971,0
+Netherlands,NLD,1972,0
+Netherlands,NLD,1973,0
+Netherlands,NLD,1974,0
+Netherlands,NLD,1975,0
+Netherlands,NLD,1976,0
+Netherlands,NLD,1977,0
+Netherlands,NLD,1978,0
+Netherlands,NLD,1979,0
+Netherlands,NLD,1980,0
+Netherlands,NLD,1981,0
+Netherlands,NLD,1982,0
+Netherlands,NLD,1983,0
+Netherlands,NLD,1984,0
+Netherlands,NLD,1985,0.003
+Netherlands,NLD,1986,0.003
+Netherlands,NLD,1987,0.001
+Netherlands,NLD,1988,0.002
+Netherlands,NLD,1989,0.037
+Netherlands,NLD,1990,0.09
+Netherlands,NLD,1991,0.1
+Netherlands,NLD,1992,0.12
+Netherlands,NLD,1993,0.09
+Netherlands,NLD,1994,0.1
+Netherlands,NLD,1995,0.09
+Netherlands,NLD,1996,0.08
+Netherlands,NLD,1997,0.09
+Netherlands,NLD,1998,0.11
+Netherlands,NLD,1999,0.09
+Netherlands,NLD,2000,0.14
+Netherlands,NLD,2001,0.12
+Netherlands,NLD,2002,0.11
+Netherlands,NLD,2003,0.07
+Netherlands,NLD,2004,0.09
+Netherlands,NLD,2005,0.09
+Netherlands,NLD,2006,0.11
+Netherlands,NLD,2007,0.11
+Netherlands,NLD,2008,0.1
+Netherlands,NLD,2009,0.1
+Netherlands,NLD,2010,0.1
+Netherlands,NLD,2011,0.06
+Netherlands,NLD,2012,0.1
+Netherlands,NLD,2013,0.11
+Netherlands,NLD,2014,0.11
+Netherlands,NLD,2015,0.09
+Netherlands,NLD,2016,0.1
+Netherlands,NLD,2017,0.06
+Netherlands,NLD,2018,0.07
+Netherlands,NLD,2019,0.07
+Netherlands,NLD,2020,0.05
+Netherlands,NLD,2021,0.09
+New Caledonia,NCL,2000,0.44
+New Caledonia,NCL,2001,0.36
+New Caledonia,NCL,2002,0.32
+New Caledonia,NCL,2003,0.32
+New Caledonia,NCL,2004,0.32
+New Caledonia,NCL,2005,0.34
+New Caledonia,NCL,2006,0.28
+New Caledonia,NCL,2007,0.39
+New Caledonia,NCL,2008,0.45
+New Caledonia,NCL,2009,0.4
+New Caledonia,NCL,2010,0.26
+New Caledonia,NCL,2011,0.37
+New Caledonia,NCL,2012,0.4
+New Caledonia,NCL,2013,0.46
+New Caledonia,NCL,2014,0.29
+New Caledonia,NCL,2015,0.34
+New Caledonia,NCL,2016,0.23
+New Caledonia,NCL,2017,0.36
+New Caledonia,NCL,2018,0.32
+New Caledonia,NCL,2019,0.36
+New Caledonia,NCL,2020,0.22
+New Zealand,NZL,1965,10.019
+New Zealand,NZL,1966,10.805
+New Zealand,NZL,1967,11.221
+New Zealand,NZL,1968,11.773
+New Zealand,NZL,1969,11.636
+New Zealand,NZL,1970,12.67
+New Zealand,NZL,1971,14.394
+New Zealand,NZL,1972,15.265
+New Zealand,NZL,1973,15.097
+New Zealand,NZL,1974,15.189
+New Zealand,NZL,1975,16.664
+New Zealand,NZL,1976,15.499
+New Zealand,NZL,1977,14.72
+New Zealand,NZL,1978,15.66
+New Zealand,NZL,1979,18.443
+New Zealand,NZL,1980,19.365
+New Zealand,NZL,1981,19.68
+New Zealand,NZL,1982,18.304
+New Zealand,NZL,1983,19.752
+New Zealand,NZL,1984,20.377
+New Zealand,NZL,1985,19.708
+New Zealand,NZL,1986,22.098
+New Zealand,NZL,1987,21.929
+New Zealand,NZL,1988,22.963
+New Zealand,NZL,1989,22.559
+New Zealand,NZL,1990,23.185
+New Zealand,NZL,1991,22.894
+New Zealand,NZL,1992,21.093
+New Zealand,NZL,1993,23.493
+New Zealand,NZL,1994,25.837
+New Zealand,NZL,1995,27.535
+New Zealand,NZL,1996,26.183
+New Zealand,NZL,1997,23.258
+New Zealand,NZL,1998,25.319
+New Zealand,NZL,1999,22.92
+New Zealand,NZL,2000,24.19
+New Zealand,NZL,2001,21.46
+New Zealand,NZL,2002,24.67
+New Zealand,NZL,2003,23.38
+New Zealand,NZL,2004,26.66
+New Zealand,NZL,2005,23.09
+New Zealand,NZL,2006,23.34
+New Zealand,NZL,2007,23.4
+New Zealand,NZL,2008,22.11
+New Zealand,NZL,2009,23.98
+New Zealand,NZL,2010,24.48
+New Zealand,NZL,2011,24.86
+New Zealand,NZL,2012,22.67
+New Zealand,NZL,2013,22.8
+New Zealand,NZL,2014,24.08
+New Zealand,NZL,2015,24.28
+New Zealand,NZL,2016,25.66
+New Zealand,NZL,2017,24.93
+New Zealand,NZL,2018,26.03
+New Zealand,NZL,2019,25.33
+New Zealand,NZL,2020,23.98
+Nicaragua,NIC,2000,0.21
+Nicaragua,NIC,2001,0.19
+Nicaragua,NIC,2002,0.3
+Nicaragua,NIC,2003,0.29
+Nicaragua,NIC,2004,0.32
+Nicaragua,NIC,2005,0.43
+Nicaragua,NIC,2006,0.31
+Nicaragua,NIC,2007,0.3
+Nicaragua,NIC,2008,0.53
+Nicaragua,NIC,2009,0.29
+Nicaragua,NIC,2010,0.5
+Nicaragua,NIC,2011,0.44
+Nicaragua,NIC,2012,0.41
+Nicaragua,NIC,2013,0.45
+Nicaragua,NIC,2014,0.39
+Nicaragua,NIC,2015,0.29
+Nicaragua,NIC,2016,0.42
+Nicaragua,NIC,2017,0.46
+Nicaragua,NIC,2018,0.41
+Nicaragua,NIC,2019,0.41
+Nicaragua,NIC,2020,0.57
+Niger,NER,2000,0
+Niger,NER,2001,0
+Niger,NER,2002,0
+Niger,NER,2003,0
+Niger,NER,2004,0
+Niger,NER,2005,0
+Niger,NER,2006,0
+Niger,NER,2007,0
+Niger,NER,2008,0
+Niger,NER,2009,0
+Niger,NER,2010,0
+Niger,NER,2011,0
+Niger,NER,2012,0
+Niger,NER,2013,0
+Niger,NER,2014,0
+Niger,NER,2015,0
+Niger,NER,2016,0
+Niger,NER,2017,0
+Niger,NER,2018,0
+Niger,NER,2019,0
+Niger,NER,2020,0
+Nigeria,NGA,2000,5.69
+Nigeria,NGA,2001,5.85
+Nigeria,NGA,2002,8.15
+Nigeria,NGA,2003,7.37
+Nigeria,NGA,2004,8.03
+Nigeria,NGA,2005,7.69
+Nigeria,NGA,2006,6.2
+Nigeria,NGA,2007,6.16
+Nigeria,NGA,2008,5.66
+Nigeria,NGA,2009,4.48
+Nigeria,NGA,2010,6.31
+Nigeria,NGA,2011,5.82
+Nigeria,NGA,2012,5.6
+Nigeria,NGA,2013,5.27
+Nigeria,NGA,2014,5.29
+Nigeria,NGA,2015,5.66
+Nigeria,NGA,2016,8.07
+Nigeria,NGA,2017,7.67
+Nigeria,NGA,2018,6.39
+Nigeria,NGA,2019,6.1
+Nigeria,NGA,2020,6.1
+Non-OECD,,1965,205.504
+Non-OECD,,1966,225.002
+Non-OECD,,1967,226.83
+Non-OECD,,1968,258.715
+Non-OECD,,1969,283.531
+Non-OECD,,1970,312.432
+Non-OECD,,1971,328.75
+Non-OECD,,1972,347.284
+Non-OECD,,1973,363.497
+Non-OECD,,1974,401.207
+Non-OECD,,1975,417.658
+Non-OECD,,1976,448.367
+Non-OECD,,1977,489.759
+Non-OECD,,1978,540.843
+Non-OECD,,1979,575.622
+Non-OECD,,1980,619.457
+Non-OECD,,1981,640.059
+Non-OECD,,1982,641.546
+Non-OECD,,1983,667.477
+Non-OECD,,1984,728.051
+Non-OECD,,1985,766.981
+Non-OECD,,1986,799.689
+Non-OECD,,1987,824.94
+Non-OECD,,1988,874.926
+Non-OECD,,1989,896.532
+Non-OECD,,1990,929.424
+Non-OECD,,1991,965.748
+Non-OECD,,1992,978.321
+Non-OECD,,1993,1034.306
+Non-OECD,,1994,1092.606
+Non-OECD,,1995,1133.764
+Non-OECD,,1996,1132.947
+Non-OECD,,1997,1154.361
+Non-OECD,,1998,1208.308
+Non-OECD,,1999,1214.213
+Non-OECD,,2000,1256.799
+Non-OECD,,2001,1290.377
+Non-OECD,,2002,1315.285
+Non-OECD,,2003,1335.479
+Non-OECD,,2004,1498.101
+Non-OECD,,2005,1581.232
+Non-OECD,,2006,1668.98
+Non-OECD,,2007,1756.178
+Non-OECD,,2008,1879.427
+Non-OECD,,2009,1891.177
+Non-OECD,,2010,2037.348
+Non-OECD,,2011,2064.587
+Non-OECD,,2012,2208.144
+Non-OECD,,2013,2336.683
+Non-OECD,,2014,2456.364
+Non-OECD,,2015,2462.859
+Non-OECD,,2016,2569.509
+Non-OECD,,2017,2621.389
+Non-OECD,,2018,2695.545
+Non-OECD,,2019,2783.676
+Non-OECD,,2020,2817.107
+North America,,1965,325.925
+North America,,1966,341.055
+North America,,1967,372.162
+North America,,1968,376.997
+North America,,1969,420.073
+North America,,1970,426.634
+North America,,1971,449.287
+North America,,1972,475.886
+North America,,1973,489.238
+North America,,1974,534.66
+North America,,1975,523.867
+North America,,1976,519.766
+North America,,1977,465.197
+North America,,1978,537.8
+North America,,1979,548.064
+North America,,1980,550.06
+North America,,1981,557.143
+North America,,1982,596.248
+North America,,1983,625.363
+North America,,1984,637.313
+North America,,1985,619.255
+North America,,1986,628.907
+North America,,1987,590.901
+North America,,1988,557.656
+North America,,1989,590.528
+North America,,1990,612.445
+North America,,1991,617.227
+North America,,1992,593.414
+North America,,1993,628.12
+North America,,1994,607.468
+North America,,1995,672.878
+North America,,1996,733.478
+North America,,1997,731.015
+North America,,1998,677.552
+North America,,1999,694.318
+North America,,2000,674.56
+North America,,2001,581.36
+North America,,2002,643.29
+North America,,2003,637.87
+North America,,2004,640.62
+North America,,2005,669.19
+North America,,2006,682.6
+North America,,2007,651.78
+North America,,2008,683.18
+North America,,2009,681.32
+North America,,2010,662.75
+North America,,2011,744.03
+North America,,2012,704.26
+North America,,2013,703.98
+North America,,2014,693.99
+North America,,2015,676.92
+North America,,2016,697.4
+North America,,2017,746.22
+North America,,2018,730.52
+North America,,2019,711.25
+North America,,2020,713.85
+North America,,2021,674.88
+North Korea,PRK,2000,10.1
+North Korea,PRK,2001,10.49
+North Korea,PRK,2002,10.51
+North Korea,PRK,2003,11.6
+North Korea,PRK,2004,12.38
+North Korea,PRK,2005,13
+North Korea,PRK,2006,12.49
+North Korea,PRK,2007,13.15
+North Korea,PRK,2008,13.93
+North Korea,PRK,2009,12.38
+North Korea,PRK,2010,13.27
+North Korea,PRK,2011,13.07
+North Korea,PRK,2012,13.36
+North Korea,PRK,2013,13.76
+North Korea,PRK,2014,12.87
+North Korea,PRK,2015,9.9
+North Korea,PRK,2016,12.67
+North Korea,PRK,2017,11.78
+North Korea,PRK,2018,12.67
+North Korea,PRK,2019,13.65
+North Korea,PRK,2020,12.2
+North Macedonia,MKD,1990,0.49
+North Macedonia,MKD,1991,0.85
+North Macedonia,MKD,1992,0.85
+North Macedonia,MKD,1993,0.52
+North Macedonia,MKD,1994,0.69
+North Macedonia,MKD,1995,0.8
+North Macedonia,MKD,1996,0.85
+North Macedonia,MKD,1997,0.9
+North Macedonia,MKD,1998,1.08
+North Macedonia,MKD,1999,1.39
+North Macedonia,MKD,2000,1.17
+North Macedonia,MKD,2001,0.63
+North Macedonia,MKD,2002,0.76
+North Macedonia,MKD,2003,1.37
+North Macedonia,MKD,2004,1.48
+North Macedonia,MKD,2005,1.49
+North Macedonia,MKD,2006,1.65
+North Macedonia,MKD,2007,1.01
+North Macedonia,MKD,2008,0.84
+North Macedonia,MKD,2009,1.27
+North Macedonia,MKD,2010,2.43
+North Macedonia,MKD,2011,1.43
+North Macedonia,MKD,2012,1.04
+North Macedonia,MKD,2013,1.58
+North Macedonia,MKD,2014,1.21
+North Macedonia,MKD,2015,1.87
+North Macedonia,MKD,2016,1.9
+North Macedonia,MKD,2017,1.11
+North Macedonia,MKD,2018,1.79
+North Macedonia,MKD,2019,1.16
+North Macedonia,MKD,2020,1.28
+North Macedonia,MKD,2021,1.46
+Norway,NOR,1965,49.452
+Norway,NOR,1966,48.744
+Norway,NOR,1967,53.301
+Norway,NOR,1968,60.205
+Norway,NOR,1969,57.371
+Norway,NOR,1970,57.808
+Norway,NOR,1971,63.245
+Norway,NOR,1972,67.417
+Norway,NOR,1973,72.867
+Norway,NOR,1974,76.597
+Norway,NOR,1975,77.33
+Norway,NOR,1976,81.933
+Norway,NOR,1977,72.022
+Norway,NOR,1978,80.706
+Norway,NOR,1979,88.698
+Norway,NOR,1980,83.613
+Norway,NOR,1981,92.834
+Norway,NOR,1982,92.499
+Norway,NOR,1983,105.688
+Norway,NOR,1984,105.903
+Norway,NOR,1985,102.383
+Norway,NOR,1986,96.201
+Norway,NOR,1987,103.273
+Norway,NOR,1988,108.857
+Norway,NOR,1989,118.4
+Norway,NOR,1990,121.14
+Norway,NOR,1991,110.13
+Norway,NOR,1992,116.67
+Norway,NOR,1993,119.23
+Norway,NOR,1994,111.64
+Norway,NOR,1995,121.53
+Norway,NOR,1996,103.86
+Norway,NOR,1997,109.78
+Norway,NOR,1998,115.7
+Norway,NOR,1999,121.45
+Norway,NOR,2000,141.82
+Norway,NOR,2001,120.46
+Norway,NOR,2002,129.37
+Norway,NOR,2003,105.48
+Norway,NOR,2004,108.78
+Norway,NOR,2005,135.69
+Norway,NOR,2006,119.37
+Norway,NOR,2007,133.66
+Norway,NOR,2008,139.04
+Norway,NOR,2009,125.28
+Norway,NOR,2010,116.74
+Norway,NOR,2011,120.28
+Norway,NOR,2012,141.72
+Norway,NOR,2013,128.14
+Norway,NOR,2014,135.47
+Norway,NOR,2015,137.3
+Norway,NOR,2016,142.81
+Norway,NOR,2017,142.37
+Norway,NOR,2018,138.8
+Norway,NOR,2019,125.52
+Norway,NOR,2020,140.93
+Norway,NOR,2021,138.65
+OECD,,1965,717.694
+OECD,,1966,758.815
+OECD,,1967,778.913
+OECD,,1968,800.574
+OECD,,1969,838.212
+OECD,,1970,862.216
+OECD,,1971,898.315
+OECD,,1972,937.346
+OECD,,1973,939.512
+OECD,,1974,1030.058
+OECD,,1975,1031.232
+OECD,,1976,994.768
+OECD,,1977,1001.913
+OECD,,1978,1073.545
+OECD,,1979,1119.567
+OECD,,1980,1112.196
+OECD,,1981,1128.845
+OECD,,1982,1159.362
+OECD,,1983,1210.293
+OECD,,1984,1213.325
+OECD,,1985,1212.794
+OECD,,1986,1206.882
+OECD,,1987,1208.767
+OECD,,1988,1223.795
+OECD,,1989,1191.039
+OECD,,1990,1229.482
+OECD,,1991,1243.663
+OECD,,1992,1230.753
+OECD,,1993,1306.939
+OECD,,1994,1264.276
+OECD,,1995,1351.869
+OECD,,1996,1387.551
+OECD,,1997,1411.774
+OECD,,1998,1378.634
+OECD,,1999,1391.464
+OECD,,2000,1393.95
+OECD,,2001,1296.86
+OECD,,2002,1313.82
+OECD,,2003,1292.32
+OECD,,2004,1327.82
+OECD,,2005,1334.1
+OECD,,2006,1357.33
+OECD,,2007,1323.31
+OECD,,2008,1377.72
+OECD,,2009,1365.91
+OECD,,2010,1392.97
+OECD,,2011,1435.58
+OECD,,2012,1437.35
+OECD,,2013,1463.51
+OECD,,2014,1445.76
+OECD,,2015,1428.67
+OECD,,2016,1454.39
+OECD,,2017,1459.73
+OECD,,2018,1483.28
+OECD,,2019,1457.61
+OECD,,2020,1498.3
+OECD,,2021,1435.87
+Oceania,,2000,42.32
+Oceania,,2001,39.75
+Oceania,,2002,42.27
+Oceania,,2003,41.29
+Oceania,,2004,44.36
+Oceania,,2005,40.04
+Oceania,,2006,40.83
+Oceania,,2007,39.62
+Oceania,,2008,35.96
+Oceania,,2009,37.63
+Oceania,,2010,39.82
+Oceania,,2011,43.6
+Oceania,,2012,38.78
+Oceania,,2013,43.07
+Oceania,,2014,44.32
+Oceania,,2015,39.54
+Oceania,,2016,42.61
+Oceania,,2017,42.82
+Oceania,,2018,43.72
+Oceania,,2019,42.82
+Oceania,,2020,40.87
+Oman,OMN,1965,0
+Oman,OMN,1966,0
+Oman,OMN,1967,0
+Oman,OMN,1968,0
+Oman,OMN,1969,0
+Oman,OMN,1970,0
+Oman,OMN,1971,0
+Oman,OMN,1972,0
+Oman,OMN,1973,0
+Oman,OMN,1974,0
+Oman,OMN,1975,0
+Oman,OMN,1976,0
+Oman,OMN,1977,0
+Oman,OMN,1978,0
+Oman,OMN,1979,0
+Oman,OMN,1980,0
+Oman,OMN,1981,0
+Oman,OMN,1982,0
+Oman,OMN,1983,0
+Oman,OMN,1984,0
+Oman,OMN,1985,0
+Oman,OMN,1986,0
+Oman,OMN,1987,0
+Oman,OMN,1988,0
+Oman,OMN,1989,0
+Oman,OMN,1990,0
+Oman,OMN,1991,0
+Oman,OMN,1992,0
+Oman,OMN,1993,0
+Oman,OMN,1994,0
+Oman,OMN,1995,0
+Oman,OMN,1996,0
+Oman,OMN,1997,0
+Oman,OMN,1998,0
+Oman,OMN,1999,0
+Oman,OMN,2000,0
+Oman,OMN,2001,0
+Oman,OMN,2002,0
+Oman,OMN,2003,0
+Oman,OMN,2004,0
+Oman,OMN,2005,0
+Oman,OMN,2006,0
+Oman,OMN,2007,0
+Oman,OMN,2008,0
+Oman,OMN,2009,0
+Oman,OMN,2010,0
+Oman,OMN,2011,0
+Oman,OMN,2012,0
+Oman,OMN,2013,0
+Oman,OMN,2014,0
+Oman,OMN,2015,0
+Oman,OMN,2016,0
+Oman,OMN,2017,0
+Oman,OMN,2018,0
+Oman,OMN,2019,0
+Oman,OMN,2020,0
+Pakistan,PAK,1965,2.196
+Pakistan,PAK,1966,2.196
+Pakistan,PAK,1967,2.603
+Pakistan,PAK,1968,3.129
+Pakistan,PAK,1969,3.301
+Pakistan,PAK,1970,2.921
+Pakistan,PAK,1971,3.814
+Pakistan,PAK,1972,4.013
+Pakistan,PAK,1973,4.234
+Pakistan,PAK,1974,4.256
+Pakistan,PAK,1975,4.897
+Pakistan,PAK,1976,5.317
+Pakistan,PAK,1977,6.315
+Pakistan,PAK,1978,7.84
+Pakistan,PAK,1979,8.476
+Pakistan,PAK,1980,8.887
+Pakistan,PAK,1981,9.281
+Pakistan,PAK,1982,10.443
+Pakistan,PAK,1983,12.096
+Pakistan,PAK,1984,12.538
+Pakistan,PAK,1985,13.024
+Pakistan,PAK,1986,12.454
+Pakistan,PAK,1987,16.374
+Pakistan,PAK,1988,17.165
+Pakistan,PAK,1989,17.443
+Pakistan,PAK,1990,17.085
+Pakistan,PAK,1991,18.283
+Pakistan,PAK,1992,19.945
+Pakistan,PAK,1993,21.933
+Pakistan,PAK,1994,21.527
+Pakistan,PAK,1995,22.747
+Pakistan,PAK,1996,24.797
+Pakistan,PAK,1997,18.447
+Pakistan,PAK,1998,24.108
+Pakistan,PAK,1999,21.505
+Pakistan,PAK,2000,17.02
+Pakistan,PAK,2001,18.75
+Pakistan,PAK,2002,22.13
+Pakistan,PAK,2003,26.67
+Pakistan,PAK,2004,25.41
+Pakistan,PAK,2005,30.55
+Pakistan,PAK,2006,31.63
+Pakistan,PAK,2007,28.42
+Pakistan,PAK,2008,27.51
+Pakistan,PAK,2009,27.81
+Pakistan,PAK,2010,31.49
+Pakistan,PAK,2011,28.23
+Pakistan,PAK,2012,29.56
+Pakistan,PAK,2013,31.55
+Pakistan,PAK,2014,32.15
+Pakistan,PAK,2015,34.29
+Pakistan,PAK,2016,31.86
+Pakistan,PAK,2017,27.65
+Pakistan,PAK,2018,37.01
+Pakistan,PAK,2019,35.28
+Pakistan,PAK,2020,37.38
+Pakistan,PAK,2021,35.08
+Palestine,PSE,2000,0
+Palestine,PSE,2001,0
+Palestine,PSE,2002,0
+Palestine,PSE,2003,0
+Palestine,PSE,2004,0
+Palestine,PSE,2005,0
+Palestine,PSE,2006,0
+Palestine,PSE,2007,0
+Palestine,PSE,2008,0
+Palestine,PSE,2009,0
+Palestine,PSE,2010,0
+Palestine,PSE,2011,0
+Palestine,PSE,2012,0
+Palestine,PSE,2013,0
+Palestine,PSE,2014,0
+Palestine,PSE,2015,0
+Palestine,PSE,2016,0
+Palestine,PSE,2017,0
+Palestine,PSE,2018,0
+Palestine,PSE,2019,0
+Palestine,PSE,2020,0
+Panama,PAN,2000,3.38
+Panama,PAN,2001,2.47
+Panama,PAN,2002,3.37
+Panama,PAN,2003,2.8
+Panama,PAN,2004,3.74
+Panama,PAN,2005,3.69
+Panama,PAN,2006,3.54
+Panama,PAN,2007,3.63
+Panama,PAN,2008,3.93
+Panama,PAN,2009,3.86
+Panama,PAN,2010,4.15
+Panama,PAN,2011,4.06
+Panama,PAN,2012,5.33
+Panama,PAN,2013,5.1
+Panama,PAN,2014,4.98
+Panama,PAN,2015,6.19
+Panama,PAN,2016,6.46
+Panama,PAN,2017,7.18
+Panama,PAN,2018,7.78
+Panama,PAN,2019,7.25
+Panama,PAN,2020,7.25
+Papua New Guinea,PNG,2000,0.92
+Papua New Guinea,PNG,2001,0.92
+Papua New Guinea,PNG,2002,0.92
+Papua New Guinea,PNG,2003,0.92
+Papua New Guinea,PNG,2004,0.89
+Papua New Guinea,PNG,2005,0.88
+Papua New Guinea,PNG,2006,0.85
+Papua New Guinea,PNG,2007,0.85
+Papua New Guinea,PNG,2008,0.85
+Papua New Guinea,PNG,2009,0.85
+Papua New Guinea,PNG,2010,0.85
+Papua New Guinea,PNG,2011,0.96
+Papua New Guinea,PNG,2012,0.97
+Papua New Guinea,PNG,2013,0.99
+Papua New Guinea,PNG,2014,1.01
+Papua New Guinea,PNG,2015,1
+Papua New Guinea,PNG,2016,1
+Papua New Guinea,PNG,2017,0.79
+Papua New Guinea,PNG,2018,0.78
+Papua New Guinea,PNG,2019,0.8
+Papua New Guinea,PNG,2020,0.8
+Paraguay,PRY,2000,52.96
+Paraguay,PRY,2001,44.86
+Paraguay,PRY,2002,47.73
+Paraguay,PRY,2003,51.25
+Paraguay,PRY,2004,51.41
+Paraguay,PRY,2005,50.65
+Paraguay,PRY,2006,53.25
+Paraguay,PRY,2007,53.19
+Paraguay,PRY,2008,54.91
+Paraguay,PRY,2009,54.41
+Paraguay,PRY,2010,53.52
+Paraguay,PRY,2011,57.05
+Paraguay,PRY,2012,59.63
+Paraguay,PRY,2013,59.77
+Paraguay,PRY,2014,54.72
+Paraguay,PRY,2015,55.19
+Paraguay,PRY,2016,63.13
+Paraguay,PRY,2017,59.09
+Paraguay,PRY,2018,58.62
+Paraguay,PRY,2019,48.93
+Paraguay,PRY,2020,49.34
+Peru,PER,1965,2.625
+Peru,PER,1966,2.827
+Peru,PER,1967,3.168
+Peru,PER,1968,3.4
+Peru,PER,1969,3.701
+Peru,PER,1970,3.536
+Peru,PER,1971,4.286
+Peru,PER,1972,4.435
+Peru,PER,1973,4.769
+Peru,PER,1974,5.216
+Peru,PER,1975,5.467
+Peru,PER,1976,5.793
+Peru,PER,1977,6.025
+Peru,PER,1978,6.192
+Peru,PER,1979,6.703
+Peru,PER,1980,7.01
+Peru,PER,1981,7.996
+Peru,PER,1982,8.396
+Peru,PER,1983,8.107
+Peru,PER,1984,8.703
+Peru,PER,1985,9.382
+Peru,PER,1986,10.06
+Peru,PER,1987,10.878
+Peru,PER,1988,10.423
+Peru,PER,1989,10.507
+Peru,PER,1990,10.469
+Peru,PER,1991,11.492
+Peru,PER,1992,9.689
+Peru,PER,1993,11.799
+Peru,PER,1994,12.747
+Peru,PER,1995,12.938
+Peru,PER,1996,13.324
+Peru,PER,1997,13.214
+Peru,PER,1998,13.808
+Peru,PER,1999,14.541
+Peru,PER,2000,16.01
+Peru,PER,2001,17.43
+Peru,PER,2002,17.86
+Peru,PER,2003,18.35
+Peru,PER,2004,17.35
+Peru,PER,2005,17.9
+Peru,PER,2006,19.51
+Peru,PER,2007,19.35
+Peru,PER,2008,18.96
+Peru,PER,2009,19.42
+Peru,PER,2010,19.84
+Peru,PER,2011,21.37
+Peru,PER,2012,21.14
+Peru,PER,2013,22.09
+Peru,PER,2014,21.98
+Peru,PER,2015,23.47
+Peru,PER,2016,23.92
+Peru,PER,2017,28.77
+Peru,PER,2018,30.41
+Peru,PER,2019,31.26
+Peru,PER,2020,29.04
+Peru,PER,2021,30.42
+Philippines,PHL,1965,1.55
+Philippines,PHL,1966,1.52
+Philippines,PHL,1967,1.68
+Philippines,PHL,1968,1.72
+Philippines,PHL,1969,1.815
+Philippines,PHL,1970,2.097
+Philippines,PHL,1971,1.933
+Philippines,PHL,1972,2.207
+Philippines,PHL,1973,2.374
+Philippines,PHL,1974,2.051
+Philippines,PHL,1975,2.272
+Philippines,PHL,1976,2.795
+Philippines,PHL,1977,2.114
+Philippines,PHL,1978,2.811
+Philippines,PHL,1979,2.881
+Philippines,PHL,1980,3.522
+Philippines,PHL,1981,3.725
+Philippines,PHL,1982,3.773
+Philippines,PHL,1983,3.968
+Philippines,PHL,1984,5.278
+Philippines,PHL,1985,5.553
+Philippines,PHL,1986,6.017
+Philippines,PHL,1987,5.247
+Philippines,PHL,1988,6.264
+Philippines,PHL,1989,6.485
+Philippines,PHL,1990,6.062
+Philippines,PHL,1991,5.145
+Philippines,PHL,1992,4.44
+Philippines,PHL,1993,5.03
+Philippines,PHL,1994,5.862
+Philippines,PHL,1995,6.232
+Philippines,PHL,1996,7.03
+Philippines,PHL,1997,6.069
+Philippines,PHL,1998,5.066
+Philippines,PHL,1999,7.84
+Philippines,PHL,2000,7.72
+Philippines,PHL,2001,7.03
+Philippines,PHL,2002,6.96
+Philippines,PHL,2003,7.79
+Philippines,PHL,2004,8.51
+Philippines,PHL,2005,8.3
+Philippines,PHL,2006,9.84
+Philippines,PHL,2007,8.48
+Philippines,PHL,2008,9.74
+Philippines,PHL,2009,9.69
+Philippines,PHL,2010,7.72
+Philippines,PHL,2011,9.6
+Philippines,PHL,2012,10.15
+Philippines,PHL,2013,9.92
+Philippines,PHL,2014,9.05
+Philippines,PHL,2015,8.58
+Philippines,PHL,2016,8.03
+Philippines,PHL,2017,9.52
+Philippines,PHL,2018,9.29
+Philippines,PHL,2019,7.94
+Philippines,PHL,2020,7.79
+Philippines,PHL,2021,9.93
+Poland,POL,1965,0.896
+Poland,POL,1966,0.896
+Poland,POL,1967,0.957
+Poland,POL,1968,1.005
+Poland,POL,1969,0.81
+Poland,POL,1970,1.771
+Poland,POL,1971,1.569
+Poland,POL,1972,1.503
+Poland,POL,1973,1.456
+Poland,POL,1974,2.122
+Poland,POL,1975,1.99
+Poland,POL,1976,1.645
+Poland,POL,1977,1.957
+Poland,POL,1978,1.951
+Poland,POL,1979,1.807
+Poland,POL,1980,2.349
+Poland,POL,1981,2.137
+Poland,POL,1982,1.543
+Poland,POL,1983,1.675
+Poland,POL,1984,1.408
+Poland,POL,1985,1.852
+Poland,POL,1986,1.549
+Poland,POL,1987,1.661
+Poland,POL,1988,1.793
+Poland,POL,1989,1.609
+Poland,POL,1990,1.44
+Poland,POL,1991,1.42
+Poland,POL,1992,1.51
+Poland,POL,1993,1.49
+Poland,POL,1994,1.73
+Poland,POL,1995,1.89
+Poland,POL,1996,1.93
+Poland,POL,1997,1.96
+Poland,POL,1998,2.31
+Poland,POL,1999,2.15
+Poland,POL,2000,2.11
+Poland,POL,2001,2.33
+Poland,POL,2002,2.28
+Poland,POL,2003,1.67
+Poland,POL,2004,2.08
+Poland,POL,2005,2.2
+Poland,POL,2006,2.04
+Poland,POL,2007,2.35
+Poland,POL,2008,2.15
+Poland,POL,2009,2.38
+Poland,POL,2010,2.92
+Poland,POL,2011,2.33
+Poland,POL,2012,2.04
+Poland,POL,2013,2.44
+Poland,POL,2014,2.18
+Poland,POL,2015,1.83
+Poland,POL,2016,2.14
+Poland,POL,2017,2.56
+Poland,POL,2018,1.97
+Poland,POL,2019,1.96
+Poland,POL,2020,2.12
+Poland,POL,2021,2.33
+Portugal,PRT,1965,3.975
+Portugal,PRT,1966,5.276
+Portugal,PRT,1967,5.481
+Portugal,PRT,1968,5.188
+Portugal,PRT,1969,6.311
+Portugal,PRT,1970,5.804
+Portugal,PRT,1971,6.17
+Portugal,PRT,1972,7.086
+Portugal,PRT,1973,7.325
+Portugal,PRT,1974,7.828
+Portugal,PRT,1975,6.41
+Portugal,PRT,1976,4.787
+Portugal,PRT,1977,9.966
+Portugal,PRT,1978,10.811
+Portugal,PRT,1979,11.213
+Portugal,PRT,1980,8.015
+Portugal,PRT,1981,5.019
+Portugal,PRT,1982,6.921
+Portugal,PRT,1983,8.026
+Portugal,PRT,1984,9.765
+Portugal,PRT,1985,10.693
+Portugal,PRT,1986,8.514
+Portugal,PRT,1987,9.153
+Portugal,PRT,1988,12.233
+Portugal,PRT,1989,5.819
+Portugal,PRT,1990,9.14
+Portugal,PRT,1991,9.03
+Portugal,PRT,1992,4.61
+Portugal,PRT,1993,8.52
+Portugal,PRT,1994,10.65
+Portugal,PRT,1995,8.33
+Portugal,PRT,1996,14.75
+Portugal,PRT,1997,13.1
+Portugal,PRT,1998,12.98
+Portugal,PRT,1999,7.26
+Portugal,PRT,2000,11.32
+Portugal,PRT,2001,14.03
+Portugal,PRT,2002,7.8
+Portugal,PRT,2003,15.72
+Portugal,PRT,2004,9.87
+Portugal,PRT,2005,4.73
+Portugal,PRT,2006,11
+Portugal,PRT,2007,10.09
+Portugal,PRT,2008,6.8
+Portugal,PRT,2009,8.28
+Portugal,PRT,2010,16.15
+Portugal,PRT,2011,11.54
+Portugal,PRT,2012,5.62
+Portugal,PRT,2013,13.73
+Portugal,PRT,2014,15.57
+Portugal,PRT,2015,8.66
+Portugal,PRT,2016,15.72
+Portugal,PRT,2017,5.9
+Portugal,PRT,2018,12.39
+Portugal,PRT,2019,8.82
+Portugal,PRT,2020,12.08
+Portugal,PRT,2021,11.33
+Puerto Rico,PRI,2000,0.15
+Puerto Rico,PRI,2001,0.13
+Puerto Rico,PRI,2002,0.11
+Puerto Rico,PRI,2003,0.1
+Puerto Rico,PRI,2004,0.14
+Puerto Rico,PRI,2005,0.14
+Puerto Rico,PRI,2006,0.14
+Puerto Rico,PRI,2007,0.16
+Puerto Rico,PRI,2008,0.16
+Puerto Rico,PRI,2009,0.17
+Puerto Rico,PRI,2010,0.16
+Puerto Rico,PRI,2011,0.15
+Puerto Rico,PRI,2012,0.09
+Puerto Rico,PRI,2013,0.08
+Puerto Rico,PRI,2014,0.08
+Puerto Rico,PRI,2015,0.05
+Puerto Rico,PRI,2016,0.07
+Puerto Rico,PRI,2017,0.05
+Puerto Rico,PRI,2018,0.04
+Puerto Rico,PRI,2019,0.05
+Puerto Rico,PRI,2020,0.05
+Qatar,QAT,1965,0
+Qatar,QAT,1966,0
+Qatar,QAT,1967,0
+Qatar,QAT,1968,0
+Qatar,QAT,1969,0
+Qatar,QAT,1970,0
+Qatar,QAT,1971,0
+Qatar,QAT,1972,0
+Qatar,QAT,1973,0
+Qatar,QAT,1974,0
+Qatar,QAT,1975,0
+Qatar,QAT,1976,0
+Qatar,QAT,1977,0
+Qatar,QAT,1978,0
+Qatar,QAT,1979,0
+Qatar,QAT,1980,0
+Qatar,QAT,1981,0
+Qatar,QAT,1982,0
+Qatar,QAT,1983,0
+Qatar,QAT,1984,0
+Qatar,QAT,1985,0
+Qatar,QAT,1986,0
+Qatar,QAT,1987,0
+Qatar,QAT,1988,0
+Qatar,QAT,1989,0
+Qatar,QAT,1990,0
+Qatar,QAT,1991,0
+Qatar,QAT,1992,0
+Qatar,QAT,1993,0
+Qatar,QAT,1994,0
+Qatar,QAT,1995,0
+Qatar,QAT,1996,0
+Qatar,QAT,1997,0
+Qatar,QAT,1998,0
+Qatar,QAT,1999,0
+Qatar,QAT,2000,0
+Qatar,QAT,2001,0
+Qatar,QAT,2002,0
+Qatar,QAT,2003,0
+Qatar,QAT,2004,0
+Qatar,QAT,2005,0
+Qatar,QAT,2006,0
+Qatar,QAT,2007,0
+Qatar,QAT,2008,0
+Qatar,QAT,2009,0
+Qatar,QAT,2010,0
+Qatar,QAT,2011,0
+Qatar,QAT,2012,0
+Qatar,QAT,2013,0
+Qatar,QAT,2014,0
+Qatar,QAT,2015,0
+Qatar,QAT,2016,0
+Qatar,QAT,2017,0
+Qatar,QAT,2018,0
+Qatar,QAT,2019,0
+Qatar,QAT,2020,0
+Reunion,REU,2000,0.55
+Reunion,REU,2001,0.56
+Reunion,REU,2002,0.57
+Reunion,REU,2003,0.57
+Reunion,REU,2004,0.57
+Reunion,REU,2005,0.57
+Reunion,REU,2006,0.57
+Reunion,REU,2007,0.65
+Reunion,REU,2008,0.63
+Reunion,REU,2009,0.53
+Reunion,REU,2010,0.54
+Reunion,REU,2011,0.4
+Reunion,REU,2012,0.49
+Reunion,REU,2013,0.56
+Reunion,REU,2014,0.43
+Reunion,REU,2015,0.5
+Reunion,REU,2016,0.46
+Reunion,REU,2017,0.42
+Reunion,REU,2018,0.5
+Reunion,REU,2019,0.6
+Reunion,REU,2020,0.49
+Romania,ROU,1965,1.005
+Romania,ROU,1966,1.035
+Romania,ROU,1967,1.476
+Romania,ROU,1968,1.562
+Romania,ROU,1969,2.217
+Romania,ROU,1970,2.773
+Romania,ROU,1971,4.495
+Romania,ROU,1972,7.343
+Romania,ROU,1973,7.547
+Romania,ROU,1974,8.476
+Romania,ROU,1975,9.361
+Romania,ROU,1976,8.107
+Romania,ROU,1977,9.345
+Romania,ROU,1978,10.614
+Romania,ROU,1979,11.339
+Romania,ROU,1980,12.637
+Romania,ROU,1981,12.737
+Romania,ROU,1982,11.854
+Romania,ROU,1983,10.038
+Romania,ROU,1984,11.326
+Romania,ROU,1985,12.713
+Romania,ROU,1986,10.81
+Romania,ROU,1987,11.209
+Romania,ROU,1988,14.776
+Romania,ROU,1989,13.678
+Romania,ROU,1990,11.41
+Romania,ROU,1991,14.59
+Romania,ROU,1992,11.7
+Romania,ROU,1993,12.77
+Romania,ROU,1994,13.05
+Romania,ROU,1995,16.69
+Romania,ROU,1996,15.76
+Romania,ROU,1997,17.51
+Romania,ROU,1998,18.88
+Romania,ROU,1999,18.29
+Romania,ROU,2000,14.78
+Romania,ROU,2001,14.92
+Romania,ROU,2002,16.05
+Romania,ROU,2003,13.26
+Romania,ROU,2004,16.51
+Romania,ROU,2005,20.21
+Romania,ROU,2006,18.36
+Romania,ROU,2007,15.97
+Romania,ROU,2008,17.2
+Romania,ROU,2009,15.53
+Romania,ROU,2010,19.88
+Romania,ROU,2011,14.73
+Romania,ROU,2012,12.07
+Romania,ROU,2013,14.96
+Romania,ROU,2014,18.8
+Romania,ROU,2015,16.63
+Romania,ROU,2016,18.03
+Romania,ROU,2017,14.49
+Romania,ROU,2018,17.66
+Romania,ROU,2019,15.58
+Romania,ROU,2020,15.38
+Romania,ROU,2021,17.14
+Russia,RUS,1985,159.726
+Russia,RUS,1986,164.331
+Russia,RUS,1987,162.528
+Russia,RUS,1988,160.924
+Russia,RUS,1989,159.726
+Russia,RUS,1990,166.846
+Russia,RUS,1991,168.094
+Russia,RUS,1992,172.594
+Russia,RUS,1993,174.289
+Russia,RUS,1994,175.926
+Russia,RUS,1995,176.255
+Russia,RUS,1996,154.309
+Russia,RUS,1997,157.434
+Russia,RUS,1998,158.497
+Russia,RUS,1999,160.492
+Russia,RUS,2000,162.44
+Russia,RUS,2001,172.16
+Russia,RUS,2002,160.6
+Russia,RUS,2003,154.2
+Russia,RUS,2004,174.07
+Russia,RUS,2005,170.95
+Russia,RUS,2006,171.62
+Russia,RUS,2007,175.28
+Russia,RUS,2008,163.12
+Russia,RUS,2009,172.44
+Russia,RUS,2010,164.82
+Russia,RUS,2011,164.19
+Russia,RUS,2012,164.24
+Russia,RUS,2013,179.34
+Russia,RUS,2014,173.51
+Russia,RUS,2015,166.31
+Russia,RUS,2016,182.77
+Russia,RUS,2017,183.16
+Russia,RUS,2018,189.23
+Russia,RUS,2019,192.43
+Russia,RUS,2020,196
+Russia,RUS,2021,198.09
+Rwanda,RWA,2000,0.11
+Rwanda,RWA,2001,0.09
+Rwanda,RWA,2002,0.1
+Rwanda,RWA,2003,0.12
+Rwanda,RWA,2004,0.08
+Rwanda,RWA,2005,0.06
+Rwanda,RWA,2006,0.04
+Rwanda,RWA,2007,0.04
+Rwanda,RWA,2008,0.07
+Rwanda,RWA,2009,0.1
+Rwanda,RWA,2010,0.11
+Rwanda,RWA,2011,0.13
+Rwanda,RWA,2012,0.14
+Rwanda,RWA,2013,0.15
+Rwanda,RWA,2014,0.2
+Rwanda,RWA,2015,0.28
+Rwanda,RWA,2016,0.28
+Rwanda,RWA,2017,0.32
+Rwanda,RWA,2018,0.33
+Rwanda,RWA,2019,0.45
+Rwanda,RWA,2020,0.45
+Saint Kitts and Nevis,KNA,2000,0
+Saint Kitts and Nevis,KNA,2001,0
+Saint Kitts and Nevis,KNA,2002,0
+Saint Kitts and Nevis,KNA,2003,0
+Saint Kitts and Nevis,KNA,2004,0
+Saint Kitts and Nevis,KNA,2005,0
+Saint Kitts and Nevis,KNA,2006,0
+Saint Kitts and Nevis,KNA,2007,0
+Saint Kitts and Nevis,KNA,2008,0
+Saint Kitts and Nevis,KNA,2009,0
+Saint Kitts and Nevis,KNA,2010,0
+Saint Kitts and Nevis,KNA,2011,0
+Saint Kitts and Nevis,KNA,2012,0
+Saint Kitts and Nevis,KNA,2013,0
+Saint Kitts and Nevis,KNA,2014,0
+Saint Kitts and Nevis,KNA,2015,0
+Saint Kitts and Nevis,KNA,2016,0
+Saint Kitts and Nevis,KNA,2017,0
+Saint Kitts and Nevis,KNA,2018,0
+Saint Kitts and Nevis,KNA,2019,0
+Saint Kitts and Nevis,KNA,2020,0
+Saint Lucia,LCA,2000,0
+Saint Lucia,LCA,2001,0
+Saint Lucia,LCA,2002,0
+Saint Lucia,LCA,2003,0
+Saint Lucia,LCA,2004,0
+Saint Lucia,LCA,2005,0
+Saint Lucia,LCA,2006,0
+Saint Lucia,LCA,2007,0
+Saint Lucia,LCA,2008,0
+Saint Lucia,LCA,2009,0
+Saint Lucia,LCA,2010,0
+Saint Lucia,LCA,2011,0
+Saint Lucia,LCA,2012,0
+Saint Lucia,LCA,2013,0
+Saint Lucia,LCA,2014,0
+Saint Lucia,LCA,2015,0
+Saint Lucia,LCA,2016,0
+Saint Lucia,LCA,2017,0
+Saint Lucia,LCA,2018,0
+Saint Lucia,LCA,2019,0
+Saint Lucia,LCA,2020,0
+Saint Pierre and Miquelon,SPM,2000,0
+Saint Pierre and Miquelon,SPM,2001,0
+Saint Pierre and Miquelon,SPM,2002,0
+Saint Pierre and Miquelon,SPM,2003,0
+Saint Pierre and Miquelon,SPM,2004,0
+Saint Pierre and Miquelon,SPM,2005,0
+Saint Pierre and Miquelon,SPM,2006,0
+Saint Pierre and Miquelon,SPM,2007,0
+Saint Pierre and Miquelon,SPM,2008,0
+Saint Pierre and Miquelon,SPM,2009,0
+Saint Pierre and Miquelon,SPM,2010,0
+Saint Pierre and Miquelon,SPM,2011,0
+Saint Pierre and Miquelon,SPM,2012,0
+Saint Pierre and Miquelon,SPM,2013,0
+Saint Pierre and Miquelon,SPM,2014,0
+Saint Pierre and Miquelon,SPM,2015,0
+Saint Pierre and Miquelon,SPM,2016,0
+Saint Pierre and Miquelon,SPM,2017,0
+Saint Pierre and Miquelon,SPM,2018,0
+Saint Pierre and Miquelon,SPM,2019,0
+Saint Pierre and Miquelon,SPM,2020,0
+Saint Vincent and the Grenadines,VCT,2000,0.03
+Saint Vincent and the Grenadines,VCT,2001,0.02
+Saint Vincent and the Grenadines,VCT,2002,0.02
+Saint Vincent and the Grenadines,VCT,2003,0.02
+Saint Vincent and the Grenadines,VCT,2004,0.03
+Saint Vincent and the Grenadines,VCT,2005,0.03
+Saint Vincent and the Grenadines,VCT,2006,0.02
+Saint Vincent and the Grenadines,VCT,2007,0.02
+Saint Vincent and the Grenadines,VCT,2008,0.02
+Saint Vincent and the Grenadines,VCT,2009,0.02
+Saint Vincent and the Grenadines,VCT,2010,0.03
+Saint Vincent and the Grenadines,VCT,2011,0.03
+Saint Vincent and the Grenadines,VCT,2012,0.03
+Saint Vincent and the Grenadines,VCT,2013,0.02
+Saint Vincent and the Grenadines,VCT,2014,0.01
+Saint Vincent and the Grenadines,VCT,2015,0.02
+Saint Vincent and the Grenadines,VCT,2016,0.02
+Saint Vincent and the Grenadines,VCT,2017,0.02
+Saint Vincent and the Grenadines,VCT,2018,0.02
+Saint Vincent and the Grenadines,VCT,2019,0.02
+Saint Vincent and the Grenadines,VCT,2020,0.04
+Samoa,WSM,2000,0.04
+Samoa,WSM,2001,0.05
+Samoa,WSM,2002,0.06
+Samoa,WSM,2003,0.05
+Samoa,WSM,2004,0.05
+Samoa,WSM,2005,0.05
+Samoa,WSM,2006,0.05
+Samoa,WSM,2007,0.05
+Samoa,WSM,2008,0.05
+Samoa,WSM,2009,0.05
+Samoa,WSM,2010,0.05
+Samoa,WSM,2011,0.05
+Samoa,WSM,2012,0.04
+Samoa,WSM,2013,0.03
+Samoa,WSM,2014,0.03
+Samoa,WSM,2015,0.03
+Samoa,WSM,2016,0.03
+Samoa,WSM,2017,0.03
+Samoa,WSM,2018,0.04
+Samoa,WSM,2019,0.04
+Samoa,WSM,2020,0.04
+Sao Tome and Principe,STP,2000,0.01
+Sao Tome and Principe,STP,2001,0
+Sao Tome and Principe,STP,2002,0.01
+Sao Tome and Principe,STP,2003,0.01
+Sao Tome and Principe,STP,2004,0.01
+Sao Tome and Principe,STP,2005,0
+Sao Tome and Principe,STP,2006,0.01
+Sao Tome and Principe,STP,2007,0.01
+Sao Tome and Principe,STP,2008,0.01
+Sao Tome and Principe,STP,2009,0.01
+Sao Tome and Principe,STP,2010,0
+Sao Tome and Principe,STP,2011,0.01
+Sao Tome and Principe,STP,2012,0.01
+Sao Tome and Principe,STP,2013,0.01
+Sao Tome and Principe,STP,2014,0.01
+Sao Tome and Principe,STP,2015,0.01
+Sao Tome and Principe,STP,2016,0.01
+Sao Tome and Principe,STP,2017,0.01
+Sao Tome and Principe,STP,2018,0.01
+Sao Tome and Principe,STP,2019,0.01
+Sao Tome and Principe,STP,2020,0.01
+Saudi Arabia,SAU,1965,0
+Saudi Arabia,SAU,1966,0
+Saudi Arabia,SAU,1967,0
+Saudi Arabia,SAU,1968,0
+Saudi Arabia,SAU,1969,0
+Saudi Arabia,SAU,1970,0
+Saudi Arabia,SAU,1971,0
+Saudi Arabia,SAU,1972,0
+Saudi Arabia,SAU,1973,0
+Saudi Arabia,SAU,1974,0
+Saudi Arabia,SAU,1975,0
+Saudi Arabia,SAU,1976,0
+Saudi Arabia,SAU,1977,0
+Saudi Arabia,SAU,1978,0
+Saudi Arabia,SAU,1979,0
+Saudi Arabia,SAU,1980,0
+Saudi Arabia,SAU,1981,0
+Saudi Arabia,SAU,1982,0
+Saudi Arabia,SAU,1983,0
+Saudi Arabia,SAU,1984,0
+Saudi Arabia,SAU,1985,0
+Saudi Arabia,SAU,1986,0
+Saudi Arabia,SAU,1987,0
+Saudi Arabia,SAU,1988,0
+Saudi Arabia,SAU,1989,0
+Saudi Arabia,SAU,1990,0
+Saudi Arabia,SAU,1991,0
+Saudi Arabia,SAU,1992,0
+Saudi Arabia,SAU,1993,0
+Saudi Arabia,SAU,1994,0
+Saudi Arabia,SAU,1995,0
+Saudi Arabia,SAU,1996,0
+Saudi Arabia,SAU,1997,0
+Saudi Arabia,SAU,1998,0
+Saudi Arabia,SAU,1999,0
+Saudi Arabia,SAU,2000,0
+Saudi Arabia,SAU,2001,0
+Saudi Arabia,SAU,2002,0
+Saudi Arabia,SAU,2003,0
+Saudi Arabia,SAU,2004,0
+Saudi Arabia,SAU,2005,0
+Saudi Arabia,SAU,2006,0
+Saudi Arabia,SAU,2007,0
+Saudi Arabia,SAU,2008,0
+Saudi Arabia,SAU,2009,0
+Saudi Arabia,SAU,2010,0
+Saudi Arabia,SAU,2011,0
+Saudi Arabia,SAU,2012,0
+Saudi Arabia,SAU,2013,0
+Saudi Arabia,SAU,2014,0
+Saudi Arabia,SAU,2015,0
+Saudi Arabia,SAU,2016,0
+Saudi Arabia,SAU,2017,0
+Saudi Arabia,SAU,2018,0
+Saudi Arabia,SAU,2019,0
+Saudi Arabia,SAU,2020,0
+Saudi Arabia,SAU,2021,0
+Senegal,SEN,2000,0
+Senegal,SEN,2001,0
+Senegal,SEN,2002,0.19
+Senegal,SEN,2003,0.33
+Senegal,SEN,2004,0.29
+Senegal,SEN,2005,0.26
+Senegal,SEN,2006,0.23
+Senegal,SEN,2007,0.18
+Senegal,SEN,2008,0.23
+Senegal,SEN,2009,0.24
+Senegal,SEN,2010,0.25
+Senegal,SEN,2011,0.25
+Senegal,SEN,2012,0.29
+Senegal,SEN,2013,0.31
+Senegal,SEN,2014,0.31
+Senegal,SEN,2015,0.33
+Senegal,SEN,2016,0.36
+Senegal,SEN,2017,0.36
+Senegal,SEN,2018,0.36
+Senegal,SEN,2019,0.31
+Senegal,SEN,2020,0.31
+Senegal,SEN,2021,0.37
+Serbia,SRB,1990,7.49
+Serbia,SRB,1991,9.57
+Serbia,SRB,1992,9.17
+Serbia,SRB,1993,8.06
+Serbia,SRB,1994,8.92
+Serbia,SRB,1995,9.9
+Serbia,SRB,1996,11.48
+Serbia,SRB,1997,10.5
+Serbia,SRB,1998,10.32
+Serbia,SRB,1999,11.14
+Serbia,SRB,2000,9.82
+Serbia,SRB,2001,9.89
+Serbia,SRB,2002,9.93
+Serbia,SRB,2003,8.74
+Serbia,SRB,2004,10.62
+Serbia,SRB,2005,11.41
+Serbia,SRB,2006,10.35
+Serbia,SRB,2007,9.46
+Serbia,SRB,2008,9.56
+Serbia,SRB,2009,10.54
+Serbia,SRB,2010,11.89
+Serbia,SRB,2011,8.67
+Serbia,SRB,2012,9.29
+Serbia,SRB,2013,10.2
+Serbia,SRB,2014,11
+Serbia,SRB,2015,10.08
+Serbia,SRB,2016,10.79
+Serbia,SRB,2017,9.15
+Serbia,SRB,2018,10.64
+Serbia,SRB,2019,9.46
+Serbia,SRB,2020,9.03
+Serbia,SRB,2021,11.1
+Seychelles,SYC,2000,0
+Seychelles,SYC,2001,0
+Seychelles,SYC,2002,0
+Seychelles,SYC,2003,0
+Seychelles,SYC,2004,0
+Seychelles,SYC,2005,0
+Seychelles,SYC,2006,0
+Seychelles,SYC,2007,0
+Seychelles,SYC,2008,0
+Seychelles,SYC,2009,0
+Seychelles,SYC,2010,0
+Seychelles,SYC,2011,0
+Seychelles,SYC,2012,0
+Seychelles,SYC,2013,0
+Seychelles,SYC,2014,0
+Seychelles,SYC,2015,0
+Seychelles,SYC,2016,0
+Seychelles,SYC,2017,0
+Seychelles,SYC,2018,0
+Seychelles,SYC,2019,0
+Seychelles,SYC,2020,0
+Sierra Leone,SLE,2000,0.01
+Sierra Leone,SLE,2001,0.01
+Sierra Leone,SLE,2002,0.02
+Sierra Leone,SLE,2003,0.02
+Sierra Leone,SLE,2004,0.02
+Sierra Leone,SLE,2005,0.02
+Sierra Leone,SLE,2006,0
+Sierra Leone,SLE,2007,0.02
+Sierra Leone,SLE,2008,0.09
+Sierra Leone,SLE,2009,0.09
+Sierra Leone,SLE,2010,0.12
+Sierra Leone,SLE,2011,0.15
+Sierra Leone,SLE,2012,0.12
+Sierra Leone,SLE,2013,0.1
+Sierra Leone,SLE,2014,0.12
+Sierra Leone,SLE,2015,0.12
+Sierra Leone,SLE,2016,0.13
+Sierra Leone,SLE,2017,0.13
+Sierra Leone,SLE,2018,0.17
+Sierra Leone,SLE,2019,0.18
+Sierra Leone,SLE,2020,0.18
+Singapore,SGP,1965,0
+Singapore,SGP,1966,0
+Singapore,SGP,1967,0
+Singapore,SGP,1968,0
+Singapore,SGP,1969,0
+Singapore,SGP,1970,0
+Singapore,SGP,1971,0
+Singapore,SGP,1972,0
+Singapore,SGP,1973,0
+Singapore,SGP,1974,0
+Singapore,SGP,1975,0
+Singapore,SGP,1976,0
+Singapore,SGP,1977,0
+Singapore,SGP,1978,0
+Singapore,SGP,1979,0
+Singapore,SGP,1980,0
+Singapore,SGP,1981,0
+Singapore,SGP,1982,0
+Singapore,SGP,1983,0
+Singapore,SGP,1984,0
+Singapore,SGP,1985,0
+Singapore,SGP,1986,0
+Singapore,SGP,1987,0
+Singapore,SGP,1988,0
+Singapore,SGP,1989,0
+Singapore,SGP,1990,0
+Singapore,SGP,1991,0
+Singapore,SGP,1992,0
+Singapore,SGP,1993,0
+Singapore,SGP,1994,0
+Singapore,SGP,1995,0
+Singapore,SGP,1996,0
+Singapore,SGP,1997,0
+Singapore,SGP,1998,0
+Singapore,SGP,1999,0
+Singapore,SGP,2000,0
+Singapore,SGP,2001,0
+Singapore,SGP,2002,0
+Singapore,SGP,2003,0
+Singapore,SGP,2004,0
+Singapore,SGP,2005,0
+Singapore,SGP,2006,0
+Singapore,SGP,2007,0
+Singapore,SGP,2008,0
+Singapore,SGP,2009,0
+Singapore,SGP,2010,0
+Singapore,SGP,2011,0
+Singapore,SGP,2012,0
+Singapore,SGP,2013,0
+Singapore,SGP,2014,0
+Singapore,SGP,2015,0
+Singapore,SGP,2016,0
+Singapore,SGP,2017,0
+Singapore,SGP,2018,0
+Singapore,SGP,2019,0
+Singapore,SGP,2020,0
+Singapore,SGP,2021,0
+Slovakia,SVK,1965,2.223
+Slovakia,SVK,1966,2.13
+Slovakia,SVK,1967,1.825
+Slovakia,SVK,1968,1.675
+Slovakia,SVK,1969,1.304
+Slovakia,SVK,1970,1.967
+Slovakia,SVK,1971,1.476
+Slovakia,SVK,1972,1.546
+Slovakia,SVK,1973,1.322
+Slovakia,SVK,1974,2.223
+Slovakia,SVK,1975,2.002
+Slovakia,SVK,1976,2.019
+Slovakia,SVK,1977,2.408
+Slovakia,SVK,1978,2.259
+Slovakia,SVK,1979,1.884
+Slovakia,SVK,1980,2.257
+Slovakia,SVK,1981,1.966
+Slovakia,SVK,1982,1.726
+Slovakia,SVK,1983,1.832
+Slovakia,SVK,1984,1.555
+Slovakia,SVK,1985,2.117
+Slovakia,SVK,1986,1.675
+Slovakia,SVK,1987,1.932
+Slovakia,SVK,1988,1.755
+Slovakia,SVK,1989,1.962
+Slovakia,SVK,1990,1.88
+Slovakia,SVK,1991,1.41
+Slovakia,SVK,1992,1.94
+Slovakia,SVK,1993,3.47
+Slovakia,SVK,1994,4.36
+Slovakia,SVK,1995,4.88
+Slovakia,SVK,1996,4.23
+Slovakia,SVK,1997,4.06
+Slovakia,SVK,1998,4.27
+Slovakia,SVK,1999,4.47
+Slovakia,SVK,2000,4.61
+Slovakia,SVK,2001,4.93
+Slovakia,SVK,2002,5.27
+Slovakia,SVK,2003,3.48
+Slovakia,SVK,2004,4.1
+Slovakia,SVK,2005,4.64
+Slovakia,SVK,2006,4.4
+Slovakia,SVK,2007,4.45
+Slovakia,SVK,2008,4.04
+Slovakia,SVK,2009,4.37
+Slovakia,SVK,2010,5.26
+Slovakia,SVK,2011,3.78
+Slovakia,SVK,2012,4.1
+Slovakia,SVK,2013,4.85
+Slovakia,SVK,2014,4.21
+Slovakia,SVK,2015,3.87
+Slovakia,SVK,2016,4.36
+Slovakia,SVK,2017,4.32
+Slovakia,SVK,2018,3.59
+Slovakia,SVK,2019,4.36
+Slovakia,SVK,2020,4.61
+Slovakia,SVK,2021,4.34
+Slovenia,SVN,1990,2.95
+Slovenia,SVN,1991,3.61
+Slovenia,SVN,1992,3.42
+Slovenia,SVN,1993,3.04
+Slovenia,SVN,1994,3.4
+Slovenia,SVN,1995,3.25
+Slovenia,SVN,1996,3.67
+Slovenia,SVN,1997,3.09
+Slovenia,SVN,1998,3.45
+Slovenia,SVN,1999,3.74
+Slovenia,SVN,2000,3.83
+Slovenia,SVN,2001,3.8
+Slovenia,SVN,2002,3.31
+Slovenia,SVN,2003,2.96
+Slovenia,SVN,2004,4.09
+Slovenia,SVN,2005,3.46
+Slovenia,SVN,2006,3.59
+Slovenia,SVN,2007,3.27
+Slovenia,SVN,2008,4.02
+Slovenia,SVN,2009,4.71
+Slovenia,SVN,2010,4.52
+Slovenia,SVN,2011,3.56
+Slovenia,SVN,2012,3.9
+Slovenia,SVN,2013,4.63
+Slovenia,SVN,2014,6.09
+Slovenia,SVN,2015,3.81
+Slovenia,SVN,2016,4.5
+Slovenia,SVN,2017,3.87
+Slovenia,SVN,2018,4.7
+Slovenia,SVN,2019,4.48
+Slovenia,SVN,2020,4.93
+Slovenia,SVN,2021,4.68
+Solomon Islands,SLB,2000,0
+Solomon Islands,SLB,2001,0
+Solomon Islands,SLB,2002,0
+Solomon Islands,SLB,2003,0
+Solomon Islands,SLB,2004,0
+Solomon Islands,SLB,2005,0
+Solomon Islands,SLB,2006,0
+Solomon Islands,SLB,2007,0
+Solomon Islands,SLB,2008,0
+Solomon Islands,SLB,2009,0
+Solomon Islands,SLB,2010,0
+Solomon Islands,SLB,2011,0
+Solomon Islands,SLB,2012,0
+Solomon Islands,SLB,2013,0
+Solomon Islands,SLB,2014,0
+Solomon Islands,SLB,2015,0
+Solomon Islands,SLB,2016,0
+Solomon Islands,SLB,2017,0
+Solomon Islands,SLB,2018,0
+Solomon Islands,SLB,2019,0
+Solomon Islands,SLB,2020,0
+Somalia,SOM,2000,0
+Somalia,SOM,2001,0
+Somalia,SOM,2002,0
+Somalia,SOM,2003,0.01
+Somalia,SOM,2004,0
+Somalia,SOM,2005,0
+Somalia,SOM,2006,0
+Somalia,SOM,2007,0
+Somalia,SOM,2008,0
+Somalia,SOM,2009,0
+Somalia,SOM,2010,0
+Somalia,SOM,2011,0
+Somalia,SOM,2012,0
+Somalia,SOM,2013,0
+Somalia,SOM,2014,0
+Somalia,SOM,2015,0
+Somalia,SOM,2016,0
+Somalia,SOM,2017,0
+Somalia,SOM,2018,0
+Somalia,SOM,2019,0
+Somalia,SOM,2020,0
+South Africa,ZAF,1965,0.037
+South Africa,ZAF,1966,0.036
+South Africa,ZAF,1967,0.026
+South Africa,ZAF,1968,0.024
+South Africa,ZAF,1969,0.021
+South Africa,ZAF,1970,0.025
+South Africa,ZAF,1971,0.112
+South Africa,ZAF,1972,0.834
+South Africa,ZAF,1973,0.985
+South Africa,ZAF,1974,1.132
+South Africa,ZAF,1975,1.12
+South Africa,ZAF,1976,1.876
+South Africa,ZAF,1977,1.944
+South Africa,ZAF,1978,1.907
+South Africa,ZAF,1979,1.144
+South Africa,ZAF,1980,0.992
+South Africa,ZAF,1981,1.653
+South Africa,ZAF,1982,1.016
+South Africa,ZAF,1983,0.595
+South Africa,ZAF,1984,0.56
+South Africa,ZAF,1985,0.624
+South Africa,ZAF,1986,1.623
+South Africa,ZAF,1987,1.617
+South Africa,ZAF,1988,3.162
+South Africa,ZAF,1989,2.759
+South Africa,ZAF,1990,1.01
+South Africa,ZAF,1991,1.98
+South Africa,ZAF,1992,0.752
+South Africa,ZAF,1993,0.146
+South Africa,ZAF,1994,1.074
+South Africa,ZAF,1995,0.529
+South Africa,ZAF,1996,1.319
+South Africa,ZAF,1997,2.092
+South Africa,ZAF,1998,1.595
+South Africa,ZAF,1999,0.726
+South Africa,ZAF,2000,1.34
+South Africa,ZAF,2001,2.06
+South Africa,ZAF,2002,2.36
+South Africa,ZAF,2003,0.78
+South Africa,ZAF,2004,0.94
+South Africa,ZAF,2005,1.32
+South Africa,ZAF,2006,2.87
+South Africa,ZAF,2007,0.86
+South Africa,ZAF,2008,1.19
+South Africa,ZAF,2009,1.39
+South Africa,ZAF,2010,2.09
+South Africa,ZAF,2011,2.04
+South Africa,ZAF,2012,1.19
+South Africa,ZAF,2013,1.11
+South Africa,ZAF,2014,0.9
+South Africa,ZAF,2015,0.8
+South Africa,ZAF,2016,0.67
+South Africa,ZAF,2017,0.8
+South Africa,ZAF,2018,1.09
+South Africa,ZAF,2019,1.08
+South Africa,ZAF,2020,5.67
+South Africa,ZAF,2021,6.5
+South America,,1965,38.481
+South America,,1966,41.759
+South America,,1967,44.222
+South America,,1968,46.98
+South America,,1969,50.753
+South America,,1970,59.761
+South America,,1971,66.091
+South America,,1972,75.93
+South America,,1973,85.651
+South America,,1974,99.286
+South America,,1975,108.634
+South America,,1976,121.727
+South America,,1977,135.413
+South America,,1978,149.035
+South America,,1979,169.599
+South America,,1980,188.838
+South America,,1981,191.728
+South America,,1982,207.983
+South America,,1983,222.764
+South America,,1984,245.767
+South America,,1985,263.841
+South America,,1986,275.822
+South America,,1987,289.803
+South America,,1988,300.655
+South America,,1989,305.107
+South America,,1990,313.46
+South America,,1991,335.975
+South America,,1992,344.076
+South America,,1993,368.781
+South America,,1994,390.318
+South America,,1995,402.314
+South America,,1996,417.389
+South America,,1997,439.438
+South America,,1998,448.847
+South America,,1999,449.125
+South America,,2000,529.49
+South America,,2001,495.73
+South America,,2002,519.28
+South America,,2003,541.68
+South America,,2004,562.85
+South America,,2005,595.18
+South America,,2006,621.84
+South America,,2007,642.76
+South America,,2008,645.17
+South America,,2009,663.4
+South America,,2010,664.52
+South America,,2011,707.09
+South America,,2012,690.15
+South America,,2013,676.48
+South America,,2014,636.75
+South America,,2015,636.93
+South America,,2016,653.65
+South America,,2017,659.15
+South America,,2018,676.95
+South America,,2019,685.36
+South America,,2020,684.23
+South Korea,KOR,1965,0.71
+South Korea,KOR,1966,0.985
+South Korea,KOR,1967,0.953
+South Korea,KOR,1968,0.929
+South Korea,KOR,1969,1.429
+South Korea,KOR,1970,1.221
+South Korea,KOR,1971,1.32
+South Korea,KOR,1972,1.368
+South Korea,KOR,1973,1.284
+South Korea,KOR,1974,1.906
+South Korea,KOR,1975,1.683
+South Korea,KOR,1976,1.789
+South Korea,KOR,1977,1.393
+South Korea,KOR,1978,1.808
+South Korea,KOR,1979,2.296
+South Korea,KOR,1980,1.92
+South Korea,KOR,1981,2.598
+South Korea,KOR,1982,1.715
+South Korea,KOR,1983,2.294
+South Korea,KOR,1984,1.998
+South Korea,KOR,1985,3.185
+South Korea,KOR,1986,3.11
+South Korea,KOR,1987,3.965
+South Korea,KOR,1988,1.987
+South Korea,KOR,1989,2.964
+South Korea,KOR,1990,4.684
+South Korea,KOR,1991,3.486
+South Korea,KOR,1992,3.097
+South Korea,KOR,1993,4.228
+South Korea,KOR,1994,2.346
+South Korea,KOR,1995,2.76
+South Korea,KOR,1996,2.424
+South Korea,KOR,1997,2.814
+South Korea,KOR,1998,4.279
+South Korea,KOR,1999,4.159
+South Korea,KOR,2000,3.97
+South Korea,KOR,2001,4.11
+South Korea,KOR,2002,3.2
+South Korea,KOR,2003,4.85
+South Korea,KOR,2004,4.29
+South Korea,KOR,2005,3.64
+South Korea,KOR,2006,3.43
+South Korea,KOR,2007,3.6
+South Korea,KOR,2008,3.04
+South Korea,KOR,2009,2.79
+South Korea,KOR,2010,3.63
+South Korea,KOR,2011,4.54
+South Korea,KOR,2012,3.87
+South Korea,KOR,2013,4.23
+South Korea,KOR,2014,2.72
+South Korea,KOR,2015,2.12
+South Korea,KOR,2016,2.76
+South Korea,KOR,2017,2.83
+South Korea,KOR,2018,3.32
+South Korea,KOR,2019,2.75
+South Korea,KOR,2020,7.1
+South Korea,KOR,2021,6.16
+South Sudan,SSD,2012,0
+South Sudan,SSD,2013,0
+South Sudan,SSD,2014,0
+South Sudan,SSD,2015,0
+South Sudan,SSD,2016,0
+South Sudan,SSD,2017,0
+South Sudan,SSD,2018,0
+South Sudan,SSD,2019,0
+South Sudan,SSD,2020,0
+Spain,ESP,1965,19.687
+Spain,ESP,1966,27.258
+Spain,ESP,1967,22.657
+Spain,ESP,1968,24.388
+Spain,ESP,1969,30.603
+Spain,ESP,1970,27.772
+Spain,ESP,1971,31.816
+Spain,ESP,1972,35.469
+Spain,ESP,1973,28.912
+Spain,ESP,1974,30.568
+Spain,ESP,1975,26.065
+Spain,ESP,1976,20.932
+Spain,ESP,1977,39.628
+Spain,ESP,1978,40.251
+Spain,ESP,1979,46.397
+Spain,ESP,1980,29.55
+Spain,ESP,1981,21.942
+Spain,ESP,1982,26.331
+Spain,ESP,1983,27.047
+Spain,ESP,1984,31.484
+Spain,ESP,1985,31.287
+Spain,ESP,1986,26.494
+Spain,ESP,1987,27.383
+Spain,ESP,1988,35.246
+Spain,ESP,1989,19.349
+Spain,ESP,1990,25.47
+Spain,ESP,1991,27.25
+Spain,ESP,1992,18.92
+Spain,ESP,1993,24.42
+Spain,ESP,1994,28.24
+Spain,ESP,1995,23.08
+Spain,ESP,1996,39.79
+Spain,ESP,1997,34.75
+Spain,ESP,1998,33.99
+Spain,ESP,1999,22.82
+Spain,ESP,2000,28.26
+Spain,ESP,2001,40.89
+Spain,ESP,2002,21.22
+Spain,ESP,2003,40.48
+Spain,ESP,2004,31.08
+Spain,ESP,2005,18.39
+Spain,ESP,2006,25.96
+Spain,ESP,2007,27.31
+Spain,ESP,2008,23.36
+Spain,ESP,2009,26.41
+Spain,ESP,2010,42.3
+Spain,ESP,2011,30.6
+Spain,ESP,2012,20.55
+Spain,ESP,2013,36.87
+Spain,ESP,2014,39.17
+Spain,ESP,2015,28.14
+Spain,ESP,2016,36.4
+Spain,ESP,2017,18.32
+Spain,ESP,2018,34.33
+Spain,ESP,2019,24.65
+Spain,ESP,2020,30.51
+Spain,ESP,2021,29.47
+Sri Lanka,LKA,1965,0.365
+Sri Lanka,LKA,1966,0.399
+Sri Lanka,LKA,1967,0.41
+Sri Lanka,LKA,1968,0.474
+Sri Lanka,LKA,1969,0.549
+Sri Lanka,LKA,1970,0.74
+Sri Lanka,LKA,1971,0.826
+Sri Lanka,LKA,1972,0.847
+Sri Lanka,LKA,1973,0.696
+Sri Lanka,LKA,1974,0.998
+Sri Lanka,LKA,1975,1.077
+Sri Lanka,LKA,1976,1.11
+Sri Lanka,LKA,1977,1.214
+Sri Lanka,LKA,1978,1.366
+Sri Lanka,LKA,1979,1.462
+Sri Lanka,LKA,1980,1.48
+Sri Lanka,LKA,1981,1.572
+Sri Lanka,LKA,1982,1.608
+Sri Lanka,LKA,1983,1.217
+Sri Lanka,LKA,1984,2.092
+Sri Lanka,LKA,1985,2.396
+Sri Lanka,LKA,1986,2.645
+Sri Lanka,LKA,1987,2.177
+Sri Lanka,LKA,1988,2.597
+Sri Lanka,LKA,1989,2.801
+Sri Lanka,LKA,1990,3.145
+Sri Lanka,LKA,1991,3.117
+Sri Lanka,LKA,1992,2.9
+Sri Lanka,LKA,1993,3.796
+Sri Lanka,LKA,1994,4.089
+Sri Lanka,LKA,1995,4.514
+Sri Lanka,LKA,1996,3.252
+Sri Lanka,LKA,1997,3.447
+Sri Lanka,LKA,1998,3.915
+Sri Lanka,LKA,1999,4.177
+Sri Lanka,LKA,2000,3.16
+Sri Lanka,LKA,2001,3.08
+Sri Lanka,LKA,2002,2.67
+Sri Lanka,LKA,2003,3.26
+Sri Lanka,LKA,2004,2.93
+Sri Lanka,LKA,2005,3.42
+Sri Lanka,LKA,2006,3.85
+Sri Lanka,LKA,2007,3.91
+Sri Lanka,LKA,2008,4.09
+Sri Lanka,LKA,2009,3.87
+Sri Lanka,LKA,2010,5.58
+Sri Lanka,LKA,2011,4.57
+Sri Lanka,LKA,2012,3.26
+Sri Lanka,LKA,2013,6.85
+Sri Lanka,LKA,2014,4.51
+Sri Lanka,LKA,2015,5.91
+Sri Lanka,LKA,2016,4.18
+Sri Lanka,LKA,2017,3.98
+Sri Lanka,LKA,2018,6.34
+Sri Lanka,LKA,2019,4.52
+Sri Lanka,LKA,2020,4.9
+Sudan,SDN,2000,1.17
+Sudan,SDN,2001,1.25
+Sudan,SDN,2002,1.27
+Sudan,SDN,2003,1.15
+Sudan,SDN,2004,1.1
+Sudan,SDN,2005,1.25
+Sudan,SDN,2006,1.36
+Sudan,SDN,2007,1.44
+Sudan,SDN,2008,1.45
+Sudan,SDN,2009,3.2
+Sudan,SDN,2010,6.14
+Sudan,SDN,2011,6.4
+Sudan,SDN,2012,6.55
+Sudan,SDN,2013,8.23
+Sudan,SDN,2014,8.82
+Sudan,SDN,2015,8.34
+Sudan,SDN,2016,7.97
+Sudan,SDN,2017,9.25
+Sudan,SDN,2018,9.56
+Sudan,SDN,2019,7.75
+Sudan,SDN,2020,7.75
+Suriname,SUR,2000,0.71
+Suriname,SUR,2001,0.73
+Suriname,SUR,2002,0.74
+Suriname,SUR,2003,0.75
+Suriname,SUR,2004,0.76
+Suriname,SUR,2005,0.82
+Suriname,SUR,2006,0.86
+Suriname,SUR,2007,0.86
+Suriname,SUR,2008,0.86
+Suriname,SUR,2009,0.86
+Suriname,SUR,2010,1.2
+Suriname,SUR,2011,1.03
+Suriname,SUR,2012,0.82
+Suriname,SUR,2013,0.83
+Suriname,SUR,2014,0.55
+Suriname,SUR,2015,0.47
+Suriname,SUR,2016,0.78
+Suriname,SUR,2017,0.92
+Suriname,SUR,2018,0.99
+Suriname,SUR,2019,1.36
+Suriname,SUR,2020,1.36
+Sweden,SWE,1965,46.423
+Sweden,SWE,1966,45.489
+Sweden,SWE,1967,49.286
+Sweden,SWE,1968,48.739
+Sweden,SWE,1969,41.83
+Sweden,SWE,1970,41.489
+Sweden,SWE,1971,52.012
+Sweden,SWE,1972,53.743
+Sweden,SWE,1973,59.872
+Sweden,SWE,1974,57.265
+Sweden,SWE,1975,57.648
+Sweden,SWE,1976,54.832
+Sweden,SWE,1977,53.495
+Sweden,SWE,1978,57.753
+Sweden,SWE,1979,61.08
+Sweden,SWE,1980,58.868
+Sweden,SWE,1981,59.753
+Sweden,SWE,1982,55.066
+Sweden,SWE,1983,63.544
+Sweden,SWE,1984,67.906
+Sweden,SWE,1985,70.988
+Sweden,SWE,1986,60.933
+Sweden,SWE,1987,71.854
+Sweden,SWE,1988,69.883
+Sweden,SWE,1989,71.75
+Sweden,SWE,1990,72.5
+Sweden,SWE,1991,63.24
+Sweden,SWE,1992,74.33
+Sweden,SWE,1993,74.65
+Sweden,SWE,1994,59.1
+Sweden,SWE,1995,68.1
+Sweden,SWE,1996,51.74
+Sweden,SWE,1997,69.06
+Sweden,SWE,1998,75
+Sweden,SWE,1999,71.69
+Sweden,SWE,2000,78.58
+Sweden,SWE,2001,79.06
+Sweden,SWE,2002,66.36
+Sweden,SWE,2003,53.54
+Sweden,SWE,2004,60.12
+Sweden,SWE,2005,72.8
+Sweden,SWE,2006,61.72
+Sweden,SWE,2007,66.16
+Sweden,SWE,2008,69.07
+Sweden,SWE,2009,65.85
+Sweden,SWE,2010,66.4
+Sweden,SWE,2011,66.43
+Sweden,SWE,2012,78.93
+Sweden,SWE,2013,61.36
+Sweden,SWE,2014,63.76
+Sweden,SWE,2015,75.31
+Sweden,SWE,2016,62.02
+Sweden,SWE,2017,65.14
+Sweden,SWE,2018,62.21
+Sweden,SWE,2019,65.37
+Sweden,SWE,2020,72.39
+Sweden,SWE,2021,73.5
+Switzerland,CHE,1965,24.097
+Switzerland,CHE,1966,27.519
+Switzerland,CHE,1967,29.85
+Switzerland,CHE,1968,29.515
+Switzerland,CHE,1969,28.245
+Switzerland,CHE,1970,29.173
+Switzerland,CHE,1971,29.044
+Switzerland,CHE,1972,24.234
+Switzerland,CHE,1973,26.587
+Switzerland,CHE,1974,27.85
+Switzerland,CHE,1975,32.236
+Switzerland,CHE,1976,25.849
+Switzerland,CHE,1977,34.89
+Switzerland,CHE,1978,31.561
+Switzerland,CHE,1979,29.684
+Switzerland,CHE,1980,33.448
+Switzerland,CHE,1981,35.125
+Switzerland,CHE,1982,35.971
+Switzerland,CHE,1983,35.063
+Switzerland,CHE,1984,29.894
+Switzerland,CHE,1985,32.052
+Switzerland,CHE,1986,32.905
+Switzerland,CHE,1987,34.675
+Switzerland,CHE,1988,35.795
+Switzerland,CHE,1989,29.775
+Switzerland,CHE,1990,29.798
+Switzerland,CHE,1991,32.08
+Switzerland,CHE,1992,32.704
+Switzerland,CHE,1993,35.781
+Switzerland,CHE,1994,39.073
+Switzerland,CHE,1995,35.172
+Switzerland,CHE,1996,28.748
+Switzerland,CHE,1997,34.046
+Switzerland,CHE,1998,33.475
+Switzerland,CHE,1999,40.008
+Switzerland,CHE,2000,36.47
+Switzerland,CHE,2001,40.9
+Switzerland,CHE,2002,34.86
+Switzerland,CHE,2003,34.47
+Switzerland,CHE,2004,33.41
+Switzerland,CHE,2005,30.91
+Switzerland,CHE,2006,30.65
+Switzerland,CHE,2007,34.9
+Switzerland,CHE,2008,35.68
+Switzerland,CHE,2009,35.37
+Switzerland,CHE,2010,35.7
+Switzerland,CHE,2011,32.07
+Switzerland,CHE,2012,38.22
+Switzerland,CHE,2013,38.08
+Switzerland,CHE,2014,37.66
+Switzerland,CHE,2015,37.88
+Switzerland,CHE,2016,34.28
+Switzerland,CHE,2017,33.75
+Switzerland,CHE,2018,34.64
+Switzerland,CHE,2019,37.66
+Switzerland,CHE,2020,40.62
+Switzerland,CHE,2021,39.47
+Syria,SYR,2000,3.2
+Syria,SYR,2001,3.38
+Syria,SYR,2002,2.43
+Syria,SYR,2003,2.73
+Syria,SYR,2004,4.13
+Syria,SYR,2005,4.28
+Syria,SYR,2006,3.91
+Syria,SYR,2007,3.44
+Syria,SYR,2008,2.84
+Syria,SYR,2009,1.85
+Syria,SYR,2010,2.57
+Syria,SYR,2011,3.25
+Syria,SYR,2012,3.2
+Syria,SYR,2013,2.97
+Syria,SYR,2014,2.32
+Syria,SYR,2015,0.41
+Syria,SYR,2016,0.92
+Syria,SYR,2017,0.75
+Syria,SYR,2018,0.75
+Syria,SYR,2019,1.25
+Syria,SYR,2020,0.75
+Taiwan,TWN,1965,2.586
+Taiwan,TWN,1966,2.661
+Taiwan,TWN,1967,2.634
+Taiwan,TWN,1968,3.864
+Taiwan,TWN,1969,3.052
+Taiwan,TWN,1970,2.865
+Taiwan,TWN,1971,3.091
+Taiwan,TWN,1972,3.636
+Taiwan,TWN,1973,3.399
+Taiwan,TWN,1974,4.705
+Taiwan,TWN,1975,5.261
+Taiwan,TWN,1976,4.282
+Taiwan,TWN,1977,4.023
+Taiwan,TWN,1978,4.966
+Taiwan,TWN,1979,4.567
+Taiwan,TWN,1980,2.926
+Taiwan,TWN,1981,4.791
+Taiwan,TWN,1982,4.781
+Taiwan,TWN,1983,4.988
+Taiwan,TWN,1984,4.385
+Taiwan,TWN,1985,6.001
+Taiwan,TWN,1986,6.13
+Taiwan,TWN,1987,5.509
+Taiwan,TWN,1988,4.674
+Taiwan,TWN,1989,4.863
+Taiwan,TWN,1990,6.381
+Taiwan,TWN,1991,3.854
+Taiwan,TWN,1992,6.556
+Taiwan,TWN,1993,4.109
+Taiwan,TWN,1994,5.062
+Taiwan,TWN,1995,4.839
+Taiwan,TWN,1996,4.743
+Taiwan,TWN,1997,5.245
+Taiwan,TWN,1998,6.202
+Taiwan,TWN,1999,5.051
+Taiwan,TWN,2000,4.52
+Taiwan,TWN,2001,5.05
+Taiwan,TWN,2002,2.76
+Taiwan,TWN,2003,3.01
+Taiwan,TWN,2004,3.18
+Taiwan,TWN,2005,3.95
+Taiwan,TWN,2006,4.05
+Taiwan,TWN,2007,4.37
+Taiwan,TWN,2008,4.26
+Taiwan,TWN,2009,3.71
+Taiwan,TWN,2010,4.15
+Taiwan,TWN,2011,3.96
+Taiwan,TWN,2012,5.61
+Taiwan,TWN,2013,5.37
+Taiwan,TWN,2014,4.32
+Taiwan,TWN,2015,4.47
+Taiwan,TWN,2016,6.56
+Taiwan,TWN,2017,5.45
+Taiwan,TWN,2018,4.48
+Taiwan,TWN,2019,5.55
+Taiwan,TWN,2020,6.18
+Taiwan,TWN,2021,6.87
+Tajikistan,TJK,2000,13.77
+Tajikistan,TJK,2001,14.06
+Tajikistan,TJK,2002,15.01
+Tajikistan,TJK,2003,16.17
+Tajikistan,TJK,2004,16.18
+Tajikistan,TJK,2005,16.8
+Tajikistan,TJK,2006,16.53
+Tajikistan,TJK,2007,16.94
+Tajikistan,TJK,2008,16.64
+Tajikistan,TJK,2009,15.74
+Tajikistan,TJK,2010,16.24
+Tajikistan,TJK,2011,16.04
+Tajikistan,TJK,2012,16.73
+Tajikistan,TJK,2013,16.9
+Tajikistan,TJK,2014,15.84
+Tajikistan,TJK,2015,16.83
+Tajikistan,TJK,2016,16.47
+Tajikistan,TJK,2017,16.96
+Tajikistan,TJK,2018,18.21
+Tajikistan,TJK,2019,18.98
+Tajikistan,TJK,2020,17
+Tajikistan,TJK,2021,17.53
+Tanzania,TZA,2000,2.12
+Tanzania,TZA,2001,2.58
+Tanzania,TZA,2002,2.69
+Tanzania,TZA,2003,2.52
+Tanzania,TZA,2004,2.33
+Tanzania,TZA,2005,1.76
+Tanzania,TZA,2006,1.42
+Tanzania,TZA,2007,2.5
+Tanzania,TZA,2008,2.62
+Tanzania,TZA,2009,2.61
+Tanzania,TZA,2010,2.67
+Tanzania,TZA,2011,1.97
+Tanzania,TZA,2012,1.75
+Tanzania,TZA,2013,1.7
+Tanzania,TZA,2014,2.56
+Tanzania,TZA,2015,2.09
+Tanzania,TZA,2016,2.34
+Tanzania,TZA,2017,2.33
+Tanzania,TZA,2018,2.21
+Tanzania,TZA,2019,2.31
+Tanzania,TZA,2020,2.35
+Thailand,THA,1965,0.841
+Thailand,THA,1966,1.064
+Thailand,THA,1967,1.368
+Thailand,THA,1968,1.405
+Thailand,THA,1969,1.046
+Thailand,THA,1970,1.787
+Thailand,THA,1971,2.048
+Thailand,THA,1972,1.728
+Thailand,THA,1973,1.88
+Thailand,THA,1974,2.458
+Thailand,THA,1975,3.399
+Thailand,THA,1976,3.637
+Thailand,THA,1977,3.265
+Thailand,THA,1978,2.11
+Thailand,THA,1979,3.263
+Thailand,THA,1980,1.273
+Thailand,THA,1981,2.974
+Thailand,THA,1982,3.836
+Thailand,THA,1983,3.66
+Thailand,THA,1984,4.081
+Thailand,THA,1985,3.691
+Thailand,THA,1986,5.532
+Thailand,THA,1987,4.056
+Thailand,THA,1988,3.718
+Thailand,THA,1989,5.512
+Thailand,THA,1990,4.9
+Thailand,THA,1991,4.505
+Thailand,THA,1992,4.159
+Thailand,THA,1993,3.613
+Thailand,THA,1994,4.404
+Thailand,THA,1995,6.593
+Thailand,THA,1996,7.215
+Thailand,THA,1997,7.082
+Thailand,THA,1998,5.089
+Thailand,THA,1999,3.41
+Thailand,THA,2000,5.97
+Thailand,THA,2001,6.24
+Thailand,THA,2002,7.4
+Thailand,THA,2003,7.23
+Thailand,THA,2004,5.98
+Thailand,THA,2005,5.74
+Thailand,THA,2006,8.04
+Thailand,THA,2007,8.03
+Thailand,THA,2008,7.04
+Thailand,THA,2009,7.08
+Thailand,THA,2010,5.48
+Thailand,THA,2011,8.08
+Thailand,THA,2012,8.67
+Thailand,THA,2013,5.69
+Thailand,THA,2014,5.49
+Thailand,THA,2015,3.71
+Thailand,THA,2016,3.49
+Thailand,THA,2017,4.65
+Thailand,THA,2018,7.49
+Thailand,THA,2019,6.37
+Thailand,THA,2020,4.54
+Thailand,THA,2021,4.53
+Togo,TGO,2000,0.1
+Togo,TGO,2001,0.05
+Togo,TGO,2002,0.09
+Togo,TGO,2003,0.12
+Togo,TGO,2004,0.08
+Togo,TGO,2005,0.07
+Togo,TGO,2006,0.09
+Togo,TGO,2007,0.09
+Togo,TGO,2008,0.09
+Togo,TGO,2009,0.11
+Togo,TGO,2010,0.09
+Togo,TGO,2011,0.1
+Togo,TGO,2012,0.09
+Togo,TGO,2013,0.04
+Togo,TGO,2014,0.12
+Togo,TGO,2015,0.06
+Togo,TGO,2016,0.2
+Togo,TGO,2017,0.1
+Togo,TGO,2018,0
+Togo,TGO,2019,0.09
+Togo,TGO,2020,0.09
+Tonga,TON,2000,0
+Tonga,TON,2001,0
+Tonga,TON,2002,0
+Tonga,TON,2003,0
+Tonga,TON,2004,0
+Tonga,TON,2005,0
+Tonga,TON,2006,0
+Tonga,TON,2007,0
+Tonga,TON,2008,0
+Tonga,TON,2009,0
+Tonga,TON,2010,0
+Tonga,TON,2011,0
+Tonga,TON,2012,0
+Tonga,TON,2013,0
+Tonga,TON,2014,0
+Tonga,TON,2015,0
+Tonga,TON,2016,0
+Tonga,TON,2017,0
+Tonga,TON,2018,0
+Tonga,TON,2019,0
+Tonga,TON,2020,0
+Trinidad and Tobago,TTO,1965,0
+Trinidad and Tobago,TTO,1966,0
+Trinidad and Tobago,TTO,1967,0
+Trinidad and Tobago,TTO,1968,0
+Trinidad and Tobago,TTO,1969,0
+Trinidad and Tobago,TTO,1970,0
+Trinidad and Tobago,TTO,1971,0
+Trinidad and Tobago,TTO,1972,0
+Trinidad and Tobago,TTO,1973,0
+Trinidad and Tobago,TTO,1974,0
+Trinidad and Tobago,TTO,1975,0
+Trinidad and Tobago,TTO,1976,0
+Trinidad and Tobago,TTO,1977,0
+Trinidad and Tobago,TTO,1978,0
+Trinidad and Tobago,TTO,1979,0
+Trinidad and Tobago,TTO,1980,0
+Trinidad and Tobago,TTO,1981,0
+Trinidad and Tobago,TTO,1982,0
+Trinidad and Tobago,TTO,1983,0
+Trinidad and Tobago,TTO,1984,0
+Trinidad and Tobago,TTO,1985,0
+Trinidad and Tobago,TTO,1986,0
+Trinidad and Tobago,TTO,1987,0
+Trinidad and Tobago,TTO,1988,0
+Trinidad and Tobago,TTO,1989,0
+Trinidad and Tobago,TTO,1990,0
+Trinidad and Tobago,TTO,1991,0
+Trinidad and Tobago,TTO,1992,0
+Trinidad and Tobago,TTO,1993,0
+Trinidad and Tobago,TTO,1994,0
+Trinidad and Tobago,TTO,1995,0
+Trinidad and Tobago,TTO,1996,0
+Trinidad and Tobago,TTO,1997,0
+Trinidad and Tobago,TTO,1998,0
+Trinidad and Tobago,TTO,1999,0
+Trinidad and Tobago,TTO,2000,0
+Trinidad and Tobago,TTO,2001,0
+Trinidad and Tobago,TTO,2002,0
+Trinidad and Tobago,TTO,2003,0
+Trinidad and Tobago,TTO,2004,0
+Trinidad and Tobago,TTO,2005,0
+Trinidad and Tobago,TTO,2006,0
+Trinidad and Tobago,TTO,2007,0
+Trinidad and Tobago,TTO,2008,0
+Trinidad and Tobago,TTO,2009,0
+Trinidad and Tobago,TTO,2010,0
+Trinidad and Tobago,TTO,2011,0
+Trinidad and Tobago,TTO,2012,0
+Trinidad and Tobago,TTO,2013,0
+Trinidad and Tobago,TTO,2014,0
+Trinidad and Tobago,TTO,2015,0
+Trinidad and Tobago,TTO,2016,0
+Trinidad and Tobago,TTO,2017,0
+Trinidad and Tobago,TTO,2018,0
+Trinidad and Tobago,TTO,2019,0
+Trinidad and Tobago,TTO,2020,0
+Tunisia,TUN,2000,0.06
+Tunisia,TUN,2001,0.05
+Tunisia,TUN,2002,0.06
+Tunisia,TUN,2003,0.16
+Tunisia,TUN,2004,0.15
+Tunisia,TUN,2005,0.14
+Tunisia,TUN,2006,0.09
+Tunisia,TUN,2007,0.05
+Tunisia,TUN,2008,0.03
+Tunisia,TUN,2009,0.08
+Tunisia,TUN,2010,0.05
+Tunisia,TUN,2011,0.05
+Tunisia,TUN,2012,0.11
+Tunisia,TUN,2013,0.06
+Tunisia,TUN,2014,0.05
+Tunisia,TUN,2015,0.07
+Tunisia,TUN,2016,0.05
+Tunisia,TUN,2017,0.02
+Tunisia,TUN,2018,0.02
+Tunisia,TUN,2019,0.07
+Tunisia,TUN,2020,0.06
+Tunisia,TUN,2021,0.06
+Turkey,TUR,1965,2.179
+Turkey,TUR,1966,2.338
+Turkey,TUR,1967,2.382
+Turkey,TUR,1968,3.175
+Turkey,TUR,1969,3.445
+Turkey,TUR,1970,3.033
+Turkey,TUR,1971,2.61
+Turkey,TUR,1972,3.204
+Turkey,TUR,1973,2.603
+Turkey,TUR,1974,3.356
+Turkey,TUR,1975,5.904
+Turkey,TUR,1976,8.375
+Turkey,TUR,1977,8.572
+Turkey,TUR,1978,9.335
+Turkey,TUR,1979,10.289
+Turkey,TUR,1980,11.348
+Turkey,TUR,1981,12.616
+Turkey,TUR,1982,14.167
+Turkey,TUR,1983,11.343
+Turkey,TUR,1984,13.426
+Turkey,TUR,1985,12.045
+Turkey,TUR,1986,11.873
+Turkey,TUR,1987,18.618
+Turkey,TUR,1988,28.95
+Turkey,TUR,1989,17.94
+Turkey,TUR,1990,23.15
+Turkey,TUR,1991,22.68
+Turkey,TUR,1992,26.57
+Turkey,TUR,1993,33.95
+Turkey,TUR,1994,30.59
+Turkey,TUR,1995,35.54
+Turkey,TUR,1996,40.47
+Turkey,TUR,1997,39.82
+Turkey,TUR,1998,42.23
+Turkey,TUR,1999,34.68
+Turkey,TUR,2000,30.88
+Turkey,TUR,2001,24.01
+Turkey,TUR,2002,33.68
+Turkey,TUR,2003,35.33
+Turkey,TUR,2004,46.08
+Turkey,TUR,2005,39.56
+Turkey,TUR,2006,44.24
+Turkey,TUR,2007,35.85
+Turkey,TUR,2008,33.27
+Turkey,TUR,2009,35.96
+Turkey,TUR,2010,51.8
+Turkey,TUR,2011,52.34
+Turkey,TUR,2012,57.86
+Turkey,TUR,2013,59.42
+Turkey,TUR,2014,40.64
+Turkey,TUR,2015,67.15
+Turkey,TUR,2016,67.23
+Turkey,TUR,2017,58.22
+Turkey,TUR,2018,59.94
+Turkey,TUR,2019,88.82
+Turkey,TUR,2020,78.09
+Turkey,TUR,2021,55.74
+Turkmenistan,TKM,1985,0.003
+Turkmenistan,TKM,1986,0.003
+Turkmenistan,TKM,1987,0.003
+Turkmenistan,TKM,1988,0.003
+Turkmenistan,TKM,1989,0.003
+Turkmenistan,TKM,1990,0.003
+Turkmenistan,TKM,1991,0.003
+Turkmenistan,TKM,1992,0.004
+Turkmenistan,TKM,1993,0.005
+Turkmenistan,TKM,1994,0.004
+Turkmenistan,TKM,1995,0.004
+Turkmenistan,TKM,1996,0.005
+Turkmenistan,TKM,1997,0.005
+Turkmenistan,TKM,1998,0.006
+Turkmenistan,TKM,1999,0.005
+Turkmenistan,TKM,2000,0
+Turkmenistan,TKM,2001,0
+Turkmenistan,TKM,2002,0
+Turkmenistan,TKM,2003,0
+Turkmenistan,TKM,2004,0
+Turkmenistan,TKM,2005,0
+Turkmenistan,TKM,2006,0
+Turkmenistan,TKM,2007,0
+Turkmenistan,TKM,2008,0
+Turkmenistan,TKM,2009,0
+Turkmenistan,TKM,2010,0
+Turkmenistan,TKM,2011,0
+Turkmenistan,TKM,2012,0
+Turkmenistan,TKM,2013,0
+Turkmenistan,TKM,2014,0
+Turkmenistan,TKM,2015,0
+Turkmenistan,TKM,2016,0
+Turkmenistan,TKM,2017,0
+Turkmenistan,TKM,2018,0
+Turkmenistan,TKM,2019,0
+Turkmenistan,TKM,2020,0
+Turks and Caicos Islands,TCA,2000,0
+Turks and Caicos Islands,TCA,2001,0
+Turks and Caicos Islands,TCA,2002,0
+Turks and Caicos Islands,TCA,2003,0
+Turks and Caicos Islands,TCA,2004,0
+Turks and Caicos Islands,TCA,2005,0
+Turks and Caicos Islands,TCA,2006,0
+Turks and Caicos Islands,TCA,2007,0
+Turks and Caicos Islands,TCA,2008,0
+Turks and Caicos Islands,TCA,2009,0
+Turks and Caicos Islands,TCA,2010,0
+Turks and Caicos Islands,TCA,2011,0
+Turks and Caicos Islands,TCA,2012,0
+Turks and Caicos Islands,TCA,2013,0
+Turks and Caicos Islands,TCA,2014,0
+Turks and Caicos Islands,TCA,2015,0
+Turks and Caicos Islands,TCA,2016,0
+Turks and Caicos Islands,TCA,2017,0
+Turks and Caicos Islands,TCA,2018,0
+Turks and Caicos Islands,TCA,2019,0
+Turks and Caicos Islands,TCA,2020,0
+USSR,OWID_USS,1965,81.434
+USSR,OWID_USS,1966,91.823
+USSR,OWID_USS,1967,88.571
+USSR,OWID_USS,1968,104.04
+USSR,OWID_USS,1969,115.181
+USSR,OWID_USS,1970,124.377
+USSR,OWID_USS,1971,126.099
+USSR,OWID_USS,1972,122.899
+USSR,OWID_USS,1973,122.345
+USSR,OWID_USS,1974,132.03
+USSR,OWID_USS,1975,125.987
+USSR,OWID_USS,1976,135.735
+USSR,OWID_USS,1977,147.014
+USSR,OWID_USS,1978,169.701
+USSR,OWID_USS,1979,172.023
+USSR,OWID_USS,1980,183.938
+USSR,OWID_USS,1981,186.744
+USSR,OWID_USS,1982,174.677
+USSR,OWID_USS,1983,180.362
+USSR,OWID_USS,1984,202.988
+Uganda,UGA,2000,1.55
+Uganda,UGA,2001,1.55
+Uganda,UGA,2002,1.67
+Uganda,UGA,2003,1.75
+Uganda,UGA,2004,1.89
+Uganda,UGA,2005,1.84
+Uganda,UGA,2006,1.16
+Uganda,UGA,2007,1.4
+Uganda,UGA,2008,1.63
+Uganda,UGA,2009,1.4
+Uganda,UGA,2010,1.47
+Uganda,UGA,2011,1.5
+Uganda,UGA,2012,1.5
+Uganda,UGA,2013,2.37
+Uganda,UGA,2014,2.37
+Uganda,UGA,2015,2.41
+Uganda,UGA,2016,3.27
+Uganda,UGA,2017,3.41
+Uganda,UGA,2018,3.6
+Uganda,UGA,2019,4.92
+Uganda,UGA,2020,4.03
+Ukraine,UKR,1985,10.713
+Ukraine,UKR,1986,10.655
+Ukraine,UKR,1987,9.595
+Ukraine,UKR,1988,11.932
+Ukraine,UKR,1989,10.129
+Ukraine,UKR,1990,10.51
+Ukraine,UKR,1991,11.71
+Ukraine,UKR,1992,7.88
+Ukraine,UKR,1993,11.04
+Ukraine,UKR,1994,12.12
+Ukraine,UKR,1995,9.95
+Ukraine,UKR,1996,8.63
+Ukraine,UKR,1997,9.86
+Ukraine,UKR,1998,15.74
+Ukraine,UKR,1999,14.32
+Ukraine,UKR,2000,11.27
+Ukraine,UKR,2001,12.03
+Ukraine,UKR,2002,9.63
+Ukraine,UKR,2003,9.24
+Ukraine,UKR,2004,11.75
+Ukraine,UKR,2005,12.36
+Ukraine,UKR,2006,12.89
+Ukraine,UKR,2007,10.14
+Ukraine,UKR,2008,11.51
+Ukraine,UKR,2009,11.94
+Ukraine,UKR,2010,13.15
+Ukraine,UKR,2011,10.95
+Ukraine,UKR,2012,10.48
+Ukraine,UKR,2013,13.8
+Ukraine,UKR,2014,8.48
+Ukraine,UKR,2015,5.4
+Ukraine,UKR,2016,7.67
+Ukraine,UKR,2017,8.95
+Ukraine,UKR,2018,10.43
+Ukraine,UKR,2019,6.51
+Ukraine,UKR,2020,7.56
+Ukraine,UKR,2021,10.54
+United Arab Emirates,ARE,1965,0
+United Arab Emirates,ARE,1966,0
+United Arab Emirates,ARE,1967,0
+United Arab Emirates,ARE,1968,0
+United Arab Emirates,ARE,1969,0
+United Arab Emirates,ARE,1970,0
+United Arab Emirates,ARE,1971,0
+United Arab Emirates,ARE,1972,0
+United Arab Emirates,ARE,1973,0
+United Arab Emirates,ARE,1974,0
+United Arab Emirates,ARE,1975,0
+United Arab Emirates,ARE,1976,0
+United Arab Emirates,ARE,1977,0
+United Arab Emirates,ARE,1978,0
+United Arab Emirates,ARE,1979,0
+United Arab Emirates,ARE,1980,0
+United Arab Emirates,ARE,1981,0
+United Arab Emirates,ARE,1982,0
+United Arab Emirates,ARE,1983,0
+United Arab Emirates,ARE,1984,0
+United Arab Emirates,ARE,1985,0
+United Arab Emirates,ARE,1986,0
+United Arab Emirates,ARE,1987,0
+United Arab Emirates,ARE,1988,0
+United Arab Emirates,ARE,1989,0
+United Arab Emirates,ARE,1990,0
+United Arab Emirates,ARE,1991,0
+United Arab Emirates,ARE,1992,0
+United Arab Emirates,ARE,1993,0
+United Arab Emirates,ARE,1994,0
+United Arab Emirates,ARE,1995,0
+United Arab Emirates,ARE,1996,0
+United Arab Emirates,ARE,1997,0
+United Arab Emirates,ARE,1998,0
+United Arab Emirates,ARE,1999,0
+United Arab Emirates,ARE,2000,0
+United Arab Emirates,ARE,2001,0
+United Arab Emirates,ARE,2002,0
+United Arab Emirates,ARE,2003,0
+United Arab Emirates,ARE,2004,0
+United Arab Emirates,ARE,2005,0
+United Arab Emirates,ARE,2006,0
+United Arab Emirates,ARE,2007,0
+United Arab Emirates,ARE,2008,0
+United Arab Emirates,ARE,2009,0
+United Arab Emirates,ARE,2010,0
+United Arab Emirates,ARE,2011,0
+United Arab Emirates,ARE,2012,0
+United Arab Emirates,ARE,2013,0
+United Arab Emirates,ARE,2014,0
+United Arab Emirates,ARE,2015,0
+United Arab Emirates,ARE,2016,0
+United Arab Emirates,ARE,2017,0
+United Arab Emirates,ARE,2018,0
+United Arab Emirates,ARE,2019,0
+United Arab Emirates,ARE,2020,0
+United Kingdom,GBR,1965,4.612
+United Kingdom,GBR,1966,4.536
+United Kingdom,GBR,1967,4.885
+United Kingdom,GBR,1968,3.722
+United Kingdom,GBR,1969,3.256
+United Kingdom,GBR,1970,4.536
+United Kingdom,GBR,1971,3.373
+United Kingdom,GBR,1972,3.373
+United Kingdom,GBR,1973,3.838
+United Kingdom,GBR,1974,4.071
+United Kingdom,GBR,1975,3.838
+United Kingdom,GBR,1976,4.536
+United Kingdom,GBR,1977,3.954
+United Kingdom,GBR,1978,4.071
+United Kingdom,GBR,1979,4.303
+United Kingdom,GBR,1980,3.954
+United Kingdom,GBR,1981,4.419
+United Kingdom,GBR,1982,4.536
+United Kingdom,GBR,1983,4.536
+United Kingdom,GBR,1984,4.536
+United Kingdom,GBR,1985,3.954
+United Kingdom,GBR,1986,4.768
+United Kingdom,GBR,1987,4.187
+United Kingdom,GBR,1988,4.885
+United Kingdom,GBR,1989,4.768
+United Kingdom,GBR,1990,5.21
+United Kingdom,GBR,1991,4.62
+United Kingdom,GBR,1992,5.43
+United Kingdom,GBR,1993,4.3
+United Kingdom,GBR,1994,5.09
+United Kingdom,GBR,1995,4.84
+United Kingdom,GBR,1996,3.39
+United Kingdom,GBR,1997,4.17
+United Kingdom,GBR,1998,5.12
+United Kingdom,GBR,1999,5.34
+United Kingdom,GBR,2000,5.09
+United Kingdom,GBR,2001,4.06
+United Kingdom,GBR,2002,4.79
+United Kingdom,GBR,2003,3.23
+United Kingdom,GBR,2004,4.84
+United Kingdom,GBR,2005,4.92
+United Kingdom,GBR,2006,4.59
+United Kingdom,GBR,2007,5.08
+United Kingdom,GBR,2008,5.14
+United Kingdom,GBR,2009,5.23
+United Kingdom,GBR,2010,3.59
+United Kingdom,GBR,2011,5.69
+United Kingdom,GBR,2012,5.31
+United Kingdom,GBR,2013,4.7
+United Kingdom,GBR,2014,5.89
+United Kingdom,GBR,2015,6.3
+United Kingdom,GBR,2016,5.37
+United Kingdom,GBR,2017,5.88
+United Kingdom,GBR,2018,5.44
+United Kingdom,GBR,2019,5.93
+United Kingdom,GBR,2020,6.69
+United Kingdom,GBR,2021,5.59
+United States,USA,1965,198.974
+United States,USA,1966,199.937
+United States,USA,1967,227.221
+United States,USA,1968,228.155
+United States,USA,1969,256.029
+United States,USA,1970,253.492
+United States,USA,1971,272.254
+United States,USA,1972,278.716
+United States,USA,1973,278.213
+United States,USA,1974,307.285
+United States,USA,1975,306.215
+United States,USA,1976,289.822
+United States,USA,1977,225.857
+United States,USA,1978,286.329
+United States,USA,1979,285.935
+United States,USA,1980,282.002
+United States,USA,1981,266.51
+United States,USA,1982,315.529
+United States,USA,1983,338.678
+United States,USA,1984,327.587
+United States,USA,1985,287.182
+United States,USA,1986,296.975
+United States,USA,1987,255.41
+United States,USA,1988,228.385
+United States,USA,1989,274.724
+United States,USA,1990,292.281
+United States,USA,1991,287.326
+United States,USA,1992,251.426
+United States,USA,1993,279.251
+United States,USA,1994,259.341
+United States,USA,1995,311.22
+United States,USA,1996,347.549
+United States,USA,1997,355.973
+United States,USA,1998,322.089
+United States,USA,1999,316.605
+United States,USA,2000,270.03
+United States,USA,2001,208.14
+United States,USA,2002,255.59
+United States,USA,2003,267.27
+United States,USA,2004,259.93
+United States,USA,2005,263.76
+United States,USA,2006,282.69
+United States,USA,2007,240.61
+United States,USA,2008,248.54
+United States,USA,2009,268.82
+United States,USA,2010,254.7
+United States,USA,2011,312.93
+United States,USA,2012,271.29
+United States,USA,2013,263.88
+United States,USA,2014,253.19
+United States,USA,2015,243.99
+United States,USA,2016,261.13
+United States,USA,2017,293.84
+United States,USA,2018,286.62
+United States,USA,2019,282.61
+United States,USA,2020,279.95
+United States,USA,2021,255.11
+United States Virgin Islands,VIR,2000,0
+United States Virgin Islands,VIR,2001,0
+United States Virgin Islands,VIR,2002,0
+United States Virgin Islands,VIR,2003,0
+United States Virgin Islands,VIR,2004,0
+United States Virgin Islands,VIR,2005,0
+United States Virgin Islands,VIR,2006,0
+United States Virgin Islands,VIR,2007,0
+United States Virgin Islands,VIR,2008,0
+United States Virgin Islands,VIR,2009,0
+United States Virgin Islands,VIR,2010,0
+United States Virgin Islands,VIR,2011,0
+United States Virgin Islands,VIR,2012,0
+United States Virgin Islands,VIR,2013,0
+United States Virgin Islands,VIR,2014,0
+United States Virgin Islands,VIR,2015,0
+United States Virgin Islands,VIR,2016,0
+United States Virgin Islands,VIR,2017,0
+United States Virgin Islands,VIR,2018,0
+United States Virgin Islands,VIR,2019,0
+United States Virgin Islands,VIR,2020,0
+Upper-middle-income countries,,1985,552.898
+Upper-middle-income countries,,1986,561.503
+Upper-middle-income countries,,1987,580.136
+Upper-middle-income countries,,1988,615.066
+Upper-middle-income countries,,1989,621.875
+Upper-middle-income countries,,1990,656.26
+Upper-middle-income countries,,1991,669.245
+Upper-middle-income countries,,1992,686.629
+Upper-middle-income countries,,1993,742.128
+Upper-middle-income countries,,1994,773.235
+Upper-middle-income countries,,1995,826.555
+Upper-middle-income countries,,1996,826.56
+Upper-middle-income countries,,1997,847.675
+Upper-middle-income countries,,1998,862.931
+Upper-middle-income countries,,1999,861.151
+Upper-middle-income countries,,2000,972.86
+Upper-middle-income countries,,2001,986.75
+Upper-middle-income countries,,2002,1021.75
+Upper-middle-income countries,,2003,1029
+Upper-middle-income countries,,2004,1157.19
+Upper-middle-income countries,,2005,1225.59
+Upper-middle-income countries,,2006,1295.5
+Upper-middle-income countries,,2007,1346.95
+Upper-middle-income countries,,2008,1498.67
+Upper-middle-income countries,,2009,1496.7
+Upper-middle-income countries,,2010,1640.67
+Upper-middle-income countries,,2011,1634.83
+Upper-middle-income countries,,2012,1798.93
+Upper-middle-income countries,,2013,1852.86
+Upper-middle-income countries,,2014,1962.86
+Upper-middle-income countries,,2015,2021.51
+Upper-middle-income countries,,2016,2118.84
+Upper-middle-income countries,,2017,2130.41
+Upper-middle-income countries,,2018,2208.15
+Upper-middle-income countries,,2019,2286.02
+Upper-middle-income countries,,2020,2320.37
+Upper-middle-income countries,,2021,2116.83
+Uruguay,URY,2000,6.98
+Uruguay,URY,2001,9.1
+Uruguay,URY,2002,9.44
+Uruguay,URY,2003,8.45
+Uruguay,URY,2004,4.73
+Uruguay,URY,2005,6.62
+Uruguay,URY,2006,3.56
+Uruguay,URY,2007,7.99
+Uruguay,URY,2008,4.45
+Uruguay,URY,2009,5.21
+Uruguay,URY,2010,8.58
+Uruguay,URY,2011,6.41
+Uruguay,URY,2012,5.37
+Uruguay,URY,2013,8.12
+Uruguay,URY,2014,9.55
+Uruguay,URY,2015,8.18
+Uruguay,URY,2016,7.76
+Uruguay,URY,2017,7.44
+Uruguay,URY,2018,6.49
+Uruguay,URY,2019,7.84
+Uruguay,URY,2020,3.95
+Uzbekistan,UZB,1985,5.431
+Uzbekistan,UZB,1986,4.618
+Uzbekistan,UZB,1987,6.771
+Uzbekistan,UZB,1988,7.164
+Uzbekistan,UZB,1989,5.502
+Uzbekistan,UZB,1990,6.648
+Uzbekistan,UZB,1991,6.031
+Uzbekistan,UZB,1992,6.281
+Uzbekistan,UZB,1993,7.358
+Uzbekistan,UZB,1994,7.156
+Uzbekistan,UZB,1995,6.188
+Uzbekistan,UZB,1996,6.525
+Uzbekistan,UZB,1997,5.777
+Uzbekistan,UZB,1998,5.758
+Uzbekistan,UZB,1999,5.692
+Uzbekistan,UZB,2000,5.82
+Uzbekistan,UZB,2001,5.9
+Uzbekistan,UZB,2002,6.12
+Uzbekistan,UZB,2003,7.54
+Uzbekistan,UZB,2004,8.92
+Uzbekistan,UZB,2005,8.84
+Uzbekistan,UZB,2006,4.65
+Uzbekistan,UZB,2007,4.61
+Uzbekistan,UZB,2008,4.44
+Uzbekistan,UZB,2009,6.42
+Uzbekistan,UZB,2010,8.11
+Uzbekistan,UZB,2011,5.65
+Uzbekistan,UZB,2012,6.59
+Uzbekistan,UZB,2013,5.65
+Uzbekistan,UZB,2014,6.01
+Uzbekistan,UZB,2015,7
+Uzbekistan,UZB,2016,7.25
+Uzbekistan,UZB,2017,8.34
+Uzbekistan,UZB,2018,5.84
+Uzbekistan,UZB,2019,6.5
+Uzbekistan,UZB,2020,6.9
+Vanuatu,VUT,2000,0
+Vanuatu,VUT,2001,0
+Vanuatu,VUT,2002,0
+Vanuatu,VUT,2003,0
+Vanuatu,VUT,2004,0
+Vanuatu,VUT,2005,0
+Vanuatu,VUT,2006,0
+Vanuatu,VUT,2007,0
+Vanuatu,VUT,2008,0
+Vanuatu,VUT,2009,0
+Vanuatu,VUT,2010,0
+Vanuatu,VUT,2011,0
+Vanuatu,VUT,2012,0
+Vanuatu,VUT,2013,0
+Vanuatu,VUT,2014,0
+Vanuatu,VUT,2015,0
+Vanuatu,VUT,2016,0
+Vanuatu,VUT,2017,0
+Vanuatu,VUT,2018,0
+Vanuatu,VUT,2019,0
+Vanuatu,VUT,2020,0
+Venezuela,VEN,1965,1.369
+Venezuela,VEN,1966,1.395
+Venezuela,VEN,1967,1.636
+Venezuela,VEN,1968,2.748
+Venezuela,VEN,1969,3.19
+Venezuela,VEN,1970,4.104
+Venezuela,VEN,1971,5.39
+Venezuela,VEN,1972,6.02
+Venezuela,VEN,1973,6.225
+Venezuela,VEN,1974,7.707
+Venezuela,VEN,1975,8.931
+Venezuela,VEN,1976,10.578
+Venezuela,VEN,1977,12.163
+Venezuela,VEN,1978,12.232
+Venezuela,VEN,1979,14.24
+Venezuela,VEN,1980,14.587
+Venezuela,VEN,1981,15.088
+Venezuela,VEN,1982,15.814
+Venezuela,VEN,1983,18.063
+Venezuela,VEN,1984,20.243
+Venezuela,VEN,1985,22.648
+Venezuela,VEN,1986,25.159
+Venezuela,VEN,1987,30.843
+Venezuela,VEN,1988,34.203
+Venezuela,VEN,1989,34.666
+Venezuela,VEN,1990,36.983
+Venezuela,VEN,1991,44.542
+Venezuela,VEN,1992,47.271
+Venezuela,VEN,1993,47.478
+Venezuela,VEN,1994,51.284
+Venezuela,VEN,1995,51.45
+Venezuela,VEN,1996,53.847
+Venezuela,VEN,1997,57.268
+Venezuela,VEN,1998,57.923
+Venezuela,VEN,1999,60.6
+Venezuela,VEN,2000,62.2
+Venezuela,VEN,2001,59.85
+Venezuela,VEN,2002,58.94
+Venezuela,VEN,2003,59.93
+Venezuela,VEN,2004,69.37
+Venezuela,VEN,2005,76.46
+Venezuela,VEN,2006,80.78
+Venezuela,VEN,2007,82.23
+Venezuela,VEN,2008,85.97
+Venezuela,VEN,2009,85.1
+Venezuela,VEN,2010,76.01
+Venezuela,VEN,2011,82.83
+Venezuela,VEN,2012,81.19
+Venezuela,VEN,2013,82.71
+Venezuela,VEN,2014,63.65
+Venezuela,VEN,2015,74.15
+Venezuela,VEN,2016,62.33
+Venezuela,VEN,2017,59.9
+Venezuela,VEN,2018,57.57
+Venezuela,VEN,2019,72
+Venezuela,VEN,2020,72
+Vietnam,VNM,1965,0.34
+Vietnam,VNM,1966,0.39
+Vietnam,VNM,1967,0.43
+Vietnam,VNM,1968,0.48
+Vietnam,VNM,1969,0.54
+Vietnam,VNM,1970,0.6
+Vietnam,VNM,1971,0.614
+Vietnam,VNM,1972,0.422
+Vietnam,VNM,1973,0.42
+Vietnam,VNM,1974,0.42
+Vietnam,VNM,1975,0.5
+Vietnam,VNM,1976,0.557
+Vietnam,VNM,1977,0.6
+Vietnam,VNM,1978,0.8
+Vietnam,VNM,1979,1
+Vietnam,VNM,1980,1.488
+Vietnam,VNM,1981,1.507
+Vietnam,VNM,1982,1.56
+Vietnam,VNM,1983,1.223
+Vietnam,VNM,1984,1.599
+Vietnam,VNM,1985,1.477
+Vietnam,VNM,1986,1.407
+Vietnam,VNM,1987,1.384
+Vietnam,VNM,1988,1.791
+Vietnam,VNM,1989,3.838
+Vietnam,VNM,1990,5.369
+Vietnam,VNM,1991,6.317
+Vietnam,VNM,1992,7.228
+Vietnam,VNM,1993,7.965
+Vietnam,VNM,1994,9.243
+Vietnam,VNM,1995,10.582
+Vietnam,VNM,1996,12.008
+Vietnam,VNM,1997,11.657
+Vietnam,VNM,1998,11.095
+Vietnam,VNM,1999,13.774
+Vietnam,VNM,2000,14.4
+Vietnam,VNM,2001,18.03
+Vietnam,VNM,2002,18.02
+Vietnam,VNM,2003,18.8
+Vietnam,VNM,2004,17.49
+Vietnam,VNM,2005,20.85
+Vietnam,VNM,2006,20.2
+Vietnam,VNM,2007,22.29
+Vietnam,VNM,2008,25.73
+Vietnam,VNM,2009,29.68
+Vietnam,VNM,2010,27.27
+Vietnam,VNM,2011,40.51
+Vietnam,VNM,2012,52.27
+Vietnam,VNM,2013,51.44
+Vietnam,VNM,2014,59.24
+Vietnam,VNM,2015,56.6
+Vietnam,VNM,2016,65.07
+Vietnam,VNM,2017,88.09
+Vietnam,VNM,2018,83.28
+Vietnam,VNM,2019,51.98
+Vietnam,VNM,2020,51.98
+Vietnam,VNM,2021,56.04
+Western Africa,,1965,0.478
+Western Africa,,1966,0.931
+Western Africa,,1967,1.934
+Western Africa,,1968,3.015
+Western Africa,,1969,3.991
+Western Africa,,1970,4.647
+Western Africa,,1971,4.764
+Western Africa,,1972,5.177
+Western Africa,,1973,6.065
+Western Africa,,1974,6.516
+Western Africa,,1975,6.922
+Western Africa,,1976,7.614
+Western Africa,,1977,7.934
+Western Africa,,1978,7.045
+Western Africa,,1979,9.512
+Western Africa,,1980,9.678
+Western Africa,,1981,9.687
+Western Africa,,1982,9.439
+Western Africa,,1983,5.736
+Western Africa,,1984,5.133
+Western Africa,,1985,8.213
+Western Africa,,1986,9.969
+Western Africa,,1987,9.767
+Western Africa,,1988,10.821
+Western Africa,,1989,11.741
+Western Africa,,1990,11.917
+Western Africa,,1991,13.887
+Western Africa,,1992,14.273
+Western Africa,,1993,13.667
+Western Africa,,1994,13.468
+Western Africa,,1995,14.168
+Western Africa,,1996,14.688
+Western Africa,,1997,15.026
+Western Africa,,1998,11.908
+Western Africa,,1999,13.961
+Western Africa,,2000,14.957
+Western Africa,,2001,15.35
+Western Africa,,2002,16.436
+Western Africa,,2003,14.769
+Western Africa,,2004,16.825
+Western Africa,,2005,16.432
+Western Africa,,2006,14.917
+Western Africa,,2007,13.349
+Western Africa,,2008,15.527
+Western Africa,,2009,15.248
+Western Africa,,2010,16.81
+Western Africa,,2011,16.997
+Western Africa,,2012,17.426
+Western Africa,,2013,17.202
+Western Africa,,2014,17.755
+Western Africa,,2015,15.519
+Western Africa,,2016,15.828
+Western Africa,,2017,18.575
+Western Africa,,2018,19.64
+Western Africa,,2019,22.117
+Western Africa,,2020,22.292
+World,OWID_WRL,1965,923.198
+World,OWID_WRL,1966,983.817
+World,OWID_WRL,1967,1005.743
+World,OWID_WRL,1968,1059.289
+World,OWID_WRL,1969,1121.743
+World,OWID_WRL,1970,1174.648
+World,OWID_WRL,1971,1227.065
+World,OWID_WRL,1972,1284.63
+World,OWID_WRL,1973,1303.009
+World,OWID_WRL,1974,1431.265
+World,OWID_WRL,1975,1448.89
+World,OWID_WRL,1976,1443.135
+World,OWID_WRL,1977,1491.672
+World,OWID_WRL,1978,1614.388
+World,OWID_WRL,1979,1695.189
+World,OWID_WRL,1980,1731.652
+World,OWID_WRL,1981,1768.904
+World,OWID_WRL,1982,1800.909
+World,OWID_WRL,1983,1877.769
+World,OWID_WRL,1984,1941.376
+World,OWID_WRL,1985,1979.775
+World,OWID_WRL,1986,2006.572
+World,OWID_WRL,1987,2033.706
+World,OWID_WRL,1988,2098.721
+World,OWID_WRL,1989,2087.571
+World,OWID_WRL,1990,2158.906
+World,OWID_WRL,1991,2209.41
+World,OWID_WRL,1992,2209.074
+World,OWID_WRL,1993,2341.245
+World,OWID_WRL,1994,2356.882
+World,OWID_WRL,1995,2485.633
+World,OWID_WRL,1996,2520.499
+World,OWID_WRL,1997,2566.135
+World,OWID_WRL,1998,2586.942
+World,OWID_WRL,1999,2605.676
+World,OWID_WRL,2000,2625.18
+World,OWID_WRL,2001,2564.48
+World,OWID_WRL,2002,2603.17
+World,OWID_WRL,2003,2606.15
+World,OWID_WRL,2004,2798.14
+World,OWID_WRL,2005,2902.91
+World,OWID_WRL,2006,3005.2
+World,OWID_WRL,2007,3049.54
+World,OWID_WRL,2008,3230.7
+World,OWID_WRL,2009,3232.81
+World,OWID_WRL,2010,3409.23
+World,OWID_WRL,2011,3476.16
+World,OWID_WRL,2012,3641.36
+World,OWID_WRL,2013,3768.39
+World,OWID_WRL,2014,3860.08
+World,OWID_WRL,2015,3869.91
+World,OWID_WRL,2016,3999.9
+World,OWID_WRL,2017,4049.15
+World,OWID_WRL,2018,4170.02
+World,OWID_WRL,2019,4219.16
+World,OWID_WRL,2020,4311.81
+World,OWID_WRL,2021,4206.14
+Yemen,YEM,2000,0
+Yemen,YEM,2001,0
+Yemen,YEM,2002,0
+Yemen,YEM,2003,0
+Yemen,YEM,2004,0
+Yemen,YEM,2005,0
+Yemen,YEM,2006,0
+Yemen,YEM,2007,0
+Yemen,YEM,2008,0
+Yemen,YEM,2009,0
+Yemen,YEM,2010,0
+Yemen,YEM,2011,0
+Yemen,YEM,2012,0
+Yemen,YEM,2013,0
+Yemen,YEM,2014,0
+Yemen,YEM,2015,0
+Yemen,YEM,2016,0
+Yemen,YEM,2017,0
+Yemen,YEM,2018,0
+Yemen,YEM,2019,0
+Yemen,YEM,2020,0
+Zambia,ZMB,2000,7.67
+Zambia,ZMB,2001,7.81
+Zambia,ZMB,2002,8.02
+Zambia,ZMB,2003,8.17
+Zambia,ZMB,2004,8.38
+Zambia,ZMB,2005,8.79
+Zambia,ZMB,2006,9.57
+Zambia,ZMB,2007,9.53
+Zambia,ZMB,2008,9.43
+Zambia,ZMB,2009,9.78
+Zambia,ZMB,2010,10.33
+Zambia,ZMB,2011,11.37
+Zambia,ZMB,2012,12.23
+Zambia,ZMB,2013,13.15
+Zambia,ZMB,2014,13.9
+Zambia,ZMB,2015,12.91
+Zambia,ZMB,2016,10.91
+Zambia,ZMB,2017,12.37
+Zambia,ZMB,2018,13.56
+Zambia,ZMB,2019,13.67
+Zambia,ZMB,2020,13.67
+Zimbabwe,ZWE,2000,3.23
+Zimbabwe,ZWE,2001,2.97
+Zimbabwe,ZWE,2002,3.79
+Zimbabwe,ZWE,2003,5.3
+Zimbabwe,ZWE,2004,5.47
+Zimbabwe,ZWE,2005,4.87
+Zimbabwe,ZWE,2006,5.26
+Zimbabwe,ZWE,2007,5.33
+Zimbabwe,ZWE,2008,5.65
+Zimbabwe,ZWE,2009,5.4
+Zimbabwe,ZWE,2010,5.74
+Zimbabwe,ZWE,2011,5.15
+Zimbabwe,ZWE,2012,5.34
+Zimbabwe,ZWE,2013,4.95
+Zimbabwe,ZWE,2014,5.38
+Zimbabwe,ZWE,2015,4.94
+Zimbabwe,ZWE,2016,2.95
+Zimbabwe,ZWE,2017,3.93
+Zimbabwe,ZWE,2018,5
+Zimbabwe,ZWE,2019,7.26
+Zimbabwe,ZWE,2020,7.26
