@@ -201,5 +201,5 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/dotgov/t1.png" width="100%">
 
 ***  
-### Registered domains in the .gov zone ([code](https://github.com/leeolney3/Tables/blob/main/2022/masks_nyc_transit))
+### Mask-wearing on NYC transit ([code](https://github.com/leeolney3/Tables/blob/main/2022/masks_nyc_transit))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/masks_nyc_transit/p1.png" width="100%">
