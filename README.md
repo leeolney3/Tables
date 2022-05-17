@@ -86,6 +86,11 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * [Visualizing the Uncertainty in Data](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/) by [Nathan Yau](http://twitter.com/flowingdata)
     * [16 Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html) in [Fundamentals of Data Visualization book by Claus O. Wilke](https://clauswilke.com/dataviz/)
   
+  * Weekly data visualisation highlights
+    * [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/)
+    * [The Moksha Roundup](https://mokshadata.studio/roundup/)
+    * [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/)
+  
   * Github/websites/blogs to follow (alphabetical)
     * Abdoul Madjid [Github](https://github.com/AbdoulMa)
     * Amit Levinson [Github](https://github.com/AmitLevinson), [blog](https://amitlevinson.com/)
@@ -131,7 +136,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
     * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
     * Thom-Ivar van Dijk [Github](https://github.com/TIvanDijk)
     * Tom Mock [Github](https://github.com/jthomasmock), [The Mockup Blog](https://themockup.blog) 
-  
+    
   
 <!-- tocstop -->
 </details>
