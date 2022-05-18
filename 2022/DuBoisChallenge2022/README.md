@@ -4,7 +4,7 @@ The Du Bois Visualization Challenge by founded [Anthony Starks](https://twitter.
 
 ***
 
-### Recreations
+### Recreations [(R code)](https://github.com/leeolney3/Tables/blob/main/2022/DuBoisChallenge2022/script.R)
 * Challenge 02 ([original plate](https://github.com/ajstarks/dubois-data-portraits/blob/master/challenge/2022/challenge02/original-plate-22.jpg) and [data](https://github.com/ajstarks/dubois-data-portraits/blob/master/challenge/2022/challenge02/data.csv))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/DuBoisChallenge2022/plots/challenge02.png" width="60%">
 
