@@ -59,7 +59,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ***  
 *  Recreating The Economist chart with confidence interval and central estimate ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_economist_cf/))
   *  Original chart by The Economist [here](https://blog.datawrapper.de/wp-content/uploads/2022/04/image24-3.png)
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_economist_cf/p1.png" width="70%">    
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_economist/p1.png" width="70%">    
 
 ***  
 *  Census tract urbanization ([code](https://github.com/leeolney3/Tables/tree/main/2022/census_tract_urbanization))
@@ -72,3 +72,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ***  
 *  Mask-wearing on NYC transit ([code](https://github.com/leeolney3/Tables/blob/main/2022/masks_nyc_transit))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/masks_nyc_transit/p1.png" width="90%">
+
+***  
+*  Dietary preferences among British adults ([code](https://github.com/leeolney3/Tables/tree/main/2022/dietary_choices))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/dietary_choices/p1.png" width="90%">
