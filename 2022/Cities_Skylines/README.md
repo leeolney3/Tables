@@ -1,7 +1,7 @@
 ## Cities Skylines in-game maps
 
 * Data from [Cities Skylines, Paradox Interactive](https://www.paradoxinteractive.com/games/cities-skylines/about) by way of [skylines.country](https://skylines.country/)
-* [R code](https://github.com/leeolney3/Tables/blob/main/2022/tsto_super_premium/script.R)
+* [R code](https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/Cities_Skylines.R)
 
 ***
 * Table of 38 in-game maps with three out of four available connection types 
