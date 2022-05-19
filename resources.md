@@ -3,12 +3,15 @@
   * Tables cookbook and tutorials 
     * [{gtExtras}](https://jthomasmock.github.io/gtExtras/) package by [Tom Mock](https://twitter.com/thomas_mock)
     * [{reactablefmtr} tutorials](https://kcuilla.github.io/reactablefmtr/articles/sparklines.html) package by [Kyle Cuilla](https://twitter.com/kc_analytics)
+    * [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and [Richard Iannone](https://twitter.com/riannone/status/1511387252903010305) {gt} tables using #TidyTuesday dataset
+    * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YouTube video](https://www.youtube.com/watch?v=aPRVzk9pvno)
     * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
     * [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)
     *  RStudio table contest 2021 [tutorial](https://twitter.com/BjnNowak/status/1472562727684124688) by [Benjamin Nowak](https://twitter.com/BjnNowak) 
     *  RStudio table contest 2021 [tutorial](https://twitter.com/JDavison_/status/1455487659833430021) by [Jack Davison](https://twitter.com/JDavison_) 
+    *  RStudio table contest 2020 [tutorial](https://rpubs.com/kaustav/table_contest_2020) by [Kaustav Sen](https://twitter.com/kustav_sen)
     * [Summary table example with {gt} and {gtExtras}](https://twitter.com/thomas_mock/status/1444720200771899398) by [Tom Mock](https://twitter.com/thomas_mock)
-    * Rich Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YouTube video](https://www.youtube.com/watch?v=aPRVzk9pvno)
+    
     
   * Data visualization tutorials 
     * Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)
@@ -51,16 +54,18 @@
     
   
   * Colors
-    * [Lisa Charlotte Muth](https://twitter.com/lisacmuth) on [Datawrapper Blog](https://blog.datawrapper.de/)
+    * [Lisa Charlotte Muth](https://twitter.com/lisacmuth) in [Datawrapper Blog](https://blog.datawrapper.de/)
        * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
        * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
        * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
+       * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
     * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)
     * [4 Ways to use colors in ggplot more efficiently](https://albert-rapp.de/post/2022-02-19-ggplot2-color-tips-from-datawrapper/) by [Albert Rapp](https://twitter.com/rappa753)
     * Twitter:
       * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
       * Cédric Scherer's [Twitter post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
       * [Idescribled's [Twitter post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
+      * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1526819424136843264) on color palette examples (sequential, diverging, rainbow, qualitative)
   
   * Visualising distributions
     * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by [Matthew Kay](https://twitter.com/mjskay) 
