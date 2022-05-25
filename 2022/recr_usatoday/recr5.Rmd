@@ -1,0 +1,271 @@
+---
+title: "2022-05-25"
+output: html_notebook
+---
+
+Recreating USA Today: [Pandemic leaves more than a million dead in US and many questions](https://eu.usatoday.com/in-depth/graphics/2022/05/17/covid-deaths-us-less-deadly-than-spanish-flu/9539487002/) (May 17, 2022) [chart](https://blog.datawrapper.de/wp-content/uploads/2022/05/image42-1.png)
+
+```{r libraries}
+library(tidyverse)
+library(ggtext)
+library(patchwork)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r font}
+font_add_google("IBM Plex Serif")
+f1 = "IBM Plex Serif"
+```
+
+```{r title}
+g1 = "**Spanish flu**<br>National average: 643 deaths per 100,000"
+g2 = "**COVID-19**<br>National average: 302 deaths per 100,000"
+lab1 = "Influenza deaths in 1918 per 100,000 in select states"
+lab2 = "COVID-19 deaths per 100,000"
+```
+
+```{r color palette}
+colors = c("#FFFFFF","#F2F2F2","#B1B1B1","#626262","#0C0C0C")
+```
+
+```{r p1 waffle}
+x1 = tribble(
+  ~grp, ~value,
+  g1,643,
+  g2,302
+) %>% 
+  expand_grid(y=1:26, x=1:25) %>%
+  group_by(grp) %>%
+  mutate(id=row_number(),
+         col=case_when(id<=value~"b", TRUE~"a"))
+
+p1 = x1 %>% ggplot(aes(x=x, y=y, fill=col)) +
+  geom_tile(show.legend=F, size=1, color="white") +
+  geom_richtext(data=x1 %>% filter(id==1), aes(x=12.5, y=if_else(value==643,30,17), label=grp), fill=NA, label.color=NA, size=3.5, vjust=1,family=f1) +
+  facet_wrap(~fct_rev(grp),ncol=2) +
+  scale_fill_manual(values=c("white","black")) +
+  coord_fixed(expand=F, clip="off") +
+  theme_void() +
+  theme(strip.text = element_blank(),
+        panel.spacing = unit(3, "lines"))
+```
+
+```{r tile map data}
+# data, spanish flu
+x2 = tribble(
+  ~y,~x,~st,~n,~col,
+  1,1,"HI",101,"2",
+  1,4,"TX",NA,"2",
+  1,9,"FL",NA,"2",
+  2,4,"OK",NA,"2",
+  2,5,"LA",NA,"2",
+  2,6,"MS",NA,"2",
+  2,7,"AL",NA,"2",
+  2,8,"GA",NA,"2",
+  3,2,"AZ",NA,"2",
+  3,3,"NM",NA,"2",
+  3,4,"KS",474,"2",
+  3,5,"AR",NA,"2",
+  3,6,"TN",476,"2",
+  3,7,"NC",503,"3",
+  3,8,"SC",632,"4",
+  3,9,"DC",NA,"2",
+  4,1,"CA",538,"3",
+  4,2,"UT",509,"3",
+  4,3,"CO",767,"4",
+  4,4,"NE",NA,"2",
+  4,5,"MO",476,"2",
+  4,6,"KY",537,"3",
+  4,7,"WV",NA,"2",
+  4,8,"VA",621,"4",
+  4,9,"MD",804,"5",
+  4,10,"DE",NA,"2",
+  5,1,"OR",NA,"2",
+  5,2,"NV",NA,"2",
+  5,3,"WY",NA,"2",
+  5,4,"SD",NA,"2",
+  5,5,"IA",NA,"2",
+  5,6,"IN",408,"2",
+  5,7,"OH",494,"2",
+  5,8,"PA",883,"5",
+  5,9,"NJ",768,"4",
+  5,10,"CT",768,"4",
+  5,11,"RI",681,"4",
+  6,1,"WA",412,"2",
+  6,2,"ID",NA,"2",
+  6,3,"MT",762,"4",
+  6,4,"ND",NA,"2",
+  6,5,"MN",391,"1",
+  6,6,"IL",NA,"2",
+  6,7,"MI",398,"1",
+  6,9,"NY",598,"3",
+  6,10,"MA",727,"4",
+  7,1,"AK",NA,"2",
+  7,6,"WI",405,"2",
+  7,10,"VT",597,"3",
+  7,11,"NH",752,"4",
+  8,11,"ME",598,"3",
+) %>%
+  mutate(col=parse_number(col))
+
+# data, cov
+x3p = tribble(
+  ~st, ~n, ~col,
+  "HI",101,1,
+  "TX",300,3,
+  "FL",340,3,
+  "OK",399,5,
+  "LA",372,4,
+  "MS",420,5,
+  "AL",398,5,
+  "GA",353,4,
+  "AZ",404,5,
+  "NM",356,4,
+  "KS",296,2,
+  "AR",376,4,
+  "TN",380,4,
+  "NC",221,2,
+  "SC",345,3,
+  "DC",188,1,
+  "CA",229,2,
+  "UT",146,1,
+  "CO",209,2,
+  "NE",217,2,
+  "MO",329,3,
+  "KY",347,3,
+  "WV",384,4,
+  "VA",236,2,
+  "MD",239,2,
+  "DE",295,2,
+  "OR",177,1,
+  "NV",343,3,
+  "WY",311,3,
+  "SD",236,3,
+  "IA",301,3,
+  "IN",349,3,
+  "OH",329,3,
+  "PA",350,4,
+  "NJ",377,4,
+  "CT",305,3,
+  "RI",335,3,
+  "WA",169,1,
+  "ID",270,2,
+  "MT",311,3,
+  "ND",296,2,
+  "MN",226,2,
+  "IL",286,2,
+  "MI",361,4,
+  "NY",354,4,
+  "MA",294,3,
+  "AK",171,1,
+  "WI",247,2,
+  "VT",103,1,
+  "NH",182,1,
+  "ME",169,1
+)
+x3  = x2 %>% select(1:3) %>% left_join(x3p, by="st") 
+
+# legend df
+x4 =tribble(
+  ~grp, ~n, ~lab,
+  g1,200,lab1,
+  g1,400,lab1,
+  g1,500,lab1,
+  g1,600,lab1,
+  g1,800,lab1,
+  g2,100,lab2,
+  g2,200,lab2,
+  g2,300,lab2,
+  g2,350,lab2,
+  g2,398,lab2,
+) %>%
+  group_by(grp) %>%
+  mutate(id=row_number(),
+         xmax=2.25*id,
+         xmin=lag(xmax),
+         xmax=xmax-.3,
+         y=9.75,
+         xmin=replace_na(xmin,0)) 
+
+x4a = x4 %>% filter(grp==g1) %>% ungroup() %>% select(2,4:7)
+x4b = x4 %>% filter(grp==g2) %>% ungroup() %>% select(2,4:7)
+```
+
+```{r p3 tile map}
+p3 = ggplot() +
+  geom_tile(data=x2 %>% filter(is.na(n)), aes(x=x, y=y), fill="#ECECEC", size=.5, color="white") +
+  geom_text(data=x2 %>% filter(is.na(n)), aes(x=x, y=y, label=st), size=3, color="#B5B5B5", fontface="bold",family=f1) +
+  geom_tile(data=x2 %>% filter(!is.na(n)), aes(x=x, y=y, fill=as.factor(col)), size=.5, color="#787878") +
+  geom_text(data=x2 %>% filter(!is.na(n)), aes(x=x, y=y, label=st, color=as.factor(col)), size=3, vjust=-.2, fontface="bold",family=f1) +
+  geom_text(data=x2 %>% filter(!is.na(n)), aes(x=x, y=y, label=n, color=as.factor(col)), size=3, vjust=1.2,family=f1) +
+  #legend key
+  geom_rect(data=x4a, aes(xmin=xmin+.5, xmax=xmax+.5, ymin=y-.5, ymax=y, fill=factor(id)),color="#787878") +
+  #legend ticks  
+  geom_segment(data = tibble(x = c(2.6, 4.85, 7.1, 9.35), y1 = 9.1, y2 = 9.75),
+    aes(x = x, xend = x, y = y1, yend = y2),inherit.aes = FALSE,
+    color = "black",size = .3) +
+  #legend text
+  geom_text(data=tibble(x = c(2.6, 4.85, 7.1, 9.35), y1 = 8.8, label=c(400,500,600,800)),aes(x=x, y=y1, label=label), size=3.4,family=f1) +
+  #title
+  annotate(geom="text", x=5.7, y=10.5, label=lab1, size=3.5,family=f1) +
+  #caption
+  annotate(geom="text", x=.5, y=-.2, label=expression(underline(NOTE:~"1918 influenza death statistics are not available from each state.")), size=2.6, hjust=0, color="#6E6E6E",family=f1) +
+  annotate(geom="richtext", x=.5, y=-.7, label="SOURCE: *America's Forgotten Pandemic: The Influenza of 1918; CDC*", size=2.6, hjust=0, color="#6E6E6E", ,family=f1, label.color=NA,label.padding = grid::unit(rep(0, 4), "pt")) +
+  scale_fill_manual(values=colors) +
+  scale_color_manual(values=c("black","black","white","white","white")) +
+  coord_fixed() +
+  theme_void() +
+  theme(legend.position = "none",
+        plot.margin=margin(t=11)) 
+```
+
+```{r p4 tile map}
+p4 = ggplot() +
+  geom_tile(data=x3, aes(x=x, y=y, fill=as.factor(col)), size=.5, color="#787878") +
+  geom_text(data=x3, aes(x=x, y=y, label=st, color=as.factor(col)), size=3, vjust=-.2, fontface="bold",family=f1) +
+  geom_text(data=x3, aes(x=x, y=y, label=n, color=as.factor(col)), size=3, vjust=1.2,family=f1) +
+  #legend key
+  geom_rect(data=x4b, aes(xmin=xmin+.5, xmax=xmax+.5, ymin=y-.5, ymax=y, fill=factor(id)),color="#787878") +
+  #legend ticks  
+  geom_segment(data = tibble(x = c(2.6, 4.85, 7.1, 9.35), y1 = 9.1, y2 = 9.75),
+    aes(x = x, xend = x, y = y1, yend = y2),inherit.aes = FALSE,
+    color = "black",size = .3) +
+  #legend text
+  geom_text(data=tibble(x = c(2.6, 4.85, 7.1, 9.35), y1 = 8.8, label=c(200,300,350,398)),aes(x=x, y=y1, label=label), size=3.4,family=f1) +
+  #title
+  annotate(geom="text", x=5.7, y=10.5, label=lab2, size=3.5,family=f1) +
+  #caption
+  annotate(geom="richtext", x=.5, y=-.7, label="NOTE: As of May 2", size=2.6, hjust=0, color="#6E6E6E", label.color=NA,family=f1,label.padding = grid::unit(rep(0, 4), "pt")) +
+  scale_fill_manual(values=colors) +
+  scale_color_manual(values=c("black","black","white","white","white")) +
+  coord_fixed() +
+  theme_void() +
+  theme(legend.position = "none",
+        plot.margin=margin(t=11)) 
+```
+
+```{r combine plot}
+p = p1/
+(p3 | p4) +
+  plot_annotation(caption="Data and original chart from USA Today: Pandemic leaves more than a million dead in US and many questions, May 17 2022")
+```
+
+```{r add center line}
+png("recr5.png", width=9, height=9,unit='in',res=300)
+
+# function from https://stackoverflow.com/questions/64656234/how-does-the-economist-make-these-lines-near-the-title-using-using-ggplot
+annotate_npc <- function(x, y, height, width, ...) {
+  grid::grid.draw(grid::rectGrob(
+    x = unit(x, "npc"), y = unit(y, "npc"), height = unit(height, "npc"), width = unit(width, "npc"),
+    gp = grid::gpar(...)
+  ))
+}
+
+p
+annotate_npc(x = .5, y = .5, height = .95, width = 0.0003, fill = "black", col = NA)
+
+dev.off()
+```
+
