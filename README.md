@@ -76,3 +76,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ***  
 *  Dietary preferences among British adults ([code](https://github.com/leeolney3/Tables/tree/main/2022/dietary_choices))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/dietary_choices/p1.png" width="90%">
+
+***  
+*  Recreating USA Today chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_usatoday/recr5.Rmd))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_usatoday/recr5.png" width="90%">
