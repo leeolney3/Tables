@@ -148,6 +148,7 @@
 * Christian Gebhard [Github](https://github.com/nucleic-acid) ,[blog](https://jollydata.blog/blog.html)
 * Christophe Nicault [Github](https://github.com/cnicault), [website](https://www.christophenicault.com/articles/) 
 * Colin Angus [Github](https://github.com/VictimOfMaths)
+* Dan @FilmicAesthetic [Github](https://github.com/filmicaesthetic)
 * Daniel Oehm [website](http://gradientdescending.com/)
 * Dr. Dominic Royé [Github](https://github.com/dominicroye), [blog](https://dominicroye.github.io/en/)
 * Federica Gazzelloni [Github](https://github.com/Fgazzelloni), [blog](https://federicagazzelloni.netlify.app/blog/)
