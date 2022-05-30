@@ -120,9 +120,10 @@
 
 <!-- toc -->  
 
-* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/)
-* [The Moksha Roundup](https://mokshadata.studio/roundup/)
 * [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/)
+* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/)
+* [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse)
+* [The Moksha Roundup](https://mokshadata.studio/roundup/)
 * [R Weekly](https://rweekly.org/) 
 
  <!-- toc -->
