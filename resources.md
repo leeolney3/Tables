@@ -60,15 +60,16 @@
 * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
 * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by [Jamie Hudson](https://twitter.com/Jamie_Bio)
 * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
-* not quite my grey's [Twitter post](https://twitter.com/quite_grey/status/1486294048151326726) on using thumbnails in ggplot2
-* not quite my grey's [Twitter post](https://twitter.com/quite_grey/status/1411785842520203266) on Route finding (sfnetwork vignettes) 
+* [Plot RGB satellite imagery in true-color with ggplot2 in R] by [Tobias Stalder](https://twitter.com/toeb18/status/1532455477166194688)
+* Route finding (sfnetwork vignettes) [Twitter post](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey (@quite_grey)
+* Using thumbnails in ggplot2 [Twitter post](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey (@quite_grey)
 * Recreations
   * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by [Bob Rudis](https://twitter.com/hrbrmstr)
   * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by [Ansgar Wolsing](https://twitter.com/_ansgar)
 * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/post/2022-05-01-use-grobs-to-get-rounded-corners/) by by [Albert Rapp](https://twitter.com/rappa753)
 * [The R Graph Gallery](https://r-graph-gallery.com/)
-* [Line chart with labels at end of lines](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by [Cédric Scherer](https://twitter.com/CedScherer) on [R Graph Gallery](https://r-graph-gallery.com/)
-* [Time series with conditional area fill and geofaceting in ggplot2](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by [Georgios Karamanis](https://twitter.com/geokaramanis) on [R Graph Gallery](https://r-graph-gallery.com/)  
+  * [Line chart with labels at end of lines](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by [Cédric Scherer](https://twitter.com/CedScherer) on [R Graph Gallery](https://r-graph-gallery.com/)
+  * [Time series with conditional area fill and geofaceting in ggplot2](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by [Georgios Karamanis](https://twitter.com/geokaramanis) on [R Graph Gallery](https://r-graph-gallery.com/)  
 * Visualising distributions
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by [Matthew Kay](https://twitter.com/mjskay) 
   * {gghalves} [vignette](https://erocoar.github.io/gghalves/) by Frederik Tiedemann
@@ -91,12 +92,13 @@
   <summary><b>Explainers/others</b> (click to expand)</summary>
 
 <!-- toc -->
-
+* #TidyTuesday screencasts, [R Screencasts](https://www.rscreencasts.com/)
 * Christian Burkhart's [ggplot2 cheatsheets](https://christianb.gumroad.com/l/ggplot2cheatsheets) 
 * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by [Yan Holtz @R_Graph_Gallery](https://twitter.com/R_Graph_Gallery)
 * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
 * [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/) blog post on [Policy Viz](https://policyviz.com/) 
 * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
+* [script]((https://twitter.com/thomas_mock/status/1531318119016370177)) to get all the functions in a #RStats package and their arguments by Tom Mock (@thomas_mock)
 * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by [Tom Mock](https://twitter.com/thomas_mock)
 * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
 * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
@@ -110,6 +112,7 @@
   * [@WeAreRLadies](https://twitter.com/WeAreRLadies) tips/ideas/analysis 
     * [day 1](https://twitter.com/WeAreRLadies/status/1515876540394852354), [day 2](https://twitter.com/WeAreRLadies/status/1516256907836674053), [day 3](https://twitter.com/WeAreRLadies/status/1516671536497045506), [day 4](https://twitter.com/WeAreRLadies/status/1516997091109015552), [day 5](https://twitter.com/WeAreRLadies/status/1517402976062967808), [day 6](https://twitter.com/WeAreRLadies/status/1517749920262160384) twitter thread
         * [Code](https://github.com/emitanaka/wearerladies) on Github
+
  <!-- toc -->
  
 <!-- tocstop -->
