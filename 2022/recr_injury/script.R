@@ -29,6 +29,10 @@ lab = df %>% select(year, cause=injury_mechanism_all_other_leading_causes,deaths
          y=c(12900,10500,4400,5400,3200,2400),
          cause=case_when(cause=="Fire/Flame"~"Fire",TRUE~cause))
          
+# wrap function that can be applied to a vector of strings 
+# reference: https://stackoverflow.com/questions/7367138/text-wrap-for-plot-titles
+wrap_strings  <- function(vector_of_strings,width){as.character(sapply(vector_of_strings,FUN=function(x){paste(strwrap(x,width=width), collapse="\n")}))}         
+         
 # Plot
 df %>% select(year, cause=injury_mechanism_all_other_leading_causes,deaths) %>%
   drop_na() %>%
