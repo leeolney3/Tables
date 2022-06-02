@@ -60,7 +60,7 @@
 * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
 * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by [Jamie Hudson](https://twitter.com/Jamie_Bio)
 * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
-* [Plot RGB satellite imagery in true-color with ggplot2 in R] by [Tobias Stalder](https://twitter.com/toeb18/status/1532455477166194688)
+* [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by [Tobias Stalder](https://twitter.com/toeb18/status/1532455477166194688)
 * Route finding (sfnetwork vignettes) [Twitter post](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey (@quite_grey)
 * Using thumbnails in ggplot2 [Twitter post](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey (@quite_grey)
 * Recreations
@@ -119,7 +119,7 @@
 </details>     
 
 <details>
-  <summary><b>Weekly data visualisation highlights</b> (click to expand)</summary>
+  <summary><b>Data visualization weekly highlights</b> (click to expand)</summary>
 
 <!-- toc -->  
 
