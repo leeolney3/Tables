@@ -53,6 +53,7 @@
  
 * Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)
 * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by [Clare West](https://twitter.com/claree_west)
+* [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by [Spencer Schien](https://twitter.com/MrPecners)
 * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by [Tobias Stalder](https://twitter.com/toeb18)
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by [Isabella Velásquez](https://twitter.com/ivelasq3)
@@ -98,9 +99,10 @@
 * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
 * [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/) blog post on [Policy Viz](https://policyviz.com/) 
 * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
-* [script]((https://twitter.com/thomas_mock/status/1531318119016370177)) to get all the functions in a #RStats package and their arguments by Tom Mock (@thomas_mock)
+* [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by [Amit Grinson @Amit_Levinson](https://twitter.com/Amit_Levinson/status/1532439223952887812)
 * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by [Tom Mock](https://twitter.com/thomas_mock)
 * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
+* [Script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments by Tom Mock (@thomas_mock)
 * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
 * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
 * Twitter:
