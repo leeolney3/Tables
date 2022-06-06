@@ -57,6 +57,8 @@
 * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by [Tobias Stalder](https://twitter.com/toeb18)
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by [Isabella Velásquez](https://twitter.com/ivelasq3)
+* Flow chart using the {igraph} in "#30DayChartChallenge: Nicola's Experience" talk for 
+@RLadiesNairobi: [YT recording and slides](https://twitter.com/nrennie35/status/1533542917226352652)
 * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) by [Albert Rapp](https://twitter.com/rappa753)
 * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
 * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by [Jamie Hudson](https://twitter.com/Jamie_Bio)
