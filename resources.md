@@ -97,8 +97,9 @@
 <!-- toc -->
 * #TidyTuesday screencasts, [R Screencasts](https://www.rscreencasts.com/)
 * A curated list of awesome rayshader and rayrender resources and shiny things on [github](https://github.com/marcosci/awesome-rayshader-rayrender) by [Marco Sciaini](https://twitter.com/shinysci)
-* [Analysis of the voting *patterns* with widyr] by [Julia Silge](https://twitter.com/juliasilge)
+* [Analysis of the voting patterns with widyr](https://twitter.com/juliasilge/status/1532862734487785474) by [Julia Silge](https://twitter.com/juliasilge)
 * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by [Yan Holtz @R_Graph_Gallery](https://twitter.com/R_Graph_Gallery)
+* [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by [Beatriz Milz](https://twitter.com/BeaMilz/status/1533534492702408704)
 * Data viz challenges
     * 30DayChartChallenge 2022 [website](https://30daychartchallenge.org/twentytwo/)
     * 30DayChartChallenge 2021: rstats edition [github](https://github.com/dominicroye/rstats-chart-challenge-2021)
@@ -106,7 +107,6 @@
     * 30DayMapChallenge 2022 rstats map gallery [website](https://david.frigge.nz/3RDayMapChallenge/maps.html) 
 * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by [Christian Burkhart](https://twitter.com/ChBurkhartk)
 * [Free DataViz Tools & Resources](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/) blog post on [Policy Viz](https://policyviz.com/) 
-* [ggplot2 cheatsheets](https://christianb.gumroad.com/l/ggplot2cheatsheets) by Christian Burkhart 
 * [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
 * [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by [Amit Grinson @Amit_Levinson](https://twitter.com/Amit_Levinson/status/1532439223952887812)
 * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by [Tom Mock](https://twitter.com/thomas_mock)
