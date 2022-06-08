@@ -4,21 +4,23 @@
   <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
 
 <!-- toc -->
- 
-* [{gt}](https://gt.rstudio.com/) and [{gtExtras}](https://jthomasmock.github.io/gtExtras/) 
+
+* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)  
+* [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) 
+  * Rich Iannone || Making Beautiful Tables with {gt} || RStudio [YT video](https://www.youtube.com/watch?v=z0UGmMOxl-c)
+  * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YT video](https://www.youtube.com/watch?v=aPRVzk9pvno)
+  * {gt} tables using #TidyTuesday data | RStudio: [Digital Publications](https://twitter.com/riannone/status/1511387252903010305), [Crosswords](https://twitter.com/rstudio/status/1529138398849810432), [Eurovision](https://twitter.com/kierisi/status/1534204134215548928) by [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and [Richard Iannone](https://twitter.com/riannone)
   * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by [Tom Mock](https://twitter.com/thomas_mock)
-  * {gt} tables using #TidyTuesday data: [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and [Richard Iannone](https://twitter.com/riannone/status/1511387252903010305) 
-    * [Table Battles Round 2: Crosswords](https://twitter.com/rstudio/status/1529138398849810432)
   * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by [Nicola Rennie](https://twitter.com/nrennie35)
-  * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YouTube video](https://www.youtube.com/watch?v=aPRVzk9pvno)
   * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
   * Tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) by [Tom Mock](https://twitter.com/thomas_mock)
-* [reactable](https://glin.github.io/reactable/) and [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) 
+  *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by [Jack Davison](https://twitter.com/JDavison_) 
+  *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by [Kaustav Sen](https://twitter.com/kustav_sen)
+* [reactable](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) 
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by [Kyle Cuilla](https://twitter.com/kc_analytics)
-    * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418),[2](https://twitter.com/schmid_07/status/1488596892242124800)) by [Bill Schmid](https://twitter.com/schmid_07)
-* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)
-    *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by [Jack Davison](https://twitter.com/JDavison_) 
-    *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by [Kaustav Sen](https://twitter.com/kustav_sen)
+    * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by [Bill Schmid](https://twitter.com/schmid_07)
+    * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by [Georgios Karamanis](https://twitter.com/geokaramanis)
+
 <!-- toc -->
  
 <!-- tocstop -->
