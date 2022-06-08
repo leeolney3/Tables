@@ -9,6 +9,7 @@
   * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by [Tom Mock](https://twitter.com/thomas_mock)
   * {gt} tables using #TidyTuesday data: [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and [Richard Iannone](https://twitter.com/riannone/status/1511387252903010305) 
     * [Table Battles Round 2: Crosswords](https://twitter.com/rstudio/status/1529138398849810432)
+  * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by [Nicola Rennie](https://twitter.com/nrennie35)
   * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YouTube video](https://www.youtube.com/watch?v=aPRVzk9pvno)
   * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
   * Tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) by [Tom Mock](https://twitter.com/thomas_mock)
@@ -55,10 +56,9 @@
 * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by [Clare West](https://twitter.com/claree_west)
 * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by [Spencer Schien](https://twitter.com/MrPecners)
 * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by [Tobias Stalder](https://twitter.com/toeb18)
+* [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by [Nicola Rennie](https://twitter.com/nrennie35/status/1534121769409605637)  
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by [Isabella Velásquez](https://twitter.com/ivelasq3)
-* Flow chart using the {igraph} in "#30DayChartChallenge: Nicola's Experience" talk for 
-@RLadiesNairobi: [YT recording and slides](https://twitter.com/nrennie35/status/1533542917226352652)
 * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) by [Albert Rapp](https://twitter.com/rappa753)
 * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
 * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by [Jamie Hudson](https://twitter.com/Jamie_Bio)
