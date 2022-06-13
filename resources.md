@@ -62,6 +62,7 @@
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by [Isabella Velásquez](https://twitter.com/ivelasq3)
 * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) by [Albert Rapp](https://twitter.com/rappa753)
+* [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by [Dan Oehm](https://twitter.com/danoehm/status/1536227644395909120) 
 * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
 * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by [Jamie Hudson](https://twitter.com/Jamie_Bio)
 * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
