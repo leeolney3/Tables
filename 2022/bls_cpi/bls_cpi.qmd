@@ -3,11 +3,14 @@ title: "CPI, 1-Month Percent Change"
 format: html
 editor: visual
 ---
-Data: Consumer Price Index, 1-Month Percent Change. All items in U.S. city average, all urban consumers, seasonally adjusted. 
-Source: [U.S. Bureau of Labor Statistics](https://data.bls.gov/pdq/SurveyOutputServlet)
-Data extracted on: June 15, 2022 (8:43:36 AM)
-Plot inspired by: [Spencer Schien @MrPecners](https://twitter.com/MrPecners/status/1536722816950837248)
 
+Source: [U.S. Bureau of Labor Statistics](https://www.bls.gov/cpi/) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-06-15-edition/)
+
+Data: Consumer Price Index, 1-Month Percent Change. All items in U.S. city average, all urban consumers, seasonally adjusted.
+
+Data extracted on: June 15, 2022 (8:43:36 AM)
+
+Plot inspired by: [Spencer Schien \@MrPecners](https://twitter.com/MrPecners/status/1536722816950837248)
 
 ```{r}
 library(tidyverse)
@@ -58,7 +61,7 @@ p1 = df %>% pivot_longer(!Year) %>%
         legend.text=element_text(color="white", size=rel(.85)),
         plot.title = element_textbox(margin = margin(b = -300,t = 150), color = "white", hjust = .5, lineheight = 1.5, size=12),
         plot.subtitle = element_textbox(margin = margin(b = -300,t = 300, l=25), color = "white", width = unit(3, "in"), hjust = .5, lineheight= 1.5),
-        plot.caption = element_text(color = "grey40", hjust = .5, size=rel(.9), margin = margin(t = -25, b = -30)),
+        plot.caption = element_text(color = "grey40", hjust = .5, size=rel(.85), margin = margin(t = -25, b = -30)),
         ) +
   geom_segment(data = ylabs,aes(x = x, xend = x, y = y, yend = yend),
                color = "grey50", inherit.aes = FALSE, linetype="dotted") +
@@ -66,13 +69,8 @@ p1 = df %>% pivot_longer(!Year) %>%
             color = "grey50", inherit.aes = FALSE, size=3.5) +
   labs(title="**Consumer Price Index**:<br>1-Month Percent Change<br>",
        subtitle="All items in U.S. city average, all urban consumers, seasonally adjusted, from January 1982 to April 2022",
-       caption="Source: U.S. Bureau of Labor Statistics | Plot inspired by Spencer Schien @MrPecners") +
+       caption="Source: U.S. Bureau of Labor Statistics by way of Data Is Plural  |  Plot inspired by Spencer Schien @MrPecners") +
   guides(color=guide_colorbar(barheight=unit(5, "lines")))
 
 ggsave("p1.png", p1, height=8, width=8, bg="black")
 ```
-
-
- 
- 
- 
