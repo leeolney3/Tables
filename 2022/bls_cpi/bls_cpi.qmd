@@ -1,0 +1,78 @@
+---
+title: "CPI, 1-Month Percent Change"
+format: html
+editor: visual
+---
+Data: Consumer Price Index, 1-Month Percent Change. All items in U.S. city average, all urban consumers, seasonally adjusted. 
+Source: [U.S. Bureau of Labor Statistics](https://data.bls.gov/pdq/SurveyOutputServlet)
+Data extracted on: June 15, 2022 (8:43:36 AM)
+Plot inspired by: [Spencer Schien @MrPecners](https://twitter.com/MrPecners/status/1536722816950837248)
+
+
+```{r}
+library(tidyverse)
+library(ggtext)
+library(lubridate)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+
+font_add_google("Outfit")
+f1 = "Outfit"
+```
+
+```{r}
+df = read_csv("data/cpi_1982_2022.csv")
+
+ylabs <- tibble(
+  x = c("1982-01-01",
+        glue::glue("{seq(from = 1990, to = 2020, by = 10)}-01-01"),
+        "2022-01-01")
+) %>%
+  mutate(x = lubridate::ymd(x),
+         y = 1.2,
+         yend = -.5,
+         lab = lubridate::year(x),
+         hjust = c(0,0,0,1,1,1),
+         vjust = c(-.5, .5,.5, 1, .5, -.5))
+```
+
+```{r}
+p1 = df %>% pivot_longer(!Year) %>%
+  mutate(name=fct_inorder(name)) %>%
+  drop_na() %>%
+  mutate(month = as.numeric(name),
+         date = lubridate::ymd(glue::glue("{Year}-{month}-1"))) %>%
+  select(date, value) %>%
+  ggplot(aes(x=date, y=value, color=value)) +
+  scico::scale_color_scico(palette="romaO", midpoint = 0, labels=scales::percent_format(scale=1)) +
+  geom_hline(yintercept = 0, color="white") +
+  geom_line(size=1) +
+  scale_x_date(expand=c(.05,.02)) +
+  scale_y_continuous(limits=c(-3,NA), expand=c(0,0)) +
+  geomtextpath::coord_curvedpolar(clip = "off") +
+  cowplot::theme_nothing(10) +
+  theme(text=element_text(family=f1),
+        legend.position = c(.5,.4),
+        legend.title=element_blank(),
+        legend.text=element_text(color="white", size=rel(.85)),
+        plot.title = element_textbox(margin = margin(b = -300,t = 150), color = "white", hjust = .5, lineheight = 1.5, size=12),
+        plot.subtitle = element_textbox(margin = margin(b = -300,t = 300, l=25), color = "white", width = unit(3, "in"), hjust = .5, lineheight= 1.5),
+        plot.caption = element_text(color = "grey40", hjust = .5, size=rel(.9), margin = margin(t = -25, b = -30)),
+        ) +
+  geom_segment(data = ylabs,aes(x = x, xend = x, y = y, yend = yend),
+               color = "grey50", inherit.aes = FALSE, linetype="dotted") +
+  geom_text(data = ylabs,aes(x = x, y = y, label = lab, hjust = hjust, vjust = vjust),
+            color = "grey50", inherit.aes = FALSE, size=3.5) +
+  labs(title="**Consumer Price Index**:<br>1-Month Percent Change<br>",
+       subtitle="All items in U.S. city average, all urban consumers, seasonally adjusted, from January 1982 to April 2022",
+       caption="Source: U.S. Bureau of Labor Statistics | Plot inspired by Spencer Schien @MrPecners") +
+  guides(color=guide_colorbar(barheight=unit(5, "lines")))
+
+ggsave("p1.png", p1, height=8, width=8, bg="black")
+```
+
+
+ 
+ 
+ 
