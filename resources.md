@@ -119,11 +119,13 @@
 * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by [Claus Wilke](https://twitter.com/ClausWilke)  
 * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
 * Twitter:
-  * Cara Thompson's [Twitter thread](https://twitter.com/cararthompson/status/1511812876016799758) on rstats tips for #30DayChartChallenge
-  * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
-  * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
-  * Colin Angus's [Twitter thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization thought process.
-  * François Valentin's [Twitter thread](https://twitter.com/valen10francois/status/1524040709862576131?s=21&t=TRQljRvuYXzrmKPaNZ3djQ) on old historic maps overlap with modern political maps (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
+  * @cararthompson [thread](https://twitter.com/cararthompson/status/1511812876016799758) on rstats tips for #30DayChartChallenge
+  * @CedScherer [thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
+  * @CedScherer [thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
+  * @VictimOfMaths [thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization
+  * @FilmicAesthetic [thread](https://twitter.com/FilmicAesthetic/status/1512072560715784196) on data visuals inspiring books
+  * @FilmicAesthetic [thread](https://twitter.com/FilmicAesthetic/status/1537535639100567555) on ggplot2 legend shapes
+  * @Valen10Francois [thread](https://twitter.com/valen10francois/status/1524040709862576131?s=21&t=TRQljRvuYXzrmKPaNZ3djQ) on old historic maps overlap with modern political maps (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
   * [@WeAreRLadies](https://twitter.com/WeAreRLadies) tips/ideas/analysis 
     * [day 1](https://twitter.com/WeAreRLadies/status/1515876540394852354), [day 2](https://twitter.com/WeAreRLadies/status/1516256907836674053), [day 3](https://twitter.com/WeAreRLadies/status/1516671536497045506), [day 4](https://twitter.com/WeAreRLadies/status/1516997091109015552), [day 5](https://twitter.com/WeAreRLadies/status/1517402976062967808), [day 6](https://twitter.com/WeAreRLadies/status/1517749920262160384) twitter thread
         * [Code](https://github.com/emitanaka/wearerladies) on Github
