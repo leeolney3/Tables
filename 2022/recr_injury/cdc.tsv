@@ -1,0 +1,491 @@
+"Notes"	"Injury Mechanism & All Other Leading Causes"	"Injury Mechanism & All Other Leading Causes Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate	% of Total Deaths
+	"Cut/Pierce"	"GRINJ-001"	"1999"	"1999"	217	76244208	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2000"	"2000"	214	76667617	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2001"	"2001"	208	76893883	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2002"	"2002"	212	77221939	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2003"	"2003"	224	77449945	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2004"	"2004"	240	77740096	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2005"	"2005"	230	78000867	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2006"	"2006"	260	78282680	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2007"	"2007"	239	78601434	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2008"	"2008"	222	78985529	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2009"	"2009"	210	79276804	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2010"	"2010"	202	79323403	0.3	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2011"	"2011"	181	78848612	0.2	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2012"	"2012"	165	78561723	0.2	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2013"	"2013"	154	78306304	0.2	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2014"	"2014"	148	78187252	0.2	0.0%
+	"Cut/Pierce"	"GRINJ-001"	"2015"	"2015"	131	78147652	0.2	0.0%
+	"Cut/Pierce"	"GRINJ-001"	"2016"	"2016"	166	78134923	0.2	0.1%
+	"Cut/Pierce"	"GRINJ-001"	"2017"	"2017"	142	78213917	0.2	0.0%
+	"Cut/Pierce"	"GRINJ-001"	"2018"	"2018"	132	78134457	0.2	0.0%
+	"Cut/Pierce"	"GRINJ-001"	"2019"	"2019"	112	77842364	0.1	0.0%
+	"Cut/Pierce"	"GRINJ-001"	"2020 "	"2020"	140	77519345	0.2	0.0%
+	"Drowning"	"GRINJ-002"	"1999"	"1999"	1263	76244208	1.7	0.4%
+	"Drowning"	"GRINJ-002"	"2000"	"2000"	1281	76667617	1.7	0.4%
+	"Drowning"	"GRINJ-002"	"2001"	"2001"	1175	76893883	1.5	0.4%
+	"Drowning"	"GRINJ-002"	"2002"	"2002"	1159	77221939	1.5	0.4%
+	"Drowning"	"GRINJ-002"	"2003"	"2003"	1047	77449945	1.4	0.3%
+	"Drowning"	"GRINJ-002"	"2004"	"2004"	1048	77740096	1.3	0.3%
+	"Drowning"	"GRINJ-002"	"2005"	"2005"	1113	78000867	1.4	0.4%
+	"Drowning"	"GRINJ-002"	"2006"	"2006"	1074	78282680	1.4	0.4%
+	"Drowning"	"GRINJ-002"	"2007"	"2007"	1052	78601434	1.3	0.3%
+	"Drowning"	"GRINJ-002"	"2008"	"2008"	1031	78985529	1.3	0.3%
+	"Drowning"	"GRINJ-002"	"2009"	"2009"	987	79276804	1.2	0.3%
+	"Drowning"	"GRINJ-002"	"2010"	"2010"	1047	79323403	1.3	0.3%
+	"Drowning"	"GRINJ-002"	"2011"	"2011"	964	78848612	1.2	0.3%
+	"Drowning"	"GRINJ-002"	"2012"	"2012"	991	78561723	1.3	0.3%
+	"Drowning"	"GRINJ-002"	"2013"	"2013"	898	78306304	1.1	0.3%
+	"Drowning"	"GRINJ-002"	"2014"	"2014"	904	78187252	1.2	0.3%
+	"Drowning"	"GRINJ-002"	"2015"	"2015"	897	78147652	1.1	0.3%
+	"Drowning"	"GRINJ-002"	"2016"	"2016"	995	78134923	1.3	0.3%
+	"Drowning"	"GRINJ-002"	"2017"	"2017"	928	78213917	1.2	0.3%
+	"Drowning"	"GRINJ-002"	"2018"	"2018"	903	78134457	1.2	0.3%
+	"Drowning"	"GRINJ-002"	"2019"	"2019"	881	77842364	1.1	0.3%
+	"Drowning"	"GRINJ-002"	"2020 "	"2020"	937	77519345	1.2	0.3%
+	"Fall"	"GRINJ-003"	"1999"	"1999"	268	76244208	0.4	0.1%
+	"Fall"	"GRINJ-003"	"2000"	"2000"	218	76667617	0.3	0.1%
+	"Fall"	"GRINJ-003"	"2001"	"2001"	235	76893883	0.3	0.1%
+	"Fall"	"GRINJ-003"	"2002"	"2002"	205	77221939	0.3	0.1%
+	"Fall"	"GRINJ-003"	"2003"	"2003"	234	77449945	0.3	0.1%
+	"Fall"	"GRINJ-003"	"2004"	"2004"	217	77740096	0.3	0.1%
+	"Fall"	"GRINJ-003"	"2005"	"2005"	193	78000867	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2006"	"2006"	200	78282680	0.3	0.1%
+	"Fall"	"GRINJ-003"	"2007"	"2007"	193	78601434	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2008"	"2008"	192	78985529	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2009"	"2009"	170	79276804	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2010"	"2010"	165	79323403	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2011"	"2011"	175	78848612	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2012"	"2012"	167	78561723	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2013"	"2013"	164	78306304	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2014"	"2014"	155	78187252	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2015"	"2015"	183	78147652	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2016"	"2016"	169	78134923	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2017"	"2017"	189	78213917	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2018"	"2018"	159	78134457	0.2	0.1%
+	"Fall"	"GRINJ-003"	"2019"	"2019"	198	77842364	0.3	0.1%
+	"Fall"	"GRINJ-003"	"2020 "	"2020"	167	77519345	0.2	0.1%
+	"Fire/Flame"	"GRINJ-004"	"1999"	"1999"	727	76244208	1.0	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2000"	"2000"	704	76667617	0.9	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2001"	"2001"	612	76893883	0.8	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2002"	"2002"	626	77221939	0.8	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2003"	"2003"	577	77449945	0.7	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2004"	"2004"	600	77740096	0.8	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2005"	"2005"	562	78000867	0.7	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2006"	"2006"	514	78282680	0.7	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2007"	"2007"	542	78601434	0.7	0.2%
+	"Fire/Flame"	"GRINJ-004"	"2008"	"2008"	436	78985529	0.6	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2009"	"2009"	405	79276804	0.5	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2010"	"2010"	391	79323403	0.5	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2011"	"2011"	346	78848612	0.4	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2012"	"2012"	286	78561723	0.4	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2013"	"2013"	357	78306304	0.5	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2014"	"2014"	318	78187252	0.4	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2015"	"2015"	281	78147652	0.4	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2016"	"2016"	330	78134923	0.4	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2017"	"2017"	330	78213917	0.4	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2018"	"2018"	345	78134457	0.4	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2019"	"2019"	261	77842364	0.3	0.1%
+	"Fire/Flame"	"GRINJ-004"	"2020 "	"2020"	262	77519345	0.3	0.1%
+	"Hot object/Substance"	"GRINJ-005"	"1999"	"1999"	12	76244208	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2000"	"2000"	11	76667617	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2001"	"2001"	7	76893883	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2002"	"2002"	8	77221939	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2003"	"2003"	7	77449945	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2004"	"2004"	7	77740096	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2005"	"2005"	10	78000867	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2006"	"2006"	8	78282680	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2007"	"2007"	9	78601434	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2008"	"2008"	7	78985529	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2009"	"2009"	3	79276804	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2010"	"2010"	8	79323403	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2011"	"2011"	3	78848612	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2012"	"2012"	3	78561723	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2013"	"2013"	2	78306304	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2014"	"2014"	4	78187252	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2015"	"2015"	4	78147652	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2016"	"2016"	10	78134923	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2017"	"2017"	8	78213917	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2018"	"2018"	9	78134457	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2019"	"2019"	6	77842364	Unreliable	0.0%
+	"Hot object/Substance"	"GRINJ-005"	"2020 "	"2020"	4	77519345	Unreliable	0.0%
+	"Firearm"	"GRINJ-006"	"1999"	"1999"	3377	76244208	4.4	1.1%
+	"Firearm"	"GRINJ-006"	"2000"	"2000"	3029	76667617	4.0	1.0%
+	"Firearm"	"GRINJ-006"	"2001"	"2001"	2926	76893883	3.8	1.0%
+	"Firearm"	"GRINJ-006"	"2002"	"2002"	2883	77221939	3.7	1.0%
+	"Firearm"	"GRINJ-006"	"2003"	"2003"	2841	77449945	3.7	0.9%
+	"Firearm"	"GRINJ-006"	"2004"	"2004"	2845	77740096	3.7	0.9%
+	"Firearm"	"GRINJ-006"	"2005"	"2005"	3020	78000867	3.9	1.0%
+	"Firearm"	"GRINJ-006"	"2006"	"2006"	3212	78282680	4.1	1.1%
+	"Firearm"	"GRINJ-006"	"2007"	"2007"	3051	78601434	3.9	1.0%
+	"Firearm"	"GRINJ-006"	"2008"	"2008"	2957	78985529	3.7	1.0%
+	"Firearm"	"GRINJ-006"	"2009"	"2009"	2797	79276804	3.5	0.9%
+	"Firearm"	"GRINJ-006"	"2010"	"2010"	2700	79323403	3.4	0.9%
+	"Firearm"	"GRINJ-006"	"2011"	"2011"	2692	78848612	3.4	0.9%
+	"Firearm"	"GRINJ-006"	"2012"	"2012"	2683	78561723	3.4	0.9%
+	"Firearm"	"GRINJ-006"	"2013"	"2013"	2450	78306304	3.1	0.8%
+	"Firearm"	"GRINJ-006"	"2014"	"2014"	2542	78187252	3.3	0.8%
+	"Firearm"	"GRINJ-006"	"2015"	"2015"	2815	78147652	3.6	0.9%
+	"Firearm"	"GRINJ-006"	"2016"	"2016"	3143	78134923	4.0	1.0%
+	"Firearm"	"GRINJ-006"	"2017"	"2017"	3430	78213917	4.4	1.1%
+	"Firearm"	"GRINJ-006"	"2018"	"2018"	3335	78134457	4.3	1.1%
+	"Firearm"	"GRINJ-006"	"2019"	"2019"	3378	77842364	4.3	1.1%
+	"Firearm"	"GRINJ-006"	"2020 "	"2020"	4357	77519345	5.6	1.4%
+	"Machinery"	"GRINJ-007"	"1999"	"1999"	37	76244208	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2000"	"2000"	34	76667617	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2001"	"2001"	38	76893883	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2002"	"2002"	35	77221939	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2003"	"2003"	35	77449945	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2004"	"2004"	49	77740096	0.1	0.0%
+	"Machinery"	"GRINJ-007"	"2005"	"2005"	48	78000867	0.1	0.0%
+	"Machinery"	"GRINJ-007"	"2006"	"2006"	44	78282680	0.1	0.0%
+	"Machinery"	"GRINJ-007"	"2007"	"2007"	35	78601434	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2008"	"2008"	33	78985529	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2009"	"2009"	31	79276804	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2010"	"2010"	29	79323403	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2011"	"2011"	29	78848612	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2012"	"2012"	31	78561723	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2013"	"2013"	25	78306304	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2014"	"2014"	33	78187252	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2015"	"2015"	23	78147652	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2016"	"2016"	26	78134923	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2017"	"2017"	33	78213917	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2018"	"2018"	37	78134457	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2019"	"2019"	21	77842364	0.0	0.0%
+	"Machinery"	"GRINJ-007"	"2020 "	"2020"	18	77519345	Unreliable	0.0%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"1999"	"1999"	7297	76244208	9.6	2.4%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2000"	"2000"	7335	76667617	9.6	2.4%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2001"	"2001"	7208	76893883	9.4	2.4%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2002"	"2002"	7550	77221939	9.8	2.5%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2003"	"2003"	7179	77449945	9.3	2.4%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2004"	"2004"	7139	77740096	9.2	2.4%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2005"	"2005"	6641	78000867	8.5	2.2%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2006"	"2006"	6503	78282680	8.3	2.2%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2007"	"2007"	6173	78601434	7.9	2.0%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2008"	"2008"	4974	78985529	6.3	1.6%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2009"	"2009"	4473	79276804	5.6	1.5%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2010"	"2010"	4044	79323403	5.1	1.3%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2011"	"2011"	3916	78848612	5.0	1.3%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2012"	"2012"	3736	78561723	4.8	1.2%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2013"	"2013"	3421	78306304	4.4	1.1%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2014"	"2014"	3472	78187252	4.4	1.1%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2015"	"2015"	3630	78147652	4.6	1.2%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2016"	"2016"	3800	78134923	4.9	1.3%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2017"	"2017"	3669	78213917	4.7	1.2%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2018"	"2018"	3314	78134457	4.2	1.1%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2019"	"2019"	3233	77842364	4.2	1.1%
+	"Motor Vehicle Traffic"	"GRINJ-008"	"2020 "	"2020"	3639	77519345	4.7	1.2%
+	"Other Pedal cyclist"	"GRINJ-009"	"1999"	"1999"	46	76244208	0.1	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2000"	"2000"	47	76667617	0.1	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2001"	"2001"	35	76893883	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2002"	"2002"	32	77221939	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2003"	"2003"	29	77449945	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2004"	"2004"	35	77740096	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2005"	"2005"	29	78000867	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2006"	"2006"	34	78282680	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2007"	"2007"	34	78601434	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2008"	"2008"	28	78985529	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2009"	"2009"	31	79276804	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2010"	"2010"	26	79323403	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2011"	"2011"	27	78848612	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2012"	"2012"	22	78561723	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2013"	"2013"	27	78306304	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2014"	"2014"	15	78187252	Unreliable	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2015"	"2015"	30	78147652	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2016"	"2016"	24	78134923	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2017"	"2017"	25	78213917	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2018"	"2018"	27	78134457	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2019"	"2019"	27	77842364	0.0	0.0%
+	"Other Pedal cyclist"	"GRINJ-009"	"2020 "	"2020"	26	77519345	0.0	0.0%
+	"Other Pedestrian"	"GRINJ-010"	"1999"	"1999"	274	76244208	0.4	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2000"	"2000"	265	76667617	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2001"	"2001"	211	76893883	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2002"	"2002"	204	77221939	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2003"	"2003"	209	77449945	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2004"	"2004"	231	77740096	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2005"	"2005"	240	78000867	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2006"	"2006"	219	78282680	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2007"	"2007"	225	78601434	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2008"	"2008"	217	78985529	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2009"	"2009"	197	79276804	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2010"	"2010"	209	79323403	0.3	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2011"	"2011"	159	78848612	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2012"	"2012"	190	78561723	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2013"	"2013"	171	78306304	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2014"	"2014"	183	78187252	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2015"	"2015"	157	78147652	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2016"	"2016"	162	78134923	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2017"	"2017"	158	78213917	0.2	0.1%
+	"Other Pedestrian"	"GRINJ-010"	"2018"	"2018"	129	78134457	0.2	0.0%
+	"Other Pedestrian"	"GRINJ-010"	"2019"	"2019"	133	77842364	0.2	0.0%
+	"Other Pedestrian"	"GRINJ-010"	"2020 "	"2020"	107	77519345	0.1	0.0%
+	"Other land transport"	"GRINJ-011"	"1999"	"1999"	388	76244208	0.5	0.1%
+	"Other land transport"	"GRINJ-011"	"2000"	"2000"	324	76667617	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2001"	"2001"	303	76893883	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2002"	"2002"	249	77221939	0.3	0.1%
+	"Other land transport"	"GRINJ-011"	"2003"	"2003"	336	77449945	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2004"	"2004"	303	77740096	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2005"	"2005"	319	78000867	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2006"	"2006"	278	78282680	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2007"	"2007"	289	78601434	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2008"	"2008"	285	78985529	0.4	0.1%
+	"Other land transport"	"GRINJ-011"	"2009"	"2009"	253	79276804	0.3	0.1%
+	"Other land transport"	"GRINJ-011"	"2010"	"2010"	213	79323403	0.3	0.1%
+	"Other land transport"	"GRINJ-011"	"2011"	"2011"	189	78848612	0.2	0.1%
+	"Other land transport"	"GRINJ-011"	"2012"	"2012"	183	78561723	0.2	0.1%
+	"Other land transport"	"GRINJ-011"	"2013"	"2013"	184	78306304	0.2	0.1%
+	"Other land transport"	"GRINJ-011"	"2014"	"2014"	178	78187252	0.2	0.1%
+	"Other land transport"	"GRINJ-011"	"2015"	"2015"	224	78147652	0.3	0.1%
+	"Other land transport"	"GRINJ-011"	"2016"	"2016"	194	78134923	0.2	0.1%
+	"Other land transport"	"GRINJ-011"	"2017"	"2017"	230	78213917	0.3	0.1%
+	"Other land transport"	"GRINJ-011"	"2018"	"2018"	159	78134457	0.2	0.1%
+	"Other land transport"	"GRINJ-011"	"2019"	"2019"	212	77842364	0.3	0.1%
+	"Other land transport"	"GRINJ-011"	"2020 "	"2020"	222	77519345	0.3	0.1%
+	"Other transport"	"GRINJ-012"	"1999"	"1999"	144	76244208	0.2	0.0%
+	"Other transport"	"GRINJ-012"	"2000"	"2000"	135	76667617	0.2	0.0%
+	"Other transport"	"GRINJ-012"	"2001"	"2001"	146	76893883	0.2	0.0%
+	"Other transport"	"GRINJ-012"	"2002"	"2002"	115	77221939	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2003"	"2003"	123	77449945	0.2	0.0%
+	"Other transport"	"GRINJ-012"	"2004"	"2004"	91	77740096	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2005"	"2005"	97	78000867	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2006"	"2006"	118	78282680	0.2	0.0%
+	"Other transport"	"GRINJ-012"	"2007"	"2007"	86	78601434	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2008"	"2008"	70	78985529	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2009"	"2009"	74	79276804	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2010"	"2010"	61	79323403	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2011"	"2011"	91	78848612	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2012"	"2012"	60	78561723	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2013"	"2013"	63	78306304	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2014"	"2014"	63	78187252	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2015"	"2015"	52	78147652	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2016"	"2016"	75	78134923	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2017"	"2017"	68	78213917	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2018"	"2018"	42	78134457	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2019"	"2019"	48	77842364	0.1	0.0%
+	"Other transport"	"GRINJ-012"	"2020 "	"2020"	70	77519345	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"1999"	"1999"	107	76244208	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2000"	"2000"	95	76667617	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2001"	"2001"	93	76893883	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2002"	"2002"	77	77221939	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2003"	"2003"	94	77449945	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2004"	"2004"	94	77740096	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2005"	"2005"	103	78000867	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2006"	"2006"	92	78282680	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2007"	"2007"	96	78601434	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2008"	"2008"	88	78985529	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2009"	"2009"	79	79276804	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2010"	"2010"	100	79323403	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2011"	"2011"	117	78848612	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2012"	"2012"	80	78561723	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2013"	"2013"	88	78306304	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2014"	"2014"	91	78187252	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2015"	"2015"	68	78147652	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2016"	"2016"	77	78134923	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2017"	"2017"	71	78213917	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2018"	"2018"	78	78134457	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2019"	"2019"	91	77842364	0.1	0.0%
+	"Natural/Environmental"	"GRINJ-013"	"2020 "	"2020"	95	77519345	0.1	0.0%
+	"Overexertion"	"GRINJ-014"	"2000"	"2000"	1	76667617	Unreliable	0.0%
+	"Overexertion"	"GRINJ-014"	"2003"	"2003"	1	77449945	Unreliable	0.0%
+	"Overexertion"	"GRINJ-014"	"2011"	"2011"	1	78848612	Unreliable	0.0%
+	"Overexertion"	"GRINJ-014"	"2013"	"2013"	1	78306304	Unreliable	0.0%
+	"Overexertion"	"GRINJ-014"	"2019"	"2019"	1	77842364	Unreliable	0.0%
+	"Overexertion"	"GRINJ-014"	"2020 "	"2020"	1	77519345	Unreliable	0.0%
+	"Poisoning"	"GRINJ-015"	"1999"	"1999"	524	76244208	0.7	0.2%
+	"Poisoning"	"GRINJ-015"	"2000"	"2000"	640	76667617	0.8	0.2%
+	"Poisoning"	"GRINJ-015"	"2001"	"2001"	716	76893883	0.9	0.2%
+	"Poisoning"	"GRINJ-015"	"2002"	"2002"	805	77221939	1.0	0.3%
+	"Poisoning"	"GRINJ-015"	"2003"	"2003"	875	77449945	1.1	0.3%
+	"Poisoning"	"GRINJ-015"	"2004"	"2004"	1001	77740096	1.3	0.3%
+	"Poisoning"	"GRINJ-015"	"2005"	"2005"	965	78000867	1.2	0.3%
+	"Poisoning"	"GRINJ-015"	"2006"	"2006"	1050	78282680	1.3	0.3%
+	"Poisoning"	"GRINJ-015"	"2007"	"2007"	1224	78601434	1.6	0.4%
+	"Poisoning"	"GRINJ-015"	"2008"	"2008"	1208	78985529	1.5	0.4%
+	"Poisoning"	"GRINJ-015"	"2009"	"2009"	1036	79276804	1.3	0.3%
+	"Poisoning"	"GRINJ-015"	"2010"	"2010"	1082	79323403	1.4	0.4%
+	"Poisoning"	"GRINJ-015"	"2011"	"2011"	1043	78848612	1.3	0.3%
+	"Poisoning"	"GRINJ-015"	"2012"	"2012"	891	78561723	1.1	0.3%
+	"Poisoning"	"GRINJ-015"	"2013"	"2013"	864	78306304	1.1	0.3%
+	"Poisoning"	"GRINJ-015"	"2014"	"2014"	862	78187252	1.1	0.3%
+	"Poisoning"	"GRINJ-015"	"2015"	"2015"	1035	78147652	1.3	0.3%
+	"Poisoning"	"GRINJ-015"	"2016"	"2016"	1114	78134923	1.4	0.4%
+	"Poisoning"	"GRINJ-015"	"2017"	"2017"	1064	78213917	1.4	0.4%
+	"Poisoning"	"GRINJ-015"	"2018"	"2018"	947	78134457	1.2	0.3%
+	"Poisoning"	"GRINJ-015"	"2019"	"2019"	1064	77842364	1.4	0.4%
+	"Poisoning"	"GRINJ-015"	"2020 "	"2020"	1845	77519345	2.4	0.6%
+	"Struck by or against"	"GRINJ-016"	"1999"	"1999"	160	76244208	0.2	0.1%
+	"Struck by or against"	"GRINJ-016"	"2000"	"2000"	141	76667617	0.2	0.0%
+	"Struck by or against"	"GRINJ-016"	"2001"	"2001"	126	76893883	0.2	0.0%
+	"Struck by or against"	"GRINJ-016"	"2002"	"2002"	131	77221939	0.2	0.0%
+	"Struck by or against"	"GRINJ-016"	"2003"	"2003"	86	77449945	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2004"	"2004"	97	77740096	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2005"	"2005"	110	78000867	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2006"	"2006"	105	78282680	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2007"	"2007"	113	78601434	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2008"	"2008"	124	78985529	0.2	0.0%
+	"Struck by or against"	"GRINJ-016"	"2009"	"2009"	81	79276804	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2010"	"2010"	82	79323403	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2011"	"2011"	92	78848612	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2012"	"2012"	103	78561723	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2013"	"2013"	81	78306304	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2014"	"2014"	88	78187252	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2015"	"2015"	73	78147652	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2016"	"2016"	61	78134923	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2017"	"2017"	64	78213917	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2018"	"2018"	61	78134457	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2019"	"2019"	49	77842364	0.1	0.0%
+	"Struck by or against"	"GRINJ-016"	"2020 "	"2020"	74	77519345	0.1	0.0%
+	"Suffocation"	"GRINJ-017"	"1999"	"1999"	1055	76244208	1.4	0.3%
+	"Suffocation"	"GRINJ-017"	"2000"	"2000"	1154	76667617	1.5	0.4%
+	"Suffocation"	"GRINJ-017"	"2001"	"2001"	1140	76893883	1.5	0.4%
+	"Suffocation"	"GRINJ-017"	"2002"	"2002"	1160	77221939	1.5	0.4%
+	"Suffocation"	"GRINJ-017"	"2003"	"2003"	1133	77449945	1.5	0.4%
+	"Suffocation"	"GRINJ-017"	"2004"	"2004"	1307	77740096	1.7	0.4%
+	"Suffocation"	"GRINJ-017"	"2005"	"2005"	1241	78000867	1.6	0.4%
+	"Suffocation"	"GRINJ-017"	"2006"	"2006"	1253	78282680	1.6	0.4%
+	"Suffocation"	"GRINJ-017"	"2007"	"2007"	1169	78601434	1.5	0.4%
+	"Suffocation"	"GRINJ-017"	"2008"	"2008"	1268	78985529	1.6	0.4%
+	"Suffocation"	"GRINJ-017"	"2009"	"2009"	1274	79276804	1.6	0.4%
+	"Suffocation"	"GRINJ-017"	"2010"	"2010"	1297	79323403	1.6	0.4%
+	"Suffocation"	"GRINJ-017"	"2011"	"2011"	1354	78848612	1.7	0.4%
+	"Suffocation"	"GRINJ-017"	"2012"	"2012"	1338	78561723	1.7	0.4%
+	"Suffocation"	"GRINJ-017"	"2013"	"2013"	1381	78306304	1.8	0.5%
+	"Suffocation"	"GRINJ-017"	"2014"	"2014"	1372	78187252	1.8	0.5%
+	"Suffocation"	"GRINJ-017"	"2015"	"2015"	1394	78147652	1.8	0.5%
+	"Suffocation"	"GRINJ-017"	"2016"	"2016"	1430	78134923	1.8	0.5%
+	"Suffocation"	"GRINJ-017"	"2017"	"2017"	1633	78213917	2.1	0.5%
+	"Suffocation"	"GRINJ-017"	"2018"	"2018"	1646	78134457	2.1	0.5%
+	"Suffocation"	"GRINJ-017"	"2019"	"2019"	1508	77842364	1.9	0.5%
+	"Suffocation"	"GRINJ-017"	"2020 "	"2020"	1411	77519345	1.8	0.5%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"1999"	"1999"	235	76244208	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2000"	"2000"	201	76667617	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2001"	"2001"	239	76893883	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2002"	"2002"	260	77221939	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2003"	"2003"	210	77449945	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2004"	"2004"	206	77740096	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2005"	"2005"	192	78000867	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2006"	"2006"	189	78282680	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2007"	"2007"	187	78601434	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2008"	"2008"	190	78985529	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2009"	"2009"	194	79276804	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2010"	"2010"	189	79323403	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2011"	"2011"	218	78848612	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2012"	"2012"	154	78561723	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2013"	"2013"	182	78306304	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2014"	"2014"	195	78187252	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2015"	"2015"	196	78147652	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2016"	"2016"	203	78134923	0.3	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2017"	"2017"	186	78213917	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2018"	"2018"	176	78134457	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2019"	"2019"	191	77842364	0.2	0.1%
+	"Other specified, classifiable Injury"	"GRINJ-018"	"2020 "	"2020"	178	77519345	0.2	0.1%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"1999"	"1999"	193	76244208	0.3	0.1%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2000"	"2000"	189	76667617	0.2	0.1%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2001"	"2001"	172	76893883	0.2	0.1%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2002"	"2002"	135	77221939	0.2	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2003"	"2003"	112	77449945	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2004"	"2004"	120	77740096	0.2	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2005"	"2005"	126	78000867	0.2	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2006"	"2006"	131	78282680	0.2	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2007"	"2007"	127	78601434	0.2	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2008"	"2008"	121	78985529	0.2	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2009"	"2009"	111	79276804	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2010"	"2010"	94	79323403	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2011"	"2011"	85	78848612	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2012"	"2012"	101	78561723	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2013"	"2013"	93	78306304	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2014"	"2014"	84	78187252	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2015"	"2015"	90	78147652	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2016"	"2016"	94	78134923	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2017"	"2017"	82	78213917	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2018"	"2018"	99	78134457	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2019"	"2019"	98	77842364	0.1	0.0%
+	"Other specified, not elsewhere classified Injury"	"GRINJ-019"	"2020 "	"2020"	90	77519345	0.1	0.0%
+	"Unspecified Injury"	"GRINJ-020"	"1999"	"1999"	385	76244208	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2000"	"2000"	360	76667617	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2001"	"2001"	389	76893883	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2002"	"2002"	393	77221939	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2003"	"2003"	390	77449945	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2004"	"2004"	416	77740096	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2005"	"2005"	436	78000867	0.6	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2006"	"2006"	393	78282680	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2007"	"2007"	368	78601434	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2008"	"2008"	397	78985529	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2009"	"2009"	370	79276804	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2010"	"2010"	351	79323403	0.4	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2011"	"2011"	369	78848612	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2012"	"2012"	338	78561723	0.4	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2013"	"2013"	291	78306304	0.4	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2014"	"2014"	289	78187252	0.4	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2015"	"2015"	373	78147652	0.5	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2016"	"2016"	263	78134923	0.3	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2017"	"2017"	276	78213917	0.4	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2018"	"2018"	289	78134457	0.4	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2019"	"2019"	227	77842364	0.3	0.1%
+	"Unspecified Injury"	"GRINJ-020"	"2020 "	"2020"	257	77519345	0.3	0.1%
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Injury Mechanism & All Other Leading Causes: Cut/Pierce; Drowning; Fall; Fire/Flame; Hot object/Substance; Firearm; Machinery;"
+"Motor Vehicle Traffic; Other Pedal cyclist; Other Pedestrian; Other land transport; Other transport; Natural/Environmental;"
+"Overexertion; Poisoning; Struck by or against; Suffocation; Other specified, classifiable Injury; Other specified, not elsewhere"
+"classified Injury; Unspecified Injury"
+"Single-Year Ages: 1 year; 2 years; 3 years; 4 years; 5 years; 6 years; 7 years; 8 years; 9 years; 10 years; 11 years; 12 years;"
+"13 years; 14 years; 15 years; 16 years; 17 years; 18 years; 19 years"
+"Group By: Injury Mechanism & All Other Leading Causes; Year"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Jun 1, 2022 4:44:58 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on Jun 1, 2022 4:44:58 AM"
+"---"
+Messages:
+"1. Rows with zero Deaths are hidden. Use Quick Options above to show zero rows."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"6. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"7. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
