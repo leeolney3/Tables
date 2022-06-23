@@ -31,13 +31,15 @@
   <summary><b>Colors</b> (click to expand)</summary>
 
 <!-- toc -->
+* [4 Ways to use colors in ggplot more efficiently](https://albert-rapp.de/post/2022-02-19-ggplot2-color-tips-from-datawrapper/) by [Albert Rapp](https://twitter.com/rappa753)
+* [Color Contrast Tools - Policy Viz](https://policyviz.com/resources/color-contrast-tools/) by [Jon Schwabish](https://twitter.com/jschwabish/status/1540093419405643779)   
 * [Lisa Charlotte Muth](https://twitter.com/lisacmuth) in [Datawrapper Blog](https://blog.datawrapper.de/)
   * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
   * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
   * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
-* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)
-* [4 Ways to use colors in ggplot more efficiently](https://albert-rapp.de/post/2022-02-19-ggplot2-color-tips-from-datawrapper/) by [Albert Rapp](https://twitter.com/rappa753)
+* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
+* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)  
 * Twitter:
   * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
   * Cédric Scherer's [Twitter post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
@@ -53,12 +55,13 @@
   <summary><b>Data visualization tutorials (R)</b> (click to expand)</summary>
 
 <!-- toc -->
- 
-* Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)
+* [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by [Tom Mock](https://twitter.com/thomas_mock/status/1539950648778694658) 
+* Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
 * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by [Clare West](https://twitter.com/claree_west)
 * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by [Spencer Schien](https://twitter.com/MrPecners)
 * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by [Tobias Stalder](https://twitter.com/toeb18)
 * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by [Nicola Rennie](https://twitter.com/nrennie35/status/1534121769409605637)  
+* [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by [Nicola Rennie](https://twitter.com/nrennie35/status/1539976756320382980)   
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by [Isabella Velásquez](https://twitter.com/ivelasq3)
 * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) by [Albert Rapp](https://twitter.com/rappa753)
@@ -67,6 +70,7 @@
 * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by [Jamie Hudson](https://twitter.com/Jamie_Bio)
 * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
 * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by [Tobias Stalder](https://twitter.com/toeb18/status/1532455477166194688)
+* [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by [Andrew Heiss](https://twitter.com/andrewheiss/status/1540084026685497345)  
 * Route finding (sfnetwork vignettes) [Twitter post](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey (@quite_grey)
 * Using thumbnails in ggplot2 [Twitter post](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey (@quite_grey)
 * Recreations
@@ -117,6 +121,7 @@
 * [Script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments by Tom Mock (@thomas_mock)
 * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by [Luis D. Verde Arregoitia](https://twitter.com/LuisDVerde)
 * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by [Claus Wilke](https://twitter.com/ClausWilke)  
+* [Tutorial](https://rpubs.com/haleyepperlyfox/916671) on web scraping data from interactive maps using R and rvest package by [Haley Epperly](https://twitter.com/haley_fox_epp)  
 * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by [Christophe Nicault](https://twitter.com/cnicault)
 * Twitter:
   * @cararthompson [thread](https://twitter.com/cararthompson/status/1511812876016799758) on rstats tips for #30DayChartChallenge
