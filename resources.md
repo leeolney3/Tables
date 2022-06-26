@@ -72,6 +72,7 @@
 * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by [Tobias Stalder](https://twitter.com/toeb18/status/1532455477166194688)
 * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by [Andrew Heiss](https://twitter.com/andrewheiss/status/1540084026685497345)  
 * Route finding (sfnetwork vignettes) [Twitter post](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey (@quite_grey)
+* [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by [Marco Sciaini @shinysci](https://twitter.com/shinysci)  
 * Using thumbnails in ggplot2 [Twitter post](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey (@quite_grey)
 * Recreations
   * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by [Bob Rudis](https://twitter.com/hrbrmstr)
@@ -197,6 +198,7 @@
 * Lisa Lendway [blog](https://lisalendway.netlify.app/blog.html)
 * Luis D. Verde Arregoitia [website](https://luisdva.github.io/)
 * Luis Freites [Github](https://github.com/luisfrein), [blog](https://luisdva.github.io/)
+* Marco Sciaini @shinysci [Github](https://github.com/marcosci)  
 * Margaret Siple [Github](https://github.com/mcsiple)
 * Milos Popovic [blog](https://milospopovic.net/blog/) for map tutorials 
 * Near and Distant [Github](https://github.com/NearAndDistant), [blog](https://nearanddistant.co.uk/)
