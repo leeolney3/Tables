@@ -131,6 +131,7 @@
   * @VictimOfMaths [thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization
   * @FilmicAesthetic [thread](https://twitter.com/FilmicAesthetic/status/1512072560715784196) on data visuals inspiring books
   * @FilmicAesthetic [thread](https://twitter.com/FilmicAesthetic/status/1537535639100567555) on ggplot2 legend shapes
+  * @shinysci [thread](https://twitter.com/shinysci/status/1541831867388858368) on how to use #rstats in #GitHub actions to scrape and store data online and then process it ... the #rspatial way
   * @Valen10Francois [thread](https://twitter.com/valen10francois/status/1524040709862576131?s=21&t=TRQljRvuYXzrmKPaNZ3djQ) on old historic maps overlap with modern political maps (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
   * [@WeAreRLadies](https://twitter.com/WeAreRLadies) tips/ideas/analysis 
     * [day 1](https://twitter.com/WeAreRLadies/status/1515876540394852354), [day 2](https://twitter.com/WeAreRLadies/status/1516256907836674053), [day 3](https://twitter.com/WeAreRLadies/status/1516671536497045506), [day 4](https://twitter.com/WeAreRLadies/status/1516997091109015552), [day 5](https://twitter.com/WeAreRLadies/status/1517402976062967808), [day 6](https://twitter.com/WeAreRLadies/status/1517749920262160384) twitter thread
