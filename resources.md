@@ -37,6 +37,7 @@
   * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
   * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
   * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
+  * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
 * [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
 * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)  
