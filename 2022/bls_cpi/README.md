@@ -1,4 +1,4 @@
--   Source: U.S. Bureau of Labor Statistics by way of Data Is Plural
+-   Source: [U.S. Bureau of Labor Statistics](https://www.bls.gov/cpi/) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-06-15-edition/)
 -   Data: Consumer Price Index, 1-Month Percent Change. All items in U.S. city average, all urban consumers, seasonally adjusted.
     -   Data extracted on: June 15, 2022 (8:43:36 AM)
 -   Plot inspired by: Spencer Schien [\@MrPecners](https://twitter.com/MrPecners/status/1536722816950837248)
