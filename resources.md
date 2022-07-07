@@ -40,6 +40,7 @@
   * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
 * [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
+* [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
 * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)  
 * Twitter:
   * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
