@@ -1,0 +1,108 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# 2022-07-11
+# 360 project, add “Employees left” on the y-axis to line and beeswarm plot
+
+```{r, include=FALSE}
+library(tidyverse)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+font_add_google("Eczar")
+f1="Eczar"
+```
+
+
+```{r, fig.height=2.5, fig.width=4, warning=F, message=F}
+### 1b: Line plot
+df1b = df1 %>% mutate(s="Pixel Systems - Outdated work practices and no efforts to improve work culture", s2 ="Scenario 1")
+df2b = df2 %>% mutate(s="Woodcoms - Outdated work practices with low efforts to improve work culture", s2 ="Scenario 2")
+df3b = df3 %>% mutate(s="Sun Co. - Outdated work practices with moderate efforts to improve work culture", s2 ="Scenario 3")
+
+dfb = rbind(df1b, df2b, df3b) %>% 
+  group_by(s, run) %>%
+  mutate(cs= cumsum(number_of_employees_that_left)) %>%
+  mutate(s = factor(s, levels=c("Pixel Systems - Outdated work practices and no efforts to improve work culture","Woodcoms - Outdated work practices with low efforts to improve work culture", "Sun Co. - Outdated work practices with moderate efforts to improve work culture")))
+  
+df %>%
+  ggplot(aes(month, cs, color=s)) +
+  geom_line(size=1.5) +
+  geom_point(data=dfb, aes(x=month, y=cs, color=s), alpha=.1, size=.2) +
+  #geom_textpath(aes(label=s2),size=4.3, vjust = -0.5, hjust=.7, rich=TRUE, family=f1) +
+  geom_vline(xintercept = max(df$month), color="grey80") +
+  geom_text(data=df %>% group_by(s2) %>% filter(month==max(month)),
+            aes(x=max(df$month)+2, label=scales::comma(cs)), 
+            hjust=0, family=f1, fontface="bold", size=3.8, show.legend = F) +
+  geom_text(data=df %>% filter(month==max(month), s2=="Scenario 1"),
+            aes(x=max(df$month)+2, y=cs+100, label="120th\nmonth:"), 
+            hjust=0, color="grey50", size=3.5, family=f1, fontface="bold", lineheight=1) +
+  scale_color_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
+  scale_x_continuous(breaks=seq(0,120,30), expand = expansion(mult = c(0.01, 0.1)),) +
+  scale_y_continuous(expand=c(0,0)) +
+  cowplot::theme_minimal_hgrid(12) +
+  theme(legend.position = "top",
+        legend.direction = "vertical",
+        legend.title=element_blank(),
+        text=element_text(family=f1),
+        plot.title=element_text(size=15),
+        plot.title.position = "plot",
+        plot.margin=margin(.5,.75,.5,.5, unit="cm"),
+        ) +
+  labs(x="Month", y="Employees left",
+       title="Accumulated number of employees that left")
+       
+ggsave("output/b2.png", height=5, width=8, bg="white")
+```
+
+
+
+
+## Section 2: Turnover
+
+```{r, include=FALSE}
+t1 = readr::read_csv("https://raw.githubusercontent.com/leeolney3/Tables/main/2022/project360/20220420-results/scenario_01_turnover.csv") %>% janitor::clean_names() %>% mutate(s="Pixel Systems - Outdated work practices and no efforts to improve work culture")
+t2 = readr::read_csv("https://raw.githubusercontent.com/leeolney3/Tables/main/2022/project360/20220420-results/scenario_02_turnover.csv") %>% janitor::clean_names() %>% mutate(s="Woodcoms - Outdated work practices with low efforts to improve work culture")
+t3 = readr::read_csv("https://raw.githubusercontent.com/leeolney3/Tables/main/2022/project360/20220420-results/scenario_03_turnover.csv") %>% janitor::clean_names() %>% mutate(s="Sun Co. - Outdated work practices with moderate efforts to improve work culture")
+
+t1a = t1 %>% group_by(year, s) %>% summarise(turnover=mean(turnover)) 
+t2a = t2 %>% group_by(year, s) %>% summarise(turnover=mean(turnover)) 
+t3a = t3 %>% group_by(year, s) %>% summarise(turnover=mean(turnover)) 
+dft = rbind(t1a, t2a, t3a) %>%
+  mutate(s = factor(s, levels=c("Pixel Systems - Outdated work practices and no efforts to improve work culture","Woodcoms - Outdated work practices with low efforts to improve work culture","Sun Co. - Outdated work practices with moderate efforts to improve work culture")))
+
+dfu = rbind(t1,t2,t3) %>%
+  mutate(s = factor(s, levels=c("Pixel Systems - Outdated work practices and no efforts to improve work culture","Woodcoms - Outdated work practices with low efforts to improve work culture","Sun Co. - Outdated work practices with moderate efforts to improve work culture")))
+```
+
+  
+```{r, fig.height=3, fig.width=4}
+### 2a: Beeswarm with average
+dft %>%
+  ggplot(aes(x=factor(year), y=turnover, color=s)) +
+  ggbeeswarm::geom_beeswarm(data=dfu, size=.2, cex=.6, alpha=.8) +
+  geom_line(aes(group=s), size=1, alpha=.9) +
+  geom_point(aes(fill=s), shape=21, color="black", size=3, show.legend = F) +
+  scale_color_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
+  scale_fill_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
+  scale_y_continuous(expand=c(0,0),limits=c(0,40),labels=scales::percent_format(scale=1)) +
+  cowplot::theme_minimal_hgrid(12) +
+  theme(text=element_text(family=f1),
+        legend.position="top",
+        legend.direction = "vertical",
+        legend.title=element_blank(),
+        plot.margin=margin(.5,.75,.5,.5, unit="cm"),
+        plot.title=element_text(size=15),
+        plot.title.position = "plot"
+        )  +
+  labs(x="Year", y="Employees left",
+       title="Average Employee Turnover Rate")
+
+ggsave("output/b4.png", bg="white", height=6, width=8)
+```
+
+
+
