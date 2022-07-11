@@ -1,31 +1,42 @@
 ## Links to resources
 
+   
+
 <details>
-  <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
+  <summary><b>Chart types</b> (click to expand)</summary>
 
-<!-- toc -->
+<!-- toc -->  
 
-* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)  
-* [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) 
-  * Rich Iannone || Making Beautiful Tables with {gt} || RStudio [YT video](https://www.youtube.com/watch?v=z0UGmMOxl-c)
-  * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YT video](https://www.youtube.com/watch?v=aPRVzk9pvno)
-  * {gt} tables using #TidyTuesday data | RStudio: [Digital Publications](https://twitter.com/riannone/status/1511387252903010305), [Crosswords](https://twitter.com/rstudio/status/1529138398849810432), [Eurovision](https://twitter.com/kierisi/status/1534204134215548928) by [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and [Richard Iannone](https://twitter.com/riannone)
-  * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by [Tom Mock](https://twitter.com/thomas_mock)
-  * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by [Nicola Rennie](https://twitter.com/nrennie35)
-  * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
-  * Tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) by [Tom Mock](https://twitter.com/thomas_mock)
-  *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by [Jack Davison](https://twitter.com/JDavison_) 
-  *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by [Kaustav Sen](https://twitter.com/kustav_sen)
-* [reactable](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) 
-    * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by [Kyle Cuilla](https://twitter.com/kc_analytics)
-    * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by [Bill Schmid](https://twitter.com/schmid_07)
-    * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by [Georgios Karamanis](https://twitter.com/geokaramanis)
+* [Charts that work: FT visual vocabulary guide](https://www.ft.com/content/c7bb24c9-964d-479f-ba24-03a2b2df6e85)
+* [Chart Suggestions - A Thought-Starter](https://extremepresentation.typepad.com/files/chart-chooser-2020.pdf) by Andrew Abela shared by [30DayChartChallenge](https://github.com/dominicroye/30DayChartChallenge_Edition2022)  
+* [DataVizProject](https://datavizproject.com/)  
+* [FlowingData: Chart Types](https://flowingdata.com/chart-types/) 
+* [From Data to Viz](https://www.data-to-viz.com/)
+* [PolicyViz: The Graphic Continuum](https://policyviz.com/2014/11/11/graphic-continuum-desktop-version/)    
+* [Storytelling with Data Chart Guide](https://www.storytellingwithdata.com/chart-guide)
+* [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
 
-<!-- toc -->
+ <!-- toc -->
+ 
+<!-- tocstop -->  
+</details>  
+
+<details>
+  <summary><b>Weekly highlights/newsletters</b> (click to expand)</summary>
+
+<!-- toc -->  
+
+* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/): weekly, data visualizations from newsrooms and other organizations all over the world
+* [R Weekly](https://rweekly.org/): Weekly updates on R tutorials, R resources, blog posts...  
+* [The Moksha Roundup](https://mokshadata.studio/roundup/): weekly round up of data visualization/design/visual storytelling
+* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps  
+* [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse): fortnightly newsletter on data-related news, deets on events, social media profiles to follow, real-time data to visualize, resource guides and more  
+* [Albert's Newsletter](https://alberts-newsletter.beehiiv.com/): biweekly newsletter about DataViz, Shiny and Stats/Machine Learning.  
+
+ <!-- toc -->
  
 <!-- tocstop -->
-</details>
-
+</details> 
 
 <details>
   <summary><b>Colors</b> (click to expand)</summary>
@@ -50,7 +61,33 @@
 <!-- toc -->
  
 <!-- tocstop -->
-</details>    
+</details> 
+
+<details>
+  <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
+
+<!-- toc -->
+
+* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)  
+* [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) 
+  * Rich Iannone || Making Beautiful Tables with {gt} || RStudio [YT video](https://www.youtube.com/watch?v=z0UGmMOxl-c)
+  * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio] [YT video](https://www.youtube.com/watch?v=aPRVzk9pvno)
+  * {gt} tables using #TidyTuesday data | RStudio: [Digital Publications](https://twitter.com/riannone/status/1511387252903010305), [Crosswords](https://twitter.com/rstudio/status/1529138398849810432), [Eurovision](https://twitter.com/kierisi/status/1534204134215548928) by [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and [Richard Iannone](https://twitter.com/riannone)
+  * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by [Tom Mock](https://twitter.com/thomas_mock)
+  * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by [Nicola Rennie](https://twitter.com/nrennie35)
+  * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
+  * Tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) by [Tom Mock](https://twitter.com/thomas_mock)
+  *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by [Jack Davison](https://twitter.com/JDavison_) 
+  *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by [Kaustav Sen](https://twitter.com/kustav_sen)
+* [reactable](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) 
+    * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by [Kyle Cuilla](https://twitter.com/kc_analytics)
+    * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by [Bill Schmid](https://twitter.com/schmid_07)
+    * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by [Georgios Karamanis](https://twitter.com/geokaramanis)
+
+<!-- toc -->
+ 
+<!-- tocstop -->
+</details>   
     
     
 <details>
@@ -143,23 +180,7 @@
  <!-- toc -->
  
 <!-- tocstop -->
-</details>     
-
-<details>
-  <summary><b>Data visualization weekly highlights</b> (click to expand)</summary>
-
-<!-- toc -->  
-
-* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/)
-* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/)
-* [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse)
-* [The Moksha Roundup](https://mokshadata.studio/roundup/)
-* [R Weekly](https://rweekly.org/) 
-
- <!-- toc -->
- 
-<!-- tocstop -->
-</details>  
+</details>      
 
 <details>
   <summary><b>Github/websites/blogs to follow (alphabetical)</b> (click to expand)</summary>
