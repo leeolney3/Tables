@@ -1,5 +1,68 @@
 ## Links to resources
 
+   
+
+<details>
+  <summary><b>Chart types</b> (click to expand)</summary>
+
+<!-- toc -->  
+
+* [Charts that work: FT visual vocabulary guide](https://www.ft.com/content/c7bb24c9-964d-479f-ba24-03a2b2df6e85)
+* [Chart Suggestions - A Thought-Starter](https://extremepresentation.typepad.com/files/chart-chooser-2020.pdf) by Andrew Abela shared by [30DayChartChallenge](https://github.com/dominicroye/30DayChartChallenge_Edition2022)  
+* [DataVizProject](https://datavizproject.com/)  
+* [FlowingData: Chart Types](https://flowingdata.com/chart-types/) 
+* [From Data to Viz](https://www.data-to-viz.com/)
+* [PolicyViz: The Graphic Continuum](https://policyviz.com/2014/11/11/graphic-continuum-desktop-version/)    
+* [Storytelling with Data Chart Guide](https://www.storytellingwithdata.com/chart-guide)
+* [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
+
+ <!-- toc -->
+ 
+<!-- tocstop -->  
+</details>  
+
+<details>
+  <summary><b>Weekly highlights/newsletters</b> (click to expand)</summary>
+
+<!-- toc -->  
+
+* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/): weekly, data visualizations from newsrooms and other organizations all over the world
+* [R Weekly](https://rweekly.org/): Weekly updates on R tutorials, R resources, blog posts...  
+* [The Moksha Roundup](https://mokshadata.studio/roundup/): weekly round up of data visualization/design/visual storytelling
+* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps  
+* [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse): fortnightly newsletter on data-related news, deets on events, social media profiles to follow, real-time data to visualize, resource guides and more  
+* [Albert's Newsletter](https://alberts-newsletter.beehiiv.com/): biweekly newsletter about DataViz, Shiny and Stats/Machine Learning.  
+
+ <!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
+
+<details>
+  <summary><b>Colors</b> (click to expand)</summary>
+
+<!-- toc -->
+* [4 Ways to use colors in ggplot more efficiently](https://albert-rapp.de/post/2022-02-19-ggplot2-color-tips-from-datawrapper/) by [Albert Rapp](https://twitter.com/rappa753)
+* [Color Contrast Tools - Policy Viz](https://policyviz.com/resources/color-contrast-tools/) by [Jon Schwabish](https://twitter.com/jschwabish/status/1540093419405643779)   
+* [Lisa Charlotte Muth](https://twitter.com/lisacmuth) in [Datawrapper Blog](https://blog.datawrapper.de/)
+  * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
+  * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
+  * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
+  * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
+  * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
+* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
+* [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
+* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)  
+* Twitter:
+  * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
+  * Cédric Scherer's [Twitter post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
+  * [Idescribled's [Twitter post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
+  * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1526819424136843264) on color palette examples (sequential, diverging, rainbow, qualitative) 
+<!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
+
 <details>
   <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
 
@@ -24,32 +87,7 @@
 <!-- toc -->
  
 <!-- tocstop -->
-</details>
-
-
-<details>
-  <summary><b>Colors</b> (click to expand)</summary>
-
-<!-- toc -->
-* [4 Ways to use colors in ggplot more efficiently](https://albert-rapp.de/post/2022-02-19-ggplot2-color-tips-from-datawrapper/) by [Albert Rapp](https://twitter.com/rappa753)
-* [Color Contrast Tools - Policy Viz](https://policyviz.com/resources/color-contrast-tools/) by [Jon Schwabish](https://twitter.com/jschwabish/status/1540093419405643779)   
-* [Lisa Charlotte Muth](https://twitter.com/lisacmuth) in [Datawrapper Blog](https://blog.datawrapper.de/)
-  * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
-  * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
-  * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
-  * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
-  * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
-* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
-* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)  
-* Twitter:
-  * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
-  * Cédric Scherer's [Twitter post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
-  * [Idescribled's [Twitter post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
-  * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1526819424136843264) on color palette examples (sequential, diverging, rainbow, qualitative) 
-<!-- toc -->
- 
-<!-- tocstop -->
-</details>    
+</details>   
     
     
 <details>
@@ -142,23 +180,7 @@
  <!-- toc -->
  
 <!-- tocstop -->
-</details>     
-
-<details>
-  <summary><b>Data visualization weekly highlights</b> (click to expand)</summary>
-
-<!-- toc -->  
-
-* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/)
-* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/)
-* [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse)
-* [The Moksha Roundup](https://mokshadata.studio/roundup/)
-* [R Weekly](https://rweekly.org/) 
-
- <!-- toc -->
- 
-<!-- tocstop -->
-</details>  
+</details>      
 
 <details>
   <summary><b>Github/websites/blogs to follow (alphabetical)</b> (click to expand)</summary>
