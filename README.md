@@ -58,7 +58,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 
 ***  
 *  Recreation of [The Economist](https://blog.datawrapper.de/wp-content/uploads/2022/04/image24-3.png)'s chart with confidence interval and central estimate ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_economist_cf/))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_economist/p1.png" width="80%">    
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_economist/p1.png" width="60%">    
 
 ***
 * Recreation of [USA Today](https://blog.datawrapper.de/wp-content/uploads/2022/05/image42-1.png)'s pandemic chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/visualizations/recr5.Rmd))
