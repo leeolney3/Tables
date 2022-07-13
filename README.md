@@ -11,7 +11,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 
 ***
 * Cities skylines maps ([code](https://github.com/leeolney3/Tables/tree/main/2022/Cities_Skylines))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/cs_table3.png width="80%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/Cities_Skylines/cs_table3.png" width="80%">
 
 ***
 * Internal displacement ([code](https://github.com/leeolney3/Tables/tree/main/2021/displacement))
@@ -41,7 +41,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 
 ***
 *  Global innovation index 2021 ([code](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/wipo_bubble))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_bubble/plot_v2/5_2a.png" width="70%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_bubble/plot_v2/5_2a.png" width="80%">
 
 ***
 *  Global innovation index 2020 table ([code](https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_table/))
@@ -74,19 +74,19 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 
 ***
 *  Recreation of [Houston Budget](https://houstonbudget.cool/) chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_houston_budget/script.R))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_houston_budget/p1.png" width="60%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_houston_budget/p1.png" width="80%">
 
 *** 
 *  Recreation of [FlowingData](https://flowingdata.com/2022/05/25/deaths-by-firearm-compared-against-injury-related-deaths/)'s alluvial bump chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_injury/script.R))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_injury/p1.png" width="60%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_injury/p1.png" width="80%">
 
 ***  
 *  Recreation of [Bloomberg](https://www.bloomberg.com/graphics/2022-opinion-inflation-rising-prices-gas-food-comparison/)'s consumer price index component chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_cpi/script.R))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_cpi/p1.png" width="60%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_cpi/p1.png" width="80%">
 
 ***  
 *  Consumer index, 1-month percent change ([code](https://github.com/leeolney3/Tables/blob/main/2022/bls_cpi/script.R))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/bls_cpi/p1.png" width="60%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/bls_cpi/p1.png" width="80%">
 
 ***  
 *  Recreation of [FiveThirtyEight](https://blog.datawrapper.de/wp-content/uploads/2022/06/image24-2.png)'s waffle chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_538_waffle/script.R))
