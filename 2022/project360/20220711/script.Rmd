@@ -17,7 +17,7 @@ f1="Eczar"
 ```
 
 
-```{r, fig.height=2.5, fig.width=4, warning=F, message=F}
+```{r "20220711 b2"}
 ### 1b: Line plot
 df1b = df1 %>% mutate(s="Pixel Systems - Outdated work practices and no efforts to improve work culture", s2 ="Scenario 1")
 df2b = df2 %>% mutate(s="Woodcoms - Outdated work practices with low efforts to improve work culture", s2 ="Scenario 2")
@@ -63,7 +63,7 @@ ggsave("output/b2.png", height=5, width=8, bg="white")
 
 ## Section 2: Turnover
 
-```{r, include=FALSE}
+```{r "20220711 b4"}
 t1 = readr::read_csv("https://raw.githubusercontent.com/leeolney3/Tables/main/2022/project360/20220420-results/scenario_01_turnover.csv") %>% janitor::clean_names() %>% mutate(s="Pixel Systems - Outdated work practices and no efforts to improve work culture")
 t2 = readr::read_csv("https://raw.githubusercontent.com/leeolney3/Tables/main/2022/project360/20220420-results/scenario_02_turnover.csv") %>% janitor::clean_names() %>% mutate(s="Woodcoms - Outdated work practices with low efforts to improve work culture")
 t3 = readr::read_csv("https://raw.githubusercontent.com/leeolney3/Tables/main/2022/project360/20220420-results/scenario_03_turnover.csv") %>% janitor::clean_names() %>% mutate(s="Sun Co. - Outdated work practices with moderate efforts to improve work culture")
@@ -76,10 +76,7 @@ dft = rbind(t1a, t2a, t3a) %>%
 
 dfu = rbind(t1,t2,t3) %>%
   mutate(s = factor(s, levels=c("Pixel Systems - Outdated work practices and no efforts to improve work culture","Woodcoms - Outdated work practices with low efforts to improve work culture","Sun Co. - Outdated work practices with moderate efforts to improve work culture")))
-```
 
-  
-```{r, fig.height=3, fig.width=4}
 ### 2a: Beeswarm with average
 dft %>%
   ggplot(aes(x=factor(year), y=turnover, color=s)) +
@@ -104,5 +101,30 @@ dft %>%
 ggsave("output/b4.png", bg="white", height=6, width=8)
 ```
 
+```{r "20220713 b4"}
+### 2a: Beeswarm with average
+dft %>%
+  ggplot(aes(x=factor(year), y=turnover, color=s)) +
+  ggbeeswarm::geom_beeswarm(data=dfu, size=.2, cex=.6, alpha=.8) +
+  geom_line(aes(group=s), size=1, alpha=.9) +
+  geom_point(aes(fill=s), shape=21, color="black", size=3, show.legend = F) +
+  scale_color_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
+  scale_fill_manual(values=c("#4286ED","#00C4A7","#8A80FF")) +
+  scale_y_continuous(expand=c(0,0),limits=c(0,40),labels=scales::percent_format(scale=1)) +
+  cowplot::theme_minimal_hgrid(12) +
+  theme(text=element_text(family=f1),
+        legend.position="top",
+        legend.direction = "vertical",
+        legend.title=element_blank(),
+        plot.margin=margin(.5,.75,.5,.5, unit="cm"),
+        plot.title=element_text(size=15),
+        plot.title.position = "plot"
+        )  +
+  labs(x="Year", y="Employee turnover (%)",
+       title="Average Employee Turnover Rate")
 
+ggsave("output/b4.png", bg="white", height=6, width=8)
+```
+
+  
 
