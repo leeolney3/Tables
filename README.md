@@ -95,3 +95,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ***  
 *  Technology adoption, US, 1950-2020 ([code](https://github.com/leeolney3/Tables/blob/main/2022/technology_adoption/script.R))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/technology_adoption/p1.png" width="80%">
+
+***  
+*  Early movie theaters in Oregon, 1900-2022 ([code](https://github.com/leeolney3/Tables/blob/main/2022/oregon_movie/script.R))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/oregon_movie/p1.png" width="80%">
