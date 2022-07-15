@@ -32,20 +32,8 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2021/halloween_candy/halloween_candy_t1.png" width="80%">
 
 ***
-*  Labour market ([code](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/oecd))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/oecd/0000ae.png" width="80%">
-
-***
-*  Start up funding ([code](https://github.com/leeolney3/Tables/blob/main/2022/visualizations/startup_funding))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/startup_funding/table_v1.png" width="80%">
-
-***
 *  Global innovation index 2021 ([code](https://github.com/leeolney3/Tables/tree/main/2022/visualizations/wipo_bubble))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_bubble/plot_v2/5_2a.png" width="80%">
-
-***
-*  Global innovation index 2020 table ([code](https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_table/))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/visualizations/wipo_table/table_wipo_v1.png" width="80%">
 
 ***
 *  Average turnover rate ([code](https://github.com/leeolney3/Tables/blob/main/2022/project360/))
@@ -89,7 +77,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/bls_cpi/p1.png" width="80%">
 
 ***  
-*  Recreation of [FiveThirtyEight](https://blog.datawrapper.de/wp-content/uploads/2022/06/image24-2.png)'s waffle chart ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_538_waffle/script.R))
+*  Recreation of [FiveThirtyEight](https://fivethirtyeight.com/features/what-its-like-to-open-an-abortion-clinic-right-now/)'s [waffle chart](https://blog.datawrapper.de/wp-content/uploads/2022/06/image24-2.png) ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_538_waffle/script.R))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_538_waffle/p1.png" width="80%">
 
 ***  
@@ -100,3 +88,6 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 *  FIFA World Cup teams network plot ([code](https://github.com/leeolney3/Tables/blob/main/2022/fifa_world_cup/script.R))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/fifa_world_cup/p1.png" width="80%">
 
+*** 
+* Recreation of [FiveThirtyEight](https://fivethirtyeight.com/)'s [tile map](https://fivethirtyeight.com/wp-content/uploads/2022/07/potts.BIRTH-CONTROL.0713.png?w=1424) ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_538_tile/script.R))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_538_tile/p1.png" width="80%">
