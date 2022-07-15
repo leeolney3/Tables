@@ -1,4 +1,4 @@
-# Early movie theaters in Oregon 
+Early movie theaters in Oregon 
 
 Data source: [Oregon Theater Project Database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FGOUZ3) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-07-13-edition/)
 
