@@ -6,7 +6,7 @@ Data source: [National Interagency Fire Center](https://www.nifc.gov/fire-inform
 
 <p align="center">
 
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/us_wildfires/p1.png" width="90%"/>
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/us_wildfires/nifc_p1.png" width="90%"/>
 
 </p>
 
