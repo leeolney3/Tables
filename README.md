@@ -91,3 +91,7 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 *** 
 * Recreation of [FiveThirtyEight](https://fivethirtyeight.com/)'s [tile map](https://fivethirtyeight.com/wp-content/uploads/2022/07/potts.BIRTH-CONTROL.0713.png?w=1424) ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_538_tile/script.R))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_538_tile/p1.png" width="80%">
+
+***  
+*  Technology adoption, US, 1950-2020 ([code](https://github.com/leeolney3/Tables/blob/main/2022/technology_adoption/script.R))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/technology_adoption/p1.png" width="80%">
