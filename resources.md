@@ -214,6 +214,7 @@
 * Dan @FilmicAesthetic [Github](https://github.com/filmicaesthetic)
 * Daniel Oehm [website](http://gradientdescending.com/)
 * Dr. Dominic Royé [Github](https://github.com/dominicroye), [blog](https://dominicroye.github.io/en/)
+* Emil Hvitfeldt [Blog](https://www.emilhvitfeldt.com/post/)   
 * Federica Gazzelloni [Github](https://github.com/Fgazzelloni), [blog](https://federicagazzelloni.netlify.app/blog/)
 * Fiona Lee [Github](https://github.com/fi-lees) for #TidyTuesday data visualization walkthroughs
 * Georgios Karamanis [Github](https://github.com/gkaramanis), [blog](https://karaman.is/blog)
