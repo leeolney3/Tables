@@ -51,17 +51,31 @@
   * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
 * [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
-* [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
 * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne (nightingaledvs.com)  
-* Twitter:
-  * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bloggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
-  * Cédric Scherer's [Twitter post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
-  * [Idescribled's [Twitter post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
-  * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1526819424136843264) on color palette examples (sequential, diverging, rainbow, qualitative) 
 <!-- toc -->
  
 <!-- tocstop -->
 </details> 
+
+<details>
+  <summary><b>Colors in R</b> (click to expand)</summary>
+
+<!-- toc -->
+* [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by [Emil Hvitfeldt](https://twitter.com/Emil_Hvitfeldt)
+* [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
+* [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by [Nicola Rennie](https://twitter.com/nrennie35/status/1539976756320382980) 
+* [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by [Dan Oehm](https://twitter.com/danoehm/status/1536227644395909120) 
+* [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by [Tobias Stalder](https://twitter.com/toeb18/status/1532455477166194688)
+* [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
+* Twitter:
+   * Moriah Taylor's [Twitter thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bl%20%20%20oggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
+   * Cédric Scherer's [Twitter post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
+   * Idescribled's [Twitter post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
+   * Cédric Scherer's [Twitter thread](https://twitter.com/CedScherer/status/1526819424136843264) on color palette examples (sequential, diverging, rainbow, qualitative)
+<!-- toc -->
+ 
+<!-- tocstop -->
+</details>    
 
 <details>
   <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
@@ -87,53 +101,51 @@
 <!-- toc -->
  
 <!-- tocstop -->
-</details>   
-    
+   
+</details>      
     
 <details>
   <summary><b>Data visualization tutorials (R)</b> (click to expand)</summary>
 
 <!-- toc -->
-* [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by [Tom Mock](https://twitter.com/thomas_mock/status/1539950648778694658) 
-* Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
+* Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)    
+* [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by [Tom Mock](https://twitter.com/thomas_mock/status/1539950648778694658)   
 * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by [Clare West](https://twitter.com/claree_west)
 * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by [Spencer Schien](https://twitter.com/MrPecners)
 * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by [Tobias Stalder](https://twitter.com/toeb18)
-* [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by [Nicola Rennie](https://twitter.com/nrennie35/status/1534121769409605637)  
-* [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by [Nicola Rennie](https://twitter.com/nrennie35/status/1539976756320382980)   
+* [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by [Nicola Rennie](https://twitter.com/nrennie35/status/1534121769409605637)    
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by [Isabella Velásquez](https://twitter.com/ivelasq3)
 * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) by [Albert Rapp](https://twitter.com/rappa753)
-* [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by [Dan Oehm](https://twitter.com/danoehm/status/1536227644395909120) 
 * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
 * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by [Cara Thompson @cararthompson](https://twitter.com/cararthompson)
 * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by [Jamie Hudson](https://twitter.com/Jamie_Bio)
 * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by [Benjamin Nowak](https://twitter.com/BjnNowak)
-* [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by [Tobias Stalder](https://twitter.com/toeb18/status/1532455477166194688)
 * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by [Andrew Heiss](https://twitter.com/andrewheiss/status/1540084026685497345)  
 * Route finding (sfnetwork vignettes) [Twitter post](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey (@quite_grey)
 * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by [Marco Sciaini @shinysci](https://twitter.com/shinysci)  
 * Using thumbnails in ggplot2 [Twitter post](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey (@quite_grey)
-* Recreations
-  * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by [Bob Rudis](https://twitter.com/hrbrmstr)
-  * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by [Ansgar Wolsing](https://twitter.com/_ansgar)
 * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/post/2022-05-01-use-grobs-to-get-rounded-corners/) by by [Albert Rapp](https://twitter.com/rappa753)
 * [The R Graph Gallery](https://r-graph-gallery.com/)
   * [Line chart with labels at end of lines](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by [Cédric Scherer](https://twitter.com/CedScherer) on [R Graph Gallery](https://r-graph-gallery.com/)
   * [Time series with conditional area fill and geofaceting in ggplot2](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by [Georgios Karamanis](https://twitter.com/geokaramanis) on [R Graph Gallery](https://r-graph-gallery.com/)  
-* Visualising distributions
+* Distributions visualisations
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by [Matthew Kay](https://twitter.com/mjskay) 
   * {gghalves} [vignette](https://erocoar.github.io/gghalves/) by Frederik Tiedemann
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers 
   * [Beyond Bar and Box Plots](https://z3tt.github.io/beyond-bar-and-box-plots/) by [Cédric Scherer](https://twitter.com/CedScherer)
   * [Visualising distributions with raincloud plots (and how to create them with ggplot2)](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/)
   * Nicola Rennie's [twitter post](https://twitter.com/nrennie35/status/1514996175753125888) for #30DayChartChallenge #Day15 
-* Visualising uncertainty 
+* Uncertainty visualisations
   * [Uncertainty Examples](https://github.com/mjskay/uncertainty-examples) by [Matthew Kay](https://twitter.com/mjskay)
   * Tidydata and Bayesian analysis making uncertainty visualization fun ([Youtube video](https://www.youtube.com/watch?v=vqzO-9LSoG4&t=2s))
   * A biased tour of uncertainty visualization zoo ([Youtube video](https://www.youtube.com/watch?v=E1kSnWvqCw0&t=1780s))
   * [Visualizing the Uncertainty in Data](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/) by [Nathan Yau](http://twitter.com/flowingdata)
   * [16 Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html) in [Fundamentals of Data Visualization book by Claus O. Wilke](https://clauswilke.com/dataviz/)
+* Recreations
+  * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by [Emil Hvitfeldt](https://twitter.com/Emil_Hvitfeldt)
+  * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by [Ansgar Wolsing](https://twitter.com/_ansgar)    
+  * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by [Bob Rudis](https://twitter.com/hrbrmstr)
  <!-- toc -->
  
 <!-- tocstop -->
