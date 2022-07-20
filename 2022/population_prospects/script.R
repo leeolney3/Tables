@@ -145,7 +145,6 @@ p2 = df2 %>%
   theme(text=element_text(family=f1),
         axis.line.x = element_blank(),
         plot.margin=margin(1,1,1,.5,unit="cm"),
-        plot.background=element_rect(fill="grey98",color=NA),
         axis.title=element_blank(),
         axis.text.x=element_text(color="grey30", size=7.7, hjust=0.1),
         axis.text.y=element_text(color="grey30", size=7.7),
@@ -167,10 +166,10 @@ p2 = df2 %>%
       name == "NNR" ~ scale_y_continuous(breaks=seq(.5,2,.5), limits=c(.5,2), expand=c(0,0))
     )
   ) +
-  labs(title="Ireland's population fertility compared to EU27 countries, 1950-2100",
+  labs(title="Ireland's demographic indicators compared to EU27 countries, 1950-2100",
        caption="Note: Medium scenario projection from UN World Population Prospects 2022. The medium scenario\nprojection corresponds to the median of several thousand distinct trajectories of each demographic\ncomponent derived using the probabilistic model of the variability in changes over time.\nSource: population.un.org")
 
-ggsave("p2.png", p2, height=4, width=9)
+ggsave("p2.png", p2, height=4, width=9, bg="white")
 
 # Section 3: EU27+UK births and deaths
 ## p3 data
