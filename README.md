@@ -99,3 +99,15 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 ***  
 *  Early movie theaters in Oregon, 1900-2022 ([code](https://github.com/leeolney3/Tables/blob/main/2022/oregon_movie/script.R))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/oregon_movie/p1.png" width="80%">
+
+*** 
+* Recreation of [The Economist](https://www.economist.com/graphic-detail/2022/07/14/the-pecking-order-of-the-worlds-population-is-soon-to-change?utm_medium=social-media.content.np&utm_source=twitter&utm_campaign=editorial-social&utm_content=discovery.content&%3Ffsrc%3Dscn%2F=tw%2Fdc)'s [chart](https://blog.datawrapper.de/data-vis-dispatch-july-19-2022/) ([code](https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/script.R))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p1.png" width="80%">
+
+***
+* Crude birth rate, mean age childbearing, net reproduction rate and sex ratio at birth ([code](https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/script.R))
+  * Plot inspired by [John Burn-Murdoch](https://twitter.com/jburnmurdoch/status/1539248155446980608)'s graphic in [Financial Times](https://www.ft.com/content/2f1d62ee-bc1b-4eae-bebd-f4e32076bcd5)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p2.png" width="80%">
+
+
+
