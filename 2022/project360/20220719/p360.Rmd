@@ -6,6 +6,7 @@ output: html_notebook
 2022-07-11: add “Employees left” on the y-axis to line and beeswarm plot
 2022-07-12: change the y axis from “Employees left” to “Employee turnover (%)” for the Average Employee Turnover graph
 2022-07-19: change the fake company names to Company A, B, C
+2022-07-22: change the y axis to “Employees who left the company”
 
 ```{r}
 new_labels = c("Company A - Outdated work practices and no efforts to improve work culture","Company B - Outdated work practices with low efforts to improve work culture", "Company C - Outdated work practices with moderate efforts to improve work culture")
@@ -56,10 +57,10 @@ df %>%
         plot.title.position = "plot",
         plot.margin=margin(.5,.75,.5,.5, unit="cm"),
         ) +
-  labs(x="Month", y="Employees left",
+  labs(x="Month", y="Employees who left the company",
        title="Accumulated number of employees that left")
        
-ggsave("output/b2_20220719.png", height=5, width=8, bg="white")
+ggsave("output/b2_20220722.png", height=5, width=8, bg="white")
 ```
 
 
