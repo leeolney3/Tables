@@ -112,6 +112,7 @@
 
 <!-- toc -->
 * Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
+* [SDS 375 Data Visualization](https://wilkelab.org/SDS375/) course materials by Claus O. Wilke
 * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock
 * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
 * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
