@@ -98,6 +98,7 @@
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
     * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by Bill Schmid
     * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by Georgios Karamanis
+    * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
 * [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes  
 
 <!-- toc -->
