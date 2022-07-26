@@ -98,6 +98,8 @@
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
     * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by Bill Schmid
     * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by Georgios Karamanis
+    * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
+* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes  
 
 <!-- toc -->
  
@@ -110,6 +112,7 @@
 
 <!-- toc -->
 * Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
+* [SDS 375 Data Visualization](https://wilkelab.org/SDS375/) course materials by Claus O. Wilke
 * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock
 * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
 * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
@@ -117,6 +120,7 @@
 * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
+* Glamour of Graphics by Will Chase ([slides](https://www.williamrchase.com/slides/assets/player/KeynoteDHTMLPlayer.html#0) and [recording](https://www.rstudio.com/resources/rstudioconf-2020/the-glamour-of-graphics/))
 * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
 * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by Benjamin Nowak
 * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson
@@ -133,8 +137,9 @@
   * [Time series with conditional area fill and geofaceting in ggplot2](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by Georgios Karamanis  
 * Distributions visualisations
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay
+      * {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
+  * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
   * {gghalves} [vignette](https://erocoar.github.io/gghalves/) by Frederik Tiedemann
-  * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers 
   * [Beyond Bar and Box Plots](https://z3tt.github.io/beyond-bar-and-box-plots/) by Cédric Scherer
   * [Visualising distributions with raincloud plots (and how to create them with ggplot2)](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/) by Cédric Scherer
   * Nicola Rennie's [twitter post](https://twitter.com/nrennie35/status/1514996175753125888) for #30DayChartChallenge #Day15 
