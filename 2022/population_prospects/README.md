@@ -5,7 +5,7 @@ Dataset: [Demographic Indicators, 1950-2100, medium](https://population.un.org/w
 [R code](https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/script.R)
 
 * Births and deaths, EU27+UK 
-  * Trying out time-series conditional fill with {ggbraid} R package, plot inspired by [Georgios Karamanis](https://twitter.com/geokaramanis/status/1411026482168832002)
+  * Trying out time-series conditional fill with [{ggbraid}](https://github.com/nsgrantham/ggbraid) R package, plot inspired by [Georgios Karamanis](https://twitter.com/geokaramanis/status/1411026482168832002)
   
 <p align="center">
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p1.png"/>
