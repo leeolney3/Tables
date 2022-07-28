@@ -114,11 +114,13 @@
 * Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
 * [SDS 375 Data Visualization](https://wilkelab.org/SDS375/) course materials by Claus O. Wilke
 * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock
+* [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro
 * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
 * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
 * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
 * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
 * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
+* [Exploring ggplot2 boxplots - Defining limits and adjusting style](https://waterdata.usgs.gov/blog/boxplots/) by Laura DeCicco   
 * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
 * Glamour of Graphics by Will Chase ([slides](https://www.williamrchase.com/slides/assets/player/KeynoteDHTMLPlayer.html#0) and [recording](https://www.rstudio.com/resources/rstudioconf-2020/the-glamour-of-graphics/))
 * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
@@ -183,11 +185,12 @@
   * [@cararthompson's thread](https://twitter.com/cararthompson/status/1511812876016799758) on rstats tips for #30DayChartChallenge
   * [@CedScherer's thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
   * [@CedScherer's thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
-  * [VictimOfMaths' thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization
   * [@FilmicAesthetic's thread](https://twitter.com/FilmicAesthetic/status/1512072560715784196) on data visuals inspiring books
   * [@FilmicAesthetic's thread](https://twitter.com/FilmicAesthetic/status/1537535639100567555) on ggplot2 legend shapes
+  * [@rappa753's thread](https://twitter.com/rappa753/status/1552329221459943425) on 5 hidden gems from well-known #rstats packages to spice up your #dataviz game 
   * [@shinysci's thread](https://twitter.com/shinysci/status/1541831867388858368) on how to use #rstats in #GitHub actions to scrape and store data online and then process it ... the #rspatial way
   * [@Valen10Francois' thread](https://twitter.com/valen10francois/status/1524040709862576131?s=21&t=TRQljRvuYXzrmKPaNZ3djQ) on old historic maps overlap with modern political maps (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
+  * [@VictimOfMaths' thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization 
   * [@WeAreRLadies](https://twitter.com/WeAreRLadies) tips/ideas/analysis 
     * [day 1](https://twitter.com/WeAreRLadies/status/1515876540394852354), [day 2](https://twitter.com/WeAreRLadies/status/1516256907836674053), [day 3](https://twitter.com/WeAreRLadies/status/1516671536497045506), [day 4](https://twitter.com/WeAreRLadies/status/1516997091109015552), [day 5](https://twitter.com/WeAreRLadies/status/1517402976062967808), [day 6](https://twitter.com/WeAreRLadies/status/1517749920262160384) twitter thread
         * [Code](https://github.com/emitanaka/wearerladies) on Github
