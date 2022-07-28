@@ -43,7 +43,7 @@
    * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
 * Tutorials/tips   
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
-   * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro
+   * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
    * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
    * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
    * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak   
@@ -82,14 +82,15 @@
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
   * {gghalves} [vignette](https://erocoar.github.io/gghalves/) by Frederik Tiedemann
   * [Beyond Bar and Box Plots](https://z3tt.github.io/beyond-bar-and-box-plots/) by Cédric Scherer
-  * [Visualising distributions with raincloud plots (and how to create them with ggplot2)](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/) by Cédric Scherer
   * Nicola Rennie's [twitter post](https://twitter.com/nrennie35/status/1514996175753125888) for #30DayChartChallenge #Day15 
-* Uncertainty visualisations
-  * [Uncertainty Examples](https://github.com/mjskay/uncertainty-examples) by Matthew Kay
-  * Tidydata and Bayesian analysis making uncertainty visualization fun by Matthew Kay ([slides](https://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf), [YT video](https://www.youtube.com/watch?v=vqzO-9LSoG4&t=2s))
-  * A biased tour of uncertainty visualization zoo by Matthew Kay ([slides](https://www.mjskay.com/presentations/tapestry2018-uncertainty.pdf), [YT video](https://www.youtube.com/watch?v=E1kSnWvqCw0&t=1780s)) 
-  * [Visualizing the Uncertainty in Data](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/) by Nathan Yau @flowingdata
+  * [Visualising distributions with raincloud plots (and how to create them with ggplot2)](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/) by Cédric Scherer
+  * [Visualizing distributions and uncertainty using ggdist](https://www.mjskay.com/presentations/rstudio-conf-2022-talk.pdf) slides by Matthew Kay from #rstudioconf2022
+* Uncertainty 
   * [16 Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html) in [Fundamentals of Data Visualization book by Claus O. Wilke](https://clauswilke.com/dataviz/)
+  * A biased tour of uncertainty visualization zoo by Matthew Kay ([slides](https://www.mjskay.com/presentations/tapestry2018-uncertainty.pdf), [YT video](https://www.youtube.com/watch?v=E1kSnWvqCw0&t=1780s))
+  * Tidydata and Bayesian analysis making uncertainty visualization fun by Matthew Kay ([slides](https://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf), [YT video](https://www.youtube.com/watch?v=vqzO-9LSoG4&t=2s))
+  * [Uncertainty Examples](https://github.com/mjskay/uncertainty-examples) by Matthew Kay 
+  * [Visualizing the Uncertainty in Data](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/) by Nathan Yau @flowingdata
 * Recreations
   * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by Emil Hvitfeldt
   * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by Ansgar Wolsing
@@ -116,9 +117,9 @@
 * Quarto
   * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
   * [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by Beatriz Milz  
-  * [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html) by Albert Rapp
   * [Quarto for the curious](https://thomasmock.quarto.pub/quarto-curious/#/TitleSlide) slides by Tom Mock, from Day 1 of #rstudioconf2022 
   * [Hello Quarto: Share + Collaborate + Teach + Reimagine](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/) by Mine Çetinkaya-Rundel and Julia Stewart Lowndes, from Day 2 of #rstudioconf2022 
+  * [Getting Started with Quarto](https://twitter.com/thomas_mock/status/1552611174587535360) workshop full materials by Tom Mock from #rstudioconf2022
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
