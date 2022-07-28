@@ -25,7 +25,7 @@ Dataset: [Demographic Indicators, 1950-2100, medium](https://population.un.org/w
 </p>
 
 * Rate of natural change and total population, 2022
-  * Trying out [{linearpackcircles}](package)
+  * Trying out circle packing with [{linearpackcircles}](https://github.com/gorkang/linearpackcircles) package
 
 <p align="center">
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/circle_packing/p1.png"/>
