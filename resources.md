@@ -46,7 +46,8 @@
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
    * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
    * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
-   * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak   
+   * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak  
+   * [Creating and using custom ggplot2 themes](https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/) by Thomas Mock
    * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
    * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
@@ -63,6 +64,9 @@
   * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
   * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu 
   * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by Benjamin Nowak 
+* Legend
+  * [Changing Glyph in legend in ggplot2](https://www.emilhvitfeldt.com/post/changing-glyph-in-ggplot2/) by Emil Hvitfeldt
+  * Dan @FilmicAesthetic's [Collection of ggplot2 legend key shapes](https://twitter.com/FilmicAesthetic/status/1537535639100567555)
 * Text/Image
   * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
   * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
@@ -260,7 +264,8 @@
 * Spencer Schien [Github](https://github.com/Pecners), [website](https://spencerschien.info/)
 * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
 * Thom-Ivar van Dijk [Github](https://github.com/TIvanDijk)
-* Tom Mock [Github](https://github.com/jthomasmock), [The Mockup Blog](https://themockup.blog) 
+* Tom Mock [Github](https://github.com/jthomasmock), [The Mockup Blog](https://themockup.blog)
+* Tyler Morgan-Wall [Github](https://github.com/tylermorganwall), [website](https://www.tylermw.com/)
  
  <!-- toc -->
  
