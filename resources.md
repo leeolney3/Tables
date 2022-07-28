@@ -262,6 +262,7 @@
 * Marco Sciaini @shinysci [Github](https://github.com/marcosci)  
 * Margaret Siple [Github](https://github.com/mcsiple)
 * Milos Popovic [website](https://milospopovic.net/blog/) for map tutorials 
+* Neal Grantham  [website](https://www.nsgrantham.com/graphics/)
 * Near and Distant [Github](https://github.com/NearAndDistant), [website](https://nearanddistant.co.uk/)
 * Nicola Rennie [Github](https://github.com/nrennie), [website](https://nrennie.rbind.io/blog/)
 * Pablo Alvarez [Github](https://github.com/Pablo-Alvarez-Baeza)
