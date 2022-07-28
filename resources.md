@@ -54,7 +54,6 @@
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
 * Color
   * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
-  * [Colorblind friendly palettes R packages](https://r-universe.dev/search/#colorblind) via R-universe
   * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
   * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
   * [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
