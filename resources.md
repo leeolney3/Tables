@@ -1,100 +1,22 @@
 ## Links to resources
 
-   
-
-<details>
-  <summary><b>Chart types</b> (click to expand)</summary>
-
-<!-- toc -->  
-
-* [Charts that work: FT visual vocabulary guide](https://www.ft.com/content/c7bb24c9-964d-479f-ba24-03a2b2df6e85)
-* [Chart Suggestions - A Thought-Starter](https://extremepresentation.typepad.com/files/chart-chooser-2020.pdf) by Andrew Abela shared by [30DayChartChallenge](https://github.com/dominicroye/30DayChartChallenge_Edition2022)  
-* [DataVizProject](https://datavizproject.com/)  
-* [FlowingData: Chart Types](https://flowingdata.com/chart-types/) 
-* [From Data to Viz](https://www.data-to-viz.com/)
-* [PolicyViz: The Graphic Continuum](https://policyviz.com/2014/11/11/graphic-continuum-desktop-version/)    
-* [Storytelling with Data Chart Guide](https://www.storytellingwithdata.com/chart-guide)
-* [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
-
- <!-- toc -->
- 
-<!-- tocstop -->  
-</details>  
-
-<details>
-  <summary><b>Weekly highlights/newsletters</b> (click to expand)</summary>
-
-<!-- toc -->  
-
-* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/): weekly, data visualizations from newsrooms and other organizations all over the world
-* [R Weekly](https://rweekly.org/): Weekly updates on R tutorials, R resources, blog posts...  
-* [The Moksha Roundup](https://mokshadata.studio/roundup/): weekly round up of data visualization/design/visual storytelling
-* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps  
-* [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse): fortnightly newsletter on data-related news, deets on events, social media profiles to follow, real-time data to visualize, resource guides and more  
-* [Albert's Newsletter](https://alberts-newsletter.beehiiv.com/): biweekly newsletter about DataViz, Shiny and Stats/Machine Learning.  
-
- <!-- toc -->
- 
-<!-- tocstop -->
-</details> 
-
-<details>
-  <summary><b>Colors</b> (click to expand)</summary>
-
-<!-- toc -->
-* [Color Contrast Tools - Policy Viz](https://policyviz.com/resources/color-contrast-tools/) by Jon Schwabish
-* Lisa Charlotte Muth's posts on [Datawrapper Blog](https://blog.datawrapper.de/)
-  * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
-  * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
-  * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
-  * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
-  * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
-* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
-* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
-<!-- toc -->
- 
-<!-- tocstop -->
-</details> 
-
-<details>
-  <summary><b>Colors in R</b> (click to expand)</summary>
-
-<!-- toc -->
-* [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
-* [Colorblind friendly palettes R packages](https://r-universe.dev/search/#colorblind) via R-universe
-* [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
-* [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
-* [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
-* [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
-* [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
-* [4 Ways to use colors in ggplot more efficiently](https://www.r-bloggers.com/2022/02/4-ways-to-use-colors-in-ggplot-more-efficiently/) by Albert Rapp 
-* Twitter:
-   * [@moriah_taylor58's thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bl%20%20%20oggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
-   * [@CedScherer's post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
-   * [@Indescribled's post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
-   * [@CedScherer's thread](https://twitter.com/CedScherer/status/1526819424136843264) on color palette examples (sequential, diverging, rainbow, qualitative)
-<!-- toc -->
- 
-<!-- tocstop -->
-</details>    
-
 <details>
   <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
 
 <!-- toc -->
 
-* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)  
-* [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) 
-  * Rich Iannone || Making Beautiful Tables with {gt} || RStudio [YT video](https://www.youtube.com/watch?v=z0UGmMOxl-c)
-  * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio [YT video](https://www.youtube.com/watch?v=aPRVzk9pvno)
+* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/): lots of tables with #rstats code 
+* [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) packages
+  * [Making Beautiful Tables with {gt}](https://www.youtube.com/watch?v=z0UGmMOxl-c) video by Richard Iannone, RStudio
+  * [{gt} Intendo Game Data Project Walkthrough](https://www.youtube.com/watch?v=aPRVzk9pvno) video by Richard Iannone, RStudio
   * {gt} tables using #TidyTuesday data | RStudio: [Digital Publications](https://twitter.com/riannone/status/1511387252903010305), [Crosswords](https://twitter.com/rstudio/status/1529138398849810432), [Eurovision](https://twitter.com/kierisi/status/1534204134215548928) by [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and Richard Iannone
   * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by Tom Mock
   * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by Nicola Rennie
-  * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by Benjamin Nowak
-  * Tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) by [Tom Mock](https://twitter.com/thomas_mock)
+  * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by Benjamin Nowak 
   *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by Jack Davison
   *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by Kaustav Sen
-* [reactable](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) 
+  *  Tom Mock's {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) 
+* [{reactable}](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) packages
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
     * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by Bill Schmid
     * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by Georgios Karamanis
@@ -110,23 +32,35 @@
 <details>
   <summary><b>Data visualization (R)</b> (click to expand)</summary>
 
-<!-- toc -->   
-* [The R Graph Gallery](https://r-graph-gallery.com/)
-* [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
-* [Collection of ggplot2 tutorials by Cédric Scherer](https://twitter.com/CedScherer/status/1441126976870252548?s=20)   
-* A curated [list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
-* Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
-* [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
-* [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro
-* [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
-* [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
-* [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak   
-* [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
-* [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
-* [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
-* [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
-* [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies)   
-* Facets
+<!-- toc --> 
+* Collection/list   
+   * [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/)   
+   * [The R Graph Gallery](https://r-graph-gallery.com/)
+   * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
+   * [Collection of ggplot2 tutorials by Cédric Scherer](https://twitter.com/CedScherer/status/1441126976870252548?s=20)   
+   * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
+   * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
+   * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
+* Tutorials/tips   
+   * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
+   * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro
+   * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
+   * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
+   * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak   
+   * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
+   * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
+   * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
+   * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
+   * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
+* Color
+  * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
+  * [Colorblind friendly palettes R packages](https://r-universe.dev/search/#colorblind) via R-universe
+  * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
+  * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
+  * [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
+  * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
+  * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
+  * Facets
   * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
   * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu 
   * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by Benjamin Nowak 
@@ -202,15 +136,66 @@
  <!-- toc -->
  
 <!-- tocstop -->
-</details>      
+</details>        
 
+<details>
+  <summary><b>Color</b> (click to expand)</summary>
+
+<!-- toc -->
+* Lisa Charlotte Muth's posts on [Datawrapper Blog](https://blog.datawrapper.de/)
+  * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
+  * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
+  * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
+  * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
+  * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
+* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
+* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
+<!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
+
+<details>
+  <summary><b>Chart types</b> (click to expand)</summary>
+
+<!-- toc -->  
+
+* [Charts that work: FT visual vocabulary guide](https://www.ft.com/content/c7bb24c9-964d-479f-ba24-03a2b2df6e85)
+* [Chart Suggestions - A Thought-Starter](https://extremepresentation.typepad.com/files/chart-chooser-2020.pdf) by Andrew Abela shared by [30DayChartChallenge](https://github.com/dominicroye/30DayChartChallenge_Edition2022)  
+* [DataVizProject](https://datavizproject.com/)  
+* [FlowingData: Chart Types](https://flowingdata.com/chart-types/) 
+* [From Data to Viz](https://www.data-to-viz.com/)
+* [PolicyViz: The Graphic Continuum](https://policyviz.com/2014/11/11/graphic-continuum-desktop-version/)    
+* [Storytelling with Data Chart Guide](https://www.storytellingwithdata.com/chart-guide)
+* [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
+
+ <!-- toc -->
+ 
+<!-- tocstop -->  
+</details>  
+
+<details>
+  <summary><b>Weekly highlights/newsletters</b> (click to expand)</summary>
+
+<!-- toc -->  
+
+* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/): weekly, data visualizations from newsrooms and other organizations all over the world
+* [R Weekly](https://rweekly.org/): Weekly updates on R tutorials, R resources, blog posts...  
+* [The Moksha Roundup](https://mokshadata.studio/roundup/): weekly round up of data visualization/design/visual storytelling
+* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps  
+* [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse): fortnightly newsletter on data-related news, deets on events, social media profiles to follow, real-time data to visualize, resource guides and more  
+* [Albert's Newsletter](https://alberts-newsletter.beehiiv.com/): biweekly newsletter about DataViz, Shiny and Stats/Machine Learning.  
+
+ <!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
 
 <details>
   <summary><b>Data viz challenges</b> (click to expand)</summary>
    
  <!-- toc -->
    * [30DayChartChallenge 2022](https://github.com/dominicroye/30DayChartChallenge_Edition2022) ([website](https://30daychartchallenge.org/twentytwo/))
-   * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
    * [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) ([website](https://30daymapchallenge.com/))
    * 30DayMapChallenge 2022 [rstats map gallery](https://david.frigge.nz/3RDayMapChallenge/maps.html) by David Friggens
    * [TidyTuesday](https://github.com/rfordatascience/tidytuesday) weekly social data project in R from R4DS Online Learning Community
