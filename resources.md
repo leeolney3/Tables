@@ -1,6 +1,158 @@
 ## Links to resources
 
+<details>
+  <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
+
+<!-- toc -->
+
+* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/): lots of tables with #rstats code 
+* [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) packages
+  * [Making Beautiful Tables with {gt}](https://www.youtube.com/watch?v=z0UGmMOxl-c) video by Richard Iannone, RStudio
+  * [{gt} Intendo Game Data Project Walkthrough](https://www.youtube.com/watch?v=aPRVzk9pvno) video by Richard Iannone, RStudio
+  * {gt} tables using #TidyTuesday data | RStudio: [Digital Publications](https://twitter.com/riannone/status/1511387252903010305), [Crosswords](https://twitter.com/rstudio/status/1529138398849810432), [Eurovision](https://twitter.com/kierisi/status/1534204134215548928) by [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and Richard Iannone
+  * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by Tom Mock
+  * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by Nicola Rennie
+  * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by Benjamin Nowak 
+  *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by Jack Davison
+  *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by Kaustav Sen
+  *  Tom Mock's {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) 
+* [{reactable}](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) packages
+    * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
+    * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by Bill Schmid
+    * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by Georgios Karamanis
+    * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
+* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes  
+
+<!-- toc -->
+ 
+<!-- tocstop -->
    
+</details>      
+    
+<details>
+  <summary><b>Data visualization (R)</b> (click to expand)</summary>
+
+<!-- toc --> 
+* Collection/list   
+   * [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/)   
+   * [The R Graph Gallery](https://r-graph-gallery.com/)
+   * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
+   * [Collection of ggplot2 tutorials by Cédric Scherer](https://twitter.com/CedScherer/status/1441126976870252548?s=20)   
+   * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
+   * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
+   * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
+* Tutorials/tips   
+   * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
+   * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro
+   * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
+   * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
+   * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak   
+   * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
+   * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
+   * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
+   * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
+   * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
+* Color
+  * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
+  * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
+  * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
+  * [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
+  * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
+  * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
+* Facets
+  * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
+  * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu 
+  * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by Benjamin Nowak 
+* Text/Image
+  * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
+  * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
+  * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson   
+  * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
+  * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault   
+  * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
+  * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
+  * [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey   
+* Spatial
+  * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
+  * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
+  * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
+  * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](Spatial resampling for #TidyTuesday and the #30DayMapChallenge) by Julia Silge
+* Distributions 
+  * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay, {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
+  * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
+  * {gghalves} [vignette](https://erocoar.github.io/gghalves/) by Frederik Tiedemann
+  * [Beyond Bar and Box Plots](https://z3tt.github.io/beyond-bar-and-box-plots/) by Cédric Scherer
+  * [Visualising distributions with raincloud plots (and how to create them with ggplot2)](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/) by Cédric Scherer
+  * Nicola Rennie's [twitter post](https://twitter.com/nrennie35/status/1514996175753125888) for #30DayChartChallenge #Day15 
+* Uncertainty visualisations
+  * [Uncertainty Examples](https://github.com/mjskay/uncertainty-examples) by Matthew Kay
+  * Tidydata and Bayesian analysis making uncertainty visualization fun by Matthew Kay ([slides](https://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf), [YT video](https://www.youtube.com/watch?v=vqzO-9LSoG4&t=2s))
+  * A biased tour of uncertainty visualization zoo by Matthew Kay ([slides](https://www.mjskay.com/presentations/tapestry2018-uncertainty.pdf), [YT video](https://www.youtube.com/watch?v=E1kSnWvqCw0&t=1780s)) 
+  * [Visualizing the Uncertainty in Data](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/) by Nathan Yau @flowingdata
+  * [16 Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html) in [Fundamentals of Data Visualization book by Claus O. Wilke](https://clauswilke.com/dataviz/)
+* Recreations
+  * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by Emil Hvitfeldt
+  * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by Ansgar Wolsing
+  * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by Bob Rudis
+  * [NYTimes map recreation](https://twitter.com/tanya_shapiro/status/1546520567980892160) by Tanya Shapiro
+ <!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
+
+<details>
+  <summary><b>Others (R)</b> (click to expand)</summary>
+
+<!-- toc -->  
+* Analysis
+  * [Analysis of the voting patterns with widyr](https://twitter.com/juliasilge/status/1532862734487785474) by Julia Silge
+  * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by Benjamin Nowak 
+  * [PCA with tidyverse](https://bjnnowak.netlify.app/2021/09/15/r-pca-with-tidyverse/) by Benjamin Nowak
+  * [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by Amit Grinson @Amit_Levinson 
+* Code 
+  * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia 
+  * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
+  * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
+* Quarto
+  * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
+  * [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by Beatriz Milz  
+  * [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html) by Albert Rapp
+  * [Quarto for the curious](https://thomasmock.quarto.pub/quarto-curious/#/TitleSlide) slides by Tom Mock, from Day 1 of #rstudioconf2022 
+  * [Hello Quarto: Share + Collaborate + Teach + Reimagine](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/) by Mine Çetinkaya-Rundel and Julia Stewart Lowndes, from Day 2 of #rstudioconf2022 
+* R Markdown
+  * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
+  * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
+* Scraping 
+  * [Web scraping with {rvest}](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak 
+  * [Web scraping tutorial in R](https://rpubs.com/haleyepperlyfox/916671) from interactive maps using R and rvest package by Haley Epperly
+  * [@shinysci's thread](https://twitter.com/shinysci/status/1541831867388858368) on how to use #rstats in #GitHub actions to scrape and store data online and then process it ... the #rspatial way
+* tidymodels
+  * [Tidy Modeling with R](https://www.tmwr.org/) book by Max Kuhn and Julia Silge 
+  * [Julia Silge's blog](https://juliasilge.com/blog/) demonstrating how to use the tidymodels packages with #TidyTuesday data
+  * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
+  
+
+ <!-- toc -->
+ 
+<!-- tocstop -->
+</details>        
+
+<details>
+  <summary><b>Color</b> (click to expand)</summary>
+
+<!-- toc -->
+* Lisa Charlotte Muth's posts on [Datawrapper Blog](https://blog.datawrapper.de/)
+  * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
+  * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
+  * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
+  * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
+  * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
+* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
+* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
+<!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
 
 <details>
   <summary><b>Chart types</b> (click to expand)</summary>
@@ -39,171 +191,10 @@
 </details> 
 
 <details>
-  <summary><b>Colors</b> (click to expand)</summary>
-
-<!-- toc -->
-* [Color Contrast Tools - Policy Viz](https://policyviz.com/resources/color-contrast-tools/) by Jon Schwabish
-* Lisa Charlotte Muth's posts on [Datawrapper Blog](https://blog.datawrapper.de/)
-  * [An alternative to pink & blue: Colors for gender data](https://blog.datawrapper.de/gendercolor/)
-  * [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
-  * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
-  * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
-  * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
-* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
-* [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
-<!-- toc -->
- 
-<!-- tocstop -->
-</details> 
-
-<details>
-  <summary><b>Colors in R</b> (click to expand)</summary>
-
-<!-- toc -->
-* [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
-* [Colorblind friendly palettes R packages](https://r-universe.dev/search/#colorblind) via R-universe
-* [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
-* [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
-* [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
-* [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
-* [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
-* [4 Ways to use colors in ggplot more efficiently](https://www.r-bloggers.com/2022/02/4-ways-to-use-colors-in-ggplot-more-efficiently/) by Albert Rapp 
-* Twitter:
-   * [@moriah_taylor58's thread](https://twitter.com/moriah_taylor58/status/1395431000977649665?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1395431000977649665%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.r-bl%20%20%20oggers.com%2F2021%2F12%2Ftop-21-rstats-tweets-of-2021%2F) on Colors in R
-   * [@CedScherer's post](https://twitter.com/CedScherer/status/1426154575858442245) on Extending colors in R 
-   * [@Indescribled's post](https://twitter.com/Indescribled/status/1426315389336686599) on Extending colors in R 
-   * [@CedScherer's thread](https://twitter.com/CedScherer/status/1526819424136843264) on color palette examples (sequential, diverging, rainbow, qualitative)
-<!-- toc -->
- 
-<!-- tocstop -->
-</details>    
-
-<details>
-  <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
-
-<!-- toc -->
-
-* [RStudio Community Table Gallery](https://www.rstudio.com/blog/rstudio-community-table-gallery/) (lots of tables with #rstats code)  
-* [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) 
-  * Rich Iannone || Making Beautiful Tables with {gt} || RStudio [YT video](https://www.youtube.com/watch?v=z0UGmMOxl-c)
-  * Richard Iannone || {gt} Intendo Game Data Project Walkthrough || RStudio [YT video](https://www.youtube.com/watch?v=aPRVzk9pvno)
-  * {gt} tables using #TidyTuesday data | RStudio: [Digital Publications](https://twitter.com/riannone/status/1511387252903010305), [Crosswords](https://twitter.com/rstudio/status/1529138398849810432), [Eurovision](https://twitter.com/kierisi/status/1534204134215548928) by [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and Richard Iannone
-  * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by Tom Mock
-  * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by Nicola Rennie
-  * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by Benjamin Nowak
-  * Tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) by [Tom Mock](https://twitter.com/thomas_mock)
-  *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by Jack Davison
-  *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by Kaustav Sen
-* [reactable](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) 
-    * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
-    * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by Bill Schmid
-    * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by Georgios Karamanis
-    * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
-* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes  
-
-<!-- toc -->
- 
-<!-- tocstop -->
-   
-</details>      
-    
-<details>
-  <summary><b>Data visualization tutorials (R)</b> (click to expand)</summary>
-
-<!-- toc -->
-* Collection of ggplot2 tutorials by Cédric Scherer [Twitter thread](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
-* [SDS 375 Data Visualization](https://wilkelab.org/SDS375/) course materials by Claus O. Wilke
-* [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock
-* [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
-* [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
-* [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
-* [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
-* [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu
-* [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
-* Glamour of Graphics by Will Chase ([slides](https://www.williamrchase.com/slides/assets/player/KeynoteDHTMLPlayer.html#0) and [recording](https://www.rstudio.com/resources/rstudioconf-2020/the-glamour-of-graphics/))
-* [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
-* [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by Benjamin Nowak
-* Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson
-* Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
-* [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson
-* [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by Benjamin Nowak
-* [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
-* Route finding (sfnetwork vignettes) [Twitter post](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
-* [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
-* [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey
-* [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/post/2022-05-01-use-grobs-to-get-rounded-corners/) by Albert Rapp
-* [The R Graph Gallery](https://r-graph-gallery.com/)
-  * [Line chart with labels at end of lines](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by Cédric Scherer
-  * [Time series with conditional area fill and geofaceting in ggplot2](https://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html) by Georgios Karamanis  
-* Distributions visualisations
-  * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay
-      * {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
-  * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
-  * {gghalves} [vignette](https://erocoar.github.io/gghalves/) by Frederik Tiedemann
-  * [Beyond Bar and Box Plots](https://z3tt.github.io/beyond-bar-and-box-plots/) by Cédric Scherer
-  * [Visualising distributions with raincloud plots (and how to create them with ggplot2)](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/) by Cédric Scherer
-  * Nicola Rennie's [twitter post](https://twitter.com/nrennie35/status/1514996175753125888) for #30DayChartChallenge #Day15 
-* Uncertainty visualisations
-  * [Uncertainty Examples](https://github.com/mjskay/uncertainty-examples) by Matthew Kay
-  * Tidydata and Bayesian analysis making uncertainty visualization fun by Matthew Kay ([slides](https://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf), [YT video](https://www.youtube.com/watch?v=vqzO-9LSoG4&t=2s))
-  * A biased tour of uncertainty visualization zoo by Matthew Kay ([slides](https://www.mjskay.com/presentations/tapestry2018-uncertainty.pdf), [YT video](https://www.youtube.com/watch?v=E1kSnWvqCw0&t=1780s)) 
-  * [Visualizing the Uncertainty in Data](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/) by Nathan Yau @flowingdata
-  * [16 Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html) in [Fundamentals of Data Visualization book by Claus O. Wilke](https://clauswilke.com/dataviz/)
-* Recreations
-  * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by Emil Hvitfeldt
-  * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by Ansgar Wolsing
-  * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by Bob Rudis
-  * [NYTimes map recreation](https://twitter.com/tanya_shapiro/status/1546520567980892160) by Tanya Shapiro
- <!-- toc -->
- 
-<!-- tocstop -->
-</details> 
-
-<details>
-  <summary><b>Explainers/others</b> (click to expand)</summary>
-
-<!-- toc -->
-* #TidyTuesday screencasts, [R Screencasts](https://www.rscreencasts.com/)
-* A curated list of awesome rayshader and rayrender resources and shiny things on [github](https://github.com/marcosci/awesome-rayshader-rayrender) by Marco Sciaini @shinysci
-* [Analysis of the voting patterns with widyr](https://twitter.com/juliasilge/status/1532862734487785474) by Julia Silge
-* [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery
-* [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by Beatriz Milz 
-* [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart
-* [Free DataViz Tools & Resources - Policy Viz](https://policyviz.com/2022/02/14/free-dataviz-tools-resources/) 
-* [Mistakes, we’ve drawn a few](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368) article by Sarah Leo
-* [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by Amit Grinson @Amit_Levinson 
-* [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
-* [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault
-* [Script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments by Tom Mock 
-* [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia
-* [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke
-* [Tutorial](https://rpubs.com/haleyepperlyfox/916671) on web scraping data from interactive maps using R and rvest package by Haley Epperly
-* [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
-* Twitter:
-  * [@cararthompson's thread](https://twitter.com/cararthompson/status/1511812876016799758) on rstats tips for #30DayChartChallenge
-  * [@CedScherer's thread](https://twitter.com/CedScherer/status/1493345985958924291) on annotations.
-  * [@CedScherer's thread](https://twitter.com/CedScherer/status/1513997439157649408) #30DayChartChallenge #Day12 theme day: Economist theme, contains data visualization comparisions 
-  * [VictimOfMaths' thread](https://twitter.com/VictimOfMaths/status/1514220648524046340) on his #30DayChartChallenge #Day12 data visualization
-  * [@FilmicAesthetic's thread](https://twitter.com/FilmicAesthetic/status/1512072560715784196) on data visuals inspiring books
-  * [@FilmicAesthetic's thread](https://twitter.com/FilmicAesthetic/status/1537535639100567555) on ggplot2 legend shapes
-  * [@shinysci's thread](https://twitter.com/shinysci/status/1541831867388858368) on how to use #rstats in #GitHub actions to scrape and store data online and then process it ... the #rspatial way
-  * [@Valen10Francois' thread](https://twitter.com/valen10francois/status/1524040709862576131?s=21&t=TRQljRvuYXzrmKPaNZ3djQ) on old historic maps overlap with modern political maps (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
-  * [@WeAreRLadies](https://twitter.com/WeAreRLadies) tips/ideas/analysis 
-    * [day 1](https://twitter.com/WeAreRLadies/status/1515876540394852354), [day 2](https://twitter.com/WeAreRLadies/status/1516256907836674053), [day 3](https://twitter.com/WeAreRLadies/status/1516671536497045506), [day 4](https://twitter.com/WeAreRLadies/status/1516997091109015552), [day 5](https://twitter.com/WeAreRLadies/status/1517402976062967808), [day 6](https://twitter.com/WeAreRLadies/status/1517749920262160384) twitter thread
-        * [Code](https://github.com/emitanaka/wearerladies) on Github
-
- <!-- toc -->
- 
-<!-- tocstop -->
-</details>      
-
-
-<details>
   <summary><b>Data viz challenges</b> (click to expand)</summary>
    
  <!-- toc -->
    * [30DayChartChallenge 2022](https://github.com/dominicroye/30DayChartChallenge_Edition2022) ([website](https://30daychartchallenge.org/twentytwo/))
-   * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
    * [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) ([website](https://30daymapchallenge.com/))
    * 30DayMapChallenge 2022 [rstats map gallery](https://david.frigge.nz/3RDayMapChallenge/maps.html) by David Friggens
    * [TidyTuesday](https://github.com/rfordatascience/tidytuesday) weekly social data project in R from R4DS Online Learning Community
@@ -259,6 +250,7 @@
 * Marco Sciaini @shinysci [Github](https://github.com/marcosci)  
 * Margaret Siple [Github](https://github.com/mcsiple)
 * Milos Popovic [website](https://milospopovic.net/blog/) for map tutorials 
+* Neal Grantham  [website](https://www.nsgrantham.com/graphics/)
 * Near and Distant [Github](https://github.com/NearAndDistant), [website](https://nearanddistant.co.uk/)
 * Nicola Rennie [Github](https://github.com/nrennie), [website](https://nrennie.rbind.io/blog/)
 * Pablo Alvarez [Github](https://github.com/Pablo-Alvarez-Baeza)
