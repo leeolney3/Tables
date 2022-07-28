@@ -105,5 +105,10 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
   * Plot inspired by [John Burn-Murdoch](https://twitter.com/jburnmurdoch/status/1539248155446980608)'s graphic in [Financial Times](https://www.ft.com/content/2f1d62ee-bc1b-4eae-bebd-f4e32076bcd5)
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p2.png" width="80%">
 
+***
+* Recreation of The Economist's annual change in population [chart](https://blog.datawrapper.de/wp-content/uploads/2022/07/image6-2.png) from [The pecking order of the world’s population is soon to change, July 14](https://www.economist.com/graphic-detail/2022/07/14/the-pecking-order-of-the-worlds-population-is-soon-to-change?utm_medium=social-media.content.np&utm_source=twitter&utm_campaign=editorial-social&utm_content=discovery.content&%3Ffsrc%3Dscn%2F=tw%2Fdc)
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p3.png" width="80%">
 
-
+*** 
+* Crude birth rate and crude death rates, EU27 countries
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p1.png" width="80%">
