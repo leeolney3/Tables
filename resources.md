@@ -119,11 +119,13 @@
   * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
   * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
 * Quarto
+  * [Awesome Quarto](https://github.com/mcanouil/awesome-quarto): list of Quarto resources by Mickaël Canouil @MickaelCanouil
   * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
   * [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by Beatriz Milz  
   * [Quarto for the curious](https://thomasmock.quarto.pub/quarto-curious/#/TitleSlide) slides by Tom Mock, from Day 1 of #rstudioconf2022 
   * [Hello Quarto: Share + Collaborate + Teach + Reimagine](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/) by Mine Çetinkaya-Rundel and Julia Stewart Lowndes, from Day 2 of #rstudioconf2022 
   * [Getting Started with Quarto](https://twitter.com/thomas_mock/status/1552611174587535360) workshop full materials by Tom Mock from #rstudioconf2022
+  * [.qmd using python, R and Observable](https://twitter.com/hrbrmstr/status/1553043936482136065) by boB Rudis @hrbrmstr
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
