@@ -51,24 +51,44 @@ graph = d1 %>%
          is_label = if_else(name %in% d4$aid, TRUE, FALSE)) 
          
 # Plot
-graph %>%
+theme1 = cowplot::theme_map(10) +
+  theme(legend.direction = "horizontal",
+        text=element_text(color="#f8f9fa", family=f1),
+        plot.subtitle=element_markdown(lineheight = 1.3, color="#f8f9fa"),
+        plot.caption=element_text(color="#adb5bd", size=7.5, margin=margin(t=-10)),
+        plot.background=element_rect(fill="#212529", color=NA),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"))
+
+
+p1a =graph %>%
   ggraph(layout = "stress") +
   geom_edge_diagonal(color="#f2e9e4", alpha=.2, edge_width=.3) +
   geom_node_point(aes(size = if_else(is_season,3,1.3), color=factor(col, levels=c("Season","Female","Male","Unknown"))),
                   show.legend = FALSE) +
   geom_text(aes(x, y, label=if_else(is_season, name, NULL)), size=2, color="black", family=f1) +
-  #ggrepel::geom_text_repel(aes(x, y, color=factor(col, levels=c("Season","Female","Male","Unknown")), label=if_else(is_label, name, NULL)), size=1.7, family=f1, show.legend = FALSE) +
+  scale_size_identity() +
+  scale_color_manual("",values=c("#e9ecef","#FFD704","#6942EF","#23CBC8")) +
+  theme1 +
+  labs(title="Saturday Night Live Cast Members",
+       subtitle="As of Season 46 (2020), the late-night live variety series Saturday Night Live (SNL) has featured 154 cast members, including<br><span style='color:#6942EF'>**100 male**</span>, <span style='color:#FFD704'>**52 female**</span> and <span style='color:#23CBC8'>**2 unknown**</span>.",
+       caption="Source: snldb Github and snlarchives.net by way of Data is Plural") +
+  annotate(geom="text", x=58,y=-4.36, label="Season number", color="#f8f9fa", family=f2, size=2.4, hjust=0) +
+  annotate(geom="segment",x=57.9, xend=56.5, y=-4.36,yend=-4.36, color="#f8f9fa", size=.2, arrow=arrow(length=unit(.12,"cm")))
+
+p1b =graph %>%
+  ggraph(layout = "stress") +
+  geom_edge_diagonal(color="#f2e9e4", alpha=.2, edge_width=.3) +
+  geom_node_point(aes(size = if_else(is_season,3,1.3), color=factor(col, levels=c("Season","Female","Male","Unknown"))),
+                  show.legend = FALSE) +
+  geom_text(aes(x, y, label=if_else(is_season, name, NULL)), size=2, color="black", family=f1) +
+  ggrepel::geom_text_repel(aes(x, y, color=factor(col, levels=c("Season","Female","Male","Unknown")), label=if_else(is_label, name, NULL)), size=1.7, family=f1, show.legend = FALSE) +
   scale_size_identity() +
   scale_color_manual("",values=c("#e9ecef","#FFD704","#6942EF","#23CBC8")) +
   cowplot::theme_map(10) +
-  theme(legend.direction = "horizontal",
-        text=element_text(color="#f8f9fa", family=f1),
-        plot.subtitle=element_markdown(),
-        plot.caption=element_text(color="#dee2e6"),
-        plot.background=element_rect(fill="#212529", color=NA),
-        plot.margin=margin(.5,.5,.5,.5,unit="cm")) +
+  theme1 +
   labs(title="SNL casts, Season 1 to 46",
        subtitle="<span style='color:#6942EF'>**100 male**</span>, <span style='color:#FFD704'>**52 female**</span>, <span style='color:#23CBC8'>**2 unknown**</span>",
        caption="Source: snldb Github and snlarchives.net by way of Data is Plural")
 
-ggsave("p1.png", height=8,width=8)         
+ggsave("p1a.png", p1a, height=8,width=8)    
+ggsave("p1b.png", p1b, height=8,width=8) 

@@ -91,6 +91,6 @@ ggraph(
        title="FIFA World Cup Team Matchups",
        subtitle="900 matches played by 84 teams in 21 tournaments, from 1930 to 2018")
 
-ggsave("fifa.png", height=8, width=8, bg="white")                                      
+ggsave("p2.png", height=8, width=8, bg="white")                                      
 
 
