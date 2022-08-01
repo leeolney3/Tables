@@ -82,11 +82,11 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 
 ***  
 *  SNL cast members network plot ([code](https://github.com/leeolney3/Tables/blob/main/2022/snl_cast/script.R))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/snl_cast/p1_annotate.png" width="80%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/network_graph/01_snlcast/p1b.png" width="80%">
 
 ***  
 *  FIFA World Cup teams network plot ([code](https://github.com/leeolney3/Tables/blob/main/2022/fifa_world_cup/script.R))
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/fifa_world_cup/p1.png" width="80%">
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/network_graph/02_fifaworldcup/p2.png" width="80%">
 
 *** 
 * Recreation of [FiveThirtyEight](https://fivethirtyeight.com/)'s [tile map](https://fivethirtyeight.com/wp-content/uploads/2022/07/potts.BIRTH-CONTROL.0713.png?w=1424) ([code](https://github.com/leeolney3/Tables/blob/main/2022/recr_538_tile/script.R))
