@@ -43,10 +43,12 @@
    * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
 * Tutorials/tips   
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
+   * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson @cararthompson
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
    * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
    * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
-   * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak   
+   * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak  
+   * [Creating and using custom ggplot2 themes](https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/) by Thomas Mock
    * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
    * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
@@ -63,6 +65,9 @@
   * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
   * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu 
   * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by Benjamin Nowak 
+* Legend
+  * [Changing Glyph in legend in ggplot2](https://www.emilhvitfeldt.com/post/changing-glyph-in-ggplot2/) by Emil Hvitfeldt
+  * Dan @FilmicAesthetic's [Collection of ggplot2 legend key shapes](https://twitter.com/FilmicAesthetic/status/1537535639100567555)
 * Text/Image
   * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
   * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
@@ -115,11 +120,13 @@
   * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
   * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
 * Quarto
+  * [Awesome Quarto](https://github.com/mcanouil/awesome-quarto): list of Quarto resources by Mickaël Canouil @MickaelCanouil
   * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
   * [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by Beatriz Milz  
   * [Quarto for the curious](https://thomasmock.quarto.pub/quarto-curious/#/TitleSlide) slides by Tom Mock, from Day 1 of #rstudioconf2022 
   * [Hello Quarto: Share + Collaborate + Teach + Reimagine](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/) by Mine Çetinkaya-Rundel and Julia Stewart Lowndes, from Day 2 of #rstudioconf2022 
   * [Getting Started with Quarto](https://twitter.com/thomas_mock/status/1552611174587535360) workshop full materials by Tom Mock from #rstudioconf2022
+  * [.qmd using python, R and Observable](https://twitter.com/hrbrmstr/status/1553043936482136065) by boB Rudis @hrbrmstr
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
@@ -260,7 +267,8 @@
 * Spencer Schien [Github](https://github.com/Pecners), [website](https://spencerschien.info/)
 * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
 * Thom-Ivar van Dijk [Github](https://github.com/TIvanDijk)
-* Tom Mock [Github](https://github.com/jthomasmock), [The Mockup Blog](https://themockup.blog) 
+* Tom Mock [Github](https://github.com/jthomasmock), [The Mockup Blog](https://themockup.blog)
+* Tyler Morgan-Wall [Github](https://github.com/tylermorganwall), [website](https://www.tylermw.com/)
  
  <!-- toc -->
  
