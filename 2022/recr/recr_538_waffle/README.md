@@ -6,6 +6,6 @@
 
 <p align="center">
 
-<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr_538_waffle/p1.png" width="100%"/>
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/recr/recr_538_waffle/p1.pngg" width="100%"/>
 
 </p>
