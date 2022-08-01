@@ -43,6 +43,7 @@
    * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
 * Tutorials/tips   
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
+   * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson @cararthompson
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
    * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
    * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
