@@ -3,3 +3,4 @@
 # History files
 *.Rhistory
 *.Rapp.history
+.Rproj.user
