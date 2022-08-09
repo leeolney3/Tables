@@ -128,6 +128,8 @@
   * [Hello Quarto: Share + Collaborate + Teach + Reimagine](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/) by Mine Çetinkaya-Rundel and Julia Stewart Lowndes, from Day 2 of #rstudioconf2022 
   * [Getting Started with Quarto](https://twitter.com/thomas_mock/status/1552611174587535360) workshop full materials by Tom Mock from #rstudioconf2022
   * [.qmd using python, R and Observable](https://twitter.com/hrbrmstr/status/1553043936482136065) by boB Rudis @hrbrmstr
+  * [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
+  * [ObservableHQ JavaScript Choropleth With Data From R](https://twitter.com/hrbrmstr/status/1556308005225897984) by boB Rudis @hrbrmstr
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
@@ -139,6 +141,7 @@
   * [Tidy Modeling with R](https://www.tmwr.org/) book by Max Kuhn and Julia Silge 
   * [Julia Silge's blog](https://juliasilge.com/blog/) demonstrating how to use the tidymodels packages with #TidyTuesday data
   * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
+  * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
   
 
  <!-- toc -->
