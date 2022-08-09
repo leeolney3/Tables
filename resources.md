@@ -54,6 +54,7 @@
    * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
+   * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
 * Color
   * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
@@ -261,6 +262,7 @@
 * Luis Freites [Github](https://github.com/luisfrein), [website](https://luisdva.github.io/)
 * Marco Sciaini @shinysci [Github](https://github.com/marcosci)  
 * Margaret Siple [Github](https://github.com/mcsiple)
+* Meghan Hall [website](https://meghan.rbind.io/blog/)  
 * Milos Popovic [website](https://milospopovic.net/blog/) for map tutorials 
 * Neal Grantham  [website](https://www.nsgrantham.com/graphics/)
 * Near and Distant [Github](https://github.com/NearAndDistant), [website](https://nearanddistant.co.uk/)
