@@ -124,10 +124,11 @@
 * Quarto
   * [Awesome Quarto](https://github.com/mcanouil/awesome-quarto): list of Quarto resources by Mickaël Canouil @MickaelCanouil
   * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
-  * [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by Beatriz Milz  
+  * [Getting Started with Quarto](https://twitter.com/thomas_mock/status/1552611174587535360) workshop full materials by Tom Mock from #rstudioconf2022 
+    * Welcome to Quarto Workshop! 2 hour webinar [video](https://www.youtube.com/watch?v=yvi5uXQMvu4) and [slides](https://jthomasmock.github.io/quarto-2hr-webinar/) by  Tom Mock, RStudio
   * [Quarto for the curious](https://thomasmock.quarto.pub/quarto-curious/#/TitleSlide) slides by Tom Mock, from Day 1 of #rstudioconf2022 
   * [Hello Quarto: Share + Collaborate + Teach + Reimagine](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/) by Mine Çetinkaya-Rundel and Julia Stewart Lowndes, from Day 2 of #rstudioconf2022 
-  * [Getting Started with Quarto](https://twitter.com/thomas_mock/status/1552611174587535360) workshop full materials by Tom Mock from #rstudioconf2022
+  * [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/) by Beatriz Milz
   * [.qmd using python, R and Observable](https://twitter.com/hrbrmstr/status/1553043936482136065) by boB Rudis @hrbrmstr
   * [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
   * [ObservableHQ JavaScript Choropleth With Data From R](https://twitter.com/hrbrmstr/status/1556308005225897984) by boB Rudis @hrbrmstr
