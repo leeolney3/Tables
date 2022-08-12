@@ -94,5 +94,9 @@ Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p3.png" width="80%">
 
 *** 
-* Crude birth rate and crude death rates, EU27 countries
+* Crude birth rate and crude death rates, EU27 countries ([R code](https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/script.R))
 <img src="https://github.com/leeolney3/Tables/blob/main/2022/population_prospects/p1.png" width="80%">
+
+*** 
+* Young adult migration ([R code](https://github.com/leeolney3/Tables/blob/main/2022/young_adult_migration/script.R))
+<img src="https://github.com/leeolney3/Tables/blob/main/2022/young_adult_migration/p1.png" width="80%">
