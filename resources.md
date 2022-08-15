@@ -132,6 +132,7 @@
   * [.qmd using python, R and Observable](https://twitter.com/hrbrmstr/status/1553043936482136065) by boB Rudis @hrbrmstr
   * [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
   * [ObservableHQ JavaScript Choropleth With Data From R](https://twitter.com/hrbrmstr/status/1556308005225897984) by boB Rudis @hrbrmstr
+  * [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/) by Mike Mahoney
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
@@ -263,7 +264,8 @@
 * Luis Freites [Github](https://github.com/luisfrein), [website](https://luisdva.github.io/)
 * Marco Sciaini @shinysci [Github](https://github.com/marcosci)  
 * Margaret Siple [Github](https://github.com/mcsiple)
-* Meghan Hall [website](https://meghan.rbind.io/blog/)  
+* Meghan Hall [website](https://meghan.rbind.io/blog/) 
+* Mike Mahoney [website](https://www.mm218.dev/blog.html)  
 * Milos Popovic [website](https://milospopovic.net/blog/) for map tutorials 
 * Neal Grantham  [website](https://www.nsgrantham.com/graphics/)
 * Near and Distant [Github](https://github.com/NearAndDistant), [website](https://nearanddistant.co.uk/)
