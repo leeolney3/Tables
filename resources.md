@@ -37,7 +37,8 @@
    * [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/)   
    * [The R Graph Gallery](https://r-graph-gallery.com/)
    * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
-   * [Collection of ggplot2 tutorials by Cédric Scherer](https://twitter.com/CedScherer/status/1441126976870252548?s=20)   
+   * [Collection of ggplot2 tutorials by Cédric Scherer](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
+     * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) by Cédric Scherer
    * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
    * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
    * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
