@@ -18,6 +18,7 @@
   *  Tom Mock's {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) 
 * [{reactable}](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) packages
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
+    * Data viz recreation ([1](https://twitter.com/kc_analytics/status/1563594941665665029), [2](https://twitter.com/kc_analytics/status/1564248716323725315)) using {reactablefmtr} by Kyle Cuilla
     * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by Bill Schmid
     * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by Georgios Karamanis
     * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
@@ -35,6 +36,7 @@
 <!-- toc --> 
 * Collection/list   
    * [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/)   
+   * [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2) A curated list of awesome ggplot2 tutorials, packages.. by Erik Gahner Larsen @erikgahner 
    * [The R Graph Gallery](https://r-graph-gallery.com/)
    * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
    * [Collection of ggplot2 tutorials by Cédric Scherer](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
@@ -87,6 +89,7 @@
   * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
   * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](Spatial resampling for #TidyTuesday and the #30DayMapChallenge) by Julia Silge
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
+  * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
 * Distributions 
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay, {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
@@ -196,7 +199,7 @@
 
 <!-- toc -->  
 
-* [Datawrapper Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/): weekly, data visualizations from newsrooms and other organizations all over the world
+* [Datawrapper Data Vis Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/): weekly, data visualizations from newsrooms and other organizations all over the world
 * [R Weekly](https://rweekly.org/): Weekly updates on R tutorials, R resources, blog posts...  
 * [The Moksha Roundup](https://mokshadata.studio/roundup/): weekly round up of data visualization/design/visual storytelling
 * [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps  
