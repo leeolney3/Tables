@@ -44,6 +44,7 @@
    * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
    * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
    * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
+   * [Explaining my favourite #TidyTuesday Projects](https://towardsdatascience.com/explaining-my-favourite-tidytuesday-projects-e44bfe988813) by Isaac Arroyo
 * Tutorials/tips   
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
    * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson @cararthompson
@@ -90,6 +91,7 @@
   * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](Spatial resampling for #TidyTuesday and the #30DayMapChallenge) by Julia Silge
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
+  * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
 * Distributions 
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay, {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
@@ -233,7 +235,7 @@
 
 <!-- toc -->  
 
-* Abdoul Madjid[Github](https://github.com/AbdoulMa)
+* Abdoul Madjid[Github](https://github.com/AbdoulMa) 
 * Albert Rapp [website](https://albert-rapp.de/post/)
 * Amit Grinson @Amit_Levinson [Github](https://github.com/AmitLevinson), [website](https://amitlevinson.com/)
 * Andy Baker [Github](https://github.com/AndyABaker)
@@ -252,6 +254,7 @@
 * Federica Gazzelloni [Github](https://github.com/Fgazzelloni), [website](https://federicagazzelloni.netlify.app/blog/)
 * Fiona Lee [Github](https://github.com/fi-lees) for #TidyTuesday data visualization walkthroughs
 * Georgios Karamanis [Github](https://github.com/gkaramanis), [website](https://karaman.is/blog)
+* Gilbert Fontana [Github](https://github.com/gilbertfontana)  
 * Hugh Graham [Github](https://github.com/h-a-graham)
 * Ícaro Bernardes [Github](https://github.com/IcaroBernardes)
 * Iker Rivas-González [Github](https://github.com/rivasiker)
@@ -261,6 +264,7 @@
 * Jake Kaupp [Github](https://github.com/jkaupp)
 * Jamie Hudson [Github](https://github.com/HudsonJamie), [website](https://jamiehudson.netlify.app/post/)
 * Javier Tamayo-Leiva [Github](https://github.com/TamayoLeivaJ)
+* Jenn Schilling [Github](https://github.com/jennschilling)  
 * Jonathan Kitt [Github](https://github.com/KittJonathan)
 * Julia Silge [website](https://juliasilge.com/blog/)
 * Katie Press [website](https://kpress.dev/blog/tidy-tuesday-nyt-bestsellers/)
@@ -280,6 +284,7 @@
 * Nicola Rennie [Github](https://github.com/nrennie), [website](https://nrennie.rbind.io/blog/)
 * Pablo Alvarez [Github](https://github.com/Pablo-Alvarez-Baeza)
 * Richard Vogg [Github](https://github.com/richardvogg), [website](https://r-vogg-blog.netlify.app/)
+* Ryan Hart [Github](https://github.com/curatedmess)  
 * Shannon Pileggi [PipingHotData](https://www.pipinghotdata.com/blog.html)
 * Spencer Schien [Github](https://github.com/Pecners), [website](https://spencerschien.info/)
 * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
