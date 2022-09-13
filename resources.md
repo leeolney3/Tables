@@ -160,7 +160,7 @@
 </details>        
 
 <details>
-  <summary><b>Color</b> (click to expand)</summary>
+  <summary><b>Color/Font</b> (click to expand)</summary>
 
 <!-- toc -->
 * Lisa Charlotte Muth's posts on [Datawrapper Blog](https://blog.datawrapper.de/)
@@ -169,6 +169,7 @@
   * [A detailed guide to colors in data vis style guides](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
   * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
+  * [Which fonts to use for your charts and tables](https://blog.datawrapper.de/fonts-for-data-visualization/)
 * [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
 * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
 <!-- toc -->
