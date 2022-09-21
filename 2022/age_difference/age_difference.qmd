@@ -1,0 +1,148 @@
+---
+title: "Hollywood Age Gap"
+date: "2022-09-21"
+format: html
+editor: visual
+---
+
+Age difference in years between movie interests
+Data source: [hollywoodagegap.com](https://hollywoodagegap.com/) (h/t Georgios Karamanis)
+
+```{r libraries}
+library(tidyverse)
+library(lubridate)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r fonts}
+font_add_google("Hahmlet")
+font_add_google("Fira Sans")
+f1 = "Hahmlet"
+f2 = "Fira Sans"
+```
+
+```{r data}
+movies = readr::read_csv("data/movies.csv") %>% janitor::clean_names()
+```
+
+```{r p1 data}
+# lowest, average and highest age gap by release year
+df1= movies %>%
+  filter(between(release_year, 1990, 2021)) %>%
+  group_by(release_year) %>%
+  summarise(Lowest=min(age_difference),
+            Average=mean(age_difference),
+            Highest = max(age_difference))
+df1b = df1 %>% pivot_longer(2:4)
+```
+
+```{r "p1", fig.height=4, fig.width=3.5}
+pal1 = c("#E64B0D","#6140D9","#047543")
+
+movies %>%
+  filter(between(release_year, 1990, 2021)) %>%
+  ggplot(aes(x=release_year)) +
+  geom_line(data=df1b, aes(x=release_year, value, group=name,color=factor(name,levels=c("Highest","Average","Lowest")))) +
+  geom_point(aes(y=age_difference),alpha=.1, size=1.5, color="black") +
+  geom_point(data=df1b , aes(y=value,fill=factor(name,levels=c("Highest","Average","Lowest"))),shape=21,color="white", size=2.6) +
+  # color labels
+  geom_text(data=df1b  %>% filter(release_year==1990), aes(y=value, x=1989, label=name, color= factor(name,levels=c("Highest","Average","Lowest"))),size=3.5, fontface="bold", family=f1) +
+  scale_color_manual(values=pal1) + scale_fill_manual(values=pal1) +
+  coord_flip(clip="off") +
+  scale_x_reverse(breaks=seq(1990,2020,5),expand = expansion(mult = c(.02, 0))) +
+  scale_y_continuous(expand=c(.0,0)) +
+  cowplot::theme_minimal_grid(11.7) +
+  theme(text=element_text(family=f2),
+        legend.position = "none",
+        plot.title.position = "plot",
+        plot.title=element_text(family=f1,size=13, hjust=.5, margin=margin(b=7.5)),
+        plot.subtitle=element_text(hjust=.5,margin=margin(b=13)),
+        plot.caption=element_text(color="grey30", margin=margin(t=10)),
+        axis.title.y=element_blank(),
+        axis.ticks.length.y = unit(.5,"cm"),
+        axis.title.x=element_text(size=10),
+        plot.margin=margin(.5,.75,.35,.5,unit="cm"),
+        plot.background = element_rect(fill="#fefcfb", color=NA)
+        ) +
+  labs(title="Hollywood Age Gap",
+       subtitle="The age difference in years between love interests in 978 movies, released between 1990 and 2021.\n",
+       caption="Source: hollywoodagegap.com",
+       y="Age Gap (in years)")
+
+ggsave("p1.png", height=8, width=7)
+```
+
+```{r plot 2 data}
+# distribution of age gap by decade, plot inspired by Flowing Data https://twitter.com/flowingdata/status/1492173080206057476
+df2a = df2 = movies %>%
+  filter(between(release_year, 1990,2019)) %>%
+  mutate(decade = paste0(release_year %/% 10 * 10, "'s")) %>%
+  mutate(decade=factor(decade, levels=c("2010's","2000's","1990's")))
+
+df2b = df2a %>%
+  group_by(decade) %>%
+  count(age_difference)
+
+df2c = df2a %>%
+  group_by(decade) %>%
+  summarise(age_difference=median(age_difference),
+            lab = glue::glue("Median:\n{age_difference} years"))
+
+df2d= df2a %>%
+  group_by(decade) %>%
+  filter(age_difference==max(age_difference)) %>%
+  mutate(lab=glue::glue("Age difference of **{age_difference}** years in ***{movie_name}***, released in {release_year}")) %>%
+  select(decade,age_difference, lab)
+```
+
+```{r "p2", fig.height=4, fig.width=3.5}
+pal2 = c("#D79C73","#779DA7","#6C86D1")
+
+df2b %>%
+  ggplot(aes(x=age_difference, y=n)) +
+  geom_segment(aes(x=age_difference, xend=age_difference, y=0, yend=n,, color=decade)) +
+  geom_point(aes(color=decade)) +
+  facet_wrap(~decade, ncol=1, scales="free", strip.position = "left") +
+  geom_text(data=df2c, aes(label=lab, y=32), size=3, hjust=0, vjust=0, family=f2) +
+  geom_segment(data=df2c, aes(x=age_difference, xend= age_difference, y=0,yend=32),
+               linetype="dotted") +
+  geom_textbox(data=df2d,aes(x=age_difference, y=15, label=lab), 
+               size=3,hjust=0.6, width = unit(1.2, "inch"),
+               box.padding = grid::unit(rep(0, 4), "pt"),
+               box.color = NA,halign=.5, family=f2) +
+  geom_segment(data=df2d, aes(x=age_difference, xend= age_difference, y=0,yend=11),
+               linetype="dotted") +
+  scale_x_continuous(limits=c(0,50), breaks=seq(0,50,10)) +
+  scale_y_continuous(limits=c(0,35), expand=c(0,0), breaks=seq(0,35,5)) +
+  #scale_color_manual(values=c("#b56576","#6d597a","#355070")) +
+  scale_color_manual(values=pal2) +
+  coord_cartesian(clip="off") +
+  theme_minimal(11) +
+  theme(text=element_text(family=f2),
+        axis.line.x.bottom = element_line(),
+        plot.margin=margin(.5,.75,.35,.4,unit="cm"),
+        panel.grid = element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_text(size=10, color="grey10"),
+        axis.ticks=element_line(size=.3),
+        axis.ticks.length=unit(.2, "cm"),
+        strip.placement = "outside",
+        strip.text.y.left = element_text(angle=0, size=10, family=f1),
+        panel.spacing = unit(1.8, "lines"),
+        legend.position = "none",
+        plot.title.position = "plot",
+        plot.title=element_text(hjust=.5, size=12, family=f1, face="bold", margin=margin(b=7.5)),
+        plot.subtitle=element_text(hjust=.5, size=10, margin=margin(b=30), color="grey20"),
+        plot.caption=element_text(color="grey30"),
+        plot.background=element_rect(fill="#fefcfb", color=NA)
+  ) +
+  labs(title="Age Gap in Movie Love Interest",
+       subtitle="The age difference in years between love interests in 965 movies, released between 1990 and 2019",
+       caption="Source: hollywoodagegap.com",
+       x="Age Difference (in years)")
+
+ggsave("p2.png", height=8, width=7)
+```
