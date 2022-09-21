@@ -22,7 +22,9 @@
     * #TidyTuesday tables ([1](https://twitter.com/schmid_07/status/1480915022041788418), [2](https://twitter.com/schmid_07/status/1488596892242124800)) by Bill Schmid
     * #TidyTuesday Axios Harris Poll [table](https://twitter.com/geokaramanis/status/1532662340826583040) by Georgios Karamanis
     * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
-* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes  
+    * [U.S. Gas Prices Visualized](https://github.com/kcuilla/USgasprices) by Kyle Cuilla ([Twitter thread on tables in tooltip](https://twitter.com/kc_analytics/status/1572261687419445248))
+* [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes 
+* [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032) by Tanya Shapiro
 
 <!-- toc -->
  
@@ -154,6 +156,7 @@
   * [Julia Silge's blog](https://juliasilge.com/blog/) demonstrating how to use the tidymodels packages with #TidyTuesday data
   * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
   * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
+* Github and RStudio: [GitHub - The Perks of Collaboration and Version Control](https://twitter.com/cosima_meyer/status/1572456682017652742) by Cosima Meyer
   
 
  <!-- toc -->
