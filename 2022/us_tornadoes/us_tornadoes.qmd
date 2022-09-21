@@ -1,0 +1,169 @@
+---
+title: "US Tornadoes"
+date: "2022-09-21"
+format: html
+editor: visual
+---
+
+Data: [US tornadoes/hail/damaging winds](https://www.spc.noaa.gov/wcm/) from NOAA Storm Prediction Center by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-05-11-edition/) 
+
+```{r libraries}
+library(tidyverse)
+library(patchwork)
+library(scico)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r font}
+font_add_google("Karla")
+f1 = "Karla"
+```
+
+```{r data}
+df = read_csv("data/1950-2020_actual_tornadoes.csv") %>% janitor::clean_names()
+dfh = read_csv("data/1955-2020_hail.csv")
+dfw = read_csv("data/1955-2020_wind.csv")
+```
+
+```{r "p1"}
+# Tile plot of actual tornadoes count by date from 1950 to 2020
+df1 =df %>%
+  count(yr,mo,dy) %>%
+  mutate(mo=parse_number(mo),
+         dy=parse_number(dy)) %>%
+  mutate(dec = cut(yr, breaks=c(1949,1959,1969,1979,1989,1999,2009,2019,2020),
+                   ordered_result = T)) %>%
+  mutate(dec=fct_rev(dec))
+
+df1 %>%
+  ggplot(aes(y=yr, x=dy, fill=n)) +
+  geom_tile() +
+  facet_grid(vars(dec),vars(factor(month.abb[mo], levels=month.abb)),scales = "free", space = "free") +
+  #facet_wrap(~factor(month.abb[mo], levels=month.abb), nrow=1) +
+  coord_cartesian(expand=F, clip="off") +
+  scale_y_continuous("Year", breaks=seq(1950,2020,10)) +
+  scale_x_continuous("Day", breaks=c(1,30)) +
+  scico::scale_fill_scico("",palette="imola", direction=-1, breaks=c(1,20,200), trans = "pseudo_log") +
+  #rcartocolor::scale_fill_carto_c(palette="ag_Sunset",direction=-1, breaks=c(1,20,200), trans = "pseudo_log") +
+  theme_minimal() +
+  theme(legend.position = "top",
+        panel.grid=element_line(size=.3),
+        axis.ticks = element_line(size=.3),
+        axis.ticks.length=unit(.2, "cm"),
+        strip.text.y=element_blank(),
+        strip.text.x=element_text(size=rel(1.1)),
+        plot.title=element_text(hjust=.5, face="bold"),
+        plot.subtitle=element_text(hjust=.5),
+        legend.title=element_blank(),
+        text=element_text(family=f1),
+        panel.spacing.x = unit(.7, "lines"),
+        plot.margin=margin(.4,.4,.4,.4, unit="cm"),
+        plot.background=element_rect(fill="#fafafa", color=NA)
+        ) +
+  labs(title="U.S. Tornadoes, 1950-2020",
+       subtitle="Count of actual tornadoes by date",
+       caption="\n Source: NOAA Storm Prediction Center by way of Data Is Plural") +
+  guides(fill = guide_colorbar(barwidth = unit(10, "lines"), 
+                                barheight = unit(.5, "lines")))
+
+ggsave("p1.png",width=9, height=6.5)
+```
+
+```{r "p2"}
+# Ridgeline plot of tornadoes count by month from 1950 to 2020, plot inspired by Nicola Rennie @nrennie35 
+df2 = df1 %>%
+  group_by(yr, mo) %>%
+  tally(n)
+
+df2_lab = df2 %>%
+  group_by(mo) %>%
+  summarise(avg = mean(n))
+
+df2 %>%
+  ggplot(aes(x=n, y=fct_rev(factor(month.abb[mo], levels=month.abb)))) +
+  ggridges::geom_density_ridges(alpha = .8, color="#494572", fill="#6966A8", size=.8) +
+  geom_text(data=df2_lab, aes(x=700, y=fct_rev(factor(month.abb[mo], levels=month.abb)), label=glue::glue("Avg: {round(avg)}")),
+            vjust = -1) +
+  scale_y_discrete(expand=c(0.02,0.02)) +
+  coord_cartesian(clip="off") +
+  cowplot::theme_minimal_grid() +
+  theme(text=element_text(family=f1),
+        panel.grid = element_blank(),
+        axis.title = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.ticks.length=unit(.25, "cm"),
+        axis.ticks=element_line(size=.3, color="black"),
+        plot.caption=element_text(hjust=0, margin=margin(t=13)),
+        plot.caption.position = "plot",
+        plot.title.position = "plot",
+        plot.background=element_rect(fill="#fafafa", color=NA),
+        plot.margin=margin(.4,0,.4,.4, unit="cm")
+        ) +
+  labs(title="Number of tornadoes in U.S. by month, 1950-2020",
+       caption="Source: NOAA Storm Prediction Center by way of Data Is Plural\nPlot inspired by Nicola Rennie @nrennie35")
+
+ggsave("p2.png",width=8, height=7)
+```
+
+```{r}
+# Exploring event count by type and year
+t = df %>% count(yr) %>% mutate(grp="Tornado")
+h = dfh %>% count(yr) %>% mutate(grp="Hail")
+dw = dfw %>% count(yr) %>% mutate(grp="Damaging Wind")
+
+rbind(t,h,dw) %>%
+  filter(yr>1980) %>%
+  ggplot(aes(x=yr, y=n, color=grp)) +
+  geom_step(aes(x=yr-.5)) +
+  geom_segment(aes(x=yr-.5, xend=yr+.5, y=n, yend=n, color=grp)) +
+  labs(subtitle="Event count by type and year") +
+  theme_minimal()
+```
+
+```{r "p3"}
+# Line plot of actual tornado events, damaging wind events, and hail events from 1996 to 2020
+p3a = df %>% filter(yr>=1996) %>%
+  count(date, yr, mo, dy) %>%
+  group_by(yr) %>%
+  arrange(date) %>%
+  mutate(cumsum=cumsum(n),
+         yday = yday(date)) %>%
+  ggplot(aes(x=yday, y=cumsum, color=yr, group=yr)) +
+  geom_line() +
+  scale_color_viridis_c(direction=-1, option="rocket") +
+  theme_minimal() +
+  labs(subtitle="Number of actual tornado events, U.S., 1996-2020")
+
+p3b = dfh %>% 
+  filter(yr>=1996) %>%
+  count(date, yr, mo, dy) %>%
+  group_by(yr) %>%
+  arrange(date) %>%
+  mutate(cumsum=cumsum(n),
+         yday = yday(date)) %>%
+  ggplot(aes(x=yday, y=cumsum, color=yr, group=yr)) +
+  geom_line() +
+  scale_color_viridis_c(direction=-1, option="rocket") +
+  theme_minimal() +
+  labs(subtitle="Number of hail events, U.S., 1996-2020")
+
+p3c = dfw %>%
+  filter(yr>=1996) %>%
+  count(date, yr, mo, dy) %>%
+  group_by(yr) %>%
+  arrange(date) %>%
+  mutate(cumsum=cumsum(n),
+         yday = yday(date)) %>%
+  ggplot(aes(x=yday, y=cumsum, color=yr, group=yr)) +
+  geom_line() +
+  scale_color_viridis_c(direction=-1, option="rocket") +
+  theme_minimal() +
+  labs(subtitle="Number of damaging wind events, U.S., 1996-2020")
+
+p3 = p3a + p3b + p3c + plot_layout(ncol=2) #combine plots
+```
+
+
+
