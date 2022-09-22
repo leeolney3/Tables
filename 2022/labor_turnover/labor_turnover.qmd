@@ -1,0 +1,355 @@
+---
+title: "Labor turnover"
+format: html
+editor: visual
+---
+
+Data: [Job Openings and Labor Turnover Survey]( Job Openings and Labor Turnover Survey ) by US Bureau of Labor Statistics by way of [DataisPlural](https://www.data-is-plural.com/archive/2022-09-21-edition/)
+
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(ggtext)
+library(cowplot)
+library(ggshadow)
+library(scico)
+library(ggnewscale)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r fonts}
+font_add_google("IBM Plex Sans")
+font_add_google("Sora")
+f1 = "IBM Plex Sans"
+f2 = "Sora"
+```
+
+### Hires, rate
+```{r hires data}
+# Total private, total US, all areas, hires, sesonally adjusted rate
+## 1 to 9 employees
+h1= tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2012L,  3.6,  3.8,    4,  3.7,  4.1,    4,    "4.1",  3.8,    4,    4,    4,  3.9,
+  2013L,  4.1,    4,  3.9,  3.5,  4.2,  3.3,    "3.5",  4.5,  3.7,  3.6,  3.3,  3.2,
+  2014L,  3.7,  3.3,  3.3,  3.7,  3.1,  3.3,    "3.7",  3.4,  3.8,  3.8,  4.3,  3.3,
+  2015L,  4.2,  4.3,  4.1,  3.6,  3.7,  3.7,    "3.6",  3.8,  3.8,    4,  4.3,  4.3,
+  2016L,  4.1,  3.8,  4.1,  4.1,    4,  3.9,    "4.1",  3.8,  3.6,  4.2,  4.1,  4.3,
+  2017L,  4.7,  3.7,  4.3,  4.4,  4.6,  4.6,    "4.4",  4.5,  3.6,  3.8,  3.7,    4,
+  2018L,  3.8,  4.2,  4.4,    4,  4.3,  4.4,    "3.9",    4,  4.2,  4.4,  4.1,  4.1,
+  2019L,  4.1,  4.1,  3.7,  4.1,  3.7,  3.8,    "4.2",  4.1,    4,  4.1,  4.2,  4.2,
+  2020L,  4.7,  4.2,  3.7,    4,  9.1,  6.1,    "4.9",  4.9,  4.8,  4.7,  4.7,    4,
+  2021L,  4.5,  4.7,  4.9,  5.1,  4.5,  4.7,    "5.0",    4,  4.8,  4.3,  4.4,  4.1,
+  2022L,    4,  4.5,  3.8,  4.8,  4.5,  4.1, "4.3",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(class="1 to 9 employees")
+
+## 10 to 49 employees
+h2=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2012L,    4,    4,    4,  3.6,  3.8,  3.8,    "3.6",  3.9,  3.7,  3.8,  3.8,  3.7,
+  2013L,    4,    4,  3.7,  3.9,  3.8,  3.8,    "4.0",    4,  4.1,    4,  4.4,  4.1,
+  2014L,  3.9,    4,    4,  3.8,  3.9,  3.9,    "4.1",    4,  4.3,  4.1,  3.9,  4.5,
+  2015L,  3.8,  4.1,  4.1,  4.3,  4.3,  4.3,    "4.2",  4.2,  4.4,  4.4,  4.3,  4.5,
+  2016L,  4.4,  4.5,  4.4,  4.3,  4.1,  4.3,    "4.3",  4.2,  4.2,  4.2,  4.3,  4.3,
+  2017L,  4.3,  4.4,  4.4,  4.1,  4.2,  4.4,    "3.9",  4.1,  4.2,  4.4,  4.3,  4.3,
+  2018L,  4.3,  4.3,  4.3,  4.1,  4.5,  4.3,    "4.4",  4.7,  4.3,  4.3,  4.6,  4.4,
+  2019L,  4.5,  4.4,  4.5,  4.5,  4.4,  4.6,    "4.5",  4.5,  4.6,  4.5,  4.2,  4.5,
+  2020L,  4.3,  4.4,  3.5,  3.5,  8.8,  7.6,    "5.3",  4.8,  4.9,  5.2,  4.5,  4.8,
+  2021L,  4.4,  5.1,    5,  4.9,  4.9,  5.1,    "5.0",    5,    5,  4.9,  5.1,  4.8,
+  2022L,  4.8,  5.1,  4.9,  4.5,  4.4,  4.4, "4.3",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(class="10 to 49 employees")
+
+## 50 to 249 employees
+h3=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2012L,  4.1,  4.3,  4.3,  3.9,    4,  3.8,    "3.7",  3.9,  3.7,  3.8,    4,    4,
+  2013L,  3.9,    4,  3.8,    4,  4.2,    4,    "3.9",    4,  4.1,  3.9,    4,    4,
+  2014L,  4.2,  4.4,  4.3,  4.6,  4.5,  4.6,    "4.7",  4.3,  4.5,  4.7,  4.5,  4.7,
+  2015L,  4.6,  4.4,  4.5,  4.5,  4.4,  4.3,    "4.4",  4.3,  4.6,  4.5,  4.5,  4.5,
+  2016L,  4.3,  4.8,  4.7,  4.3,  4.3,  4.3,    "4.3",  4.5,  4.4,  4.2,  4.5,  4.4,
+  2017L,  4.6,  4.6,  4.5,  4.3,  4.3,  4.4,    "4.5",  4.4,  4.5,  4.6,  4.5,  4.5,
+  2018L,  4.4,  4.5,  4.3,  4.4,  4.4,  4.4,    "4.5",  4.4,  4.1,  4.8,  4.3,  4.5,
+  2019L,  4.5,  4.5,  4.5,  4.7,  4.5,  4.5,    "4.6",  4.5,  4.6,  4.6,  4.8,  4.7,
+  2020L,  4.8,  4.9,  4.1,  3.8,  6.6,  6.2,    "5.4",  4.6,  4.9,    5,  4.9,  4.6,
+  2021L,  4.5,  4.8,  4.9,  4.7,  4.8,    5,    "5.1",  5.3,  5.2,  5.4,  5.6,  5.5,
+  2022L,  5.4,  5.5,  5.6,  4.9,  5.2,  5.4, "5.2",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(class="50 to 249 employees")
+
+## 250 to 999 employees
+h4=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2012L,  3.5,  3.4,  3.4,  3.9,  3.7,  3.7,    "3.6",  3.6,  3.6,  3.6,  3.6,  3.7,
+  2013L,  3.3,  3.7,  3.6,  4.1,  3.7,  3.8,    "4.0",  3.7,  3.9,  3.6,  3.5,  3.8,
+  2014L,  3.6,  3.8,  3.8,  3.9,  4.3,  3.9,    "3.7",  3.9,  3.9,  3.8,  3.6,  3.8,
+  2015L,  3.9,  3.7,  3.7,    4,  3.9,  3.9,    "3.9",  3.9,  3.9,  3.9,  3.8,  4.1,
+  2016L,  3.7,  3.7,  3.5,  3.8,  3.7,  3.8,    "3.9",  3.8,  3.8,  3.8,  3.4,  3.5,
+  2017L,  3.7,  3.5,  3.4,  3.5,  3.9,  4.2,    "4.1",  4.2,  4.1,    4,  3.9,  3.5,
+  2018L,  4.2,  4.3,  4.3,  4.5,  4.5,  4.3,    "4.3",  4.2,  4.4,  4.4,  4.6,  4.3,
+  2019L,  4.3,  4.2,  4.4,  4.5,  4.2,  4.1,    "4.3",    4,  4.1,  3.7,  3.9,    4,
+  2020L,  3.9,    4,    4,  3.4,  4.9,  4.9,    "4.6",  4.6,  4.4,  4.5,  4.6,  4.4,
+  2021L,  4.6,  4.5,  4.7,  4.6,  4.7,  5.2,    "5.3",    5,    5,    5,  4.8,  4.5,
+  2022L,  4.8,  5.1,  5.3,  5.2,    5,  5.2, "5.2",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(class="250 to 999 employees")
+
+## 1,000 to 4,999 employees
+h5=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2012L,  2.6,  2.7,  2.5,  2.7,  2.7,  2.5,    "2.6",  2.5,  2.2,  2.4,  2.7,  2.4,
+  2013L,  2.5,  2.5,  2.5,  2.4,  2.5,  2.6,    "2.8",  2.5,  2.7,  2.5,  2.5,  2.8,
+  2014L,  2.7,  2.5,  2.7,  2.9,  2.9,    3,    "2.9",    3,  3.4,  3.1,  2.8,  3.1,
+  2015L,  2.8,    3,    3,    3,  3.1,  3.1,    "3.0",  3.2,  3.1,  3.1,    3,  3.4,
+  2016L,  2.7,    3,  2.9,  3.2,  3.2,  3.2,    "3.3",  3.3,  3.2,    3,  3.2,    3,
+  2017L,    3,  3.1,  3.2,  3.3,  3.5,  3.6,    "3.5",  3.4,  3.4,  3.4,  3.5,  3.4,
+  2018L,  3.4,  3.4,  3.4,  3.6,  3.6,  3.6,    "3.4",  3.6,  3.4,  3.4,  3.5,  3.3,
+  2019L,  3.2,  3.1,    3,  3.6,  3.3,  3.4,    "3.7",  3.5,  3.9,  3.5,  3.3,  3.5,
+  2020L,  3.5,  3.6,  3.7,  2.8,  4.8,  5.1,    "4.0",  3.9,  3.8,    4,  4.1,  3.8,
+  2021L,  3.8,  3.8,  3.9,  3.9,  3.8,  4.1,    "4.2",  4.3,  4.4,  4.3,  4.3,  4.2,
+  2022L,  4.3,  4.4,  4.4,  4.6,  4.6,    4, "4.6",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(class="1,000 to 4,999 employees")
+
+h6=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2012L,  1.7,  1.4,  1.4,  1.5,  1.5,  1.5,    "1.5",  1.4,  1.5,  1.4,  1.5,  1.3,
+  2013L,  1.5,  1.4,  1.6,  1.6,  1.5,  1.4,    "1.5",  1.6,  1.6,  1.4,  1.4,  1.5,
+  2014L,  1.4,  1.3,  1.6,  1.6,  1.6,  1.6,    "1.5",  1.5,  1.6,  1.5,  1.5,  1.9,
+  2015L,  1.6,  1.6,  1.8,  1.7,  1.7,  1.9,    "2.0",  1.8,  1.8,  1.7,    2,  1.9,
+  2016L,  1.8,  1.7,  1.7,  1.8,  1.9,  1.9,    "1.8",  1.9,  1.8,  1.7,  1.8,  1.7,
+  2017L,  1.9,  1.7,  1.6,  1.7,  1.9,  1.9,    "2.1",  1.8,  1.9,  1.7,  1.7,  1.6,
+  2018L,  1.6,  1.6,  1.7,    2,  2.1,    2,    "1.8",    2,  1.9,  2.1,    2,  1.9,
+  2019L,  1.8,  1.8,  1.9,  2.3,  2.1,    2,    "2.1",  2.1,  1.9,    2,  1.9,  2.1,
+  2020L,  1.8,  1.9,  1.9,  1.2,  1.4,  1.6,    "1.8",  1.7,  1.6,  2.1,    2,  1.8,
+  2021L,  2.2,  1.9,    2,  1.9,    2,  2.4,    "2.2",  2.2,  2.2,    2,  2.4,  1.9,
+  2022L,  1.8,  1.9,  1.9,  2.5,  2.6,  2.3, "2.2",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(class="5,000 or more employees")
+
+```
+
+```{r}
+hires = rbind(h1,h2,h3,h5,h5,h6) %>%
+  mutate(class=fct_inorder(class),
+         col=case_when(Year==2022~"1", TRUE~"0"),
+         month=as.numeric(match(name,month.abb))) 
+```
+
+```{r "p1", fig.height=3.75, fig.width=4}
+#| warning: false
+hires %>%
+  ggplot(aes(x=month, y=value, group=Year)) +
+  geom_shadowline(data= hires %>% filter(Year %in% c(2022,2021,2019,2018,2017,2016)), aes(color=fct_rev(factor(Year))), key_glyph = draw_key_rect, size=.55) +
+  geom_shadowline(data=hires %>% filter(Year==2022), size=.8, color="#2D402F") +
+  scale_color_manual(values=c("#2D402F","#AFA200","#E0D110","#B9C06A","#6B8396","#88A2BA")) +
+  scale_x_continuous(breaks=seq(1,12,1), labels=c("J","F","M","A","M","J","J","A","S","O","N","D")) +
+  scale_y_continuous(expand = expansion(mult = c(.2, .4)))  +
+  facet_wrap(~class, scales="free") +
+  theme_minimal_hgrid(10.5, line_size=.3, color="grey60") +
+  theme(text=element_text(family=f1),
+        legend.title=element_blank(),
+        legend.position = "top",
+        legend.margin=margin(b=10),
+        legend.text=element_text(size=10),
+        axis.line.x = element_line(color="black"),
+        axis.ticks.x = element_line(color="black"),
+        axis.title=element_blank(),
+        panel.spacing = unit(1.5, "lines"),
+        strip.text=element_text(hjust=0, face="bold", size=11),
+        plot.title.position = "plot",
+        plot.title=element_text(family=f2, size=13.5, margin=margin(b=8)),
+        plot.subtitle=element_text(size=10.8, margin=margin(b=15), lineheight = 1.1),
+        plot.caption.position = "plot",
+        plot.caption=element_markdown(hjust=0, size=9.3, lineheight = 1.3, color="grey20"),
+        plot.margin=margin(.7,.7,.7,.7,unit="cm"),
+        ) +
+  guides(colour = guide_legend(nrow = 1)) +
+  labs(title="Hiring Rate, U.S. Total Private",
+       subtitle="Seasonally adjusted hiring rate of the total private sector in the U.S., by year and establishment size for\nwhich the data were reported.",
+       caption="<br>Note: Jul 2022 figures are preliminary. Hires are all additions to the payroll during the month, computed by dividing the data<br>element level by employment and multiplying that quotient by 100.<br>Data source: US Bureau of Labor Statistics by way of Data Is Plural (retrieved: Sep 22, 2022)")
+
+ggsave("p1.png", height=7.5, width=8, bg="white")
+```
+
+
+### Job Openings, rate
+```{r job openings data}
+# Seasonally adjusted Job openings rate (total US, all areas, all size classes) from 2001 to 2022
+
+## Manufacturing
+s3=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2001L,  2.5,  2.4,  2.5,  2.1,  1.9,  1.9,    "1.8",  1.6,  2.1,  1.6,  1.4,  1.4,
+  2002L,  1.7,  1.7,  1.5,  1.6,  1.5,  1.6,    "1.6",  1.5,  1.6,  1.4,  1.5,  1.5,
+  2003L,  1.3,  1.3,  1.4,  1.3,  1.3,  1.3,    "1.3",  1.5,  1.3,  1.5,  1.7,  1.7,
+  2004L,  1.6,  1.6,  1.7,  1.8,    2,  1.8,    "1.9",  1.8,  1.8,  1.9,  1.7,  1.8,
+  2005L,  1.9,  1.9,    2,    2,  1.8,  1.8,    "2.0",    2,  2.3,  1.9,  2.4,  2.2,
+  2006L,  2.2,  2.4,  2.4,  2.5,    2,  2.4,    "2.1",  2.3,  2.3,  2.4,  2.2,  2.3,
+  2007L,  2.3,  2.4,  2.6,  2.4,  2.5,  2.5,    "2.5",  2.3,  2.3,    2,  2.3,  2.2,
+  2008L,  2.1,  1.9,  1.8,    2,    2,  1.7,    "1.7",  1.8,  1.6,  1.8,  1.4,  1.3,
+  2009L,  0.9,  1.1,    1,  0.7,  0.8,  0.8,    "0.8",    1,  1.1,  1.1,  1.3,  1.6,
+  2010L,  1.3,  1.4,  1.4,  1.5,  1.6,  1.7,    "1.8",  1.6,  1.6,  1.7,    2,  1.7,
+  2011L,  1.9,  1.8,  1.8,  1.9,  1.8,  1.7,    "1.9",  1.9,  2.1,  1.9,  1.9,    2,
+  2012L,  2.1,    2,  2.6,    2,  2.5,  2.5,    "2.1",  2.2,    2,  2.2,  2.1,    2,
+  2013L,  2.1,  2.3,  2.1,    2,    2,  1.8,    "1.8",  2.3,  2.2,  2.4,  2.6,  2.4,
+  2014L,  2.1,  2.3,  2.3,  2.2,  2.4,  2.5,    "2.4",  2.6,  2.5,  2.3,  2.6,  2.4,
+  2015L,  2.5,  2.5,  2.5,  2.6,  2.6,  2.3,    "2.7",  2.5,  2.5,  2.5,  2.4,  2.6,
+  2016L,  2.5,  2.6,  2.6,    3,  2.8,  2.9,    "2.7",  2.6,  2.6,  2.4,  2.7,  2.9,
+  2017L,  2.9,  2.9,  3.1,  2.9,  2.7,  3.1,    "2.9",  3.3,  3.4,  3.3,  3.4,  3.1,
+  2018L,  3.4,  3.4,  3.2,  3.4,  3.5,  3.5,    "3.5",  3.8,  3.6,  3.8,  3.9,  3.5,
+  2019L,  3.2,  3.5,  3.3,  3.5,  3.5,  3.5,    "3.4",  3.3,  3.3,    3,  3.1,  2.8,
+  2020L,  3.1,    3,  2.4,  2.6,  2.6,  2.8,    "3.3",  3.7,  3.8,  4.2,  3.8,  3.7,
+  2021L,  4.1,  4.5,  5.8,  6.6,  6.7,  6.8,    "7.1",  6.6,    7,  6.9,    6,  5.6,
+  2022L,  6.4,  5.9,  6.5,  7.4,    6,  6.2, "6.1",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(industry="Manufacturing")
+
+## Trade, transportation, and utilities
+s4=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2001L,  3.5,  3.5,  2.6,  3.2,  2.7,  2.7,    "2.5",  2.2,  2.3,  2.5,  2.4,  2.3,
+  2002L,  2.4,  2.1,  2.4,  2.2,    2,  2.2,    "2.2",  2.2,    2,  2.2,  1.9,  1.8,
+  2003L,  2.1,  2.1,    2,    2,  2.1,  2.2,    "1.9",  2.2,  2.1,    2,  2.1,  2.4,
+  2004L,  2.1,  2.3,  2.4,  2.3,  2.5,  2.4,    "2.7",  2.3,  2.9,  2.5,    2,  2.6,
+  2005L,  2.4,  2.9,  2.8,  2.9,  2.7,  2.8,    "2.8",  2.8,  2.9,  2.9,  2.9,  2.6,
+  2006L,  2.7,  2.7,  3.4,  2.9,  3.1,  3.1,    "2.6",  2.9,  3.1,    3,  2.9,  3.2,
+  2007L,  3.3,  2.9,  3.1,  3.2,  2.7,    3,    "3.0",  2.9,  2.9,  2.8,  2.8,  2.7,
+  2008L,  2.9,  2.4,  2.4,  2.4,  2.6,  2.3,    "2.3",  2.5,  1.8,  2.4,  2.2,  2.1,
+  2009L,    2,  1.8,  1.7,  1.3,  2.1,  1.8,    "1.2",  1.7,  1.5,  1.3,  1.5,  1.7,
+  2010L,  1.8,  1.9,    2,  1.8,  1.9,  1.9,    "1.9",  1.8,  1.7,    2,    2,  2.1,
+  2011L,  2.2,  2.5,  2.2,  2.4,  2.5,  2.6,    "2.6",  2.2,  2.4,  2.6,  2.9,  2.7,
+  2012L,  2.6,  2.5,  2.7,  2.4,  2.4,  2.4,    "2.6",  2.8,  2.9,  2.1,  2.6,    3,
+  2013L,  2.8,  2.5,  2.8,    3,  3.1,  3.4,    "2.7",  2.9,    3,  2.9,    3,  3.1,
+  2014L,    3,  3.3,  3.5,  3.5,  3.4,  3.5,    "3.4",  4.3,  3.4,  3.4,  3.2,  3.3,
+  2015L,  3.5,  3.8,  3.3,  3.6,  3.6,  3.5,    "4.5",  3.7,  3.8,  3.9,  3.7,  3.7,
+  2016L,  3.8,  3.8,  3.8,  3.9,  3.8,  3.8,    "3.7",  3.6,  3.6,  3.6,  3.5,  3.8,
+  2017L,  3.5,  3.7,  3.9,  3.6,  3.7,  3.9,    "4.0",  4.4,  4.2,  4.1,  4.5,  4.9,
+  2018L,  4.7,  4.5,  4.9,  5.2,  5.1,  5.1,    "5.0",  4.5,  5.2,  5.1,  5.5,  4.8,
+  2019L,  4.9,  4.3,  4.5,  4.6,  4.5,  4.6,    "4.5",  4.5,  4.4,  5.2,  4.2,  4.1,
+  2020L,  4.2,  4.1,  3.9,  3.5,    4,    4,    "4.5",  4.2,  4.1,  4.2,  4.3,  4.5,
+  2021L,  4.8,  5.1,  5.7,  6.1,  5.8,  6.3,    "6.4",  6.8,  6.5,  6.6,  6.4,  6.4,
+  2022L,  6.1,  6.5,  6.6,  6.2,  6.8,  5.4, "6.0",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(industry="Trade, transportation, and utilities")
+
+## Education and health services
+s5=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2001L,  5.1,  4.9,    5,  4.3,  4.9,  4.6,    "4.8",  5.1,  4.6,  4.5,  4.4,  4.4,
+  2002L,  4.5,  4.5,  4.2,  4.1,  3.8,  4.4,    "4.0",  4.1,  4.1,  3.8,  4.4,  3.7,
+  2003L,  3.7,  3.4,  3.4,  3.5,  3.7,  3.5,    "3.1",  3.2,  3.2,  3.5,  3.3,  3.2,
+  2004L,  3.5,  3.5,  3.6,  3.5,  3.5,    3,    "3.4",  3.4,  3.4,  3.7,  3.5,  3.6,
+  2005L,  3.4,  3.5,  3.8,  3.7,  3.8,  3.8,    "3.8",  3.8,  3.9,  3.7,  3.7,  3.7,
+  2006L,  3.9,    4,  3.9,  3.9,  3.7,  3.8,    "3.4",    4,    4,  4.1,  4.2,    4,
+  2007L,  3.9,  3.8,    4,    4,  4.2,  4.2,    "3.8",  4.1,  4.4,  3.8,  3.9,    4,
+  2008L,  3.8,  4.1,    4,  3.6,  3.7,  3.8,    "3.8",  3.5,  3.1,  3.3,  3.4,  3.1,
+  2009L,  2.9,  2.8,  2.6,  2.6,  2.6,  2.6,    "2.6",  2.7,  2.7,  2.6,  2.5,  2.7,
+  2010L,    3,  2.6,  2.6,  2.5,  2.5,  2.3,    "2.6",  2.4,  2.5,    3,  2.7,  2.7,
+  2011L,  2.6,  2.8,  2.9,  2.9,  2.8,    3,    "3.0",  3.1,  2.9,    3,    3,    3,
+  2012L,  3.2,  3.2,  3.2,  3.2,  3.4,  3.5,    "3.2",  3.1,  3.3,  3.3,  3.4,  3.3,
+  2013L,  2.9,  3.2,  3.3,  3.3,  3.2,  3.1,    "3.0",  3.4,  3.1,  3.1,    3,  2.8,
+  2014L,  3.2,  3.3,  3.4,  3.3,  3.7,  3.8,    "3.9",  4.1,  3.9,    4,  3.6,  4.2,
+  2015L,  4.1,  4.1,    4,  4.4,  4.3,  4.4,    "5.0",  4.5,  4.6,  4.6,  4.7,  4.6,
+  2016L,    5,  4.4,  4.6,  4.7,  4.6,  4.5,    "4.7",  4.4,  4.6,  5.1,    5,    5,
+  2017L,  4.8,  5.1,  4.6,  4.6,  4.5,  4.8,    "4.7",  4.8,  4.7,  4.6,  4.6,  4.7,
+  2018L,  4.7,  4.8,    5,  4.9,  4.9,  5.1,    "5.0",    5,  5.1,    5,    5,  5.3,
+  2019L,  5.4,  4.9,  5.4,  5.4,  5.3,  5.1,    "5.1",  5.2,  4.8,  5.1,  5.1,  4.9,
+  2020L,  5.2,  4.9,  4.7,  4.2,  4.3,  4.6,    "5.0",  4.9,    5,  5.5,  5.4,  5.2,
+  2021L,  5.5,  6.4,    6,  6.1,  6.7,  6.8,    "7.4",    7,  7.7,  8.1,  8.2,  8.4,
+  2022L,  8.2,  8.6,  8.6,  8.2,  8.1,  8.4, "8.2",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(industry="Education and health services")
+
+## Leisure and hospitality
+s6=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2001L,  5.2,  4.8,  5.5,  4.6,  4.2,  3.6,    "4.6",  4.3,  4.3,    3,  3.6,  3.5,
+  2002L,  2.9,  3.3,  3.3,  3.1,  3.2,  2.8,    "3.1",  3.2,  2.8,  3.1,  3.2,    3,
+  2003L,  3.1,  2.9,  2.8,    3,  3.4,  3.4,    "2.7",  3.1,  3.1,  3.6,  3.4,  3.5,
+  2004L,  3.5,  3.6,  3.4,  3.2,  3.3,  3.6,    "4.0",  3.6,    4,  3.7,  3.3,  3.6,
+  2005L,  4.1,    4,  4.2,  4.7,    4,  4.3,    "4.0",  3.8,  3.6,  3.8,  3.9,  4.4,
+  2006L,  4.7,  4.4,  4.1,  4.9,    4,    4,    "4.3",  4.2,  4.2,  4.3,  4.4,  4.2,
+  2007L,  3.7,    4,  4.5,    4,  4.2,  4.5,    "4.5",  4.5,  4.8,  4.3,  4.5,  4.1,
+  2008L,  4.1,  3.9,  4.1,  3.9,  3.9,  3.4,    "3.2",  3.1,    3,    3,  2.6,  2.6,
+  2009L,  1.8,  2.4,    2,    2,  2.2,  2.1,    "1.9",  1.5,  2.1,    2,  2.1,    2,
+  2010L,  2.1,    2,  1.8,  2.1,  2.3,  2.5,    "2.4",  2.7,  2.4,  3.1,  2.4,  2.6,
+  2011L,  2.7,  2.9,  2.9,  2.4,  2.3,    3,    "2.6",  2.8,  3.1,  3.1,  3.1,  3.2,
+  2012L,  3.2,  2.7,  3.2,  3.4,  3.2,  3.4,    "3.4",    3,    3,  3.4,  3.5,  3.3,
+  2013L,  3.2,  3.6,  3.5,  3.3,  3.2,  3.3,    "3.4",  3.5,  3.7,  3.6,  3.6,  3.9,
+  2014L,    4,  3.7,  3.8,  4.3,  4.6,  4.4,    "4.1",  4.6,  4.6,  4.3,  4.1,  4.5,
+  2015L,  5.1,  4.8,  4.6,  4.6,  4.4,  4.2,    "4.8",  4.4,  4.4,  4.9,  4.7,  4.6,
+  2016L,  4.7,  4.7,  5.1,  4.7,  4.6,  4.8,    "4.6",  4.9,  4.5,  4.6,  4.6,  4.5,
+  2017L,  4.4,  5.3,  4.5,    5,    5,    5,    "5.1",  5.3,  4.7,  4.7,  5.1,  5.2,
+  2018L,  5.4,  5.4,  5.4,  5.5,  5.6,  6.1,    "5.9",  5.8,  6.1,  5.9,  5.9,  6.3,
+  2019L,  6.5,  5.8,  5.8,  5.7,  5.8,  5.4,    "5.5",  5.5,  5.8,  5.7,  5.5,  5.3,
+  2020L,  5.3,  5.4,  3.8,  3.7,  6.4,  6.9,    "6.1",  5.6,  5.7,    6,    6,  5.9,
+  2021L,  5.7,  6.9,  7.6,  8.1,  8.9,  9.5,   "10.1", 10.6,  9.5,   10,   10, 11.7,
+  2022L,   10,   10,  9.7,  8.8,    9,  8.7, "8.8",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(industry="Leisure and hospitality")
+
+## Government
+s7=tibble::tribble(
+  ~Year, ~Jan, ~Feb, ~Mar, ~Apr, ~May, ~Jun,     ~Jul, ~Aug, ~Sep, ~Oct, ~Nov, ~Dec,
+  2001L,  2.3,  2.2,  2.1,  2.3,  2.3,  2.5,    "2.3",  2.2,    2,  2.1,  2.2,  2.1,
+  2002L,  1.9,  2.3,    2,    2,  2.1,  1.8,    "2.0",    2,  1.8,  1.8,  1.9,  1.7,
+  2003L,    2,  1.8,  1.7,  1.5,  1.5,  1.8,    "1.6",  1.4,  1.5,  1.7,  1.4,  1.5,
+  2004L,  1.5,  1.6,  1.7,  1.6,  1.7,  1.5,    "1.5",  1.5,  1.6,  1.7,  1.6,  1.8,
+  2005L,  1.4,  1.7,  1.6,  1.6,  1.6,  1.6,    "1.8",  1.7,  1.8,  1.6,  1.7,  1.9,
+  2006L,  1.8,  1.7,  1.9,  1.9,  1.9,  1.8,    "2.2",  1.9,  2.1,  1.8,  1.9,    2,
+  2007L,    2,  1.9,  1.9,  1.9,  1.9,    2,    "2.0",    2,    2,  1.9,    2,  1.9,
+  2008L,  1.8,  1.9,  1.8,  1.8,  1.9,  1.9,    "1.8",  1.7,  1.7,  1.7,  1.7,  1.4,
+  2009L,  1.6,  1.6,  1.6,  1.6,  1.2,  1.4,    "1.3",  1.3,  1.3,  1.7,  1.5,  1.4,
+  2010L,  1.8,  1.5,  1.8,  2.7,  1.6,  1.3,    "1.4",  1.5,  1.5,  1.5,  1.5,  1.8,
+  2011L,  1.5,  1.4,  1.4,  1.5,  1.3,  1.6,    "1.5",  1.5,  1.8,  1.6,  1.6,  1.6,
+  2012L,  1.6,  1.8,  1.8,  1.6,  1.8,  1.7,    "1.7",  1.9,  1.7,  1.7,  1.6,  1.8,
+  2013L,    2,  1.9,  1.8,  1.9,  1.8,  1.8,    "1.7",  1.8,  1.8,  1.8,  1.8,  1.6,
+  2014L,  1.7,  1.8,  1.9,    2,    2,  2.3,    "2.1",    2,  2.1,  1.9,  2.1,  2.2,
+  2015L,  2.3,  2.3,  2.2,  2.3,  2.3,  2.1,    "2.4",  2.2,  2.1,  2.3,  2.3,  2.4,
+  2016L,  2.3,  2.2,  2.2,  2.2,  2.4,  2.1,    "2.6",  2.2,  2.3,  2.1,  2.5,  2.4,
+  2017L,  2.2,  2.2,  2.2,  2.4,  2.4,  2.5,    "2.4",  2.2,  2.5,  2.4,  2.3,  2.5,
+  2018L,  2.5,  2.6,  2.7,  2.6,  2.6,  2.8,    "2.9",  3.1,  2.7,  2.7,  2.9,  2.8,
+  2019L,    3,    3,  3.1,  3.1,    3,    3,    "2.8",  3.2,  3.2,  3.4,  3.2,  3.2,
+  2020L,  3.5,  3.4,    3,  2.8,  2.8,    3,    "3.7",  3.1,  3.1,  3.2,  3.2,  3.1,
+  2021L,  3.3,  3.2,  3.6,  4.2,  4.1,  3.9,    "4.2",  3.7,  4.3,  4.1,  4.3,  4.8,
+  2022L,  4.5,  4.7,  4.5,  4.5,  4.4,  4.2, "4.6(P)",   NA,   NA,   NA,   NA,   NA
+  ) %>% mutate(Jul=parse_number(Jul)) %>% pivot_longer(!Year) %>% mutate(industry="Government")
+
+```
+
+```{r}
+job_openings= rbind(s3,s4,s5,s6,s7) %>%
+  mutate(month=as.numeric(match(name,month.abb)),
+         col=case_when(Year==2022~"2022", TRUE~"0"))
+```
+
+```{r, fig.height=3.75, fig.width=5.5}
+#| warning: false
+#| message: false
+job_openings %>%
+  ggplot(aes(x=month, y=value, group=Year)) +
+  geom_shadowline(data=job_openings %>% filter(Year!=2022), aes(color=Year))+
+  scico::scale_color_scico(palette="grayC", begin=.1, end=.9, breaks=c(2001,2011,2021)) +
+  new_scale_color()+
+  geom_line(data=job_openings %>% filter(Year==2022), aes(color=col),size=1,key_glyph = draw_key_rect) +
+  scale_color_manual(values="#f72585") +
+  facet_wrap(~factor(industry, levels=c("Government","Trade, transportation, and utilities","Manufacturing","Education and health services","Leisure and hospitality")), nrow=1,labeller = label_wrap_gen(23)) +
+  scale_x_continuous(breaks=c(1,12), labels=c("Jan","Dec"), expand=c(0,0)) +
+  scale_y_continuous(limits=c(0,12), expand=c(0,0)) +
+  theme_minimal_grid(12) +
+  theme(text=element_text(family=f1),
+        panel.spacing = unit(1.7, "lines"),
+        axis.title=element_blank(),
+        axis.text=element_text(family=f1),
+        strip.text=element_text(face="bold"),
+        legend.position = "top",
+        legend.title = element_blank(),
+        legend.text = element_text(size=10),
+        plot.title.position = "plot",
+        legend.key.height = unit(.5,"lines"),
+        plot.subtitle=element_text(lineheight=1.1,margin=margin(b=15), size=10.8),
+        plot.caption.position = "plot",
+        plot.caption=element_markdown(lineheight=1.2,hjust=0, color="grey30"),
+        plot.margin=margin(.7,.9,.4,.7,unit="cm"),
+        ) +
+  labs(title="U.S. Job Openings, 2001 - 2022",
+       subtitle="Seasonally adjusted rate of job openings by sector and year. The job openings rate is computed by dividing the number of job openings by the sum of\nemployment and job openings and multiplying that quotient by 100. ",
+       caption="<br>Note: Jul 2022 figures are preliminary. *Job Openings* are all positions that are open (not filled) on the last business day of the month. The positions can be full-time or<br>part-time, and they can be permanent, short-term, or seasonal. A job is 'open' only if it meets all three of the following conditions: 1) a specific position exists and there<br>is work available for that position; 2) the job could start within 30 days, whether or not the establishment finds a suitable candidate during that time; and 3) there is<br>active recruiting for workers from outside the establishment location that has the opening.<br><br>Data source: US Bureau of Labor Statistics by way of Data Is Plural (retrieved: Sep 22, 2022)")
+
+ggsave("p2.png", height=7, width=11, bg="white")
+```
