@@ -94,6 +94,7 @@
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
+  * [Mapping OSM and satellite data with terra in R](https://milospopovic.net/mapping-raster-files-with-terra-in-r/) by Milos Popovic
 * Distributions 
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay, {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
