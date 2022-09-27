@@ -10,7 +10,7 @@
 
 ***
 * Senator's votes on bill codifying abortion rights chart [(R code)](https://github.com/leeolney3/Tables/blob/main/2022/recr/recr_economist/p2_script.R)
-  * [Original plot](https://blog.datawrapper.de/wp-content/uploads/2022/04/image24-3.png) from The Economist: [American senators strike down a bill that would have codified abortion rights](https://www.economist.com/graphic-detail/2022/05/11/american-senators-strike-down-a-bill-that-would-have-codified-abortion-rights?utm_medium=social-media.content.np&utm_source=twitter&utm_campaign=editorial-social&utm_content=discovery.content&%3Ffsrc%3Dscn%2F=tw%2Fdc), May 11 2022
+  * [Original plot](https://blog.datawrapper.de/wp-content/uploads/2022/05/image5-1.png) from The Economist: [American senators strike down a bill that would have codified abortion rights](https://www.economist.com/graphic-detail/2022/05/11/american-senators-strike-down-a-bill-that-would-have-codified-abortion-rights?utm_medium=social-media.content.np&utm_source=twitter&utm_campaign=editorial-social&utm_content=discovery.content&%3Ffsrc%3Dscn%2F=tw%2Fdc), May 11 2022
   * Data source: YouGov/The Economist
 
 <p align="center"><img src="https://github.com/leeolney3/Tables/blob/main/2022/recr/recr_economist/p2.png" width="70%"></p>
