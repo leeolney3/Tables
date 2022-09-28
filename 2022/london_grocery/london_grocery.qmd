@@ -1,0 +1,195 @@
+---
+title: "London Grocery Purchases"
+date: "2022-09-28"
+format: html
+editor: visual
+---
+
+Month-level and Borough-level grocery purchases in London
+
+Data source: [London area-level grocery purchases](https://figshare.com/articles/dataset/Area-level_grocery_purchases/7796666) (h/t Georgios Karamanis)
+
+Citation: Aiello, L.M., Quercia, D., Schifanella, R. et al. Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London. Sci Data 7, 57 (2020). https://doi.org/10.1038/s41597-020-0397-7
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(ggtext)
+library(sf)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r data}
+#| message: false
+d1 = read_csv("london_grocery/Jan_borough_grocery.csv") %>% mutate(month=1)
+d2 = read_csv("london_grocery/Feb_borough_grocery.csv") %>% mutate(month=2)
+d3 = read_csv("london_grocery/Mar_borough_grocery.csv") %>% mutate(month=3)
+d4 = read_csv("london_grocery/Apr_borough_grocery.csv") %>% mutate(month=4)
+d5 = read_csv("london_grocery/May_borough_grocery.csv") %>% mutate(month=5)
+d6 = read_csv("london_grocery/Jun_borough_grocery.csv") %>% mutate(month=6)
+d7 = read_csv("london_grocery/Jul_borough_grocery.csv") %>% mutate(month=7)
+d8 = read_csv("london_grocery/Aug_borough_grocery.csv") %>% mutate(month=8)
+d9 = read_csv("london_grocery/Sep_borough_grocery.csv") %>% mutate(month=9)
+d10 = read_csv("london_grocery/Oct_borough_grocery.csv") %>% mutate(month=10)
+d11= read_csv("london_grocery/Nov_borough_grocery.csv") %>% mutate(month=11)
+d12= read_csv("london_grocery/Dec_borough_grocery.csv") %>% mutate(month=12)
+
+df = rbind(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12)
+#write_csv(df, "borough_grocery_all_months.csv")
+
+# shp file source: https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
+shp = read_sf("statistical-gis-boundaries-london/ESRI/London_Borough_Excluding_MHW.shp")
+```
+
+```{r fonts}
+font_add_google("Archivo")
+f1 = "Archivo"
+```
+
+### City of London compared to other boroughs
+
+-   weight of {nutrient} in the average product,in grams
+
+```{r p1 data}
+br = shp %>% select(NAME, area_id=GSS_CODE)
+df1 = df %>% 
+  select(month, area_id, fat, saturate, salt, sugar, protein, carb, fibre, alcohol) %>% 
+  left_join(br, by="area_id") %>%
+  pivot_longer(3:10) %>% select(-geometry)
+```
+
+```{r "p1", fig.height=3.75, fig.width=3.75}
+p1= df1 %>%
+  ggplot(aes(x=month, y=value, group=NAME)) +
+  geom_line(color="#8e9aaf", alpha=.3) +
+  geom_line(data=df1 %>% filter(NAME=="City of London"), 
+            color="#ee9b00", size=1) +
+  facet_wrap(~str_to_upper(name), scales="free") +
+  scale_x_continuous(breaks=seq(1,12,1), limits=c(1,12),
+                     labels=c("Jan","","","","","","","","","","","Dec")) +
+  theme_minimal(base_family = f1) +
+  theme(panel.spacing = unit(1.5, "lines"),
+        axis.title=element_blank(),
+        axis.text=element_text(color="black"),
+        axis.ticks = element_line(color="black"),
+        panel.grid.major=element_blank(),
+        panel.grid.minor= element_blank(),
+        strip.text=element_text(face="bold", size=10),
+        plot.title=element_markdown(face="bold", hjust=.5),
+        plot.subtitle = element_text(hjust=.5),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, lineheight = 1, color="grey30"),
+        plot.margin = margin(.7,.7,.5,.7,unit="cm")
+        ) +
+  labs(title="<span style='color:#ee9b00'>City of London</span> grocery purchases compared to <span style='color:#64738d'>other boroughs</span>",
+       subtitle= "Monthly, weight of {nutrient} in the average product, in grams\n",
+       caption="\nSource: Aiello, L.M., Quercia, D., Schifanella, R. et al. Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London.\nSci Data 7, 57 (2020). https://doi.org/10.1038/s41597-020-0397-7")
+
+ggsave("p1.png", p1, height=7.5, width=7.5, bg="white")
+```
+
+### Section 2: Fraction of category purchased by month and borough
+
+-   beer, spirits, wine
+
+```{r p2 data}
+df2 =df %>% 
+  select(area_id, month, f_wine, f_spirits, f_beer) %>%
+  pivot_longer(3:5) %>%
+  mutate(name = str_remove(name,"f_"),
+         name = str_to_title(str_replace(name,"_"," "))) %>%
+  left_join(br, by="area_id") %>%
+  group_by(name) %>%
+  mutate(value=value/max(value)) %>%
+  ungroup() 
+```
+
+```{r, plot}
+p2= df2 %>%
+  ggplot(aes(x=month, y=fct_rev(NAME), fill=value)) +
+  scico::scale_fill_scico(palette = "acton", direction=-1) +
+  scale_x_continuous(breaks=c(1,12), labels=c("Jan","Dec")) +
+  scale_y_discrete(position = "right") +
+  geom_tile(height=.8) +
+  facet_wrap(~name, ncol=3) +
+  coord_cartesian(expand=FALSE, clip="off") +
+  cowplot::theme_minimal_grid(11.5) +
+  theme(text=element_text(family=f1),
+        legend.position = "top",
+        legend.title=element_text(size=12),
+        plot.title.position = "plot",
+        axis.title=element_blank(),
+        axis.ticks = element_line(color="grey30", size=.3),
+        axis.ticks.length=unit(.2, "cm"),
+        panel.grid=element_blank(),
+        strip.text=element_text(face="bold"),
+        panel.spacing = unit(1.2, "lines"),
+        plot.caption = element_text(hjust=0, color="grey30"),
+        plot.caption.position = "plot",
+        plot.margin = margin(.7,.7,.5,.7,unit="cm")) +
+  guides(fill=guide_legend(keywidth = unit(.5, "lines"))) +
+  labs(title="London borough-level grocery purchase",
+       subtitle="Fraction of products of type (category) purchased by month and borough",
+       fill="Relative to category max",
+       caption="\nSource: Aiello, L.M., Quercia, D., Schifanella, R. et al. Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London.\nSci Data 7, 57 (2020). https://doi.org/10.1038/s41597-020-0397-7")
+```
+
+```{r "p2", fig.height=4.25, fig.width=4}
+# draw rect for City of London
+
+png("p2.png", width=8, height=8.5,unit='in',res=300)
+
+# function reference: https://stackoverflow.com/questions/64656234/how-does-the-economist-make-these-lines-near-the-title-using-using-ggplot
+annotate_npc <- function(x, y, height, width, ...) {
+  grid::grid.draw(grid::rectGrob(
+    x = unit(x, "npc"), y = unit(y, "npc"), height = unit(height, "npc"), width = unit(width, "npc"),
+    gp = grid::gpar(...)
+  ))
+}
+
+p2
+annotate_npc(x = 0.46, y = .707, height = 0.023, width = 0.85, fill = "transparent", col = "black")
+
+dev.off()
+```
+
+### Section 3: Fraction of category purchased by month
+
+-   beer, soft_drinks, spirits, wine
+
+```{r p3 data}
+df3 = df %>% 
+  select(area_id, month, f_beer, f_spirits, f_soft_drinks, f_wine) %>%
+  pivot_longer(3:6) %>%
+  left_join(br, by="area_id") %>%
+  mutate(name = str_remove(name,"f_"),
+         name = str_replace(name,"_"," "))
+```
+
+```{r, fig.height=3.5, fig.width=4}
+#| message: false
+p3= df3 %>%
+  ggplot(aes(month,value, color=name)) +
+  geom_point(alpha=.4, shape=95, size=10) +
+  geom_smooth(show.legend = F) +
+  scale_color_manual(values=c("#038C8C","#D94389","#F25A38","#e3b505")) +
+  scale_y_continuous(limits=c(0,0.05), expand=c(0,0)) +
+  scale_x_continuous(breaks=seq(1,12,3), limits=c(1,12), labels=c("Jan","Apr","Jul","Oct")) +
+  cowplot::theme_minimal_grid(11.5) +
+  theme(text=element_text(family=f1),
+        legend.position = "none",
+        plot.title.position = "plot",
+        plot.subtitle = element_markdown(size=10.5, lineheight=1.2),
+        plot.caption = element_text(hjust=0, color="grey30"),
+        plot.caption.position = "plot",
+        plot.margin = margin(.7,.7,.5,.7,unit="cm"),
+        axis.title=element_blank()) +
+  labs(title="London borough-level grocery purchase",
+       subtitle="Fraction of products of type <span style='color:#D94389'>**softdrinks**</span>, <span style='color:#e3b505'>**wine**</span>, <span style='color:#038C8C'>**beer**</span> and <span style='color:#F25A38'>**spirts**</span> purchased by month. Each point represents<br>a borough.<br>",
+       caption="\nSource: Aiello, L.M., Quercia, D., Schifanella, R. et al. Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London.\nSci Data 7, 57 (2020). https://doi.org/10.1038/s41597-020-0397-7")
+
+ggsave("p3.png", p3, height=7, width=8, bg="white")
+```
