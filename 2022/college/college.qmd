@@ -1,0 +1,183 @@
+---
+title: "College"
+date: "2022-09-29"
+format: html
+editor: visual
+---
+
+Data: [Grads on the Go: Measuring College-Specific Labor Markets for Graduates (US, 2010-2018)](https://www.openicpsr.org/openicpsr/project/170381/version/V3/view) by way of [Data is Plural](https://www.data-is-plural.com/archive/2022-06-08-edition/)
+
+Citation: Conzelmann, Johnathan, Hemelt, Steven, Hershbein, Brad, Martin, Shawn, Simon, Andrew, and Stange, Kevin. Grads on the Go: Measuring College-Specific Labor Markets for Graduates \[US, 2010-2018\]. Ann Arbor, MI: Inter-university Consortium for Political and Social Research \[distributor\], 2022-05-18. https://doi.org/10.3886/E170381V3
+
+Plots inspired by: Washington Post [States with the worst brain drain --- and more!](https://www.washingtonpost.com/business/2022/09/09/films-assigned-college/) (Sep 9, 2022) and [Nicola Nicola Rennie \@nrennie35](https://twitter.com/nrennie35/status/1574814969580904448/photo/1)
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(usmap)
+library(sf)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r fonts}
+font_add_google("Barlow")
+f1 = "Barlow"
+font_add_google("Libre Franklin")
+f2 = "Libre Franklin"
+font_add_google("Archivo")
+f3 = "Archivo"
+```
+
+```{r data}
+df= rio::import("data/CollegeMarketShares_state.dta")
+
+caption="Source: Conzelmann, Johnathan, Hemelt, Steven, Hershbein, Brad, Martin, Shawn, Simon, Andrew, and Stange, Kevin. Grads on the Go: Measuring College-Specific Labor Markets for Graduates [US, 2010-2018]. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2022-05-18. https://doi.org/10.3886/E170381V3"
+```
+
+### Section 1: Where students from the midwest go?
+
+```{r p1 data}
+d1= df %>%
+  filter(geo_stabbr!="UNLOCATED", stabbr %in% .south_region) %>%
+  group_by(stabbr) %>% mutate(sum=sum(geo_count_state)) %>% ungroup() %>%
+  mutate(loc=case_when(stabbr ==geo_stabbr~1, TRUE~0)) %>%
+  group_by(stabbr, geo_stabbr) %>% tally(geo_count_state) %>% mutate(pct=n/sum(n)*100) %>%
+  ungroup() %>% 
+  mutate(grp=case_when(stabbr==geo_stabbr~paste(stabbr),
+                       stabbr!=geo_stabbr & pct>2 ~paste(geo_stabbr),
+                       TRUE~"Other")) %>%
+  group_by(stabbr, grp) %>% tally(n) %>% mutate(prop=n/sum(n)) %>%
+  ungroup() %>% 
+  mutate(prop=case_when(stabbr==grp~-1*prop, TRUE~prop), 
+         grp2=case_when(stabbr==grp~"1", TRUE~"0"),
+         state=state.name[match(stabbr,state.abb)],
+         state=case_when(stabbr=="DC"~"District of Columbia", TRUE~state))
+
+levels=d1 %>% filter(grp2=="1") %>% arrange(prop) %>% pull(stabbr)
+
+d2= d1 %>% filter(grp2=="0"& grp!="Other") %>%
+  mutate(col=case_when(grp=="NY"~"r1", grp=="DC"~"r2", grp=="TX"~"r3",grp=="PA"~"r4",TRUE~"r5")) 
+
+d3 = d1 %>% filter(grp2=="1") %>% select(stabbr, prop)
+```
+
+```{r "p1", fig.width=4, fig.height=3}
+d2 %>%  
+  ggplot(aes(x=prop, fill=fct_rev(col),factor(stabbr,levels=rev(levels)))) +
+  # left the state, other states
+  geom_col(data=d1 %>% filter(grp2=="0") %>% group_by(stabbr) %>% tally(prop) %>% rename(prop=n),width=.8, alpha=.8, fill="grey90", color="black", size=.3) +
+  # axis lines/labels
+  annotate(geom="segment", x=seq(-.75,.5,.25), xend=seq(-.75,.5,.25), y=0, yend=17.7, size=.3, color="grey80") +
+  annotate(geom="text", label=seq(-.75,.5,.25), x=seq(-.75,.5,.25), y=18.2, color="black", size=3) +
+  # left the state, named states
+  geom_col(color="black",width=.8, size=.2, position = position_stack()) +
+  geom_text(aes(label=grp, color=after_scale(prismatic::best_contrast(fill, y = c("white", "black")))), size=2,position = position_stack(vjust=.5), family=f1) +
+  scale_fill_manual(values=c("white","#52B0AE","#2B6999","#E37001","#B2C616")) +
+  # stayed in state
+  geom_col(data=d1 %>% filter(grp2=="1") %>% group_by(stabbr) %>% tally(prop) %>% rename(prop=n),width=.8, alpha=.8, fill="transparent", size=.3, color="black") +
+  geom_text(data=d2 %>% group_by(stabbr) %>% mutate(id=row_number())%>% filter(id==1)%>% select(-prop) %>% left_join(d3,by = "stabbr"), aes(label=state),size=3, hjust=-.2, color="black", family=f1) +
+  scale_x_continuous(position="top", breaks=c(-.75,-.5,0,.25,.5)) +
+  coord_cartesian(clip="off") +
+  cowplot::theme_map(10) +
+  theme(legend.position="none",
+        plot.caption=element_text(color="grey30",hjust=0, margin=margin(t=15), lineheight = 1, size=7.5),
+        plot.title=element_text(size=12,hjust=.5, margin=margin(b=7),family=f2),
+        plot.subtitle=element_text(size=9.5,hjust=.5, margin=margin(b=15), family=f2),
+        plot.margin=margin(.7,.7,.5,.7,unit="cm"),
+        ) +
+  labs(caption=str_wrap(caption,155),
+       title="Where college graduates go? ",
+       subtitle="Students who graduated in the Midwest") +
+  # axis title
+  annotate(geom="text", x=0,y=19.1,label="STAYED IN STATE | LEFT THE STATE", size=3.2, hjust=.52, fontface="bold") +
+  annotate(geom="segment", x=c(-.28,.26), xend=c(-.75,.5), y=19.1, yend=19.1, size=.4, color="grey30",arrow = arrow(length = unit(0.15, "cm")))
+
+ggsave("p1.png", height=6, width=8, bg="white")
+```
+
+### Section 2: Gain (or loss) in college graduates, by state
+
+-   percentage difference between college grads produced in a state or (D.C.) and college grads residing there.
+
+```{r p2 data}
+g1= df %>% #filter(geo_stabbr!="UNLOCATED") %>% 
+  select(stabbr, geo_stabbr, geo_count_state) %>%
+  mutate(grp=case_when(stabbr==geo_stabbr~"stayed", TRUE~"left")) %>%
+  group_by(stabbr, grp) %>% tally(geo_count_state) %>% ungroup() %>%
+  pivot_wider(names_from = grp, values_from = n) %>%
+  mutate(prod=left+stayed)
+
+g2 = df %>% filter(geo_stabbr!="UNLOCATED") %>% 
+  select(stabbr, geo_stabbr, geo_count_state) %>%
+  mutate(grp=case_when(stabbr==geo_stabbr~"stayed", TRUE~"left")) %>%
+  filter(grp=="left")%>%
+  group_by(geo_stabbr) %>% tally(geo_count_state, name="gain")
+
+g3 = g1 %>% left_join(g2, by=c("stabbr"="geo_stabbr")) %>% 
+  mutate(resid = stayed+gain,
+         share=resid/prod,
+         diff=case_when(share>1~"Gain", share<1~"Loss", share==1~"No difference"))
+```
+
+```{r}
+# Hexagon code reference: @nrennie35 https://github.com/nrennie/tidytuesday/blob/main/2022/2022-09-27/20220927.R
+# geojson file source: https://team.carto.com/u/andrew/tables/andrew.us_states_hexgrid/public/map.
+hex_data <- geojsonsf::geojson_sf("data/us_states_hexgrid.geojson")
+
+# get centres
+centres <- sf::st_centroid(hex_data)
+centres_text <- as.data.frame(sf::st_coordinates(centres))
+centres_text$iso3166_2 <- centres$iso3166_2
+centres_text$label <- centres$label
+
+hex_data <- hex_data %>%
+  mutate(google_name = stringr::str_extract(google_name, pattern = "^[^\\(]+"),
+         google_name = stringr::str_trim(google_name)) %>%
+  left_join(g3, by = c("iso3166_2" = "stabbr")) %>%
+  sf::st_drop_geometry()
+
+share_bin <- cut(hex_data$share,
+                 breaks = c(0, 0.5, 0.75, 1, 1.25,Inf),
+                 labels = c("< 0.5", "0.5 - 0.75","0.75 - 1", "1 - 1.25 ", "> 1.25"),
+                 include.lowest = TRUE )
+hex_data$share_bin <- share_bin
+
+# fix map crs
+us <- geojsonio::geojson_read("data/us_states_hexgrid.geojson",  what = "sp")
+us_map <- fortify(us, region="iso3166_2")
+us_map <- us_map %>%
+  left_join(hex_data, by = c("id" = "iso3166_2"))
+```
+
+```{r}
+guide = guide_legend(keyheight = unit(3, units = "mm"),keywidth = unit(12, units = "mm"),label.position = "bottom",title.position = 'top',nrow = 1)
+```
+
+```{r "p2", fig.height=3, fig.width=4}
+#| warning: false
+ggplot() +
+  geom_map(data = us_map,aes(map_id = id,x = long,y = lat,fill = share_bin),
+           map = us_map, size=1.3, color="white") +
+  geom_text(data = centres_text,aes(x = X, y = Y,label = label, color=share_bin),
+            size = 3.5,family = f3, show.legend=FALSE) +
+  scale_fill_manual(values=c("#C4442A","#EE8439","#FFD3B5","#94CEC8","#388D84"),guide = guide_legend(keyheight = unit(3.5, units = "mm"),keywidth = unit(14, units = "mm"),label.position = "bottom",nrow = 1)) +
+  scale_color_manual(values=c("white","black","black","black","white")) +
+  coord_map() +
+  cowplot::theme_map(13) +
+  theme(text=element_text(family=f3),
+        legend.position = "top",
+        legend.title=element_blank(),
+        legend.text = element_text(size=9.2, margin=margin(t=-5)),
+        legend.margin=margin(b=-5, l=-9),
+        plot.title = element_text(size=12.5),
+        plot.subtitle=element_text(size=9, color="grey30", lineheight = 1.1),
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0, size=8,color="grey50", margin=margin(t=15), lineheight = 1),
+        plot.margin=margin(.5,.5,.5,.5, unit="cm")) +
+  labs(title="College grads residing in a state (or D.C.) relative to college grads produced", caption=str_wrap(caption,130),
+       subtitle="A value of 1.25 indicates that the college grads living in the state is 25 percent greater than college grads produced by the\nstate. An value of 0.5 indicates that the college grads living in the state is half of the college grads produced by the state.")
+
+ggsave("p2.png", height=6, width=8, bg="white")  
+```
