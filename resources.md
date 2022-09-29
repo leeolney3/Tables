@@ -97,6 +97,7 @@
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
   * [Mapping OSM and satellite data with terra in R](https://milospopovic.net/mapping-raster-files-with-terra-in-r/) by Milos Popovic
+  * [pattern-based spatial analysis with {motif}](https://twitter.com/jakub_nowosad/status/1575105118311047168) by Jakub Nowosad
 * Distributions 
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay, {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
@@ -169,7 +170,7 @@
 </details>        
 
 <details>
-  <summary><b>Color/Font</b> (click to expand)</summary>
+  <summary><b>Color/font/text</b> (click to expand)</summary>
 
 <!-- toc -->
 * Lisa Charlotte Muth's posts on [Datawrapper Blog](https://blog.datawrapper.de/)
@@ -179,6 +180,7 @@
   * [What background color should your data vis have?](https://blog.datawrapper.de/background-color-of-data-visualizations/)
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
   * [Which fonts to use for your charts and tables](https://blog.datawrapper.de/fonts-for-data-visualization/)
+  * [What to consider when using text in data visualizations](https://blog.datawrapper.de/text-in-data-visualizations/)
 * [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
 * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
 <!-- toc -->
