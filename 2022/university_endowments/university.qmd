@@ -1,0 +1,85 @@
+---
+title: "University endowments"
+date: "2022-09-29"
+format: html
+editor: visual
+---
+
+Data: [Public NTSE Tables](https://www.nacubo.org/Research/2021/Public-NTSE-Tables) and [Historic Endowment Study Data](https://www.nacubo.org/research/2021/historic%20endowment%20study%20data)\
+Source: [National Association of College and University Business Officers](https://www.nacubo.org/About/Who-We-Are) (NACUBO) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-09-28-edition/)
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(readxl)
+library(ggdist)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r fonts}
+font_add_google("Open Sans",regular.wt = 500)
+f1="Open Sans"
+font_add_google("Open Sans","open",regular.wt = 600)
+f1a="open"
+font_add_google("Libre Franklin")
+f2="Libre Franklin"
+```
+
+```{r data}
+df = read_xlsx("data/2021 NTSE Endowment Market Values US and Canadian Institutions--REVISED March 1 2022.xlsx", sheet=1, skip=9) %>% janitor::clean_names()
+
+# y21 = read_xlsx("data/Final Endowment Market Values--2021 to 1974.xlsx", skip=9, sheet = 1) %>% 
+#   janitor::clean_names() 
+# y20 = read_xlsx("data/Final Endowment Market Values--2021 to 1974.xlsx", skip=7, sheet = 2) %>% 
+#   janitor::clean_names() 
+```
+
+### Change in total endowment market value from FY20 to FY21
+```{r p1 data}
+df1a = df1 %>% select(y=ipeds_institution_sector, x=change_in_total_endowment_market_value_percent_1, color=ipeds_historically_black_college_university_hbcu_indicator4, label=institution_name) %>%
+  drop_na()
+
+b1= df1a %>% filter(y==unique(df1a$y)[3]) %>% slice_max(x,n=4) %>% pull(label)
+b2= df1a %>% filter(y==unique(df1a$y)[1]) %>% slice_max(x,n=3) %>% pull(label)
+b3= df1a %>% group_by(y) %>% slice_min(x,n=1) %>% pull(label)
+b4= df1a %>% filter(y %in% c(unique(df1a$y)[2],unique(df1a$y)[4])) %>% group_by(y) %>% slice_max(x,n=1) %>% pull(label)
+```
+
+```{r "p1",fig.height=3, fig.width=4}
+df1a %>%
+  ggplot(aes(x=x, y=y, color=color, group=NA, fill = after_scale(colorspace::lighten(color, 0.2)))) +
+  geom_dots() +
+  ggrepel::geom_text_repel(data=df1a %>% filter(label %in% c(b1,b2,b3,b4)), aes(label=str_wrap(label,14)),size=2.5, hjust=.5, lineheight=.8, nudge_y = .25, vjust=0, segment.linetype="dotted", segment.size=.3, family=f1) +
+  scale_y_discrete(labels = function(x) str_wrap(x, width = 18), expand = expansion(mult = c(0.05,0))) +
+  scale_x_continuous("Change in Total Endowment Market Value (%)",sec.axis = dup_axis(), labels=scales::percent_format(scale=1)) +
+  scale_color_manual(values=c("#E30613","#0093C4")) +
+  coord_cartesian(clip="off") +
+  cowplot::theme_minimal_grid(11) +
+  theme(text=element_text(family=f1),
+        legend.position = "top",
+        legend.title=element_blank(),
+        legend.margin=margin(l=-88),
+        axis.title.x=element_text(size=8.8,family=f1a),
+        axis.title.x.top = element_blank(),
+        axis.text.x.bottom = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y = element_text(hjust=0, vjust=0, size=8.8, family=f1a),
+        plot.title.position = "plot",
+        plot.title=element_text(family=f2),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey50", size=8),
+        plot.margin=margin(.7,.7,.5,.7,unit="cm"),
+        panel.grid=element_line(size=.3)) +
+  labs(caption="\nSource: National Association of College and University Business Officers",
+       title="University Endowments",
+       subtitle="US and Canadian institutions change in total endowment market value (%) from FY20 to FY21",
+       )
+
+ggsave("p1.png", height=6, width=8, bg="white")
+```
+
+
+
