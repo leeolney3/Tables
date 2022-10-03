@@ -93,7 +93,7 @@
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
   * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
   * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
-  * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](Spatial resampling for #TidyTuesday and the #30DayMapChallenge) by Julia Silge
+  * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
