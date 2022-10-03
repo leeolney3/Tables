@@ -42,11 +42,10 @@
    * [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2) A curated list of awesome ggplot2 tutorials, packages.. by Erik Gahner Larsen @erikgahner 
    * [The R Graph Gallery](https://r-graph-gallery.com/)
    * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
-   * [Collection of ggplot2 tutorials by Cédric Scherer](https://twitter.com/CedScherer/status/1441126976870252548?s=20)  
-     * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) by Cédric Scherer
+   * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) and [Collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20) by Cédric Scherer
    * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
    * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
-   * Lisa DeBruine's [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/): data visualizations and resource for how to simulate different types of data
+   * [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/) by Lisa DeBruine
    * [Explaining my favourite #TidyTuesday Projects](https://towardsdatascience.com/explaining-my-favourite-tidytuesday-projects-e44bfe988813) by Isaac Arroyo
 * Tutorials/tips   
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
