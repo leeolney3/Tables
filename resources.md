@@ -43,7 +43,6 @@
    * [The R Graph Gallery](https://r-graph-gallery.com/)
    * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
    * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) and [Collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20) by Cédric Scherer
-   * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
    * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
    * [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/) by Lisa DeBruine
    * [Explaining my favourite #TidyTuesday Projects](https://towardsdatascience.com/explaining-my-favourite-tidytuesday-projects-e44bfe988813) by Isaac Arroyo
@@ -51,7 +50,9 @@
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
    * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson @cararthompson
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
+   * [Bullet Chart Variants in R](https://themockup.blog/posts/2020-11-29-bullet-chart-variants-in-r/index.html#create-a-legend) by Thomas Mock 
    * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
+   * [coord_cartesian() with a combination of ylim and clip = "off"](https://twitter.com/_ansgar/status/1573599564258545664) by Ansgar Wolsing @_ansgar 
    * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
    * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak  
    * [Creating and using custom ggplot2 themes](https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/) by Thomas Mock
@@ -61,17 +62,10 @@
    * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
-   * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
-   * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
-   * [coord_cartesian() with a combination of ylim and clip = "off"](https://twitter.com/_ansgar/status/1573599564258545664) by Ansgar Wolsing @_ansgar
    * [How to recreate Pew opinion graphs with ggplot2 in R](https://rforpoliticalscience.com/2022/06/02/recreate-pew-opinion-graphs-with-ggplot-in-r/) by R for Political Science 
-* Color
-  * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
-  * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
-  * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
-  * [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
-  * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
-  * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
+   * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
+   * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
+   * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
 * Facets
   * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
   * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu 
@@ -81,12 +75,6 @@
 * Legend
   * [Changing Glyph in legend in ggplot2](https://www.emilhvitfeldt.com/post/changing-glyph-in-ggplot2/) by Emil Hvitfeldt
   * Dan @FilmicAesthetic's [Collection of ggplot2 legend key shapes](https://twitter.com/FilmicAesthetic/status/1537535639100567555)
-* Text  
-  * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
-  * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
-  * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
-  * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
-  * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
 * Recreations
   * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by Emil Hvitfeldt
   * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by Ansgar Wolsing
@@ -94,6 +82,28 @@
   * [NYTimes map recreation](https://twitter.com/tanya_shapiro/status/1546520567980892160) by Tanya Shapiro
   * [Leo line chart](https://twitter.com/tanya_shapiro/status/1565029412428562433) by Tanya Shapiro
   * [Leo line chart with gradient](https://twitter.com/kustav_sen/status/1565256414381355008) by Kaustav Sen
+ <!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
+
+<details>
+  <summary><b>Vis: Color/Text (R)</b> (click to expand)</summary>
+
+<!-- toc --> 
+* Color
+  * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
+  * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
+  * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
+  * [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
+  * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
+  * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
+* Text  
+  * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
+  * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
+  * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
+  * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
+  * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault  
  <!-- toc -->
  
 <!-- tocstop -->
@@ -126,15 +136,16 @@
   <summary><b>Vis: Spatial (R)</b> (click to expand)</summary>
 
 <!-- toc --> 
+  * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
   * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
   * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
   * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
-  * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
-  * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
-  * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
   * [Mapping OSM and satellite data with terra in R](https://milospopovic.net/mapping-raster-files-with-terra-in-r/) by Milos Popovic
-  * [pattern-based spatial analysis with {motif}](https://twitter.com/jakub_nowosad/status/1575105118311047168) by Jakub Nowosad
+  * [Pattern-based spatial analysis with {motif}](https://twitter.com/jakub_nowosad/status/1575105118311047168) by Jakub Nowosad
+  * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
+  * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners
+  * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
   * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
   * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
  <!-- toc -->
