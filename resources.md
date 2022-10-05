@@ -76,18 +76,17 @@
   * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
   * [Customize the axis scales for individual ggplot facets](https://genchanghsu.github.io/ggGallery/posts/2021-09-11-post-7-customize-the-axis-scales-for-individual-facets/) by Gen-Chang Hsu 
   * [Hybrid map: Chloropleth X Time series](https://bjnnowak.netlify.app/2021/09/28/r-hybrid-map-chlorpleth-x-time-series/) by Benjamin Nowak 
+  * [Reordering and facetting for ggplot2](https://juliasilge.com/blog/reorder-within/) using reorder_within() by Julia Silge
+  * Facets with connecting lines [graphic](https://twitter.com/issa_madjid/status/1577401265050353666/photo/1) by Abdoul Madjid
 * Legend
   * [Changing Glyph in legend in ggplot2](https://www.emilhvitfeldt.com/post/changing-glyph-in-ggplot2/) by Emil Hvitfeldt
   * Dan @FilmicAesthetic's [Collection of ggplot2 legend key shapes](https://twitter.com/FilmicAesthetic/status/1537535639100567555)
-* Text/Image
-  * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
+* Text  
   * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
-  * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson   
+  * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
-  * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault   
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
   * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
-  * [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey   
 * Spatial
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
   * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
@@ -120,6 +119,7 @@
   * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by Bob Rudis
   * [NYTimes map recreation](https://twitter.com/tanya_shapiro/status/1546520567980892160) by Tanya Shapiro
   * [Leo line chart](https://twitter.com/tanya_shapiro/status/1565029412428562433) by Tanya Shapiro
+  * [Leo line chart with gradient](https://twitter.com/kustav_sen/status/1565256414381355008) by Kaustav Sen
  <!-- toc -->
  
 <!-- tocstop -->
@@ -138,6 +138,12 @@
   * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia 
   * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
   * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
+* Image
+  * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
+  * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault   
+  * [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey 
+  * [Plotting Points as Images in ggplot](https://themockup.blog/posts/2020-10-11-embedding-images-in-ggplot/) by Thomas Mock 
+  * Crop images to circles: [cropcircles package](https://twitter.com/danoehm/status/1568900056421650433) by Dan Ohm; [Thread](https://twitter.com/tanya_shapiro/status/1547238091781455875) on circle crop images by Tanya Shapiro  
 * Quarto
   * [Awesome Quarto](https://github.com/mcanouil/awesome-quarto): list of Quarto resources by Mickaël Canouil @MickaelCanouil
   * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
