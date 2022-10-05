@@ -198,6 +198,7 @@
   * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
 * Github and RStudio: [GitHub - The Perks of Collaboration and Version Control](https://twitter.com/cosima_meyer/status/1572456682017652742) by Cosima Meyer
 * [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin 
+* [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
   
 
  <!-- toc -->
