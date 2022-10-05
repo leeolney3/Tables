@@ -1,0 +1,189 @@
+---
+title: "Week 40"
+date: "2022-10-05"
+format: html
+editor: visual
+---
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(lubridate)
+library(sf)
+library(albersusa)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r fonts}
+font_add_google("Inter", bold.wt = 600)
+f1 = "Inter"
+# font_add_google("Noto Sans")
+# f2 = "Noto Sans"
+# font_add_google("Open Sans")
+# f3 = "Open Sans"
+```
+
+### Section 1: Grid emissions
+
+Data: [Yearly electricity data](https://ember-climate.org/data-catalogue/yearly-electricity-data/) Source: [Ember](https://ember-climate.org/) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-10-05-edition/)
+
+```{r data}
+elec = readr::read_csv("data/yearly_full_release_long_format.csv") %>% janitor::clean_names()
+```
+
+```{r, fig.height=2.5, fig.width=3.5}
+# yo_y_percent_change
+elec %>% 
+  filter(category=="Power sector emissions", subcategory=="Total", variable=="Total emissions", eu==1, year>=2010, area!="Lithuania") %>% mutate(yo_y_percent_change = replace_na(yo_y_percent_change, 0)) %>%
+  mutate(c=case_when(area=="France"~"France", area=="Germany"~"Germany", area=="Italy"~"Italy", area=="Spain"~"Spain")) %>%
+  ggplot(aes(x=year, y=yo_y_percent_change, group=area, color=c)) +
+  geom_segment(
+    data = tibble(y = seq(-60,40,20), x1 = 2010, x2 = 2021),
+    aes(x = x1, xend = x2, y = y, yend = y),
+    inherit.aes = FALSE,
+    color = "grey91",
+    size = .5
+  ) +
+  geom_segment(aes(x=2010,xend=2021, y=0, yend=0), size=.6) +
+  geom_line(data=. %>% filter(is.na(c)), color="grey80") +
+  ggshadow::geom_shadowline(data=. %>% filter(!is.na(c)), size=.8) +
+  ggrepel::geom_text_repel(data=. %>% filter(!is.na(c), year==2021), aes(label=area), size=3.2, hjust=0, direction="y",xlim = c(2021.1, NA), min.segment.length = 2) +
+  scale_y_continuous(breaks=seq(-60,40,20),expand=c(0,0), limits=c(-60,NA)) +
+  scale_x_continuous(breaks = seq(2010,2020,2), limits=c(NA,2022.3), expand=c(0,0)) +
+  theme_minimal() +
+  theme(text=element_text(family=f1),
+        panel.grid= element_blank(),
+        plot.title.position = "plot",
+        plot.subtitle=element_text(margin=margin(b=0)),
+        axis.title=element_blank(),
+        axis.ticks.x=element_line(color="grey50", size=.5),
+        axis.ticks.length=unit(.2, "cm"),
+        legend.position="none"
+        ) +
+  labs(subtitle="Year on year change (%)",
+       title="Total power sector emissions") +
+  annotate(geom="text", x=2014, y=17, label="Other\ncountries\nin the EU", size=3.2, color="grey60", lineheight=.8)
+```
+
+### Section 2: Chain and indie restaurants
+
+Data: [Chainess](https://github.com/friendlycities-gatech/chainness) Source: [Xiaofan Liang and Clio Andris](https://journals.sagepub.com/doi/full/10.1177/23998083211014896) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-10-05-edition/)
+
+Citation: Liang, X., & Andris, C. (2021). Measuring McCities: Landscapes of chain and independent restaurants in the United States. Environment and Planning B: Urban Analytics and City Science, 49(2), 585-602. https://doi.org/10.1177/23998083211014896
+
+```{r data}
+#| message: false
+# csv from https://github.com/friendlycities-gatech/chainness/tree/main/data
+p1 = readr::read_csv("https://raw.githubusercontent.com/friendlycities-gatech/chainness/main/data/chainness_point_2021_part1.csv")
+p2 = readr::read_csv("https://raw.githubusercontent.com/friendlycities-gatech/chainness/main/data/chainness_point_2021_part2.csv")
+p3 = readr::read_csv("https://raw.githubusercontent.com/friendlycities-gatech/chainness/main/data/chainness_point_2021_part3.csv")
+
+chain = rbind(p1,p2,p3)
+```
+
+#### Section 2.1: Chain % by metropolitan statistical area
+
+```{r}
+# share of chain restaurants by MSA/CBSAs
+chain1= chain %>% 
+  drop_na(MSA_GEOID) %>%
+  count(MSA_GEOID,isChain) %>%
+  group_by(MSA_GEOID) %>% 
+  mutate(prop=n/sum(n)) %>% 
+  ungroup() %>% filter(isChain==1) %>%
+  mutate(MSA_GEOID=as.character(MSA_GEOID))
+```
+
+```{r}
+# CBSAs shp source: https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
+cbsa = read_sf("data/cb_2021_us_cbsa_20m/cb_2021_us_cbsa_20m.shp")
+join = cbsa %>% left_join(chain1, by=c("CBSAFP"="MSA_GEOID")) # join with chain data
+join2 = points_elided_sf(join) #Shift points around Alaska and Hawaii
+```
+
+```{r, fig.height=3, fig.width=3.75}
+#| warning: false
+#| message: false
+p2 = join2 %>% #drop_na(prop) %>%
+  ggplot() +
+  geom_sf(data=usa_sf("laea"), size=.1, fill="white", alpha=.4) +
+  geom_sf(aes(fill=prop), size=.1) +
+  scico::scale_fill_scico(palette="bamako",na.value="transparent",labels=scales::percent, guide=guide_colorbar(title.position="top",barwidth = unit(12, "lines"), barheight=unit(.4,"lines"))) +
+  #scale_fill_gradientn(colours = PNWColors::pnw_palette("Bay",100), na.value="transparent", labels=scales::percent, guide=guide_colorbar(title.position="top",barwidth = unit(10, "lines"), barheight=unit(.4,"lines"))) +
+  #colorspace::scale_fill_continuous_divergingx("Zissou1", mid=.4,na.value="transparent", labels=scales::percent, guide=guide_colorbar(title.position="top",barwidth = unit(10, "lines"), barheight=unit(.4,"lines"))) +
+  coord_sf(xlim=c(-2100000,2516374), ylim=c(-2500000,732103.3), expand = FALSE) +
+  cowplot::theme_map(10) +
+  theme(text=element_text(family=f1),
+        legend.position = "top",
+        legend.title=element_blank(),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),
+        plot.caption=element_text(size=7,hjust=0, color="grey40",margin=margin(t=15)),
+        plot.background = element_rect(color=NA, fill="#F0F0F0")) +
+  labs(caption="Source: Liang, X., & Andris, C. (2021). Measuring McCities: Landscapes of chain and independent restaurants in the United States.\nEnvironment and Planning B: Urban Analytics and City Science, 49(2), 585-602. https://doi.org/10.1177/23998083211014896",
+       title="Share of chain restaurants by Core Based Statistical Areas (CBSAs)")
+
+ggsave("p2.png",p2, height=6, width=6.75)
+```
+
+#### Section 2.2: Chain % by census urban area
+
+```{r}
+# share of chain restaurants by UA
+chain2= chain %>% filter(!(isChain==1 & Frequency<50)) %>% 
+  drop_na(UA_GEOID) %>%
+  count(UA_GEOID, isChain) %>%
+  group_by(UA_GEOID) %>%
+  mutate(prop=n/sum(n)) %>%
+  ungroup() %>% filter(isChain==1)
+# Urban area shp file
+#ua = tigris::urban_areas() #https://rdrr.io/cran/tigris/man/urban_areas.html
+```
+
+### Section 3: Wildfire smoke pollution
+
+Data: [daily-10km-smokePM](https://github.com/echolab-stanford/daily-10km-smokePM) Source: [Marissa L. Childs et al.](https://pubs.acs.org/doi/10.1021/acs.est.2c02934) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-10-05-edition/)
+
+```{r data}
+#| message: false
+smoke = readr::read_csv("data/county/smokePM2pt5_predictions_daily_county_20060101-20201231.csv")
+# county shp source: https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
+county= read_sf("data/cb_2021_us_county_20m/cb_2021_us_county_20m.shp") %>% filter(STUSPS %in% usmap::.midwest_region)
+```
+
+```{r}
+#annual average by county
+smoke1 = smoke %>% filter(GEOID %in% county$GEOID) %>%
+  mutate(date1 = ymd(date),
+         year=year(date1)) %>%
+  group_by(GEOID, year) %>%
+  summarise(mean=mean(smokePM_pred, na.rm=TRUE))
+
+smoke2 = county %>% right_join(smoke1, by="GEOID")
+```
+
+```{r, fig.height=3.75, fig.width=3.75}
+p3 = smoke2 %>% ggplot() +
+  geom_sf(aes(fill=mean), size=.03, color="white") +
+  geom_text(aes(x=-85, y=48.5, label=year), size=3) +
+  facet_wrap(~year) +
+  scico::scale_fill_scico(palette="bilbao",breaks=seq(2,8,2),guide=guide_colorbar(title.position="top",barwidth = unit(13, "lines"), barheight=unit(.5,"lines"))) +
+  coord_sf(expand = FALSE) +
+  cowplot::theme_map(11) +
+  theme(text=element_text(family=f1),
+        legend.position = "top",
+        legend.title=element_text(size=9.5),
+        legend.text=element_text(size=9.5),
+        legend.margin=margin(t=5),
+        plot.subtitle=element_text(size=9.5, color="grey10"),
+        strip.text=element_blank(),
+        plot.margin=margin(.5,.7,.5,.7, unit="cm"),
+        plot.caption=element_text(hjust=0, color="grey40", size=8 ,margin=margin(t=10))) +
+  labs(title="Wildfire smoke pollution in the Midwest",
+       subtitle="Annual average PM2.5 from smoke by county, from 2006 to 2020",
+       fill="Micrograms per cubic meter of PM2.5",
+       caption="Source: Childs et al (2022) Daily local-level estimates of ambient wildfire smoke PM2.5 for the contiguous US. Environmental Science\n& Technology 2022 56 (19), 13607-13621. DOI: 10.1021/acs.est.2c02934")
+
+ggsave("p3.png", p3, height=7.5, width=7.5, bg="white")
+```
