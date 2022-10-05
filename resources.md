@@ -87,18 +87,22 @@
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
   * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
-* Spatial
-  * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
-  * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
-  * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
-  * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
-  * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
-  * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
-  * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
-  * [Mapping OSM and satellite data with terra in R](https://milospopovic.net/mapping-raster-files-with-terra-in-r/) by Milos Popovic
-  * [pattern-based spatial analysis with {motif}](https://twitter.com/jakub_nowosad/status/1575105118311047168) by Jakub Nowosad
-  * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
-  * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
+* Recreations
+  * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by Emil Hvitfeldt
+  * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by Ansgar Wolsing
+  * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by Bob Rudis
+  * [NYTimes map recreation](https://twitter.com/tanya_shapiro/status/1546520567980892160) by Tanya Shapiro
+  * [Leo line chart](https://twitter.com/tanya_shapiro/status/1565029412428562433) by Tanya Shapiro
+  * [Leo line chart with gradient](https://twitter.com/kustav_sen/status/1565256414381355008) by Kaustav Sen
+ <!-- toc -->
+ 
+<!-- tocstop -->
+</details> 
+
+<details>
+  <summary><b>Vis: Distribution/Uncertainty (R)</b> (click to expand)</summary>
+
+<!-- toc --> 
 * Distributions 
   * {ggdist} [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay, {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
@@ -113,17 +117,30 @@
   * Tidydata and Bayesian analysis making uncertainty visualization fun by Matthew Kay ([slides](https://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf), [YT video](https://www.youtube.com/watch?v=vqzO-9LSoG4&t=2s))
   * [Uncertainty Examples](https://github.com/mjskay/uncertainty-examples) by Matthew Kay 
   * [Visualizing the Uncertainty in Data](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/) by Nathan Yau @flowingdata
-* Recreations
-  * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by Emil Hvitfeldt
-  * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by Ansgar Wolsing
-  * [Starting 2022 Off With A Fairly Complex {ggplot2} Recreation Plot](https://rud.is/b/2022/01/04/starting-2022-off-with-a-fairly-complex-ggplot2-recreation-plot/) by Bob Rudis
-  * [NYTimes map recreation](https://twitter.com/tanya_shapiro/status/1546520567980892160) by Tanya Shapiro
-  * [Leo line chart](https://twitter.com/tanya_shapiro/status/1565029412428562433) by Tanya Shapiro
-  * [Leo line chart with gradient](https://twitter.com/kustav_sen/status/1565256414381355008) by Kaustav Sen
  <!-- toc -->
  
 <!-- tocstop -->
-</details> 
+</details>   
+
+<details>
+  <summary><b>Vis: Spatial (R)</b> (click to expand)</summary>
+
+<!-- toc --> 
+  * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
+  * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
+  * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
+  * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
+  * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
+  * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners 
+  * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
+  * [Mapping OSM and satellite data with terra in R](https://milospopovic.net/mapping-raster-files-with-terra-in-r/) by Milos Popovic
+  * [pattern-based spatial analysis with {motif}](https://twitter.com/jakub_nowosad/status/1575105118311047168) by Jakub Nowosad
+  * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
+  * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
+ <!-- toc -->
+ 
+<!-- tocstop -->
+</details>  
 
 <details>
   <summary><b>Others (R)</b> (click to expand)</summary>
