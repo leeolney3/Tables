@@ -25,7 +25,7 @@
     * [U.S. Gas Prices Visualized](https://github.com/kcuilla/USgasprices) by Kyle Cuilla ([Twitter thread on tables in tooltip](https://twitter.com/kc_analytics/status/1572261687419445248))
 * [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes 
 * [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032) by Tanya Shapiro
-* [Interactive Tooltip Tables](https://uncharteddata.netlify.app/posts/2022-09-30-interactive-tooltip-tables/) by Kyle Cuilla  
+* [Interactive Tooltip Tables](https://twitter.com/kc_analytics/status/1576256004638941185): how to add {gt}/{gtExtras} and {kableExtra} tables to {ggiraph} tooltips by Kyle Cuilla  
 
 <!-- toc -->
  
@@ -197,6 +197,7 @@
   * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
   * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
 * Github and RStudio: [GitHub - The Perks of Collaboration and Version Control](https://twitter.com/cosima_meyer/status/1572456682017652742) by Cosima Meyer
+* [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla  
 * [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin 
 * [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
   
