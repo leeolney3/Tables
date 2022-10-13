@@ -1,0 +1,252 @@
+---
+title: "221013"
+format: html
+editor: visual
+---
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(ggtext)
+library(lubridate)
+library(gt)
+library(patchwork)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r font}
+font_add_google("Open Sans")
+f1 = "Open Sans"
+```
+
+### Section One: Stringr Things
+Data: [Stranger Things Script Data](https://github.com/filmicaesthetic/stringr-things)
+Source: [8flix.com](https://8flix.com/collections/transcripts/stranger-things-2/) and [Dan @filmicaesthetic](https://twitter.com/FilmicAesthetic/status/1579954933113442306)
+
+```{r data}
+#| message: false
+script = readr::read_csv("https://raw.githubusercontent.com/filmicaesthetic/stringr-things/main/data/stranger_things_all_dialogue.csv")
+```
+
+```{r run times}
+# Run times from Netflix
+run= script %>% select(season, episode) %>% distinct() %>%
+  mutate(duration= c(49,56,52,51,53,47,42,55,48,56,51,46,58,52,46,48,62,51,50,50,53,52,60,55,78,78,77,64,79,76,75,98,85,150), duration_sec=duration*60,
+         end_time=hms::hms(duration_sec),
+         start_time=hms::parse_hms("00:00:00"))
+
+# duration = script %>% group_by(season, episode) %>%
+#   summarise(end_time=hms::as_hms(max(end_time)),
+#             start_time=hms::as_hms(min(start_time)))
+```
+
+```{r plot, fig.height=3, fig.width=4}
+ggplot() +
+  geom_rect(data=run, aes(xmin=start_time, xmax=end_time, ymin=episode-.4, ymax=episode+.4), fill="grey", alpha=.2) +
+  geom_rect(data=script %>% filter(stage_direction %in% c("[sighs]","[chuckles]")),
+            aes(xmin=start_time, xmax=end_time, ymin=episode-.4, ymax=episode+.4, fill=stage_direction, color=stage_direction),size=.3, show.legend = FALSE) +
+ scale_y_reverse(breaks=seq(1,10,2)) +
+  scale_color_manual(values=c("#033D5C","#E52929")) +
+  scale_fill_manual(values=c("#033D5C","#E52929")) +
+  coord_cartesian(xlim=c(0,4200), expand=FALSE, clip="off") +
+  facet_grid(rows = vars(season), scales = "free_y", switch = "y", space = "free_y", labeller =labeller(season=c("1"="Season 1","2"="Season 2","3"="Season 3","4"="Season 4"))) +
+  cowplot::theme_minimal_grid(10, line_size=.3) +
+  theme(text=element_text(family=f1),
+        axis.ticks.y=element_blank(),
+        axis.ticks.x=element_line(size=.2),
+        axis.ticks.length=unit(.25, "cm"),
+        axis.text.y=element_text(color="grey40", size=8, margin=margin(r=-5)),
+        axis.text.x=element_text(size=8.5),
+        strip.text=element_text(size=9),
+        strip.placement = "outside",
+        panel.grid.major.y = element_blank(),
+        panel.spacing = unit(.8, "lines"),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey30"),
+        plot.title.position = "plot",
+        plot.title=element_markdown(),
+        #plot.background=element_rect(fill="yellow", color=NA)
+        ) +
+  labs(caption="\nSource: github.com/filmicaesthetic/stringr-things",
+       title="<span style='color:#E52929'>295 sighs</span> and <span style='color:#033D5C'>202 chuckles</span> in Stranger Things' transcript<br>")
+```
+
+### Section Two: Work-related injury counts
+Data: [Establishment Specific Injury and Illness Data](https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data), CY 2021 (submitted thru 8-29-2022) and CY 2020
+Source: osha.gov by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-10-12-edition/)
+
+```{r data}
+#| message: false
+injury21 = readr::read_csv("data/ITADataCY2021submittedthru8-29-2022.csv") %>% filter(year_filing_for==2021) %>%
+  mutate(created = as.Date(mdy_hms(created_timestamp)))
+injury20 = readr::read_csv("data/ITA_Data_CY_2020.csv") %>% mutate(created = as.Date(mdy_hms(created_timestamp)))
+```
+
+```{r wrangle}
+# reported year 2021
+d1 =injury20 %>%
+  summarise_at(vars(total_deaths,total_injuries:total_other_illnesses), sum, na.rm = TRUE) %>%
+  pivot_longer(cols=everything())
+
+d2=injury20 %>% 
+  summarise(total_deaths = length(total_deaths[total_deaths>0]),
+            total_injuries=  length(total_injuries[total_injuries>0]),
+            total_poisonings=length(total_poisonings[total_poisonings>0]),
+            total_respiratory_conditions=length(total_respiratory_conditions[total_respiratory_conditions>0]),
+            total_skin_disorders=length(total_skin_disorders[total_skin_disorders>0]),
+            total_hearing_loss=length(total_hearing_loss[total_hearing_loss>0]),
+            total_other_illnesses=length(total_other_illnesses[total_other_illnesses>0])
+            ) %>%
+  pivot_longer(cols=everything()) %>%
+  rename(n_records=value) %>%
+  mutate(prop_records = round(n_records/nrow(injury20),4))
+
+injury20tab = d1 %>% left_join(d2, by="name")
+
+# reported year 2022
+d1 =injury21 %>%
+  summarise_at(vars(total_deaths,total_injuries:total_other_illnesses), sum, na.rm = TRUE) %>%
+  pivot_longer(cols=everything())
+
+d2=injury21 %>% 
+  summarise(total_deaths = length(total_deaths[total_deaths>0]),
+            total_injuries=  length(total_injuries[total_injuries>0]),
+            total_poisonings=length(total_poisonings[total_poisonings>0]),
+            total_respiratory_conditions=length(total_respiratory_conditions[total_respiratory_conditions>0]),
+            total_skin_disorders=length(total_skin_disorders[total_skin_disorders>0]),
+            total_hearing_loss=length(total_hearing_loss[total_hearing_loss>0]),
+            total_other_illnesses=length(total_other_illnesses[total_other_illnesses>0])
+            ) %>%
+  pivot_longer(cols=everything()) %>%
+  rename(n_records=value) %>%
+  mutate(prop_records = round(n_records/nrow(injury20),4))
+
+injury21tab= d1 %>% left_join(d2, by="name")
+```
+
+```{r table}
+# table summarizing total number, record count, and proportion of records by injury/illness type and filling calendar  year
+injury20tab %>% left_join(injury21tab, by="name") %>%
+  arrange(desc(value.x)) %>%
+  mutate(name=fct_inorder(name),
+         name=fct_relevel(name,"total_other_illnesses",after=6)) %>%
+  arrange(name) %>%
+  mutate(name= str_replace_all(name,"total",""),
+         name= str_to_title(str_replace_all(name,"_"," "))) %>%
+  gt(rowname_col = "name") %>%
+  tab_spanner(label="CY 2020",columns=value.x:prop_records.x) %>%
+  tab_spanner(label=md("CY 2021 (submitted thru 8-29-2022)"), columns=value.y:prop_records.y) %>%
+  fmt_percent(columns = c(prop_records.x, prop_records.y)) %>%
+  fmt_number(columns=c(value.x:n_records.x, value.y:n_records.y), decimals = 0) %>%
+  cols_label(value.x="total", n_records.x="n records", prop_records.x="% records",
+             value.y="total", n_records.y="n records", prop_records.y="% records") %>%
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_body(columns = c(value.x,value.y))) %>%
+  gtExtras::gt_theme_espn() %>%
+  tab_header(title="US work-related injury counts",
+             subtitle=md("The US Occupational Safety and Health Administration requires portion of all private sector establishments (but not all) in the United States to track employees’ work-related injuries and illnesses. Larger companies and those in high-risk industries must electronically submit annual counts to the agency. This table summarizes injuries and illnesses records of *Establishment Specific Injury and Illness Data* for calendar year 2020 and 2021.")) %>%
+  tab_source_note(source_note = "Source: US Occupational Safety and Health Administration ")  %>%
+  tab_footnote(footnote = "2020 calendar year filing, records submitted to the ITA from Jan 1, 2021 to Dec 31, 2021.",  location=cells_column_spanners(spanner="CY 2020")) %>%
+  tab_footnote(footnote = "2021 calendar year filing, records submitted to the ITA from Jan 1, 2022 to Aug 29, 2022.",  location=cells_column_spanners(spanner="CY 2020"))
+```
+
+## Section Three: Wine economics
+Data: [Australian Winegrape Vine Area, Production and Price Database,by region and variety, 1956-2021](https://economics.adelaide.edu.au/wine-economics/databases#australian-winegrape-vine-area-production-and-price-database-by-region-and-variety-1956-to-2021)
+Source:  University of Adelaide’s Wine Economics Research Centre by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-10-12-edition/)
+Citation: Anderson, K. and G. Puga (2021), Database of South Australian Winegrape Vine Area, Crush, Price, and Per Hectare Production Volume and Value, by Region and Variety, 2001 to 2021, Wine Economics Research Centre, University of Adelaide, December. https://economics.adelaide.edu.au/wine-economics/databases
+
+#### Regional shares of South Australian vine area/production volume/production value 2001 to 2021 (%)
+```{r data}
+vine_area = readxl::read_xlsx("data/SA_winegrape_data_by_region_and_variety_121921.xlsx", sheet = 14, skip=2)[-1, ] 
+prod_volume = readxl::read_xlsx("data/SA_winegrape_data_by_region_and_variety_121921.xlsx", sheet = 15, skip=2)[-1, ]
+prod_value = readxl::read_xlsx("data/SA_winegrape_data_by_region_and_variety_121921.xlsx", sheet = 16, skip=2)[-1, ]
+```
+
+```{r wrangle}
+vine_area = vine_area %>% pivot_longer(!Region) %>% mutate(grp="Vine Area")
+prod_volume = prod_volume %>% pivot_longer(!Region) %>% mutate(grp="Production Volume")
+prod_value= prod_value %>% pivot_longer(!Region) %>% mutate(grp="Production Value")
+
+regional= rbind(vine_area,prod_volume,prod_value) %>% 
+  mutate(name=parse_number(name),
+         value=replace_na(value,0),
+         grp=fct_inorder(grp))
+levels=regional %>%
+  group_by(Region) %>%
+  summarise(median=median(value)) %>%
+  arrange(median) %>%
+  pull(Region)
+```
+
+```{r plot, fig.height=2, fig.width=4}
+regional %>%
+  ggplot(aes(x=name, y=value, fill=factor(Region,levels=levels))) +
+  geom_area(color="white", size=.3) +
+  geom_text(data=regional %>% filter(grp=="Vine Area", name==2015, Region %in% c("Riverland", "Barossa Valley", "McLaren Vale")),aes(label=Region, y=c(47,35,15)), size=2.7, family=f1, color="white") +
+  scale_fill_manual(values=c(rep("grey85",11),"#0B4632","#B47623","#722F37")) +
+  scale_y_continuous(labels=scales::percent_format(scale=1)) +
+  facet_wrap(vars(grp), nrow = 1, scales = "free_y") +
+  coord_cartesian(expand=FALSE) +
+  cowplot::theme_minimal_grid(9.5) +
+  theme(text=element_text(family=f1),
+        legend.position = "none",
+        panel.spacing = unit(1, "lines"),
+        panel.grid = element_blank(),
+        strip.text = element_text(hjust=0, margin=margin(b=5, t=5), size=9.5),
+        plot.title.position = "plot",
+        plot.title=element_text(size=11),
+        plot.subtitle = element_text(size=9, color="grey20"),
+        plot.caption.position = "plot",
+        plot.caption = element_markdown(hjust=0, color="grey30", size=7.2,lineheight=1.2, margin=margin(t=10)),
+        plot.margin=margin(.5,.5,.5,.5, unit="cm"),
+        axis.ticks = element_line(color="black", size=.2),
+        axis.ticks.length=unit(.15, "cm"),
+        axis.title=element_blank()) +
+  labs(title="South Australian winegrape vine area, production volume and value by region",
+       subtitle="Regional share (%) of Riverland, Barossa Valley and McLaren Vale from 2001 to 2021",
+       caption="*Note: Fourteen regions including Adelaide Hills, Adelaide Plains, Barossa Valley, Clare Valley, Coonawarra, Eden Valley, Fleurieu - other,  Langhorne Creek,<br> Limestone Coast - other, McLaren Vale, Padthaway, Riverland, Wrattonbully and SA - other.* <br>Source: Anderson, K. and G. Puga (2021), Database of South Australian Winegrape Vine Area, Crush, Price, and Per Hectare Production Volume and Value, by<br>Region and Variety, 2001 to 2021, Wine Economics Research Centre, University of Adelaide")
+```
+
+#### Regional quality and productivity index, 2001 to 2021
+* RQI, Regional quality index (ratio of regional to state average price)
+* RPI, Regional productivity index (ratio of regional to state average production value per hectare)
+    
+```{r data}
+rqi = readxl::read_xlsx("data/SA_winegrape_data_by_region_and_variety_121921.xlsx", sheet = 20, skip=2)[-1, ] 
+rpi = readxl::read_xlsx("data/SA_winegrape_data_by_region_and_variety_121921.xlsx", sheet = 22, skip=2)[-1, ]
+
+rqi = rqi %>% pivot_longer(!Region) %>% mutate(grp="Regional quality index", name=parse_number(name))
+rpi = rpi %>% pivot_longer(!Region) %>% mutate(grp="Regional productivity index",name=parse_number(name))
+```
+
+
+```{r plot}
+theme1= cowplot::theme_minimal_grid(10) +
+  theme(legend.position="top",
+        axis.title=element_blank())
+
+p1 = rqi %>%
+  ggplot(aes(x=name, y=Region, fill=value)) +
+  geom_tile(color="white") +
+  theme1 +
+  guides(fill=guide_colorbar(title.position = "top")) +
+  labs(fill="RQI")
+
+p2 = rpi %>%
+  ggplot(aes(x=name, y=Region, fill=value)) +
+  geom_tile(color="white") +
+  theme1 +
+  guides(fill=guide_colorbar(title.position = "top")) +
+  labs(fill="RPI")
+
+(p1+p2) +
+  plot_annotation(title="Regional quality and productivity index, 2001 to 2021")
+  
+```
+
+
+    
+
