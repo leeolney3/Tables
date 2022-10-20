@@ -16,6 +16,7 @@
   *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by Jack Davison
   *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by Kaustav Sen
   *  Tom Mock's {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) 
+  * [3MW (Spice up your tables)](https://alberts-newsletter.beehiiv.com/p/3mw-spice-up-tables) with {gt} and {gtExtras} by Albert Rapp
 * [{reactable}](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) packages
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
     * Data viz recreation ([1](https://twitter.com/kc_analytics/status/1563594941665665029), [2](https://twitter.com/kc_analytics/status/1564248716323725315)) using {reactablefmtr} by Kyle Cuilla
@@ -62,6 +63,7 @@
    * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
+   * [Horror Movies](https://github.com/tashapiro/horror-movies) ggplot2 workshop by Tanya Shapiro ([tweet](https://twitter.com/tanya_shapiro/status/1580638749687676930))
    * [How to recreate Pew opinion graphs with ggplot2 in R](https://rforpoliticalscience.com/2022/06/02/recreate-pew-opinion-graphs-with-ggplot-in-r/) by R for Political Science 
    * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
