@@ -90,7 +90,7 @@
 </details> 
 
 <details>
-  <summary><b>Vis: Color/Text (R)</b> (click to expand)</summary>
+  <summary><b>Vis: color/text (R)</b> (click to expand)</summary>
 
 <!-- toc --> 
 * Color
@@ -112,7 +112,7 @@
 </details> 
 
 <details>
-  <summary><b>Vis: Distribution/Uncertainty (R)</b> (click to expand)</summary>
+  <summary><b>Vis: distribution/uncertainty (R)</b> (click to expand)</summary>
 
 <!-- toc --> 
 * Distributions 
@@ -135,7 +135,7 @@
 </details>   
 
 <details>
-  <summary><b>Vis: Spatial (R)</b> (click to expand)</summary>
+  <summary><b>Vis: spatial (R)</b> (click to expand)</summary>
 
 <!-- toc --> 
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
