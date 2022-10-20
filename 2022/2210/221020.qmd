@@ -1,0 +1,209 @@
+---
+title: "221020"
+format: html
+editor: visual
+---
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r fonts}
+font_add_google("Open Sans")
+f1 = "Open Sans"
+
+font_add_google("Encode Sans")
+f2 = "Encode Sans"
+```
+
+
+### Section One: UK museums
+Data: [UK museums csv](https://museweb.dcs.bbk.ac.uk/data) from [Mapping Museum](https://museweb.dcs.bbk.ac.uk/home) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2022-10-19-edition/)
+
+```{r}
+library(sf)
+library(rnaturalearth)
+```
+
+```{r data}
+#| message: false
+museums= readr::read_csv("data/MappingMuseumsData2021_09_30.csv") %>% janitor::clean_names()
+
+sf1= ne_countries(country = 'united kingdom',returnclass = "sf", scale=10)
+sf2 = ne_states(country = 'united kingdom',returnclass = "sf")
+st_bbox(sf2)
+```
+
+```{r wrangle}
+#| warning: false
+museums1 = museums %>% filter(latitude<70) %>% 
+  separate(year_opened, sep=":", c("year_opened1", "year_opened2")) %>%
+  separate(year_closed, sep=":", c("year_closed1", "year_closed2")) %>%
+  mutate(closed=case_when(year_closed2==9999~"Still open", TRUE~"Closed"),
+         gov = case_when(str_detect(governance,"Government")~"Government\nmuseums",
+                         str_detect(governance,"Independent")~"Independent\nmuseums",
+                         str_detect(governance,"University")~"University",
+                         str_detect(governance,"Unknown")~"Unknown")) %>%
+  filter(gov == "Government\nmuseums"|gov == "Independent\nmuseums") 
+
+museums2 = st_as_sf(museums1, coords=c("longitude","latitude"), crs=raster::crs(sf1))
+museums3 = st_as_sf(museums1 %>% group_by(gov) %>% mutate(id=row_number()) %>% ungroup() %>% filter(id==1) %>%
+  mutate(latitude=60, longitude=-7), coords=c("longitude","latitude"), crs=raster::crs(sf1))
+```
+
+```{r plot, fig.height=3.5, fig.width=3.8}
+#| warning: false
+ggplot() +
+  geom_sf(data=sf1, color=NA) +
+  geom_sf(data=sf2, fill="transparent", color="white", size=.2) +
+  geom_sf(data=museums2, aes(fill=closed), size=1, shape=21, color="white", stroke=.1) +
+  geom_sf_text(data=museums3, aes(label=gov), size=3.7, family=f1, hjust=0) +
+  scale_fill_manual(values=c("#0851A1","#BF9800")) +
+  facet_wrap(~gov) +
+  coord_sf(xlim=c(-8.5,2.3), #https://gist.github.com/graydon/11198540
+           datum = sf::st_crs(4258),
+           expand=FALSE) +
+  cowplot::theme_map(13) +
+  theme(text=element_text(family=f1),
+        legend.position = "top",
+        legend.title=element_blank(),
+        legend.text=element_text(size=9),
+        legend.justification = "center",
+        legend.margin = margin(l=-10, b=-5, t=-5),
+        panel.spacing = unit(2.2, "lines"),
+        strip.text = element_blank(),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),
+        plot.title.position = "plot",
+        plot.title=element_text(hjust=.5),
+        plot.caption.position = "plot",
+        plot.caption=element_text(color="grey50", hjust=0, size=8),
+        plot.background = element_rect(fill="#fafafa", color=NA)
+        ) +
+  labs(title="UK Museums",
+       caption="Source: Mapping Museum by way of Data Is Plural") +
+  guides(fill=guide_legend(override.aes = list(size = 3)))
+```
+
+### Section Two: Poverty
+Data: [The complete Our World in Data Poverty dataset](https://github.com/owid/poverty-data) and [Poverty Data Explorer of World Bank data](https://ourworldindata.org/explorers/poverty-explorer)
+Source: [World Bank Poverty and Inequality Platform (PIP)](https://pip.worldbank.org/)
+
+```{r}
+library(countrycode)
+library(geofacet)
+library(ggrepel)
+```
+
+```{r}
+#| message: false
+poverty = readr::read_csv("https://raw.githubusercontent.com/owid/poverty-data/main/datasets/pip_dataset.csv")
+```
+
+#### Gini coefficient and polarization index, Africa, 2000-2019
+
+```{r wrangle}
+#| warning: false
+poverty1= poverty %>% filter(reporting_level=="national", welfare_type=="consumption") %>% arrange(year) %>%
+  select(country:welfare_type, gini, polarization) %>%
+  mutate(cont=countrycode(country, origin="country.name", destination="continent")) %>%
+  filter(cont =="Africa", year>=2000, !country %in% c("Algeria","Central African Republic","Somalia","Seychelles")) %>%
+  distinct() %>%
+  pivot_longer(gini:polarization)
+
+grid1 = geofacet::africa_countries_grid1 %>% filter(name %in% unique(poverty1$country))
+```
+
+```{r plot, fig.height=4, fig.width=4}
+#| message: false
+#| warning: false
+poverty1%>%
+  ggplot(aes(x=year, y=value)) +
+  geom_line(aes(color=name), key_glyph=draw_key_rect) + 
+  facet_geo(~country,grid=grid1) +
+  scale_x_continuous(breaks=c(2000,2005,2010,2015), labels=c("'00","'05","'10","'15")) +
+  scale_color_manual(values=c("#059AAE","#0E23A2"), labels=c("Gini coefficient","Polarization index")) +
+  cowplot::theme_minimal_grid(9, line_size = .3) +
+  theme(legend.position = c(.7,.97),
+        axis.title=element_blank(),
+        plot.caption.position = "plot",
+        plot.caption = element_markdown(hjust=0, lineheight = 1.2),
+        legend.title=element_blank(),
+        plot.title.position = "plot",
+        plot.title=element_text(hjust=.5)) +
+  labs(caption="*Gini coefficient*: measures inequality on a scale between 0 and 1, where higher values indicate greater inequality.<br>*Polarization index*: ranges from 0 (no polarization) to 1 (complete polarization), measures the extent to which the distribution of income or expenditure is spread out and bi-modal.<br>Source: World Bank and Our World in Data",
+       title="Income/Expenditure Inequality in Africa, 2000-2019")
+```
+
+#### Income mean log deviation, EU27+UK, 2000-2019
+
+```{r wrangle}
+grid2= geofacet::eu_grid1 %>% arrange(name) %>%
+  mutate(name=case_when(name=="Czech Republic"~"Czechia",TRUE~name))
+
+poverty2 = poverty %>% filter(reporting_level=="national", ppp_version==2017, welfare_type=="income", year>=2000) %>% arrange(year) %>%
+  select(country,year, mld) %>%
+  filter(country %in% grid2$name)
+```
+
+```{r plot, fig.height=3.5, fig.width=3.5}
+#| message: false
+#| warning: false
+poverty2  %>%
+  ggplot(aes(x=year, y=mld,group=country)) +
+  geom_line(color="#0E23A2") +
+  geom_point(data=poverty2a, color="#0E23A2", size=.5) +
+  gghighlight::gghighlight(unhighlighted_params=list(size=.3, color="#88837D", alpha=.3)) +
+  ggtext::geom_richtext(data=poverty2a, aes(label=label, y=mld+0.05), color="white", size=2.5, hjust=1,label.padding = grid::unit(rep(0, 4), "pt"),label.color = NA, alpha=.3, fontface="bold") +
+  ggtext::geom_richtext(data=poverty2a, aes(label=label, y=mld+0.05), color="#0E23A2", size=2.5, hjust=1,label.padding = grid::unit(rep(0, 4), "pt"),label.color = NA, fill=NA, fontface="bold") +
+  scale_x_continuous(breaks=c(2000,2005,2010,2015), labels=c("'00","'05","'10","'15")) +
+  coord_cartesian(clip="off", xlim=c(2000,2020)) +
+  facet_geo(~country,grid=grid2) +
+  cowplot::theme_minimal_grid(9, line_size = .3) +
+  theme(axis.title=element_blank(),
+        axis.text=element_text(size=7, color="grey10"),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.subtitle = element_markdown(size=7.2, color="grey20", lineheight = 1.2),
+        plot.caption = element_text(hjust=0, color="grey50"),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm")
+        )  +
+  labs(title="Income Inequality",
+       subtitle="**Mean log deviation** (MLD) of income in EU27+UK, from 2000 to 2019. MLD is a measure of inequality, where an MLD of zero indicates perfect<br>inequality and it takes on larger positive values as incomes become more unequal. The measure is also referred to as 'Theil L' or 'GE(0)', in<br>reference to the widerfamilies of inequality measures to which the MLD belongs.",
+       caption="Source: World Bank and Our World in Data")
+```
+
+#### Gini coefficient 2000-2019 
+```{r wrangle}
+selected = poverty %>% 
+  filter(reporting_level=="national", welfare_type=="consumption",year==2019, ppp_version==2017) %>%
+  select(country:welfare_type, gini, mld, polarization) %>%
+  distinct()
+
+poverty3= poverty %>% 
+  filter(ppp_version==2017,country %in% unique(selected$country),reporting_level=="national", welfare_type=="consumption", between(year,2000,2019)) %>%
+  select(country:welfare_type, gini) %>%
+  mutate(gini=round(gini,4)) %>%
+  distinct() 
+```
+
+```{r plot}
+#pal = colorRampPalette(rcartocolor::carto_pal(n=12, name="Vivid"))
+poverty3 %>%
+  ggplot(aes(year, gini)) +
+  ggshadow::geom_shadowline(aes(group=country, color=country), show.legend = FALSE) +
+  geom_text_repel(data= poverty3 %>% group_by(country) %>% filter(year==max(year)), aes(label=country, color=country), size=3, direction="y", xlim=c(2020,NA), box.padding = 0.05, segment.linetype="dotted",segment.color="black",segment.size=.3, show.legend = FALSE) +
+  #scale_color_manual(values=rev(pal(24))) +
+  coord_cartesian(xlim=c(2000,2025)) +
+  cowplot::theme_minimal_grid(10) +
+  labs(subtitle="Countries with 2019 data (n=24). The Gini coefficient measures inequality on a scale between 0 and 1, where higher values indicate greater inequality.",
+       title="Income/Expenditure Inequality",
+       x="Year (floor of survey year)",y="Gini coefficient",
+       caption="Source: World Bank and Our World in Data")
+```
+
+
