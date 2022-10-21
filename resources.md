@@ -186,6 +186,7 @@
   * [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
   * [ObservableHQ JavaScript Choropleth With Data From R](https://twitter.com/hrbrmstr/status/1556308005225897984) by boB Rudis @hrbrmstr
   * [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/) by Mike Mahoney
+  * [Quarto/RMarkdown - What’s Different?](https://twitter.com/tladeras/status/1583453425366634496) slides by Ted Laderas
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
