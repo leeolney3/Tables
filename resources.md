@@ -17,6 +17,8 @@
   *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by Kaustav Sen
   *  Tom Mock's {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) 
   * [3MW (Spice up your tables)](https://alberts-newsletter.beehiiv.com/p/3mw-spice-up-tables) with {gt} and {gtExtras} by Albert Rapp
+  * [Including emojis in a {gt} table](https://twitter.com/rappa753/status/1584607168682029057) code snippet by Albert Rapp
+  * [The grammar of tables in python (pandas) and R (gt)](https://karbartolome.quarto.pub/the-grammar-of-tables/) by Karina Bartolomé 
 * [{reactable}](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) packages
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
     * Data viz recreation ([1](https://twitter.com/kc_analytics/status/1563594941665665029), [2](https://twitter.com/kc_analytics/status/1564248716323725315)) using {reactablefmtr} by Kyle Cuilla
@@ -25,8 +27,8 @@
     * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
     * [U.S. Gas Prices Visualized](https://github.com/kcuilla/USgasprices) by Kyle Cuilla ([Twitter thread on tables in tooltip](https://twitter.com/kc_analytics/status/1572261687419445248))
 * [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes 
-* [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032) by Tanya Shapiro
-* [Interactive Tooltip Tables](https://twitter.com/kc_analytics/status/1576256004638941185): how to add {gt}/{gtExtras} and {kableExtra} tables to {ggiraph} tooltips by Kyle Cuilla  
+* [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032) and [ggplot part 2: sparklines](https://twitter.com/tanya_shapiro/status/1584616721251725312) by Tanya Shapiro
+* [Interactive Tooltip Tables](https://twitter.com/kc_analytics/status/1576256004638941185): how to add {gt}/{gtExtras} and {kableExtra} tables to {ggiraph} tooltips by Kyle Cuilla   
 
 <!-- toc -->
  
