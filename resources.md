@@ -16,8 +16,7 @@
   *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by Jack Davison
   *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by Kaustav Sen
   *  Tom Mock's {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) 
-  * [3MW (Spice up your tables)](https://alberts-newsletter.beehiiv.com/p/3mw-spice-up-tables) with {gt} and {gtExtras} by Albert Rapp
-  * [Including emojis in a {gt} table](https://twitter.com/rappa753/status/1584607168682029057) code snippet by Albert Rapp
+  * [3MW (Spice up your tables)](https://alberts-newsletter.beehiiv.com/p/3mw-spice-up-tables), [3MW (Images, Icons and ggplots in tables)](https://alberts-newsletter.beehiiv.com/p/3mw-images-icons-ggplot-tables) and [color gradient code](https://twitter.com/rappa753/status/1585345561980387328) by Albert Rapp
   * [The grammar of tables in python (pandas) and R (gt)](https://karbartolome.quarto.pub/the-grammar-of-tables/) by Karina Bartolomé 
 * [{reactable}](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) packages
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
