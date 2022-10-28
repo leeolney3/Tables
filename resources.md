@@ -151,6 +151,7 @@
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
   * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
   * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
+  * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
  <!-- toc -->
  
 <!-- tocstop -->
