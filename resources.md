@@ -27,6 +27,7 @@
     * [U.S. Gas Prices Visualized](https://github.com/kcuilla/USgasprices) by Kyle Cuilla ([Twitter thread on tables in tooltip](https://twitter.com/kc_analytics/status/1572261687419445248))
 * [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes 
 * [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032) and [ggplot part 2: sparklines](https://twitter.com/tanya_shapiro/status/1584616721251725312) by Tanya Shapiro
+  * [Recreation](https://twitter.com/rappa753/status/1586395447714717696/photo/1) of [Tanya Shapiro's ggplot table](https://twitter.com/tanya_shapiro/status/1584616721251725312) in {gt} by Albert Rapp 
 * [Interactive Tooltip Tables](https://twitter.com/kc_analytics/status/1576256004638941185): how to add {gt}/{gtExtras} and {kableExtra} tables to {ggiraph} tooltips by Kyle Cuilla   
 
 <!-- toc -->
@@ -192,6 +193,7 @@
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
+  * Beautiful examples of parameterized reports [thread](https://twitter.com/lisalendway/status/1579482172356202496) by Lisa Lendway
 * Scraping 
   * [Web scraping with {rvest}](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak 
   * [Web scraping tutorial in R](https://rpubs.com/haleyepperlyfox/916671) from interactive maps using R and rvest package by Haley Epperly
