@@ -153,6 +153,7 @@
   * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
   * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
+  * [Geocomputation with R’s guide to reproducible spatial data analysis](https://twitter.com/jakub_nowosad/status/1587106672383762434) by Jakub Nowosad 
  <!-- toc -->
  
 <!-- tocstop -->
@@ -190,6 +191,7 @@
   * [ObservableHQ JavaScript Choropleth With Data From R](https://twitter.com/hrbrmstr/status/1556308005225897984) by boB Rudis @hrbrmstr
   * [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/) by Mike Mahoney
   * [Quarto/RMarkdown - What’s Different?](https://twitter.com/tladeras/status/1583453425366634496) slides by Ted Laderas
+  * [Intro to Quarto](https://twitter.com/ivelasq3/status/1586012119337553920) by Isabella Velásquez
 * R Markdown
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
