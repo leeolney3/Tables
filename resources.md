@@ -137,7 +137,7 @@
 </details>   
 
 <details>
-  <summary><b>Vis: spatial (R)</b> (click to expand)</summary>
+  <summary><b>Spatial (R)</b> (click to expand)</summary>
 
 <!-- toc --> 
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
@@ -153,7 +153,8 @@
   * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
   * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
-  * [Geocomputation with R’s guide to reproducible spatial data analysis](https://twitter.com/jakub_nowosad/status/1587106672383762434) by Jakub Nowosad 
+  * [Geocomputation with R’s guide to reproducible spatial data analysis](https://twitter.com/jakub_nowosad/status/1587106672383762434) by Jakub Nowosad
+  * [Map Africa using OSM data in R](https://twitter.com/milos_agathon/status/1588565316648329217) by Milos Popovic
  <!-- toc -->
  
 <!-- tocstop -->
