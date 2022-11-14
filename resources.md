@@ -294,7 +294,6 @@
 <!-- toc -->  
 
 * Abdoul Madjid [Github](https://github.com/AbdoulMa) 
-* Abhinav Malasi [Github](https://github.com/amalasi2418)
 * Albert Rapp [website](https://albert-rapp.de/post/)
 * Amit Grinson @Amit_Levinson [Github](https://github.com/AmitLevinson), [website](https://amitlevinson.com/)
 * Andy Baker [Github](https://github.com/AndyABaker)
@@ -330,6 +329,7 @@
 * Julia Silge [website](https://juliasilge.com/blog/)
 * Katie Press [website](https://kpress.dev/blog/tidy-tuesday-nyt-bestsellers/)
 * Kaustav Sen [Github](https://github.com/kaustavSen)
+* Kyle Walker [Github](https://github.com/walkerke)
 * Kyle Cuilla [website](https://uncharteddata.netlify.app/)
 * Lisa DeBruine [website](https://debruine.github.io/)
 * Lisa Lendway [website](https://lisalendway.netlify.app/blog.html)
