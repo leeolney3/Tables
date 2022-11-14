@@ -345,6 +345,7 @@
 * Neal Grantham  [website](https://www.nsgrantham.com/graphics/)
 * Near and Distant [Github](https://github.com/NearAndDistant), [website](https://nearanddistant.co.uk/)
 * Nicola Rennie [Github](https://github.com/nrennie), [website](https://nrennie.rbind.io/blog/)
+* not quite my grey [@quite_grey](https://twitter.com/quite_grey)
 * Pablo Alvarez [Github](https://github.com/Pablo-Alvarez-Baeza)
 * Richard Vogg [Github](https://github.com/richardvogg), [website](https://r-vogg-blog.netlify.app/)
 * Ryan Hart [Github](https://github.com/curatedmess)  
