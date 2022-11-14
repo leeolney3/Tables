@@ -332,6 +332,7 @@
 * Kaustav Sen [Github](https://github.com/kaustavSen)
 * Kyle Walker [Github](https://github.com/walkerke)
 * Kyle Cuilla [website](https://uncharteddata.netlify.app/)
+* Liam Bailey [Github](https://github.com/LiamDBailey) 
 * Lisa DeBruine [website](https://debruine.github.io/)
 * Lisa Lendway [website](https://lisalendway.netlify.app/blog.html)
 * Luis D. Verde Arregoitia [website](https://luisdva.github.io/)
