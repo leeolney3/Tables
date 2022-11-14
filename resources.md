@@ -293,7 +293,8 @@
 
 <!-- toc -->  
 
-* Abdoul Madjid[Github](https://github.com/AbdoulMa) 
+* Abdoul Madjid [Github](https://github.com/AbdoulMa) 
+* Abhinav Malasi [Github](https://github.com/amalasi2418)
 * Albert Rapp [website](https://albert-rapp.de/post/)
 * Amit Grinson @Amit_Levinson [Github](https://github.com/AmitLevinson), [website](https://amitlevinson.com/)
 * Andy Baker [Github](https://github.com/AndyABaker)
