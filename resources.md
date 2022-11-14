@@ -170,6 +170,7 @@
   * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by Benjamin Nowak 
   * [PCA with tidyverse](https://bjnnowak.netlify.app/2021/09/15/r-pca-with-tidyverse/) by Benjamin Nowak
   * [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by Amit Grinson @Amit_Levinson 
+  * [Using functional analysis to model air pollution data in R] by Nicola Rennie
 * Code 
   * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia 
   * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
