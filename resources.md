@@ -295,6 +295,7 @@
 <!-- toc -->  
 
 * Abdoul Madjid [Github](https://github.com/AbdoulMa) 
+* Allison Horst [Github](https://github.com/allisonhorst/), [website](https://allisonhorst.com/)
 * Albert Rapp [website](https://albert-rapp.de/post/)
 * Amit Grinson @Amit_Levinson [Github](https://github.com/AmitLevinson), [website](https://amitlevinson.com/)
 * Andy Baker [Github](https://github.com/AndyABaker)
