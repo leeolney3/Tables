@@ -144,6 +144,7 @@
   * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci  
   * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
   * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
+  * [Create spatial square/hexagon grids and count points inside in R with sf] by Kenneth Wong @Kenneth_KHW
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
   * [Geocomputation with R’s guide to reproducible spatial data analysis](https://twitter.com/jakub_nowosad/status/1587106672383762434) by Jakub Nowosad
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
@@ -290,7 +291,7 @@
 <!-- toc -->
 
 <details>
-  <summary><b>Github/websites/blogs to follow (alphabetical)</b> (click to expand)</summary>
+  <summary><b>Github and websites to follow (alphabetical)</b> (click to expand)</summary>
 
 <!-- toc -->  
 
