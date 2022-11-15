@@ -357,6 +357,7 @@
 * Tanya Shapiro [Github](https://github.com/tashapiro), [website](https://www.tanyashapiro.com/interactive-visuals)
 * Thom-Ivar van Dijk [Github](https://github.com/TIvanDijk)
 * Tom Mock [Github](https://github.com/jthomasmock), [The Mockup Blog](https://themockup.blog)
+* Topi Tjukanov [Github](https://github.com/tjukanovt)  
 * Tyler Morgan-Wall [Github](https://github.com/tylermorganwall), [website](https://www.tylermw.com/)
  
  <!-- toc -->
