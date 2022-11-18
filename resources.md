@@ -98,6 +98,7 @@
 
 <!-- toc --> 
 * Color
+  * [Palatable Palettes: Five tips for creating and applying bespoke colour schemes](https://www.cararthompson.com/talks/nhsr2022-palatable-palettes/) by Cara Thompson
   * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
   * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
   * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
