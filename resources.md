@@ -9,14 +9,14 @@
 * [{gt}](https://gt.rstudio.com/), [{gtExtras}](https://jthomasmock.github.io/gtExtras/) packages
   * [Making Beautiful Tables with {gt}](https://www.youtube.com/watch?v=z0UGmMOxl-c) video by Richard Iannone, RStudio
   * [{gt} Intendo Game Data Project Walkthrough](https://www.youtube.com/watch?v=aPRVzk9pvno) video by Richard Iannone, RStudio
+  * {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) by Thomas Mock
   * {gt} tables using #TidyTuesday data | RStudio: [Digital Publications](https://twitter.com/riannone/status/1511387252903010305), [Crosswords](https://twitter.com/rstudio/status/1529138398849810432), [Eurovision](https://twitter.com/kierisi/status/1534204134215548928) by [Jesse Mostipak](https://twitter.com/kierisi/status/1512798946778886144) and Richard Iannone
+  * [3MW (Spice up your tables)](https://alberts-newsletter.beehiiv.com/p/3mw-spice-up-tables), [3MW (Images, Icons and ggplots in tables)](https://alberts-newsletter.beehiiv.com/p/3mw-images-icons-ggplot-tables) and [color gradient code](https://twitter.com/rappa753/status/1585345561980387328) by Albert Rapp
+  * [Creating beautiful tables in R with {gt}](https://gt.albert-rapp.de/) book by Albert Rapp 
   * [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/) by Tom Mock
   * [Getting started with {gt} tables](https://nrennie.rbind.io/blog/2022-04-21-getting-started-with-gt-tables/) by Nicola Rennie
   * [Riding tables with {gt} and {gtExtras} tutorial](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by Benjamin Nowak 
-  *  RStudio table contest 2021 {gt} [tutorial](https://rpubs.com/JackDavison/gt-openair) by Jack Davison
-  *  RStudio table contest 2020 {gt} [tutorial](https://rpubs.com/kaustav/table_contest_2020) by Kaustav Sen
-  *  Tom Mock's {gt} tables ([1](https://twitter.com/thomas_mock/status/1478485656552812549), [2](https://twitter.com/thomas_mock/status/1454213303065096200), [3](https://twitter.com/thomas_mock/status/1440352188102942721), [4](https://twitter.com/thomas_mock/status/1437792802495139852), [5](https://twitter.com/thomas_mock/status/1442541043019390982)) 
-  * [3MW (Spice up your tables)](https://alberts-newsletter.beehiiv.com/p/3mw-spice-up-tables), [3MW (Images, Icons and ggplots in tables)](https://alberts-newsletter.beehiiv.com/p/3mw-images-icons-ggplot-tables) and [color gradient code](https://twitter.com/rappa753/status/1585345561980387328) by Albert Rapp
+  *  RStudio table contest tutorial from [Kaustav Sen (2020)](https://rpubs.com/kaustav/table_contest_2020), [Jack Davison (2021)](https://rpubs.com/JackDavison/gt-openair) 
   * [The grammar of tables in python (pandas) and R (gt)](https://karbartolome.quarto.pub/the-grammar-of-tables/) by Karina Bartolomé 
 * [{reactable}](https://glin.github.io/reactable/), [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/) packages
     * [{reactablefmtr} cookbook](https://kcuilla.github.io/reactablefmtr/articles/reactablefmtr_cookbook.html) by Kyle Cuilla
