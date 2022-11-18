@@ -313,6 +313,7 @@
 * Colin Angus [Github](https://github.com/VictimOfMaths)
 * Dan @FilmicAesthetic [Github](https://github.com/filmicaesthetic)
 * Daniel Oehm [website](http://gradientdescending.com/)
+* David Schoch @schochastics [website](http://blog.schochastics.net/)
 * Dr. Dominic Royé [Github](https://github.com/dominicroye), [website](https://dominicroye.github.io/en/)
 * Dr Nicci Potts [Github](https://github.com/NicciPotts), [website](https://niccipotts.netlify.app/)  
 * Emil Hvitfeldt [website](https://www.emilhvitfeldt.com/post/)   
