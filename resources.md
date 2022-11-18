@@ -170,6 +170,7 @@
 <!-- toc -->  
 * Analysis
   * [Analysis of the voting patterns with widyr](https://twitter.com/juliasilge/status/1532862734487785474) by Julia Silge
+  * [JABSTB: Statistical Design and Analysis of Experiments with R](https://tjmurphy.github.io/jabstb/) by TJ Murphy PhD
   * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by Benjamin Nowak 
   * [PCA with tidyverse](https://bjnnowak.netlify.app/2021/09/15/r-pca-with-tidyverse/) by Benjamin Nowak
   * [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by Amit Grinson @Amit_Levinson 
@@ -344,6 +345,7 @@
 * Marco Sciaini @shinysci [Github](https://github.com/marcosci)  
 * Margaret Siple [Github](https://github.com/mcsiple)
 * Meghan Hall [website](https://meghan.rbind.io/blog/) 
+* Michelle Evans [Github](https://github.com/mvevans89), [website](https://mvevans.netlify.app/blog.html)  
 * Mike Mahoney [website](https://www.mm218.dev/blog.html)  
 * Milos Popovic [website](https://milospopovic.net/blog/) for map tutorials 
 * Neal Grantham  [website](https://www.nsgrantham.com/graphics/)
