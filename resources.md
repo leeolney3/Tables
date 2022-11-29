@@ -110,7 +110,8 @@
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
-  * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault  
+  * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
+  * Setting up a bespoke colour scheme [thread](https://twitter.com/WeAreRLadies/status/1597355466329292800) by [@cararthompson](https://twitter.com/cararthompson) on [@WeAreRLadies](https://twitter.com/WeAreRLadies)
  <!-- toc -->
  
 <!-- tocstop -->
