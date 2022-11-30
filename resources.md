@@ -71,6 +71,7 @@
    * Level Up Your Plots: A Code-along Workshop [Slide deck and full code](https://www.cararthompson.com/talks/nhsr2022-level-up/) and [Twitter thread](https://twitter.com/cararthompson/status/1588905430092517377) by Cara Thompson  
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
+   * [@WeAreRLadies](https://twitter.com/WeAreRLadies): data visualisations and "enhanced" reproducible outputs posts ([Day 1](https://twitter.com/WeAreRLadies/status/1597355466329292800), [Day 2](https://twitter.com/WeAreRLadies/status/1597692873612328968)) by Cara Thompson 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
 * Facets/legends/axis)
   * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson 
@@ -111,7 +112,7 @@
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
   * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
-  * Setting up a bespoke colour scheme [thread](https://twitter.com/WeAreRLadies/status/1597355466329292800) by [@cararthompson](https://twitter.com/cararthompson) on [@WeAreRLadies](https://twitter.com/WeAreRLadies)
+
  <!-- toc -->
  
 <!-- tocstop -->
