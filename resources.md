@@ -162,7 +162,8 @@
   * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
-  * [Nicola Rennie](https://twitter.com/nrennie35)'s [blog post](https://nrennie.rbind.io/blog/2022-11-30-30-day-map-challenge-2022/) on 30 Day Map Challenge 2022
+  * Blog posts on the 2022 [#30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) by [Nicola Rennie @nrennie35
+](https://nrennie.rbind.io/blog/2022-11-30-30-day-map-challenge-2022/), [Iva Brunec @IvaBrunec](https://ivabrunec.github.io/30daymap.html)
  <!-- toc -->
  
 <!-- tocstop -->
