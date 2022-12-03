@@ -26,7 +26,7 @@
     * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
     * [U.S. Gas Prices Visualized](https://github.com/kcuilla/USgasprices) by Kyle Cuilla ([Twitter thread on tables in tooltip](https://twitter.com/kc_analytics/status/1572261687419445248))
 * [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes 
-* [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032) and [ggplot part 2: sparklines](https://twitter.com/tanya_shapiro/status/1584616721251725312) by Tanya Shapiro
+* [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032), [ggplot part 2: sparklines](https://twitter.com/tanya_shapiro/status/1584616721251725312) and [#TidyTuesday FIFA World Cup table](https://twitter.com/tanya_shapiro/status/1598387029171228674) by Tanya Shapiro
   * [Recreation](https://twitter.com/rappa753/status/1586395447714717696/photo/1) of [Tanya Shapiro's ggplot table](https://twitter.com/tanya_shapiro/status/1584616721251725312) in {gt} by Albert Rapp 
 * [Interactive Tooltip Tables](https://twitter.com/kc_analytics/status/1576256004638941185): how to add {gt}/{gtExtras} and {kableExtra} tables to {ggiraph} tooltips by Kyle Cuilla   
 
@@ -71,7 +71,7 @@
    * Level Up Your Plots: A Code-along Workshop [Slide deck and full code](https://www.cararthompson.com/talks/nhsr2022-level-up/) and [Twitter thread](https://twitter.com/cararthompson/status/1588905430092517377) by Cara Thompson  
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
-   * [@WeAreRLadies](https://twitter.com/WeAreRLadies): data visualisations and "enhanced" reproducible outputs posts ([Day 1](https://twitter.com/WeAreRLadies/status/1597355466329292800), [Day 2](https://twitter.com/WeAreRLadies/status/1597692873612328968)) by Cara Thompson 
+   * [@WeAreRLadies](https://twitter.com/WeAreRLadies): data visualisations and "enhanced" reproducible outputs posts ([Day 1](https://twitter.com/WeAreRLadies/status/1597355466329292800), [Day 2](https://twitter.com/WeAreRLadies/status/1597692873612328968)), [Day 3](https://twitter.com/WeAreRLadies/status/1598087858644025345), [Day 4](https://twitter.com/WeAreRLadies/status/1598442597630021634), [Day 5](https://twitter.com/WeAreRLadies/status/1598695390580248576) and [Day 6](https://twitter.com/WeAreRLadies/status/1599095497196707841) by Cara Thompson 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
 * Facets/legends/axis)
   * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson 
