@@ -26,7 +26,7 @@
     * [Using reactable in #TidyTuesday CHAT dataset - World Energy Production](https://jvelezmagic.com/blog/2022-07-23-tidituesday-2022-29/) by Jesús Vélez Santiago
     * [U.S. Gas Prices Visualized](https://github.com/kcuilla/USgasprices) by Kyle Cuilla ([Twitter thread on tables in tooltip](https://twitter.com/kc_analytics/status/1572261687419445248))
 * [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/) by David Keyes 
-* [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032) and [ggplot part 2: sparklines](https://twitter.com/tanya_shapiro/status/1584616721251725312) by Tanya Shapiro
+* [Table built in {ggplot2}](https://twitter.com/tanya_shapiro/status/1571891744844972032), [ggplot part 2: sparklines](https://twitter.com/tanya_shapiro/status/1584616721251725312) and [#TidyTuesday FIFA World Cup table](https://twitter.com/tanya_shapiro/status/1598387029171228674) by Tanya Shapiro
   * [Recreation](https://twitter.com/rappa753/status/1586395447714717696/photo/1) of [Tanya Shapiro's ggplot table](https://twitter.com/tanya_shapiro/status/1584616721251725312) in {gt} by Albert Rapp 
 * [Interactive Tooltip Tables](https://twitter.com/kc_analytics/status/1576256004638941185): how to add {gt}/{gtExtras} and {kableExtra} tables to {ggiraph} tooltips by Kyle Cuilla   
 
@@ -71,6 +71,7 @@
    * Level Up Your Plots: A Code-along Workshop [Slide deck and full code](https://www.cararthompson.com/talks/nhsr2022-level-up/) and [Twitter thread](https://twitter.com/cararthompson/status/1588905430092517377) by Cara Thompson  
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
+   * [@WeAreRLadies](https://twitter.com/WeAreRLadies): data visualisations and "enhanced" reproducible outputs posts [Day 1](https://twitter.com/WeAreRLadies/status/1597355466329292800), [Day 2](https://twitter.com/WeAreRLadies/status/1597692873612328968), [Day 3](https://twitter.com/WeAreRLadies/status/1598087858644025345), [Day 4](https://twitter.com/WeAreRLadies/status/1598442597630021634), [Day 5](https://twitter.com/WeAreRLadies/status/1598695390580248576) and [Day 6](https://twitter.com/WeAreRLadies/status/1599095497196707841) by Cara Thompson 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
 * Facets/legends/axis)
   * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson 
@@ -110,7 +111,8 @@
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
-  * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault  
+  * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
+
  <!-- toc -->
  
 <!-- tocstop -->
@@ -153,12 +155,15 @@
   * [Map Africa using OSM data in R](https://twitter.com/milos_agathon/status/1588565316648329217) by Milos Popovic
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
   * [Mapping OSM and satellite data with terra in R](https://milospopovic.net/mapping-raster-files-with-terra-in-r/) by Milos Popovic
+  * Mix and match regular geoms with `geom_sf()` [thread](https://twitter.com/ClausWilke/status/1275938314055561216) by Claus Wilke @ClausWilke
   * [Pattern-based spatial analysis with {motif}](https://twitter.com/jakub_nowosad/status/1575105118311047168) by Jakub Nowosad
   * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
   * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
   * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
+  * Blog posts on the 2022 [#30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) by [Nicola Rennie @nrennie35
+](https://nrennie.rbind.io/blog/2022-11-30-30-day-map-challenge-2022/), [Iva Brunec @IvaBrunec](https://ivabrunec.github.io/30daymap.html)
  <!-- toc -->
  
 <!-- tocstop -->
@@ -175,6 +180,8 @@
   * [PCA with tidyverse](https://bjnnowak.netlify.app/2021/09/15/r-pca-with-tidyverse/) by Benjamin Nowak
   * [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by Amit Grinson @Amit_Levinson 
   * [Using functional analysis to model air pollution data in R] by Nicola Rennie
+  * [Good Coding Practices for Data Analysts](https://www.heatherturner.net/talks/nhs-r2022/#1) by Heather Turner @HeathrTurnr
+  * [Four simple ways to integrate your data dictionary into your data cleaning process](https://cghlewis.com/blog/dict_clean/) by Crystal Lewis 
 * Code 
   * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia 
   * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
