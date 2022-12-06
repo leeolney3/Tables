@@ -1,0 +1,85 @@
+---
+title: "221123"
+date: "2022-12-06"
+format: html
+editor: visual
+---
+
+### Star Trek book, comic, episode, game and movie released between 1980 and 2019
+
+Data: [Every Star Trek ever](https://www.airtable.com/universe/expsZ6vRPGwedtNfq/every-star-trek-book-ever?explore=true) from [Flourish Klink](https://www.flourishklink.com/), by way of [Data is Plural](https://www.data-is-plural.com/archive/2022-11-23-edition/)
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(ggh4x)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r font}
+font_add_google("Fira Sans")
+f2 = "Fira Sans"
+```
+
+```{r data}
+#| message: false
+book = read_csv("every_star_trek/book.csv") |> clean_names()|> select(name=title,release_date) |> mutate(grp="book")
+book = book[-1,]
+comic = read_csv("every_star_trek/comic.csv") |> clean_names() |> select(name,release_date) |> mutate(grp="comic")
+episode = read_csv("every_star_trek/episode.csv") |> clean_names() |> select(name=episode_name,release_date=airdate) |> mutate(grp="episode")
+game = read_csv("every_star_trek/game.csv") |> clean_names() |> select(name,release_date) |> mutate(grp="game")
+movie = read_csv("every_star_trek/movie.csv") |> clean_names() |> select(name,release_date) |> mutate(grp="movie")
+df= rbind(book, comic, episode, game, movie) |> 
+  mutate(year=year(release_date)) |>
+  mutate(release_date=case_when(name=="Into the Forest I Go"~as.Date("2017-11-12"),
+                                name=="The Expansionist Syndrome"~as.Date("1980-11-01"),
+                                TRUE~release_date)
+         )
+```
+
+```{r p1, fig.height=4.2, fig.width=4}
+df |>
+  mutate(decade = if_else(year >= 2000,paste0(year  %/% 10 * 10, "'s"),paste0((year - 1900) %/% 10 * 10, "'s"))) |> 
+  mutate(decade=factor(decade, levels=c("80's","90's","2000's","2010's")))|>
+  filter(decade!="70's") |>
+  #filter(decade %in% c("90's","2000's")) |>
+  ggplot(aes(release_date, y=0, group=NA, fill=grp,color = after_scale(colorspace::darken(fill, 0.4)))) +
+  ggdist::geom_dots(binwidth = 55, dotsize = .7) +
+  scale_fill_manual(values=c("#E6B900","#DE231E","#11567D","#0194EE","#00B242"))+
+  scale_y_discrete(expand=c(0,0)) +
+  scale_x_date(position = "top",date_breaks="1 year", date_labels = "'%y") +
+  facet_wrap(~decade, ncol=1, scales = "free") + 
+  facetted_pos_scales(
+    x = list(
+      decade == "80s" ~ scale_x_date(limits = as.Date(c('1980-01-01', '1989-12-31'))),
+      decade == "90s" ~ scale_x_date(limits = as.Date(c('1990-01-01', '1999-12-31'))),
+      decade == "2000s" ~ scale_x_date(limits = as.Date(c('2000-01-01', '2009-12-31'))),
+      decade == "2010s" ~ scale_x_date(limits = as.Date(c('2010-01-01', '2019-12-31')))
+    )
+  ) +
+  coord_cartesian(clip="off") +
+  theme_minimal(base_family = f2, base_size = 13) +
+  theme(strip.text = element_blank(),
+        legend.position = "none",
+        panel.spacing = unit(1.5, "lines"),
+        axis.title=element_blank(),
+        axis.text.y=element_blank(),
+        plot.title=element_text(hjust=.5, size=17),
+        plot.subtitle = element_markdown(size=12,hjust=.5,margin=margin(b=10)),
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0.95,color="grey40", size=9, margin=margin(t=15)),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_line(linetype = "dotted", color="grey50"),
+        plot.margin=margin(t=.4,b=.3,unit="cm")
+        ) +
+  labs(title=str_to_upper("Star Trek"),
+       subtitle="Every official <span style='color:#E6B900'>**book**</span>, <span style='color:#DE231E'>**comic**</span>, <span style='color:#11567D'>**episode**</span>, <span style='color:#0194EE'>**game**</span> and <span style='color:#00B242'>**movie**</span> released between 1980 and 2019",
+       caption="Source: Flourish Klink by way of Data is Plural")
+
+ggsave("221123_p1.png", height=8.4, width=8, bg="white")
+```

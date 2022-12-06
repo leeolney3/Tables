@@ -1,0 +1,67 @@
+---
+title: "221116"
+date: "2022-12-06"
+format: html
+editor: visual
+---
+
+### Tile map: Count of outbreaks diseases entries from 1996 to 2022
+
+Data source: <https://figshare.com/articles/dataset/A_global_dataset_of_pandemic-_and_epidemic-prone_disease_outbreaks/17207183/2> by way of [Data is Plural](https://www.data-is-plural.com/archive/2022-11-16-edition/)
+
+Citation: Torres Munguía, J.A., Badarau, F.C., Díaz Pavez, L.R. et al. A global dataset of pandemic- and epidemic-prone disease outbreaks. Sci Data 9, 683 (2022). https://doi.org/10.1038/s41597-022-01797-2
+
+```{r libraries}
+library(tidyverse)
+options(dplyr.summarise.inform = FALSE)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r font}
+font_add_google("Open Sans")
+f1 = "Open Sans"
+```
+
+```{r data}
+# diseases other than COVID-19
+outbreaks = read_csv("data/Outbreaks.csv",show_col_types = FALSE) %>% janitor::clean_names() %>% filter(disease!="COVID-19")
+summary(outbreaks$year)
+```
+
+```{r wrangle}
+# count of outbreaks diseases entries excluding COVID-19
+grid= geofacet::world_countries_grid1
+outbreaks1=outbreaks %>% 
+  
+  group_by(country,iso2, iso3) %>%
+  summarise(n=n_distinct(disease)) %>% 
+  ungroup() %>%
+  inner_join(grid, by=c("iso3"="code_alpha3")) %>%
+  mutate(iso2 = case_when(iso3=="NAM"~"NA", TRUE~iso2))
+```
+
+```{r p1, fig.height=3, fig.width=3.5}
+outbreaks1 %>%
+  ggplot(aes(x=col, y=-row,fill=n)) +
+  geom_tile(linewidth=.5, color="#fafafa") +
+  geom_text(aes(label=iso2, color=after_scale(prismatic::best_contrast(fill, y = c("white", "black")))), size=2.5) +
+  scale_fill_stepsn(colors=PNWColors::pnw_palette("Bay"), guide=guide_colorsteps(title.position="top",barheight = unit(.6, "lines"), )) +
+  scale_y_continuous(expand=c(0,0)) +
+  coord_fixed() +
+  theme_void(base_family = f1, base_size = 10) +
+  theme(legend.position = "top",
+        legend.justification = "left",
+        legend.title=element_blank(),
+        legend.margin=margin(b=7, t=3),
+        plot.title=element_text(size=10.5, hjust=0, face="bold"),
+        plot.subtitle = element_text(color="grey20", size=9, margin=margin(t=5)),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0,size=7, color="grey40", margin=margin(t=10),lineheight=1),
+        plot.margin=margin(.3,.3,.3,.3,unit="cm")) +
+  labs(title="Count of disease outbreaks excluding COVID-19 in 183 countries/territories (1996 - 2022)",subtitle="Based on information extracted from the World Health Organization’s Disease Outbreak News alerts.",
+       caption="Source: Torres Munguía, J.A., Badarau, F.C., Díaz Pavez, L.R. et al. A global dataset of pandemic- and epidemic-prone disease outbreaks.\nSci Data 9, 683 (2022). https://doi.org/10.1038/s41597-022-01797-2")
+
+ggsave("outbreaks.png", height=6, width=7, bg="#fafafa")
+```

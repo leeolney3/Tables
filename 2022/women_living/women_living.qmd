@@ -1,0 +1,294 @@
+---
+title: "Living Conditions of Women and their Well-being"
+date: "2022-12-06"
+format: html
+editor: visual
+---
+
+Data source: [LivWell: a sub-national Dataset on the Living Conditions of Women and their Well-being for 52 Countries](https://www.nature.com/articles/s41597-022-01824-2)
+
+Citation: Belmin, C., Hoffmann, R., Elkasabi, M. et al. LivWell: a sub-national Dataset on the Living Conditions of Women and their Well-being for 52 Countries. Sci Data 9, 719 (2022). https://doi.org/10.1038/s41597-022-01824-2
+
+```{r libraries}
+#| message: false
+library(tidyverse)
+library(ggh4x)
+library(patchwork)
+library(sf)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r fonts}
+font_add_google("Open Sans")
+f1="Open Sans"
+```
+
+```{r import data}
+data= readr::read_csv("data/livwell_lin_interpolated.csv")
+indicators = readr::read_csv("data/indicators.csv")
+citation= "Source: Belmin, C., Hoffmann, R., Elkasabi, M. et al. LivWell: a sub-national Dataset on the Living Conditions of Women and their Well-being for 52 Countries. Sci Data 9, 719 (2022). https://doi.org/10.1038/s41597-022-01824-2"
+boundaries = st_read("harmonized_boundaries.gpkg")
+```
+
+```{r summary by country}
+summary = data %>% 
+  select(country_name,region_name_harmonized,year,starts_with("DP")) %>%
+  group_by(country_name) %>%
+  summarise(region_n=n_distinct(region_name_harmonized),
+            min_year=min(year),
+            max_year=max(year)) %>%
+  arrange(desc(region_n)) %>%
+  ungroup() %>%
+  mutate(region=countrycode::countrycode(country_name, origin="country.name", destination = "region"),region2=countrycode::countrycode(country_name, origin="country.name", destination = "un.regionintermediate.name")) 
+```
+
+### Section 1: Peru, Women's decision-making power
+
+```{r wrangle}
+df1 = data %>% filter(country_name=="Peru") %>%
+  select(country_name,region_name_harmonized,year,starts_with("DP")) %>%
+  pivot_longer(!c(country_name,region_name_harmonized,year)) %>%
+  drop_na(value) %>%
+  filter(str_detect(name,"_p"), !str_detect(name,"contraception"), !str_detect(name,"owns")) %>%
+  left_join(indicators, by=c("name"="indicator_code")) %>%
+  drop_na(indicator_description)
+
+df2 = df1 %>% group_by(year, indicator_description) %>%
+  summarise(ymin=min(value), ymax=max(value)) %>%
+  ungroup() 
+```
+
+```{r p1, fig.height=3.5, fig.width=4}
+col1 = "#6942EF"
+df2 %>% ggplot(aes(x=year, y=ymin)) +
+  geom_ribbon(aes(x=year, ymin=ymin, ymax=ymax), fill="grey", alpha=.4) +
+  geom_line(data=df1 %>% filter(region_name_harmonized!="Lima + Callao"), aes(x=year, y=value, group=region_name_harmonized), linewidth=.4, color="grey70") +
+  geom_line(data=df1 %>% filter(region_name_harmonized=="Lima + Callao"), aes(x=year, y=value, group=region_name_harmonized), linewidth=.7, color=col1) +
+  scale_x_continuous(limits=c(2000,NA),breaks=seq(2000,2012,4)) +
+  scale_y_continuous(labels=scales::percent_format(scale=1)) +
+  facet_wrap(~str_wrap(indicator_description,30), scales = "free") +
+  cowplot::theme_minimal_grid(11) +
+  theme(text=element_text(family=f1),
+        strip.text=element_text(hjust=0, vjust=0),
+        axis.title=element_blank(),
+        axis.text=element_text(size=8),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey40", size=8),
+        plot.title.position = "plot",
+        plot.title=element_text(color=col1),
+        plot.subtitle=element_text(color="grey20"),
+        plot.margin=margin(.5,.75,.3,.5, unit="cm")) +
+  labs(title="Women's decision-making power in Lima and Callao, Peru",
+       subtitle="Compared to 23 other harmonized regions in Peru",
+       caption=paste0("\n",str_wrap(citation,145)))
+
+ggsave("plots/p1.png",height=7, width=8, bg="white")
+```
+
+### Section 2: Indonesia and Phillipines, Women's decision-making power
+
+```{r wrangle}
+df1 = data %>% filter(country_name %in% c("Philippines","Indonesia")) %>%
+  select(country_name,region_name_harmonized,year,starts_with("DP")) %>%
+  pivot_longer(!c(country_name,region_name_harmonized,year)) %>%
+  drop_na(value) %>%
+  left_join(indicators, by=c("name"="indicator_code")) %>%
+  filter(name %in% c("DP_decide_health_p","DP_decide_large_purchase_p","DP_decide_money_p")) %>%
+  mutate(indicator_description=str_wrap(indicator_description,32))
+
+df2 = df1 %>% group_by(country_name,year, indicator_description) %>%
+  summarise(ymin=min(value), ymax=max(value)) %>%
+  ungroup() 
+```
+
+```{r p2, fig.height=3.3, fig.width=4}
+df2 %>% ggplot(aes(x=year, y=ymin)) +
+  geom_ribbon(aes(x=year, ymin=ymin, ymax=ymax), fill="grey", alpha=.4) +
+  geom_line(data=df1 %>% filter(!region_name_harmonized %in% c("DKI Jakarta","National Capital")), linewidth=.4, aes(color="Other harmonized regions", x=year, y=value,group=region_name_harmonized),key_glyph=draw_key_rect) +
+  geom_line(data=df1 %>% filter(region_name_harmonized %in% c("DKI Jakarta","National Capital")), linewidth=.7, aes(color="Harmonized region containing country capital",, x=year, y=value,group=region_name_harmonized),key_glyph=draw_key_rect) +
+  geom_text(data=df1 %>% filter(region_name_harmonized %in% c("DKI Jakarta","National Capital"), year==2017), aes(x=2017.3,y=value,group=region_name_harmonized, label=str_wrap(region_name_harmonized,5)), size=3, color="red", hjust=0, lineheight=.8,) + 
+  scale_x_continuous(limits=c(2003,2019),breaks=c(2003,2010,2017)) +
+  scale_color_manual(values=c("red","grey70")) +
+  ggh4x::facet_grid2(rows=vars(country_name), cols=vars(indicator_description), scales="free_y", independent = "y", axes="all", switch="y") +
+  coord_cartesian(clip="off") +
+  cowplot::theme_minimal_grid(11, line_size = .3) +
+  theme(text=element_text(family=f1),
+        legend.position="top",
+        legend.title=element_blank(),
+        legend.margin=margin(t=5,l=-38),
+        strip.text.x=element_text(hjust=0),
+        strip.text.y=element_text(face="bold"),
+        strip.background.y = element_rect(fill="grey95"),
+        strip.placement = "outside",
+        panel.spacing.x = unit(1, "lines"),
+        panel.spacing.y = unit(2, "lines"),
+        axis.title=element_blank(),
+        axis.text=element_text(size=9),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey40", size=9),
+        plot.margin=margin(.5,.75,.3,.5, unit="cm")
+        ) +
+  labs(title="Women's Decision-making Power in Indonesia and Philippines, 2003 - 2017",
+       caption=paste0("\n",str_wrap(citation,140))) +
+  scale_y_facet(COL==1, limits=c(20,80)) +
+  scale_y_facet(COL==2, limits=c(0,40)) +
+  scale_y_facet(COL==3, limits=c(10,100), breaks=seq(10,100,30))
+
+ggsave("plots/p2.png",height=6.6, width=8, bg="white")
+```
+
+### Section 3: West Africa, Women's decision-making power
+
+```{r p3, fig.height=3.8, fig.width=4}
+data %>% 
+  filter(country_name %in% c("Benin","Mali","Guinea","Nigeria","Senegal","Sierra Leone")) %>%
+  select(country_name,region_name_harmonized,year, DP_decide_health_p, DP_decide_large_purchase_p, DP_decide_money_p, DP_owns_house_p,DP_owns_land_p, DP_earn_more_equal_p) %>%
+  pivot_longer(DP_decide_health_p:DP_earn_more_equal_p) %>%
+  drop_na(value) %>%
+  filter(year>=2009) %>%
+  left_join(indicators, by=c("name"="indicator_code")) %>%
+  mutate(indicator_description=str_wrap(indicator_description,22)) %>%
+  ggplot(aes(x=year, y=value, group=region_name_harmonized)) +
+  geom_line(linewidth=.4, alpha=.8) +
+  scale_x_continuous(breaks=seq(2009,2019,5), labels=c("'09","'14","'19")) +
+  scale_y_continuous(limits=c(0,100)) +
+  facet_grid(cols=vars(country_name), rows=vars(indicator_description)) +
+  coord_cartesian(expand=FALSE,clip="off") +
+  cowplot::theme_minimal_grid(11) +
+  theme(text=element_text(family=f1),
+        axis.title=element_blank(),
+        panel.background = element_rect(fill="grey96", color=NA),
+        strip.placement = "outside",
+        strip.text.y=element_text(size=8.5,lineheight=1,angle=0, hjust=0, margin=margin(l=8)),
+        panel.spacing = unit(.9, "lines"),
+        axis.text=element_text(color="grey30", size=8),
+        plot.title.position = "plot",
+        plot.subtitle=element_text(color="grey20"),
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0, color="grey40"),
+        plot.margin=margin(.5,.5,.3,.5,unit="cm")
+        ) +
+  labs(title="Women's Decision-making Power in West Africa (2009 - 2019)",
+       subtitle="Each line represents a harmonized region within the country",
+       caption=paste0("\n",str_wrap(citation,140)))
+
+ggsave("plots/p3.png", height=7.6, width=8, bg="white")
+```
+
+### Section 4: West Africa map, Women who have the final say on their health care
+
+```{r map data}
+wa = data %>% 
+  mutate(region2=countrycode::countrycode(country_name, origin="country.name", destination = "un.regionintermediate.name")) %>%
+   filter(region2=="Western Africa") %>%
+   select(1:5,value=DP_decide_health_p)  %>%
+  drop_na(value) %>% #count(year)
+  filter(year %in% c(2006,2010,2014,2018))
+
+boundaries1 = boundaries %>% 
+  mutate(region2=countrycode::countrycode(country_name, origin="country.name", destination = "un.regionintermediate.name")) %>% filter(region2=="Western Africa") 
+boundaries2 = boundaries1 %>% right_join(wa, by=c("country_name","region_name_harmonized"))
+```
+
+```{r p4, fig.height=3.7, fig.width=4}
+ggplot() +
+  geom_sf(data=boundaries1, color="white") +
+  geom_sf(data=boundaries2, aes(fill=value), color="white") +
+  scico::scale_fill_scico(direction=-1, palette="bamako", labels=scales::percent_format(scale=1)) +
+  coord_sf() +
+  facet_wrap(~year) +
+  cowplot::theme_map() +
+  theme(text=element_text(family=f1),
+        legend.position = "top",
+        legend.text=element_text(size=11),
+        legend.title=element_blank(),
+        plot.subtitle=element_markdown(size=12),
+        plot.caption=element_text(hjust=0, color="grey40", size=8.5, lineheight = 1),
+        plot.margin=margin(.5,.5,.3,.5, unit="cm")
+        ) +
+  guides(fill=guide_colorbar(title.position = "top",barwidth = unit(12, "lines"),barheight = unit(.5, "lines"),)) +
+  labs(subtitle="**Western Africa**: Women who have the final say on their health care (%) by harmonized region:",
+       caption=paste0("\nNote: Graphic includes harmonized regions in Benin, Burkina Faso, Cote d'Ivoire, Ghana, Guinea, Liberia, Mali, Niger, Nigeria and Senegal.\n",str_wrap(citation,135)))
+
+ggsave("plots/p4.png", height=7.4, width=8, bg="white")
+```
+
+```{r}
+# rnaturalearth::ne_countries(continent="Africa", returnclass = "sf") %>%
+#   filter(subregion=="Western Africa") %>% #as.data.frame()
+#   ggplot() +
+#   geom_sf()
+```
+
+### Section 5: Indonesia map, Women living in urban areas (%) in 2017
+
+```{r map data}
+ind = data %>% filter(country_name=="Indonesia") %>%
+  filter(year %in% c(2007,2017)) %>%
+  select(1:5,value=DM_urban_p) %>%
+  drop_na(value) 
+
+boundaries1 = boundaries %>% filter(country_name=="Indonesia") 
+boundaries2 = boundaries1 %>%
+  right_join(ind, by=c("country_name","region_name_harmonized"))
+```
+
+```{r p5, fig.height=4, fig.width=4}
+ggplot() +
+  geom_sf(data=boundaries1, color="white") +
+  geom_sf(data=boundaries2, color="white", aes(fill=value)) +
+  scico::scale_fill_scico(direction=-1, palette="bamako", labels=scales::percent_format(scale=1)) +
+  facet_wrap(~year, ncol=1) +
+  cowplot::theme_map() +
+  theme(text=element_text(family=f1),
+        legend.title=element_text(face="bold"),
+        legend.position = "top",
+        plot.caption=element_text(hjust=0, color="grey40",size=9),
+        plot.margin=margin(.5,.5,.3,.5,unit="cm")
+        ) +
+  labs(fill="Indonesian women living in urban areas by harmonized region",
+       caption=paste0("\n",str_wrap(citation,130))) +
+  guides(fill=guide_colorbar(title.position = "top",barwidth = unit(12, "lines"),barheight = unit(.5, "lines"),))
+
+ggsave("plots/p5.png", height=8, width=8, bg="white")
+```
+
+### Section 6: Nigeria, energy and information
+
+```{r p6, fig.height=3.5, fig.width=4}
+data %>% filter(country_name=="Nigeria") %>%
+  select(1:5, EI_women_elec_p,EI_women_fridge_p,EI_women_modern_cooking_p, EI_women_radio_p,EI_women_telephone_p, EI_women_tv_p) %>%
+  pivot_longer(!c(1:5)) %>%
+  left_join(indicators, by=c("name"="indicator_code")) %>%
+  ggplot(aes(x=year, y=value, color=region_name_harmonized)) +
+  geom_line(linewidth=.8) +
+  scale_x_continuous(breaks=seq(2003,2018,5)) +
+  scale_y_continuous(labels=scales::percent_format(scale=1)) +
+  facet_wrap(~str_wrap(indicator_description,30), scales="free") +
+  wacolors::scale_color_wa_d(palette="rainier",reverse=TRUE) +
+  cowplot::theme_minimal_grid(11.5) +
+  theme(text=element_text(family=f1),
+        legend.position="top",
+        legend.title=element_text(color="grey10"),
+        legend.text=element_text(color="grey10"),
+        legend.margin=margin(t=5,l=-23, b=5),
+        strip.text=element_text(hjust=0, size=10.5, lineheight = 1),
+        panel.spacing.y = unit(1.5, "lines"),
+        axis.title=element_blank(),
+        axis.text=element_text(size=9, color="grey20"),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, size=8.5, color="grey40", lineheight = 1),
+        plot.margin=margin(.5,.75,.3,.5, unit="cm"),
+        ) +
+  guides(color=guide_legend(override.aes = list(linewidth=3))) +
+  labs(title="Women's access to energy and information in Nigera (2003-2018)",
+       color="Harmonized region: ",
+       caption=paste0("\n",str_wrap(citation,140)))
+
+ggsave("plots/p6.png",height=7, width=8, bg="white")
+```
