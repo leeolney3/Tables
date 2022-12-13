@@ -65,6 +65,7 @@
    * [Designing #TidyTuesday visualisations for mobile (with Quarto)](https://nrennie.rbind.io/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/) by Nicola Rennie
    * [Expansion for discrete scale](https://github.com/ch-bu/ggplot2-fundamentals/blob/main/cheatsheets/09_ggplot2_fundamentals_cheatsheet_expansion_discrete.pdf) by Christian Burkhart   
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
+   * [Ordering fill colour and removing white space](https://twitter.com/cararthompson/status/1600852528056471554) in waffle::geom_waffle by Cara Thompson
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
    * [Horror Movies](https://github.com/tashapiro/horror-movies) ggplot2 workshop by Tanya Shapiro ([tweet](https://twitter.com/tanya_shapiro/status/1580638749687676930))
    * [How to recreate Pew opinion graphs with ggplot2 in R](https://rforpoliticalscience.com/2022/06/02/recreate-pew-opinion-graphs-with-ggplot-in-r/) by R for Political Science 
