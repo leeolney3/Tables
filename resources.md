@@ -108,6 +108,7 @@
   * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
   * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
 * Text  
+  * [gradienttext](https://github.com/samiaab1990/gradienttext) R package by Samia for creating gradient text labels on ggplot graphs
   * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
