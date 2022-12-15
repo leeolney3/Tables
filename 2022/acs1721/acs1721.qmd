@@ -1,0 +1,103 @@
+---
+title: "ACS estimates"
+date: "2022-12-15"
+format: html
+editor: visual
+---
+
+Trying out the new version of [{tidycensus}](https://twitter.com/kyle_e_walker/status/1601338352828960768) v1.3 R package containing [2017-2021 5-year American Community Survey](https://www.census.gov/data/developers/data-sets/acs-5year.html) data from U.S. Census Bureau.
+
+```{r libraries}
+library(tidyverse)
+library(scales)
+library(ggtext)
+library(tidycensus)
+library(tigris)
+options(tigris_use_cache=TRUE)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r font}
+font_add_google("Open Sans")
+f1="Open Sans"
+font_add_google("Sora")
+f2 = "Sora"
+```
+
+```{r variables}
+# browse variables
+v21 <- load_variables(2021, "acs5", cache = TRUE)
+View(v21)
+```
+
+### Harris County, Estimate Median gross rent as a percentage of household income
+
+```{r}
+harris_rent = 
+  get_acs(geography = "tract",
+          variables="B25071_001",
+          state="TX",
+          county="Harris County",
+          year=2021,
+          geometry = TRUE) %>%
+  erase_water()
+```
+
+```{r, fig.height=4, fig.width=4}
+harris_rent %>%
+  ggplot(aes(fill=estimate)) +
+  geom_sf(color="#fafafa") +
+  scale_fill_stepsn(colors=rev(PNWColors::pnw_palette("Lake",6)),na.value="grey90", labels=percent_format(scale=1)) +
+  coord_sf(expand=FALSE) +
+  theme_void(10.5, base_family = f1) +
+  theme(legend.position = "top",
+        plot.margin=margin(.5,.5,.3,.5,unit="cm"),
+        legend.title=element_text(margin=margin(b=5)),
+        plot.title=element_text(hjust=.5, family=f2, size=16, face="bold"),
+        plot.subtitle = element_text(hjust=.5, lineheight=1.1, size=10),
+        plot.caption=element_text(size=8, hjust=.5, color="grey40"),
+        plot.background = element_rect(fill="#fafafa",color=NA)
+        ) +
+  labs(fill="Estimate:",
+       title="Median Gross Rent in Harris County, TX",
+       subtitle="As a percentage of houshold income in the past 12 months (dollars)\nCensus tracts, American Community Survey (ACS) 2017-2021\n",
+       caption="\nSource: U.S. Census Bureau via {tidycensus} R package") +
+  guides(fill=guide_colorsteps(barwidth=unit(10,"lines"),barheight=unit(.5,"lines")))
+
+ggsave("acs_p1.png",height=7.5, width=8, bg="#fafafa")
+```
+
+### Cook County, Estimate Median contract rent
+
+```{r}
+cook_rent=
+  get_acs(geography = "tract",
+          variables="B25058_001",
+          state="IL",
+          county="Cook County",
+          year=2021,
+          geometry = TRUE) %>%
+  erase_water()
+```
+
+```{r, fig.height=4, fig.width=4}
+cook_rent %>%
+  ggplot(aes(fill=estimate)) +
+  geom_sf(color="#fafafa", size=.01) +
+  scale_fill_viridis_c(option="cividis", direction=-1, na.value = "grey90", label=scales::label_dollar()) +
+  coord_sf(expand=FALSE) +
+  theme_void(11, base_family = f2) +
+  theme(legend.position = c(.143,.4),
+        legend.title=element_text(size=10, lineheight = 1.1),
+        legend.text=element_text(size=10),
+        plot.caption = element_text(hjust=.5, color="grey40", size=8.5, family=f1),
+        plot.title=element_markdown(size=16, margin=margin(t=230,b=-230)),
+        plot.margin=margin(.5,.5,.3,.5, unit="cm")) +
+  labs(title="<b>Cook County, IL</b><br> <span style = 'font-size:9.5pt'>Census tracks, 2017-2021 ACS</span>",
+       fill="Estimate, Median\ncontract rent (dollars):",
+       caption="\nSource: U.S. Census Bureau via {tidycensus} R package") +
+  guides(fill=guide_colorbar(barwidth = unit(.6, "lines")))
+ggsave("acs_p2.png", height=8, width=8, bg="#fafafa") 
+```
