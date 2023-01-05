@@ -45,8 +45,7 @@
    * [R for Data Science (2e)](https://r4ds.hadley.nz/) written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund
    * [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/)   
    * [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2) A curated list of awesome ggplot2 tutorials, packages.. by Erik Gahner Larsen @erikgahner 
-   * [The R Graph Gallery](https://r-graph-gallery.com/)
-   * [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz @R_Graph_Gallery   
+   * [The R Graph Gallery](https://r-graph-gallery.com/) and [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz  ([introductory thread](https://twitter.com/R_Graph_Gallery/status/1610265460469006337) on Twitter)
    * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) and [Collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20) by Cédric Scherer
    * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
    * [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/) by Lisa DeBruine
@@ -86,6 +85,7 @@
   * Facets with connecting lines [graphic](https://twitter.com/issa_madjid/status/1577401265050353666/photo/1) by Abdoul Madjid
   * [Changing Glyph in legend in ggplot2](https://www.emilhvitfeldt.com/post/changing-glyph-in-ggplot2/) by Emil Hvitfeldt
   * @FilmicAesthetic's [Collection of ggplot2 legend key shapes](https://twitter.com/FilmicAesthetic/status/1537535639100567555)
+  * [Long color bar](https://twitter.com/rappa753/status/1610667515381702657) legend in ggplot2 by Albert Rapp
 * Recreations
   * [Recreate - Sankey flow chart](https://www.emilhvitfeldt.com/post/2018-03-20-recreate-sankey-flow-chart/) by Emil Hvitfeldt
   * [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/) by Ansgar Wolsing
@@ -111,6 +111,7 @@
   * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
   * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
 * Text  
+  * [{geomtextpath}](https://github.com/AllanCameron/geomtextpath) R package by Allan Cameron for writing text on a path in ggplot2, [example](https://twitter.com/rappa753/status/1610305082679234562) from Albert Rapp
   * [gradienttext](https://github.com/samiaab1990/gradienttext) R package by Samia for creating gradient text labels on ggplot graphs
   * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
@@ -193,6 +194,7 @@
   * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
   * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
   * Script to count [fonts used](https://twitter.com/geokaramanis/status/1606556048592191488) and [geoms](https://twitter.com/geokaramanis/status/1608069528197517314) by Georgios Karamanis 
+  * [Helper function](https://twitter.com/tanya_shapiro/status/1610648262423330816) for writing captions with Font Awesome Brand icons by @tanya_shapiro
 * Image
   * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
   * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault   
