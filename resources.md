@@ -278,16 +278,17 @@
 </details>  
 
 <details>
-  <summary><b>Weekly highlights/newsletters</b> (click to expand)</summary>
+  <summary><b>Highlights/newsletters</b> (click to expand)</summary>
 
 <!-- toc -->  
 
+* [The list of 2022 visualization lists](https://www.maartenlambrechts.com/2023/01/02/the-list-of-2022-visualization-lists.html): version 2022 with links to 2015-2021, by Maarten Lambrechts
 * [Datawrapper Data Vis Dispatch](https://blog.datawrapper.de/category/data-vis-dispatch/): weekly, data visualizations from newsrooms and other organizations all over the world
 * [R Weekly](https://rweekly.org/): Weekly updates on R tutorials, R resources, blog posts...  
 * [The Moksha Roundup](https://mokshadata.studio/roundup/): weekly round up of data visualization/design/visual storytelling
-* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps  
+* [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps 
 * [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse): fortnightly newsletter on data-related news, deets on events, social media profiles to follow, real-time data to visualize, resource guides and more  
-* [Albert's Newsletter](https://alberts-newsletter.beehiiv.com/): biweekly newsletter about DataViz, Shiny and Stats/Machine Learning.  
+* [Albert's Newsletter](https://alberts-newsletter.beehiiv.com/): biweekly newsletter about DataViz, Shiny and Stats/Machine Learning by Albert Rapp 
 
  <!-- toc -->
  
