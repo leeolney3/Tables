@@ -45,7 +45,7 @@
    * [R for Data Science (2e)](https://r4ds.hadley.nz/) written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund
    * [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/)   
    * [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2) A curated list of awesome ggplot2 tutorials, packages.. by Erik Gahner Larsen @erikgahner 
-   * [The R Graph Gallery](https://r-graph-gallery.com/) and [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz  ([introductory thread](https://twitter.com/R_Graph_Gallery/status/1610265460469006337) on Twitter)
+   * [The R Graph Gallery](https://r-graph-gallery.com/) and [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz  ([introductory thread](https://twitter.com/R_Graph_Gallery/status/1610265460469006337) and [resources thread](https://twitter.com/R_Graph_Gallery/status/1613201849590366212))
    * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) and [Collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20) by Cédric Scherer
    * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
    * [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/) by Lisa DeBruine
@@ -76,6 +76,7 @@
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies): data visualisations and "enhanced" reproducible outputs posts [Day 1](https://twitter.com/WeAreRLadies/status/1597355466329292800), [Day 2](https://twitter.com/WeAreRLadies/status/1597692873612328968), [Day 3](https://twitter.com/WeAreRLadies/status/1598087858644025345), [Day 4](https://twitter.com/WeAreRLadies/status/1598442597630021634), [Day 5](https://twitter.com/WeAreRLadies/status/1598695390580248576) and [Day 6](https://twitter.com/WeAreRLadies/status/1599095497196707841) by Cara Thompson 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
+   * [Curvy arrows in #Rstats plots](https://twitter.com/jschwabish/status/1613175754728022017) thread by Jon Schwabish
 * Facets/legends/axes)
   * [Aligning Your Axes](https://rfortherestofus.com/2022/07/align-axes/) by Cara Thompson 
   * [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/) by Clare West
@@ -113,6 +114,7 @@
 * Text  
   * [{geomtextpath}](https://github.com/AllanCameron/geomtextpath) R package by Allan Cameron for writing text on a path in ggplot2, [example](https://twitter.com/rappa753/status/1610305082679234562) from Albert Rapp
   * [gradienttext](https://github.com/samiaab1990/gradienttext) R package by Samia for creating gradient text labels on ggplot graphs
+  * [Easy to read text with ggfx::with_outer_glow()](https://twitter.com/cararthompson/status/1611389044847697920) thread by Cara Thompson
   * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
@@ -171,6 +173,7 @@
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
   * Blog posts on the 2022 [#30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) by [Nicola Rennie @nrennie35
 ](https://nrennie.rbind.io/blog/2022-11-30-30-day-map-challenge-2022/), [Iva Brunec @IvaBrunec](https://ivabrunec.github.io/30daymap.html)
+  * [Inverse-distance weighted smoothing](https://twitter.com/nrennie35/status/1612740418206306310) dataviz and thread by Nicola Rennie
  <!-- toc -->
  
 <!-- tocstop -->
