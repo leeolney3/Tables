@@ -1,0 +1,216 @@
+---
+title: "20230111"
+date: "2022-01-16"
+format: html
+editor: visual
+---
+
+Dataviz exercise using dataset(s) featured in [Data Is Plural 2023.01.11 edition](https://www.data-is-plural.com/archive/2023-01-11-edition/).
+
+```{r load libraries}
+library(tidyverse)
+library(lubridate)
+library(ggdist)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load font}
+font_add_google("Atkinson Hyperlegible")
+f1 = "Atkinson Hyperlegible"
+font_add_google("Archivo")
+f2 = "Archivo"
+```
+
+### Automobile recalls
+
+Data: [Recalls Data](https://datahub.transportation.gov/Automobiles/Recalls-Data/6axg-epim) from [National Highway Traffic Safety Administration](https://datahub.transportation.gov/Automobiles/Recalls-Data/6axg-epim)
+
+```{r import data}
+recalls = read_csv("data/Recalls_Data.csv",show_col_types = FALSE) |> janitor::clean_names()
+
+caption="Source: National Highway Traffic Safety Administration"
+skimr::skim(recalls)
+```
+
+```{r wrangle}
+df1 = recalls |> 
+  mutate(date=mdy(report_received_date),
+         year=year(date),
+         m=month(date),
+         month=month(date, label=TRUE)) |>
+  filter(year!=2023) 
+
+type = df1 |> count(recall_type,sort=TRUE) |>
+  add_column(col=c("#1D4A79", "#794C23", "#6B7444", "#6089B5")) |>
+  mutate(lab=glue::glue("<span style='color:{col}'>{recall_type} (n={scales::number(n)})</span>"),
+         lab=fct_inorder(lab)) |>
+  select(-n) 
+```
+
+```{r}
+# Recall report count by year
+# df1 |> count(year) |>
+#   ggplot(aes(x=year, y=n)) +
+#   geom_col()
+```
+
+```{r "p1", fig.height=3, fig.width=4}
+df1 |> 
+  #mutate(ym=ymd(paste0(year,"/",m,"/","01"))) |>
+  count(year, recall_type) |>
+  complete(year, recall_type, fill = list(n = 0)) |>
+  left_join(type, by="recall_type") |>
+  ggplot(aes(x=year, y=n, fill=lab)) +
+  geom_area() +
+  NatParksPalettes::scale_fill_natparks_d("CraterLake")+
+  scale_y_continuous(expand = expansion(mult = c(0, .1))) +
+  facet_wrap(~lab, scales="free_y") +
+  cowplot::theme_minimal_grid(13) +
+  theme(plot.margin=margin(.5,.75,.3,.5,unit="cm"),
+        legend.position = "none",
+        text=element_text(family=f2),
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0, color="grey30"),
+        plot.title.position = "plot",
+        plot.title = element_text(family=f1),
+        strip.text = element_markdown(hjust=0, size=13, face="bold"),
+        panel.spacing = unit(1, "lines")
+        ) +
+  labs(caption=caption, x="Year", y="Number of recalls",
+        title="Automobile recalls in the US by recall type from 1966 to 2022")
+```
+
+```{r "p2", fig.height=3, fig.width=4}
+# Recall report count by month
+df1|>
+  count(year, m) |>
+  mutate(grp=case_when(year==2022~"2022", TRUE~"1966-2021")) |>
+  ggplot(aes(x=m, y=n)) +
+  ggbump::geom_bump(data=. %>% filter(grp!="2022"),aes(group=year, color=grp,alpha=ifelse(year==2022,.8,.3)), size=.7, key_glyph=draw_key_rect) +
+  ggbump::geom_bump(data=. %>% filter(grp=="2022"),aes(group=year, color=grp,alpha=ifelse(year==2022,.8,.3)), size=1,key_glyph = draw_key_rect) +
+  scale_x_continuous(breaks=seq(1,12,1),labels=levels(df1$month), expand=c(0.02,0.02)) +
+  scale_alpha_identity() +
+  scale_color_manual(values=c("#88837D","#A31414")) +
+  scale_y_continuous(expand=c(0.01,0.01)) +
+  cowplot::theme_minimal_grid(13) +
+  theme(text=element_text(family=f2),
+        plot.margin=margin(.5,.75,.3,.5,unit="cm"),
+        plot.title.position = "plot",
+        plot.title=element_text(family=f1),
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0, color="grey30"),
+        panel.grid.major.x = element_blank(),
+        legend.position = "top",
+        legend.margin=margin(l=-38),
+        axis.ticks.length.x=unit(.25, "cm"),
+        ) +
+  labs(caption=caption,x="Month", y="Number of recalls", color="Year:",
+       title="Automobile Vehicle Recalls in the US",) +
+  guides(color=guide_legend(reverse=TRUE))
+```
+
+```{r "p3", fig.height=3, fig.width=4}
+df1 |> count(year, m) |>
+  ggplot(aes(y = n, x = m, fill = year, group = NA, order = year)) +
+  ggdist::stat_pointinterval(position = position_nudge(x = -.1), color="grey30") +
+  ggdist::geom_dots(aes(color=after_scale(colorspace::darken(fill,.1)))) +
+  scale_x_continuous(breaks=seq(1,12,1),labels=levels(df1$month),expand = c(0, 0)) +
+  scale_y_continuous(breaks=seq(0,125,25), expand=c(0.01,0.01)) +
+  scale_fill_gradientn(colors=rev(PNWColors::pnw_palette("Anemone",3))) +
+  cowplot::theme_minimal_hgrid(13) +
+  theme(plot.margin=margin(.5,.5,.3,.5,unit="cm"),
+        plot.title.position = "plot",
+        plot.title=element_text(family=f1),
+        axis.ticks.y=element_blank(),
+        axis.ticks.length.x=unit(.25, "cm"),
+        legend.position = "top",
+        legend.margin=margin(l=-37),
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0, color="grey30"),
+        text=element_text(family=f2),
+        ) +
+  guides(fill = guide_colorbar(ticks.colour = "black",barwidth = unit(14, "lines"), barheight = unit(.5, "lines"))) +
+  labs(caption=caption,x="Month", y="Number of recalls", fill="Year:",
+       title="Automobile Recalls in the US",
+       subtitle="26,000+ recalls of vehicles, tires, child safety seats, and other auto equipment, between 1966 and 2022.")
+
+ggsave("export/20230111_p3.png", height=6, width=8, bg="white")
+```
+
+### Small-business loans
+
+Data: [504 loan segmented by twenty years as of 220930](https://data.sba.gov/dataset/7-a-504-foia) from US Small Business Administration. Retrieved: 13 Jan 2023.
+
+```{r data}
+loan91 = read_csv("data/foia-504-fy1991-fy2009-asof-220930.csv") |> mutate(f="FY1991-FY2009")
+loan10 = read_csv("data/foia-504-fy2010-present-asof-220930.csv") |> mutate(f="FY2010-present")
+
+loan = rbind(loan91,loan10)
+loan |> count(f)
+```
+
+```{r}
+# Borrower Business Type proportion
+loan |> group_by(f) |> count(BusinessType) |> mutate(prop=round(n/sum(n),4))
+
+# BusinessAge proportion (after 2018)
+loan10 |> filter(ApprovalFiscalYear>2018) |>
+  count(BusinessAge, sort=TRUE)
+
+loan10 |> count(TermInMonths)
+```
+
+```{r "p4", fig.height=2.5, fig.width=4}
+# number of loans and median loan amount by fiscal year
+loan |>
+  group_by(ApprovalFiscalYear) |>
+  summarise(n=n(), median=median(GrossApproval, na.rm=TRUE)) |>
+  pivot_longer(!ApprovalFiscalYear) |>
+  mutate(name=case_when(name=="n"~"<span style='color:#195972'>Number of loans</span>",
+                        name=="median"~"<span style='color:#3F4738'>Median loan amount ($)</span>")) |>
+  ggplot(aes(x=ApprovalFiscalYear, y=value, fill=name)) +
+  geom_col(width=1, show.legend = FALSE, alpha=.9) +#3F4738
+  scale_y_continuous(labels=scales::label_number_si()) +
+  scale_fill_manual(values=c("#195972","#3F4738")) +
+  facet_wrap(~name, scales = "free") +
+  cowplot::theme_minimal_grid(13) +
+  theme(text=element_text(family=f2),
+        strip.text=element_markdown(hjust=0, size=13, face="bold"),
+        axis.title.y=element_blank(),
+        axis.title.x=element_text(size=11),
+        plot.margin = margin(.5,.5,.3,.5,unit="cm"),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0, color="grey30")
+        ) +
+  labs(x="Approval Fiscal Year",
+       caption="Source: U.S. Small Business Administration",
+       title="Small-business loans",
+       subtitle="Number of loans and median loan amount by fiscal year, from 1991 to 2022.")
+```
+
+```{r "p5", fig.height=3, fig.width=4}
+# interval plot of gross approval amount by fiscal year
+# reference: Cédric Scherer, https://z3tt.github.io/beyond-bar-and-box-plots/#interval-strips
+loan10 |> filter(TermInMonths==240) |>
+  ggplot(aes(x=factor(ApprovalFiscalYear), y=GrossApproval)) +
+  ggdist::stat_interval(size=7,.width = c(.25, .5, .95, 1)) +
+  scale_color_viridis_d(name = "Level:", begin = .15, end = .9, labels = function(x) paste0(as.numeric(x)*100, "%")) +
+  guides(color=guide_legend(reverse=TRUE)) +
+  scale_y_continuous(labels=scales::dollar_format(scale=1e-6, suffix="M"),limits=c(0,6e+06), expand=c(0,0), breaks=seq(0,6e+06,2e+06)) +
+  cowplot::theme_minimal_grid(13) +
+  theme(legend.position = "top",
+        panel.grid.major.x = element_blank(),
+        text=element_text(family=f2),
+        plot.margin=margin(.5,.75,.3,.5,unit="cm"),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption = element_text(hjust=0, color="grey30")) +
+  labs(x="Gross Approval",y="Approval Fiscal Year",
+       caption="Source: U.S. Small Business Administration",
+       title="Small-business loans, 2010-2022",
+       subtitle="Multiple-interval plot of Gross Approval (total loan amount) by fiscal year that loan was approved.")
+```
