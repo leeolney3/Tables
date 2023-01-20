@@ -303,11 +303,11 @@
  <!-- toc -->
    * [30DayChartChallenge 2022](https://github.com/dominicroye/30DayChartChallenge_Edition2022) ([website](https://30daychartchallenge.org/twentytwo/))
    * [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) ([website](https://30daymapchallenge.com/))
-   * 30DayMapChallenge 2022 [rstats map gallery](https://david.frigge.nz/3RDayMapChallenge/maps.html) by David Friggens
    * [TidyTuesday](https://github.com/rfordatascience/tidytuesday) weekly social data project in R from R4DS Online Learning Community
    * Collection/posts:  
       * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
-      * [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/) by Lisa DeBruine
+      * 30DayMapChallenge 2022 [rstats map gallery](https://david.frigge.nz/3RDayMapChallenge/maps.html) by David Friggens
+      * [#30DayChartChallenge book](https://debruine.github.io/30DCC-2022/)(2022) by Lisa DeBruine
       * [30 day map challenge 2022](https://ivabrunec.github.io/30daymap.html) post by Iva Brunec
       * [30 Day Map Challenge 2022](https://nrennie.rbind.io/blog/2022-11-30-30-day-map-challenge-2022/) blog post by Nicola Rennie
       * [Another Year of #TidyTuesday](https://nrennie.rbind.io/blog/2022-12-27-another-year-of-tidytuesday/) by Nicola Rennie
