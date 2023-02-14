@@ -49,6 +49,7 @@
    * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) and [Collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20) by Cédric Scherer
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies): data visualisations and "enhanced" reproducible outputs posts [Day 1](https://twitter.com/WeAreRLadies/status/1597355466329292800), [Day 2](https://twitter.com/WeAreRLadies/status/1597692873612328968), [Day 3](https://twitter.com/WeAreRLadies/status/1598087858644025345), [Day 4](https://twitter.com/WeAreRLadies/status/1598442597630021634), [Day 5](https://twitter.com/WeAreRLadies/status/1598695390580248576) and [Day 6](https://twitter.com/WeAreRLadies/status/1599095497196707841) by Cara Thompson 
+  * [Anything Is Plotsible](https://github.com/tashapiro/anything-is-plotsible) materials and resources by Tanya Shapiro and R-Ladies Abuja
 * Tutorials/tips       
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
@@ -233,7 +234,7 @@
 * [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla  
 * [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin 
 * [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
-  
+* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp  
 
  <!-- toc -->
  
