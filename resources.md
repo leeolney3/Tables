@@ -60,6 +60,7 @@
    * [Create an interactive graph with the {ggiraph} package](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak  
    * [Creating and using custom ggplot2 themes](https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/) by Thomas Mock
    * [Creating flowcharts with {ggplot2}](https://nrennie.rbind.io/blog/2022-06-06-creating-flowcharts-with-ggplot2/) by Nicola Rennie
+   * [Creating interactive visualizations with {ggiraph} (with or without Shiny)](https://albert-rapp.de/posts/ggplot2-tips/17_ggiraph/17_ggiraph.html) by Albert Rapp 
    * [Creating “Super” Radar Plots with ggplot2](https://rpubs.com/tshapiro/super-radar-plots) by Tanya Shapiro 
    * [Curvy arrows in #Rstats plots](https://twitter.com/jschwabish/status/1613175754728022017) thread by Jon Schwabish
    * [Designing #TidyTuesday visualisations for mobile (with Quarto)](https://nrennie.rbind.io/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/) by Nicola Rennie 
@@ -276,7 +277,7 @@
 * [PolicyViz: The Graphic Continuum](https://policyviz.com/2014/11/11/graphic-continuum-desktop-version/)    
 * [Storytelling with Data Chart Guide](https://www.storytellingwithdata.com/chart-guide)
 * [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
-* [100.datavizproject.com](https://t.co/Ktn8Lyr80t):A single, simple dataset visualized 100 ways  
+* [100.datavizproject.com](https://t.co/Ktn8Lyr80t): A single, simple dataset visualized 100 ways  
 
  <!-- toc -->
  
