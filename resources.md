@@ -70,6 +70,7 @@
    * [How to recreate Pew opinion graphs with ggplot2 in R](https://rforpoliticalscience.com/2022/06/02/recreate-pew-opinion-graphs-with-ggplot-in-r/) by R for Political Science 
    * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
    * Level Up Your Plots: A Code-along Workshop [Slide deck and full code](https://www.cararthompson.com/talks/nhsr2022-level-up/) and [Twitter thread](https://twitter.com/cararthompson/status/1588905430092517377) by Cara Thompson  
+   * [Line chart with small multiple](https://r-graph-gallery.com/web-line-chart-small-multiple-all-group-greyed-out.html) by Gilbert Fontana on R Graph Gallery
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
 * Facets/legends/axes
@@ -101,11 +102,12 @@
 
 <!-- toc --> 
 * Color
-  * [Palatable Palettes: Five tips for creating and applying bespoke colour schemes](https://www.cararthompson.com/talks/nhsr2022-palatable-palettes/) by Cara Thompson
+  * [Beautifully Annotated: Enhancing your ggplots with Text](https://www.cararthompson.com/talks/rl-cambridge-beautifully-annotated/) by Cara Thompson and R-Ladies Cambridge
   * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
   * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
   * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
   * [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
+  * [Palatable Palettes: Five tips for creating and applying bespoke colour schemes](https://www.cararthompson.com/talks/nhsr2022-palatable-palettes/) by Cara Thompson
   * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
   * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
 * Text  
@@ -234,7 +236,7 @@
 * [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla  
 * [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin 
 * [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
-* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp  
+* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp    
 
  <!-- toc -->
  
@@ -274,6 +276,7 @@
 * [PolicyViz: The Graphic Continuum](https://policyviz.com/2014/11/11/graphic-continuum-desktop-version/)    
 * [Storytelling with Data Chart Guide](https://www.storytellingwithdata.com/chart-guide)
 * [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
+* [100.datavizproject.com](https://t.co/Ktn8Lyr80t):A single, simple dataset visualized 100 ways  
 
  <!-- toc -->
  
