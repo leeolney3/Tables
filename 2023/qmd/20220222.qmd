@@ -1,0 +1,52 @@
+---
+title: "20230222"
+format: html
+editor: visual
+---
+
+## Animal Welfare Act inspections
+Data: [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) via Data Is Plural [2023.02.22 edition](https://www.data-is-plural.com/archive/2023-02-22-edition/)
+
+https://www.bruegel.org/dataset/european-natural-gas-imports 
+```{r}
+library(tidyverse)
+library(ggh4x)
+```
+
+```{r}
+data= readxl::read_xlsx("data/Gas_tracker_21.02.23/country_data_2023-02-21.xlsx")
+```
+
+```{r, warning=FALSE, fig.height=3, fig.width=3.5}
+data |> select(week,contains("EU_")) |>
+  pivot_longer(!week) |>
+  mutate(name=str_remove(name, "EU_")) |>
+  drop_na() |>
+  ggplot() +
+  geom_ribbon(data=. %>% filter(name %in% c("min","max")) %>% pivot_wider(names_from = name),aes(x=week, ymin=min, ymax=max), fill="grey", alpha=.2) +
+  geom_line(aes(x=week, y=value,color=name, linetype=name),linewidth=.9) +
+  scale_y_continuous(labels=scales::comma, breaks=seq(4500,9000,500), limits=c(4500,9000), expand=c(0,0)) +
+  scale_x_continuous(breaks=seq(1,52,3), minor_breaks = seq(1,52,1), guide="axis_minor", expand=c(.01,.01)) +
+  scale_linetype_manual(values=c(rep("solid",3),"dotted","dotted")) +
+  scale_color_manual(values=c("#B3C516","#52B0AE","#E27002","#A21314","#2B6999")) +
+  geom_text(data=.%>% group_by(name) %>% filter(week==24, name %in% c("min","max")), aes(label=str_to_title(name), x=25, y=value, color=name),fontface="bold", hjust=0, hjust=0) +
+  geom_text(data=.%>% group_by(name) %>% filter(week==max(week), name=="2023"), aes(label=name, y=value+100, x=week, color=name), hjust=0, vjust=0, fontface="bold") +
+  geom_text(data=.%>% group_by(name) %>% filter(week==9, name=="2022"), aes(label=name, y=8200, x=week, color=name),fontface="bold") +
+  geom_text(data=.%>% group_by(name) %>% filter(week==12, name=="2021"), aes(label=name, y=7250, x=week, color=name),fontface="bold") +
+  coord_cartesian(clip="off") +
+  cowplot::theme_minimal_hgrid(12) +
+  theme(legend.position = "none",
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey40"),
+        plot.title.position = "plot",
+        axis.ticks.length.x = unit(.5,"lines"),
+        plot.margin=margin(.5,.73,.3,.5,unit="cm")
+        ) +
+  labs(caption="Note: Minimum and Maximum values are calculated from the period 2015-2020.\nData for the last week may be changed following updates to ENTSO-G points.\nSource: ENTSO-G via Data is Plural",
+       title="EU27 Natural Gas Imports Total",
+       subtitle="Data retrieved on 21/02/2023\n",
+       y="Million cubic meters", x="Week of year")
+```
+
+
+

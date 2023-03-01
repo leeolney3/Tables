@@ -1,0 +1,90 @@
+---
+title: "20230216"
+date: "2023-02-16"
+format: html
+editor: visual
+---
+
+### Fair market rents
+
+Data: [HUD FY2023 Small Area Fair Market Rents](https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html#2023_data) via Data Is Plural [2023.02.15 edition](https://www.data-is-plural.com/archive/2023-02-15-edition/)
+
+```{r load libraries}
+library(tidyverse)
+library(readxl)
+library(tigris)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load font}
+font_add_google("Atkinson Hyperlegible")
+f1 = "Atkinson Hyperlegible"
+font_add_google("Open Sans")
+f2 = "Open Sans"
+```
+
+```{r import data}
+rent = read_xlsx("data/fy2023_safmrs.xlsx") 
+rent = rent |> janitor::clean_names() |> rename(ZCTA5CE10=zip_code)
+
+caption="Data source: Department of Housing and Urban Development"
+
+# zip code boundaries from {tigris}
+zc = zctas(year=2010)
+```
+```{r}
+# number of zip codes by area
+rent |> count(hud_metro_fair_market_rent_area_name, sort=TRUE) |> slice(1:10)
+```
+
+```{r}
+theme1 = cowplot::theme_map(10) +
+  theme(text=element_text(family=f2),
+        plot.caption = element_text(hjust=0),
+        plot.title = element_text(face="plain", size=10),
+        plot.subtitle = element_text(face="plain", size=10)) 
+
+subtitle="One-Bedroom FY 2023 Small Area Fair Market Rents (SAFMRs)"
+fill="SAFMRs:"
+# https://www.huduser.gov/portal/datasets/fmr/fmrs/FY2023_code/select_Geography.odn
+```
+
+```{r function 1}
+mapbin = function(area) {
+  rent1 = rent |> filter(hud_metro_fair_market_rent_area_name==area)
+zc |> right_join(rent1, by="ZCTA5CE10") |>
+  ggplot() +
+  geom_sf(aes(fill=safmr_1br), linewidth=.02, color="white") +
+  colorspace::scale_fill_binned_sequential(palette="BrwnYl", labels=scales::dollar) +
+  coord_sf(expand=FALSE) +
+  theme1+
+  labs(title=area, subtitle=subtitle,caption=caption, fill=fill)
+ }
+```
+
+```{r}
+mapbin("Washington-Arlington-Alexandria, DC-VA-MD HUD Metro FMR Area")
+mapbin("Philadelphia-Camden-Wilmington, PA-NJ-DE-MD MSA")
+```
+
+```{r function 2}
+mapseq = function(area) {
+  rent1 = rent |> filter(hud_metro_fair_market_rent_area_name==area)
+zc |> right_join(rent1, by="ZCTA5CE10") |>
+  ggplot() +
+  geom_sf(aes(fill=safmr_1br), linewidth=.02, color="white") +
+  scico::scale_fill_scico(labels=scales::dollar, begin=.1) +
+  coord_sf(expand=FALSE) +
+  theme1+
+  labs(title=area,subtitle=subtitle,caption=caption, fill=fill)
+ }
+```
+
+```{r}
+mapseq("Houston-The Woodlands-Sugar Land, TX HUD Metro FMR Area")
+mapseq("Atlanta-Sandy Springs-Roswell, GA HUD Metro FMR Area")
+mapseq("Chicago-Joliet-Naperville, IL HUD Metro FMR Area")
+```
+
