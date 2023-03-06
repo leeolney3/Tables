@@ -54,6 +54,7 @@
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
    * [Bullet Chart Variants in R](https://themockup.blog/posts/2020-11-29-bullet-chart-variants-in-r/index.html#create-a-legend) by Thomas Mock 
+   * [Bullet chart in ggplot](https://twitter.com/tanya_shapiro/status/1628804725675069440) by Tanya Shapiro
    * [Connected scatterplot with two corresponding line charts](https://twitter.com/rappa753/status/1616512082954039296) code by Albert Rapp
    * [Cool Word Clouds in R](https://spencerschien.info/post/data_viz_how_to/dense_word_clouds/) by Spencer Schien
    * [Create an Extended Dumbbell Plot in R with ggplot2](https://toebr.github.io/ggplot2_extended_dumbbell_plot_tutorial/) by Tobias Stalder
@@ -296,6 +297,7 @@
 * [AnyChart DataViz Weekly](https://www.anychart.com/blog/category/data-visualization-weekly/): weekly collection of Interesting Charts & Maps 
 * [Navigating The Dataverse By ANNAPURANI VAIDYANATHAN](https://www.getrevue.co/profile/NavigatingTheDataverse): fortnightly newsletter on data-related news, deets on events, social media profiles to follow, real-time data to visualize, resource guides and more  
 * [Albert's Newsletter](https://alberts-newsletter.beehiiv.com/): biweekly newsletter about DataViz, Shiny and Stats/Machine Learning by Albert Rapp 
+* [Dataviz Universe](https://datavizuniverse.substack.com/) by Yan Holtz
 
  <!-- toc -->
  
@@ -343,7 +345,7 @@
 * Christophe Nicault [Github](https://github.com/cnicault), [website](https://www.christophenicault.com/articles/) 
 * Colin Angus [Github](https://github.com/VictimOfMaths)
 * Dan @FilmicAesthetic [Github](https://github.com/filmicaesthetic)
-* Daniel Oehm [website](http://gradientdescending.com/)
+* Daniel Oehm [website](http://gradientdescending.com/) [Github](https://github.com/doehm)
 * David Schoch @schochastics [website](http://blog.schochastics.net/)
 * Dr. Dominic Royé [Github](https://github.com/dominicroye), [website](https://dominicroye.github.io/en/)
 * Dr Nicci Potts [Github](https://github.com/NicciPotts), [website](https://niccipotts.netlify.app/)  
