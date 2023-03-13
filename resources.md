@@ -94,6 +94,7 @@
   * [NYTimes map recreation](https://twitter.com/tanya_shapiro/status/1546520567980892160) by Tanya Shapiro
   * [Leo line chart](https://twitter.com/tanya_shapiro/status/1565029412428562433) by Tanya Shapiro
   * [Leo line chart with gradient](https://twitter.com/kustav_sen/status/1565256414381355008) by Kaustav Sen
+  * [The Economist's lollipop chart in ggplot](https://twitter.com/tanya_shapiro/status/1634214864435462146) by Tanya Shapiro
  <!-- toc -->
  
 <!-- tocstop -->
@@ -161,6 +162,7 @@
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
   * [Geocomputation with R’s guide to reproducible spatial data analysis](https://twitter.com/jakub_nowosad/status/1587106672383762434) by Jakub Nowosad
   * [geocompx](https://geocompx.org/): home for all of our resources on reproducible geographic data analysis, modeling, and visualization with open source software
+  * [Geographic Data Science with R: Visualizing and Analyzing Environmental Change](https://bookdown.org/mcwimberly/gdswr-book/) by Michael C. Wimberly
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * [Map Africa using OSM data in R](https://twitter.com/milos_agathon/status/1588565316648329217) by Milos Popovic
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
