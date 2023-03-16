@@ -1,0 +1,227 @@
+---
+title: "20220315"
+date: "20220316"
+format: html
+editor: visual
+---
+
+Dataviz exercise using dataset(s) featured in [Data Is Plural 2023.03.15 edition](https://www.data-is-plural.com/archive/2023-03-15-edition/).
+
+```{r load libraries}
+library(tidyverse)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load font}
+font_add_google("IBM Plex Sans Condensed")
+f1 = "IBM Plex Sans Condensed"
+```
+
+## Irrigation by county and crop
+
+Data: Data for Irrigation by crop in the Continental United States from 2008 to 2020\
+Source: https://doi.org/10.13012/B2IDB-4607538_V1\
+Citation: Ruess, Paul ; Konar, Megan ; Wanders, Niko; Bierkens, Marc (2023): Data for Irrigation by crop in the Continental United States from 2008 to 2020. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-4607538_V1
+
+### Groundwater depletion
+
+```{r data gwd, warning=FALSE,message=FALSE}
+counties = tigris::counties(state="CA")
+gw20 = readr::read_csv("data/irrigation/gwd_2020.csv")
+gw19 = readr::read_csv("data/irrigation/gwd_2019.csv")
+gw18 = readr::read_csv("data/irrigation/gwd_2018.csv")
+```
+
+```{r wrangle}
+gw20a = gw20 |> pivot_longer(2:21) |>
+  group_by(GEOID) |> summarise(total=sum(value)) |>
+  filter(total>0) |> ungroup() |>
+  mutate(GEOID=as.character(GEOID),GEOID=str_pad(GEOID, 5, pad = "0")) |>
+  filter(GEOID %in% counties$GEOID) |>
+  mutate(year=2020)
+
+gw19a = gw19 |> pivot_longer(2:21) |>
+  group_by(GEOID) |> summarise(total=sum(value)) |>
+  filter(total>0) |> ungroup() |>
+  mutate(GEOID=as.character(GEOID),GEOID=str_pad(GEOID, 5, pad = "0")) |>
+  filter(GEOID %in% counties$GEOID) |>
+  mutate(year=2019)
+
+gw18a = gw18 |> pivot_longer(2:21) |>
+  group_by(GEOID) |> summarise(total=sum(value)) |>
+  filter(total>0) |> ungroup() |>
+  mutate(GEOID=as.character(GEOID),GEOID=str_pad(GEOID, 5, pad = "0")) |>
+  filter(GEOID %in% counties$GEOID) |>
+  mutate(year=2018)
+
+gw3 = rbind(gw20a, gw19a, gw18a)
+gw3 = counties |> right_join(gw3) 
+```
+
+```{r gwd CA}
+ggplot() +
+  geom_sf(data=counties, aes(fill="0"), color="white", linewidth=.02) +
+  scale_fill_manual(values=c("grey80"),guide=guide_legend(order=1,label.position = "bottom", keyheight = unit(.5,"lines"))) +
+  ggnewscale::new_scale_fill() +
+  geom_sf(data=gw3, aes(fill=total), color="white", linewidth=.02) +
+  viridis::scale_fill_viridis(breaks=c(.02,.5,1,1.5,2,2.3),guide=guide_colorbar(,barwidth = unit(14,"lines"),barheight = unit(.5,"lines"))) +
+  facet_wrap(~year, nrow=1) +
+  cowplot::theme_map(11) +
+  theme(legend.position="top",
+        legend.title=element_blank(),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, lineheight = 1, color="grey30"),
+        strip.text=element_text(hjust=0.2, face="bold")) +
+  labs(title="California groundwater depletion by county and year",
+       subtitle="From crop irrigation from 2018 to 2020",
+       caption="Data source: Ruess, Paul ; Konar, Megan ; Wanders, Niko; Bierkens, Marc (2023): Data for Irrigation by crop in the Continental\nUnited States from 2008 to 2020. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-4607538_V1")
+```
+
+### Surface water withdrawals
+
+```{r data sw}
+counties = tigris::counties(state="IL") #Illinois counties 
+sw20 = readr::read_csv("data/irrigation/sw_2020.csv") |> select(1,value=sw.corn.2020) |> mutate(year=2020)
+sw19 = readr::read_csv("data/irrigation/sw_2019.csv") |> select(1,value=sw.corn.2019) |> mutate(year=2019)
+sw18 = readr::read_csv("data/irrigation/sw_2018.csv") |> select(1,value=sw.corn.2018) |> mutate(year=2018)
+
+sw = rbind(sw20, sw19, sw18) |>
+  filter(GEOID %in% counties$GEOID) |>
+  mutate(GEOID=as.character(GEOID))
+sw = counties |> right_join(sw) 
+```
+
+```{r, fig.height=3, fig.width=4}
+sw |>
+  ggplot() +
+  geom_sf(aes(fill=value), color="black", linewidth=.03) +
+  facet_wrap(~year, nrow=1) +
+  scico::scale_fill_scico(palette="bamako", direction=-1, labels=scales::number_format(drop0trailing=TRUE), ,guide=guide_colorbar(,barwidth = unit(13,"lines"),barheight = unit(.4,"lines"))) +
+  coord_sf(clip="off") +
+  cowplot::theme_map() +
+  theme(text=element_text(family=f1),
+        legend.position="top",
+        legend.title=element_blank(),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey35", size=10.5),
+        plot.margin=margin(.3,.5,.3,.5,unit="cm"),
+        strip.text=element_text(hjust=0.5, face="bold", size=13.5, margin=margin(b=-5))) +
+  labs(title="Surface water withdrawals for corn crop in Illinois",
+       subtitle="By county and year, 2018 to 2020",
+       caption="Data source: Ruess, Paul ; Konar, Megan ; Wanders, Niko; Bierkens, Marc (2023): Data for Irrigation by crop in the Continental\nUnited States from 2008 to 2020. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-4607538_V1")
+
+ggsave("export/20220315.png", height=6, width=8, bg="#fafafa")
+```
+
+## The market for X-Men
+
+Data: [Mutant Moneyball Data v 1.2](https://github.com/EliCash82/mutantmoneyball)
+
+## reactable table
+
+```{r data}
+market = readr::read_csv("https://raw.githubusercontent.com/EliCash82/mutantmoneyball/main/MutantMoneyballOpenData.csv")
+```
+
+```{r}
+tab1 = market |> select(1,contains("80s")) |>
+  mutate(Member=str_to_title(gsub("([a-z])([A-Z])", "\\1 \\2", Member)),
+         `80s_Appearance_Percent`=parse_number(`80s_Appearance_Percent`))|>
+  rename_with(~str_remove(., '80s')) |>
+  janitor::clean_names(case="title") |>
+  select(1,2,5,3,6,4,7,8,10,9,11) |>
+  mutate(across(where(is.character) & !c(Member), parse_number)) |>
+  filter(`Total Issues`>0)
+```
+
+```{r reactable table}
+library(reactablefmtr)
+
+tab1 %>%
+  reactable(theme = fivethirtyeight(centered = TRUE, header_font_size = 11),
+            defaultSorted = "Member",
+            rowStyle = group_border_sort("Member"),
+            defaultColDef = colDef(minWidth = 70, cell = function(value) {
+      if (!is.numeric(value)) {
+        return(value)
+      }
+      scales::dollar(value)
+    } 
+  ),
+            columns=list(
+              Member=colDef(minWidth = 120),
+              `Total Issues` = colDef(style = list(borderRight = "1px solid #777")),
+              `Total Value o Street`=colDef(minWidth=80,name="Total Value\nOverstreet"),
+              `Ppi Heritage`=colDef(minWidth=80,name="PPI\nOverstreet",cell=data_bars(.,text_position = "above", number_fmt = scales::dollar, fill_opacity = .7)),
+              `Ppi Ebay`=colDef(minWidth=80,name="PPI\nOverstreet",cell=data_bars(.,text_position = "above", number_fmt = scales::dollar, fill_opacity = .7)),
+              `Ppi Wiz`=colDef(minWidth=80,name="PPI\nOverstreet",cell=data_bars(.,text_position = "above", number_fmt = scales::dollar, fill_opacity = .7)),
+              `Ppi o Street`=colDef(minWidth=80,name="PPI\nOverstreet",cell=data_bars(.,text_position = "above", number_fmt = scales::dollar, fill_opacity = .7)),
+              `Appearance Percent`=colDef(minWidth = 80,cell = color_tiles(
+          data = .,
+          colors = rev(viridis::mako(5)),
+          number_fmt = scales::percent_format(scale=1)
+        ))
+            )
+            ) %>%
+  add_title(title="The market for X-Men (1980s)", font_size = 20, letter_spacing = 1) %>%
+  add_subtitle(subtitle="Comic book market data of individual X-Men characters from comics released between 1980 and 1989.", font_size = 14, font_weight = "normal", letter_spacing = .5,margin=margin(b=10)) %>%
+  add_source(source="Source: Mutant Moneyball Data v 1.2 Github via Data is Plural", font_size = 13, letter_spacing = .3, font_color = "#595959", margin=margin(t=0)) %>%
+  google_font(font_family="Archivo Narrow") 
+
+unloadNamespace("reactablefmtr")
+```
+
+### gt table
+
+```{r}
+library(gt)
+library(gtExtras)
+```
+
+```{r table data}
+d1=market |> select(1,contains("TotalIssues")) |>
+  pivot_longer(3:6) |>
+  group_by(Member,TotalIssues) |>
+  summarize(spark1 = list(value), .groups = "drop")
+
+d2= market |> select(1, contains("_heritage"),contains("PPI"))|>
+  pivot_longer(2:5) |>
+  group_by(Member) |>
+  summarize(spark2 = list(value), .groups = "drop")
+
+d3 = market |> select(1,contains("Appearance_Percent")) |>
+  pivot_longer(2:5) |> 
+  mutate(value=parse_number(value)) |>
+  group_by(Member) |>
+  summarize(spark3 = list(value), .groups = "drop")
+
+tab1 = d1 |> 
+  left_join(d3) |>
+  left_join(d2) |> 
+  left_join(market |> select(Member, TotalValue_heritage)) |>
+  mutate(Member=str_to_title(gsub("([a-z])([A-Z])", "\\1 \\2", Member)))
+```
+
+```{r gt table}
+tab1 |> 
+  arrange(desc(TotalIssues)) |>
+  slice(1:5) |>
+  gt() |>
+  gt_theme_espn() |>
+  fmt_currency(TotalValue_heritage)|>
+  gt_plt_sparkline(spark1) |>
+  gt_plt_sparkline(spark2) |>
+  gt_plt_sparkline(spark3) |>
+  tab_spanner(columns=2:4, label="Issues appeared") |>
+  tab_spanner(columns=5:6, label="Heritage highest sale") |>
+  cols_label(spark1="Count", spark3="Percentage",spark2="Avg price/issue",TotalIssues="Total", TotalValue_heritage="Total value") |>
+  tab_footnote(footnote="This shows the total number of issues each X-Men member appeared in.",locations=cells_column_labels(column=TotalIssues)) |>
+  tab_footnote(footnote="Count of issues each X-Men member appeared in by decade, 1960s to 1990s.",locations=cells_column_labels(column=spark1)) |>
+  tab_footnote(footnote="Percentage each X-Men member appeared in an issue published by decade by decade, 1960s to 1990s.",locations=cells_column_labels(column=spark3)) |>
+  tab_footnote(footnote="Average price per issue for each X-Men member based on highest sales on Heritage for issues published.",locations=cells_column_labels(column=spark2)) |>
+  tab_footnote(footnote="Total value of each X-Men team member's total number of issues as reflected by Heritage highest sale.",locations=cells_column_labels(column=TotalValue_heritage)) |>
+  tab_header(title="The market for X-Men", subtitle="Top five X-Men characters by total number of issues appeared in. Table showing issue appearance and Heritage value data by character, era by era between 1963 and 1992.")
+```

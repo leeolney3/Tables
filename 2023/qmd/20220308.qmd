@@ -1,0 +1,168 @@
+---
+title: "20220308"
+date: "2022-03-13"
+format: html
+editor: visual
+---
+
+```{r libraries}
+library(tidyverse)
+library(sf)
+library(jsonlite)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r font}
+font_add_google("Archivo Narrow")
+f1 = "Archivo Narrow"
+```
+
+### Changes of address 
+Data source: https://about.usps.com/who/legal/foia/library.htm via Data Is Plural - 2023.03.08 edition
+
+```{r data}
+fy23=readr::read_csv("data/address_change/Y2023.csv") |> janitor::clean_names()
+fy22=readr::read_csv("data/address_change/Y2022.csv") |> janitor::clean_names()
+caption="Source: US Postal Service FOIA library via Data Is Plural"
+
+zip = read_sf("data/ZIP_CODE_040114/ZIP_CODE_040114.shp") # City of New York zip code boundaries from https://data.cityofnewyork.us/Business/Zip-Code-Boundaries/i8iw-xf4u/data?no_mobile=true
+```
+
+```{r fy23, message=FALSE, warning=FALSE}
+df1 = fy23 |> select(1:4, total_from_zip, total_to_zip) |>
+  mutate(total_from_zip=parse_number(total_from_zip),
+         total_to_zip=parse_number(total_to_zip),
+         ZIPCODE=as.character(parse_number(zipcode))
+         ) |>
+  filter(ZIPCODE %in% zip$ZIPCODE) |> select(-zipcode) |>
+  mutate(value=total_to_zip-total_from_zip,
+         lab = ym(as.character(yyyymm)), lab= format(as.Date(lab), "%B %Y"),
+         lab= fct_inorder(lab))
+df2 = zip |> right_join(df1, by="ZIPCODE") 
+
+df2 |> 
+  ggplot() +
+  geom_sf(aes(fill=value), color="white", linewidth=.02) +
+  facet_wrap(~lab) +
+  cowplot::theme_map(10) +
+  scale_fill_gradient(name="total_to_zip - total_from_zip", guide=guide_colorbar(title.position="top")) +
+  theme(legend.position="top") +
+  labs(caption=caption)
+```
+
+```{r fy22, fig.height=3.5, fig.width=3.5, message=FALSE, warning=FALSE}
+df1 = fy22 |> select(1:4, total_from_zip, total_to_zip) |>
+  mutate(total_from_zip=parse_number(total_from_zip),
+         total_to_zip=parse_number(total_to_zip),
+         ZIPCODE=as.character(parse_number(zipcode))
+         ) |>
+  filter(ZIPCODE %in% zip$ZIPCODE) |> select(-zipcode) |>
+  mutate(value=total_to_zip-total_from_zip) |>
+  mutate(grp = case_when(total_to_zip>total_from_zip~"Total to zip > Total from zip",
+                   total_to_zip<total_from_zip~"Total to zip < Total from zip",
+                   TRUE~"Total to zip = Total from zip",
+                   )) |>
+  mutate(lab = ym(as.character(yyyymm)), lab= format(as.Date(lab), "%B %Y"),
+         lab= fct_inorder(lab))
+df2 =zip |> right_join(df1, by="ZIPCODE") 
+
+df2 |>
+  ggplot() +
+  geom_sf(aes(fill=grp), color="white", linewidth=.02) +
+  scale_fill_manual(values=c("#E6F1F0","#FDB138","#4A686A")) +
+  facet_wrap(~lab) +
+  cowplot::theme_map(11) +
+  theme(legend.position="top",
+        legend.title=element_blank(),
+        plot.caption = element_text(hjust=0)) +
+  labs(caption=caption,
+       title="Change of address, New York City (2022)",
+       subtitle="Total Change-of-address (COA) requests including family, individual and business move types, by month in 2022.")
+
+ggsave("export/20220308_p1.png", bg="white")
+```
+
+### Debt-to-income ratios
+Data: Household debt by Metropolitan Statistical Areas 
+Source: https://www.federalreserve.gov/releases/z1/dataviz/household_debt/
+
+```{r data}
+debt = read_csv("data/household-debt-by-msa/household-debt-by-msa.csv")
+
+c = read_csv("data/household-debt-by-msa/cbsa2fipsxw.csv") #census cbsa from https://www.nber.org/research/data/census-core-based-statistical-area-cbsa-federal-information-processing-series-fips-county-crosswalk
+```
+
+```{r wrangle}
+c1 = c |> drop_na(cbsacode) |>
+  distinct(cbsacode,cbsatitle,statename) |>
+  mutate(stabb = state.abb[match(statename,state.name)]) |>
+  filter(stabb =="NY") |>
+  select(-statename, -stabb)
+```
+
+```{r draft, fig.height=3, fig.width=4, warning=FALSE, message=FALSE}
+debt |> filter(cbsa %in% c1$cbsacode) |>
+  left_join(c1, by=c("cbsa"="cbsacode")) |>
+  mutate(yearq=glue::glue("{year} Q{qtr}")) |>
+  arrange(yearq) |>
+  mutate(id=as.numeric(fct_inorder(yearq)),
+         med = (high+low)/2) |>
+  ggplot() +
+  geom_rect(aes(xmin=id-.5, xmax=id+.5, ymin=low, ymax=high)) +
+  facet_wrap(~str_wrap(cbsatitle,30)) +
+  theme_minimal(base_size = 12) +
+  theme(strip.text = element_text(size=11,family=f1, hjust=0, vjust=0),
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey40")) +
+  labs(title="Debt-to-income Ratios",
+       subtitle ="Quarterly household debt-to-income by metro, lower and upper bound, from 1999Q1 to 2022Q2",
+       caption="US Federal Reserve EFA: Household Debt via Data is Plural")
+```
+
+### Shows cut short
+Data source: https://github.com/xdpirate/isitcutshort.com via Data Is Plural - 2023.03.08 edition
+
+```{r data}
+d = jsonlite::fromJSON("https://raw.githubusercontent.com/xdpirate/isitcutshort.com/main/data.json")
+json_file <- lapply(d, function(x) {
+  x[sapply(x, is.null)] <- NA
+  unlist(x)
+})
+df<-as.data.frame(do.call("rbind", json_file))
+```
+
+```{r wrangle}
+df1 = df |> rownames_to_column(var="name") |>
+  select(1:4) |>
+  mutate(grp=case_when(isCutShort=="1" & hasCliffhanger=="1"~ "isCutShort=1,<br>hasCliffhange=1",
+                       isCutShort=="0" & hasCliffhanger=="0"~ "isCutShort=0,<br>hasCliffhange=0",
+                       isCutShort=="1" & hasCliffhanger=="0"~ "isCutShort=1,<br>hasCliffhange=0",
+                       isCutShort=="0" & hasCliffhanger=="1"~ "isCutShort=0,<br>hasCliffhanger=1",
+                       isCutShort=="1" & hasCliffhanger=="-1"~ "isCutShort=1,<br>hasCliffhanger=-1",
+                       )) 
+```
+
+```{r draft, fig.height=3.5, fig.width=4}
+df1 |>
+  group_by(grp) |>
+  arrange(name, .by_group = TRUE) |>
+  mutate(id=row_number()) |>
+  ggplot(aes(x=grp, y=id)) +
+  geom_text(aes(label=name), size=2, family=f1) +
+  scale_y_reverse(position="right", expand=c(0,0), limits=c(100,0)) +
+  scale_x_discrete(position="top") +
+  coord_cartesian(clip="off") +
+  theme_minimal() +
+  theme(axis.text.x.top = element_markdown(),
+        axis.title = element_blank(),
+        panel.grid.major.x=element_blank(),
+        panel.grid.minor.x = element_blank())
+```
+
+
+
+
