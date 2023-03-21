@@ -176,6 +176,7 @@
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
   * [Inverse-distance weighted smoothing](https://twitter.com/nrennie35/status/1612740418206306310) dataviz and thread by Nicola Rennie
+  * [An Introduction to GIS](https://bjnnowak.github.io/gis/) by Benjamin Nowak
  <!-- toc -->
  
 <!-- tocstop -->
