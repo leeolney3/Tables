@@ -194,7 +194,7 @@
   * [Network analysis with {tidygraph}](https://bjnnowak.netlify.app/2021/09/30/r-network-analysis-with-tidygraph/) by Benjamin Nowak 
   * [PCA with tidyverse](https://bjnnowak.netlify.app/2021/09/15/r-pca-with-tidyverse/) by Benjamin Nowak
   * [R vs Python — Live Stream Analysis](https://amitlevinson.com/blog/r-and-python/) by Amit Grinson @Amit_Levinson 
-  * [Using functional analysis to model air pollution data in R] by Nicola Rennie
+  * [Using functional analysis to model air pollution data in R](https://nrennie.rbind.io/blog/2022-11-14-using-functional-analysis-to-model-air-pollution-data-in-r/) by Nicola Rennie
   * [Good Coding Practices for Data Analysts](https://www.heatherturner.net/talks/nhs-r2022/#1) by Heather Turner @HeathrTurnr
   * [Four simple ways to integrate your data dictionary into your data cleaning process](https://cghlewis.com/blog/dict_clean/) by Crystal Lewis 
 * Code/functions
