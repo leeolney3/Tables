@@ -244,7 +244,8 @@
 * [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla  
 * [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin 
 * [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
-* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp    
+* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp  
+* [Data wrangling essentials: comparisons in JavaScript, Python, SQL, R, and Excel](https://observablehq.com/@observablehq/data-wrangling-translations) by Allison Horst and Paul Buffa
 
  <!-- toc -->
  
