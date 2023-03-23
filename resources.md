@@ -109,13 +109,15 @@
   * [Center continuous palettes in ggplot2](https://www.emilhvitfeldt.com/post/2019-05-21-center-continuous-palettes-in-ggplot2/) by Emil Hvitfeldt
   * [Comprehensive list of color palettes in r](https://github.com/EmilHvitfeldt/r-color-palettes) by Emil Hvitfeldt
   * [Custom colour palettes for {ggplot2}](https://www.jumpingrivers.com/blog/custom-colour-palettes-for-ggplot2/) by Nicola Rennie
+  * [Custom colour scales for {ggplot2}](https://nrennie.rbind.io/talks/rladies-cambridge-ggplot2-colours/) slides by Nicola Rennie in RLadies
   * [How to use multiple colour scales in ggplot with {ggnewscale}](https://gradientdescending.com/how-to-use-multiple-color-scales-in-ggplot-with-ggnewscale/) by Dan Oehm
   * [Palatable Palettes: Five tips for creating and applying bespoke colour schemes](https://www.cararthompson.com/talks/nhsr2022-palatable-palettes/) by Cara Thompson
   * [Plot RGB satellite imagery in true-color with ggplot2 in R](https://medium.com/@tobias.stalder.geo/plot-rgb-satellite-imagery-in-true-color-with-ggplot2-in-r-10bdb0e4dd1f) by Tobias Stalder
   * [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.emilhvitfeldt.com/post/2020-03-06-use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/) by Emil Hvitfeldt
 * Text  
   * [{geomtextpath}](https://github.com/AllanCameron/geomtextpath) R package by Allan Cameron for writing text on a path in ggplot2, [example](https://twitter.com/rappa753/status/1610305082679234562) from Albert Rapp
-  * [gradienttext](https://github.com/samiaab1990/gradienttext) R package by Samia for creating gradient text labels on ggplot graphs
+  * [{gradienttext}](https://github.com/samiaab1990/gradienttext) R package by Samia for creating gradient text labels on ggplot graphs
+  * [Alt Text in R: Plots, Reports, and Shiny](https://www.jumpingrivers.com/blog/accessibility-alt-text-in-r/) by Nicola Rennie in Jumping Rivers
   * [Easy to read text with ggfx::with_outer_glow()](https://twitter.com/cararthompson/status/1611389044847697920) thread by Cara Thompson
   * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
@@ -207,7 +209,8 @@
   * Crop images to circles: [cropcircles package](https://twitter.com/danoehm/status/1568900056421650433) by Dan Ohm; [Thread](https://twitter.com/tanya_shapiro/status/1547238091781455875) on circle crop images by Tanya Shapiro 
   * [Plotting Points as Images in ggplot](https://themockup.blog/posts/2020-10-11-embedding-images-in-ggplot/) by Thomas Mock 
   * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault   
-  * [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey    
+  * [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey  
+  * [Documented approach](https://twitter.com/dickie_roper) to recreating images/photos on continous spirals (or other shapes) in #rstats with #ggplot2 by Chris @dickie_roper
 * Quarto
   * [Awesome Quarto](https://github.com/mcanouil/awesome-quarto): list of Quarto resources by Mickaël Canouil @MickaelCanouil
   * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
@@ -261,6 +264,7 @@
   * [Which fonts to use for your charts and tables](https://blog.datawrapper.de/fonts-for-data-visualization/)
   * [What to consider when using text in data visualizations](https://blog.datawrapper.de/text-in-data-visualizations/)
 * [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
+* [The misuse of colour in science communication](https://www.nature.com/articles/s41467-020-19160-7) (Crameri et al., 2020) (h/t [Benjamin Nowak](https://twitter.com/BjnNowak/status/1638915678035120128))
 * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
 * [Visualizing with Text – examples from the wild](https://richardbrath.wordpress.com/2022/12/31/visualizing-with-text-examples-from-the-wild/) by Richard Brath  
 <!-- toc -->
