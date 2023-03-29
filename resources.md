@@ -245,7 +245,9 @@
 * [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin 
 * [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
 * List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp  
+* [A big list of data journalism tools and resources](https://www.databites.co.za/post/60/a-big-list-of-data-journalism-tools-and-resources) by  @alastairotter on The Outlier Data Bites
 * [Data wrangling essentials: comparisons in JavaScript, Python, SQL, R, and Excel](https://observablehq.com/@observablehq/data-wrangling-translations) by Allison Horst and Paul Buffa
+
 
  <!-- toc -->
  
@@ -340,7 +342,7 @@
 <!-- toc -->  
 
 * Abdoul Madjid [Github](https://github.com/AbdoulMa) 
-* Allison Horst [Github](https://github.com/allisonhorst/), [website](https://allisonhorst.com/)
+* Allison Horst [Github](https://github.com/allisonhorst/), [website](https://allisonhorst.com/) 
 * Albert Rapp [website](https://albert-rapp.de/post/)
 * Amit Grinson @Amit_Levinson [Github](https://github.com/AmitLevinson), [website](https://amitlevinson.com/)
 * Andy Baker [Github](https://github.com/AndyABaker)
