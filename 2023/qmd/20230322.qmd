@@ -1,0 +1,92 @@
+---
+title: "20230322"
+date: "2023-03-28"
+format: html
+editor: visual
+---
+
+```{r data}
+library(tidyverse)
+library(usmap)
+library(readxl)
+library(sf)
+```
+
+### Stop signs
+Data source: 
+https://geohub.lacity.org/datasets/lahub::stop-and-yield-signs/about via [Data is Plural 2023.03.22 edition](https://www.data-is-plural.com/archive/2023-03-22-edition/)
+
+```{r}
+stop = read_sf("data/lacity/Stop_and_Yield_Signs/Stop_and_Yield_Signs.shp")
+boundary = read_sf("data/lacity/Neighborhood_Council_Boundaries_(2018)/Neighborhood_Council_Boundaries_(2018).shp") #neighborhood boundary from https://geohub.lacity.org/datasets/lahub::neighborhood-council-boundaries-2018/explore?location=34.117651%2C-118.364026%2C9.79
+line = read_sf("data/lacity/Streets_(Centerline)/Streets_(Centerline).shp") #centerline from: https://geohub.lacity.org/datasets/lahub::streets-centerline/explore
+```
+
+```{r}
+# crop 
+dt= boundary |> filter(Name=="Central Hollywood")
+stop2 = st_crop(stop,dt)
+line2 = st_crop(line,dt)
+
+# wrangle
+stop3 = stop2 |> 
+  mutate(grp=fct_inseq(fct_lump(as.factor(FACE_DIREC),3)))|>
+  group_by(grp) |>
+  mutate(n=n(),
+         lab=fct_inorder((glue::glue("{grp}° (n={n})")))) 
+```
+
+```{r}
+ggplot () +
+  geom_sf(data=dt, fill="grey95") +
+  geom_sf(data=line2, linewidth=.2) +
+  geom_sf(data=stop3, aes(fill=lab), size=2.5, shape=21, alpha=.7) +
+  coord_sf(clip="off") +
+  cowplot::theme_map(12) +
+  labs(subtitle="Orientation of 572 stop signs in Central Hollywood Neighborhood, Los Angeles, CA\nData source: City of Los Angeles via Data Is Plural", fill="Orientation")
+```
+
+### Municipal incorporations
+Data source: https://github.com/cbgoodman/muni-incorporation via [Data is Plural 2023.03.22 edition](https://www.data-is-plural.com/archive/2023-03-22-edition/)
+
+```{r}
+fips = read_xlsx("data/muni/fips_crosswalk.xlsx") |> janitor::clean_names()
+muni = read_xlsx("data/muni/muni-incorporation.xlsx") |> janitor::clean_names()
+```
+
+```{r count by year and region}
+muni |> filter(!is.na(yr_incorp)) |>
+  mutate(statename= str_to_title(statename),
+         stabb=state.abb[match(statename,state.name)],
+         stabb=replace_na(stabb,"DC")) |>
+  mutate(region=case_when(stabb %in% .northeast_region ~".northeast_region",
+                          stabb %in% .midwest_region~".midwest_region",
+                          stabb %in% .south_region~".south_region",
+                          stabb %in% .west_region~".west_region"),
+         region=str_to_title(str_sub(str_replace_all(region,"_"," "),2))) |>
+  group_by(region) |> 
+  mutate(nreg=n(),
+         lab=glue::glue("{region} (n={scales::comma(nreg)})")) |>
+  count(yr_incorp, lab)|>
+  ggplot(aes(x=yr_incorp, y=n)) +
+  geom_point(alpha=.5) +
+  facet_wrap(~lab) +
+  theme(plot.title.position = "plot") +
+  labs(x="Year", y="Count",subtitle = "Number of municipal incorporation of all active (included in the Census of Governments)\nmunicipalities in the United States (n=18,652) by year and region, between 1630 and 2017", caption="Source: Municipal Incorporation Data Github")
+```
+
+```{r count by county}
+d1 = fips |> count(fips_state_numeric_code,fips_county_numeric_code) |>
+  mutate(fips=glue::glue("{fips_state_numeric_code}{fips_county_numeric_code}")) |>
+  select(-1,-2) |> right_join(usmap::us_map(regions = "counties"),by="fips") |>
+  rename("count"=n)
+
+d1 |> ggplot() +
+  geom_polygon(aes(x=x, y=y, group=group, fill=count)) +
+  scico::scale_fill_scico(palette="bamako", direction=-1, trans="pseudo_log", breaks=c(1,10,30,120)) +
+  coord_equal() +
+  theme_void() +
+  labs(subtitle="Count of municipal incorporations in US by county, between 1630 and 2017\nSource: Municipal Incorporation Data Github")
+```
+
+

@@ -1,0 +1,123 @@
+---
+title: "20230405"
+date: "2023-04-06"
+format: html
+editor: visual
+---
+
+### European buildings
+* Data source: https://eubucco.com/data/ via Data Is Plural [2023.04.05 edition](https://www.data-is-plural.com/)
+* Belgium Cantons from: https://data.europa.eu/data/datasets/limites-administratives-du-grand-duche-de-luxembourg?locale=en
+
+```{r load libraries}
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+library(patchwork)
+```
+
+#### Building height in Luxembourg (Luxembourg canton and Esch-sur-Alzette canton)
+```{r read in data}
+data = st_read("data/v0_1-LUX.gpkg")
+c = st_read("data/limadmin-shp/LIMADM_GEN_CANTONS.shp") 
+caption= "Source: EUBUCCO via Data Is Plural"
+```
+
+```{r theme 1}
+theme1 = cowplot::theme_map(10) +
+  theme(legend.position="top",
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),
+        plot.background = element_rect(fill="#fafafa", color=NA))
+```
+
+```{r p1, fig.height=3, fig.width=4}
+# Luxembourg canton
+c1 = c |> filter(CANTON=="Luxembourg")
+c1 = st_transform(c1, crs=raster::crs(data))
+data_crop= st_crop(data, c1) 
+data_int = st_intersection(data_crop, c1)
+
+ggplot() +
+  geom_sf(data=c1, fill="transparent", color="black") +
+  geom_sf(data=data_int, aes(fill=height, color=height)) +
+  scico::scale_color_scico(palette = "bamako",direction=-1,trans="pseudo_log", breaks=c(10,20,40,80), guide="none") +
+  scico::scale_fill_scico(palette = "bamako",direction=-1, trans="pseudo_log",breaks=c(10,20,40,80), guide=guide_colorbar(title.position = "top", barheight = unit(.5,"lines"), barwidth = unit(10,"lines"))) +
+  coord_sf(expand=FALSE) +
+  labs(title="Height of buildings in the Canton of Luxembourg, Luxembourg",
+       fill="Building height in meters:",
+       caption="Source: EUBUCCO via Data Is Plural")
+```
+
+```{r p2, fig.height=3, fig.width=4}
+# Esch-sur-Alzette canton
+c1 = c |> filter(CANTON=="Esch-sur-Alzette")
+c1 = st_transform(c1, crs=raster::crs(data))
+data_crop= st_crop(data, c1) 
+data_int = st_intersection(data_crop, c1)
+
+ggplot() +
+  geom_sf(data=c1, fill="transparent", color="black") +
+  geom_sf(data=data_int, aes(fill=height, color=height)) +
+  scico::scale_color_scico(palette = "bamako",direction=-1,trans="pseudo_log", breaks=c(10,20,40,80),guide="none") +
+  scico::scale_fill_scico(palette = "bamako",direction=-1, trans="pseudo_log",breaks=c(10,20,40,80), guide=guide_colorbar(title.position = "top", barheight = unit(.5,"lines"), barwidth = unit(10,"lines"))) +
+  coord_sf(expand=FALSE) +
+  theme1 +
+  labs(title="Height of buildings in the Canton of Esch-sur-Alzette, Luxembourg",
+       fill="Building height in meters:",
+       caption=caption)
+```
+
+#### Building height, type and age in Centro district (Madrid Spain)
+
+```{r}
+madrid = st_read("data/v0_1-ESP_8_1_3_10_1-Madrid.gpkg")
+barrios = st_read("data/Barrios/Barrios.shp")
+barrios = st_transform(barrios, crs=raster::crs(madrid))
+#barrios |> st_drop_geometry() |> count(NOMDIS)
+```
+
+```{r}
+area = barrios |> filter(NOMDIS=="Centro")
+df = st_crop(madrid, area)
+df = st_intersection(df,area)
+```
+
+```{r theme 2}
+theme2 = cowplot::theme_map(8.5) +
+  theme(legend.position="top",
+        legend.title=element_text(face="bold"),
+        plot.title=element_text(hjust=.5, size=12))
+```
+
+```{r plots, fig.height=3, fig.width=4}
+p3a = ggplot() +
+  geom_sf(data=df, aes(fill=height), color="white", linewidth=.02) +
+  scico::scale_fill_scico(name="Building height in meters:",palette="bamako", direction=-1,guide=guide_colorbar(title.position = "top", barheight = unit(.4,"lines"), barwidth = unit(10,"lines"))) +
+  coord_sf(expand=FALSE) +
+  theme2
+
+p3b =ggplot() +
+  geom_sf(data=df, aes(fill=str_to_title(type)), color="white", linewidth=.02) +
+  coord_sf(expand=FALSE) +
+  scale_fill_manual(name="Building type:",values=c("#E37001","#52B0AE","#88837D"), guide=guide_legend(title.position="top")) +
+  theme2
+
+p3c = df |> #st_drop_geometry() |>
+  mutate(bins = cut(age, breaks=c(979,1900,2000,2023), right=FALSE, labels=c("Before 1900 (979-1898)","1900-1999","2000 and after"), ordered_result=TRUE)) |>
+  ggplot() +
+  geom_sf(aes(fill=bins), color="white", linewidth=.02) +
+  scale_fill_manual(name="Year built:",values=c("#1B3A2A","#3CC67B","#EBCA97"),na.value="#808080", guide=guide_legend(title.position = "top")) +
+  theme2
+```
+
+```{r p3, fig.height=2.5, fig.width=6}
+p3a + p3b + p3c +
+  plot_annotation(title="Buildings in Centro District, Madrid, Spain",
+                  caption=caption) &
+  theme2
+```
+
+
+
+
+
