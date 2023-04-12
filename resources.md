@@ -240,14 +240,16 @@
   * [Julia Silge's blog](https://juliasilge.com/blog/) demonstrating how to use the tidymodels packages with #TidyTuesday data
   * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
   * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
+* [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla 
+* [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin   
 * Github and RStudio: [GitHub - The Perks of Collaboration and Version Control](https://twitter.com/cosima_meyer/status/1572456682017652742) by Cosima Meyer
-* [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla  
-* [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin 
+* [Setting up macOS as an R data science rig in 2023](https://ivelasq.rbind.io/blog/macos-rig/) by Isabella Velásquez
 * [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
-* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp  
+* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp   
+* Some good practices for research with R [slides](https://www.good-practices.etiennebacher.com/#/title-slide) by Etienne Bacher (h/t Albert Rapp) 
 * [A big list of data journalism tools and resources](https://www.databites.co.za/post/60/a-big-list-of-data-journalism-tools-and-resources) by  @alastairotter on The Outlier Data Bites
 * [Data wrangling essentials: comparisons in JavaScript, Python, SQL, R, and Excel](https://observablehq.com/@observablehq/data-wrangling-translations) by Allison Horst and Paul Buffa
-* [Setting up macOS as an R data science rig in 2023](https://ivelasq.rbind.io/blog/macos-rig/) by Isabella Velásquez
+
 
  <!-- toc -->
  
