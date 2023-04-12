@@ -247,7 +247,7 @@
 * List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp  
 * [A big list of data journalism tools and resources](https://www.databites.co.za/post/60/a-big-list-of-data-journalism-tools-and-resources) by  @alastairotter on The Outlier Data Bites
 * [Data wrangling essentials: comparisons in JavaScript, Python, SQL, R, and Excel](https://observablehq.com/@observablehq/data-wrangling-translations) by Allison Horst and Paul Buffa
-
+* [Setting up macOS as an R data science rig in 2023](https://ivelasq.rbind.io/blog/macos-rig/) by Isabella Velásquez
 
  <!-- toc -->
  
