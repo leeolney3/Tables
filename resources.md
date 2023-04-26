@@ -168,6 +168,7 @@
   * [Geographic Data Science with R: Visualizing and Analyzing Environmental Change](https://bookdown.org/mcwimberly/gdswr-book/) by Michael C. Wimberly
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * [Map Africa using OSM data in R](https://twitter.com/milos_agathon/status/1588565316648329217) by Milos Popovic
+  * [Map city expandsion in R](https://twitter.com/milos_agathon/status/1648809318026813442) by Milos Popovic
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
   * [Mapping OSM and satellite data with terra in R](https://milospopovic.net/mapping-raster-files-with-terra-in-r/) by Milos Popovic
   * Mix and match regular geoms with `geom_sf()` [thread](https://twitter.com/ClausWilke/status/1275938314055561216) by Claus Wilke @ClausWilke
@@ -198,6 +199,7 @@
   * [Using functional analysis to model air pollution data in R](https://nrennie.rbind.io/blog/2022-11-14-using-functional-analysis-to-model-air-pollution-data-in-r/) by Nicola Rennie
   * [Good Coding Practices for Data Analysts](https://www.heatherturner.net/talks/nhs-r2022/#1) by Heather Turner @HeathrTurnr
   * [Four simple ways to integrate your data dictionary into your data cleaning process](https://cghlewis.com/blog/dict_clean/) by Crystal Lewis 
+  * [Optimal number of clusters in cluster analysis: methods & R packages](https://twitter.com/selcukorkmaz/status/1650501705920921602) Twitter thread by @selcukorkmaz
 * Code/functions
   * [Collection of functions used to wrangle data](https://github.com/Cghlewis/data-wrangling-functions/wiki) by Crystal Lewis
   * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia 
@@ -235,7 +237,8 @@
 * Scraping 
   * [Web scraping with {rvest}](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak 
   * [Web scraping tutorial in R](https://rpubs.com/haleyepperlyfox/916671) from interactive maps using R and rvest package by Haley Epperly
-  * [@shinysci's thread](https://twitter.com/shinysci/status/1541831867388858368) on how to use #rstats in #GitHub actions to scrape and store data online and then process it ... the #rspatial way
+  * [@shinysci's thread](https://twitter.com/shinysci/status/1541831867388858368) on how to use rstats in GitHub actions to scrape and store data online and then process it ... the rspatial way
+  * [Scraping London Marathon data with {rvest}](https://nrennie.rbind.io/blog/web-scraping-rvest-london-marathon/) by Nicola Rennie
 * tidymodels
   * [Tidy Modeling with R](https://www.tmwr.org/) book by Max Kuhn and Julia Silge 
   * [Julia Silge's blog](https://juliasilge.com/blog/) demonstrating how to use the tidymodels packages with #TidyTuesday data
@@ -360,6 +363,7 @@
 * Dan @FilmicAesthetic [Github](https://github.com/filmicaesthetic)
 * Daniel Oehm [website](http://gradientdescending.com/) [Github](https://github.com/doehm)
 * David Schoch @schochastics [website](http://blog.schochastics.net/)
+* Deepali Kank [Github](https://github.com/deepdk)
 * Dr. Dominic Royé [Github](https://github.com/dominicroye), [website](https://dominicroye.github.io/en/)
 * Dr Nicci Potts [Github](https://github.com/NicciPotts), [website](https://niccipotts.netlify.app/)  
 * Emil Hvitfeldt [website](https://www.emilhvitfeldt.com/post/)   
