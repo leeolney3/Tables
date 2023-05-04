@@ -398,7 +398,7 @@
 * Meghan Hall [website](https://meghan.rbind.io/blog/) 
 * Michelle Evans [Github](https://github.com/mvevans89), [website](https://mvevans.netlify.app/blog.html)  
 * Mike Mahoney [website](https://www.mm218.dev/blog.html)  
-* Milos Popovic [website](https://milospopovic.net/blog/) for map tutorials 
+* Milos Popovic [github](https://github.com/milos-agathon) and [website](https://milospopovic.net/blog/) for map tutorials 
 * Neal Grantham  [website](https://www.nsgrantham.com/graphics/)
 * Near and Distant [Github](https://github.com/NearAndDistant), [website](https://nearanddistant.co.uk/)
 * Nicola Rennie [Github](https://github.com/nrennie), [website](https://nrennie.rbind.io/blog/)
