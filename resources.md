@@ -95,6 +95,7 @@
   * [Leo line chart](https://twitter.com/tanya_shapiro/status/1565029412428562433) by Tanya Shapiro
   * [Leo line chart with gradient](https://twitter.com/kustav_sen/status/1565256414381355008) by Kaustav Sen
   * [The Economist's lollipop chart in ggplot](https://twitter.com/tanya_shapiro/status/1634214864435462146) by Tanya Shapiro
+  * [Creating a cracked egg plot using {ggplot2} in R](https://nrennie.rbind.io/blog/cracked-egg-plot-ggplot2/) by Nicola Rennie
  <!-- toc -->
  
 <!-- tocstop -->
