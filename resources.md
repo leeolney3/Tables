@@ -236,6 +236,7 @@
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
   * Beautiful examples of parameterized reports [thread](https://twitter.com/lisalendway/status/1579482172356202496) by Lisa Lendway
+  * [11 tricks to level up your rmarkdown documents](https://eliocamp.github.io/codigo-r/en/2023/04/knitr-rmarkdown-tricks/) by Elio Campitelli
 * Scraping 
   * [Web scraping with {rvest}](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak 
   * [Web scraping tutorial in R](https://rpubs.com/haleyepperlyfox/916671) from interactive maps using R and rvest package by Haley Epperly
