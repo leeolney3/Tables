@@ -162,6 +162,7 @@
   * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci 
   * [A shaded relief map in a tweet](https://twitter.com/researchremora/status/1576640047180181504) by flotsam @researchremora
   * [A US map in a tweet](https://twitter.com/kyle_e_walker/status/1576232908968558593) by Kyle Walker @kyle_e_walker
+  * [Bertin R Package](https://twitter.com/BjnNowak/status/1660605200137175042): easily transform choropleth maps into valued points by Benjamin Nowak
   * [Create spatial square/hexagon grids and count points inside in R with sf](https://urbandatapalette.com/post/2021-08-tessellation-sf/) by Kenneth Wong
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
   * [Explore the hidden secrets of urban layouts with #rstats](https://twitter.com/shinysci/status/1656284290198433792) ([gist](https://gist.github.com/marcosci/2a26e936c007e58493bf5fc8a2c25209)) by Marco Sciaini @shinysci
@@ -383,6 +384,7 @@
 * Iva Brunec [Github](https://github.com/ivabrunec), [website](https://ivabrunec.github.io/)
 * Jack Davison [Github](https://github.com/jack-davison)
 * Jake Kaupp [Github](https://github.com/jkaupp)
+* Jakub Nowosad [Github](https://github.com/nowosad), [website](https://jakubnowosad.com/posts.html)
 * Jamie Hudson [Github](https://github.com/HudsonJamie), [website](https://jamiehudson.netlify.app/post/)
 * Javier Tamayo-Leiva [Github](https://github.com/TamayoLeivaJ)
 * Jenn Schilling [Github](https://github.com/jennschilling)  
