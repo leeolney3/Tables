@@ -1,0 +1,115 @@
+---
+title: "20230517"
+date: "2023-05-23"
+format: html
+editor: visual
+---
+
+Trying out [{geomtextpath}](https://github.com/AllanCameron/geomtextpath) and [{bertin}](https://github.com/BjnNowak/bertin) R packages with datasets from [Data is Plural](https://www.data-is-plural.com/) [2023.05.17 edition](https://www.data-is-plural.com/archive/2023-05-17-edition/).
+
+```{r load libraries}
+library(tidyverse)
+library(readxl)
+library(geomtextpath)
+```
+
+### Section 1: Weighted, inflation-adjusted exchange rates.
+
+Data: [Real effective exchange rates for 178 countries: a new database](https://www.bruegel.org/publications/datasets/real-effective-exchange-rates-for-178-countries-a-new-database) (Last update: 8 May 2023) via Data is Plural 2023.05.17 edition
+
+```{r read in data}
+# monthly REER
+d1 = read_xls("data/REER_database_ver08May2023.xls",sheet = 3)
+d1=janitor::clean_names(d1)
+# yearly REER
+d2 = read_xls("data/REER_database_ver08May2023.xls",sheet = 7)
+d2=janitor::clean_names(d2)
+caption="Source: Zsolt Darvas (2023)"
+```
+
+```{r p1 data}
+# Monthly REER
+d1a = d1 %>% select_if(~ !any(is.na(.))) |>
+  rename_at(vars(matches("reer_120_")), ~ str_remove(., "reer_120_")) |>
+  rename(date=updated_8_may_2023) |> 
+  mutate(date_id=row_number()) |>
+  relocate(date_id, .after="date") |>
+  pivot_longer(!1:2) |>
+  mutate(name=str_to_upper(name)) |>
+  group_by(name) |>
+  arrange(date_id, by_group=TRUE) |>
+  mutate(pct_change = (value/lag(value) - 1) * 100,
+         pct_change=replace_na(pct_change,0)) |>
+  ungroup() |>
+  separate(date,sep="M",c("year","month")) |>
+  mutate(year=parse_number(year), month=parse_number(month))|>
+  filter(year>=2013) |>
+  mutate(date_id=date_id-240) |>
+  mutate(label=case_when(name=="SE"~"Sweden",
+                              name=="US"~"United States",
+                              name=="EA12"~"Euro area (12 countries)"))
+```
+
+```{r "p1",fig.height=3, fig.width=4}
+# trying out geom_textpath
+d1a |> filter(!is.na(label)) |>
+  ggplot(aes(x=date_id, y=value, color=label)) +
+  geom_line(data=d1b, aes(group=name), alpha=.2, color="grey70") +
+  geom_textpath(data= . %>% filter(name!="US"),aes(label=label, vjust=ifelse(name=="SE",2,-1.3)), text_smoothing = 45, hjust=.8, fontface = 2,size=4.2) +
+  geom_textpath(data= . %>% filter(name=="US"),aes(label=label), text_smoothing = 45, hjust=.6,vjust=-1.3,fontface = 2, size=4.2) +
+  ggshadow::geom_shadowline(size=.8) +
+  scale_x_continuous(breaks=seq(1,124,12), labels=seq(2013,2023,1), expand=c(.01,.01)) +
+  scale_y_continuous(expand=c(0,0)) +
+  scale_color_manual(values=c("#AC23DD","#0F24A3","#029BA5")) +
+  coord_cartesian(ylim=c(50,150)) +
+  cowplot::theme_minimal_hgrid(12) +
+  theme(axis.line=element_blank(),
+        legend.position="none",
+        axis.ticks.length = unit(.5,"lines"),
+        plot.title.position = "plot",
+        plot.margin=margin(.5,.85,.5,.5,unit="cm"),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0,color="grey40")
+        ) +
+  labs(title="Monthly Real effective exchange rate (CPI-based)",
+       subtitle="Jan 2013 to Aprl 2023\n",
+       caption=caption,y="Value", x="Year")
+```
+
+### Section 2: Controlled substances lost and stolen
+
+Data source: [https://github.com/data-liberation-project/dea-theft-and-loss-counts](https://github.com/data-liberation-project/dea-theft-and-loss-counts/tree/main/data/tidy), data by US Drug Enforcement Administration, via Data is Plural 2023.05.17 edition
+
+```{r load libraries}
+library(bertin)
+library(sf)
+library(albersusa)
+```
+
+```{r read in data}
+csub = read.csv("https://raw.githubusercontent.com/data-liberation-project/dea-theft-and-loss-counts/main/data/tidy/csub-thefts-by-state-and-loss-type.csv")
+```
+
+```{r p2 data}
+states_sf <- albersusa::usa_sf(proj = "laea")
+csub1=csub |> mutate(loss_type=str_to_title(loss_type)) |>
+  filter(period=="JAN-SEP 2022", loss_type=="Loss In Transit") |>
+  mutate(bin=cut(count,breaks=c(0,50,500,1000,2000), include.lowest = TRUE, labels=c("0 to 50", "50 to 500","500 to 1000","1000 to 2000")))
+csub2= states_sf |> left_join(csub1, by=c("iso_3166_2"="state")) 
+```
+
+```{r "p2", fig.height=3, fig.width=3.5}
+# reference: https://github.com/BjnNowak/bertin
+regions_valued = bertin::make_points(polygon=csub2, n=45, square=TRUE)
+ggplot(regions_valued,aes(size=bin))+
+  geom_sf(csub2,mapping=aes(geometry=geometry),inherit.aes=FALSE, fill="grey95")+
+  geom_sf(color="#273A7A")+
+  scale_size_manual(values=seq(0.5,3.5,.75)) +
+  coord_sf(crs=raster::crs(states_sf), expand=FALSE) +
+  cowplot::theme_map(11.5) +
+  theme(legend.position = "top",
+        plot.caption=element_text(hjust=0, color="grey30", margin=margin(t=10)),
+        plot.margin=margin(.4,.4,.4,.4,unit="cm")) +
+  labs(title="Controlled substances lost in transit, Jan to Sep 2022", size="Count:",
+       caption="Data source: US Drug Enforcement Administration by way of Data Is Plural\nValued point map created using {bertin} package by Benjamin Nowak")
+```
