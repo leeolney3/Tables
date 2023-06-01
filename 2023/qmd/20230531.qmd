@@ -1,0 +1,237 @@
+---
+title: "20230531"
+date: "2023-06-01"
+format: html
+editor: visual
+---
+
+Quick data visualizations using datasets featured in [Data Is Plural 2023.05.31 edition](https://www.data-is-plural.com/archive/2023-05-31-edition/).
+
+```{r load libraries}
+library(tidyverse)
+library(readxl)
+library(sf)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load font}
+font_add_google("Atkinson Hyperlegible")
+f1 = "Atkinson Hyperlegible"
+font_add_google("Fira Sans")
+f2 = "Fira Sans"
+```
+
+### Section One: Local business
+
+Data source: United States Census Bureau's [County Business Patterns: 2021](https://www.census.gov/data/datasets/2021/econ/cbp/2021-cbp.html), Datasets: [Complete ZIP Code Industry Detail File](https://www2.census.gov/programs-surveys/cbp/datasets/2021/zbp21detail.zip) and [Complete CSA File](https://www2.census.gov/programs-surveys/cbp/datasets/2021/cbp21csa.zip)
+
+#### Total number of establishments in Brooklyn, NY by zipcode
+
+```{r read in zipcode data}
+zbp = read_csv("data/zbp21detail.csv")
+descrip=data.frame(name=unique(zbp1$name), long=c("Total Number of\nEstablishments","Less than 5 Employee\nSize Class","5-9 Employee\nSize Class","10-19 Employee\nSize Class","20-49 Employee\nSize Class","50-99 Employee\nSize Class","100-249 Employee\nSize Class","250-499 Employee\nSize Class","500-999 Employee\nSize Class","1,000 or More Employee\nSize Class"))
+boundaries = read_sf("data/ZIP_CODE_040114/ZIP_CODE_040114.shp")
+```
+
+```{r wrangle}
+zbp1=zbp |> 
+  filter(stabbr=="NY", city=="BROOKLYN",naics=="------") |>
+  mutate(across(`n<5`:`n1000`, parse_number)) |>
+  select(ZIPCODE=zip, est:n1000) |>
+  pivot_longer(est:n1000) |>
+  group_by(name) |>
+  mutate(z=value/max(value,na.rm=TRUE)) |> 
+  ungroup() |>
+  left_join(descrip, by="name") |>
+  mutate(name=fct_inorder(name), long=fct_inorder(long))
+boundaries1 =  boundaries|> right_join(zbp1,by="ZIPCODE") 
+```
+
+```{r "p1a", fig.height=2.5, fig.width=4}
+boundaries1 |>
+  ggplot() + geom_sf(aes(fill=z), linewidth=.04, color="white") + 
+  coord_sf() +
+  #scale_fill_gradientn(colors = MetBrewer::met.brewer("Morgenstern"),breaks=c(min(boundaries1$z,na.rm=T),1), labels=c("Less","More"),na.value="grey95",guide=guide_colorbar(title.position="top",barheight=unit(.4,"lines"),barwidth=unit(7,"lines"))) +
+  scico::scale_fill_scico(palette="imola",direction=-1, breaks=c(min(boundaries1$z,na.rm=T),1), labels=c("Less","More"),na.value="grey95",guide=guide_colorbar(title.position="top",barheight=unit(.4,"lines"),barwidth=unit(7,"lines"))) +
+  facet_wrap(~long,nrow=2) +
+  theme_void(base_family = f2) +
+  theme(legend.position="top",
+        legend.title=element_blank(),
+        strip.text=element_text(hjust=0),
+        legend.margin=margin(b=5),
+        plot.title=element_text(hjust=.5),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),
+        plot.caption=element_text(color="grey40"),
+        ) +
+  labs(title="Business Establishments in Brooklyn, NY (2021)",
+       caption="Source: United States Census Bureau")
+```
+
+### Total number of establishments in 2021 by Combined Statistical Area
+
+```{r read in csa data}
+csa = read_csv("data/cbp21csa.csv") 
+csa1= csa |> filter(naics=="------") |> select(CSAFP=csa, est) |> mutate(CSAFP=as.character(CSAFP))
+csa_sf=tigris::combined_statistical_areas(cb=TRUE,year=2021)
+st = tigris::states(cb=TRUE, year=2021)
+st1 = st |> filter(!STUSPS %in% c("AK","HI","PR","GU","AS","MP","VI"))
+```
+
+```{r "p1b", fig.height=3, fig.width=4}
+csa_sf |> right_join(csa1, by="CSAFP") |>
+  ggplot() +
+  geom_sf(data=st1, color="grey95", fill="grey95") +
+  geom_sf(aes(fill=est), color="black", linewidth=.1) +
+  scico::scale_fill_scico(palette="bamako", direction=-1,trans="log", breaks=c(1094,10000,100000,661172), label=scales::comma, guide=guide_colorbar(barheight=unit(.5,"lines"),barwidth = unit(13,"lines")))+
+  coord_sf(expand=FALSE, crs=albersusa::us_laea_proj) +
+  theme_void(base_family=f2) +
+  theme(legend.position="top",
+        legend.title=element_blank(),
+        legend.margin=margin(t=10,b=0),
+        legend.text = element_text(size=10.5),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),
+        plot.title=element_text(hjust=.5),
+        plot.caption=element_text(color="grey40")
+        ) +
+  labs(title="Total number of establishments in 2021 by Combined Statistical Area",
+       caption="Source: United States Census Bureau")
+```
+
+### Section Two: Crowd accidents
+
+Data: [List of crowd accidents from 1900 to 2019](https://zenodo.org/record/7523480) Citation: Feliciani, Claudio. (2023). List of crowd accidents from 1900 to 2019 \[Data set\]. Zenodo. https://doi.org/10.5281/zenodo.7523480
+
+```{r read in data}
+accidents = read_csv("data/accident_data_numeric.csv") |> janitor::clean_names()
+caption="Source: Feliciani, Claudio. (2023). List of crowd accidents from 1900 to 2019 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7523480"
+```
+
+```{r wrangle}
+accidents1 = accidents |> #select(3:5) |>
+  mutate(date=lubridate::ymd(paste0(2023,"-",month,"-",day)),
+         yday=lubridate::yday(date),
+         decade=year-year %%10,
+         yday2= yday+((year-decade)*365),
+         total=fatalities + injured,
+         grp = fct_lump(purpose_of_gathering,3)) |>
+  add_count(grp) |>
+  mutate(grplab=glue::glue("{grp} (n = {n})"),
+         grplab= factor(grplab, levels=c("Religious (n = 74)","Sport (n = 74)","Entertainment (n = 60)","Other (n = 73)"), ordered=TRUE)) 
+```
+
+```{r "p2a", fig.height=3, fig.width=4}
+# fatalities, 1900-2019
+accidents1 |>
+  filter(fatalities>0) |>
+  ggplot(aes(x=yday2, y=decade)) +
+  geom_vline(xintercept = 3651, linewidth=.3, color="grey") +
+  geom_point(aes(size=fatalities), alpha=.8, color="#A31414") +
+  scale_size_area(max_size = 8) +
+  scale_y_reverse(breaks=seq(1900,2010,10), labels=paste0((as.character(seq(1900,2010,10))),"'s")) +
+  scale_x_continuous(expand=c(.02,.02),limits=c(1,3651), breaks=seq(1,3650,365), labels=paste0("0",(as.character(seq(0,9,1))))) +
+  cowplot::theme_minimal_grid(11) +
+  theme(legend.position = "top",
+        plot.title.position = "plot",
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey30"),
+        plot.margin=margin(.5,.75,.5,.5,unit="cm"),
+        legend.box.margin = margin(l=-45)) +
+  labs(caption=caption, x="Year",y="Decade", size="Number of fatalities:",
+       title="257 Deadly crowd accidents between 1990 and 2019")
+```
+
+```{r "p2b", fig.height=3.5, fig.width=3.5}
+# injured and fatalities, 1990-2019
+accidents1 |>
+  filter(year>=1990, total>0) |>
+  ggplot(aes(x=date, y=year)) +
+  geom_line(aes(group=year), linewidth=.3, color="grey") +
+  geom_point(aes(size=total,fill=grplab), color="black", shape=21, alpha=.8) +
+  scale_x_date(date_labels = "%b", expand=c(.02,.02)) +
+  scale_y_reverse(breaks=seq(1990,2020,5), expand=c(.02,.02)) +
+  scale_size(breaks=c(1,1000,3000), range=c(1,7)) +
+  scale_fill_manual(values=c("#CD1B1D","#BF9800","#0851A1","#88837D"), guide="none")+
+  cowplot::theme_minimal_grid(11) +
+  theme(text=element_text(family=f2),
+        legend.box = 'vertical',
+        legend.position = "top",
+        legend.box.just = 'left',
+        legend.title = element_text(size=10),
+        legend.text = element_text(size=10),
+        legend.box.margin=margin(l=-38),
+        axis.title = element_text(size=10),
+        plot.margin=margin(.5,.75,.5,.5,unit="cm"),
+        plot.title.position = "plot",
+        plot.title=element_markdown(size=10.5, face="plain", lineheight = 1.1),
+        plot.subtitle = element_markdown(size=10, lineheight = 1.2, margin=margin(t=4)),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey30", size=7.7)) +
+  labs(x="Day and month",y="Year",size="Fatalities and injured count:",
+       subtitle="Purpose of Gathering: <span style='color:#CD1B1D'>**Religious**</span> (n = 74), <span style='color:#BF9800'>**Sport**</span> (n = 74), <span style='color:#0851A1'>**Entertainment**</span> (n = 60), <span style='color:#88837D'>**Other**</span> (n = 73)",
+       title="<span style='font-size:13pt'>Crowd Accidents (1990 - 2019)</span><br><span style='font-size:9pt; color:grey30'>223 accidents with at least one fatality or ten injuries *caused by a collective crowd motion which could have been<br>potentially prevented by employing a different design or through a proper crowd management*. The deadliest<br>accident included, by far, is the *2015 Mina stampede* in Saudi Arabia with 2,431 fatalities and 934 injured.</span>",
+       caption=caption)
+ggsave("export/20230530_p1.png", bg="#fafafa")
+```
+
+### Section Three: NYC sidewalk scaffolding
+
+Data: [Active Sidewalk Shed Permits](https://www.nyc.gov/assets/buildings/html/sidewalk-shed-map.html) (downlaoded: Jun 1, 2013) from NYC OpenData
+
+```{r read in data}
+sheds = read_csv("data/Active_Sheds2.csv") |> janitor::clean_names()
+caption="*Data downloaded on Jun 1, 2023\nSource: New York City’s Department of Buildings"
+
+borough = read_sf("data/BoroughBoundaries/geo_export_bbe891e7-b154-4ede-b905-d0de321b3cda.shp") #from https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm
+borough = st_transform(borough,crs=4326)
+```
+
+```{r "p3a"}
+# distribution of sidewalk sheds
+sheds |>
+  ggplot(aes(x=longitude_point,y=latitude_point)) +
+  geom_sf(data=borough, inherit.aes=FALSE,fill="transparent", color="black", stroke=.2) +
+  ggdensity::geom_hdr(fill="#0a1647") +
+  coord_sf() +
+  facet_grid(rows=vars(commercial), cols=vars(activity)) +
+  cowplot::theme_map(10) +
+  theme(text=element_text(family=f1),
+        strip.text.y.right = element_text(angle=0),
+        legend.position = "top",
+        plot.caption.position = "plot",
+        plot.caption=element_text(color="grey40",hjust=0),
+        plot.title.position = "plot",
+        plot.title=element_text(face="plain")
+        ) +
+  labs(title="NYC Active Sidewalk Sheds",caption=caption)
+```
+
+```{r "p3n"}
+# count of sidewalk sheds
+# circle method from Abdoul Madjid https://github.com/AbdoulMa/TidyTuesday/blob/main/2022/2022_w9/tidytuesday_2022_w9.R
+c = sheds |>
+  select(job_number,y=latitude_point,x=longitude_point) |>
+   mutate(
+    circle_long = plyr::round_any(x, .005, ceiling),
+    circle_lat = plyr::round_any(y, .005, ceiling), 
+    .before = 1L
+  ) |> 
+  count(circle_long, circle_lat) 
+csf = c %>% st_as_sf(coords = c("circle_long", "circle_lat")) %>% 
+  st_set_crs(4326) %>% 
+  st_transform(crs=raster::crs(boundaries)) 
+
+ggplot() +
+  geom_sf(data=borough, fill="grey95", color="grey95") +
+  geom_sf(data=csf, size=.4, aes(color=n)) +
+  scale_color_stepsn(colors=MetBrewer::met.brewer("Tam", 5), guide=guide_colorsteps(title.position = "top",barheight=unit(.4,"lines"))) +
+  coord_sf() +
+  theme_void() +
+  theme(text=element_text(family=f1),
+        legend.position = c(.25,.9),
+        legend.direction = "horizontal",
+        plot.caption=element_text(color="grey30")) +
+  labs(color="NYC Active Sidewalk Sheds Count",caption=caption)
+```
