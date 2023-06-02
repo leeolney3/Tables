@@ -172,6 +172,7 @@
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * [Inverse-distance weighted smoothing](https://twitter.com/nrennie35/status/1612740418206306310) dataviz and thread by Nicola Rennie
   * [Making crisp spike maps with R](https://www.youtube.com/watch?v=qTDf5VVnjMM) by Milos Popovic
+  * [Making maps with R](https://www.paulamoraga.com/tutorial-maps/) by Paula Moraga, KAUST 
   * [Map Africa using OSM data in R](https://twitter.com/milos_agathon/status/1588565316648329217) by Milos Popovic
   * [Map city expandsion in R](https://twitter.com/milos_agathon/status/1648809318026813442) by Milos Popovic
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
@@ -181,6 +182,7 @@
   * [R packages for visualising spatial data](https://nrennie.rbind.io/blog/2022-12-17-r-packages-for-visualising-spatial-data/) by Nicola Rennie
   * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
   * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
+  * [Spatial Data Sources in R](https://ecodynizw.github.io/posts/r-spatial-data/) by Cédric Scherer on Ecological Dynamics
   * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
@@ -235,6 +237,7 @@
   * [Searchable table of various useful Quarto tips I've collected from around the Web/social media](https://apps.machlis.com/shiny/quartotips/) by Sharon Machlis
   * [Combining R and Python with {reticulate} and Quarto](https://nrennie.rbind.io/blog/combining-r-and-python-with-reticulate-and-quarto/) by Nicola Rennie
 * R Markdown
+  * [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
   * Beautiful examples of parameterized reports [thread](https://twitter.com/lisalendway/status/1579482172356202496) by Lisa Lendway
@@ -250,15 +253,15 @@
   * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
   * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
 * [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla 
-* [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin   
+* [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin
 * Github and RStudio: [GitHub - The Perks of Collaboration and Version Control](https://twitter.com/cosima_meyer/status/1572456682017652742) by Cosima Meyer
 * [How to Use GitHub Actions with R to Run Code Automatically](https://rfortherestofus.com/2023/05/github-actions/) by David on R for the Rest of Us
 * [Setting up macOS as an R data science rig in 2023](https://ivelasq.rbind.io/blog/macos-rig/) by Isabella Velásquez
-* [Automating Sentences with R](https://twitter.com/cararthompson/status/1577623068419141632) by Cara Thompson
 * List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp   
 * Some good practices for research with R [slides](https://www.good-practices.etiennebacher.com/#/title-slide) by Etienne Bacher (h/t Albert Rapp) 
 * [A big list of data journalism tools and resources](https://www.databites.co.za/post/60/a-big-list-of-data-journalism-tools-and-resources) by  @alastairotter on The Outlier Data Bites
 * [Data wrangling essentials: comparisons in JavaScript, Python, SQL, R, and Excel](https://observablehq.com/@observablehq/data-wrangling-translations) by Allison Horst and Paul Buffa
+* [Learning Julia with #TidyTuesday and Tidier.jl](https://nrennie.rbind.io/blog/learning-julia-with-tidytuesday-tidier/) by Nicola Rennie  
 
 
  <!-- toc -->
