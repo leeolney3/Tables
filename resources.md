@@ -53,6 +53,7 @@
 * Tutorials/tips       
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
+   * Beeswarm chart with circle packing in [Bee Swarm Charts in R](https://aryntoombs.github.io/tutorials/beeswarm.html) by Aryn Toombs (h/t [@geokaramanis](https://twitter.com/geokaramanis/status/1665379431651717125))
    * [Bullet Chart Variants in R](https://themockup.blog/posts/2020-11-29-bullet-chart-variants-in-r/index.html#create-a-legend) by Thomas Mock 
    * [Bullet chart in ggplot](https://twitter.com/tanya_shapiro/status/1628804725675069440) by Tanya Shapiro
    * [Connected scatterplot with two corresponding line charts](https://twitter.com/rappa753/status/1616512082954039296) code by Albert Rapp
@@ -65,6 +66,7 @@
    * [Creating “Super” Radar Plots with ggplot2](https://rpubs.com/tshapiro/super-radar-plots) by Tanya Shapiro 
    * [Curvy arrows in #Rstats plots](https://twitter.com/jschwabish/status/1613175754728022017) thread by Jon Schwabish
    * [Designing #TidyTuesday visualisations for mobile (with Quarto)](https://nrennie.rbind.io/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/) by Nicola Rennie 
+   * [Easily create sector and series of circles charts using Cartesian coordinates and ggplot2 with {ggtricks}](https://www.abdoulblog.com/posts/2023-05-31_ggtricks-intro/) by Abdoul ISSA BIDA 
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
    * [Ordering fill colour and removing white space](https://twitter.com/cararthompson/status/1600852528056471554) in waffle::geom_waffle by Cara Thompson
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
@@ -72,6 +74,7 @@
    * [How to recreate Pew opinion graphs with ggplot2 in R](https://rforpoliticalscience.com/2022/06/02/recreate-pew-opinion-graphs-with-ggplot-in-r/) by R for Political Science 
    * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
    * Level Up Your Plots: A Code-along Workshop [Slide deck and full code](https://www.cararthompson.com/talks/nhsr2022-level-up/) and [Twitter thread](https://twitter.com/cararthompson/status/1588905430092517377) by Cara Thompson  
+   * [Level up your plots: Using colour, text hierarchy and annotations to create compelling and memorable data visualisations](https://www.cararthompson.com/talks/rmedicine2023-workshop/) by by Cara Thompson  
    * [Line chart with small multiple](https://r-graph-gallery.com/web-line-chart-small-multiple-all-group-greyed-out.html) by Gilbert Fontana on R Graph Gallery
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
@@ -173,6 +176,7 @@
   * [Inverse-distance weighted smoothing](https://twitter.com/nrennie35/status/1612740418206306310) dataviz and thread by Nicola Rennie
   * [Making crisp spike maps with R](https://www.youtube.com/watch?v=qTDf5VVnjMM) by Milos Popovic
   * [Making maps with R](https://www.paulamoraga.com/tutorial-maps/) by Paula Moraga, KAUST 
+  * [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html#affine-transformations) by Edzer Pebesma
   * [Map Africa using OSM data in R](https://twitter.com/milos_agathon/status/1588565316648329217) by Milos Popovic
   * [Map city expandsion in R](https://twitter.com/milos_agathon/status/1648809318026813442) by Milos Popovic
   * [Mapping isochrones in {ggplot2}](https://jamiehudson.netlify.app/post/) by Jamie Hudson 
@@ -356,7 +360,7 @@
 
 <!-- toc -->  
 
-* Abdoul Madjid [Github](https://github.com/AbdoulMa) 
+* Abdoul Madjid [Github](https://github.com/AbdoulMa), [website](https://www.abdoulblog.com/)
 * Allison Horst [Github](https://github.com/allisonhorst/), [website](https://allisonhorst.com/) 
 * Albert Rapp [website](https://albert-rapp.de/post/)
 * Amit Grinson @Amit_Levinson [Github](https://github.com/AmitLevinson), [website](https://amitlevinson.com/)
