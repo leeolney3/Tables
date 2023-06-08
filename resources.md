@@ -125,8 +125,8 @@
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
-  * [Using colour and annotations for effective storytelling](https://www.cararthompson.com/talks/colour-and-annotations/) by Cara Thompson
   * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
+  * Materials on annotations and color ([1](https://www.cararthompson.com/talks/colour-and-annotations/), [2](https://twitter.com/cararthompson/status/1588905430092517377), [3](https://www.cararthompson.com/talks/rmedicine2023-workshop/)) by Cara Thompson
 * Image
   * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
   * Crop images to circles: [cropcircles package](https://twitter.com/danoehm/status/1568900056421650433) by Dan Ohm; [Thread](https://twitter.com/tanya_shapiro/status/1547238091781455875) on circle crop images by Tanya Shapiro 
