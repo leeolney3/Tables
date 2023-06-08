@@ -43,17 +43,17 @@
 <!-- toc --> 
 * Collection/list   
    * [R for Data Science (2e)](https://r4ds.hadley.nz/) written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund
-   * [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/)   
-   * [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2) A curated list of awesome ggplot2 tutorials, packages.. by Erik Gahner Larsen @erikgahner 
-   * [The R Graph Gallery](https://r-graph-gallery.com/) and [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz  ([introductory thread](https://twitter.com/R_Graph_Gallery/status/1610265460469006337) and [resources thread](https://twitter.com/R_Graph_Gallery/status/1613201849590366212))
+   * [{ggplot2} extensions](https://exts.ggplot2.tidyverse.org/gallery/)  
+   * [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2) A curated list of awesome ggplot2 tutorials, packages.. by Erik Gahner Larsen @erikgahner
    * [Graphic Design with #ggplot2](https://twitter.com/CedScherer/status/1559989331644882944) and [Collection of ggplot2 tutorials](https://twitter.com/CedScherer/status/1441126976870252548?s=20) by Cédric Scherer
+   * List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp 
+   * [The R Graph Gallery](https://r-graph-gallery.com/) and [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) by Yan Holtz ([introductory thread](https://twitter.com/R_Graph_Gallery/status/1610265460469006337) and [resources thread](https://twitter.com/R_Graph_Gallery/status/1613201849590366212))
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies)'s [Tips/ideas/analysis](https://github.com/emitanaka/wearerladies) 
    * [@WeAreRLadies](https://twitter.com/WeAreRLadies): data visualisations and "enhanced" reproducible outputs posts [Day 1](https://twitter.com/WeAreRLadies/status/1597355466329292800), [Day 2](https://twitter.com/WeAreRLadies/status/1597692873612328968), [Day 3](https://twitter.com/WeAreRLadies/status/1598087858644025345), [Day 4](https://twitter.com/WeAreRLadies/status/1598442597630021634), [Day 5](https://twitter.com/WeAreRLadies/status/1598695390580248576) and [Day 6](https://twitter.com/WeAreRLadies/status/1599095497196707841) by Cara Thompson 
   * [Anything Is Plotsible](https://github.com/tashapiro/anything-is-plotsible) materials and resources by Tanya Shapiro and R-Ladies Abuja
 * Tutorials/tips       
    * [A Quick How-To On Labelling Bar Graphs In Ggplot2](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/) by Cédric Scherer   
    * [Art from code](https://art-from-code.netlify.app/) by Danielle Navarro, generative art workshop notes from #RStudioConf2022 
-   * Beeswarm chart with circle packing in [Bee Swarm Charts in R](https://aryntoombs.github.io/tutorials/beeswarm.html) by Aryn Toombs (h/t [@geokaramanis](https://twitter.com/geokaramanis/status/1665379431651717125))
    * [Bullet Chart Variants in R](https://themockup.blog/posts/2020-11-29-bullet-chart-variants-in-r/index.html#create-a-legend) by Thomas Mock 
    * [Bullet chart in ggplot](https://twitter.com/tanya_shapiro/status/1628804725675069440) by Tanya Shapiro
    * [Connected scatterplot with two corresponding line charts](https://twitter.com/rappa753/status/1616512082954039296) code by Albert Rapp
@@ -73,8 +73,6 @@
    * [Horror Movies](https://github.com/tashapiro/horror-movies) ggplot2 workshop by Tanya Shapiro ([tweet](https://twitter.com/tanya_shapiro/status/1580638749687676930))
    * [How to recreate Pew opinion graphs with ggplot2 in R](https://rforpoliticalscience.com/2022/06/02/recreate-pew-opinion-graphs-with-ggplot-in-r/) by R for Political Science 
    * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
-   * Level Up Your Plots: A Code-along Workshop [Slide deck and full code](https://www.cararthompson.com/talks/nhsr2022-level-up/) and [Twitter thread](https://twitter.com/cararthompson/status/1588905430092517377) by Cara Thompson  
-   * [Level up your plots: Using colour, text hierarchy and annotations to create compelling and memorable data visualisations](https://www.cararthompson.com/talks/rmedicine2023-workshop/) by by Cara Thompson  
    * [Line chart with small multiple](https://r-graph-gallery.com/web-line-chart-small-multiple-all-group-greyed-out.html) by Gilbert Fontana on R Graph Gallery
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
@@ -105,7 +103,7 @@
 </details> 
 
 <details>
-  <summary><b>Vis: color/text (R)</b> (click to expand)</summary>
+  <summary><b>Vis: color/text/image (R)</b> (click to expand)</summary>
 
 <!-- toc --> 
 * Color
@@ -129,6 +127,13 @@
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
   * [Using colour and annotations for effective storytelling](https://www.cararthompson.com/talks/colour-and-annotations/) by Cara Thompson
   * [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/) by Christophe Nicault
+* Image
+  * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
+  * Crop images to circles: [cropcircles package](https://twitter.com/danoehm/status/1568900056421650433) by Dan Ohm; [Thread](https://twitter.com/tanya_shapiro/status/1547238091781455875) on circle crop images by Tanya Shapiro 
+  * [Plotting Points as Images in ggplot](https://themockup.blog/posts/2020-10-11-embedding-images-in-ggplot/) by Thomas Mock 
+  * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault   
+  * [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey  
+  * [Documented approach](https://twitter.com/dickie_roper) to recreating images/photos on continous spirals (or other shapes) in #rstats with #ggplot2 by Chris @dickie_roper  
 
  <!-- toc -->
  
@@ -143,6 +148,7 @@
   * [{ggdist}](https://github.com/mjskay/ggdist) R package and [articles](https://mjskay.github.io/ggdist/index.html) by Matthew Kay, {ggdist} [3.2.0](https://mjskay.github.io/ggdist/news/index.html#ggdist-320) highlights Twitter [thread](https://twitter.com/mjskay/status/1549570149497323520)
   * [ggdist: Make a Raincloud Plot to Visualize Distribution in ggplot2](https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/) by Business Science in R bloggers  
   * {gghalves} [vignette](https://erocoar.github.io/gghalves/) by Frederik Tiedemann
+  * Beeswarm chart with circle packing in [Bee Swarm Charts in R](https://aryntoombs.github.io/tutorials/beeswarm.html) by Aryn Toombs (h/t [@geokaramanis](https://twitter.com/geokaramanis/status/1665379431651717125))
   * [Beyond Bar and Box Plots](https://z3tt.github.io/beyond-bar-and-box-plots/) by Cédric Scherer
   * Nicola Rennie's [twitter post](https://twitter.com/nrennie35/status/1514996175753125888) for #30DayChartChallenge #Day15 
   * [Visualising distributions with raincloud plots (and how to create them with ggplot2)](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/) by Cédric Scherer
@@ -197,9 +203,9 @@
 </details>  
 
 <details>
-  <summary><b>Others (R)</b> (click to expand)</summary>
+  <summary><b>Analysis/statistical models</b> (click to expand)</summary>
+<!-- toc --> 
 
-<!-- toc -->  
 * Analysis
   * [Analysis of the voting patterns with widyr](https://twitter.com/juliasilge/status/1532862734487785474) by Julia Silge
   * [JABSTB: Statistical Design and Analysis of Experiments with R](https://tjmurphy.github.io/jabstb/) by TJ Murphy PhD
@@ -210,20 +216,19 @@
   * [Good Coding Practices for Data Analysts](https://www.heatherturner.net/talks/nhs-r2022/#1) by Heather Turner @HeathrTurnr
   * [Four simple ways to integrate your data dictionary into your data cleaning process](https://cghlewis.com/blog/dict_clean/) by Crystal Lewis 
   * [Optimal number of clusters in cluster analysis: methods & R packages](https://twitter.com/selcukorkmaz/status/1650501705920921602) Twitter thread by @selcukorkmaz
-* Code/functions
-  * [Collection of functions used to wrangle data](https://github.com/Cghlewis/data-wrangling-functions/wiki) by Crystal Lewis
-  * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia 
-  * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
-  * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
-  * Script to count [fonts used](https://twitter.com/geokaramanis/status/1606556048592191488) and [geoms](https://twitter.com/geokaramanis/status/1608069528197517314) by Georgios Karamanis 
-  * [Helper function](https://twitter.com/tanya_shapiro/status/1610648262423330816) for writing captions with Font Awesome Brand icons by @tanya_shapiro
-* Image
-  * [Add a semi-transparent overlay to an image with {magick}](https://themockup.blog/posts/2022-06-22-magick-overlay/) by Tom Mock 
-  * Crop images to circles: [cropcircles package](https://twitter.com/danoehm/status/1568900056421650433) by Dan Ohm; [Thread](https://twitter.com/tanya_shapiro/status/1547238091781455875) on circle crop images by Tanya Shapiro 
-  * [Plotting Points as Images in ggplot](https://themockup.blog/posts/2020-10-11-embedding-images-in-ggplot/) by Thomas Mock 
-  * [Relative coordinates or NPC in ggplot2](https://www.christophenicault.com/post/npc_ggplot2/) by Christophe Nicault   
-  * [Using thumbnails in ggplot2](https://twitter.com/quite_grey/status/1486294048151326726) by not quite my grey @quite_grey  
-  * [Documented approach](https://twitter.com/dickie_roper) to recreating images/photos on continous spirals (or other shapes) in #rstats with #ggplot2 by Chris @dickie_roper
+* Statistical models/tidymodels
+  * [Tidy Modeling with R](https://www.tmwr.org/) book by Max Kuhn and Julia Silge 
+  * [Julia Silge's blog](https://juliasilge.com/blog/) demonstrating how to use the tidymodels packages with #TidyTuesday data
+  * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
+  * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
+  * [Fitting many statistical models at once using dplyr](https://cameronpatrick.com/post/2023/06/dplyr-fitting-multiple-models-at-once/) by Cameron Patrick    
+<!-- tocstop -->
+</details>   
+  
+<details>
+  <summary><b>Quarto/R markdown</b> (click to expand)</summary>
+<!-- toc --> 
+  
 * Quarto
   * [Awesome Quarto](https://github.com/mcanouil/awesome-quarto): list of Quarto resources by Mickaël Canouil @MickaelCanouil
   * [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) ([@quarto_pub](https://twitter.com/quarto_pub)) by Mine Çetinkaya-Rundel
@@ -245,23 +250,33 @@
   * [RMarkdown for Reproducible Reporting](https://twitter.com/thomas_mock/status/1519405395177086983) by Tom Mock 
   * R Markdown Lesser-Known Tips & Tricks [#1](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/), [#2](https://www.rstudio.com/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/), [#3](https://www.rstudio.com/blog/r-markdown-tips-and-tricks-3-time-savers/) on [RStudio Blog](https://www.rstudio.com/blog/) by Brendan Cullen, Alison Hill and Isabella Velásquez
   * Beautiful examples of parameterized reports [thread](https://twitter.com/lisalendway/status/1579482172356202496) by Lisa Lendway
-  * [11 tricks to level up your rmarkdown documents](https://eliocamp.github.io/codigo-r/en/2023/04/knitr-rmarkdown-tricks/) by Elio Campitelli
+  * [11 tricks to level up your rmarkdown documents](https://eliocamp.github.io/codigo-r/en/2023/04/knitr-rmarkdown-tricks/) by Elio Campitelli  
+<!-- tocstop -->
+</details>   
+
+<details>
+  <summary><b>Others (R)</b> (click to expand)</summary>
+
+<!-- toc -->  
+
+* Code/functions
+  * [Collection of functions used to wrangle data](https://github.com/Cghlewis/data-wrangling-functions/wiki) by Crystal Lewis
+  * [Sharing nice code with addins and IDE tools](https://luisdva.github.io/rstats/cleaner-code/) by Luis D. Verde Arregoitia 
+  * [Slides on redundant coding](https://twitter.com/ClausWilke/status/1382451822053314562) by Claus Wilke 
+  * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
+  * Script to count [fonts used](https://twitter.com/geokaramanis/status/1606556048592191488) and [geoms](https://twitter.com/geokaramanis/status/1608069528197517314) by Georgios Karamanis 
+  * [Helper function](https://twitter.com/tanya_shapiro/status/1610648262423330816) for writing captions with Font Awesome Brand icons by @tanya_shapiro
 * Scraping 
   * [Web scraping with {rvest}](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak 
   * [Web scraping tutorial in R](https://rpubs.com/haleyepperlyfox/916671) from interactive maps using R and rvest package by Haley Epperly
   * [@shinysci's thread](https://twitter.com/shinysci/status/1541831867388858368) on how to use rstats in GitHub actions to scrape and store data online and then process it ... the rspatial way
   * [Scraping London Marathon data with {rvest}](https://nrennie.rbind.io/blog/web-scraping-rvest-london-marathon/) by Nicola Rennie
-* tidymodels
-  * [Tidy Modeling with R](https://www.tmwr.org/) book by Max Kuhn and Julia Silge 
-  * [Julia Silge's blog](https://juliasilge.com/blog/) demonstrating how to use the tidymodels packages with #TidyTuesday data
-  * [Machine learning with tidymodels] slides by Julia Silge, Max Kuhn, and David Robinson, from #rstudioconf2022  
-  * [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) by Emil Hvitfeldt
-* [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla 
-* [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin
-* Github and RStudio: [GitHub - The Perks of Collaboration and Version Control](https://twitter.com/cosima_meyer/status/1572456682017652742) by Cosima Meyer
-* [How to Use GitHub Actions with R to Run Code Automatically](https://rfortherestofus.com/2023/05/github-actions/) by David on R for the Rest of Us
-* [Setting up macOS as an R data science rig in 2023](https://ivelasq.rbind.io/blog/macos-rig/) by Isabella Velásquez
-* List of R resources [thread](https://twitter.com/rappa753/status/1623713353754644480) by Albert Rapp   
+* R and Github  
+  * [Automating Workflows with GitHub Actions](https://twitter.com/kc_analytics/status/1579861313186304000) by Kyle Cuilla 
+  * [Deploy Flexdashboard on Github Pages with Github Actions and Docker](https://twitter.com/Rami_Krispin/status/1572570809058885633) by Rami Krispin
+  * Github and RStudio: [GitHub - The Perks of Collaboration and Version Control](https://twitter.com/cosima_meyer/status/1572456682017652742) by Cosima Meyer
+  * [How to Use GitHub Actions with R to Run Code Automatically](https://rfortherestofus.com/2023/05/github-actions/) by David on R for the Rest of Us
+* [Setting up macOS as an R data science rig in 2023](https://ivelasq.rbind.io/blog/macos-rig/) by Isabella Velásquez  
 * Some good practices for research with R [slides](https://www.good-practices.etiennebacher.com/#/title-slide) by Etienne Bacher (h/t Albert Rapp) 
 * [A big list of data journalism tools and resources](https://www.databites.co.za/post/60/a-big-list-of-data-journalism-tools-and-resources) by  @alastairotter on The Outlier Data Bites
 * [Data wrangling essentials: comparisons in JavaScript, Python, SQL, R, and Excel](https://observablehq.com/@observablehq/data-wrangling-translations) by Allison Horst and Paul Buffa
@@ -339,6 +354,7 @@
  <!-- toc -->
    * [30DayChartChallenge 2022](https://github.com/dominicroye/30DayChartChallenge_Edition2022) ([website](https://30daychartchallenge.org/twentytwo/))
    * [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) ([website](https://30daymapchallenge.com/))
+   * [Map Prompt Monday](https://github.com/MapPromptMonday)
    * [TidyTuesday](https://github.com/rfordatascience/tidytuesday) weekly social data project in R from R4DS Online Learning Community
    * Collection/posts:  
       * [30DayChartChallenge 2021: rstats edition](https://github.com/dominicroye/rstats-chart-challenge-2021)
