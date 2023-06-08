@@ -203,7 +203,7 @@
 </details>  
 
 <details>
-  <summary><b>Analysis/statistical models</b> (click to expand)</summary>
+  <summary><b>Analysis/statistical models (R)</b> (click to expand)</summary>
 <!-- toc --> 
 
 * Analysis
