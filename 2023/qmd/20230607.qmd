@@ -1,0 +1,141 @@
+---
+title: "20230607"
+date: "2023-06-09"
+format: html
+editor: visual
+---
+
+## Pesticide use, conterminous United States
+
+Data: [2019 County-level](https://www.sciencebase.gov/catalog/item/6081a924d34e8564d68661a1) and [1992-2019 State-level](https://www.sciencebase.gov/catalog/item/6081ae7cd34e8564d6866222) from [USGS](https://water.usgs.gov/nawqa/pnsp/usage/maps/county-level/), via [Data Is Plural](https://www.data-is-plural.com/) [2023.06.07 edition](https://www.data-is-plural.com/archive/2023-06-07-edition/).
+
+```{r load libraries}
+library(tidyverse)
+library(albersusa)
+library(tigris)
+library(sf)
+library(ggtext)
+library(geofacet)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load fonts}
+font_add_google("Bitter","bit")
+font_add_google("Jost","jost")
+font_add_google("Archivo Narrow","an")
+```
+
+### 2019 County-level
+
+```{r read in county data}
+county= read_tsv("data/EPest_county_estimates_2019.tsv") |> janitor::clean_names()
+skimr::skim(county)
+county=county |> rename(STATEFP=state_fips_code, COUNTYFP=county_fips_code)
+
+cty = counties(cb=TRUE) #shp
+ccty= cty |> filter(!STUSPS %in% c("AK","HI","PR","GU","AS","MP","VI"))
+```
+
+```{r wrangle}
+# median epest_high_kg, conterminous United States, 2019
+c1 = county |> group_by(STATEFP,COUNTYFP) |>
+  summarise(val=sum(epest_high_kg,na.rm=TRUE)) |>
+  ungroup()
+
+c2 = ccty |> right_join(c1, by=c("STATEFP","COUNTYFP"))
+```
+
+```{r caption}
+source="USGS via Data Is Plural"
+note=str_wrap("EPest-high treats missing data for surveyed CRDs as pesticide use likely to occur and therefore calculates a use rate from neighboring CRDs or CRDs within the same region to estimate the pesticide-by-crop use. This method is described in detail by Thelin and Stone (2013). The EPest-high estimate is based generally on the median of reported pesticide-by-crop use rates from surveyed farmers in neighboring CRDs and, in some cases, CRDs within the same USDA Farm Resource Region (Thelin and Stone, 2013).",130)
+caption= paste0("**Source** ",source,"\n","**Note** ",note)
+caption1= str_replace_all(caption, "\n","<br>")
+```
+
+```{r plot, warning=FALSE, message=FALSE, fig.height=3, fig.width=3.5}
+ggplot() +
+  geom_sf(data=ccty, color="black", linewidth=0.01, fill="darkgrey") +
+  geom_sf(data=c2, aes(fill=val), color="black", linewidth=0.01) +
+  coord_sf(crs=us_laea_proj, default_crs = raster::crs(c2), expand=FALSE) +
+  scico::scale_fill_scico(palette="bilbao", begin=.05, labels=scales::label_number_si(drop0trailing = TRUE), guide=guide_colorbar(title.position = "top",barwidth=unit(14,"lines"),barheight = unit(.4,"lines"))) +
+  cowplot::theme_map(10) +
+  theme(text=element_text(family="jost"),
+        legend.position = "top",
+        legend.title=element_text(hjust=.5),
+        legend.justification = "center",
+        legend.margin=margin(b=-10),
+        plot.title=element_text(hjust=.5, family="bit", lineheight = 1.1),
+        plot.caption=element_markdown(hjust=0, color="grey30", lineheight=1.1, family=),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm")) +
+  labs(title="Preliminary estimated annual agricultural pesticide use\nfor counties of the conterminous United States, 2019", fill="Total EPest-high (in kg) from 69 compounds:", caption=caption1)
+
+ggsave("export/20230607_p1.png", height=6, width=7, bg="white")
+```
+
+### 1992-2019 State-level
+
+```{r read in state data}
+low = read_tsv("data/LowEstimate_AgPestUsebyCropGroup92to19.tsv") |> janitor::clean_names() |> mutate(measure="Low Estimate")
+
+high= read_tsv("data/HighEstimate_AgPestUsebyCropGroup92to19.tsv")|> janitor::clean_names() |> mutate(measure="High Estimate")
+```
+
+```{r wrangle}
+state = rbind(low,high)
+
+selected = state |> filter(year==2019) |> pull(compound) #get compound names from yr2019
+highac = c("corn","soybeans","wheat","cotton","rice","alfalfa")
+lowac = c("vegetables_and_fruit","orchards_and_grapes","pasture_and_hay","other_crops")
+
+state2= state |> 
+  filter(compound %in% selected) |>
+  pivot_longer(corn:other_crops) |>
+  drop_na(value) |>
+  mutate(cat=case_when(name %in% highac~"High-acreage crops",
+                       name %in% lowac~"Low-acreage crops"),
+         STABB = state.abb[match(state, state.name)]) |>
+  mutate(name=str_to_sentence(str_replace_all(name,"_"," ")),
+         long=paste0(cat,":<br>","**",name,"**")) |>
+  group_by(STABB, state, long, measure) |>
+  summarise(total=sum(value,na.rm=TRUE)) |> ungroup() |>
+  group_by(long,measure) |>
+  mutate(pct=total/max(total,na.rm = TRUE))
+```
+
+```{r read in hex shp}
+# hex source: https://team.carto.com/u/andrew/tables/andrew.us_states_hexgrid/public/map
+hex = read_sf("data/us_states_hexgrid/us_states_hexgrid.shp") |>
+  mutate(google_nam=str_trim(str_remove(google_nam," \\s*\\([^\\)]+\\)"))) |>
+  select(STABB=iso3166_2, geometry) |> filter(!STABB %in% c("AK","HI"))
+```
+
+```{r plot, warning=FALSE, message=FALSE, fig.height=3, fig.width=3.5}
+hex |> right_join(state2 |> filter(measure=="High Estimate"), by="STABB") |>
+  ggplot() +
+  geom_sf(data=hex, fill="transparent") +
+  geom_sf(aes(fill=pct)) +
+  geom_sf_text(aes(label=STABB, fill=pct, color=after_scale(prismatic::best_contrast(fill, y = c("white", "black")))), size=2, family="an") +
+  coord_sf(crs="+proj=merc", default_crs = raster::crs(hex), expand=FALSE, clip="off")+
+  scico::scale_fill_scico(palette="lajolla", limits=c(0,1),breaks=c(0,1), label=c("Less","More"), guide=guide_colorbar(barwidth=unit(9,"lines"),barheight = unit(.4,"lines"))) +
+  facet_wrap(~long) +
+  cowplot::theme_map(9.5) +
+  theme(text=element_text(family="jost"),
+        strip.text=element_markdown(lineheight = 1.2, hjust=0),
+        panel.spacing.y=unit(1.1,"lines"),
+        panel.spacing.x=unit(.8,"lines"),
+        legend.position = "top",
+        legend.margin=margin(l=3),
+        legend.title=element_blank(),
+        legend.text=element_text(family="bit"),
+        plot.margin=margin(.5,.5,.5,.5,unit="cm"),
+        plot.title=element_text(family="bit", margin=margin(b=8)),
+        plot.subtitle = element_text(family="bit", lineheight = 1.2),
+        plot.caption=element_markdown(color="grey30",hjust=0, lineheight=1.2,margin=margin(t=15))) +
+  labs(subtitle="Conterminous United States, 1992 to 2019\nSum of high estimates from 69 compounds",
+       caption=paste0("**Note** Estimates for 2018-19 are preliminary<br>","**Source** ",source),
+       title="Estimated annual agricultural pesticide use by Crop and State")
+
+ggsave("export/20230607_p2.png", height=6, width=7, bg="white")
+```
