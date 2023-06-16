@@ -1,0 +1,189 @@
+---
+title: "20230614"
+date: "2023-06-16"
+format: html
+editor: visual
+---
+
+### Canadian wildfires
+
+Data: [National Fire Database fire point data - Summary Stats](https://cwfis.cfs.nrcan.gc.ca/datamart/download/nfdbpnt) from [Canadian Wildland Fire Information System](https://cwfis.cfs.nrcan.gc.ca/home) via Data Is Plural [2023.06.14 edition](https://www.data-is-plural.com/archive/2023-06-14-edition/)
+
+```{r load libraries}
+library(tidyverse)
+library(scales)
+library(rjson)
+library(gt)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load fonts}
+font_add_google("Archivo Narrow","an")
+font_add_google("Bitter","bit")
+font_add_google("Jost","jost")
+```
+
+```{r read in data}
+wildfires = read_csv("data/nfdb.csv")
+caption="Source: Canadian Wildland Fire Information System via Data is Plural"
+```
+
+```{r wrangle}
+can1 = wildfires |> filter(agency=="CANADA") |>
+  pivot_longer(!c(YEAR,agency)) |>
+  mutate(name=str_to_lower(str_replace_all(name,"_"," ")),
+         name=str_remove_all(name,"[.]")) |>
+  mutate(grp2=case_when(str_detect(name, "total")~1,TRUE~0),
+         name=case_when(name=="fires"~"count of all reported fires", 
+                        name=="fires >200ha"~"count of fires greater than 200 hectares",
+                        TRUE~name)) 
+
+c1a = can1 |> filter(grp2==0, !str_detect(name, "size"))
+
+c1b = c1a |> group_by(YEAR) |>
+  mutate(value=value/lag(value)) |>
+  ungroup() |>
+  filter(name=="count of fires greater than 200 hectares") |>
+  mutate(name="proportion of fires>200ha to all reported fires")
+```
+
+```{r theme}
+ theme1= 
+  cowplot::theme_minimal_grid(12) +
+  theme(text=element_text(family="jost"),
+        strip.text=element_text(hjust=0, size=12),
+        axis.title.y=element_blank(),
+        plot.title.position = "plot",
+        plot.title=element_text(family="bit"),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey40"),
+        plot.margin=margin(.4,.75,.4,.4,unit="cm"),
+        legend.position = "top",
+        legend.margin=margin(l=-29),
+        legend.text=element_text(size=11.5))
+```
+
+```{r "p1", fig.height=3.5, fig.width=3.5}
+# wildfire count in Canada
+rbind(c1a,c1b) |>
+  group_by(name) |>
+  mutate(fill=value/max(value)) |>  
+  ggplot(aes(x=YEAR, y=value, fill=fill)) +
+  geom_col() +
+  scale_y_continuous(labels=scales::comma) +
+  scico::scale_fill_scico(begin=.1, guide="none") +
+  facet_wrap(~str_to_sentence(name), scales="free_y", ncol=1) +
+  theme1 +
+  labs(x="Year", y="Value",caption=caption, title="Canadian Wildfires (1959 - 2021)")
+```
+
+```{r}
+# province name and abbr df
+prov = data.frame(
+  stringsAsFactors = FALSE,
+              province = c("Ontario","Quebec",
+                       "Nova Scotia","New Brunswick","Manitoba","British Columbia",
+                       "Prince Edward Island","Saskatchewan","Alberta",
+                       "Newfoundland and Labrador"),
+              abbr = c("ON","QC","NS","NB","MB",
+                       "BC","PE","SK","AB","NL")
+)
+```
+
+```{r "p2", fig.height=3.5, fig.width=3.5}
+# wildfires count and nurned area by province 
+wildfires |> filter(agency %in% c("AB","BC","ON","QC")) |>
+  select(-MIN_SIZE_HA,-MAX_SIZE_HA, -TOTAL_HA) |>
+  pivot_longer(FIRES:`TOTAL_HA (>200ha)`) |>
+  mutate(name=case_when(name=="FIRES"~"Count of all reported fires",
+                        name=="FIRES >200ha"~"Count of fires greater than 200 hectares",
+                        name=="TOTAL_HA (>200ha)"~"Total area burned, fires greater than 200 hectares")) |>
+  left_join(prov, by=c("agency"="abbr")) |>
+  ggplot(aes(x=YEAR, y=value, color=province)) +
+  geom_line(key_glyph=draw_key_rect, linewidth=.7) +
+  scale_y_continuous(labels=label_number_si()) +
+  MetBrewer::scale_color_met_d("Egypt") +
+  facet_wrap(~name, scales="free_y", ncol=1) +
+  theme1 + 
+  labs(x="Year",color="Province:", caption=caption,title="Canadian Wildfires by Province (1959 - 2021)")
+```
+
+### Ad-targeting labels
+
+Data: [Xandr Audience Segments](https://github.com/the-markup/xandr-audience-segments) by [The Markup](https://themarkup.org/) via Data Is Plural [2023.06.14 edition](https://www.data-is-plural.com/archive/2023-06-14-edition/)
+
+```{r}
+labels = read_csv("https://raw.githubusercontent.com/the-markup/xandr-audience-segments/main/data_marketplace_public_segments_pricing_05212021.csv") |> janitor::clean_names()
+```
+
+```{r}
+# count of segments by dog/cat food brands that follow WSAVA guidelines
+# str_detect reference: https://stackoverflow.com/questions/35962426/multiple-strings-with-str-detect-r
+hills= labels |> 
+  filter(str_detect(segment_name,"Hills")) |>
+  filter(str_detect(segment_name,"Pet|Dog|Cat|Animal")) |>
+  filter(!str_detect(segment_name,"Hillshire|Rapids_Three")) |>
+  mutate(grp="Hill's")
+
+purina = labels |> filter(str_detect(segment_name,"Purina")) |> 
+  filter(!(str_detect(segment_name,"Litter|Tidy Cats"))|>  # exclude cat litter
+  mutate(grp="Purina")
+  
+royal_canin= labels |> filter(str_detect(segment_name,"Royal Canin")) |> 
+  mutate(grp="Royal Canin")
+iams= labels |> filter(str_detect(segment_name, "Iams ")) |> 
+  mutate(grp="Iams")
+eukanuba = labels |> filter(str_detect(segment_name, "Eukanuba ")) |> 
+  mutate(grp="Eukanuba")
+
+rbind(hills,royal_canin, purina, iams, eukanuba) |> 
+  count(brand=grp,sort=TRUE) 
+```
+
+```{r}
+# count of segments relating to Purina, by product line
+purina2 = labels |> 
+  filter(str_detect(segment_name,"Purina")) |>
+  mutate(line=case_when(str_detect(segment_name,"One")~"One",
+                       str_detect(segment_name,"Friskies")~"Friskies",
+                       str_detect(segment_name,"Chow")~"Chow",
+                       str_detect(segment_name,"Beneful")~"Beneful",
+                       str_detect(segment_name,"Tidy Cats")~"Tidy Cats",
+                       str_detect(segment_name,"Fancy Feast")~"Fancy Feast",
+                       str_detect(segment_name,"Alpo")~"Alpo",
+                       str_detect(segment_name,"Beyond")~"Beyond",
+                       )) 
+purina2 |> count(line, sort=TRUE)
+```
+
+```{r}
+# segment name containing cat or cats, count of segment by provider
+labels |> 
+  filter(str_detect(segment_name,"Cat ")|str_detect(segment_name,"Cats ")) |>
+  count(data_provider_name, sort=TRUE)
+```
+
+### Food defect thresholds
+
+Data: [Cody Winchester's aata table](https://github.com/cjwinchester/fda-food-defect-action-levels) of [FDA food defect levels handbook](https://www.fda.gov/food/ingredients-additives-gras-packaging-guidance-documents-regulatory-information/food-defect-levels-handbook) via Data Is Plural [2023.06.14 edition](https://www.data-is-plural.com/archive/2023-06-14-edition/)
+
+```{r read in data}
+temp = "https://raw.githubusercontent.com/cjwinchester/fda-food-defect-action-levels/main/fda-food-defect-levels.json"
+food = as.data.frame(fromJSON(temp))
+caption= "Source: FDA food defect levels handbook via Cody Winchester Github and Data is Plural"
+```
+
+```{r gt table}
+# Peanut and peanut butter gt table
+food |> unnest(defect_action_levels)  |>
+  filter(str_detect(commodity,"Peanut"))  |>
+  select(1:3, significance) |>
+  rename_all(~ str_to_title(gsub("_", " ", .))) |>
+  group_by(Commodity) |>
+  gt() |>
+  tab_source_note(source_note = caption) |>
+  tab_header(title="Peanut Butter and Shelled Peanuts", subtitle="Maximum levels of natural or unavoidable defects in foods for human use that present no health hazard",) |>
+  gtExtras::gt_theme_nytimes()
+```
