@@ -66,7 +66,8 @@
    * [Creating “Super” Radar Plots with ggplot2](https://rpubs.com/tshapiro/super-radar-plots) by Tanya Shapiro 
    * [Curvy arrows in #Rstats plots](https://twitter.com/jschwabish/status/1613175754728022017) thread by Jon Schwabish
    * [Designing #TidyTuesday visualisations for mobile (with Quarto)](https://nrennie.rbind.io/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/) by Nicola Rennie 
-   * [Easily create sector and series of circles charts using Cartesian coordinates and ggplot2 with {ggtricks}](https://www.abdoulblog.com/posts/2023-05-31_ggtricks-intro/) by Abdoul ISSA BIDA 
+   * [Easily create sector and series of circles charts using Cartesian coordinates and ggplot2 with {ggtricks}](https://www.abdoulblog.com/posts/2023-05-31_ggtricks-intro/) by Abdoul ISSA BIDA
+   * [Efficiency and Consistency: Automate Subset Graphics with ggplot2 and purrr](https://www.cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/) by Cédric Scherer
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
    * [Ordering fill colour and removing white space](https://twitter.com/cararthompson/status/1600852528056471554) in waffle::geom_waffle by Cara Thompson
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
