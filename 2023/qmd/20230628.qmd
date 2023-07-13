@@ -1,0 +1,68 @@
+---
+title: "20230628"
+date: "2023-07-13"
+format: html
+editor: visual
+---
+
+### Global income deciles
+Data source: A consistent [dataset](https://zenodo.org/record/7093997) for net income deciles for 190 countries, aggregated to 32 geographical regions and the world from 1958-2015
+
+Citation:  
+Kanishka B. Narayan, Brian C. O'Neill, Stephanie Waldhoff, & Claudia Tebaldi. (2022). A consistent dataset for net income deciles for 190 countries, aggregated to 32 geographical regions and the world from 1958-2015 (1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7093997
+
+```{r}
+library(tidyverse)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r}
+font_add_google("Bitter","bit")
+font_add_google("Jost","jost")
+font_add_google("Barlow","barlow")
+```
+
+```{r message=FALSE}
+inc1 = read_csv("Datasets_on_net_income_deciles_ISO_region_global/final_datasets/Final_Global_Income_Distribution.csv")
+inc2 = read_csv("Datasets_on_net_income_deciles_ISO_region_global/final_datasets/Final_32_region_deciles_1958-2015.csv")
+inc3 = read_csv("Datasets_on_net_income_deciles_ISO_region_global/final_datasets/Final_Historical_data_ISO.csv")
+
+gcam = read_csv("Datasets_on_net_income_deciles_ISO_region_global/mapping_files/GCAM_region_names.csv")
+wider = read_csv("Datasets_on_net_income_deciles_ISO_region_global/mapping_files/WIDER_mapping_file.csv")
+
+caption="Source: Kanishka B. Narayan, Brian C. O'Neill, Stephanie Waldhoff, & Claudia Tebaldi. (2022). A consistent dataset for net income deciles for 190 countries, aggregated to 32 geographical regions and the world from 1958-2015 (1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7093997"
+```
+
+```{r, fig.height=3.5, fig.width=3.5, message=FALSE, warning=FALSE}
+# Gini index of 16 GCAM regions
+c1= "#0F24A3"
+inc2a |>
+  ggplot(aes(x=year, y=region_gini, group=region)) +
+  geom_line(color=c1) +
+  gghighlight::gghighlight(use_direct_label = FALSE) + 
+  #using {ggtext} instead of {gghighlight} labels 
+  geom_richtext(data=inc2a |> filter(year==1995, region %in% inc2b[1:8]), aes(label=str_wrap(region,10), hjust=0), family="jost", size=3.6, lineheight=.8, nudge_y = -.15, nudge_x=-10,label.padding = grid::unit(rep(0, 4), "pt"), fill=alpha("white",.6), label.color=NA, color=c1) +
+  geom_richtext(data=inc2a |> filter(year==1995, !region %in% inc2b[1:8]), aes(label=str_wrap(region,10), hjust=0), family="jost", size=3.6, lineheight=.8, nudge_y = .16, nudge_x=-10,label.padding = grid::unit(rep(0, 4), "pt"), fill=alpha("white",.6), label.color=NA, color=c1) +
+  scale_x_continuous(breaks=seq(1970,2010,10), labels=c("'70","'80","'90","'00","'10")) +
+  scale_y_continuous(labels=scales::percent, limits=c(.2,.7)) +
+  facet_wrap(~region) +
+  cowplot::theme_minimal_grid(11) +
+  theme(strip.text = element_blank(),
+        text=element_text(family="bit"),
+        panel.grid.major=element_line(size=.3),
+        panel.spacing = unit(1.1,"lines"),
+        plot.title.position = "plot",
+        axis.text=element_text(family="barlow"),
+        plot.margin=margin(.5,.75,.5,.5,unit="cm"),
+        plot.caption.position = "plot",
+        plot.caption=element_text(hjust=0, color="grey40", family="barlow")
+        ) +
+  labs(x="Year", y="Gini index (%)",
+       title=str_to_title("regional income distribution"),
+       subtitle="Gini Index of 16 GCAM regions between 1967 and 2015\n",
+       caption=str_wrap(caption,140))
+```
+
