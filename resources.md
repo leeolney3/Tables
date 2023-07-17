@@ -301,7 +301,8 @@
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
   * [Which fonts to use for your charts and tables](https://blog.datawrapper.de/fonts-for-data-visualization/)
   * [What to consider when using text in data visualizations](https://blog.datawrapper.de/text-in-data-visualizations/)
-* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))  
+* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
+* [Creating a Design System to Prevent Problematic Colour Pairings](https://nightingaledvs.com/data-journalism-colour-accessibility/?mc_cid=c4e145c304&mc_eid=200a21361c) by Ben Willers on [Nightingale](https://nightingaledvs.com/)
 * [The misuse of colour in science communication](https://www.nature.com/articles/s41467-020-19160-7) (Crameri et al., 2020) (h/t [Benjamin Nowak](https://twitter.com/BjnNowak/status/1638915678035120128))
 * [Very Peri Pantone 2022 Divergence for Data Visualization](https://nightingaledvs.com/very-peri-pantone-2022-divergence-for-data-visualization/) by Theresa-Marie Rhyne 
 * [Visualizing with Text – examples from the wild](https://richardbrath.wordpress.com/2022/12/31/visualizing-with-text-examples-from-the-wild/) by Richard Brath  
