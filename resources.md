@@ -69,12 +69,13 @@
    * [Easily create sector and series of circles charts using Cartesian coordinates and ggplot2 with {ggtricks}](https://www.abdoulblog.com/posts/2023-05-31_ggtricks-intro/) by Abdoul ISSA BIDA
    * [Efficiency and Consistency: Automate Subset Graphics with ggplot2 and purrr](https://www.cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/) by Cédric Scherer
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
-   * [Ordering fill colour and removing white space](https://twitter.com/cararthompson/status/1600852528056471554) in waffle::geom_waffle by Cara Thompson
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
    * [Horror Movies](https://github.com/tashapiro/horror-movies) ggplot2 workshop by Tanya Shapiro ([tweet](https://twitter.com/tanya_shapiro/status/1580638749687676930))
    * [How to recreate Pew opinion graphs with ggplot2 in R](https://rforpoliticalscience.com/2022/06/02/recreate-pew-opinion-graphs-with-ggplot-in-r/) by R for Political Science 
-   * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall 
+   * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall
+   * [Jazz up your ggplots!](https://waterdata.usgs.gov/blog/ggplot-jazz/) by USGS Data Science 
    * [Line chart with small multiple](https://r-graph-gallery.com/web-line-chart-small-multiple-all-group-greyed-out.html) by Gilbert Fontana on R Graph Gallery
+   * [Ordering fill colour and removing white space](https://twitter.com/cararthompson/status/1600852528056471554) in waffle::geom_waffle by Cara Thompson
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
 * Facets/legends/axes
