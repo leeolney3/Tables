@@ -75,6 +75,7 @@
    * [Increasing the Flexibility and Robustness of Plots in ggplot2](https://meghan.rbind.io/blog/plot-robustness/) by Meghan Hall
    * [Jazz up your ggplots!](https://waterdata.usgs.gov/blog/ggplot-jazz/) by USGS Data Science 
    * [Line chart with small multiple](https://r-graph-gallery.com/web-line-chart-small-multiple-all-group-greyed-out.html) by Gilbert Fontana on R Graph Gallery
+   * [My favorite ggplot2 packages with examples](https://jkunst.com/blog/posts/2023-07-10-my-favorite-ggplot2-packages-with-examples/#ggfittext) by Joshua Kunst Fuentes
    * [Ordering fill colour and removing white space](https://twitter.com/cararthompson/status/1600852528056471554) in waffle::geom_waffle by Cara Thompson
    * [Storytelling in ggplot using rounded rectangles](https://albert-rapp.de/posts/ggplot2-tips/11_rounded_rectangles/11_rounded_rectangles.html) by Albert Rapp 
    * [Variations on a ggtheme: Applying a unifying aesthetic to your plots](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/) by Cara Thompson
@@ -302,6 +303,7 @@
   * [When to use sequential and when to use diverging color scales](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
   * [Which fonts to use for your charts and tables](https://blog.datawrapper.de/fonts-for-data-visualization/)
   * [What to consider when using text in data visualizations](https://blog.datawrapper.de/text-in-data-visualizations/)
+  * [Emphasize what you want readers to see with color](https://blog.datawrapper.de/emphasize-with-color-in-data-visualizations/)
 * [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/) by Sasha Trubetskoy (h/t [Georgios Karamanis](https://twitter.com/geokaramanis))
 * [Creating a Design System to Prevent Problematic Colour Pairings](https://nightingaledvs.com/data-journalism-colour-accessibility/?mc_cid=c4e145c304&mc_eid=200a21361c) by Ben Willers on [Nightingale](https://nightingaledvs.com/)
 * [The misuse of colour in science communication](https://www.nature.com/articles/s41467-020-19160-7) (Crameri et al., 2020) (h/t [Benjamin Nowak](https://twitter.com/BjnNowak/status/1638915678035120128))
