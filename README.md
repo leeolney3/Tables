@@ -2,7 +2,7 @@
 
 This repository is created to document my process of learning data visualization in R and to share [resources](https://github.com/leeolney3/Tables/blob/main/resources.md) that I've found helpful in the learning process. 
 
-Feedback is very welcome via [Twitter](https://twitter.com/leeolney3) or [mail](mailto:leeolney3@gmail.com).
+Feedback is very welcome via @leeolney@fosstodon.org or [leeolney3@gmail.com](leeolney3@gmail.com)
 
 ## Visualizations 
 
