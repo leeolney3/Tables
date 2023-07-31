@@ -1,0 +1,66 @@
+---
+title: "20230726"
+format: html
+editor: visual
+---
+
+### Natural resources 
+Data source: [Office of Natural Resources Revenue](https://revenuedata.doi.gov/downloads) by way of [Data Is Plural](https://www.data-is-plural.com/archive/2023-07-26-edition/).
+
+```{r load libraries}
+library(tidyverse)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load font}
+font_add_google("Jost","jost", bold.wt = 500)
+```
+
+#### Production by month
+```{r read in data}
+prod_mn = read_csv("data/monthly_production.csv",show_col_types = FALSE) |> janitor::clean_names()
+
+caption="Source: Office of Natural Resources Revenue"
+```
+
+```{r "p1", fig.height=2.5, fig.width=4}
+prod_mn |>
+  mutate(date1=lubridate::mdy(date),
+         classcat = glue::glue("{land_class},\n{land_category}")) |>
+  ggplot(aes(x=date1, y=volume, color=classcat)) +
+  geom_line() +
+  geom_text(data=. %>% filter(date=="01/01/2011", classcat=="Federal,\nOnshore", commodity!="Oil Prod Vol (bbl)"), aes(label=classcat, y=volume*1.1), family="jost", lineheight=.8, size=3.5, hjust=0) +
+  geom_text(data=. %>% filter(date=="01/01/2011", classcat=="Federal,\nOnshore", commodity=="Oil Prod Vol (bbl)"), aes(label=classcat, y=volume*2.2), family="jost", lineheight=.8, size=3.5, hjust=0) +
+  # direct labeling 
+  geom_text(data=. %>% filter(date=="01/01/2011", classcat=="Federal,\nOffshore"), aes(label=classcat, y=volume*1.1), family="jost", lineheight=.8, size=3.5, hjust=0) +
+  geom_text(data=. %>% filter(date=="01/01/2003", classcat=="Native American,\nOnshore", commodity=="Oil Prod Vol (bbl)"), aes(label=classcat, y=volume*4.5), family="jost", lineheight=.8, size=3.5, hjust=0) +
+  geom_text(data=. %>% filter(date=="01/01/2003", classcat=="Native American,\nOnshore", commodity=="Coal Prod Vol (tons)"), aes(label=classcat, y=volume*2.5), family="jost", lineheight=.8, size=3.5, hjust=0) +
+   geom_text(data=. %>% filter(date=="01/01/2003", classcat=="Native American,\nOnshore", commodity=="Gas Prod Vol (mcf)"), aes(label=classcat, y=volume*1.5), family="jost", lineheight=.8, size=3.5, hjust=0) +
+  facet_wrap(~commodity, scales="free_y") +
+  scale_y_continuous(labels=scales::label_number_si(), limits=c(0,NA)) +
+  scale_x_date(breaks="2 years", date_labels = "%y") +
+  scale_color_manual(values=c("#66489D","#169390","#EE538B")) +
+  theme_minimal(base_family = "jost", base_size = 11) +
+  theme(legend.position = "none",
+        panel.grid.minor.x = element_blank(),
+        strip.text=element_text(face="bold", hjust=0, size=11),
+        plot.title.position = "plot",
+        plot.title=element_text(face="bold"),
+        plot.subtitle = element_text(color="grey20", size=10),
+        plot.caption.position="plot",
+        plot.caption=element_text(hjust=0, color="grey30"),
+        ) +
+  labs(x="Month and year", y="Volume", caption=caption,
+       title="U.S. coal, gas and oil production volume by month",
+       subtitle="Between January 2003 and Febuary 2023"
+       )
+```
+
+
+
+
+
+
+
