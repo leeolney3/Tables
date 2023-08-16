@@ -194,9 +194,11 @@
   * [Pattern-based spatial analysis with {motif}](https://twitter.com/jakub_nowosad/status/1575105118311047168) by Jakub Nowosad
   * [R packages for visualising spatial data](https://nrennie.rbind.io/blog/2022-12-17-r-packages-for-visualising-spatial-data/) by Nicola Rennie
   * [Route finding (sfnetwork vignettes)](https://twitter.com/quite_grey/status/1411785842520203266) by not quite my grey @quite_grey
+  * [Using affine transformations](https://twitter.com/long39ng/status/1689990625104420864) by Long Nguyen
   * [Short tutorial on how to create small spatial multiples with #rstats](https://twitter.com/shinysci/status/1541119104395780096) by Marco Sciaini @shinysci  
   * [Spatial Data Sources in R](https://ecodynizw.github.io/posts/r-spatial-data/) by Cédric Scherer on Ecological Dynamics
   * [Spatial resampling for #TidyTuesday and the #30DayMapChallenge](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjBwqzRo8P6AhUIxhoKHfULAtYQFnoECAwQAQ&url=https%3A%2F%2Fjuliasilge.com%2Fblog%2Fmap-challenge%2F&usg=AOvVaw3Tu9w1J9rjPcCLrnDCZ3Cd) by Julia Silge
+  * [State of tmap 2023 workshop .Rmd](https://github.com/r-tmap/state-of-tmap-2023/blob/main/tmap_workshop.md) https://github.com/r-tmap/state-of-tmap-2023/blob/main/tmap_workshop.md by Jakub Nowosad
   * [Rayshader Portraits](https://github.com/Pecners/rayshader_portraits) repo by Spencer Schien @MrPecners
   * [Recordings of #geospatial tutorials from the OpenGeoHub Summer School 2022](https://github.com/Nowosad/OGH_summer_school_2022) by Jakub Nowosad 
   * [An Introduction to GIS](https://bjnnowak.github.io/gis/) by Benjamin Nowak
