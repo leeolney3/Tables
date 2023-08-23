@@ -271,6 +271,7 @@
   * Tom Mock's [script](https://twitter.com/thomas_mock/status/1531318119016370177) to get all the functions in a #RStats package and their arguments 
   * Script to count [fonts used](https://twitter.com/geokaramanis/status/1606556048592191488) and [geoms](https://twitter.com/geokaramanis/status/1608069528197517314) by Georgios Karamanis 
   * [Helper function](https://twitter.com/tanya_shapiro/status/1610648262423330816) for writing captions with Font Awesome Brand icons by @tanya_shapiro
+  * [Creating template files with R](https://nrennie.rbind.io/blog/script-templates-r/) by Nicola Rennie
 * Scraping 
   * [Web scraping with {rvest}](https://bjnnowak.netlify.app/2022/01/07/r-who-grows-what/) by Benjamin Nowak 
   * [Web scraping tutorial in R](https://rpubs.com/haleyepperlyfox/916671) from interactive maps using R and rvest package by Haley Epperly
