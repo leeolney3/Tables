@@ -184,6 +184,7 @@
   * [Group-wise spatial data analysis](https://twitter.com/kyle_e_walker/status/1559568087942172673) thread by Kyle Walker @kyle_e_walker
   * ["Hot-spot" analysis: find patterns and areas of focus in complicated spatial datasets](https://twitter.com/kyle_e_walker/status/1703839457672077742) by Kyle Walker @kyle_e_walker
   * [Inverse-distance weighted smoothing](https://twitter.com/nrennie35/status/1612740418206306310) dataviz and thread by Nicola Rennie
+  * [Lego Choropleth map with R](https://r-graph-gallery.com/web-choropleth-map-lego-style.html) by Benjamin Nowak
   * [Making crisp spike maps with R](https://www.youtube.com/watch?v=qTDf5VVnjMM) by Milos Popovic
   * [Making maps with R](https://www.paulamoraga.com/tutorial-maps/) by Paula Moraga, KAUST 
   * [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html#affine-transformations) by Edzer Pebesma
