@@ -1,7 +1,7 @@
 ## Links to resources
 
 <details>
-  <summary><b>Tables: cookbooks/tutorials (R)</b> (click to expand)</summary>
+  <summary><b>R, tables: cookbooks/tutorials</b> (click to expand)</summary>
 
 <!-- toc -->
 
@@ -38,7 +38,7 @@
 </details>      
     
 <details>
-  <summary><b>Data visualization (R)</b> (click to expand)</summary>
+  <summary><b>R, data visualization</b> (click to expand)</summary>
 
 <!-- toc --> 
 * Collection/list   
@@ -106,7 +106,7 @@
 </details> 
 
 <details>
-  <summary><b>Vis: color/text/image (R)</b> (click to expand)</summary>
+  <summary><b>R, color/text/image</b> (click to expand)</summary>
 
 <!-- toc --> 
 * Color
@@ -124,7 +124,7 @@
   * [{gradienttext}](https://github.com/samiaab1990/gradienttext) R package by Samia for creating gradient text labels on ggplot graphs
   * [Alt Text in R: Plots, Reports, and Shiny](https://www.jumpingrivers.com/blog/accessibility-alt-text-in-r/) by Nicola Rennie in Jumping Rivers
   * [Easy to read text with ggfx::with_outer_glow()](https://twitter.com/cararthompson/status/1611389044847697920) thread by Cara Thompson
-  * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/post/2022-03-04-fonts-and-icons/) Albert Rapp
+  * [How to use Fonts and Icons in ggplot](https://albert-rapp.de/posts/ggplot2-tips/08_fonts_and_icons/08_fonts_and_icons.html) Albert Rapp
   * Level Up Your Labels: Tips and Tricks for Annotating Plots [poster](https://www.cararthompson.com/talks/user2022) and [Twitter thread](https://twitter.com/cararthompson/status/1539662527499337728) by Cara Thompson 
   * [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/) by Andrew Heiss
   * [Text customization with {ggplot2}](https://bjnnowak.netlify.app/2021/09/05/r-changing-plot-fonts/) by Benjamin Nowak 
@@ -144,7 +144,7 @@
 </details> 
 
 <details>
-  <summary><b>Vis: distribution/uncertainty (R)</b> (click to expand)</summary>
+  <summary><b>R, distribution/uncertainty vis</b> (click to expand)</summary>
 
 <!-- toc --> 
 * Distributions 
@@ -168,7 +168,7 @@
 </details>   
 
 <details>
-  <summary><b>Spatial (R)</b> (click to expand)</summary>
+  <summary><b>R, spatial</b> (click to expand)</summary>
 
 <!-- toc --> 
   * [A curated list](https://github.com/marcosci/awesome-rayshader-rayrender) of awesome rayshader and rayrender resources and shiny things by Marco Sciaini @shinysci 
@@ -210,7 +210,7 @@
 </details>  
 
 <details>
-  <summary><b>Analysis/statistical models (R)</b> (click to expand)</summary>
+  <summary><b>R, analysis/statistical models</b> (click to expand)</summary>
 <!-- toc --> 
 
 * Analysis
@@ -262,7 +262,7 @@
 </details>   
 
 <details>
-  <summary><b>Others (R)</b> (click to expand)</summary>
+  <summary><b>R, other resources</b> (click to expand)</summary>
 
 <!-- toc -->  
 
