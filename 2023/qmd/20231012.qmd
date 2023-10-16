@@ -1,0 +1,144 @@
+---
+title: "20231011"
+date: "2023-10-12"
+format: html
+editor: visual
+---
+
+### US income distributions
+Source: [Income Distributions and Dynamics in America](https://www.minneapolisfed.org/institute/income-distributions-and-dynamics-in-america/data-center)
+
+```{r load libraries}
+library(tidyverse)
+library(sf)
+library(geofacet)
+library(ggh4x)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load fonts}
+font_add_google("Jost", bold.wt = 500)
+f1="Jost"
+font_add_google("Archivo Narrow")
+f2="Archivo Narrow"
+font_add_google("Archivo")
+f3="Archivo"
+```
+
+```{r read in data}
+#Individual-level W-2 data for states
+inc= read_csv("data/idda/pctl_of_inc_state_w2.csv")
+#Individual-level W-2 data for states, 5-year horizon
+share1 = read_csv("data/idda/inc_share_state_w2.csv")
+share2 = read_csv("data/idda/inc_share_state_1040.csv")
+```
+
+```{r geofacet grid}
+customgrid = tribble(
+  ~row, ~col, ~code,
+  8,1,"HI",
+  5,1,"CA",
+  4,1,"OR",
+  3,1,"WA",
+  1,1,"AK",
+  6,2,"AZ",
+  5,2,"UT",
+  4,2,"NV",
+  3,2,"ID",
+  6,3,"NM",
+  5,3,"CO",
+  4,3,"WY",
+  3,3,"MT",
+  3,4,"ND",
+  4,4,"SD",
+  5,4,"NE",
+  6,4,"KS",
+  7,4,"OK",
+  8,4,"TX",
+  3,5,"MN",
+  4,5,"IA",
+  5,5,"MO",
+  6,5,"AR",
+  7,5,"LA",
+  2,6,"WI",
+  3,6,"IL",
+  4,6,"IN",
+  5,6,"KY",
+  6,6,"TN",
+  7,6,"MS",
+  3,7,"MI",
+  4,7,"OH",
+  5,7,"WV",
+  6,7,"NC",
+  7,7,"AL",
+  4,8,"PA",
+  5,8,"VA",
+  6,8,"SC",
+  7,8,"GA",
+  3,9,"NY",
+  4,9,"NJ",
+  5,9,"MD",
+  6,9,"DC",
+  8,9,"FL",
+  2,10,"VT",
+  3,10,"MA",
+  4,10,"CT",
+  5,10,"DE",
+  1,11,"ME",
+  2,11,"NH",
+  4,11,"RI"
+) %>% 
+  mutate(name=state.name[match(code,state.abb)],
+         name=case_when(code=="DC"~"DC", TRUE~name)) 
+```
+
+#### Foreign-Born Individual Earnings by State, 50th Percentile, 2005-2019
+* Time series conditional fill method adapted from: [Georgios Karamanis](https://r-graph-gallery.com/web-time-series-and-facetting.html)
+* Colors from [Ben Willers](https://nightingaledvs.com/data-journalism-colour-accessibility/?mc_cid=c4e145c304)
+
+```{r plot, message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
+inc |> filter(group_var=="xfb") |>
+  select(year, group_var_val,pctl50_adj,geo_abb) |>
+  pivot_wider(names_from = group_var_val, values_from = pctl50_adj) |>
+  ggplot(aes(x=year))+
+  geom_line(aes(y = Foreign_Born, color = "Foreign Born")) +
+  geom_line(aes(y = Not_Foreign_Born, color = "Not Foreign Born")) +
+  stat_difference(aes(ymin = Not_Foreign_Born, ymax = Foreign_Born), alpha = 0.3) +
+  geom_text(data= . %>% filter(year==min(year)),aes(x=2006, y=53000,label=geo_abb),family="Jost", hjust=0, color="black", size=3.5) +
+  scale_y_continuous(labels=scales::label_number_si()) +
+  scale_x_continuous(limits=c(2005,2020),breaks=seq(2005,2020,4), labels=c("'05","'09","'13","'17")) +
+  scale_color_manual(name="color",values = c("#293087", "#F15B47")) +
+  scale_fill_manual( name="fill",values = c(colorspace::lighten("#293087"), colorspace::lighten("#F15B47")),labels = c("Foreign born > Not foreign born", "Not foreign born > Foreign born"), guide=guide_legend(order=0, override.aes = list(linewidth=4))) +
+  facet_geo(~geo_abb,grid=customgrid) +
+  theme_minimal(base_family = "Archivo") +
+  theme(legend.position = "top",
+        strip.text = element_blank(),
+        axis.text = element_text(family = "Archivo Narrow"),
+        panel.grid.minor = element_blank(),
+        panel.grid = element_line(size=.3),
+        panel.background = element_rect(fill="#fafafa", size=.4),
+        legend.direction = "horizontal",
+        legend.box = "vertical",
+        legend.title = element_blank(),
+        legend.spacing.y=unit(-.7,"lines"),
+        legend.box.margin=margin(b=-35),
+        plot.title.position = "plot",
+        plot.title=element_text( hjust=.5, face="bold"),
+        plot.subtitle = element_text(size=10, color="grey30", hjust=.5),
+        plot.caption.position="plot",
+        plot.caption=element_text(color="grey40", size=8, hjust=0),
+        plot.margin = margin(.4,.5,.4,.5,unit="cm"),
+        ) +
+  labs(x="Year", y="50th Percentile",
+       title="Foreign-Born Individual Earnings, 50th Percentile, 2005-2019",
+       subtitle="Individual-level W-2 data for states.Inflation adjusted values, 2012 dollars",
+       caption="Source: Income Distributions and Dynamics in America project, by way of Data Is Plural")
+
+ggsave("20231012.png", height=6, width=8, bg="white")
+```
+
+
+
