@@ -177,6 +177,7 @@
   * [Bertin R Package](https://twitter.com/BjnNowak/status/1660605200137175042): easily transform choropleth maps into valued points by Benjamin Nowak
   * [Create spatial square/hexagon grids and count points inside in R with sf](https://urbandatapalette.com/post/2021-08-tessellation-sf/) by Kenneth Wong
   * [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/) by Spencer Schien
+  * [Customized Dorling cartogram with R](https://r-graph-gallery.com/web-dorling-cartogram-with-R.html) by Benjamin Nowak
   * [Explore the hidden secrets of urban layouts with #rstats](https://twitter.com/shinysci/status/1656284290198433792) ([gist](https://gist.github.com/marcosci/2a26e936c007e58493bf5fc8a2c25209)) by Marco Sciaini @shinysci
   * [Geocomputation with R’s guide to reproducible spatial data analysis](https://twitter.com/jakub_nowosad/status/1587106672383762434) by Jakub Nowosad
   * [geocompx](https://geocompx.org/): home for all of our resources on reproducible geographic data analysis, modeling, and visualization with open source software
