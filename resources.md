@@ -68,6 +68,7 @@
    * [Designing #TidyTuesday visualisations for mobile (with Quarto)](https://nrennie.rbind.io/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/) by Nicola Rennie 
    * [Easily create sector and series of circles charts using Cartesian coordinates and ggplot2 with {ggtricks}](https://www.abdoulblog.com/posts/2023-05-31_ggtricks-intro/) by Abdoul ISSA BIDA
    * [Efficiency and Consistency: Automate Subset Graphics with ggplot2 and purrr](https://www.cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/) by Cédric Scherer
+   * (Even More) Exciting Data Visualizations with ggplot2 Extensions [Slides](https://z3tt.github.io/exciting-extensions/slides.html#/title-slide) by Cédric Scherer
    * [Exploring other ggplot2 geoms](https://ivelasq.rbind.io/blog/other-geoms/) by Isabella Velásquez
    * [ggplot Wizardry Hands-On](https://www.google.com/search?q=ggplot+wizardry&oq=ggplot+wizar&aqs=chrome.1.69i57j0i512.3869j0j4&sourceid=chrome&ie=UTF-8) by Cédric Scherer     
    * [Horror Movies](https://github.com/tashapiro/horror-movies) ggplot2 workshop by Tanya Shapiro ([tweet](https://twitter.com/tanya_shapiro/status/1580638749687676930))
