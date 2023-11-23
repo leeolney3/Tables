@@ -1,0 +1,74 @@
+---
+title: "20231122"
+date:"2023-11-22"
+format: html
+editor: visual
+---
+
+Food access data from [USDA](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/) by way of [Data Is Plural 2023.11.22 edition](https://www.data-is-plural.com/archive/2023-11-22-edition/).
+
+```{r load libraries}
+library(tidyverse)
+library(readxl)
+library(ggtext)
+library(showtext)
+showtext_opts(dpi = 300)
+showtext_auto(enable = TRUE)
+```
+
+```{r load fonts}
+font_add_google("Barlow")
+```
+
+```{r read in data}
+des = read_xlsx("data/FoodAccessResearchAtlasData2019.xlsx", sheet=2)
+df1 = read_xlsx("data/FoodAccessResearchAtlasData2019.xlsx", sheet=3)
+
+tr = tigris::tracts(state="NM",cb=TRUE,year=2019)
+```
+
+```{r wrangle}
+lab = tibble(
+  name=c("LILATracts_halfAnd10","LILATracts_1And10","LILATracts_1And20","LILATracts_Vehicle"),
+  name1=c("LI and LA at 1/2 and 10 miles","LI and LA at 1 and 10 miles","LI and LA at 1 and 20 miles","LI and LA using vehicle access"),
+  des = c("Low-income census tracts where a significant number or share of residents is more than 1/2 mile (urban) or 10 miles (rural) from the nearest supermarket.","Low-income census tracts where a significant number or share of residents is more than 1 mile (urban) or 10 miles (rural) from the nearest
+supermarket.","Low-income census tracts where a significant number or share of residents is more than 1 mile (urban) or 20 miles (rural) from the nearest supermarket.","Low-income census tract where more than 100 housing units do not have a vehicle and are more than ½ mile from the nearest supermarket, or a significant number or share of residents are more than 20 miles from the nearest supermarket.")
+) |> 
+  mutate(longname= glue::glue("**{name1}**\n{str_wrap(des,32)}"),
+         longname= str_replace_all(longname,"\n","<br>"),
+         longname=fct_inorder(longname, ordered = TRUE))
+
+df2 =df1 |> filter(State=="New Mexico") |>
+  select(GEOID=CensusTract, LILATracts_1And10:LILATracts_Vehicle) |>
+  pivot_longer(!GEOID) |>
+  left_join(lab, by="name") |>
+  #mutate(longname=fct_inorder(longname, ordered=T)) |>
+  filter(value==1) 
+
+tr2 = tr |> right_join(df2, by="GEOID")
+```
+
+
+```{r, fig.height=2, fig.width=4}
+tr2 |>
+  ggplot() +
+  geom_sf(data=tr, linewidth=.1, fill="grey98") +
+  geom_sf(aes(fill=name), linewidth=.1,show.legend=FALSE) +
+  MetBrewer::scale_fill_met_d("Egypt") +
+  coord_sf(expand=FALSE) +
+  facet_wrap(~longname, ncol=4) +
+  cowplot::theme_map(10) +
+  theme(text=element_text(family = "Barlow"),
+        strip.text = element_markdown(hjust=0, vjust=.5, lineheight = 1, margin=margin(b=7)),
+        panel.spacing = unit(1.2,"lines"),
+        plot.title=element_text(size=13),
+        plot.subtitle = element_text(color="grey20",margin=margin(b=7)),
+        plot.caption = element_text(hjust=0, size=7, color="grey40", margin=margin(t=15)),
+        ) +
+  labs(title="Food Access, New Mexico, 2019",
+       subtitle="Residents living within 0.5, 1, 10, and 20 miles of the nearest supermarket, supercenter, or large grocery store.",
+       caption="Source: USDA by way of Data Is Plural")
+
+ggsave("export/20231122.png", height=4, width=8, bg="#fafafa")
+```
+
