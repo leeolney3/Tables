@@ -188,6 +188,7 @@
   * [Inverse-distance weighted smoothing](https://twitter.com/nrennie35/status/1612740418206306310) dataviz and thread by Nicola Rennie
   * [Lego Choropleth map with R](https://r-graph-gallery.com/web-choropleth-map-lego-style.html) by Benjamin Nowak
   * [Making crisp spike maps with R](https://www.youtube.com/watch?v=qTDf5VVnjMM) by Milos Popovic
+  * [Map making with R](https://twitter.com/BjnNowak/status/1729843967758409965) by Benjamin Nowak
   * [Making maps with R](https://www.paulamoraga.com/tutorial-maps/) by Paula Moraga, KAUST 
   * [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html#affine-transformations) by Edzer Pebesma
   * [Map Africa using OSM data in R](https://twitter.com/milos_agathon/status/1588565316648329217) by Milos Popovic
